@@ -75,7 +75,6 @@ Tento odkaz má tento tvar ```[Text odkazu](Podsložka/nazevsouboru.md)```.
 
 
 Například se chcete odkazovatz na nastavení financí z nastavení aplikace, struktura bude vypadat takto:
-For example, you want to link to payables-manage-payables.md from ui-work-general-journals.md, where the folder structure is as follows:
 
 - Článek
     - nastaveni-aplikace.md
@@ -89,17 +88,10 @@ Odkazu bdue vypadat takto:
 
 Tento odkaz má tento tvar ```[Text odkazu](../složka/nazevsouboru.md)```.
 
-
-Here is the link:
-```[Nastaveni financí](../Nastaveni aplikace/Nastaveni-financi.md)```
-
 ## Odkaz na nadpis ve stejném dokumentu
 Ve jednom dokumentu můžete odkazovat na nadpis.
 
 ```[Text odkazu](#cilovy-odkaz)```
-
-target-heading is the text of the heading that you want to link to, except it is all lowercase and spaces between words are replaced with hyphens. For example, here is the link:
-```[Účtoskupiny zboží](#uctoskupiny-zbozi)```
 
 ## Odkazování na MSDN
 vynechejte závorky kolem verze NAV. 
@@ -109,7 +101,7 @@ zadané v MarkDownu: ```https://msdn.microsoft.com/en-us/library/hh173988.aspx``
 
 
 ## TOC
-Struktura TOC souboru má tvat:
+Struktura TOC souboru má tvar:
 
 ```
 #[Přehled](prehled.md)
