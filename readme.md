@@ -33,10 +33,10 @@ Pro psaní nápovědy k addonům dodržujte náležitosti:
 
     Příklad konce souboru HelpDesk (použití):
 
-    |       Viz také       |                     Seznám                      |
-    | -------------------- | ----------------------------------------------- |
-    | Helpdesk - Nastavení | [HelpDeks - Nastavení](ac-pp-helpdesk-setup.md) |
-    | AC Productivity Pack | [AC Productivity pack](ac-pp-productivity-pack.md) |
+    |       Viz také       |                                  Seznám                                   |
+    | -------------------- | ------------------------------------------------------------------------- |
+    | Helpdesk - Nastavení | [HelpDeks - Nastavení](business-central/AC-IB/ac-pp-helpdesk-setup.md)    |
+    | AC Productivity Pack | [AC Productivity pack](business-central/AC-IB/ac-pp-productivity-pack.md) |
 
 - Pro základní editaci je zde [šablona](template.md).
 

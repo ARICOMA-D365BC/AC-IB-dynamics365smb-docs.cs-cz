@@ -1,18 +1,34 @@
 ---
-title: Keywords in 43-59 chars including spaces
-description: Text with lots of keywords for search engines to find.
-author: myGitHubHandle
-
-ms.service: dynamics365-business-central
-ms.topic: conceptual
-ms.search.keywords:
-audience: end user
-ms.date: 06/09/2018
-ms.author: MyMSFTAlias
-
+Title: "Nazev addonu"
+Description: 
+Author: AUTOCONT
+Date: 04/04/2019
+Product: dynamics365-business-central
+Contentlocale: cs-cz
 ---
-# A new capability in [!INCLUDE [d365fin_long](includes/d365fin_long_md.md)]
 
-Snazzy introduction of the capability with plenty of buzzwords. Remember to add See Also links, and to add the new article to the TOC.md file.  
+# Nazev Addonu  (obecné informace)
 
-## See Also
+Odstavec textu se základními informacemi. Na co slouží, co to umí.
+
+
+
+
+## Použití (procesy použití)
+
+Základní použití první funkce. (popis)
+
+(příklad)
+1. Pomocí vyhledávací funkce **Řekněte mi, co chcete udělat (Alt + Q)** vyhledejte **Nastavení kategorií**.
+2. Na kartě Nastavení v záložce Obecné je potřeba vybrat **Vynucení Kategorií** a **Výchozí prioritu**.
+3. V záložce Číslování nastavit **Číselnou řadu** pro požadavky.
+4. Potvrďte pomocí OK.
+
+
+Pokud addon obsahuje několik procesů nebo funkcí, kroky opakujte.
+
+
+|         Viz také         |                           Seznam                           |
+| ------------------------ | ---------------------------------------------------------- |
+| Nazev Addonu - Nastavení | [Nazev Addonu - Nastavení   ](ac-pp-nazev-addonu-setup.md) |
+| AC Productivity Pack     | [AC Productivity Pack](ac-pp-productivity-pack.md)         |
