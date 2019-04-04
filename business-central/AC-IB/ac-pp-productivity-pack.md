@@ -1,7 +1,7 @@
-﻿---
+---
 title: "Productivity Extension"
 Author: Autocont
-Date: 07/31/2018
+Date: 04/04/2019
 Product: dynamics-nav-2018
 Contentlocale: en
 ---
@@ -10,14 +10,14 @@ Contentlocale: en
 
 Přehled Autocont - Productivity Pack
 
-| Viz                                | Také                                                               |
-|------------------------------------|--------------------------------------------------------------------|
+|                Viz                 |                                Také                                |
+| ---------------------------------- | ------------------------------------------------------------------ |
 | Elektronická fakturace             | [Elektronická fakturace](ac-pp-elektronic-dokuments.md)            |
 | Datové schránky                    | [Datové schránky](ac-pp-data-boxes.md)                             |
 | Evidence doručené pošty            | [Evidence doručené pošty](ac-pp-incoming-mail.md)                  |
 | Obecné parametry                   | [Obecné parametry](ac-pp-general-parameters.md)                    |
 | Publikování SharePoint             | [Publikování SharePoint](ac-pp-sharepoint-publisher.md)            |
-| Rozšíření fronty  úloh (Job Queue) | [Rozšíření fronty  úloh (Job Queue)](ac-pp-job-queue-extension.md) |
+| Rozšíření fronty  úloh (Job Queue) | [Rozšíření fronty  úloh (Job Queue)](ac-pp-job-queue-extension.md) |
 | Publikační šablony                 | [Publikační šablony](ac-pp-publication-template.md)                |
 | Publikování úkolů                  | [Publikování úkolů](ac-pp-publication-tasks.md)                    |
 | Doprava-základ                     | [Doprava-základ](ac-pp-transport-basic.md)                         |
@@ -28,6 +28,7 @@ Přehled Autocont - Productivity Pack
 | Správa upozornění                  | [Správa upozornění](ac-pp-notifications.md)                        |
 | Řízení čárových kódů               | [Řízení čárových kódů](ac-pp-warehouse-bartech-barcodes.md)        |
 | Reklamace                          | [Reklamace](ac-pp-complaints-management.md)                        |
+| HelpDesk - Nastavení               | [HelpDesk - Nastavení](ac-pp-helpdesk-setup.md)                    |
 | HelpDesk                           | [HelpDesk](ac-pp-helpdesk.md)                                      |
 | Centrální číselníky                | [Centrální číselníky](ac-pp-central-database.md)                   |
 | Spooler                            | [Spooler](ac-pp-spooler.md)                                        |
