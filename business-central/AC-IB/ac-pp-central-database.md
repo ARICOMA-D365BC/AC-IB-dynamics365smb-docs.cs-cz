@@ -1,25 +1,37 @@
 ---
-title: "Centrální číselníky"
-author: Autocont
-ms.custom: na
-ms.date: 02/26/2018
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.prod: dynamics-nav-2018
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 
-ms.openlocfilehash: 
-ms.contentlocale: cs-cz
-ms.lasthandoff: 02/26/2018
-
+Title: "Centrální číselníky - použití"
+Description: 
+Author: AUTOCONT
+Date: 14/02/2019
+Product: dynamics365-business-central
+Contentlocale: cs-cz
 ---
 
-# <a name="ac-pp-central-database.md"></a>Centrální číselníky
+# Centrální čísleníky - použití
 
-Add-on Centrální číselníky umožňuje pomocí add-onu Spooler synchronizovat číselníky mezi různými NAV databázemi a společnostmi. Způsob (jaké tabulky, pole) a směr synchronizace jsou v NAV parametrizovatelné. Modul je určen k synchronizaci dat mezi různými datovými zdroji. Může se jednat o dvě firmy v jedné databázi stejně jako o 2 firmy v různých databázích. Aplikaci lze také použít k synchronizaci dat s externími systémy (např. B2B aplikace, zákaznické aplikace, specializované výrobní software atd.). 
-Nastavení je vždy master-klient mezi dvěma firmami (databázemi). U podřízených firem je možné povolit, nebo zakázat vkládání a úpravu záznamů v synchronizovaných tabulkách. Proces synchronizace může probíhat online v okamžiku změny dat (je generován změnový dokument pro daný záznam), dle volby uživatele jako komplexní balík synchronizovaných dat nebo automaticky jako balík dat v periodických intervalech (pomocí add-onu Shareplan). Datová komunikace o změnách nebo synchronizaci probíhá pomocí strukturovaných XML dokumentů.
+Centrální databáze umožňuje pomocí modulu Spooler synchronizovat číselníky mezi různými NAV databázemi a společnostmi. Způsob synchronizace (jaké tabulky, pole, odkud a kam) je v NAV parametrizovatelný. 
 
-## <a name="see-also"></a>Viz také  
-[AC Productivity pack](ac-pp-productivity-pack.md)  
+## Sychronizace
+Synchronizace probíhá buď automaticky při změnách v definovaných datových tabulkách nebo na ruční pokyn. 
+
+1. Pomocí vyhledávací funkce **Řekněte mi, co chcete udělat (Alt + Q)** vyhledejte **Nastavení tabulek centrální databáze**.
+2. Klikněte na iknou **Synchronizovat** v záložce Akce.
+3. Vyplňte filtry dle potřeby
+4. Potvrďte pomocí OK.
+
+### Ruční synchronizace:
+Při ruční synchronizaci lze pomocí filtrů přesně specifikovat, jaké tabulky, odkud a kam chci aktuálně synchronizovat. 
+1. Pomocí vyhledávací funkce **Řekněte mi, co chcete udělat (Alt + Q)** vyhledejte **Synchronizovat data do systémů**.
+2. Do dialogového okna nastavit všechny potřebné filtry, tedy:
+   - **Číslo tabulky**,
+   - **Id centrální databáze**,
+   - **ID**, a další.
+  
+      Při ruční synchronizaci lze pomocí filtrů přesně specifikovat, jaké tabulky, odkud a kam chci aktuálně synchronizovat. Tato volba se uplatňuje hlavně při synchronizaci již existujících dat do nových systémů (migrace a parametrizace).
+3. Potvrďte pomocí OK
+
+
+|            Viz také             |                              Seznam                              |
+| ------------------------------- | ---------------------------------------------------------------- |
+| AC Productivity Pack            | [AC Productivity Pack](ac-pp-productivity-pack.md)               |
+| Centrální číselníky - Nastavení | [Centrální číselníky - Použití](ac-pp-central-database-setup.md) |

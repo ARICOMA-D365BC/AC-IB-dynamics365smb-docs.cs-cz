@@ -1,9 +1,10 @@
 ---
-title: "Productivity Extension"
-Author: Autocont
-Date: 04/04/2019
-Product: dynamics-nav-2018
-Contentlocale: en
+Title: "Productivity Pack - Extension"
+Description: 
+Author: AUTOCONT
+Date: 11/04/2019
+Product: dynamics365-business-central
+Contentlocale: cs-cz
 ---
 
 # <a name="ac-pp-productivity-pack"></a>Autocont - Productivity Pack
@@ -31,7 +32,9 @@ Přehled Autocont - Productivity Pack
 | HelpDesk - Nastavení               | [HelpDesk - Nastavení](ac-pp-helpdesk-setup.md)                    |
 | HelpDesk                           | [HelpDesk](ac-pp-helpdesk.md)                                      |
 | Centrální číselníky                | [Centrální číselníky](ac-pp-central-database.md)                   |
+| Centrální číselníky - Nastavení    | [Centrální číselníky - Nastavení](ac-pp-central-database-setup.md) |
 | Spooler                            | [Spooler](ac-pp-spooler.md)                                        |
+| Spooler - Nastavení                | [Spooler - Nastavení](ac-pp-spooler-setup.md)                      |
 | Evidence nářadí a pomůcek          | [Evidence nářadí a pomůcek](ac-pp-production-tools.md)             |
 
 
