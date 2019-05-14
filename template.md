@@ -28,7 +28,6 @@ Základní použití první funkce. (popis)
 Pokud addon obsahuje několik procesů nebo funkcí, kroky opakujte.
 
 
-|         Viz také         |                           Seznam                           |
-| ------------------------ | ---------------------------------------------------------- |
-| Nazev Addonu - Nastavení | [Nazev Addonu - Nastavení   ](ac-pp-nazev-addonu-setup.md) |
-| AC Productivity Pack     | [AC Productivity Pack](ac-pp-productivity-pack.md)         |
+## Viz Také
+[Nazev Addonu - Nastavení   ](ac-pp-nazev-addonu-setup.md)
+[AC Productivity Pack](ac-pp-productivity-pack.md)
