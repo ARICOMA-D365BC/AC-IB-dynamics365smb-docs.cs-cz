@@ -6,7 +6,7 @@ Tento repozitár slouží k evidenci nápovědy D365 Business Central
 
 Pro psaní nápovědy k addonům dodržujte náležitosti:
  - Název souboru nápovědy se bude skládat z:
-   - ```ac-nazevbaliku-nazevsouboru.md```
+   - ```ac-nazevpacku-nazevsouboru.md```
    - *(```ac-pp-helpdesk.md```)*
  - Pro každý addon vzniknou dva soubory, jeden pro popis a použití, druhý pro nastavení.
    - Například: ```ac-pp-helpdesk.md``` a ```ac-pp-helpdesk-setup.md```
@@ -20,10 +20,10 @@ Pro psaní nápovědy k addonům dodržujte náležitosti:
     ---
     Title: "Nazev_souboru"
     Description: 
-    Author: AUTOCONT
+    Author: AC-PrijmeniJmeno
     Date: 04/04/2019
     Product: dynamics365-business-central
-    Contentlocale: cs-cz
+    Language: cs-cz
     ---
     ```
 - Každý dokument musí nakonci obsahovat tabulku "Viz také"
