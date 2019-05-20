@@ -1,7 +1,7 @@
 ---
 Title: "Nazev addonu"
 Description: 
-Author: AUTOCONT
+Author: AC-Jméno.Příjmení
 Date: 04/04/2019
 Product: dynamics365-business-central
 Contentlocale: cs-cz
