@@ -18,12 +18,17 @@ Pro psaní nápovědy k addonům dodržujte náležitosti:
 
     ```
     ---
-    Title: "Nazev_souboru"
-    Description: 
-    Author: AC-PrijmeniJmeno
-    Date: 04/04/2019
-    Product: dynamics365-business-central
-    Language: cs-cz
+    title: Czech Local Functionality - Advance payments and invoices | Microsoft Docs
+    description: This section describes local functionality - Advance payments and invoices
+    author: ac-kunes
+    ms.service: dynamics365-business-central
+    ms.topic: article
+    ms.devlang: na
+    ms.tgt_pltfrm: na
+    ms.workload: na
+    ms.search.keywords: Czech, Advance payment, Advance invoices, Payables, Finance, CZ, Cash
+    ms.date: 15/05/2019
+    ms.author: v-pejano
     ---
     ```
 - Každý dokument musí nakonci obsahovat tabulku "Viz také"
@@ -33,10 +38,12 @@ Pro psaní nápovědy k addonům dodržujte náležitosti:
 
     Příklad konce souboru HelpDesk (použití):
 
-    |       Viz také       |                                  Seznám                                   |
-    | -------------------- | ------------------------------------------------------------------------- |
-    | Helpdesk - Nastavení | [HelpDeks - Nastavení](business-central/AC-IB/ac-pp-helpdesk-setup.md)    |
-    | AC Productivity Pack | [AC Productivity pack](business-central/AC-IB/ac-pp-productivity-pack.md) |
+
+```
+## Viz také
+[HelpDeks - Nastavení](business-central/AC-IB/ac-pp-helpdesk-setup.md)  
+[AC Productivity pack](business-central/AC-IB/ac-pp-productivity-pack.md)
+```
 
 - Pro základní editaci je zde [šablona](template.md).
 
@@ -75,3 +82,57 @@ Soubory pro addony nahrávejte do:
  - business-central/nazev-slozky-baliku/
  - *business-central/AC-IB/ac-pp-productivity-pack.md*
 
+## Základní syntaxe
+
+### Obecný text
+
+Text není třeba formátovat. Pro tučné písmo slouží dvě hvězdičky, pro kurzívu jedna. Mezi odstavci a nadpisy musí být volný řádek. Pro text na další řádek, je za větou třeba napsat dvě mezery (V případě enteru, text nezačíná na novém řádku).
+
+```
+*Kurzíva*
+**Tučný text**
+***Tučně a kurzíva***
+
+
+# Téma
+
+## Nadpis 1
+
+Vzorový text, vzorový text, vzorový text, vzorový text, vzorový text, vzorový text, vzorový text.
+```
+
+### Nadpisy
+
+Pro nadpisy slouží symbol dvojítého křížku. Dle počtu křížků se rozlišuji úrovně nadpisů. 
+
+```
+# Hlavní nadpis
+## Název kapitoly
+### Název podkapitoly
+```
+
+
+### Odrážky a seznamy
+
+Odrážky pomocí pomlčky
+
+  ```
+  - odrážka 1
+  - odrážka 2
+  ```
+### Číslovaný seznam
+
+Stačí psát pouze číslo a tečku.
+
+```
+1. Položka
+2. Položka
+```
+
+### Odkaz na jiný soubor
+
+V hranatých závorkách je text, který se zobrazí a v závorce název souboru. (V tomto případě je soubor finance ve stejné složce.)
+
+```
+[Finance](finance.md)
+```
