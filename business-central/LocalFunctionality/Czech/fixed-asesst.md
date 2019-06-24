@@ -12,7 +12,7 @@ ms.date: 15/05/2019
 ms.author: 
 ---
 
-## Fixed assets
+# Fixed assets
 
 ## FIXED ASSETS TAX DEPRECIATION
 The Fixed Assets Tax Depreciation feature calculates and posts tax depreciation in compliance with the Income Tax Act (Law 586/1992 §26 - §33). This feature has a special setup for tax depreciation groups to enable entering rates and coefficients for new depreciation methods with Fixed Assets Tax Depreciation.
