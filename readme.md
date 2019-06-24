@@ -1,6 +1,6 @@
 # AC - Implementační báze - Nápověda
 
-Tento repozitár slouží k evidenci nápovědy D365 Business Central 
+Tento repozitář slouží k evidenci nápovědy D365 Business Central. 
 
 ## Obsah nápovědy
 
@@ -12,7 +12,7 @@ Pro psaní nápovědy k addonům dodržujte náležitosti:
    - Například: ```ac-pp-helpdesk.md``` a ```ac-pp-helpdesk-setup.md```
  - Struktura souborů nápovědy je:
    - Nadpis, krátký popis a kroky jak danou činnosti udělat.
-   - viz. vzorová nápověda [Helpedsku](business-central/AC-IB/ac-pp-helpdesk.md)
+   - viz. vzorová nápověda [Helpdesku](business-central/AC-IB/ac-pp-helpdesk.md)
  - ### Vlastnosti a tagy
     Každý dokumentu musí obsahovat hlavičku v následujícím tvaru
 
@@ -33,7 +33,7 @@ Pro psaní nápovědy k addonům dodržujte náležitosti:
     ```
 - Každý dokument musí nakonci obsahovat tabulku "Viz také"
 
-    Pod každým souborem nápovědy bude odkaz na nadřazený balík a také odkaz na nastavení daného addonu nebo v opačném případě na obecný popis s návodem k použitíí.
+    Pod každým souborem nápovědy bude odkaz na nadřazený balík a také odkaz na nastavení daného addonu nebo v opačném případě na obecný popis s návodem k použití.
 
 
     Příklad konce souboru HelpDesk (použití):
@@ -60,7 +60,7 @@ Pro psaní nápovědy k addonům dodržujte náležitosti:
 
 
 ## Nahrávání souboru
-Při každém nahrávání, editaci nebo mazání souborů je nutné podepsat každý **commit** svým jménem a popsat o jako událost se jedná.
+Při každém nahrávání, editaci nebo mazání souborů je nutné podepsat každý **commit** svým jménem a popsat o jako událost se jedná. To je důležité zejména v případech, kdy používáte sdílené účty ke GitHubu a ne přímo své na jméno, kdy se Vaše jméno zaznamená automaticky při commitu.
 
   ### Commit Changes
 
@@ -136,3 +136,11 @@ V hranatých závorkách je text, který se zobrazí a v závorce název souboru
 ```
 [Finance](finance.md)
 ```
+
+### Názvy produktů a aplikací
+
+Aby byly názvy produktů a aplikací jednotné, je potřeba používat malé zástupné soubory, ve kterých je uveden název. Zástupné soubory jsou ve složce  ve složce "INCLUDES". V případě změny názvu, se pouze jednou přepíše v zástupném souboru a tím bude automaticky aktuální ve všech dalších souborech kde je použit. 
+
+Např. pro [!INCLUDE[d365fin](../../includes/d365fin_md.md)] se vloží
+```[!INCLUDE[d365fin]```(../../includes/d365fin_md.md)]```  
+
