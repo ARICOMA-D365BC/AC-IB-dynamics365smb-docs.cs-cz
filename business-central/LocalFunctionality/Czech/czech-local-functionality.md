@@ -14,7 +14,7 @@ ms.author:
 
 # Czech Local Functionality
 
-The following topics describe the local functionality in the Czech version of [!INCLUDE[d365fin](../../includes/d365fin_md.md)].  
+The following topics describe the local functionality in the Czech version of [!INCLUDE[d365fin](../../includes/d365fin_md.md)].
 ---
 ## Feature Availability
 
@@ -42,6 +42,6 @@ The following topics describe the local functionality in the Czech version of [!
     * [Cash Desk Management](cash-desk-management.md) **Available Now**
 
 ## See Also
-[Working with [!INCLUDE[d365fin](../../includes/d365fin_md.md)]](../../ui-work-product.md)   
+[Working with [!INCLUDE[d365fin](../../includes/d365fin_md.md)]](../../ui-work-product.md)
 
 ## [!INCLUDE[d365fin](../../includes/free_trial_md.md)]  
