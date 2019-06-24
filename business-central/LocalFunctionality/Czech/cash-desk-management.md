@@ -12,7 +12,7 @@ ms.date: 15/05/2019
 ms.author: 
 ---
 
-# CashDesk management
+# CashDesk Management
 
 Cash Desks and Cash Documents features allow you to define cash accounts and Cash Desks for the physical receipt and money withdrawal. Each Cash Desk has to have a separate Number Series of the Cash Documents. You can setup separate Number Series for the Receipt Cash Documents and Withdrawal Cash Documents. The Cash Desk Cases are pre-defined cases to simplify document entering. You can specify individual user authorized to operate with the particular Cash Desk and transmit Cash Desk between users.
 List of the main features of the Cash Desks: 
