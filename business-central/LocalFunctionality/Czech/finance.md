@@ -11,7 +11,7 @@ ms.search.keywords: Czech, finance, CZ, VAT
 ms.date: 15/05/2019
 ms.author: 
 ---
-
+# Finance
 ## CORRECTIONS POSTING (RED STORNO)
 According to legal requirements, costs and revenues are usually posted only to either the debit or the credit side of a G/L Account. Companies in Eastern Europe usually enforce accounting policy to post certain inventory and GL transactions as corrections. The reason for this is that auditors and revenue authorities conduct accounting controls against this rule. 
 
