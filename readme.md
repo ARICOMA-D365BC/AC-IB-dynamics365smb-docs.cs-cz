@@ -141,6 +141,5 @@ V hranatých závorkách je text, který se zobrazí a v závorce název souboru
 
 Aby byly názvy produktů a aplikací jednotné, je potřeba používat malé zástupné soubory, ve kterých je uveden název. Zástupné soubory jsou ve složce  ve složce "INCLUDES". V případě změny názvu, se pouze jednou přepíše v zástupném souboru a tím bude automaticky aktuální ve všech dalších souborech kde je použit. 
 
-Např. pro [!INCLUDE[d365fin](../../includes/d365fin_md.md)] se vloží
-```[!INCLUDE[d365fin]```(../../includes/d365fin_md.md)]```  
+Např. pro **Business Central** se vloží ```[!INCLUDE[d365fin]```(../../includes/d365fin_md.md)]```  
 
