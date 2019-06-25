@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: Czech, CashDesk, Finance, CZ, Cash
 ms.date: 15/05/2019
-ms.author: 
+ms.author: v-pejano
 ---
 
 # CashDesk Management
