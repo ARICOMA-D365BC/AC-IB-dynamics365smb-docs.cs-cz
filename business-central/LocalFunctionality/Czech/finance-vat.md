@@ -1,7 +1,7 @@
 ---
 title: Czech Local Functionality - Finance VAT| Microsoft Docs
 description: This section describes local functionality Finance - VAT
-author: ac-fialova
+author: ac-kunes
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
@@ -9,12 +9,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: Czech, finance, CZ, VAT
 ms.date: 15/05/2019
-ms.author: 
+ms.author: v-pejano
 ---
 
-# FINANCE – VAT
+# Finance - VAT
 
-## VAT DATE
+## Vat date
 
 The VAT Date is important for tax documents by §28 of VAT Law 235/2004. The VAT Date can be different from the posting date or the document date. The VAT Date is an important field for the VAT reporting.  
 
@@ -45,17 +45,17 @@ Amounts shown in new Net Change (VAT Date) columns in all following forms will a
 - G/L Balance form
 - G/L Account Balance form 
 
-## VAT ROUNDING IMPROVEMENTS
+## VAT rounding improvements
 
 Necessary standard functionality modification to round the VAT amount according to the Czech Republic law requirements has been added. The VAT Rounding is subject of VAT Law 235/2004 (§37). The rounding procedure uses rounding precision in order to calculate the result. Further additions include an ability to select special rounding precisions (special rounding is identified by a new field Round VAT Coeff. on the General Ledger Setup form) during VAT calculation for the following entities in G/L posting, Sales and Purchase. The implemented changes affect only Normal VAT or Reverse Charge VAT case during price calculation including VAT.
 
-## POSTPONING VAT ON SALES CREDIT MEMO
+## Posting VAT on sales credit memo
 
 Special function for the Sales Credit memo documents can be used. It is important to know (by §42 part 3b) of VAT Law 235/2004) the delivery date of the Sales Credit memo document. User can fill in the delivery date in the Posted Sales Credit Memo as the new VAT Date.  
 Sales VAT Postponed Account field has been added in the VAT posting setup.
 The Postponed VAT field was filled in the VAT Entry.
 
-## VAT STATEMENT
+## VAT Statement
 
 The VAT Statement contains many improvements which enable the user to:
 
@@ -72,12 +72,12 @@ The VAT Statement contains many improvements which enable the user to:
 - Export the VAT statement to .xml file.
 - Add Comments and Attachments to export for Tax Office.
 
-## SUPPLEMENTARY VAT STATEMENT
+## Supplementary VAT statement
 
 By §43 part 1 of VAT Law 235/2004, payer can submit Supplementary VAT Statement. In case user wants to issue the Supplementary VAT Statement, it is necessary to choose Supplementary type of VAT Statement by exporting the Statement.
 In the Calculate and post VAT Settlement functionality, the Posted Document Number is stored in closed VAT entries as VAT Settlement No. for further filtering in VAT Statement and reports. This feature allows calculation and printing VAT statement for different VAT statements posted and submitted in one VAT Period.
 
-## NON-DEDUCTIBLE VAT
+## Non-deductible VAT
 
 This functionality is important due to §76 of VAT Law 235/2004 – the shortened claim to deduction.
 The functionality includes:
@@ -101,7 +101,7 @@ The VIES functionality allows to:
 - Support corrective declarations
 - Export data into file for electronic submission
 
-## VAT REGISTRATION IN OTHER COUNTRIES
+## VAT registration in others countries
 
 This functionality extends the possibility to work with VAT and allows the user to:
 
@@ -114,21 +114,21 @@ This functionality extends the possibility to work with VAT and allows the user 
 - Calculate and print VAT Statement for fulfilment in another Performance VAT country
 - Calculate and post VAT Settlement for fulfilment in another Performance VAT country
 
-## UNRELIABLE PAYER
+## Unreliable payer
 
 The amendment of VAT Law 235/2004 (§106a) introduced the institute of Unreliable Payer. The Treasury Department is obliged to publish the names of Unreliable Payers. 
 This feature uses this service to obtain published information and indicate payer status on Vendor card and purchase documents. 
 The Treasury Department also publishes information about registered bank accounts of the payer (only these accounts are allowed for payments). Information about payer registered bank accounts is stored on the Vendor Bank Accounts and used in Cash Management.
 
-## VAT EXCHANGE RATE
+## VAT Exchange rate
 The exchange rate is located in documents, but Czech Republic requires the possibility to set different exchange rates for posting and VAT in sales and purchase documents. This feature adds VAT Currency Code field and VAT Exchange Rate in documents. Users can change the exchange rate for VAT before document posting.
 
-## VAT IDENTIFIER
+## VAT Identifier
 
 VAT identifier extends VAT Posting Setup. User can add the same VAT Identifier to different lines of the VAT Posting Setup. This is useful for printing VAT Recapitulation on tax documents grouped by VAT Identifier.
 The VAT Identifier is the part of the VAT Entry.
 
-## REVERSE CHARGE STATEMENT
+## Reverse charge statement
 
 The amendment of VAT Law 235/2004 (§ 92a – 92e) introduced the VAT Reverse Charge calculation also for specific domestic fulfilments. A Reverse Charge Statement has to be submitted to the Tax Office electronically. 
 This feature allows user to:
@@ -139,7 +139,7 @@ This feature allows user to:
 - Print Reverse Charge Statement
 - Export Reverse Charge Statement data into the file for electronic submission
 
-## VAT CONTROL REPORT
+## VAT Control report
 
 [!INCLUDE[d365fin](../../includes/d365fin_md.md)] functionality has been extended by the VAT Control Report. Basic form is VAT Control Report Card. VAT items are loaded by the VAT Date or Posting Date (according to the general ledger setup) into the form for the selected period. The basic setup, i.e. distribution of combinations of VAT posting groups into the individual sections of control report, is determined in the VAT statement. To process the control report you have to setup VAT control report sections, tariff numbers, VAT statement, stat. reporting setup and extended the VAT posting setup. Functionality contains:
 
@@ -149,7 +149,7 @@ This feature allows user to:
 - Control report export - Export function exports control report to the file.
 - Closing lines - Close lines function fills the Closed by document no. field in control report lines.
 
-## VAT REPORTS
+## VAT Reports
 
 In order to achieve requirements in legislation reporting and local reporting practices of Czech companies, this feature provides the following reports:
 

@@ -9,12 +9,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: Czech, finance, CZ, Fixed assest
 ms.date: 15/05/2019
-ms.author: 
+ms.author: v-pejano
 ---
 
 # Fixed assets
 
-## FIXED ASSETS TAX DEPRECIATION
+## Fixed assets tax depreciation
 The Fixed Assets Tax Depreciation feature calculates and posts tax depreciation in compliance with the Income Tax Act (Law 586/1992 §26 - §33). This feature has a special setup for tax depreciation groups to enable entering rates and coefficients for new depreciation methods with Fixed Assets Tax Depreciation.
 
 Each long-term tangible Fixed Asset belongs to a depreciation group. These groups determine minimal depreciation periods and parameters used for calculating depreciation.
@@ -26,12 +26,12 @@ The following depreciation methods are provided for long-term tangible Fixed Ass
 
 Each long-term Fixed Asset belongs to a depreciation group. These groups determine minimal depreciation periods and parameters that will be used for calculating depreciation.
 
-## CALCULATION OF DEPRECIATION BASIS IN FIXED ASSETS
+## Calculation of depreciation basis in fixed assets
 
 Due to the Czech legislation, it is necessary to calculate tax depreciations from the depreciable basis which can be different from acquisition costs. According to the requirements, a depreciation basis by Czech Declining-balance depreciation method for the second and following years of Fixed Asset life should be calculated by the new formula defined in the Income Tax Act.
 Changes have been made in the calculation of depreciation amount by the CZ Declining-balance depreciation method for the second and following years of Fixed Asset life by the formula stated above. The Tax depreciation is calculated annually and the Force No. of Days option is recommended for calculating the correct depreciation amount. 
 
-## FIXED ASSETS DEPRECIATION HOLIDAYS
+## Fixed assets depreciation holidays
 
 The Fixed Asset Depreciation Holidays feature (by Income Tax Act – Law 586/1992 §26 part 8) enables user to discontinue depreciation for selected Fixed Asset and for specified periods. The system determines the depreciation schedule after the break period ends. 
 The list of depreciation methods for which the discontinuing of depreciation has been implemented is as follows:
@@ -44,14 +44,14 @@ The list of depreciation methods for which the discontinuing of depreciation has
 
 User can open FA Depreciation book and fill in the fields Depreciation Interrupt and Depreciation Interrupt up to. Field Keep Depr. Ending Date defines if you want to maintain the depreciation schedule.
 
-## TWO STEPS FIXED ASSET ACQUISITION
+## Two steps fixed asset acquisition
 
 There are two steps to accomplish when acquiring a Fixed Asset in the Czech accounting. When a company gets an invoice for a Fixed Asset acquisition, it has to be posted. Since the moment of initial use of the Fixed Asset, the used Fixed Asset is posted. Both the acquisition and put in use steps are required and connected with G/L Entries. Fixed Assets are not depreciated until put in use.
 
 For this topic, use Custom 2 fixed asset posting type for the first step (Acquisition) and Acquisition Fixed Asset posting type for the second step (Put in Use). Select the Fixed Asset Acquisition as Custom2 check box in Fixed Asset Setup to start use of this feature.
 Value Custom 2 is renamed in Czech language from Vlastní 2 to Pořízení for correct FA purchase identification and better accountant understanding.
 
-## FIXED ASSET POSTING OF DISPOSAL
+## Fixed asset posting of disposal
 
 Czech accounting standards require specific posting when a Fixed Asset is being disposed of or be-ing sold. After selling or posting Fixed Assets (FA), Fixed Asset Posting of disposal ensures the Fixed Asset value remains the same as that of the acquired value after depreciation.
 
@@ -59,7 +59,7 @@ The Fixed Asset remains unchanged even after it is put to use. When the Fixed As
 
 On Depreciation Book, select the Corresponding G/L Entries on Disposal check box to make this feature operational. Also select the Corresponding FA Entries on Disposal check box to retain the correspondence between G/L Entries and FA Entries. 
 
-## DIFFERENT TYPES OF DISPOSAL AND MAINTENANCE
+## Different types of disposal and maintenance
 
 In the Czech accounting, it is necessary to post different types of disposal and different types of maintenance of Fixed Assets to specific G/L Accounts. A standard way offers only one method of disposal and maintenance posting.
 
@@ -68,7 +68,7 @@ A new setup was added for this feature – FA Extended Posting Group table. This
 - Posting disposal to different Accounts in combination with Reason Code used  for disposal 
 - Posting maintenance in combination with Maintenance Code used for maintenance
 
-## FIXED ASSETS CLASIFICATION
+## Fixed assets clasification
 
 ### SKP Code
 
@@ -78,7 +78,7 @@ SKP code is a code from the Standard Classification Production. The Standard Cla
 
 Tax of Income Law 586/1992 insists on sorting Fixed Assets by Production Classification marked CZ-CPA and by Classification building operations marked CZ-CC. The new Classification Code table and Classification Code field on Fixed Asset were added. This field is used for FA classification to the tax group.
 
-###  FIXED ASSET LOCATION/RESPONSIBLE HISTORY REPORT
+###  Fixed asset location/responsible history report
 
 This feature provides users with ability to track Fixed Asset Location and Responsible Employee changes.
 With the addition of this feature users are able to control location history of the Fixed Asset and history of employees responsible for the Fixed Asset.
@@ -93,14 +93,14 @@ New reports for transactions and history documentation added:
 - FA Assignment/Discharge
 - FA History
 
-## FIXED ASSETS – ITEM CONSUMPTION FOR MAINTENANCE
+## Fixed assets – item consumption for maintenance
 
 Fixed Asset Maintenance functionality was improved by extending the functionality in Item Journal. 
 
 New fields FA No. and Maintenance Code added to Item Journal Line. These fields are used if pur-pose of item consumption is Fixed Asset Maintenance. 
 When Item Negative Adjustment is posted in Item Journal, the Maintenance Ledger Entry will be created and posted automatically, based on Automatic Maintenance Posting field in Inventory Setup. For manually posting and/or item costs adjusting to maintenance, the report Adj. Maintenance-Item Entries is created.
 
-## FIXED ASSETS REPORTING
+## Fixed assets reporting
 
 In order to comply with the requirements in legislation reporting features and local reporting 
 practices of Czech companies, this feature provides following reports:

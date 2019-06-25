@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: Czech, Intrastat, Payables, Finance, CZ, Cash
 ms.date: 15/05/2019
-ms.author: 
+ms.author: v-pejano
 ---
 
 # Intrastat
@@ -23,7 +23,8 @@ The standard Intrastat feature does not transfer all and only valid transactions
 
 This feature adds improvement of data transferred into Intrastat journal and prepares the environment for correct Intrastat reporting.
 
-## INTRASTAT ENGINE SETUP
+## Intrastat engine setup
+
 Additional Intrastat engine general parameters setup allows to:
 - Set mandatory fields of Intrastat transactions in Sales, Purchase and Transfer transaction
 - Set where the particular parts on Intrastat data related to Items should be taken from (item or posted entry) and which Item attributes will be mandatory in Sales, Purchase and Transfer transaction
@@ -34,11 +35,13 @@ Additional Intrastat engine general parameters setup allows to:
 - Set object for Intrastat report export
 
 ### New setup tables added for:
+
 - Statistic Indications
 - Specific Movements
 - Intrastat Delivery Groups
 
 ### Additional setup for Intrastat allows to:
+
 - Set Country/Region Code for Entry/Exit Point
 - Set Tariff Number Supplementary Units of Measure if Tariff numbers have to be reported in Supplementary Units of Measure
 - Set if particular item charges have to be included in either Intrastat Amount or Intrastat Statistical Value or both
@@ -48,7 +51,8 @@ Additional Intrastat engine general parameters setup allows to:
 - Define on the Item Card additional Intrastat data – Statistic indication and Specific movement
 - Make special foreign Currency Exchange Rate setup and object for export setup for each Registration Country
  
-## POSTING SALES, PURCHASE OR TRANSFER TRANSACTION
+## Posting sales, purchase or transfer transaction
+
 To identify and enter attributes of sales transaction that will be used in Intrastat reporting user, follows these steps:
 - User verifies Intrastat data (Transaction Type, Specification and Transport Method, etc.) on the Foreign Trade tab. These were transferred to the document header from the relevant Customer or Vendor card and can be manually edited.
 - Intrastat Transaction field (non-editable) informs the user whether the particular transaction is qualified as Intrastat transaction.
@@ -59,7 +63,8 @@ To identify and enter attributes of sales transaction that will be used in Intra
 - During the posting, system transfers all Intrastat relevant information to Item Ledger Entry.
 - During the posting, system displays an error if any Intrastat field set as mandatory in Stat. Reporting Setup form is not filled in. This will prevent the user from posting the transaction.
 
-## PREPARING INTRASTAT JOURNAL
+## Preparing intrastat journal
+
 The Intrastat Journal contains the following new fields and functionalities:
 - Shipment Method Code
 - Statistic Indication
@@ -79,7 +84,8 @@ Fastest way to prepare the Intrastat Journal and make sure all the rules set in 
 - System makes sure the Supplementary Units of Measure are used while preparing Intrastat Journal lines
 - System makes sure the correct data source is used for Tariff No., Net Weight and Country/Region of Origin according to Stat. Reporting Setup
 
-## INTRASTAT REPORT EXPORT TO CSV FORMAT
+## Intrastat report export to csv format
+
 Export of Intrastat reports to .csv files according to local requirements (for INSTATDESK and INSTATONLINE applications) was added to Intrastat Journal.
 Export use object for export based on setup in Stat. Reporting Setup or Registration Country.
 

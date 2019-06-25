@@ -9,12 +9,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: Czech, Receivables, Payables, Finance, CZ, Cash
 ms.date: 10/06/2019
-ms.author: 
+ms.author: v-pejano
 ---
 
 # Receivables & Payables
 
-## CREDITS
+## Credits
+
 Company Customers are quite often, to some extent, company Vendors as well. In such situations, it is quite common for companies to compensate their Receivables and Payables.
 
 List of the main features of the Credits functionality: 
@@ -28,11 +29,13 @@ entries to be counted can be entered manually or automatically from the Credit C
  
 There is also a print of the Agreement on Mutual Settlement of Receivables and Payables under Czech legislation.
 
-## MULTIPLE INTEREST RATES FEATURE
+## Multiple interest rates feature
+
 The Finance Charge feature operates with several interest rates. The Finance Charge Terms table for multiple interest rates calculates the interest rates using multiple rates for the specified periods.
 This feature takes into account changes in the level of interest due to delays by the debtor. If the delay continues every calendar half year, then the level of interest from the delay dependents on the level of repo tariff specified by the local bank. The level of interest according to the repo tariff is applicable from the first day of the calendar half-year.
 
-## EXCHANGE RATES ADJUSTMENT FEATURE
+## Exchange rates adjustment feature
+
 The majority of companies in the Czech Republic request the following improvements to be implemented in Exchange Rates Adjustment: 
 - Ability to run Exchange Rates Adjustment for Customers, Vendors and Bank Accounts separately 
 - Ability to have Exchange Rates Adjustment batch post adjustments in detail as well as summarized per currency 
@@ -50,13 +53,16 @@ This feature in the standard version of Microsoft [!INCLUDE[d365fin](../../inclu
 The new calculation principle is implemented for fluctuation in the already adjusted exchange rate.
 The Adjust Exchange Rates batch job has been for Czech Advance Payments has also been extended.
 
-## MULTIPLE PAYABLES/RECEIVABLES ACCOUNTS
+## Multiple payables/receivables accounts
+
 Users often post transactions like bad debt or other types of Receivable/Payable transactions that need to be recorded in Customer and Vendor Ledgers, but at same time posted to different Receivable/Payable GL Account, other than the one specified on Customer or Vendor posting groups. The easiest way to enable such functionality is to allow users to change Customer and Vendor posting groups in the moment of posing a particular transaction.
 
-## CUSTOMERS/VENDORS RECONCILIATIONS
+## Customers/vendors reconciliations
+
 At the end of each fiscal year (or another period, when requested), companies send a statement of balances to Customers and Vendors in order to reconcile them with Customer and Vendor records. Customers and Vendors either confirm the statement or not and send it back with corrections, based on their own information. This feature allows users to prepare such report in [!INCLUDE[d365fin](../../includes/d365fin_md.md)].
 
-## SALES CORRECTING DOCUMENTS
+## Sales correcting documents
+
 According to the VAT law amendment, it is necessary to differentiate types of Sales Credit-Memo documents. This feature allows users to set up the following Credit Memo Types:
 - Corrective Tax Document
 - Internal Correction
@@ -64,22 +70,25 @@ According to the VAT law amendment, it is necessary to differentiate types of Sa
 
 This Credit Memo Type defines how is handled Postponed VAT on Sales Credit-Memo documents.
 
-## TAX CORRECTIVE DOCUMENTS FOR VAT
+## Tax corrective documents for vat
+
 According to the VAT law amendment (Act No 235/2004 Coll.; amended with Act No 47/2011 Coll.), companies must correct the VAT base and amount when they are changed due to different reason (financial discount, payment discount and other corrections).
 The printout of the correction document is named Tax Correction Documents.
 In the moment of paying the invoice with a defined payment discount, a Sales (or Service) Credit-Memo will be created. The document will reflect payment discount amount and calculated VAT Amount. The document can be printed in an ordinary way. The printout of the created Credit-Memo is a Tax Corrective Document. A Tax Corrective Document for payment discounts will be created if a payment discount is calculated based on an amount including VAT (it means the Adjust for Payment Disc. field is active in the General Ledger Setup form) and for those combinations which are active in the Adjust for Payment Discount fields in the VAT Posting Setup. In other cases payment discount will be calculated in an ordinary way.
 
-## CONTACTS ACTUALIZATION FROM ARES
+## Contacts actualization from ares
 
 ARES stands for Access to Register of Economic Subjects. ARES is an information system allowing a retrieval of information on economic entities registered in the Czech Republic.  
 The user can fill in ARES http to General Ledger Setup. 
 It is possible to run ARES actualization from Contact, Vendor and Customer Card. It is possible to search company and decide which fields can be updated in NAV (Name, Address, City, Post Code).
 
-## VENDOR TEMPLATES
+## Vendor templates
+
 New feature for creating templates for different group of vendors has been added. This feature copies similar functionality for customers – Customer templates. The Vendor Template feature makes creating vendors easy and decreases amount of mistakes.
 When the user creates a new Vendor, Apply Template function can be used. Some fields will be automatically filled in thanks to that. 
 
-## NEW DESIGN OF OUTPUT DOCUMENTS
+## New design of output documents
+
 New set of printed reports for company external documents was created.
 All documents have the same layout design (headers, footers, font type and size, etc.).
 Additionally to standardisation, NAV documents were extended by all requirements required by the Czech legislation: 
@@ -89,7 +98,7 @@ Additionally to standardisation, NAV documents were extended by all requirements
 - Naming of tax corrective documents based on Credit Memo type
 - Printout of documents related to advance payments
 
-### List of reports in the CZ document set:
+### List of reports in the cz document set:
 - Sales – Advance Letter CZ
 - Sales – Advance Invoice CZ
 - Sales – Advance Credit Memo CZ

@@ -9,12 +9,13 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: Czech, General function, Finance, CZ, Cash
 ms.date: 15/05/2019
-ms.author: 
+ms.author: v-pejano
 ---
 
 # General function
 
-## EXTENDED USER CONTROL
+## Extended user control
+
 The majority of companies in the Czech Republic request the following improvements to be imple-mented in User Setup and Control. 
 
 This feature in User Setup in combination with new User Setup Lines table allows to set and provide the following control:
@@ -34,12 +35,17 @@ This feature in User Setup in combination with new User Setup Lines table allows
 - Allow Complete Job
 - Allow Item Unapply functionality
 
-## NO. SERIES ENHANCEMENTS
+## No. series enhancements
+
 The majority of companies in the Czech Republic request the following improvements to be implemented in No. Series setup. 
+
 ### No. Series Mask
+
 New field for No. Series structure mask added to the No. Series table where the user defines a position structure of the number generated in this No. Series. This feature makes creating new No. Series lines for new fiscal year easy and decreases the amount of mistakes. 
 This Mask creates a new No. Series line using the new No. Series Mask Generator function.
+
 ### No. Series Links
+
 New No. Series Link table added. The table contains setup of No. Series links for various system functions:
 - Linked No. Series – what No. Series are to be used in linked activity if the source document has No. Series defined (e.g. Order Created from Quote, Order Created from Blanket Order, etc.)
 - Posting No. Series – what No. Series are to be used for posted document if the source document has No. Series defined (e.g. for posted sales/purchase document (Invoice, Credit Memo) posted from sales/purchase document (Order, Return Order, Invoice, Credit Memo), issued reminder from reminder, etc.)
@@ -49,6 +55,7 @@ New No. Series Link table added. The table contains setup of No. Series links fo
 - Receiving Wh. No. Series – what No. Series are to be used for Warehouse Receipt if the source document has No. Series defined (e.g. Warehouse Receipt from Transfer Order)
 
 ## Certificate Management
+
 Certificate management is designed as a general module for managing security certificates for communication and integration with other applications and web services. It can be used in various implementations (eg the EET solution within the application uses this module for communication with the financial management server).
 
 Examples of using a certificate:
