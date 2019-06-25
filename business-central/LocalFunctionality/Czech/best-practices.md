@@ -9,10 +9,10 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: Czech, CashDesk, Finance, CZ, Cash, SMALL REGULATORY FEATURES, BEST PRACTICES
 ms.date: 15/05/2019
-ms.author: 
+ms.author: v-pejano
 ---
 
-#  SMALL REGULATORY FEATURES AND BEST PRACTICES
+# Small regulatory features and best practices
 Smaller regulatory features and local practices of Czech companies apply:
 - Dimension for VAT Entry
 - VAT registration No. Check
