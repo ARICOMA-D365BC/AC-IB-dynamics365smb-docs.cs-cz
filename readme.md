@@ -15,7 +15,7 @@ Pro psaní nápovědy k addonům dodržujte náležitosti:
    - Nadpis, krátký popis a kroky jak danou činnosti udělat.
    - viz. vzorová nápověda [Helpdesku](business-central/AC-IB/ac-pp-helpdesk.md)
  - ### Vlastnosti a tagy
-    Každý dokumentu musí obsahovat hlavičku v následujícím tvaru
+    Každý dokumentu musí obsahovat hlavičku v následujícím tvaru:
 
     ```
     ---
