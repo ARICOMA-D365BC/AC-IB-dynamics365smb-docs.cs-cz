@@ -1,10 +1,11 @@
 # AC - Implementační báze - Nápověda
 
-Tento repozitář slouží k evidenci nápovědy D365 Business Central. 
+Tento repozitář slouží k evidenci nápovědy D365 Business Central.
 
 ## Obsah nápovědy
 
 Pro psaní nápovědy k addonům dodržujte náležitosti:
+
  - Název souboru nápovědy se bude skládat z:
    - ```ac-nazevpacku-nazevsouboru.md```
    - *(```ac-pp-helpdesk.md```)*
