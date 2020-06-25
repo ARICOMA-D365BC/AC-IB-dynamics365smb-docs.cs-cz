@@ -103,7 +103,6 @@ Nabídka tiskových sestav přiřazených modulu HelpDesk.
     - Číslo, Nový požadavek, Uzavřený požadavek
 3. Potvrďte pomocí OK.
 
-|       Viz také       |                       Seznam                       |
-| -------------------- | -------------------------------------------------- |
-| HelpDesk - Nastavení | [HelpDesk - nastavení](ac-pp-helpdeks-setup.md)    |
-| AC Productivity Pack | [AC Productivity Pack](ac-pp-productivity-pack.md) |
+## Viz také
+[HelpDesk - nastavení](ac-pp-helpdeks-setup.md)  
+[AC Productivity Pack](ac-pp-productivity-pack.md)
