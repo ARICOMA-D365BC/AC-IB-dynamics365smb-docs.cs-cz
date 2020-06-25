@@ -1,5 +1,5 @@
 ---
-Title: "HelpDesk - použití"
+Title: "HelpDesk"
 Description: 
 Author: AUTOCONT
 Date: 04/04/2019
@@ -7,7 +7,7 @@ Product: dynamics365-business-central
 Contentlocale: cs-cz
 ---
 
-# HelpDesk - Použití
+# HelpDesk
 
 Modul  Helpdesk slouží k centralizovanému zadávání, evidenci, zpracování a vyhodnocování různých požadavků uživatelů v systému Microsoft Dynamics NAV. Uživatelé zde mohou zadávat požadavky na servisní úkony, na poskytnutí podpory, úpravu nebo doplnění funkcionality, evidovat reklamace a podobně. Umožňuje také kategorizaci požadavků, nastavení priorit a řízené zpracování přiřazenými řešiteli. K dispozici je i historie uzavřených požadavků HelpDesku.
 
@@ -104,5 +104,5 @@ Nabídka tiskových sestav přiřazených modulu HelpDesk.
 3. Potvrďte pomocí OK.
 
 ## Viz také
-[HelpDesk - nastavení](ac-pp-helpdeks-setup.md)  
-[AC Productivity Pack](ac-pp-productivity-pack.md)
+[HelpDesk - nastavení](ac-helpdeks-setup.md)  
+[AC Productivity Pack](ac-productivity-pack.md)
