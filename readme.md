@@ -13,7 +13,7 @@ Pro psaní nápovědy k addonům dodržujte náležitosti:
    - Například: ```ac-helpdesk.md``` a ```ac-helpdesk-setup.md```
  - Struktura souborů nápovědy je:
    - Nadpis, krátký popis a kroky jak danou činnosti udělat.
-   - viz. vzorová nápověda [Helpdesku](business-central/AC-IB/ac-pp-helpdesk.md)
+   - viz. vzorová nápověda [Helpdesku](business-central/AC-ProductivityPack/ac-helpdesk.md)
  - ### Vlastnosti a tagy
     Každý dokumentu musí obsahovat hlavičku v následujícím tvaru:
 
