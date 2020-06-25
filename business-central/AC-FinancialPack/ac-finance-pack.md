@@ -27,6 +27,6 @@ Sada addonů pro rozšíření funkcionality financí pro D365 Business Central
 
 ## Viz také
 [AUTOCONT Solutions](index.md)  
-[Productivity Pack](ac-productivity-pack.md)  
-[AC - Slovenský legislativní balíček](ac-sk-legislative-pack.md)  
+[Productivity Pack](AC-ProductivityPack/ac-productivity-pack.md)    
+[AC - Slovenský legislativní balíček](AC-SK/ac-sk-legislative-pack.md)  
  

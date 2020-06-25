@@ -38,4 +38,4 @@ Sada addonů pro rozšíření funkcionalit provozní části systému pro D365 
 ## Viz také
 [AUTOCONT Solutions](index.md)  
 [Finance extensions Pack](ac-finance-pack.md)  
-[AC - Slovenský legislativní balíček](ac-sk-legislative-pack.md)   
+[AC - Slovenský legislativní balíček](AC-SK/ac-sk-legislative-pack.md)   
