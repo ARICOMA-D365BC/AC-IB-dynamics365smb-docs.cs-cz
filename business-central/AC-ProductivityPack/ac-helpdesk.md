@@ -104,5 +104,5 @@ Nabídka tiskových sestav přiřazených modulu HelpDesk.
 3. Potvrďte pomocí OK.
 
 ## Viz také
-[HelpDesk - nastavení](ac-helpdeks-setup.md)  
+[HelpDesk - nastavení](ac-helpdesk-setup.md)  
 [AC Productivity Pack](ac-productivity-pack.md)
