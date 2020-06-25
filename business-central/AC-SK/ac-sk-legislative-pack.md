@@ -26,6 +26,6 @@ ms.author: v-makune
 
 
 ## Viz také 
-[AUTOCONT Solutions](index.md)  
-[Finance extensions Pack](ac-finance-pack.md)  
-[Productivity Pack](ac-productivity-pack.md)
+[AUTOCONT Solutions](../index.md)  
+[Finance extensions Pack](../AC-FinancialPack/ac-finance-pack.md)  
+[Productivity Pack](../AC-ProductivityPack/ac-productivity-pack.md)
