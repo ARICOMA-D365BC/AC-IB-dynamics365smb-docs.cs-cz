@@ -1,5 +1,5 @@
-# [AUTOCONT ADDON PACK](index.md)
-## [Finance extensions Pack](ac-finance-pack.md)
+# [AUTOCONT Řešení](index.md)
+## [Financial  Pack](ac-finance-pack.md)
 ### [Sada rozšíření aplikace](ac-controling-basic.md)
 ### [Insolvenční rejstřík](ac-insolvence-register.md)
 ### [Faktoring](ac-factoring.md)
@@ -59,4 +59,4 @@
 ### [Nastavení - Evidence nářadí a pomůcek](ac-production-tools-setup.md)
 ### [Nastavení - Zásilky](ac-parcels-setup.md)
 ### [Nastavení - EDI konektor základ](ac-edi-connector-basic-setup.md)
-## [SK Legislativní balíček](ac-sk-legislative-pack.md)
+## [Slovak Legistive Pack](ac-sk-legislative-pack.md)
