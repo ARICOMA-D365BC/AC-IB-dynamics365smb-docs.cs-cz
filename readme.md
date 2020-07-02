@@ -7,13 +7,13 @@ Tento repozitář slouží k evidenci nápovědy D365 Business Central.
 Pro psaní nápovědy k addonům dodržujte náležitosti:
 
  - Název souboru nápovědy se bude skládat z:
-   - ```ac-nazevpacku-nazevsouboru.md```
-   - *(```ac-pp-helpdesk.md```)*
+   - ```ac-nazevsouboru.md```
+   - *(```ac-helpdesk.md```)*
  - Pro každý addon vzniknou dva soubory, jeden pro popis a použití, druhý pro nastavení.
-   - Například: ```ac-pp-helpdesk.md``` a ```ac-pp-helpdesk-setup.md```
+   - Například: ```ac-helpdesk.md``` a ```ac-helpdesk-setup.md```
  - Struktura souborů nápovědy je:
    - Nadpis, krátký popis a kroky jak danou činnosti udělat.
-   - viz. vzorová nápověda [Helpdesku](business-central/AC-IB/ac-pp-helpdesk.md)
+   - viz. vzorová nápověda [Helpdesku](business-central/AC-ProductivityPack/ac-helpdesk.md)
  - ### Vlastnosti a tagy
     Každý dokumentu musí obsahovat hlavičku v následujícím tvaru:
 
@@ -42,8 +42,8 @@ Pro psaní nápovědy k addonům dodržujte náležitosti:
 
 ```
 ## Viz také
-[HelpDeks - Nastavení](business-central/AC-IB/ac-pp-helpdesk-setup.md)  
-[AC Productivity pack](business-central/AC-IB/ac-pp-productivity-pack.md)
+[HelpDeks - Nastavení](business-central/AC-IB/ac-helpdesk-setup.md)  
+[AC Productivity pack](business-central/AC-IB/ac-productivity-pack.md)
 ```
 
 - Pro základní editaci je zde [šablona](template.md).
