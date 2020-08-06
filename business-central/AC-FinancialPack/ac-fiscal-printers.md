@@ -26,4 +26,4 @@ Určeno pro detailní informace, pokud by se exitovala ještě hlubší podkapit
 **Viz také**
 
 [Nastavení - Fiskální tiskárny](ac-fiscal-printers-setup.md)  
-[Finance extensions Pack](ac-finance-pack.md)  
+[Financial Pack](ac-finance-pack.md)  

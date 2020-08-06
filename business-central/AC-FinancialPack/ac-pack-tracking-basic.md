@@ -26,4 +26,4 @@ Určeno pro detailní informace, pokud by se exitovala ještě hlubší podkapit
 **Viz také**
 
 [Nastavení - Evidence obalů základ (EKOKOM)](ac-pack-tracking-basic-setup.md)  
-[Finance extensions Pack](ac-finance-pack.md)  
+[Financial Pack](ac-finance-pack.md)  

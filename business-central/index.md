@@ -22,6 +22,6 @@ Moduly a addony pro D365 Business Central pro rozšíření funkcí systému.
  
 
 ## Viz také
-[Finance extensions Pack](AC-FinancialPack/ac-finance-pack.md)  
+[Financial Pack](AC-FinancialPack/ac-finance-pack.md)  
 [Productivity Pack](AC-ProductivityPack/ac-productivity-pack.md)  
 [SK Legislativní balíček](AC-SK/ac-sk-legislative-pack.md)

@@ -27,4 +27,4 @@ Určeno pro detailní informace, pokud by se exitovala ještě hlubší podkapit
 **Viz také**
 
 [Nastavení - Evidence vratných obalů (Vratné obaly)](ac-pack-tracking-return-packing-setup.md)  
-[Finance extensions Pack](ac-finance-pack.md)  
+[Financial Pack](ac-finance-pack.md)  

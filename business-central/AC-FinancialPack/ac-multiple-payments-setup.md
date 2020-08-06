@@ -25,5 +25,5 @@ Určeno pro detailní informace, pokud by se exitovala ještě hlubší podkapit
 
 **Viz také**
 
-[Více úhad](ac-multiple-payments-setup.md)  
-[Finance extensions Pack](ac-finance-pack.md)  
+[Více úhad](ac-multiple-payments.md)  
+[Financial Pack](ac-finance-pack.md)  
