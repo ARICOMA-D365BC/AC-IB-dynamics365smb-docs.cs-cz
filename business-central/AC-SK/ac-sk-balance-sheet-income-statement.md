@@ -11,7 +11,7 @@ ms.search.keywords: Slovak, , additional functions, sale, VAT
 ms.author: v-makune
 ---
 
-# Rozvaha a výkaz zisku a ztrát - SK
+# Rozvaha a výkaz zisku a ztrát - SK xx
 
 Pro potřeby výkazů slovenské legislativy je v systému D365 BC využívána standartní funkčnost účetních schémat doplněná o úpravy, které umožňují export jednotlivých účetních výkazů na portál finanční správy SR.
 
