@@ -11,41 +11,32 @@ ms.search.keywords: Slovak, , additional functions, sale, VAT
 ms.author: v-makune
 ---
 
-# Rozvaha a výkaz zisku a ztrát - SK
+# Export účetní závěrky - SK
 
-Pro potřeby výkazů slovenské legislativy je v systému D365 BC využívána standartní funkčnost účetních schémat doplněná o úpravy, které umožňují export jednotlivých účetních výkazů na portál finanční správy SR.
+Slovenské statutární výkazy, Rozvaha a Výkaz zisků a ztrát, se dle požadavku Finanční správy SR importují sloučené, v jednom .xml souboru.
 
-## Rozlišení schéma pro vybranou zemi
+Pro zajištění tohoto požadavku je v D365 BC použita standardní funkčnost účetních schémat rozšířena o dodatečné úpravy. Samotný export pracuje s uloženými výsledky účetních schémat.
 
-Jednotlivé řádky výkazů, rozvaha a výkaz zisků a ztrát, se definují v Účetních schématech. Pro každý výkaz je nadefinované samostatné schéma a k příslušnému účetnímu schématu je nadefinované rozložení sloupců.
-
-V Účetních schématech lze vybrat pro jakou legislativu je schéma vytvořeno v poli **Přiřazeno** legislativě. Pole Přiřazeno legislativě slouží k oddělení SK a CZ výkazů prostřednictvím filtru. 
+## Uložení výsledků účetních schémat pro export
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Účetní schémata** a poté vyberte související odkaz.
-2. Ve sloupci **Přiřazeno legislativě** se bude vyplněno **SK**
-
-## Mapování souborů finančního schématu
-
-Pro export finančních výkazů do xml musí mít jednotlivé řádky nastaveno mapování v pomocné tabulce podle výkazů stanovených Finanční správou SR. Je potřebné namapovat každé porovnávací období a řádek/sloupec samostatně. To znamená, že pro každý řádek výkazu je nastavené mapování běžného a minulého období.
-
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Účetní schémata** a poté vyberte související odkaz.
-2. Na kartě **Účetní schémata** zvolte akci **Proces** a funkci **Upravit účetní schéma**.
-3. Na kartě vybraného **Účetního schématu** vyberte tlačítko **Akce** a poté vyberte funkci **Mapování souborů**.
-4. Na kartě **Mapování souborů účetního schématu** nastavte pole dle potřeby.
-5. Po úpravách kartu zavřete.
-
-## Export finančního schématu
-
-Pro samotný export účetního schématu lze použít sandardní funkčnost sytému.
-
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Účetní schémata** a poté vyberte související odkaz.
-2. Na kartě **Účetní schémata** zvolte akci **Proces** a funkci **Upravit účetní schéma**.
-3. Na kartě vybraného **Účetního schématu** vyberte tlačítko **Akce** a poté vyberte funkci **Uložit výsledky** nebo **Výsledky**.
+2. Na kartě **Účetní schémata** zvolte akci **Proces** a funkci **Náhled**.
+3. Zadejte požadované filtry jako Filtr data, případně další filtry, vyberte tlačítko **Akce** a poté vyberte funkci **Výsledky** a **Uložit výsledky**.
 4. V okně **Uložit výsledek úč. schématu** vyplňte pole dle potřeby.
-5. Potvrďte pomocí tlačítko **OK**.
+5. Potvrďte pomocí tlačítka **OK**.
 
 Výsledky účetních schémat se ukládají do seznamu v chronologickém sledu jejich vzniku. Na označení výsledků výkazů je vytvořena číselná řada nastavená v Nastavení financí.
 
-## Viz také 
+## Export  do formátu xml
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Export slouč.účt.schémat do XML** a poté vyberte související odkaz.
+2. Na kartě **Export slouč.účt.schémat do XML** vyplňte požadovaná pole. Vyberte Kód výsledku v sekci pro Rozvahu a Výkaz zisků a ztrát.
+3. Potvrďte pomocí tlačítka **OK**.
+
+Pak již stačí výsledný soubor naimportovat do elektronického formuláře finanční správy.
+
+## Viz také
+
 [AUTOCONT Řešení](../index.md)  
-[SK Legislativní balíček](ac-sk-legislative-pack.md)
+[SK Legislativní balíček](ac-sk-legislative-pack.md)   
+[Export účetní zavěrky - SK - nastavení](ac-sk-balance-sheet-income-statement-setup.md)
