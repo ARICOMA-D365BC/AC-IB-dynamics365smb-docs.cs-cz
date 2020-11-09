@@ -17,7 +17,7 @@ Seznam subjektů, u kterých nastaly důvody pro zrušení registrace platitele 
 
 https://www.financnasprava.sk/sk/elektronicke-sluzby/verejne-sluzby/zoznamy/exporty-z-online-informacnych
 
-Uživatel si uloží soubor **Zoznam platiteľov dane z pridanej hodnoty**"**, u kterých nastaly důvody na zrušení registrace pro DPH do zip souboru.
+Uživatel si uloží soubor **Zoznam platiteľov dane z pridanej hodnoty**, u kterých nastaly důvody na zrušení registrace pro DPH do zip souboru.
 
 ## Import souboru
 
