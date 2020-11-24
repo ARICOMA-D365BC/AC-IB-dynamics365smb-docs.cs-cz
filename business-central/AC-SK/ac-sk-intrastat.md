@@ -13,7 +13,17 @@ ms.author: v-makune
 
 # Výkaz Intrastat
 
-Na vytvoření výkazu Intrastat se používá standartní funkcionalita. Pro export se používá report 52068890. Pro zajištění správného exportu pro SK je nutno mít v **Nastavení financí** v poli **Legislativa** hodnotu SK.
+Pro účely generování výkazu Intrastat se používá standartní funkcionalita.
+
+Rozdíl oproti standardní funkčnosti je v struktuře souboru csv generovaném pro účely slovenského vykazování.
+
+## Nastavení financí
+
+Pro aktivování slovenských funkčností využijte následující postup:
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení financí** a poté vyberte související odkaz.
+2. Na kartě **Nastavení financí** je nutné vybrat do pole **Legislativa** hodnotu **SK**.
+3. Potvrďte pomocí tlačítka **OK**.
 
 ## Viz také 
 [AUTOCONT Řešení](../index.md)  
