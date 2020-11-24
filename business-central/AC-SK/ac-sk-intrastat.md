@@ -25,6 +25,7 @@ Pro aktivování slovenských funkčností využijte následující postup:
 2. Na kartě **Nastavení financí** je nutné vybrat do pole **Legislativa** hodnotu **SK**.
 3. Potvrďte pomocí tlačítka **OK**.
 
-## Viz také 
+## Viz také
+
 [AUTOCONT Řešení](../index.md)  
 [SK Legislativní balíček](ac-sk-legislative-pack.md)

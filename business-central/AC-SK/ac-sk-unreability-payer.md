@@ -13,7 +13,7 @@ ms.author: v-makune
 
 # Institut nespolehlivosti plátce
 
-Funkcionalita zahrnuje systémové kontroly, které upozorňují uživatele na nespolehlivého plátce DPH při zpracování dokladů. 
+Funkcionalita zahrnuje systémové kontroly, které upozorňují uživatele na nespolehlivého plátce DPH při zpracování dokladů.
 
 Seznam subjektů, u kterých nastaly důvody pro zrušení registrace platitele daně z přidané hodnoty, je dostupný na webových stránkách Finanční správy:
 
@@ -39,6 +39,7 @@ Při vytvoření nové karty Zákazníka / Dodavatele je potřebné tabulku Polo
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Položky nespolehlivosti plátce** a poté vyberte související odkaz.
 2. Na stránce **Položky nespolehlivosti plátce** vyberte akci **Kontroluj všechny položky.**
 
-## Viz také 
+## Viz také
+
 [AUTOCONT Řešení](../index.md)  
 [SK Legislativní balíček](ac-sk-legislative-pack.md)

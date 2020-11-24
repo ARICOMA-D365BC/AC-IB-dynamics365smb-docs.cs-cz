@@ -18,8 +18,13 @@ ms.author: v-makune
 |Viz|Také|
 |-|-|
 |Export statutárních výkazů - Rozvaha a Výkaz zisků a ztrát.|[Rozvaha a výkaz zisku zrát](ac-sk-balance-sheet-income-statement.md)|
-|Export Výkazu DPH.|[Výkaz DPH](ac-sk-vat.md)|
-|Nastavení exportu VIES a Intrastat.|[VIES](ac-sk-intrastat.md)|
+|Nastavení exportu statutárních výkazů - Rozvaha a Výkaz zisků a ztrát.|[Statutární výkazy - nastavení](ac-sk-balance-sheet-income-statement-setup.md)|
+|Zpracování a export Výkazu DPH.|[Výkaz DPH](ac-sk-vat-statement-export.md)|
+|Nastavení Výkazu DPH.|[Výkaz DPH - nastavení](ac-sk-vat-statement-setup.md)|
+|Zpracování a export Kontrolního výkazu DPH.|[Kontrolní výkaz DPH](ac-sk-vat-check-report-export.md)|
+|Nastavení Kontrolního výkazu DPH.|[Kontrolní výkaz DPH - nastavení](ac-sk-vat-check-report-setup.md)|
+|Export Intrastatu.|[Intrastat](ac-sk-intrastat.md)|
+|Export Souhrnného hlášení.|[VIES](ac-sk-vies.md)|
 |Nastavení SEPA platebního styku.|[SEPA platby](ac-sk-sepa.md)|
 |Import dat pro podnikatelské subjekty, u kterých nastaly důvody pro zrušení registrace platitele daně z přidané hodnoty.|[Institut nespolehlivosti plátce](ac-sk-unreability-payer.md)|
 |Odsouhlasení salda zákazníka a dodavatele.|[Odsouhlasení salda](ac-sk-balance-reconciliation.md)|
