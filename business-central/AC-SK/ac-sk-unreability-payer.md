@@ -13,11 +13,13 @@ ms.author: v-makune
 
 # Institut nespolehlivosti plátce
 
+Funkcionalita zahrnuje systémové kontroly, které upozorňují uživatele na nespolehlivého plátce DPH při zpracování dokladů. 
+
 Seznam subjektů, u kterých nastaly důvody pro zrušení registrace platitele daně z přidané hodnoty, je dostupný na webových stránkách Finanční správy:
 
 https://www.financnasprava.sk/sk/elektronicke-sluzby/verejne-sluzby/zoznamy/exporty-z-online-informacnych
 
-Uživatel uloží soubor Zoznam platiteľov dane z pridanej hodnoty, u kterých nastali dôvody na zrušenie registrácie pre DPH.zip (csv).
+Soubor "Zoznam platiteľov dane z pridanej hodnoty, u kterých nastali dôvody na zrušenie registrácie pre DPH.zip (csv)" je potřeba uložit a naimportovat do systému.
 
 ## Import souboru
 
@@ -32,7 +34,7 @@ V případě, že se zákazník / dodavatel v uvedeném v seznamu nenachází, z
 
 ## Aktualizace nespolehlivosti plátce
 
-Při vytvoření nové karty Zákazníka / Dodavatele je potřebné tabulku Položky nespolehlivosti aktualizovat
+Při vytvoření nové karty Zákazníka / Dodavatele je potřebné tabulku Položky nespolehlivosti aktualizovat.
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Položky nespolehlivosti plátce** a poté vyberte související odkaz.
 2. Na stránce **Položky nespolehlivosti plátce** vyberte akci **Kontroluj všechny položky.**
