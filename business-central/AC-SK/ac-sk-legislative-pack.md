@@ -21,8 +21,8 @@ ms.author: v-makune
 |Export Výkazu DPH.|[Výkaz DPH](ac-sk-vat.md)|
 |Nastavení exportu VIES a Intrastat.|[VIES](ac-sk-intrastat.md)|
 |Nastavení SEPA platebního styku.|[SEPA platby](ac-sk-sepa.md)|
-|Import a zpracování podnikatelských subjektů, u kterých nastaly důvody pro zrušení registrace platitele daně z přidané hodnoty.|[Institut nespolehlivosti plátce](ac-sk-unreability-payer.md)|
-|Odsouhlasení salda zákazníka a dodavatele.|[Daňové odpisy]
+|Import dat pro podnikatelské subjekty, u kterých nastaly důvody pro zrušení registrace platitele daně z přidané hodnoty.|[Institut nespolehlivosti plátce](ac-sk-unreability-payer.md)|
+|Odsouhlasení salda zákazníka a dodavatele.|[Odsouhlasení salda](ac-sk-balance-reconciliation.md)|
 |Uplatnění daňových odpisů dle počtu kalendárných měsíců dle Zákona o dani z příjmů.|[Daňové odpisy](ac-sk-tax-depreciation.md)|
 
 ## Viz také

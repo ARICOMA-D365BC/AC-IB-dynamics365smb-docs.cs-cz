@@ -72,6 +72,9 @@ V Nastavení financí je možné aktivovat systémové kontroly při účtován�
 5. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení financí** a poté vyberte související odkaz.
 6. Na kartě **Nastavení financí** definujte pole **Výše základu DPH pro tuzemské samozdanění** a **Datum platnosti DPH pro tuzemské samozdanění**.
 7. Potvrďte pomocí tlačítka **OK**.
+8. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení účtování DPH** a poté vyberte související odkaz.
+9. Na kartě **Nastavení účtování DPH** můžete nastavit kontroly pro tuzemské samozdanění na jednotlivých kombinacích DPH účtoskupin v poli **Kontrola PDP**.
+10. Potvrďte pomocí tlačítka **OK**.
 
 ## Nastavení kódů původu pro interní opravní doklady
 

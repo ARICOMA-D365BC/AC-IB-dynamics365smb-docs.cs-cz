@@ -13,7 +13,7 @@ ms.author: v-makune
 
 # Výkaz Intrastat
 
-Na vytvoření výkazu Intrastat se používá standartní funkcionalita. Pro export se používá report 52068890. Dle nastavení ve financích v poli Legislativa je rozlišen konkrétní export pro SK a CZ.
+Na vytvoření výkazu Intrastat se používá standartní funkcionalita. Pro export se používá report 52068890. Pro zajištění správného exportu pro SK je nutno mít v **Nastavení financí** v poli **Legislativa** hodnotu SK.
 
 ## Viz také 
 [AUTOCONT Řešení](../index.md)  
