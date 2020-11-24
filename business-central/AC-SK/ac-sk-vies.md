@@ -13,7 +13,7 @@ ms.author: v-makune
 
 # Souhrnný výkaz (VIES)
 
-Na vytvoření Souhrnného výkazu je použita standartní funkcionalita. 
+Na vytvoření Souhrnného výkazu je použita standartní funkcionalita.
 
 Rozdíl oproti standardní funkčnosti je v struktuře souboru XML generovaném pro účely slovenského vykazování.
 
@@ -38,6 +38,7 @@ Souhrnný Výkaz to je **52068870**.
 6. V poli **Přiřazeno legislativě** vyberte hodnotu **SK**.
 7. Potvrďte pomocí tlačítka **OK**.
 
-## Viz také 
+## Viz také
+
 [AUTOCONT Řešení](../index.md)  
 [SK Legislativní balíček](ac-sk-legislative-pack.md)

@@ -18,9 +18,11 @@ Podle Zákona o dani z príjmov č. 595/2003 Z. z  může daňovník uplatnit ro
 Pro výpočet daňových odpisů je použita standardní funkcionalita systému rozšířená o funkčnost krácení odpisů v 1. roce dle slovenské legislativy. Pro aktivování funkčnosti je nutné nastavení.
 
 ## Nastavení krácení odpisů v 1. roce
+
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení DM** a poté vyberte související odkaz.
 2. Zaškrtněte pole **Krácení odpisů v 1.roce**.
 
-## Viz také 
+## Viz také
+
 [AUTOCONT Řešení](../index.md)  
 [SK Legislativní balíček](ac-sk-legislative-pack.md)

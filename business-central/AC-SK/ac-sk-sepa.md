@@ -16,6 +16,7 @@ ms.author: v-makune
 Pro zpracování příkazu pro úhradu či výpisu ve formátu SEPA je využita standartní funkčnost systému.
 Nastavení SEPA platebního styku je **Nastavení exportu/importu banky**.
 
-## Viz také 
+## Viz také
+
 [AUTOCONT Řešení](../index.md)  
 [SK Legislativní balíček](AC-SK/ac-sk-legislative-pack.md)
