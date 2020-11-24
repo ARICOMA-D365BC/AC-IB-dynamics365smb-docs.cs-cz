@@ -27,6 +27,7 @@ Funkcionalita umožňuje zpracování Kontrolního výkazu DPH a jeho export do 
 *Pole **Upozornění** – upozornění na chybějící údaje u jednotlivých dokladů načítaných do KV (jen informativní údaj)*
 
 ## Úpravy Kontrolního výkazu DPH
+
 Uživatelsky je možné otevřít jednotlivé řádky kontrolního výkazu k editaci. Po ukončení úprav je potřebné položky v KV přepočítat.
 
 1. Na Kartě kontrolního výkazu DPH zvolte funkci **Úpravy** pro editaci.
@@ -38,10 +39,10 @@ Uživatelsky je možné otevřít jednotlivé řádky kontrolního výkazu k edi
 2. Poté zvolte **Export do XML** a dotaz systému potvrďte **Ano**.
 
 ## Uzavření Kontrolního výkazu DPH
+
 Kontrolní výkaz je nutné uzavřít až po kontrole údajů. Po uzavření kontrolního výkazu systém zablokuje opětovné načítání dat do formuláře. Údaje vygenerované před jeho uzavřením už není možno změnit ani doplnit. Uzavřený formulář není možné vymazat ze seznamu vygenerovaných KV. Po uzavření formuláře položky v tabulce Položka DPH mají zaškrtnuté pole Uzavřeno pro kontrolní výkaz.
 
 1. Na Kartě kontrolního výkazu DPH zvolte funkci **Uzavřít** pro jeho uzavření.
-
 
 ## Viz také
 
