@@ -22,9 +22,11 @@ Funkcionalita umožňuje zpracování Kontrolního výkazu DPH a jeho export do 
 4. Pro vyplnění řádků výkazu spusťte funkci  **Naplň řádky výkazu**.
 5. Pro jednoduchou kontrolu zvolte funkci **Náhled**.
 
-*V řádcích Kontrolního výkazu, pole **Detailní položka** – funkce zaškrtávacího pole spočívá v tom, že jakmile je hodnota ve sloupci ANO, položku do kontrolního výkazu nevybere (nepřenese se do xml a nereportuje se na Finanční správu). Při uzavření KV se uzavřou i položky, které budou mít v tomto poli hodnotu ANO.*
+> [!NOTE]
+> Pole **Detailní položka** v řádcích KV slouží pro systémové označení řádku. Pokud má hodnotu ANO  položku do kontrolního výkazu nevybere (nepřenese se do xml a nereportuje se na Finanční správu). Při uzavření KV se uzavřou i položky, které budou mít v tomto poli hodnotu ANO.
 
-*Pole **Upozornění** – upozornění na chybějící údaje u jednotlivých dokladů načítaných do KV (jen informativní údaj)*
+> [!NOTE]
+> Pole **Upozornění** v řádcích KV je informativní pole, které upozorňuje na chybějící údaje u jednotlivých dokladů načítaných do KV.
 
 ## Úpravy Kontrolního výkazu DPH
 
