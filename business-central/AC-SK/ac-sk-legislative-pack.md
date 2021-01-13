@@ -26,6 +26,7 @@ ms.author: v-makune
 |Export Intrastatu.|[Intrastat](ac-sk-intrastat.md)|
 |Export Souhrnného hlášení.|[VIES](ac-sk-vies.md)|
 |Nastavení SEPA platebního styku.|[SEPA platby](ac-sk-sepa.md)|
+|Nastavení posunu datumu směnných kurzů ECB.|[ECB](ac-sk-ECB.md)|
 |Import dat pro podnikatelské subjekty, u kterých nastaly důvody pro zrušení registrace platitele daně z přidané hodnoty.|[Institut nespolehlivosti plátce](ac-sk-unreability-payer.md)|
 |Odsouhlasení salda zákazníka a dodavatele.|[Odsouhlasení salda](ac-sk-balance-reconciliation.md)|
 |Uplatnění daňových odpisů dle počtu kalendárných měsíců dle Zákona o dani z příjmů.|[Daňové odpisy](ac-sk-tax-depreciation.md)|
