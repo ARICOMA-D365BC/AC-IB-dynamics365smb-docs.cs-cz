@@ -37,4 +37,3 @@ Data použitá do výkazu lze filtrovat, např. podle Zúčtovacího data, Kódu
 ## Viz také
 [Nastavení - Evidence obalů základ (EKOKOM)](ac-pack-tracking-basic-setup.md)  
 [Financial Pack](ac-finance-pack.md)  
-[Výpočet, úprava a reklasifikace zásob pomocí deníků](inventory-how-count-adjust-reclassify.md)

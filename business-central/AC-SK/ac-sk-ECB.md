@@ -27,4 +27,4 @@ Do tabulky směnných kurzů se naimportuje kurz s datumem platnosti posunutým 
 ## Viz také
 
 [AUTOCONT Řešení](../index.md)  
-[SK Legislativní balíček](AC-SK/ac-sk-legislative-pack.md)
+[SK Legislativní balíček](ac-sk-legislative-pack.md)

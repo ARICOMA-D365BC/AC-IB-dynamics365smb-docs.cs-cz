@@ -64,4 +64,3 @@ V každém založeném **Výkazu obalů** lze definovat výjimky, specifikované
 ## Viz také
 [Evidence obalů základ (EKOKOM)](ac-pack-tracking-basic.md)  
 [Financial Pack](ac-finance-pack.md)  
-[Migrace zákaznických dat](admin-migrate-customer-data)

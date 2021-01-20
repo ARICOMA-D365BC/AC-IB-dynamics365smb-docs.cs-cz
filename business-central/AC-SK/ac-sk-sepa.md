@@ -19,4 +19,4 @@ Nastavení SEPA platebního styku je **Nastavení exportu/importu banky**.
 ## Viz také
 
 [AUTOCONT Řešení](../index.md)  
-[SK Legislativní balíček](AC-SK/ac-sk-legislative-pack.md)
+[SK Legislativní balíček](ac-sk-legislative-pack.md)

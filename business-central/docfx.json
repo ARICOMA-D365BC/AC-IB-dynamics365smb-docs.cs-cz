@@ -1,10 +1,10 @@
+
 {
   "build": {
     "content": [
       {
         "files": [
-          "**/*.md",
-          "**/*.yml"
+          "**/*.md"
         ],
         "exclude": [
           "**/obj/**",
@@ -45,10 +45,15 @@
       "titleSuffix": "Business Central",
       "breadcrumb_path": "/dynamics365/business-central/breadcrumb/toc.json",
       "ms.service": "dynamics365-business-central",
+      "__global.improveThisDoc": "Vylepšit dokument",
+      "__global.inThisArticle": "V této sekci",
       "extendBreadcrumb": true
     },
     "fileMetadata": {},
-    "template": [],
+    "template": [
+      "MK",
+      "templates/MK"
+    ],
     "dest": "d365businesscentral",
     "markdownEngineName": "markdig"
   }
