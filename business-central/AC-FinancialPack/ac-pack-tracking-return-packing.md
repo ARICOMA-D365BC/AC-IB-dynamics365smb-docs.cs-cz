@@ -14,16 +14,6 @@ ms.author: AC MartinKunes
 # Evidence vratných obalů (Vratné obaly)
 
 
-Jednoduchý popis vybrané kapitoly tématu.
-
-## Podkapitola tématu
-
-Detailní popis podkapitol. Může zde být i postup nastavení nebo použití. Také se nadpisy kde se nachází jeden # se přenáší do náhledové tabulky "In this article"
-
-### Detail podkapitoly
-
-Určeno pro detailní informace, pokud by se exitovala ještě hlubší podkapitola.
-
 **Viz také**
 
 [Nastavení - Evidence vratných obalů (Vratné obaly)](ac-pack-tracking-return-packing-setup.md)  

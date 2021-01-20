@@ -40,13 +40,13 @@ Pole formuláře Definice prvků výkazu obalů:
 <br/>
 
 Lze tak například vytvořit tabulku s těmito hodnotami:
-|Kód pro vykazování| Pozice|Kód|Popis|Umístění ve výkazu|
-|----------|----------|----------|----------|----------|
-|EKO-KOM|P1|1|Obaly pro jedno použití||
-|EKO-KOM|P1|2|Obaly pro opakované použití||
-|EKO-KOM|P2|1|zpoplatněné||
-|EKO-KOM|P2|2|předplacené||
-|EKO-KOM|P2|3|neplacené||
+|Kód pro vykazování| Pozice|Kód|Popis|
+|----------|----------|----------|----------|
+|EKO-KOM|P1|1|Obaly pro jedno použití|
+|EKO-KOM|P1|2|Obaly pro opakované použití|
+|EKO-KOM|P2|1|zpoplatněné|
+|EKO-KOM|P2|2|předplacené|
+|EKO-KOM|P2|3|neplacené|
 
 ## Založení prvků ve Výkazu obalů (definice vlastního výkazu)
 
@@ -55,7 +55,7 @@ Definice vlastního výkazu se provádí založením prvků Výkazu obalů. Pomo
 Záznam stránky **Prvky výkazu obalů** tak může vypadat třeba takto:
 |Kód pro vykazování|Kód|Popis|
 |---------------|---------------|---------------|
-|EKO-KOM|13|Obaly pro jedno použití neplacené||
+|EKO-KOM|13|Obaly pro jedno použití neplacené|
 
 ## Založení výjimek ve výkazu obalů
 
