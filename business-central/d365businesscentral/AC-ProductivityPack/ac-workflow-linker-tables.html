@@ -8,7 +8,7 @@
     <title>Workflow linker tables | Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Workflow linker tables | Microsoft Docs ">
-    <meta name="generator" content="docfx 2.56.4.0">
+    <meta name="generator" content="docfx 2.55.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -69,6 +69,13 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="workflow---kontrolované-tabulky">WorkFlow - kontrolované tabulky</h1>
 
+<p>Add-on modul Workflow – kontrolované tabulky rozšiřuje funkčnost add-on modulu Workflow o možnost kontroly záznamů nebo polí v tabulkách svázaných s tabulkou, která je řízena workflow.
+Stav workflow je pak povoleno změnit pouze pokud všechny kontroly v rámci kontrolovaných tabulek vyhovují. Praktické použití může být například toto:</p>
+<ul>
+<li>Pokud je použito workflow na dokladu s hlavičkou a řádky, například na Prodejní objednávce, lze kontrolovat, zda k hlavičce existují nějaké řádky, nebo řádky nějakého typu nebo obsahu. Např. že objednávka obsahuje alespoň jeden řádek se zbožím, nebo že má na všech řádcích vyplněnu cenu nebo lokaci nebo glob. dimenzi, apod.</li>
+<li>Lze kontrolovat, zda zdrojový záznam k nějakému poli v tabulce s použitým workflow obsahuje v dalších polích potřebná data – např. je-li na hlavičce dokladu vyplněno pole Kód prodejce, pak zkontroluje zda-li má tento prodejce vyplněn email.</li>
+</ul>
+<p><img src="media/workflow_tables.png" alt="WorkFlow - kontrolované tabulky" title="WorkFlow - kontrolované tabulky"></p>
 <p><strong>Viz také</strong></p>
 <p><a href="ac-workflow-linker-tables-setup.html">WorkFlow - kontrolované tabulky - nastavení</a><br>
 <a href="ac-productivity-pack.html">Productivity Pack</a></p>
@@ -80,7 +87,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs-pr.cs-cz/blob/master/business-central/AC-ProductivityPack/ac-workflow-linker-tables.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/AC-ProductivityPack/ac-workflow-linker-tables.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
                   </li>
                 </ul>
               </div>

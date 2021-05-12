@@ -12,6 +12,8 @@ ms.author: v-makune
 ---
 # Elektronická fakturace ISDOC
 
+Viz. popis Elektronická fakturace – rozdíl pouze v tom, jak se faktura odešle.
+
 **Viz také**
 
 [Elektronická fakturace - Nastavení](ac-elektronic-dokuments-setup.md)  

@@ -15,7 +15,7 @@ ms.author: v-makune
 
 Microsoft Dynamics 365 Business Central je moderní informační systém pro malé a středně velké společnosti, které hledají jednoduché a snadno přizpůsobitelné řešení s komplexním pokrytím jejich potřeb a s intuitivním uživatelským prostředím. Nabízí zvýšení produktivity a konkurenceschopnosti, šetří vstupní investice a snižuje starosti spojené s provozem a bezpečností.
 
-![Microsoft Dynamics 365 Business Central](media/ACD365BC_SaaS.png "Microsoft Dynamics 365 Business Central")
+![Microsoft Dynamics 365 Business Central](media/ACD365BC_SaaS_1280x720.png "Microsoft Dynamics 365 Business Central")
 
 Data jsou dostupná kdykoliv a odkudkoliv. Provoz informačního systému je možný v cloudu nebo ve vlastním prostředí. On-line provoz systému v cloudu má zásadní výhodu v nižších počátečních nákladech na implementaci, zajištěné bezpečnosti a snazších aktualizacích systému. Uživatelé se mohou připojit z počítače, chytrého telefonu nebo tabletu s Google Android nebo Apple iOS.
 

@@ -1,6 +1,6 @@
 ---
 title: AC - Financial pack -  Insolvence register | Microsoft Docs
-description: Jednoduchy popis tematu
+description: 
 author: ACMartinKunes
 
 ms.service: dynamics365-business-central
@@ -13,6 +13,11 @@ ms.author: AC MartinKunes
 ---
 # Insolvenční rejstřík
 
+Add-on Insolvenční rejstřík slouží k evidenci záznamů stahovaných z  https://isir.justice.cz o insolvenčním řízení společností. 
+
+Je nástrojem pro další akce s kontakty společnosti, které jsou v insolvenčním řízení, např. při zadávání prodejních dokladů, jejich účtování (dodání, fakturace). Poskytuje vybraným osobám společnosti aktuální informace o nových záznamech v insolvenčním rejstříku.
+
+![Insolvenční rejstřík](media/Insolvence_register.png "Insolvenční rejstřík")
 
 **Viz také**
 

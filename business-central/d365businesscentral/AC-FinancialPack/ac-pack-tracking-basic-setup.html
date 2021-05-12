@@ -8,7 +8,7 @@
     <title>Autocont - Pack Tracking Basic Setup | Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Autocont - Pack Tracking Basic Setup | Microsoft Docs ">
-    <meta name="generator" content="docfx 2.56.4.0">
+    <meta name="generator" content="docfx 2.55.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,7 @@
 <h2 id="založení-výkazu-obalů">Založení Výkazu obalů</h2>
 <p>V systému lze založit potřebný počet různých Výkazů obalů. Pomocí <img src="media/ui-search/search_small.png" alt="Žárovka, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat"> vyhledejte <strong>Výkazy obalů</strong>.</p>
 <div class="NOTE">
-<h5>NOTE</h5>
+<h5>Note</h5>
 <p>Pokud se chystáte importovat poskytnuté soubory parametrizace EKO-KOM, je nutné založit Výkaz obalů s kódem <strong>EKO-KOM</strong>.</p>
 </div>
 <h2 id="parametrizace-výkazu-obalů-eko-kom">Parametrizace Výkazu obalů EKO-KOM</h2>
@@ -82,29 +82,99 @@ Soubory s parametrizací lze do systému nahrát pomocí služby <strong>RapidSt
 <h2 id="definice-prvků-výkazu-obalů-struktury-výkazu">Definice prvků Výkazu obalů (struktury výkazu)</h2>
 <p>Pro každý založený výkaz je nutno nadefinovat jeho prvky. Pomocí vyhledávací funkce <img src="media/ui-search/search_small.png" alt="Žárovka, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat"> vyhledejte <strong>Definice prvků výkazu obalů</strong>.<br>
 Prvky ve výkazu lze seskupovat do pozic na výkazu. Celkem lze definovat 10 pozic (seskupení prvků). Prvky v rámci jedné pozice mají dále přiřazený kód.</p>
-<p>Pole formuláře Definice prvků výkazu obalů:
-|Pole|Popis|<br>
-|---------------|---------------|<br>
-|<strong>Kód pro vykazování</strong>|Kód výkazu založeného v předchozím kroku|<br>
-|<strong>Pozice</strong>|Uživatelem určená skupina prvků výkazu|<br>
-|<strong>Kód</strong>|Kód prvku v rámci pozice|<br>
-|<strong>Popis</strong>|Popis prvku výkazu|<br>
-|<strong>Umístění ve výkazu</strong>|Textová popisná informace|<br>
-<br></p>
-<p>Lze tak například vytvořit tabulku s těmito hodnotami:
-|Kód pro vykazování| Pozice|Kód|Popis|
-|----------|----------|----------|----------|
-|EKO-KOM|P1|1|Obaly pro jedno použití|
-|EKO-KOM|P1|2|Obaly pro opakované použití|
-|EKO-KOM|P2|1|zpoplatněné|
-|EKO-KOM|P2|2|předplacené|
-|EKO-KOM|P2|3|neplacené|</p>
+<p>Pole formuláře Definice prvků výkazu obalů:</p>
+<table>
+<thead>
+<tr>
+<th>Pole</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Kód pro vykazování</strong></td>
+<td>Kód výkazu založeného v předchozím kroku</td>
+</tr>
+<tr>
+<td><strong>Pozice</strong></td>
+<td>Uživatelem určená skupina prvků výkazu</td>
+</tr>
+<tr>
+<td><strong>Kód</strong></td>
+<td>Kód prvku v rámci pozice</td>
+</tr>
+<tr>
+<td><strong>Popis</strong></td>
+<td>Popis prvku výkazu</td>
+</tr>
+<tr>
+<td><strong>Umístění ve výkazu</strong></td>
+<td>Textová popisná informace</td>
+</tr>
+</tbody>
+</table>
+<p>Lze tak například vytvořit tabulku s těmito hodnotami:</p>
+<table>
+<thead>
+<tr>
+<th>Kód pro vykazování</th>
+<th>Pozice</th>
+<th>Kód</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EKO-KOM</td>
+<td>P1</td>
+<td>1</td>
+<td>Obaly pro jedno použití</td>
+</tr>
+<tr>
+<td>EKO-KOM</td>
+<td>P1</td>
+<td>2</td>
+<td>Obaly pro opakované použití</td>
+</tr>
+<tr>
+<td>EKO-KOM</td>
+<td>P2</td>
+<td>1</td>
+<td>zpoplatněné</td>
+</tr>
+<tr>
+<td>EKO-KOM</td>
+<td>P2</td>
+<td>2</td>
+<td>předplacené</td>
+</tr>
+<tr>
+<td>EKO-KOM</td>
+<td>P2</td>
+<td>3</td>
+<td>neplacené</td>
+</tr>
+</tbody>
+</table>
 <h2 id="založení-prvků-ve-výkazu-obalů-definice-vlastního-výkazu">Založení prvků ve Výkazu obalů (definice vlastního výkazu)</h2>
 <p>Definice vlastního výkazu se provádí založením prvků Výkazu obalů. Pomocí vyhledávací funkce <img src="media/ui-search/search_small.png" alt="Žárovka, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat"> vyhledejte <strong>Prvky výkazu obalů</strong>. Ve formuláři se definují jednotlivé řádky výkazu tak, že se vybírají z dříve definovaných prvků pro jednotlivé pozice výkazu. Pole <em>Popis</em> je pak systémem doplněno v závislosti na plnění pole na stránce <strong>Definice prvků vykazu obalů</strong>.</p>
-<p>Záznam stránky <strong>Prvky výkazu obalů</strong> tak může vypadat třeba takto:
-|Kód pro vykazování|Kód|Popis|
-|---------------|---------------|---------------|
-|EKO-KOM|13|Obaly pro jedno použití neplacené|</p>
+<p>Záznam stránky <strong>Prvky výkazu obalů</strong> tak může vypadat třeba takto:</p>
+<table>
+<thead>
+<tr>
+<th>Kód pro vykazování</th>
+<th>Kód</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EKO-KOM</td>
+<td>13</td>
+<td>Obaly pro jedno použití neplacené</td>
+</tr>
+</tbody>
+</table>
 <h2 id="založení-výjimek-ve-výkazu-obalů">Založení výjimek ve výkazu obalů</h2>
 <p>V každém založeném <strong>Výkazu obalů</strong> lze definovat výjimky, specifikované stavem řádků v Deníku zboží, které nebudou do výkazu zahrnuty. Pomocí vyhledávací funkce <img src="media/ui-search/search_small.png" alt="Žárovka, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat"> vyhledejte <strong>Výjimky prvku výkazu obalů</strong>.  Výjimka je definována údaji zadanými do polí <strong>Typ pohybu</strong>, <strong>ID pole</strong>, <strong>Hodnota</strong> a <strong>Pozice</strong> (ve výkazu). Pro vytvoření výjimky je nutné specifikovat také <strong>Kód prvku</strong>.</p>
 <h2 id="viz-také">Viz také</h2>
@@ -118,7 +188,7 @@ Prvky ve výkazu lze seskupovat do pozic na výkazu. Celkem lze definovat 10 poz
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs-pr.cs-cz/blob/master/business-central/AC-FinancialPack/ac-pack-tracking-basic-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/AC-FinancialPack/ac-pack-tracking-basic-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
                   </li>
                 </ul>
               </div>

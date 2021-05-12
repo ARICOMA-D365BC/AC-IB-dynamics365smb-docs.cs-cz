@@ -30,6 +30,7 @@ Pro každý založený výkaz je nutno nadefinovat jeho prvky. Pomocí vyhledáv
 Prvky ve výkazu lze seskupovat do pozic na výkazu. Celkem lze definovat 10 pozic (seskupení prvků). Prvky v rámci jedné pozice mají dále přiřazený kód.  
 
 Pole formuláře Definice prvků výkazu obalů:
+
 |Pole|Popis|  
 |---------------|---------------|  
 |**Kód pro vykazování**|Kód výkazu založeného v předchozím kroku|  
@@ -37,9 +38,10 @@ Pole formuláře Definice prvků výkazu obalů:
 |**Kód**|Kód prvku v rámci pozice|  
 |**Popis**|Popis prvku výkazu|  
 |**Umístění ve výkazu**|Textová popisná informace|  
-<br/>
+
 
 Lze tak například vytvořit tabulku s těmito hodnotami:
+
 |Kód pro vykazování| Pozice|Kód|Popis|
 |----------|----------|----------|----------|
 |EKO-KOM|P1|1|Obaly pro jedno použití|
@@ -53,6 +55,7 @@ Lze tak například vytvořit tabulku s těmito hodnotami:
 Definice vlastního výkazu se provádí založením prvků Výkazu obalů. Pomocí vyhledávací funkce ![Žárovka, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat") vyhledejte **Prvky výkazu obalů**. Ve formuláři se definují jednotlivé řádky výkazu tak, že se vybírají z dříve definovaných prvků pro jednotlivé pozice výkazu. Pole *Popis* je pak systémem doplněno v závislosti na plnění pole na stránce **Definice prvků vykazu obalů**.
 
 Záznam stránky **Prvky výkazu obalů** tak může vypadat třeba takto:
+
 |Kód pro vykazování|Kód|Popis|
 |---------------|---------------|---------------|
 |EKO-KOM|13|Obaly pro jedno použití neplacené|
