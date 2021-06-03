@@ -29,7 +29,8 @@ Pro vytvoření nové sledované události, je potřeba ji založit a definovat 
 9. Pomocí polí **Jméno přiřazeného uživatele**, nebo **Skupina přiřazených uživatelů** nastavte, komu bude následná vytvořená úloha přiřazena.
 10. Událost začněte sledovat odškrtnutím pole **Vypnuto**. To určuje, zda se pole sleduje či nikoliv.
 
-> Note: Funkcionalita **ID pole** pracuje i s kalkulovanými poli a jedná se o nepovinné pole.
+>[!NOTE]
+>Funkcionalita **ID pole** pracuje i s kalkulovanými poli a jedná se o nepovinné pole.
 
 ![Šablona událostí](media/Notifications-event_template_card.png)
 
@@ -53,7 +54,8 @@ Pro každou **Kartu šablony události** je potřeba nastavit fáze, do kterých
 4. Navolte **Typ kontroly**.
 Ten nabývá hodnot **Položka**, **Datový interval** nebo **Číselný interval**. Při výběru fází má nejvyšší prioritu výběru Položka, pak Datový interval a nakonec Číselný interval. Toto pole se vztahuje k poli Číslo pole z Karty šablony události.
 
->Note: Při výběru typu kontroly **Položka** se bere do úvahy pole **Trvání**. Určuje, jak dlouho bude fáze trvat od doby vzniku položky upozornění. Při výběru **Datový interval** se pracuje s poli **Začátek fáze** a **Konec fáze**. Zadává se tedy vzorec data vztažený k systémovému datu (TODAY). Hodnota Číselný interval zase pracuje s poli **Počáteční číslo** a **Koncové číslo**.
+> [!NOTE]
+> Při výběru typu kontroly **Položka** se bere do úvahy pole **Trvání**. Určuje, jak dlouho bude fáze trvat od doby vzniku položky upozornění. Při výběru **Datový interval** se pracuje s poli **Začátek fáze** a **Konec fáze**. Zadává se tedy vzorec data vztažený k systémovému datu (TODAY). Hodnota Číselný interval zase pracuje s poli **Počáteční číslo** a **Koncové číslo**.
 
 ![Nastavení fází událostí](media/Notifications-phases.png)
 
