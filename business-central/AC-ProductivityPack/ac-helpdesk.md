@@ -9,35 +9,40 @@ Contentlocale: cs-cz
 
 # HelpDesk
 
-Modul  Helpdesk slouží k centralizovanému zadávání, evidenci, zpracování a vyhodnocování různých požadavků uživatelů v systému Microsoft Dynamics NAV. Uživatelé zde mohou zadávat požadavky na servisní úkony, na poskytnutí podpory, úpravu nebo doplnění funkcionality, evidovat reklamace a podobně. Umožňuje také kategorizaci požadavků, nastavení priorit a řízené zpracování přiřazenými řešiteli. K dispozici je i historie uzavřených požadavků HelpDesku.
+Modul Helpdesk slouží k centralizovanému zadávání, evidenci, zpracování a vyhodnocování různých požadavků uživatelů v systému Microsoft Dynamics 365 Business Central. Uživatelé zde mohou zadávat požadavky na servisní úkony, na poskytnutí podpory, úpravu nebo doplnění funkcionality, evidovat reklamace a podobně. Umožňuje také kategorizaci požadavků, nastavení priorit a řízené zpracování přiřazenými řešiteli. K dispozici je i historie uzavřených požadavků HelpDesku.
 
 ## Založení požadavku
 
-Po provedení potřebných nastavení lze zadávat požadavky HelpDesku. Požadavky lze zadávat ručně nebo prostřednictvím Průvodce vytvořením požadavku. Povinnost použití průvodce lze definovat v Nastavení helpdesku.
+Po provedení potřebných nastavení lze zadávat požadavky HelpDesku. Požadavky lze zadávat ručně nebo prostřednictvím Průvodce vytvořením požadavku. Povinnost použití průvodce lze definovat v **Nastavení helpdesku** zaškrtnutím políčka **Nový helpdesk pomocí průvodce**. Pro více informací o nastavení HelpDesku navštivte [HelpDesk - Nastavení](ac-helpdesk-setup.md).
 
-1. Pomocí vyhledávací funkce **Řekněte mi, co chcete udělat (Alt + Q)** vyhledejte **Pult dispečera helpdesku**.
-2. V okně Pult dispečera helpdesku v záložce Navigace vybrat funkci **Průvodce**.
-3. Prvním krokem v průvodci je určení **Kódu zadavatele** a **Priority požadavku**.
-   - Obě pole jsou povinná, nelze pokračovat bez vyplnění obou hodnot.
-4. Dalším krokem je **stručný popis požadavku** (nadpis) a **popis požadavku**.
-5. Při dalším kroku je možné vybrat nastavení do předem definovaných kategorií (1-3)
-6. Na spolední straně průvodce je volba **Publikovat dokumenty**, automaticky se spustí průvodce publikováním. Publikování dokuemntu vyžaduje modul Publikování SharePoint.
-7. Posledím krokem je tlačítko **Dokončit**.
+### Založení požadavku pomocí Průvodce vytvořením požadavku
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nový požadavek** a poté vyberte související odkaz.
+2. Prvním krokem v průvodci je určení **Kódu zadavatele** a **Priority požadavku**. (Obě pole jsou povinná - nelze pokračovat bez vyplnění obou hodnot.)
+3. Dalším krokem je zadání **stručného popisu požadavku** (nadpis) a **popisu požadavku**.
+4. Pak je možné zvolit nastavení do předem definovaných kategorií (1-3). Po vhodném výběru klikněte na možnost **Dalsí**.
+5. V dalším kroku průvodce se nachází volba **Publikovat dokumenty**. Po výběre této možnosti se automaticky spustí průvodce publikováním. Publikování dokumentu vyžaduje modul **Publikování SharePoint**.
+6. Posledím krokem je tlačítko **Dokončit**, pomocí kterého vytvoříte zadaný požadavek.
 
 ## Požadavky Helpdesku
+Přehled helpdesk požadavků lze zobrazit následovně: 
 
-Karta helpdesk požadavku zobrazuje relevantní informace vztahující se ke zvolenému požadavku. Údaje v bílých polích lze editovat (např. je možné doplnit prioritu dispečera, upravit data odezvy či řešení, event. změnit zařazení do kategorií na záložce Kategorie). 
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Seznam helpdesk požadavků** a poté vyberte související odkaz.
+2. Pokud klikněte na Číslo požadavku v seznamu požadavků, zobrazí se příslušná karta požadavku.
 
-Požadavek lze také přidělit k určitému projektu. Pokud příslušný projekt ještě neexistuje je možné jej vytvořit přímo z karty požadavku na záložce Akce pomocí tlačítka **Vytvoř projekt**. Touto operací je založen nový projekt se stejným kódem jako je číslo požadavku (i se stejným popisem) a tento kód se automaticky doplní do pole **Číslo projektu**. Kartu přiřazeného projektu a jeho položky lze pak zobrazit pomocí tlačítka **Karta projektu**.
+Karta helpdesk požadavku zobrazuje relevantní informace vztahující se ke zvolenému požadavku. Údaje v bílých polích lze editovat (např. je možné doplnit prioritu dispečera, upravit data odezvy či řešení, event. změnit zařazení do kategorií na záložce Kategorie).
 
-Na záložce Řádky se po založení objeví nový záznam s výchozím stavem podle definice v šabloně workflow pro helpdesk. Při každé další změně stavu workflow požadavku se, v případě že máte pro tento stav nastavenu Akci Workflow logování (52068291 WriteStatusChangeHlpDesk), vygeneruje další řádek s odpovídajícími hodnotami (viz podrobnější popis níže u zpracování požadavku).
+Požadavek lze také přidělit k určitému projektu. Pokud příslušný projekt ještě neexistuje je možné jej vytvořit přímo z karty požadavku na záložce **Akce** pomocí tlačítka **Vytvoř projekt**. Touto operací je založen nový projekt se stejným kódem jako je číslo požadavku (i se stejným popisem) a tento kód se automaticky doplní do pole **Číslo projektu**. Kartu přiřazeného projektu a jeho položky lze pak zobrazit pomocí funkce **Karta projektu** v záložce **Navigace** pomocí možnosti **Helpdesk požadavek**.
+
+Na záložce **Řádky** se po založení požadavku objeví nový záznam s výchozím stavem podle definice v šabloně workflow pro helpdesk. Při každé další změně stavu workflow požadavku se, v případě že máte pro tento stav nastavenu **Akci Workflow logování** (52068291 WriteStatusChangeHlpDesk), vygeneruje další řádek s odpovídajícími hodnotami (viz podrobnější popis níže u zpracování požadavku).
 
 ### Poznámky k požadavku
 
 Ke každému vytvořenému požadavku je možné doplnit poznámky. První vstup do poznámek je možný už při vytváření požadavku v Průvodci, jak bylo popsáno výše.
 Uživatelé mohou využívat 2 formy poznámek: 
 - řádkové poznámky dostupné na záložce Řádky poznámek – tyto strukturované poznámky obsahují pole Datum, Poznámka (100 znaků) a Kód. 
-- volné poznámky dostupné na záložce Detailní údaje – tyto poznámky umožňují zadávat libovolný text, který může být navíc zobrazen v informačním okně Náhled obsahu.
+- volné poznámky dostupné na záložce Detailní údaje – tyto poznámky umožňují zadávat libovolný text, který může být navíc zobrazen v informačním okně v záložce Detaily.
+ 
+(media/ui-search/search_small.png "Řekněte mi, co chcete dělat") 
 
 Je na rozhodnutí správce, která forma poznámek bude v rámci celé firmy využívána. 
 
@@ -48,9 +53,6 @@ Pokud je instalován modul Publikování SharePoint, pak je možné u každého 
 **Tisk**
 
 Pomocí tlačítka Tisk v Přehledu helpdesk požadavků se spustí sestava Helpdesk požadavky (do vstupního filtru se nabídne číslo aktuálně zobrazeného požadavku, rozsah tisku lze pak blíže specifikovat prostřednictvím filtrů a parametrů.
-
-
-
 
 ## Zpracování požadavku
 
