@@ -19,25 +19,30 @@ Seznam subjektů, u kterých nastaly důvody pro zrušení registrace platitele 
 
 https://www.financnasprava.sk/sk/elektronicke-sluzby/verejne-sluzby/zoznamy/exporty-z-online-informacnych
 
-Soubor "Zoznam platiteľov dane z pridanej hodnoty, u kterých nastali dôvody na zrušenie registrácie pre DPH.zip (csv)" je potřeba uložit a naimportovat do systému.
+Soubor "Zoznam platiteľov DPH zrušených.zip (XML)" je potřeba uložit a naimportovat do systému.
 
 ## Import souboru
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Položky nespolehlivosti plátce** a poté vyberte související odkaz.
-2. Na stránce **Položky nespolehlivosti plátce** vyberte akci **Hromadné načtení nespolehlivosti dod.**
-3. Otevře se okno **Volba importu podle legislativy**, kde je nutné vybrat **SK** a potvrdit pomocí tlačítka **OK**.
-4. Dále se otevře okno **Import nespolehlivosti plátců DPH z aplikace Excel**, kde uživatel zvolí zda se mají smazat extistující položky pomcí zakšrtávacího tlačítka **Smazat existující položky**.
+2. Na stránce **Položky nespolehlivosti plátce** vyberte **Akce** a pak možnost **Hromadné načtení nespolehlivosti dod.**
+3. Otevře se okno **Volba importu podle legislativy**, kde je nutné vybrat sekvenci **SK** a potvrdit pomocí tlačítka **OK**.
+4. Poté se otevře okno **Import nespolehlivosti plátců DPH z xml formátu**, kde uživatel vybere **Název souboru**, který se má importovat.
+5. Import potvrďte pomocí tlačítka **OK**.
 
-Po vytvoření **položek nespolehlivosti plátce** systém zkontroluje údaje na kartách zákazníků (Datum kontroly nespolehlivosti, Nespolehlivý plátce DPH) / dodavatelů a dohledá a vepíše na karty zákazníků nebo dodavatelů nacházejících se v uvedeném seznamu do pole **Nespolehlivý plátce** – ANO.
+![Import nespolehlivých plátců DPH z xml formátu](media/unreliability-payer/unreliability-payer-xml.png)
 
-V případě, že se zákazník / dodavatel v uvedeném v seznamu nenachází, zůstane údaj Nespolehlivý plátce prázdný. Do pole **Datum kontroly nespolehlivosti** se přenáší datum importu údajů ze souboru.
+Po vytvoření **položek nespolehlivosti plátce** systém zkontroluje údaje na kartách zákazníků (Datum kontroly nespolehlivosti, Nespolehlivý plátce DPH) / dodavatelů a dohledá a vepíše na karty zákazníků nebo dodavatelů nacházejících se v uvedeném seznamu do pole **Nespolehlivý plátce** – ANO a do pole **Datum kontroly nespolehlivosti** se přenáší datum importu údajů ze souboru.
+
+![Import nespolehlivých plátců DPH z xml formátu](media/unreliability-payer/customer-unreliability-payer.png)
+
+V případě, že se zákazník / dodavatel v uvedeném v seznamu nenachází, zůstane údaj Nespolehlivý plátce prázdný.
 
 ## Aktualizace nespolehlivosti plátce
 
-Při vytvoření nové karty Zákazníka / Dodavatele je potřebné tabulku Položky nespolehlivosti aktualizovat.
+Při vytvoření nové karty Zákazníka / Dodavatele je potřebné tabulku Položky nespolehlivosti plátce aktualizovat.
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Položky nespolehlivosti plátce** a poté vyberte související odkaz.
-2. Na stránce **Položky nespolehlivosti plátce** vyberte akci **Kontroluj všechny položky.**
+2. Na stránce **Položky nespolehlivosti plátce** vyberte **Akce** a pak možnost **Kontroluj všechny položky**.
 
 ## Viz také
 
