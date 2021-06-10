@@ -84,43 +84,44 @@ Po zadání priorit požadavků může tabulka vypadat následovně:
 
 ## Nastavení kategorie požadavků
 
-Pro sledování požadavků z jiných hledisek než podle závažnosti je možné nadefinovat kategorie požadavků, a to až ve 3 úrovních, pro které platí stromový rozpad (tzn. jsou ve vztahu hierarchické podřízenosti, tj. volba Kategorie 1 určí, jaké se budou nabízet Kategorie 2, a ty zase ovlivní nabídku Kategorií 3).
+Pro sledování požadavků z jiných hledisek, než podle závažnosti je možné nadefinovat kategorie požadavků, a to až ve 3 úrovních, pro které platí stromový rozpad (tzn. jsou ve vztahu hierarchické podřízenosti, tj. volba Kategorie 1 určí, jaké se budou nabízet Kategorie 2, a ty zase ovlivní nabídku Kategorií 3).
 
-1. Pomocí vyhledávací funkce **Řekněte mi, co chcete udělat (Alt + Q)** vyhledejte **Kategorie požadavků**.
-2. Na kartě požadavku zadat **Kód** a **popis kategorie požadavku 1**.
-3. Pro rozpad na další úroveň v ribbonu vybrat funkci **Kategorie požadavku 2**.
-4. Stejný krok opakovat **pro třetí úroveň**.
-5. Potvrďte pomocí OK.
-
+1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Kategorie požadavku 1** a poté vyberte související odkaz.
+2.	Na stránce **Kategorie požadavku 1** zvolte akci **Nový**.
+3.	Vyplňte příslušná pole na řádku Kód (max. 10 znaků) a **Popis** (max. 50 znaků) kategorie.
+4.	Pokud chcete pro danou kategorii vytvořit vícero podkategorií (kategorií 2 úrovně) vyberte akci **Kategorie požadavku 2** na stránce **Kategorie požadavku 1**.
+5.	Opakujte kroky 2 a 3 pro vyplnění Kategorie požadavku 2.
+6.	Pokud chcete pro danou kategorii vytvořit vícero podkategorií (kategorií 3 úrovně) vyberte akci **Kategorie požadavku 3** na stránce **Kategorie požadavku 2**.
+7.	Opakujte kroky 2 a 3 pro vyplnění Kategorie požadavku 3.
 
 ## Nastavení řešení požadavků
 
-V této tabulce je možné nadefinovat Kód (max. 10 znaků) a Popis (max. 30 znaků) jednotlivých způsobů řešení požadavků.
+V tomhle nastavení je možné nadefinovat jednotlivé způsoby řešení požadavků.
 
-1. Pomocí vyhledávací funkce **Řekněte mi, co chcete udělat (Alt + Q)** vyhledejte **Řešení**.
-2. Nadefinovat **Kód** a **Popis řešení požadavků**.
-3. Potvrďtě pomocí OK.
+1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Řešení** a poté vyberte související odkaz.
+2.	Na stránce **Řešení** zvolte akci **Nový**.
+3.	Vyplňte příslušná pole na řádku **Kód** (max. 10 znaků) a **Popis** (max. 50 znaků) kategorie.
 
+## Založení šablony Řízení stavů pro HelpDesk
 
-## Založení šablony Workflow HelpDesku
+Pro založení šabloby workflow je nutný **addon Řízení stavů**, který musíte mít nainstalován.
 
-Pro založení šabloby workflow je nutný **addon WorkFlow**. 
-
-1. Pomocí vyhledávací funkce **Řekněte mi, co chcete udělat (Alt + Q)** vyhledejte **Šablony workflow**
-2. Vyplnit na řádku **kód**, **popis** a **číslo tabulky (52068298)**.
-3. V ribbonu nastavit stavy WF pomocí tlačítka **Stavy workflow**.
+1. Pomocí vyhledávací funkce ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat") zadejte **Šablony řízení stavů** a poté vyberte související odkaz.
+2. Na stránce **Šablony řízení stavů** vyplňte pole na řádku **Kód**, **Popis** a **Číslo tabulky (52068298)**.
+3. V panely funkcí klikněte na **Stavy řízení stavů** pro nastavení jednotlivých stavů.
    - Pro stav workflow je třeba nadefinovat **Kód**, **Popis** a **Filtr dalšího stavu**, který určuje, do jakých dalších stavů je možné z daného stavu přejít. Jeden ze stavů musí být označen jako **Výchozí stav** – ten se vyplní při založení nového helpdesk požadavku. Některé stavy mohou být označeny jako **Konečný stav**, z něhož se už nepokračuje do dalšího stavu.
-4. Pro konkrétní stav workflow lze definovat **Akci workflow**. Stačí stát na daném řádku stavu a v ribbonu kliknout na **Akce Workflow**.
-   - Pro aktivní řádek lze specifikovat **Akce workflow**, **Kontrolovaná pole** a **Nastavovaná pole**. V Akcích se definují **Codeunity**, **Reporty** či **XMLporty**, které se automaticky spustí při přechodu do daného stavu (např. odeslání e-mailové zprávy). U kontrolovaných resp. nastavovaných polí se určí, co a kde se má kontrolovat nebo nastavit při přechodu do daného stavu.
-5. Potvrďte pomocí OK.
 
-## Nastavení WorklFlow pro HelpDesk
+5. Když máte nadefinované stavy Řízení stavů potvrďte je pomocí tlačítka **OK**.
 
-Po založení šablony je nutné nastavit tuto šablonu v Nastavení workflow.
+Pro více informací o založení a nastavení Řízení stavů navštivte [Nastavení Řízení stavů](ac-workflow-status-management-setup.md).
 
-1. Pomocí vyhledávací funkce **Řekněte mi, co chcete udělat (Alt + Q)** vyhledejte **Nastavení workflow**.
-2. Do pole **Šablona workflow** helpdesku zvoli definovanou šablonu.
-3. Potvrďte pomocí OK.
+## Nastavení Řízení stavú pro HelpDesk
+
+Po založení šablony je nutné nastavit tuto šablonu na stránce **Nastavení Řízení stavů**.
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení řízení stavů** a poté vyberte související odkaz. 
+2.	Na stránce **Nastavení řízení stavů** zadejte do pole **Číslo tabulky** číslo 52068298, které označuje tabulku Helpdesk požadavek.
+3.	V poli **Šablony Řízení stavů** vyberte příslušnou šablonu pro řízení stavů pro HelpDesk požadavky.
 
 ## Viz také
 [HelpDesk](ac-helpdesk.md)  
