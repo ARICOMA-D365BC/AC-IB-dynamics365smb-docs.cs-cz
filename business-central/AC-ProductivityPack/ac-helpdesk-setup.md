@@ -9,7 +9,7 @@ Contentlocale: cs-cz
 
 # HelpDesk - Nastavení
 
-Modul  Helpdesk slouží k centralizovanému zadávání, evidenci, zpracování a vyhodnocování různých požadavků uživatelů v systému Microsoft Dynamics NAV. Uživatelé zde mohou zadávat požadavky na servisní úkony, na poskytnutí podpory, úpravu nebo doplnění funkcionality, evidovat reklamace a podobně. Umožňuje také kategorizaci požadavků, nastavení priorit a řízené zpracování přiřazenými řešiteli. K dispozici je i historie uzavřených požadavků HelpDesku.
+Modul  Helpdesk slouží k centralizovanému zadávání, evidenci, zpracování a vyhodnocování různých požadavků uživatelů v systému Microsoft Dynamics 365 Business Central. Uživatelé zde mohou zadávat požadavky na servisní úkony, na poskytnutí podpory, úpravu nebo doplnění funkcionality, evidovat reklamace a podobně. Umožňuje také kategorizaci požadavků, nastavení priorit a řízené zpracování přiřazenými řešiteli. K dispozici je i historie uzavřených požadavků HelpDesku.
 
 
 Aby bylo možné zadávat požadavky do HelpDesku, je nutné předem provést některá nastavení:
@@ -25,49 +25,62 @@ Aby bylo možné zadávat požadavky do HelpDesku, je nutné předem provést n�
 
 
 ## Nastavení HelpDesku
+- Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat") , zadejte **Nastavení helpdesku** a poté vyberte související odkaz. 
 
-Základní nastavení helpdesku slouží k nastavení kategorií požadavků a priorit, zda je nutné požadavky zadávat pomocí průvodce.
+ Na stránce **Nastavení helpdesku** lze na záložce **Obecné** zvolit, zda bude při zadání požadavků povinné vyplňovat kategorii požadavků 1-3, výchozí prioritu a zda je nutné nové požadavky zadávat pomocí průvodce.
 
-1. Pomocí vyhledávací funkce **Řekněte mi, co chcete udělat (Alt + Q)** vyhledejte **Nastavení helpdesku**.
-2. Na kartě Nastavení v záložce Obecné je potřeba vybrat **Vynucení Kategorií** a **Výchozí prioritu**.
-3. V záložce Číslování nastavit **Číselnou řadu** pro požadavky.
-4. Potvrďte pomocí OK.
+![Nastavení Helpdesku - záložka Obecné](media/HD_general_setup.png)
 
+Na záložce **Číslování** v poli **Čísla požadavků** vyberte číselnou řadu pro nově vytvářené požadavky Helpdesku.
+
+### Vytváření číselné řady pro požadavky HelpDesku
+1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Číselná řada** a poté vyberte související odkaz. 
+2.	Na stránce **Číselná řada** klikněte na funkci **Nový** a vytvořte novou číselnou řadu.
+3.	Zadejte Kód, Popis a Počáteční číslo číselné řady.
+4.	Zaškrtněte políčko Výchozí čísla pro automatické vyplňování čísel při zadávaní nových požadavků.
+
+ Příklad vytvořené číselné řady:
+
+![Nastavení Helpdesku - číselná řada](media/HD_serial_no.png)
 
 ## Nastavení kategorie uživatelů
 
-Kategorie uživatelů představují skupiny uživatelů. Skupinám uživatelů se přiřadí určitá váha (stupeň důležitosti), která je jedním z faktorů při automatickém výpočtu priority požadavku.
+Kategorie uživatelů představují skupiny uživatelů. Skupinám uživatelů se přiřadí určitá váha (stupeň důležitosti), která je jedním z faktorů při automatickém výpočtu priority požadavku. Kategorie uživatele obsahuje pole Kód, Popis a Váha.
 
-1. Pomocí vyhledávací funkce **Řekněte mi, co chcete udělat (Alt + Q)** vyhledejte **Kategorie uživatelů**.
-2. Naplnit pole: **Kód**, **Popis** a **Váha**.
-3. Potvrďte pomocí OK.
-
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Kategorie uživatele** a poté vyberte související odkaz.
+2. Na stránce **Kategorie uživatele** vyberte akci **Nový** a poté zadejte **Kód**, **Popis** a **Váhu**.
+3. Pole Váha může nabývat hodnot 0-1 ve smyslu procent (0 =0 %, 1=100 %).
 
 ## Nastavení seznamu oprávněných osob
 
-Pro každou oprávněnou osobu se zvolí příslušná Kategorie uživatele, podle které program automaticky předvyplní Váhu požadavku pro danou osobu. Předvyplněnou hodnotu pole Váha lze pro každou osobu individuálně upravit. Pro výpočet celkové priority požadavku, pak program použije tuto hodnotu
+Pro každou oprávněnou osobu se zvolí příslušná Kategorie uživatele, podle které program automaticky předvyplní Váhu požadavku pro danou osobu. Předvyplněnou hodnotu pole **Váha** lze pro každou osobu individuálně upravit. Program pak tuto hodnotu použije pro výpočet celkové priority požadavku.
 
-Pomocí vyhledávací funkce **Řekněte mi, co chcete udělat (Alt + Q)** vyhledejte **Oprávněné osoby**.
-2. Zvolit volbu **Nový**.
-3. Na kartě oprávněné osoby zadat obecné informace do záložky Obecné:
-   - **Kód**, **Jméno**, **Kategorie**, **ID** **uživatele**, **Váha**, **Povolena** změna uživatele (opravňuje  ke změně Oprávněné osoby) a **Výchozí** **priorita**.
-4. Na kartě oprávněné osoby lze zadat i **detailní informace** do záložky Spojení:
-   - **Adresa**, **Telefon**, **Fax**, **Mobil**, **E-mail**.
-5. Potvrďte pomocí OK.
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přehled oprávněných osob** a poté vyberte související odkaz.
+2. Zobrazí se tabulka se všemi doposud zadanými oprávněnými osobami.
+3. Na stránce **Přehled oprávněných osob** vyberte akci **Nový** a vyplňte pole nové oprávněné osoby podle potřeby.
 
+ Na záložce **Spojení** lze doplnit podrobnější kontaktní údaje k dané osobě (**Adresa**, **Telefon**, **Fax**, **Mobil**, **E-mail**).
+
+Když se do pole **ID Uživatele** vyplní odpovídající přihlašovací jméno dané oprávněné osoby, bude se při pořizování požadavku do HelpDesku automaticky nabízet kód oprávněné osoby, která požadavek zadává.
+
+Pole **Povolena změna uživatele** opravňuje ke změně Oprávněné osoby (poIe Identifikace helpdesk) při zadávání nového požadavku do HelpDesku. Zvolená **Výchozí priorita** se bude automaticky nabízet v nově pořizovaném požadavku.
 
 ## Nastavení priority požadavků
 
-Aby bylo možné vyhodnocovat požadavky podle jejich naléhavosti, je nutné vyplnit **Priority požadavků**. V rámci nastavení je nutné zadat: **Kód**, **Popis** a **Váha**.
+Aby bylo možné vyhodnocovat požadavky podle jejich naléhavosti, je nutné vyplnit **Priority požadavků**: 
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Priority požadavku** a poté vyberte související odkaz.
+2. Na stránce Priority požadavku vyberte akci **Nový**.
+3. Zadejte pole **Kód** a **Popis**.
+4. Zadejte příslušnou hodnotu do pole **Váha** pro výpočet výsledné priority požadavku.
 
- - Váha – pro výpočet výsledné priority požadavku. Váhy lze stanovit libovolně, záleží na místních podmínkách a zvyklostech (zpravidla čím závažnější je požadavek, tím vyšší váha)
- - Výpočet data odezvy, Výpočet data řešení – vzorce pro výpočet. Do polí lze zadat celá čísla se zkratkou jednotky času (např. D = den, M = měsíc, K = kvartál, R = rok). Výsledné datum se vypočte z data, kdy byl požadavek zadán (datum lze následně upravit).
+- Pole Váha může nabývat hodnot 0-1 ve smyslu procent (0-0 %, 1-100 %). Váhy lze stanovit libovolně, záleží na místních podmínkách a zvyklostech (zpravidla čím závažnější je požadavek, tím vyšší je váha).
 
-1. Pomocí vyhledávací funkce **Řekněte mi, co chcete udělat (Alt + Q)** vyhledejte **Priority požadavků**.
-2. Do tabulky je nutné zadat:
-   - **Kód**, **Popis**, **Váha**, **Výpočet data** odezvy a **Výpočet data řešení**.
-3. Potvrďte pomocí OK.  
+5.	Zadejte pole **Výpočet data odezvy**, **Výpočet data řešení** pomocí vzorce pro výpočet.
 
+ -  Do polí lze zadat celá čísla se zkratkou jednotky času (např. D = den, M = měsíc, K = kvartál, R = rok). Výsledné datum, při zadávaní nového požadavku, se vypočte z data, kdy byl požadavek zadán (datum lze následně upravit).
+
+Po zadání priorit požadavků může tabulka vypadat následovně:
+![Nastavení Helpdesku - Priority požadavků](media/HD_request_priorities.png)
 
 ## Nastavení kategorie požadavků
 
