@@ -103,6 +103,7 @@ Do archivu se položky dostanou také ručně z formuláře IN Bufferu nebo OUT 
 
 Další možností, jak dostat položky do archívu je pomocí **reportů R4002900 Move IN Buffer to Archive a R4002901 Move OUT Buffer to Archive**.
 
+## Viz také
 [Spooler - Nastavení](ac-spooler-setup.md)
 [AC Productivity Pack](ac-productivity-pack.md)  
 [AUTOCONT řešení](../index.md)

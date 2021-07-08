@@ -16,7 +16,7 @@ Add-on modul Evidence nářadí a pomůcek řeší problematiku evidence nářad
 
 ![Evidence nářadí a pomůcek](media/tools.png "Evidence nářadí a pomůcek")
 
-**Viz také**
+## Viz také
 
 [Evidence nářadí a pomůcek - nastavení](ac-production-tools-setup.md)  
 [Productivity Pack](ac-productivity-pack.md)

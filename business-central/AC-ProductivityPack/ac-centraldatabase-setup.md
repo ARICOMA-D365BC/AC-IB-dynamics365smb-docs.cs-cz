@@ -107,7 +107,7 @@ Nastavení slouží k určení relačních vazeb, které zajišťují, aby při 
     - **Relace existuje** – pole, které určuje, zda je již definována relační vazba
     - **Relace** – pouze zobrazované formulářové pole, v jehož podřízeném formuláři lze definovat relační vazbu
 
-**Viz také**
+## Viz také
 
 [Centrální číselníky](ac-centraldatabase.md)`  
 [AC Productivity Pack](ac-productivity-pack.md)  

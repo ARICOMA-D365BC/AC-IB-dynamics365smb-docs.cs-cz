@@ -20,7 +20,7 @@ Stav workflow je pak povoleno změnit pouze pokud všechny kontroly v rámci kon
 
 ![WorkFlow - kontrolované tabulky](media/workflow_tables.png "WorkFlow - kontrolované tabulky")
 
-**Viz také**
+## Viz také
 
 [WorkFlow - kontrolované tabulky - nastavení](ac-workflow-linker-tables-setup.md)  
 [Productivity Pack](ac-productivity-pack.md)

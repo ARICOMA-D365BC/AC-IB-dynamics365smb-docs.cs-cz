@@ -40,6 +40,7 @@ Pro ruční pokyn postupujte dle následujícího postupu:
 
 Při ruční synchronizaci lze pomocí filtrů přesně specifikovat, jaké tabulky, odkud a kam se mají aktuálně synchronizovat. Tato volba se uplatňuje hlavně při synchronizaci již existujících dat do nových systémů (migrace a parametrizace).
 
+## Viz také
 [Nastavení Centrálních číselníků](ac-centraldatabase-setup.md)
 [AC Productivity Pack](ac-productivity-pack.md)  
 [AUTOCONT řešení](../index.md)

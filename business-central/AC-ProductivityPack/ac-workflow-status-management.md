@@ -17,7 +17,7 @@ Add-on modul Workflow – řízení stavů přidává do systému Dynamics 365 B
 ![WorkFlow - řízení stavů](media/workflow_status.png "WorkFlow - řízení stavů")
 
 
-**Viz také**
+## Viz také
 
 [WorkFlow - řízení stavů - nastavení](ac-workflow-status-management-setup.md)  
 [Productivity Pack](ac-productivity-pack.md)
