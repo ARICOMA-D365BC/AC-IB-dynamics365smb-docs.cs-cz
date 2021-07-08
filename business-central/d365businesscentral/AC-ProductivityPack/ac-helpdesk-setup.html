@@ -69,7 +69,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="helpdesk---nastavení">HelpDesk - Nastavení</h1>
 
-<p>Modul  Helpdesk slouží k centralizovanému zadávání, evidenci, zpracování a vyhodnocování různých požadavků uživatelů v systému Microsoft Dynamics NAV. Uživatelé zde mohou zadávat požadavky na servisní úkony, na poskytnutí podpory, úpravu nebo doplnění funkcionality, evidovat reklamace a podobně. Umožňuje také kategorizaci požadavků, nastavení priorit a řízené zpracování přiřazenými řešiteli. K dispozici je i historie uzavřených požadavků HelpDesku.</p>
+<p>Modul  Helpdesk slouží k centralizovanému zadávání, evidenci, zpracování a vyhodnocování různých požadavků uživatelů v systému Microsoft Dynamics 365 Business Central. Uživatelé zde mohou zadávat požadavky na servisní úkony, na poskytnutí podpory, úpravu nebo doplnění funkcionality, evidovat reklamace a podobně. Umožňuje také kategorizaci požadavků, nastavení priorit a řízené zpracování přiřazenými řešiteli. K dispozici je i historie uzavřených požadavků HelpDesku.</p>
 <p>Aby bylo možné zadávat požadavky do HelpDesku, je nutné předem provést některá nastavení:</p>
 <ul>
 <li>Nastavit HelpDesk.</li>
@@ -83,90 +83,97 @@
 <li>Nastavit workflow pro HelpDesk.</li>
 </ul>
 <h2 id="nastavení-helpdesku">Nastavení HelpDesku</h2>
-<p>Základní nastavení helpdesku slouží k nastavení kategorií požadavků a priorit, zda je nutné požadavky zadávat pomocí průvodce.</p>
+<ul>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat"> , zadejte <strong>Nastavení helpdesku</strong> a poté vyberte související odkaz.</li>
+</ul>
+<p>Na stránce <strong>Nastavení helpdesku</strong> lze na záložce <strong>Obecné</strong> zvolit, zda bude při zadání požadavků povinné vyplňovat kategorii požadavků 1-3, výchozí prioritu a zda je nutné nové požadavky zadávat pomocí průvodce.</p>
+<p><img src="media/HD_general_setup.png" alt="Nastavení Helpdesku - záložka Obecné"></p>
+<p>Na záložce <strong>Číslování</strong> v poli <strong>Čísla požadavků</strong> vyberte číselnou řadu pro nově vytvářené požadavky Helpdesku.</p>
+<h3 id="vytváření-číselné-řady-pro-požadavky-helpdesku">Vytváření číselné řady pro požadavky HelpDesku</h3>
 <ol>
-<li>Pomocí vyhledávací funkce <strong>Řekněte mi, co chcete udělat (Alt + Q)</strong> vyhledejte <strong>Nastavení helpdesku</strong>.</li>
-<li>Na kartě Nastavení v záložce Obecné je potřeba vybrat <strong>Vynucení Kategorií</strong> a <strong>Výchozí prioritu</strong>.</li>
-<li>V záložce Číslování nastavit <strong>Číselnou řadu</strong> pro požadavky.</li>
-<li>Potvrďte pomocí OK.</li>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Číselná řada</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Číselná řada</strong> klikněte na funkci <strong>Nový</strong> a vytvořte novou číselnou řadu.</li>
+<li>Zadejte Kód, Popis a Počáteční číslo číselné řady.</li>
+<li>Zaškrtněte políčko Výchozí čísla pro automatické vyplňování čísel při zadávaní nových požadavků.</li>
 </ol>
+<p>Příklad vytvořené číselné řady:</p>
+<p><img src="media/HD_serial_no.png" alt="Nastavení Helpdesku - číselná řada"></p>
 <h2 id="nastavení-kategorie-uživatelů">Nastavení kategorie uživatelů</h2>
-<p>Kategorie uživatelů představují skupiny uživatelů. Skupinám uživatelů se přiřadí určitá váha (stupeň důležitosti), která je jedním z faktorů při automatickém výpočtu priority požadavku.</p>
+<p>Kategorie uživatelů představují skupiny uživatelů. Skupinám uživatelů se přiřadí určitá váha (stupeň důležitosti), která je jedním z faktorů při automatickém výpočtu priority požadavku. Kategorie uživatele obsahuje pole Kód, Popis a Váha.</p>
 <ol>
-<li>Pomocí vyhledávací funkce <strong>Řekněte mi, co chcete udělat (Alt + Q)</strong> vyhledejte <strong>Kategorie uživatelů</strong>.</li>
-<li>Naplnit pole: <strong>Kód</strong>, <strong>Popis</strong> a <strong>Váha</strong>.</li>
-<li>Potvrďte pomocí OK.</li>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Kategorie uživatele</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Kategorie uživatele</strong> vyberte akci <strong>Nový</strong> a poté zadejte <strong>Kód</strong>, <strong>Popis</strong> a <strong>Váhu</strong>.</li>
+<li>Pole Váha může nabývat hodnot 0-1 ve smyslu procent (0 =0 %, 1=100 %).</li>
 </ol>
 <h2 id="nastavení-seznamu-oprávněných-osob">Nastavení seznamu oprávněných osob</h2>
-<p>Pro každou oprávněnou osobu se zvolí příslušná Kategorie uživatele, podle které program automaticky předvyplní Váhu požadavku pro danou osobu. Předvyplněnou hodnotu pole Váha lze pro každou osobu individuálně upravit. Pro výpočet celkové priority požadavku, pak program použije tuto hodnotu</p>
-<p>Pomocí vyhledávací funkce <strong>Řekněte mi, co chcete udělat (Alt + Q)</strong> vyhledejte <strong>Oprávněné osoby</strong>.
-2. Zvolit volbu <strong>Nový</strong>.
-3. Na kartě oprávněné osoby zadat obecné informace do záložky Obecné:</p>
-<ul>
-<li><strong>Kód</strong>, <strong>Jméno</strong>, <strong>Kategorie</strong>, <strong>ID</strong> <strong>uživatele</strong>, <strong>Váha</strong>, <strong>Povolena</strong> změna uživatele (opravňuje  ke změně Oprávněné osoby) a <strong>Výchozí</strong> <strong>priorita</strong>.</li>
-</ul>
-<ol start="4">
-<li>Na kartě oprávněné osoby lze zadat i <strong>detailní informace</strong> do záložky Spojení:
-<ul>
-<li><strong>Adresa</strong>, <strong>Telefon</strong>, <strong>Fax</strong>, <strong>Mobil</strong>, <strong>E-mail</strong>.</li>
-</ul>
-</li>
-<li>Potvrďte pomocí OK.</li>
+<p>Pro každou oprávněnou osobu se zvolí příslušná Kategorie uživatele, podle které program automaticky předvyplní Váhu požadavku pro danou osobu. Předvyplněnou hodnotu pole <strong>Váha</strong> lze pro každou osobu individuálně upravit. Program pak tuto hodnotu použije pro výpočet celkové priority požadavku.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přehled oprávněných osob</strong> a poté vyberte související odkaz.</li>
+<li>Zobrazí se tabulka se všemi doposud zadanými oprávněnými osobami.</li>
+<li>Na stránce <strong>Přehled oprávněných osob</strong> vyberte akci <strong>Nový</strong> a vyplňte pole nové oprávněné osoby podle potřeby.</li>
 </ol>
+<p>Na záložce <strong>Spojení</strong> lze doplnit podrobnější kontaktní údaje k dané osobě (<strong>Adresa</strong>, <strong>Telefon</strong>, <strong>Fax</strong>, <strong>Mobil</strong>, <strong>E-mail</strong>).</p>
+<p>Když se do pole <strong>ID Uživatele</strong> vyplní odpovídající přihlašovací jméno dané oprávněné osoby, bude se při pořizování požadavku do HelpDesku automaticky nabízet kód oprávněné osoby, která požadavek zadává.</p>
+<p>Pole <strong>Povolena změna uživatele</strong> opravňuje ke změně Oprávněné osoby (poIe Identifikace helpdesk) při zadávání nového požadavku do HelpDesku. Zvolená <strong>Výchozí priorita</strong> se bude automaticky nabízet v nově pořizovaném požadavku.</p>
 <h2 id="nastavení-priority-požadavků">Nastavení priority požadavků</h2>
-<p>Aby bylo možné vyhodnocovat požadavky podle jejich naléhavosti, je nutné vyplnit <strong>Priority požadavků</strong>. V rámci nastavení je nutné zadat: <strong>Kód</strong>, <strong>Popis</strong> a <strong>Váha</strong>.</p>
-<ul>
-<li>Váha – pro výpočet výsledné priority požadavku. Váhy lze stanovit libovolně, záleží na místních podmínkách a zvyklostech (zpravidla čím závažnější je požadavek, tím vyšší váha)</li>
-<li>Výpočet data odezvy, Výpočet data řešení – vzorce pro výpočet. Do polí lze zadat celá čísla se zkratkou jednotky času (např. D = den, M = měsíc, K = kvartál, R = rok). Výsledné datum se vypočte z data, kdy byl požadavek zadán (datum lze následně upravit).</li>
-</ul>
+<p>Aby bylo možné vyhodnocovat požadavky podle jejich naléhavosti, je nutné vyplnit <strong>Priority požadavků</strong>:</p>
 <ol>
-<li>Pomocí vyhledávací funkce <strong>Řekněte mi, co chcete udělat (Alt + Q)</strong> vyhledejte <strong>Priority požadavků</strong>.</li>
-<li>Do tabulky je nutné zadat:
-<ul>
-<li><strong>Kód</strong>, <strong>Popis</strong>, <strong>Váha</strong>, <strong>Výpočet data</strong> odezvy a <strong>Výpočet data řešení</strong>.</li>
-</ul>
-</li>
-<li>Potvrďte pomocí OK.</li>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Priority požadavku</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Priority požadavku vyberte akci <strong>Nový</strong>.</li>
+<li>Zadejte pole <strong>Kód</strong> a <strong>Popis</strong>.</li>
+<li>Zadejte příslušnou hodnotu do pole <strong>Váha</strong> pro výpočet výsledné priority požadavku.</li>
 </ol>
+<ul>
+<li>Pole Váha může nabývat hodnot 0-1 ve smyslu procent (0-0 %, 1-100 %). Váhy lze stanovit libovolně, záleží na místních podmínkách a zvyklostech (zpravidla čím závažnější je požadavek, tím vyšší je váha).</li>
+</ul>
+<ol start="5">
+<li>Zadejte pole <strong>Výpočet data odezvy</strong>, <strong>Výpočet data řešení</strong> pomocí vzorce pro výpočet.</li>
+</ol>
+<ul>
+<li>Do polí lze zadat celá čísla se zkratkou jednotky času (např. D = den, M = měsíc, K = kvartál, R = rok). Výsledné datum, při zadávaní nového požadavku, se vypočte z data, kdy byl požadavek zadán (datum lze následně upravit).</li>
+</ul>
+<p>Po zadání priorit požadavků může tabulka vypadat následovně:
+<img src="media/HD_request_priorities.png" alt="Nastavení Helpdesku - Priority požadavků"></p>
 <h2 id="nastavení-kategorie-požadavků">Nastavení kategorie požadavků</h2>
-<p>Pro sledování požadavků z jiných hledisek než podle závažnosti je možné nadefinovat kategorie požadavků, a to až ve 3 úrovních, pro které platí stromový rozpad (tzn. jsou ve vztahu hierarchické podřízenosti, tj. volba Kategorie 1 určí, jaké se budou nabízet Kategorie 2, a ty zase ovlivní nabídku Kategorií 3).</p>
+<p>Pro sledování požadavků z jiných hledisek, než podle závažnosti je možné nadefinovat kategorie požadavků, a to až ve 3 úrovních, pro které platí stromový rozpad (tzn. jsou ve vztahu hierarchické podřízenosti, tj. volba Kategorie 1 určí, jaké se budou nabízet Kategorie 2, a ty zase ovlivní nabídku Kategorií 3).</p>
 <ol>
-<li>Pomocí vyhledávací funkce <strong>Řekněte mi, co chcete udělat (Alt + Q)</strong> vyhledejte <strong>Kategorie požadavků</strong>.</li>
-<li>Na kartě požadavku zadat <strong>Kód</strong> a <strong>popis kategorie požadavku 1</strong>.</li>
-<li>Pro rozpad na další úroveň v ribbonu vybrat funkci <strong>Kategorie požadavku 2</strong>.</li>
-<li>Stejný krok opakovat <strong>pro třetí úroveň</strong>.</li>
-<li>Potvrďte pomocí OK.</li>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Kategorie požadavku 1</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Kategorie požadavku 1</strong> zvolte akci <strong>Nový</strong>.</li>
+<li>Vyplňte příslušná pole na řádku Kód (max. 10 znaků) a <strong>Popis</strong> (max. 50 znaků) kategorie.</li>
+<li>Pokud chcete pro danou kategorii vytvořit vícero podkategorií (kategorií 2 úrovně) vyberte akci <strong>Kategorie požadavku 2</strong> na stránce <strong>Kategorie požadavku 1</strong>.</li>
+<li>Opakujte kroky 2 a 3 pro vyplnění Kategorie požadavku 2.</li>
+<li>Pokud chcete pro danou kategorii vytvořit vícero podkategorií (kategorií 3 úrovně) vyberte akci <strong>Kategorie požadavku 3</strong> na stránce <strong>Kategorie požadavku 2</strong>.</li>
+<li>Opakujte kroky 2 a 3 pro vyplnění Kategorie požadavku 3.</li>
 </ol>
 <h2 id="nastavení-řešení-požadavků">Nastavení řešení požadavků</h2>
-<p>V této tabulce je možné nadefinovat Kód (max. 10 znaků) a Popis (max. 30 znaků) jednotlivých způsobů řešení požadavků.</p>
+<p>V tomhle nastavení je možné nadefinovat jednotlivé způsoby řešení požadavků.</p>
 <ol>
-<li>Pomocí vyhledávací funkce <strong>Řekněte mi, co chcete udělat (Alt + Q)</strong> vyhledejte <strong>Řešení</strong>.</li>
-<li>Nadefinovat <strong>Kód</strong> a <strong>Popis řešení požadavků</strong>.</li>
-<li>Potvrďtě pomocí OK.</li>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Řešení</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Řešení</strong> zvolte akci <strong>Nový</strong>.</li>
+<li>Vyplňte příslušná pole na řádku <strong>Kód</strong> (max. 10 znaků) a <strong>Popis</strong> (max. 50 znaků) kategorie.</li>
 </ol>
-<h2 id="založení-šablony-workflow-helpdesku">Založení šablony Workflow HelpDesku</h2>
-<p>Pro založení šabloby workflow je nutný <strong>addon WorkFlow</strong>.</p>
+<h2 id="založení-šablony-řízení-stavů-pro-helpdesk">Založení šablony Řízení stavů pro HelpDesk</h2>
+<p>Pro založení šabloby workflow je nutný <strong>addon Řízení stavů</strong>, který musíte mít nainstalován.</p>
 <ol>
-<li>Pomocí vyhledávací funkce <strong>Řekněte mi, co chcete udělat (Alt + Q)</strong> vyhledejte <strong>Šablony workflow</strong></li>
-<li>Vyplnit na řádku <strong>kód</strong>, <strong>popis</strong> a <strong>číslo tabulky (52068298)</strong>.</li>
-<li>V ribbonu nastavit stavy WF pomocí tlačítka <strong>Stavy workflow</strong>.
+<li><p>Pomocí vyhledávací funkce <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat"> zadejte <strong>Šablony řízení stavů</strong> a poté vyberte související odkaz.</p>
+</li>
+<li><p>Na stránce <strong>Šablony řízení stavů</strong> vyplňte pole na řádku <strong>Kód</strong>, <strong>Popis</strong> a <strong>Číslo tabulky (52068298)</strong>.</p>
+</li>
+<li><p>V panely funkcí klikněte na <strong>Stavy řízení stavů</strong> pro nastavení jednotlivých stavů.</p>
 <ul>
 <li>Pro stav workflow je třeba nadefinovat <strong>Kód</strong>, <strong>Popis</strong> a <strong>Filtr dalšího stavu</strong>, který určuje, do jakých dalších stavů je možné z daného stavu přejít. Jeden ze stavů musí být označen jako <strong>Výchozí stav</strong> – ten se vyplní při založení nového helpdesk požadavku. Některé stavy mohou být označeny jako <strong>Konečný stav</strong>, z něhož se už nepokračuje do dalšího stavu.</li>
 </ul>
 </li>
-<li>Pro konkrétní stav workflow lze definovat <strong>Akci workflow</strong>. Stačí stát na daném řádku stavu a v ribbonu kliknout na <strong>Akce Workflow</strong>.
-<ul>
-<li>Pro aktivní řádek lze specifikovat <strong>Akce workflow</strong>, <strong>Kontrolovaná pole</strong> a <strong>Nastavovaná pole</strong>. V Akcích se definují <strong>Codeunity</strong>, <strong>Reporty</strong> či <strong>XMLporty</strong>, které se automaticky spustí při přechodu do daného stavu (např. odeslání e-mailové zprávy). U kontrolovaných resp. nastavovaných polí se určí, co a kde se má kontrolovat nebo nastavit při přechodu do daného stavu.</li>
-</ul>
+<li><p>Když máte nadefinované stavy Řízení stavů potvrďte je pomocí tlačítka <strong>OK</strong>.</p>
 </li>
-<li>Potvrďte pomocí OK.</li>
 </ol>
-<h2 id="nastavení-worklflow-pro-helpdesk">Nastavení WorklFlow pro HelpDesk</h2>
-<p>Po založení šablony je nutné nastavit tuto šablonu v Nastavení workflow.</p>
+<p>Pro více informací o založení a nastavení Řízení stavů navštivte <a href="ac-workflow-status-management-setup.html">Nastavení Řízení stavů</a>.</p>
+<h2 id="nastavení-řízení-stavú-pro-helpdesk">Nastavení Řízení stavú pro HelpDesk</h2>
+<p>Po založení šablony je nutné nastavit tuto šablonu na stránce <strong>Nastavení Řízení stavů</strong>.</p>
 <ol>
-<li>Pomocí vyhledávací funkce <strong>Řekněte mi, co chcete udělat (Alt + Q)</strong> vyhledejte <strong>Nastavení workflow</strong>.</li>
-<li>Do pole <strong>Šablona workflow</strong> helpdesku zvoli definovanou šablonu.</li>
-<li>Potvrďte pomocí OK.</li>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení řízení stavů</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Nastavení řízení stavů</strong> zadejte do pole <strong>Číslo tabulky</strong> číslo 52068298, které označuje tabulku Helpdesk požadavek.</li>
+<li>V poli <strong>Šablony Řízení stavů</strong> vyberte příslušnou šablonu pro řízení stavů pro HelpDesk požadavky.</li>
 </ol>
 <h2 id="viz-také">Viz také</h2>
 <p><a href="ac-helpdesk.html">HelpDesk</a><br>

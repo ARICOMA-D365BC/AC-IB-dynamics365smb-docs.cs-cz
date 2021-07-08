@@ -124,21 +124,69 @@ Otevře se stránka <strong>Agenti</strong>, kde musíte vyplnit následující 
 <li>MSMQ – název MSMQ</li>
 <li>Pipe – název named PIPE</li>
 <li>HTTP – adresa http</li>
-<li>Disk – cesta [čárka] filtr souboru
-<ul>
-<li>Pro Diskového a HTTP (timer) In agenta je možné nastavit ID výchozí úlohy pro každý parametr komunikace, aby bylo možné rozlišit, jakým typem úlohy bude přijatá zpráva následně zpraco vána.</li>
-<li>Všichni agenti jsou buď tzv. pasivní, nebo aktivní. Aktivní agent se sám aktivuje a vykonává nějakou činnost. Pasivní agent čeká na podnět zvenčí, na nějaké přerušení systému a na tuto změnu reaguje.</li>
-<li>Pasivní agent běží sám na aplikačním serveru. IN Agent TCP a IN Agent MSMQ jsou pasivní agenti.</li>
+<li>Disk – cesta [čárka] filtr souboru</li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-</li>
+</ol>
+<p>Pro Diskového a HTTP (timer) In agenta je možné nastavit ID výchozí úlohy pro každý parametr komunikace, aby bylo možné rozlišit, jakým typem úlohy bude přijatá zpráva následně zpraco vána.</p>
+<p>Všichni agenti jsou buď tzv. pasivní, nebo aktivní. Aktivní agent se sám aktivuje a vykonává nějakou činnost. Pasivní agent čeká na podnět zvenčí, na nějaké přerušení systému a na tuto změnu reaguje.</p>
+<p>Pasivní agent běží sám na aplikačním serveru. IN Agent TCP a IN Agent MSMQ jsou pasivní agenti.</p>
+<ol start="2">
 <li>Po vyplnění polí je možno stránku zavřít.</li>
 <li>Pokud uživatel potřebuje spustit agenta ručně, může to povést ve skupině <strong>Zpracovat</strong> funkcí <strong>Spusť agenta</strong>.</li>
 </ol>
 <h2 id="úlohy-spooleru">Úlohy spooleru</h2>
+<ol>
+<li>Pro základní nastavení úloh spooleru vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Úlohy Spooleru</strong> a klikněte na související odkaz.</li>
+<li>Na stránce <strong>Úlohy spooleru</strong> můžete založit řádek pro novou úlohu obsahující následující pole:</li>
+</ol>
+<ul>
+<li>Pole <strong>ID úlohy</strong> evidenčně označuje danou úlohu spooleru.</li>
+<li>Pole <strong>Typ</strong> určuje, zda je daná úloha pro IN Buffer – In nebo Out pro OUT Buffer.</li>
+<li>Pole <strong>Druh komunikace</strong> slouží pouze pro OUT úlohy. Druh komunikace je podobný jako u agentů, tzn. Disk, MSMQ, Pipe, HTTP, TCP a E-mail.</li>
+<li><strong>Popis</strong> slouží k popsání dané úlohy.</li>
+<li>Pole <strong>Výchozí priorita</strong> označuje, v jakém pořadí se úlohy zpracovávají.</li>
+<li>Pole <strong>ID Agenta</strong> určuje, který agent bude úlohu spooleru zpracovávat. U IN úloh to bude Procesní agent a u OUT úloh to bude OUT agent.</li>
+<li>Pole <strong>XDR</strong> zobrazuje existenci schéma XML dokumentu (*).</li>
+<li>Pole <strong>ID codeunity</strong> zpracování označuje, kterou codeunitu agent spustí nad položkou Bufferu. U OUT úloh se pole vyplní automaticky při výběru druhu komunikace</li>
+<li>Dle polí <strong>Typ procesu a Typ dokumentu</strong> se rozpoznává úloha. Slouží k tedy nalezení úlohy dle hlavičky XML dokumentu v Bufferu.</li>
+<li>Pole <strong>Výchozí cílový systém</strong> se může vyplnit pouze pro OUT úlohy, pokud se cílový systém neurčí přímo z hlavičky XML dokumentu.</li>
+<li>Pole <strong>Číslo posledního dokladu</strong> využívá systém interně, nenastavuje se a slouží pouze pro OUT úlohy.</li>
+<li>Do pole <strong>Expirovat</strong> po se zadává doba trvání (proměnná Duration).</li>
+<li>Pole <strong>Logovat</strong> určuje, zda a jak se zapisuje do aplikačního logu. Hodnoty mohou být Nikdy, Dle úlohy a Vždy.</li>
+<li>Pole <strong>Typ odpovědi</strong> využívají pouze IN úlohy.
+<ul>
+<li>Potvrzení – vloží se úloha do IN Bufferu</li>
+<li>Výsledek – vloží se úloha do IN Bufferu a okamžitě se spustí zpracování.</li>
+</ul>
+</li>
+<li>Pole <strong>Šablona XSL</strong> slouží k zobrazení dokumentu v HTML.</li>
+<li>Pole <strong>Čekat po množství chyb</strong> a <strong>Čekací doba</strong> po chybách slouží k určení, po kolika chybách se bude jak dlouho čekat s dalším pokusem o zpracování.</li>
+<li>Pole <strong>ID codeunity při vložení</strong> – umožňuje spustit codeunitu při vložení do Bufferu.</li>
+<li>Pole <strong>Nenutit posloupnost odesílání</strong> – pokud zaškrtnuto, tak se položky úlohy se neúčastní výpočtu pro vynucení posloupnosti odesílání (zaškrtnout pouze na úlohách, kde je vysloveně nežádoucí vynucovat posloupnost odesílání. Např. pro odesílání dokladů E-Mailem (zde nemusí platit, že když neprojde odeslání jednoho dokladu (třeba kvůli velikosti), tak potom neprojde odesílání dalších)</li>
+<li>Pole <strong>Elektronicky podepisovat</strong> slouží pouze pro OUT úlohy. Určuje, zda se úloha při vložení do Bufferu automaticky podepíše.</li>
+<li>Polem <strong>Kódování XML</strong> určujeme, jak bude XML dokument kódován.</li>
+<li>Pole <strong>Nearchivovat při zpracování a Nearchivovat při expiraci</strong> nám určují, kdy a jestli se mají položky Bufferu archivovat. Tyto pole mají vyšší prioritu než pole v nastavení spooleru.</li>
+<li>Pole <strong>Nehledat příchozí zprávu v archívu a Nehledat odpověď v archívu</strong> slouží k zabezpečení komunikace. Viz popis nastavení spooleru.</li>
+</ul>
+<p>Cílové úlohy spooleru se zobrazují na formuláři Úlohy spooleru na tlačítku Úloha – Cílové systémy. Týká se pouze OUT úloh.</p>
+<p>Zde je vyplněno s kým komunikuji (pole ID cílového systému) a s jakým parametrem (pole Parametr komunikace).</p>
+<p>Dle zvoleného druhu komunikace nastavují parametry:</p>
+<ul>
+<li>TCP – IP adresa [čárka] port [čárka] Timeout</li>
+<li>MSMQ – název MSMQ</li>
+<li>Pipe – název named PIPE</li>
+<li>Disk – cesta [čárka] přípona</li>
+<li>HTTP – adresa http</li>
+<li>E-mail – emailové adresy</li>
+</ul>
+<p>Pro druh komunikace E-mail platí: Při vložení úlohy do OUT Bufferu lze přenastavit (přepsat) parametr komunikace pro konkrétní položku v OUT Bufferu. Dále je možno vyplněním tabulky T4002916 OUT Buffer Dokument odeslat více souborů příloh) v jednom e-mailu z jedné položky OUT Bufferu.</p>
+<p>Na formuláři Úlohy spooleru lze přes tlačítko Funkce exportovat, importovat, zobrazit nebo smazat XDR a XSL šablony k jednotlivým úlohám.</p>
+<ol start="3">
+<li>Po vyplnění polí je možno stránku zavřít.</li>
+</ol>
 <p><a href="ac-spooler.html">Spooler</a>
 <a href="ac-productivity-pack.html">AC Productivity Pack</a><br>
 <a href="../index.html">AUTOCONT řešení</a></p>
