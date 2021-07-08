@@ -124,6 +124,7 @@ Na formuláři Úlohy spooleru lze přes tlačítko Funkce exportovat, importova
 
 3. Po vyplnění polí je možno stránku zavřít.
 
+## Viz také
 [Spooler](ac-spooler.md)
 [AC Productivity Pack](ac-productivity-pack.md)  
 [AUTOCONT řešení](../index.md) 
