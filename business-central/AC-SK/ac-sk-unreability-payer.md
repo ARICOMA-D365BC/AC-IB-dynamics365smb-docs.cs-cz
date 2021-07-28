@@ -29,11 +29,11 @@ Soubor "Zoznam platiteľov DPH zrušených.zip (XML)" je potřeba uložit a naim
 4. Poté se otevře okno **Import nespolehlivosti plátců DPH z xml formátu**, kde uživatel vybere **Název souboru**, který se má importovat.
 5. Import potvrďte pomocí tlačítka **OK**.
 
-![Import nespolehlivých plátců DPH z xml formátu](media/unreliability-payer/unreliability-payer-xml.png)
+![Import nespolehlivých plátců DPH z xml formátu](media/unreliability-payer-xml.png)
 
 Po vytvoření **položek nespolehlivosti plátce** systém zkontroluje údaje na kartách zákazníků (Datum kontroly nespolehlivosti, Nespolehlivý plátce DPH) / dodavatelů a dohledá a vepíše na karty zákazníků nebo dodavatelů nacházejících se v uvedeném seznamu do pole **Nespolehlivý plátce** – ANO a do pole **Datum kontroly nespolehlivosti** se přenáší datum importu údajů ze souboru.
 
-![Import nespolehlivých plátců DPH z xml formátu](media/unreliability-payer/customer-unreliability-payer.png)
+![Import nespolehlivých plátců DPH z xml formátu](media/customer-unreliability-payer.png)
 
 V případě, že se zákazník / dodavatel v uvedeném v seznamu nenachází, zůstane údaj Nespolehlivý plátce prázdný.
 
