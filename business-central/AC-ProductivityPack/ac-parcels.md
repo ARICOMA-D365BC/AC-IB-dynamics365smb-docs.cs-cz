@@ -12,7 +12,7 @@ ms.date: 06/24/2020
 ms.author: v-makune
 ---
 
-# Zásilky
+# Zásilky - Integrace Balíkobot
 
 Addon zásilek slouží k vytvořání zásilek a přímému tisku štítků vybraných dopravců, odesílání dat o zásilkách přepravci a objednání samotného svozu balíků. Pomocí totoho rozšíření je zrychlen proces zpracování a vytváření zásilek posílaných zákazníkům. Tento Addon využívá API služby Balíkobot.
 
@@ -20,25 +20,34 @@ Tento addon je stavěn na základu načítání čárového kódu (čísel) úč
 
 Seznam přepravců:
  - Česká pošta s.p.
+ - DACHER Česká republika
  - DHL
  - Direct Parcel Distribution CZ s.r.o.
+ - FEDEX
+ - Fofr
  - Geis CZ s.r.o.
  - Gebrüder Weiss
  - General Logistics Systems Czech Republic s.r.o.
- - IN TIME SPEDICE s. r.o.
+ - Gebrüder Weiss Česká republika
+ - Gebrüder Weiss Slovenská republika
  - Messenger
  - Pošta bez hranic (Frogman s.r.o.)
  - PPL CZ s.r.o. 
+ - Raben
+ - Spring
  - Slovenská pošta a.s.
- - TNT
+ - TNT Express
  - TOPTRANS EU a.s.
- - Uloženka s.r.o.
+ - WE|DO
+ - WE DO - Uloženka
  - UPS
  - Zásilkovna s.r.o.
 
 
 ## Vytvoření prodejní objednávky
 Základním krokem procesu vytváření zásilek je prodejní objednávka. Data z prodejní objednávky se přenášejí do dalších dokladů, z kterých se vytváří zásilky, proto je nezbytné zadat bezchybně data již na počátku procesu. (Stejně tak se zásilky dají vytvářet z prodejních faktur.)
+
+![Vytvoření objednávky](media/BB_order.png)
 ### Nutná pole k zadání před vydáním dokladu
 - Adresa zákazníka
 - Kód přepravce, kód služby přepravce případně kód pobočky přepravce
@@ -59,17 +68,20 @@ Uživatel již v prodejní objednávce může zadat volitené parametry zásilky
 ## Karta zásilky
 Karta zásilky se skládá celkem z pěti částí.
 
+![Vytvoření objednávky](media/BB_parcel_header.png)
+![Vytvoření objednávky](media/BB_parcel_body.png)
 
 ### Hlavička zásilky
 V hlavičce dokladu jsou pouze povinné údaje potřebné k založení zásilky, pro zadání dalších údajů jako jsou rozměry nebo vzkaz řidiči je nutné využít podokno Parametry zásilky. Každý přepravce a služba přepravce má své specifické parametry, které v případně neplnosti dat nahlásí zpráva, co zásilce chybí za údaj.
 ### Řádky zásilky
 Pro definici počtu balíků v rámci jedné zásilky existuje pole „Počet balíků“. Pokud se bude jednat o balíkovou přepravu (NE PALETOVOU), po zadání počtu balíků se vytvoří řádky zásilky, ke kterým budou přiřazeny jednotlivé štítky od dopravce. V případě paletové přepravy bude toto pole určovat množství jedné manipulační jednotky (nevytvoří se několik řádků, ale vznikne jeden řádek a vyplní se množství; např.: 3 palety).
-### Parametry zásilky
-Volitelné parametry zásilky.
-### Připojené doklady
-V podookně připojené doklady je možné vidět všechny dodací listy nebo faktury, které byly vloženy do jedné zásilky (funkční pouze, když se zásilka posílá na jednu adresu) 
-### Obsah zásilky
-Obsah zásilky je především pro odesílání mimo EU, kdy je nutné udávat informace o tom co je v zásilce.
+### Další části
+
+|Část|Popis|
+|-|-|
+|**Parametry zásilky**|Volitelné parametry zásilky.|
+|**Připojené doklady**|V podookně připojené doklady je možné vidět všechny dodací listy nebo faktury, které byly vloženy do jedné zásilky (funkční pouze, když se zásilka posílá na jednu adresu) |
+|**Obsah zásilky**|Obsah zásilky je především pro odesílání mimo EU, kdy je nutné udávat informace o tom co je v zásilce.|
 ## Vytvoření nové zásilky z účtovaného dokladu
 
 Po zaúčtování dodání nastává proces vytvoření zásilky pro zákazníka. Jedním ze způsobů je vytvoření zásilky s dodacího listu nebo účtované faktury. Pomocí načítání čísla dokladu se automaticky předvyplní formulář **Vytvořit zásilku**. Tímto krokem uživatel nemusí ručně vypisovat údaje o zásilce.
@@ -109,6 +121,8 @@ Objednání svozu slouží k předání informace o Vašich zásilkách dopravci
 
 Funkce zobrazí seznam přepravců s počtem zásilek, které ještě nebyly objednány ke svozu. Uživatel může objednat svoz pouze pro vybraného přepravce nebo pro všechny najednou.
 
+![Vytvoření objednávky](media/BB_collect.png)
+
 Pro objednání svozu je nutné udělat tyto kroky:
 1. Na přehledu zásilek vybrat funkci **Objednat svoz**
 2. Na kartě objednat svozu zvolit, zda se bude objednávat svoz jednoho přepravce (**Objenad svoz**) nebo všech (**Objednat všechny svozy**).
@@ -116,7 +130,7 @@ Pro objednání svozu je nutné udělat tyto kroky:
 
 ## Tisk předávacího protokolu svozu
 Předávací protokol je generován ze strany přepravců.
-Tato sestava se může nastavit, aby se tiskla automaticky po objednání svozu. Nastavení automatického tisku je v okně **Nastavení Balíkobotu**. Pro dodatečný tisk předávacího protokolu vybraného přepravce slouží funkce se stejným názvem na přehledu zásilek, kdy stačí stát na jedné ze zásilek daného přepravce v daný den svozu. Poté se vytiskne soupiska všech zásilek od vybraného přepravce za určený den.
+Tato sestava se může nastavit, aby se tiskla automaticky po objednání svozu. Nastavení automatického tisku je v okně **Nastavení Zásilek**. Pro dodatečný tisk předávacího protokolu vybraného přepravce slouží funkce se stejným názvem na přehledu zásilek, kdy stačí stát na jedné ze zásilek daného přepravce v daný den svozu. Poté se vytiskne soupiska všech zásilek od vybraného přepravce za určený den.
 
 Pro dodatečný tisk předávacího protokolu svozu:
 1. Stoupnout si na zásilky z daného svozu a použít funkci **Tisk předávacího protokolu svozu**.
@@ -127,6 +141,7 @@ Na přehledu zásilek lze na první pohled zahlédnout stav přepravy zásilky. 
 
 Pokud chcete zobrazit jednotlivé stavy od přepravce využijte funkci na přehledu zásilek **Sledování zásilky**, která otevře stránku s jednotlivými stavy přepravy.
 
+![Vytvoření objednávky](media/BB_Tracking.png)
 
 ## Kontroly a omezení
 
@@ -135,6 +150,6 @@ Pokud chcete zobrazit jednotlivé stavy od přepravce využijte funkci na přehl
  - Jedno expediční místo může být přiřazeno jedné lokaci. Vzniká vazba 1:1.
 
 ## Viz také
-[Nastavení zásilek](ac-parcels-setup.md)  
+[Nastavení - Zásilky - Integrace Balíkobot](ac-parcels-setup.md)  
 [AC Productivity Pack](ac-productivity-pack.md)  
 [AUTOCONT řešení](../index.md)

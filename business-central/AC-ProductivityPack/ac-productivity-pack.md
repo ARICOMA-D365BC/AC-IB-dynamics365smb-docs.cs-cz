@@ -32,7 +32,7 @@ Sada addonů pro rozšíření funkcionalit provozní části systému pro D365 
 |Modul Datové schránky poskytuje podporu pro správu datových schránek ve smyslu zákona 300/2008 Sb. o elektronických úkonech a následujících vyhlášek.|[Datové schránky](ac-data-boxes.md)|
 |Rozšíření fronty úloh je doplňující modul umožňující definovat parametry spouštění úlohy a akce vykonávané při startu, úspěšném nebo neúspěšném dokončení úlohy jako je například zaslání notifikačního emailu.|[Rozšíření fronty úloh (Job Queue)](ac-job-queue-extension.md)|
 |Správa upozornění umožňuje systémové upozorňování na stavy dat a procesů evidovaných v systému Dynamics 365 Business Central. Upozorňování pracuje jak interně v prostředí systému, tak i externě formou e-mailu.|[Správa upozornění](ac-notifications.md)|
-|Modul Zásilky je řešení pro vytváření, evidenci a expedici zásilek. Slouží k přímému tisku štítků vybraných dopravců na zásilky, odesílání dat o zásilkách přepravci, objednání samotného svozu a sledování stavů balíků.|[Zásilky](ac-parcels.md)|
+|Modul Zásilky je řešení pro vytváření, evidenci a expedici zásilek. Slouží k přímému tisku štítků vybraných dopravců na zásilky, odesílání dat o zásilkách přepravci, objednání samotného svozu a sledování stavů balíků.|[Zásilky - Integrace Balíkobot](ac-parcels.md)|
 
 
 ## Viz také
