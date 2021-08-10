@@ -15,7 +15,7 @@ ms.author: v-makune
 
 Pro zpracování příkazu pro úhradu či výpisu ve formátu SEPA je využita standartní funkčnost systému.
 
-## Nastavení SEPA platebního styku: 
+## Nastavení SEPA platebního styku:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení exportu/importu banky** a poté vyberte související odkaz.
 2. Zobrazí se stránka, která může obsahovat seznam již nastavených importů a exportů.

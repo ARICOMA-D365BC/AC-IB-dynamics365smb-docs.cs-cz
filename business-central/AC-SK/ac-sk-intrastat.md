@@ -15,7 +15,7 @@ ms.author: v-makune
 
 Pro účely generování výkazu Intrastat se používá standartní funkcionalita.
 
-Rozdíl oproti standardní funkčnosti je v struktuře souboru csv generovaném pro účely slovenského vykazování.
+Rozdíl oproti standardní funkčnosti je v struktuře souboru s pťíponou .xsd generovaném pro účely slovenského vykazování.
 
 ## Nastavení financí
 
