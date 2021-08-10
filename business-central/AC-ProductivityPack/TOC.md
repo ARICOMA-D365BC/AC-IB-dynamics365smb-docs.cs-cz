@@ -41,8 +41,6 @@
 ### [Nastavení - Doprava - plánování](ac-transport-planning-setup.md)
 ## [WorkFlow - řízení stavů](ac-workflow-status-management.md)
 ### [Nastavení - WorkFlow - řízení stavů](ac-workflow-status-management-setup.md)
-## [WorkFlow - kontrolované tabulky](ac-workflow-linker-tables.md)
-### [Nastavení - WorkFlow - řízení stavů](ac-workflow-status-management-setup.md)
 ## [Správa upozornění](ac-notifications.md)
 ### [Nastavení - Správa upozornění](ac-notifications-setup.md)
 ## [Reklamace](ac-complaints-management.md)
