@@ -12,7 +12,7 @@ ms.author: v-makune
 ---
 # Evidence nářadí a pomůcek
 
-Add-on modul Evidence nářadí a pomůcek řeší problematiku evidence nářadí, pomůcek, nástrojů, forem a jiných potřeb obvykle evidovaných pomocí skladové evidence systému. Tento modul je postaven nad základy evidence majetku, s ohledem na sjednocení evidence pro potřeby sledování dlouhodobého majetku a evidence výrobní, tj. půjčování nářadí a pomůcek.
+Add-on modul **Evidence nářadí a pomůcek** řeší problematiku evidence nářadí, pomůcek, nástrojů, forem a jiných potřeb obvykle evidovaných pomocí skladové evidence systému. Tento modul je postaven nad základy evidence majetku, s ohledem na sjednocení evidence pro potřeby sledování dlouhodobého majetku a výrobní evidence, tj. půjčování nářadí a pomůcek.
 
 ![Evidence nářadí a pomůcek](media/tools.png "Evidence nářadí a pomůcek")
 

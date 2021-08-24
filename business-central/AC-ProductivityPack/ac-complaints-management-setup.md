@@ -45,43 +45,43 @@ Příklad vytvořené číselné řady **(detailněji viz. modul - Číselné ř
 Číselník **Příčiny reklamace** obsahuje pole **Kód**, **Popis**. K nastavení příčin reklamace se dostanete následovně:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Příčiny reklamace** a poté vyberte související odkaz. 
-2. Na stránce **Příčiny reklamace** vyberte akci Nový a poté zadejte **Kód**, **Popis**.
+2. Na stránce **Příčiny reklamace** vyberte akci Nový a poté zadejte **Kód** a **Popis**.
 
 ![Příčiny reklamace](media/complaints-causes.png)
 ### Způsoby vyřízení reklamace
 
-Číselník **Způsoby vyřízení reklamace** obsahuje pole **Kód**, **Popis**. K nastavení Způsobů vyřízení reklamace se dostanete následovně:
+Číselník **Způsoby vyřízení reklamace** obsahuje pole **Kód** a **Popis**. K nastavení Způsobů vyřízení reklamace se dostanete následovně:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte  **Způsoby vyřízení reklamace** a poté vyberte související odkaz.
-2. Na stránce **Způsoby vyřízení reklamace** vyberte akci Nový a poté zadejte **Kód**, **Popis**.
+2. Na stránce **Způsoby vyřízení reklamace** vyberte akci Nový a poté zadejte **Kód** a **Popis**.
 
 ![Způsoby vyřízení reklamace](media/complaint-fulfilment_methods.png)
 
 ## Nastavení řízení stavů
 
-Pokud chcete používat modul **Reklamace** je potřebné správně nastavit i modul **Workflow (řízení stavů)**.
+Pokud chcete používat modul **Reklamace** je potřebné správně nastavit i modul **Workflow (Řízení stavů)**.
 
 ### Nastavení šablony řízení stavů
 
-Nejprve je třeba nastavit Nastavení šablonu řízení stavů **(detailněji viz. modul - Workflow)**.
+Nejprve je třeba nastavit šablonu řízení stavů *(detailněji viz. modul - Workflow)*.
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Šablony řízení stavů** a poté vyberte související odkaz.
 2. Na stránce **Šablony řízení stavů** zvolte funkci **Nový**.
 3. Vyplňte pole **Code** a **Popis**.
-4. Do pole **Číslo tabulky** zadejte číslo **52068271** (číslo tabulky Evidence pošty).
+4. Do pole **Číslo tabulky** zadejte číslo **52068271** (číslo tabulky Hlavička reklamace).
 5. Pokud chcete, aby se automaticky logovaly změny, zaškrtněte políčko **Logovat změny**.
 ![Šablona řízení stavů](media/complaints-status_management.png)
 6. Pokud chcete zadat jednotlivé stavy nově vytvořeného řízení stavů, kliknete na funkci **Šablona** →**Stavy Řízení stavů**.
 ![Stavy řízení stavů](media/complaints-status_mgt._statuses.png)
-Pro každý stav řízení stavů je třeba nadefinovat **Code**, **Popis** a **Filtr dalšího stavu**, který určuje, do jakých dalších stavů je možné z daného stavu přejít. Právě jeden ze stavů musí být označen jako **Výchozí stav** (zaškrtnutím pole **Výchozí stav**). Takto označený stav se vyplní při založení nového dokumentu Evidence pošty.
+Pro každý stav řízení stavů je třeba nadefinovat **Code**, **Popis** a **Filtr dalšího stavu**, který určuje, do jakých dalších stavů je možné z daného stavu přejít. Právě jeden ze stavů musí být označen jako **Výchozí stav** (zaškrtnutím pole **Výchozí stav**). Takto označený stav se vyplní při založení nového dokumentu Reklamace.
 Některé stavy mohou být označeny jako **Konečný stav**, z něhož se už nepokračuje do žádného dalšího stavu.
  Pro aktivní řádek lze specifikovat **Akce Řízení stavů**, **Kontrolovaná pole** a **Nastavovaná pole**.
 
 ### Nastavení řízení stavů pro Reklamace
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení řízení stavů** a poté vyberte související odkaz.
-2. Na stránce **Nastavení řízení stavů** zadejte do pole **Číslo tabulky** číslo 52068271, které označuje tabulku Evidence pošty
-3. V poli **Šablony Řízení stavů** vyberte příslušnou šablonu pro řízení stavů pro Evidenci pošty.
+2. Na stránce **Nastavení řízení stavů** zadejte do pole **Číslo tabulky** číslo 52068271, které označuje tabulku Hlavička reklamace.
+3. V poli **Šablony Řízení stavů** vyberte příslušnou šablonu pro řízení stavů pro Reklamace.
 ![Nastavení řízení stavů](media/complaints-status_mgt._setup.png)
 **Viz také**
 

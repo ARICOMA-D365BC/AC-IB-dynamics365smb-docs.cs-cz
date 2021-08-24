@@ -11,25 +11,25 @@ ms.search.keywords: Czech, Complaints, additional functions
 ms.author: v-makune
 ---
 # Reklamace
-Modul **Reklamace** slouží k evidenci reklamací zboží prodaného i nakoupeného. Umožňuje však také evidovat i reklamace interní. Lze sledovat proces reklamace od založení reklamace, evidenci jednotlivých stavů reklamace, vytváření řádků vyřízení a poskytuje také základní tisky k reklamaci a vyřízení reklamace. Modul je provázán na více úrovních se sledováním pomocí řízení stavů (workflow).
+Modul **Reklamace** slouží k evidenci reklamací zboží prodaného i nakoupeného. Umožňuje však také evidovat i reklamace interní. Lze sledovat proces reklamace od založení reklamace, evidenci jednotlivých stavů reklamace, vytváření řádků vyřízení a poskytuje také základní tisky k reklamaci a vyřízení reklamace. Modul je provázán na více úrovních se sledováním pomocí modulu Řízení stavů (workflow).
 
 ## Vytvoření nové Reklamace
 Po provedení potřebných nastavení lze vytvářet doklady **Reklamace**. Dokumenty lze vytvářet ručně a to, tak že:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přehled reklamací** a poté vyberte související odkaz. 
-2. V přehledu **Přehled reklamací** vyberte ikonu **Nový**.
+2. Na stránce **Přehled reklamací** vyberte ikonu **Nový**.
 3. Vytvořte nový doklad Reklamace.
 
 ![Název](media/complaints-document.png)
 
 **Reklamace** zobrazuje relevantní informace vztahující se k danému dokladu. Je třeba zvolit o jaký **Typ** reklamace se jedná – Nákup, Prodej, Interní. Pole **Číslo** se vyplní automaticky dalším číslem z číselné řady. **Číslo původu** (číslo dodavatele, zákazníka, zaměstnance) je specifikováno dle vybraného Typy dokladu.
 Všechny údaje v bílých polích lze editovat (je tedy možné vyplnit či změnit pole **Číslo kontaktu**, **Kontakt, Požadované datum ukončení, Telefon, E-mail,…** 
-V záložce **Detail změny** stavu se po založení objeví nový záznam s výchozím stavem podle definice v šabloně řízení stavů. 
+V záložce **Detail změny stavu** se po založení objeví nový záznam s výchozím stavem podle definice v šabloně řízení stavů. 
 ### Řádky reklamace
 
 Přes řádky reklamace uživatel propojuje doklad reklamace s původními doklady. Nejprve je třeba do řádku zadat **Kód důvodu reklamace**, který specifikuje důvod reklamace pro daný řádek.
-Pole **Číslo původního dokladu** (Účtované řádky nákupní příjemky, Řádky účtované příjemky vratky) lze propojit pro jednotlivý **Typ** = Nákup, Prodej. V případě, že se jedná o **Typ** = Interní, pak je třeba vybrat **Číslo položky zboží**, ke které se reklamace vztahuje. V případě, že pole **Typ původní dokladu** = Transfer lze původní doklad propojit přes pole Číslo původního dokladu (Řádky účtované dodávky transferu).
-Z propojeného původní dokladu se předvyplní základní data – **Číslo zboží, Popis, Kód měrné jednotky, Reklamované množství, Číslo šarže,…**, které uživatel může změnit či upravit.
+Pole **Číslo původního dokladu** (Účtované řádky nákupní příjemky, Řádky účtované příjemky vratky) lze propojit pro jednotlivý **Typ** = Nákup, Prodej. V případě, že se jedná o **Typ** = Interní, pak je třeba vybrat **Číslo položky zboží**, ke které se reklamace vztahuje. V případě, že pole **Typ původního dokladu** = Transfer lze původní doklad propojit přes pole Číslo původního dokladu (Řádky účtované dodávky transferu).
+Z propojeného původního dokladu se předvyplní základní data – **Číslo zboží, Popis, Kód měrné jednotky, Reklamované množství, Číslo šarže,…**, které uživatel může změnit či upravit.
 
 ![Název](media/complaints-complaint_list.png)
 ### Poznámky k reklamaci
@@ -39,7 +39,7 @@ Uživatelé mohou zadat řádkové poznámky dostupné jako funkce **Souvisejíc
 ![Název](media/complaints-notes.png)
 ### Dokumenty
 
-Pokud je instalován modul **Publikování SharePoint**, pak je možné u každé **Reklamace** pomocí funkce **Související/Dokumenty/Publikovat** publikovat dokument a pomocí funkce **Zobrazit** zobrazit publikovaný dokument **(detailněji viz. modul – SharePoint)**.
+Pokud je instalován modul **Publikování SharePoint**, pak je možné u každé **Reklamace** pomocí funkce **Související/Dokumenty/Publikovat** publikovat dokument a pomocí funkce **Zobrazit** zobrazit publikovaný dokument *(detailněji viz. modul – SharePoint)*.
 
 ![Název](media/complaints-documents.png)
 ### Tisk
@@ -48,11 +48,11 @@ Pomocí funkce **Akce/Tisk/Reklamace** a **Akce/Tisk/Vyřízení reklamace** se 
 
 ## Zpracování reklamace
 
-Po vytvoření Reklamace je možno ji dále zpracovávat a procesovat a následně pak ji přepnout např. do nového **Stavu** = V řešení.
+Po vytvoření Reklamace je možno ji dále zpracovávat a procesovat a následně ji pak přepnout např. do nového **Stavu** = V řešení.
 
-Na řádku reklamace lze vyplnit pole **Kód příčiny reklamace** (výběr z číselníku **Příčiny reklamace**) , **Zapříčinil – Středisko** (výběr z číselníku **Hodnot dimenzí – STŘEDISKO**), **Zapříčinil – Zaměstnanec** (výběr z číselníku **Zaměstnanci**). Přes akci **Řádek/Změna stavu** lze jednotlivý řádek reklamace procesně přesunout do dalšího definovaného stavu workflow a přes akci **Akce/Funkce/Změna stavu** změnit stav celého dokladu reklamace.
+Na řádku reklamace lze vyplnit pole **Kód příčiny reklamace** (výběr z číselníku **Příčiny reklamace**), **Zapříčinil – Středisko** (výběr z číselníku **Hodnot dimenzí – STŘEDISKO**), **Zapříčinil – Zaměstnanec** (výběr z číselníku **Zaměstnanci**). Přes akci **Řádek/Změna stavu** lze jednotlivý řádek reklamace procesně přesunout do dalšího definovaného stavu workflow a přes akci **Akce/Funkce/Změna stavu** změnit stav celého dokladu reklamace.
 
-Sledování a řízení postupu reklamace tedy může být podpořeno přepínáním stavů workflow se všemi jeho možnostmi, jako např. informování uživatelů mailem, automatické nastavování polí či řízením přístupu vybraným uživatelům k jednotlivým stavům workflow (**detailněji viz. Workflow řízení stavů**).
+Sledování a řízení postupu reklamace tedy může být podpořeno přepínáním stavů workflow se všemi jeho možnostmi, jako např. informování uživatelů mailem, automatické nastavování polí či řízení přístupu vybraným uživatelům k jednotlivým stavům workflow (*detailněji viz. Řízení stavů*).
 
 ### Vytvořit řádek vyřízení
 
@@ -90,9 +90,9 @@ Dispečer řádků reklamace je dostupný:
 
 - Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Dispečer řádků reklamace** a poté vyberte související odkaz.
 
-Tato stránka umožňuje souhrnný pohled na všechny reklamace. Nabízí přehledové zobrazení reklamací s přednastavenými volitelnými filtry v záhlaví pro snadnější vyhledávání a orientaci. Reklamace lze filtrovat např. podle **Lokace hlavičky**, **Příčiny reklamace**, **Datumu vytvoření**, podle **Uživatele, který reklamaci Vytvořil** či podle **stavu Workflow**. Zobrazený přehled požadavků je možno navíc seřadit podle různých klíčů, zvl. podle Čísla reklamace, Čísla zboží, Popisu, Kódu příčiny reklamace a Zapříčinili – Středisko nebo Zaměstnanec.
+Tato stránka umožňuje souhrnný pohled na všechny reklamace. Nabízí přehledové zobrazení reklamací s přednastavenými volitelnými filtry v záhlaví pro snadnější vyhledávání a orientaci. Reklamace lze filtrovat např. podle **Lokace hlavičky**, **Příčiny reklamace**, **Datumu vytvoření**, podle **Uživatele, který reklamaci Vytvořil** či podle **stavu Řízení stavů**. Zobrazený přehled požadavků je možno navíc seřadit podle různých klíčů, zvl. podle Čísla reklamace, Čísla zboží, Popisu, Kódu příčiny reklamace a Zapříčinili – Středisko nebo Zaměstnanec.
 
-Na řádku reklamace lze vyplnit pole **Kód příčiny reklamace** (výběr z číselníku **Příčiny reklamace**) , **Zapříčinil – Středisko** (výběr z číselníku **Hodnot dimenzí – STŘEDISKO**), **Zapříčinil – Zaměstnanec** (výběr z číselníku **Zaměstnanci**).
+Na řádku reklamace lze vyplnit pole **Kód příčiny reklamace** (výběr z číselníku **Příčiny reklamace**), **Zapříčinil – Středisko** (výběr z číselníku **Hodnot dimenzí – STŘEDISKO**), **Zapříčinil – Zaměstnanec** (výběr z číselníku **Zaměstnanci**).
 
 Vybraný řádek reklamace lze pak zobrazit akcí **Souvisejíci/Řádek/Doklad**. Dále je zde funkce **Akce/Funkce/Změna stavu** pro změnu stavu workflow daného řádku reklamace.
 
@@ -105,7 +105,7 @@ Pomocí akce **Akce/Funkce/Uzavřít reklamaci** se celá Reklamace přepne do *
 Jedná se o stav, ve kterém jsou již všechny pole a akce nepřístupné tzn. nelze na Reklamaci již nic změnit či upravit.
 
 [!NOTE]
-Z tohoto stavu se již nelze vrátit do předchozího **Stavu** – V řešení a nebo Nový.
+Z tohoto stavu se již nelze vrátit do předchozího **Stavu** – V řešení nebo Nový.
 
 ![Název](media/complaints-closing.png)
 

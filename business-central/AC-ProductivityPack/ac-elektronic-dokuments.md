@@ -12,7 +12,7 @@ ms.author: v-makune
 ---
 # Elektronická fakturace
 
-Modul Elektronická fakturace slouží k moderní bezpapírové výměně daňových dokladů se zákazníkem. 
+Modul **Elektronická fakturace** slouží k moderní bezpapírové výměně daňových dokladů se zákazníkem. 
 
 Modul umožňuje automaticky generovat jak strukturované dokumenty ve formátu XML, tak případně tvořit elektronické dokumenty pro vytištění v jiných formátech (PDF - moduly „Elektronická fakturace – pdf náhled“ a „Elektronická fakturace – PDFXChange“, DOC – modul „Elektronická fakturace – ISDOC“). 
 

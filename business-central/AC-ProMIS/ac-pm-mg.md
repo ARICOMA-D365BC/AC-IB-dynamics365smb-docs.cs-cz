@@ -20,9 +20,9 @@ ms.lasthandoff:
 # <a name="ac-pm-MG"></a>Map&Guide
 
 Tato komunikace je možná pouze s Map&Guide licencovaným jako Server (Desktop edice není pro integraci použitelná). Komunikace je pak realizována pomocí následujících tří webových služeb:
-- o	**xLocate** – z NAV se odešlou souřadnice a server M&G vrátí, co se v daném místě nachází; a naopak
-- o	**xMap** - z NAV se odešlou požadované body zájmu a server M&G vrací mapu (jako obrázek) s vyznačenými body)
--  o	**xRoute** - z NAV se odešle požadavek na trasu s počátkem a koncem, server M&G vrací trasu reprezentovanou průjezdnými body
+- o	**xLocate** – z Business Central se odešlou souřadnice a server M&G vrátí, co se v daném místě nachází; a naopak
+- o	**xMap** - z Business Central se odešlou požadované body zájmu a server M&G vrací mapu (jako obrázek) s vyznačenými body)
+-  o	**xRoute** - z Business Central se odešle požadavek na trasu s počátkem a koncem, server M&G vrací trasu reprezentovanou průjezdnými body
 
 Pozn. V případě komunikace s externím serverem není možné definovat vlastní ikony pro vyznačení bodů zájmu, lze využít pouze předdefinované.
 

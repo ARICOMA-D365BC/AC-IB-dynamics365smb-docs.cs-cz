@@ -19,9 +19,9 @@ ms.lasthandoff:
 
 # <a name="AC-PM-Promis"></a>AC ProMIS
 
-AC ProMIS pro Dynamics NAV je komplexní řešení informačního systému pro dopravu a projektovou společnost.Toto jedinečné průmyslové řešení mapuje životní cyklus celé zakázky. Poskytuje okamžitý a historický přehled tras a polohy zásilek a vozidel, jejich využití, statistiky kilometrů a průměrné spotřeby a provozních a servisních nákladů.
+AC ProMIS pro Dynamics 365 Business Central je komplexní řešení informačního systému pro dopravu a projektovou společnost. Toto jedinečné průmyslové řešení mapuje životní cyklus celé zakázky. Poskytuje okamžitý a historický přehled tras a polohy zásilek a vozidel, jejich využití, statistiky kilometrů a průměrné spotřeby a provozních a servisních nákladů.
 
-Systém umožňuje zpracování proces objednávek, výpočet cen jednotlivých zásilek včetně mýtného prostřednictvím plánování, dále řízení dopravy a online sledování až po finální vyhodnocení. Rozšíření dále sleduje přehled o najetých kilometrech a aktuální spotřebě paliva. Díky těmto informacím umožňuje provádět plánování tras a oprav.
+Systém umožňuje zpracování procesu objednávek, výpočet cen jednotlivých zásilek včetně mýtného prostřednictvím plánování, dále řízení dopravy a online sledování až po finální vyhodnocení. Rozšíření dále sleduje přehled o najetých kilometrech a aktuální spotřebě paliva. Díky těmto informacím umožňuje provádět plánování tras a oprav.
 
 AC Transport poskytuje:
 

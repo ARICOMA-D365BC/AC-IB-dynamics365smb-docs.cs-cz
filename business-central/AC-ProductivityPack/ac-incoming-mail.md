@@ -12,7 +12,7 @@ ms.author: v-makune
 ---
 # Evidence pošty
 
-Add-on modul **Evidence pošty** rozšiřuje moduly **Nákupu** a **Prodeje** systému Microsoft Dynamics NAV 365 Business Central o podporu evidence doručené a odeslané pošty. Evidovanou poštu je možné řízeně zpracovávat pomocí modulu **Workflow (Řízení stavů)**, provázat s nákupními či prodejními doklady a prostřednictvím modulu **Publikování SharePoint** a nebo modulu **Došlé doklady** připojit ke kartě evidované pošty naskenovaný či elektronicky přijatý dokument. Další možností je propojení karty evidence pošty se záznamem v modulu **Datové schránky**.
+Add-on modul **Evidence pošty** rozšiřuje moduly **Nákupu** a **Prodeje** systému Microsoft Dynamics 365 Business Central o podporu evidence doručené a odeslané pošty. Evidovanou poštu je možné řízeně zpracovávat pomocí modulu **Workflow (Řízení stavů)**, provázat s nákupními či prodejními doklady a prostřednictvím modulu **Publikování SharePoint** a nebo modulu **Došlé doklady** připojit ke kartě evidované pošty naskenovaný či elektronicky přijatý dokument. Další možností je propojení karty evidence pošty se záznamem v modulu **Datové schránky**.
 
 ## Vytvoření nové Karty evidence pošty
 Po provedení potřebných nastavení lze vytvářet dokumenty Evidence pošty. Dokumenty lze vytvářet ručně a to, tak že:
@@ -46,7 +46,7 @@ Uživatelé mohou zadat řádkové poznámky dostupné jako funkce **Souvisejíc
 Pokud je instalován modul **Publikování SharePoint**, pak je možné u každé Karty evidence pošty pomocí funkce **Dokumenty/Publikovat** publikovat dokument a pomocí funkce **Zobrazit** zobrazit publikovaný dokument **(detailněji viz modul - SharePoint)**.
 ![Dokument](media/IM-doc_publish.png)
 ### Připojené dokumenty
-Pomocí funkce **Související/Pošta/Přílohy** lze ke kartě připojit jakýkoliv doklad, který je následně uložen do tabulky systému Microsoft Dynamics NAV 365 Business Central.
+Pomocí funkce **Související/Pošta/Přílohy** lze ke kartě připojit jakýkoliv doklad, který je následně uložen do tabulky systému Microsoft Dynamics 365 Business Central.
 ![Připojené dokumenty](media/IM-doc_attached.png)
 ### Tisk
 Pomocí funkce **Reporty/Tisk** na stránce **Karta evidence pošty** se spustí sestava **Evidence pošty** (do vstupního filtru se nabídne číslo aktuálně zobrazeného požadavku, rozsah tisku lze pak blíže specifikovat prostřednictvím filtrů a parametrů.
@@ -58,22 +58,23 @@ Pokud je vytvořeno a povoleno workflow Výměny došlých dokladů a vytvořeno
 ![Odeslat požadavek ke schválení](media/IM-send_request.png)
 Požadavek na schválení lze schválit pomocí funkce – **Související/Pošta/Schvalování** a nebo jej zrušit pomocí funkce – **Akce/Zrušit požadavek na schválení**.
 
-### Vytvoř interakci
+### Vytvoření interakce
 Po spuštění funkce **Vytvoř interakci** vznikne ke Kartě kontaktu odpovídající Položka protokolu interakce dle **Nastavení šablon interakce** pro **Příchozí** a **Odchozí poštu (detailněji viz modul - Marketing)**.
-### Vytvořit doklad
+### Vytvoření dokladu
 Lze využít funkce **Vytvořit doklad**. Uživateli se zobrazí dotaz, jaký doklad se má vytvořit a po vytvoření se automaticky zobrazí karta nového dokladu.
+
 ![Vytvořit doklad](media/IM-doc_create.png)
 
 Do hlavičky vytvořeného dokladu se přenesou všechny údaje z Karty evidence pošty. Pokud jsou na kartě evidence pošty vyplněny dimenze a v Šabloně evidence pošty je zaškrtnuto pole Přenášet dimenze do dokladu, tak budou přeneseny také dimenze do vytvořeného dokladu. Tento doklad lze otevřít standardní funkcionalitou Navigace, přes funkce – Navigace a nebo Související doklady pošty.
 ### Objednávky kontaktu
-Pomocí funkce **Objednávky kontaktu** si lze nechat zobrazit přehled Nákupních nebo Prodejních řádků a to podle typu Kontaktu. Řádky jsou zafiltrované 
-- řádky **Nákupní objednávky** nebo **Nákupní objednávky vratky** a to k zadanému číslu Dodavatele
+Pomocí funkce **Objednávky kontaktu** si lze nechat zobrazit přehled Nákupních nebo Prodejních řádků a to podle typu Kontaktu. Řádky jsou zafiltrované:
+- řádky **Nákupní objednávky** nebo **Nákupní objednávky vratky** a to k zadanému číslu Dodavatele.
 - řádky **Prodejní objednávky** nebo **Prodejní objednávky vratky** a to k zadanému číslu Zákazníka.
 ![Objednávky kontaktu](media/IM-order.png)
 ### Navigovat (Související doklady pošty)
-Standardní funkce **Navigovat** zobrazí kartu evidenci pošty a **Související doklady pošty**.
+Standardní funkce **Navigovat** zobrazí kartu evidence pošty a **Související doklady pošty**.
 ![Navigovat](media/IM-navigate.png)
-Pomocí funkce **Související doklady pošty** a nebo funkce **Zobrazit Související položky** v rámci Navigace se zobrazí detailní přehled všech souvisejících dokladů k vybrané kartě evidence pošty.
+Pomocí funkce **Související doklady pošty** nebo funkce **Zobrazit Související položky** v rámci Navigace se zobrazí detailní přehled všech souvisejících dokladů k vybrané kartě evidence pošty.
 ![Související položky](media/IM-related_item.png)
 ## Pult evidence pošty
 Pult evidence pošty je dostupný následujícím způsobem.
@@ -87,7 +88,7 @@ Vybraný požadavek lze pak zobrazit volbou **Karta**. Dále jsou zde funkce pro
 Uzavřená evidence pošty je dostupná:
 - Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Uzavřená evidence pošty** a poté vyberte související odkaz.
 Zobrazením stránky **Uzavřená evidence pošty** se zobrazí uzavřené požadavky, tj. požadavky, které už byly vyřízeny. Požadavky jsou uzavírány ručně prostřednictvím funkce Uzavřít evidenci pošty.
-Vybraný požadavek lze pak zobrazit volbou **Zobrazit**. Dále jsou zde funkce pro zobrazení **Související doklady pošty**, **Záznam datové schránky**.
+Vybraný požadavek lze pak zobrazit volbou **Zobrazit**. Dále jsou zde funkce pro zobrazení **Související doklady pošty** a **Záznam datové schránky**.
 ![Uzavřená evidence pošty](media/IM-closed_mail.png)
 
 

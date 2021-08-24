@@ -21,14 +21,14 @@ ms.lasthandoff:
 
 Integrace s aplikací Plantour probíhá na bázi výměnných tabulek v MS SQL.
 
-Z NAV jsou exportovány následující 4 tabulky: 
+Z Business Central jsou exportovány následující 4 tabulky: 
 
-- **Vozidla** – evidují se i parametry vozidel (kód s 12 pozicemi) pro porovnání s omezeními na dodacích místech (viz násl.bod)
-- **Dodací místa** – z  NAV je tento seznam průběžně aktualizován, jak jsou průběžně na dokladech vytvářena. Evidují se až 2 časová okna pro 7 dní v týdnu, dále se pak evidují omezení pro vozidla (max. hmotnost, sklopná rampa, nakládací ruka,… to je zákaznická implementace)
+- **Vozidla** – evidují se i parametry vozidel (kód s 12 pozicemi) pro porovnání s omezeními na dodacích místech (viz násl.bod).
+- **Dodací místa** – z  NAV je tento seznam průběžně aktualizován, jak jsou průběžně na dokladech vytvářena. Evidují se až 2 časová okna pro 7 dní v týdnu, dále se pak evidují omezení pro vozidla (max. hmotnost, sklopná rampa, nakládací ruka,… to je zákaznická implementace).
 - **Zásilky** – zde se evidují toky na/z dodacích míst (komodity, ale i např. palety); Plantour zohledňuje, aby šlo v každý okamžik na auto vše naložit.
-- **Řidiči** – jen základní číselník vlastních řidičů Kód, jméno, telefon, Aktivní
+- **Řidiči** – jen základní číselník vlastních řidičů Kód, jméno, telefon, Aktivní.
 
-Do NAV jsou importovány následující 2 tabulky:
+Do Business Central jsou importovány následující 2 tabulky:
 
 - T_TRS_O	- vypočtené trasy
 - T_ZAST_O	- zastávky na trase
