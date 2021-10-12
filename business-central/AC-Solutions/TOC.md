@@ -41,7 +41,6 @@
 ### [Nastavení - Doprava - plánování](../AC-productivitypack/ac-transport-planning-setup.md)
 ## [WorkFlow - řízení stavů](../AC-productivitypack/ac-workflow-status-management.md)
 ### [Nastavení - WorkFlow - řízení stavů](../AC-productivitypack/ac-workflow-status-management-setup.md)
-## [WorkFlow - kontrolované tabulky](../AC-productivitypack/ac-workflow-linker-tables.md)
 ### [Nastavení - WorkFlow - řízení stavů](../AC-productivitypack/ac-workflow-status-management-setup.md)
 ## [Správa upozornění](../AC-productivitypack/ac-notifications.md)
 ### [Nastavení - Správa upozornění](../AC-productivitypack/ac-notifications-setup.md)
