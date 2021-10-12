@@ -73,7 +73,7 @@ Uživatel již v prodejní objednávce může zadat volitelné parametry zásilk
 Karta zásilky se skládá celkem z pěti částí.
 
 ![Vytvoření objednávky](media/BB_parcel_header.png)
-![Vytvoření objednávky](media/_parcel_body.png)
+![Vytvoření objednávky](media/bb_parcel_body.png)
 
 ### Hlavička zásilky
 V hlavičce dokladu jsou pouze povinné údaje potřebné k založení zásilky, pro zadání dalších údajů jako jsou rozměry nebo vzkaz řidiči je nutné využít podokno Parametry zásilky. Každý přepravce a služba přepravce má své specifické parametry, které v případně nevyplnění nahlásí zpráva, která informuje o tom, co za údaj není na zásilce vyplněn.
