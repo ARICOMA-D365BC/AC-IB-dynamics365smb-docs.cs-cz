@@ -67,10 +67,23 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="workflow---řízení-stavů">WorkFlow - řízení stavů</h1>
+<h1 id="řízení-stavů">Řízení stavů</h1>
 
-<p>Add-on modul Workflow – řízení stavů přidává do systému Dynamics 365 Business Central nástroje pro řízení stavů při postupném zpracování úloh jedním či více uživateli. Umožňuje konfigurovat stavy zpracování, ve kterých se může úloha (doklad, záznam) nacházet, sledovat aktuální stav a průběh zpracování a následně automatizovaně vyplňovat formuláře a záznamy definovanými hodnotami či spouštět libovolné programové akce při změně stavu úlohy. Uplatňuje se zejména pro řízené schvalování a oběh dokladů.</p>
-<p><img src="media/workflow_status.png" alt="WorkFlow - řízení stavů" title="WorkFlow - řízení stavů"></p>
+<p>Add-on modul <strong>Řízení stavů</strong> přidává do systému Microsoft Dynamics 365 Business Central nástroje pro řízení stavů při postupném zpracování úloh jedním či více uživateli. Umožňuje konfigurovat stavy zpracování, ve kterých se může úloha (doklad, záznam) nacházet. Umožňuje také sledovat aktuální stav a průběh zpracování a následně automatizovaně vyplňovat formuláře a záznamy definovanými hodnotami či spouštět libovolné programové akce při změně stavu úlohy (dokladu, záznamu). Uplatňuje se zejména pro řízené schvalování a oběh dokladů.</p>
+<p>Add-on Řízení stavů je především o správném nastavení. Pokud chcete tenhle add-on používat, tak hlavnou z funkčností je změna stavu.</p>
+<h2 id="změna-stavu">Změna stavu</h2>
+<p>Pro přechod do další fáze řešení úlohy (dokladu, záznamu) je třeba kliknout na funkci <strong>Proces</strong> a pak na možnost <strong>Změna stavu</strong> (tuto funkci můžete najít také v informačním panelu pro danou úlohu, doklad nebo záznam, pro který je řízení stavů nastaven).</p>
+<p><img src="media/WF_change_status.png" alt="Nastavení Řízení stavů - šablony Řízení stavů"></p>
+<p>Po kliknutí na tuto funkci se nabídnou další stavy řízení stavů, které podle definice filtru dalšího stavu připadají v úvahu.</p>
+<p>Po dokončení operace je aktualizován <strong>Kód stavu Řízení stavů</strong> na kartě úlohy, dokladu nebo záznamu.</p>
+<h2 id="kontrolované-tabulky">Kontrolované tabulky</h2>
+<p>Funkce kontrolované tabulky rozšiřuje funkčnost add-onu Řízení stavů o možnost kontroly záznamů nebo polí v tabulkách svázaných s tabulkou, která je řízena Řízením stavů.</p>
+<p>Stav Řízení stavů je pak povoleno změnit pouze pokud všechny kontroly v rámci kontrolovaných tabulek vyhovují. Praktické použití může být například toto:</p>
+<ul>
+<li>Pokud je použito Řízení stavů na dokladu s hlavičkou a s řádky, například na Prodejní objednávce, lze kontrolovat, zda k hlavičce existují nějaké řádky, nebo řádky nějakého typu nebo obsahu. Např. že objednávka obsahuje alespoň jeden řádek se zbožím, nebo že má na všech řádcích vyplněnu cenu nebo lokaci nebo glob. dimenzi, apod.</li>
+<li>Lze kontrolovat, zda zdrojový záznam k nějakému poli v tabulce s použitým Řízením stavů obsahuje v dalších polích potřebná data – např. je-li na hlavičce dokladu vyplněno pole Kód prodejce, pak zkontroluje zda-li má tento prodejce vyplněn email.</li>
+</ul>
+<p><img src="media/workflow_tables.png" alt="WorkFlow - kontrolované tabulky" title="WorkFlow - kontrolované tabulky"></p>
 <h2 id="viz-také">Viz také</h2>
 <p><a href="ac-workflow-status-management-setup.html">WorkFlow - řízení stavů - nastavení</a><br>
 <a href="ac-productivity-pack.html">Productivity Pack</a></p>

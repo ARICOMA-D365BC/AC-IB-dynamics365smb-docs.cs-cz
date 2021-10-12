@@ -67,8 +67,117 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="správa-upozornění---nastavení">Správa upozornění - Nastavení</h1>
+<h1 id="nastavení-modulu-správa-upozornění">Nastavení modulu Správa upozornění</h1>
 
+<p>Modul <strong>Správa upozornění</strong> umožňuje <strong>systémové upozorňování</strong> na stavy dat a procesů evidovaných v systému Microsoft Dynamics 365 Business Central. Upozorňování pracuje jak interně v prostředí systému, tak i externě formou e-mailu. Modul dokáže pracovat off-line, jelikož nereaguje na okamžitou změnu v datech, ale <strong>zasílá informace v naplánovaných intervalech</strong>. Kromě sledování aktuální události lze sledovat i vývoj události v čase.</p>
+<h2 id="vytvoření-a-upravení-karty-šablony-události">Vytvoření a upravení karty šablony události</h2>
+<p>Pro vytvoření nové sledované události, je potřeba ji založit a definovat na stránce <strong>Přehled šablon událostí</strong>.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přehled šablon událostí</strong> a poté vyberte související odkaz. </li>
+<li>Na stránce <strong>Přehled šablon událostí</strong> vytvořte novou události zvolením tlačítka <strong>Nový</strong></li>
+<li>Otevře se nová karta události s některými genericky předvyplněnými poli.</li>
+<li>Na poli <strong>Číslo tabulky</strong> vybereme tabulku, nad kterou chceme provádět sledování a dále zvolíme <strong>ID pole</strong> z dané tabulky – dle tohoto pole se vyhodnocuje daná fáze. <strong>Číslo pomocného pole</strong> slouží pouze pro bližší rozlišení události.</li>
+<li>V poli <strong>Připojit úlohu k</strong>, zvolte, jestli chceme po zobrazení události v Položkách upozornění otevřít stránku nebo sestavu. Pole ID objektu, pak blíže specifikuje jakou.</li>
+<li>Na poli Vstupní filtr tabulky, zvolte, které položky z tabulky mají vstoupit, nebo nevstoupit pro jejich následné další pracování.</li>
+<li>Na poli Výstupní filtr tabulky, zvolte další upřesnění filtru.</li>
+<li>Pokud chcete položky, které projdou mimo filtr, uzavírat automaticky zvolte zaškrtávací políčko <strong>Aut. uzavřít položky mimo filtr</strong>.</li>
+<li>Pomocí polí <strong>Jméno přiřazeného uživatele</strong>, nebo <strong>Skupina přiřazených uživatelů</strong> nastavte, komu bude následná vytvořená úloha přiřazena.</li>
+<li>Událost začněte sledovat odškrtnutím pole <strong>Vypnuto</strong>. To určuje, zda se pole sleduje či nikoliv.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Funkcionalita <strong>ID pole</strong> pracuje i s kalkulovanými poli a jedná se o nepovinné pole.</p>
+</div>
+<p><img src="media/Notifications-event_template_card.png" alt="Šablona událostí"></p>
+<h2 id="nastavení-filtrů-dat">Nastavení filtrů dat</h2>
+<p>Kromě nastavení filtrů na stránce Šablony události v polích <strong>Výstupní a Vstupní filtr polí</strong>, můžeme nastavit také filtry polí pomocí volby <strong>Filtry data</strong>. Ten nastavíme následujícím způsobem.</p>
+<p><img src="media/Notifications-date_filters.png" alt="Nastavení filtrů dat"></p>
+<ol>
+<li>Na stránce Šablona událostí vyberte akci <strong>Filtry data</strong></li>
+<li>Nastavte <strong>Číslo datumového pole</strong>, na které se bude filtr vztahovat.</li>
+<li>Zde, v polích <strong>Začátek fáze</strong> a <strong>Konec fáze</strong> zadejte vzorec data vztažený k systémovému datu (TODAY).</li>
+</ol>
+<h2 id="nastavení-fází-událostí">Nastavení fází událostí</h2>
+<p>Pro každou <strong>Kartu šablony události</strong> je potřeba nastavit fáze, do kterých se daná událost může dostat při splnění podmínek.</p>
+<ol>
+<li>Na stránce <strong>Karty šablony události</strong> vyberte akci <strong>Fáze</strong>.</li>
+<li>Vytvořte nový řádek pomocí tlačítka <strong>Nový</strong>.</li>
+<li>U každého řádku zadejte <strong>Code</strong>, který slouží k rozlišení jednotlivých fází sledování.</li>
+<li>Navolte <strong>Typ kontroly</strong>.
+Ten nabývá hodnot <strong>Položka</strong>, <strong>Datový interval</strong> nebo <strong>Číselný interval</strong>. Při výběru fází má nejvyšší prioritu výběru Položka, pak Datový interval a nakonec Číselný interval. Toto pole se vztahuje k poli Číslo pole z Karty šablony události.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Při výběru typu kontroly <strong>Položka</strong> se bere do úvahy pole <strong>Trvání</strong>. Určuje, jak dlouho bude fáze trvat od doby vzniku položky upozornění. Při výběru <strong>Datový interval</strong> se pracuje s poli <strong>Začátek fáze</strong> a <strong>Konec fáze</strong>. Zadává se tedy vzorec data vztažený k systémovému datu (TODAY). Hodnota Číselný interval zase pracuje s poli <strong>Počáteční číslo</strong> a <strong>Koncové číslo</strong>.</p>
+</div>
+<p><img src="media/Notifications-phases.png" alt="Nastavení fází událostí"></p>
+<h2 id="zadání-adresáta-e-mailů">Zadání adresáta E-mailů</h2>
+<p>Ke každé fázi událostí lze také přiřadit e-mailovou adresu určující, komu se daná událost odešle. Existují tři různé způsoby, jak zadat adresáta e-mailu, které jdou mezi sebou kombinovat. Email tak může odejít na všechny tři definice pro jednu položku.</p>
+<p><img src="media/Notifications-email.png" alt="Nastavení emailu"></p>
+<table>
+<thead>
+<tr>
+<th><strong>Typ definice</strong></th>
+<th><strong>Popis</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ručně definovaný e-mail</strong></td>
+<td>Tuto možnost použijte v případě, kdy chcete poslat upozornění vždy na tento definovaný e-mail.</td>
+</tr>
+<tr>
+<td><strong>Dynamický e-mail z pole v záznamu</strong></td>
+<td>Tuto možnost použijte, pokud chcete poslat upozornění na e-maily, které jsou přímo uloženy v záznamu ve zdrojové tabulce šablony upozornění, který je také zdrojem upozornění. (např. upozornění nad kartou zaměstnance, která obsahuje i jeho e-mail).</td>
+</tr>
+<tr>
+<td><strong>Dynamický e-mail z pole relační tabulky</strong></td>
+<td>Používá se v případech, kdy chceme poslat upozornění na e-mail, který je uložen v relační tabulce ke zdrojové tabulce šablony upozornění s vazbou přes jedno pole, které nastavíme. Například při upozornění nad prodejním dokladem, kdy chceme e-mail poslat na prodejce dokladu. E-mail je pak uložen v poli E-mail v tabulce Prodejce/nákupčí, která má z prodejní hlavičky vazbu přes jedno pole <strong>Kód prodejce</strong> – Kód.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="nastavení-ručně-definovaného-emailu">Nastavení Ručně definovaného emailu</h2>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Šablona událostí</strong>, a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Karty šablony události</strong> vyberte akci <strong>Fáze</strong>.</li>
+<li>Zde vyberte <strong>Fáze polí</strong> akci <strong>Emaily</strong></li>
+<li>Na stránce <strong>E-maily událostí</strong> vyberte akci <strong>Nový</strong> a vyplníte pole <strong>E-mail</strong> podle potřeby.</li>
+</ol>
+<h2 id="nastavení-dynamického-emailu-z-pole-v-záznamu">Nastavení Dynamického emailu z pole v záznamu</h2>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Šablona událostí</strong>, a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Karty šablony události</strong> vyberte akci <strong>Fáze</strong>.</li>
+<li>Zde vyberte <strong>Fáze polí</strong> akci <strong>Emaily</strong></li>
+<li>Na stránce <strong>E-maily událostí</strong> vyberte akci <strong>Nový</strong> a vyplňte pole <strong>Číslo pole e-mailu</strong>. Jde o textové pole z tabulky definované šablonou události.</li>
+</ol>
+<h2 id="nastavení-dynamického-emailu-z-pole-relační-tabulky">Nastavení dynamického emailu z pole relační tabulky</h2>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Šablona událostí</strong>, a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Karty šablony události</strong> vyberte akci <strong>Fáze</strong>.</li>
+<li>Zde vyberte <strong>Fáze polí</strong> akci <strong>Emaily</strong></li>
+<li>Vyplňte pole <strong>Číslo relační tabulky</strong> tabulkou, kde se nachází pole s e-mailem.</li>
+<li>Do pole <strong>Číslo relačního pole e-mailu</strong> zadejte pole s e-mailem v relační tabulce.</li>
+<li>Do pole <strong>Číslo pole relace z</strong> zadejte pole z <strong>Tabulky šablony události</strong>, které definuje vazbu do relační tabulky.</li>
+<li>Do pole <strong>Číslo pole relace do</strong> zadejte pole z relační tabulky, na kterém je definována vazba.</li>
+</ol>
+<h2 id="obsah-e-mailů">Obsah E-mailů</h2>
+<p>Existují dva způsoby, jak definovat obsah e-mailu (předmět a tělo). S <strong>pevně definovanou naprogramovanou strukturou</strong>, kterou si sami navolíme a bude při každém spuštění použita, nebo pomocí <strong>dynamického obsahu</strong>, kde je obsah definovaný pomocí polí a textů e-mailu.</p>
+<h2 id="nastavení-emailu-s-pevně-definovanou-strukturou">Nastavení emailu s pevně definovanou strukturou</h2>
+<p>Předmětem tohoto druhu emailu je <strong>kód šablony události</strong> a <strong>popis fáze</strong>. Tělem e-mailu je zase obsah z pole <strong>primární klíč</strong> z položky události.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Šablona událostí</strong>, a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Karty šablony události</strong> vyberte akci <strong>Fáze</strong>.</li>
+<li>Zde vyberte <strong>Fáze polí</strong> akci <strong>Emaily</strong>.</li>
+<li>Vyplňte pole <strong>Typ e-mailu</strong> jako <strong>Jednoduchý</strong>.</li>
+</ol>
+<h2 id="nastavení-emailu-s-dynamickým-obsahem">Nastavení emailu s dynamickým obsahem</h2>
+<p>Předmět i tělo tohoto druhu emailu se definuje v textech mailu s využitím polí e-mailu. Samotné pole je možné definovat z následujících tabulek: zdrojová tabulka šablony upozornění, Šablona událostí, Fáze pole.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Šablona událostí</strong>, a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Karty šablony události</strong> vyberte akci <strong>Fáze</strong>.</li>
+<li>Zde vyberte <strong>Fáze polí</strong> akci <strong>Emaily</strong>.</li>
+<li>Vyplňte pole <strong>Typ e-mailu</strong> jako <strong>Strukturovaný</strong>.</li>
+</ol>
 <p><strong>Viz také</strong></p>
 <p><a href="ac-notifications.html">Správa upozornění</a><br>
 <a href="ac-productivity-pack.html">Productivity Pack</a></p>
