@@ -33,7 +33,7 @@ Nastavení slouží pro mapování polí v aplikaci na uzly .xml. Tato tabulka j
 2. Na kartě **Intrastat mapování souboru** zkontrolujte, nebo doplňte nastavení.
 3. Potvrďte pomocí tlačítka **OK**.
 
-*obrázek*
+![Mapování souboru](media/ac-sk-intrastat.png)
 
 ## Export souboru pro Intrastat
 
