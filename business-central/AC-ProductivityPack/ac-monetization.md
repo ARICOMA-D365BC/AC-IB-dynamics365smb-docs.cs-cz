@@ -42,9 +42,9 @@ O blížícím se konci zkušebního období informuje uživatele oznámení na 
 
 Funkce **Koupit** produkt na stránce **Nákup produktu firmy AUTOCONT** uživatele postupně provede jednotlivými kroky: 
 
-- **Výběr plánu** – nejprve je třeba zvolit, zda-li chce zákazník obnovovat předplatné každý měsíc nebo jednou ročně  .
-- **Detaily zákazníka** – Doplnění chybějících údajů o firmě potřebných pro objednávku a fakturaci .
-- **Detaily platební karty** – Zadání detailů o platební kartě, které budou uloženy ve službě STRIPE .
+- **Výběr plánu** – nejprve je třeba zvolit, zda-li chce zákazník obnovovat předplatné každý měsíc nebo jednou ročně.
+- **Detaily zákazníka** – Doplnění chybějících údajů o firmě potřebných pro objednávku a fakturaci.
+- **Detaily platební karty** – Zadání detailů o platební kartě, které budou uloženy ve službě STRIPE.
 
 ## Správa předplatného 
 
