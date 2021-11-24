@@ -57,6 +57,7 @@
 ### [Nastavení - Zásilky - Integrace Balíkobot](ac-parcels-setup.md)
 ## [EDI konektor základ](ac-edi-connector-basic.md)
 ### [Nastavení - EDI konektor základ](ac-edi-connector-basic-setup.md)
+## [AC Monetizace](ac-monetization.md)
 # [AC Slovak Legislative Pack](../AC-SK/ac-sk-legislative-pack.md)
 ## [Slovenský jazyk pro Business Central](../AC-SK/ac-sk-language.md)
 ## [Rozvaha a výkaz zisku ztrát](../AC-SK/ac-sk-balance-sheet-income-statement.md)
