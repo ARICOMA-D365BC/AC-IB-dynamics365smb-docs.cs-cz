@@ -58,6 +58,7 @@
 ## [EDI konektor základ](../AC-productivitypack/ac-edi-connector-basic.md)
 ### [Nastavení - EDI konektor základ](../AC-productivitypack/ac-edi-connector-basic-setup.md)
 # [AC Slovak Legislative Pack](../AC-SK/ac-sk-legislative-pack.md)
+## [Slovenský jazyk pro Business Central](../AC-SK/ac-sk-language.md)
 ## [Rozvaha a výkaz zisku ztrát](../AC-SK/ac-sk-balance-sheet-income-statement.md)
 ## [Nastavení - Statutární výkazy](../AC-SK/ac-sk-balance-sheet-income-statement-setup.md)
 ## [Výkaz DPH](../AC-SK/ac-sk-vat-statement-export.md)
