@@ -1,14 +1,14 @@
 ---
 title: AUTOCONT SOLUTIONS - AC Monetization | Microsoft Docs
-description: This section describes parcel functionality - Setup of Balikobot
+description: This section describes parcel functionality - AC Monetization
 author: ac-kunes
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: Czech, shipment, parcels, Shipping, settings
-ms.date: 06/24/2020
+ms.search.keywords: Czech, AC
+ms.date: 11/24/2021
 ms.author: v-makune
 ---
 
