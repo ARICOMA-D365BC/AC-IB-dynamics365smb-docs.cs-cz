@@ -12,7 +12,7 @@ ms.author: v-makune
 ---
 # Doprava
 
-Modul Doprava – základ řeší problematiku evidence vozidel, plánování údržby vozidel, evidence řidičů, evidence knih jízd a evidenci spotřeby pohonných hmot (včetně možnosti importu souborů o nákupech na palivové karty, např. CCS).
+Add-on Doprava řeší problematiku evidence vozidel, plánování údržby vozidel, evidence řidičů, evidence knih jízd a evidenci spotřeby pohonných hmot (včetně možnosti importu souborů o nákupech na palivové karty, např. CCS).
 
 ## Definice řidičů
 Karta řidiče definuje sledovanou osobu a k ní navázané informace.  
