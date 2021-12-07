@@ -30,6 +30,12 @@ K řidiči lze ukládat „**Odborné způsobilosti**“ – tj. věci souvise
 
 ## Definice vozidel
 Vozidla jsou definovány pro potřeby sledování spotřeby a údržby. K vozidlu lze evidovat informace o vozidlu jako vlastním, dále vazbu na přidělenou platební kartu (pro potřeby importu čerpání), přiděleného (výchozího řidiče) a vazby na další záznamy (Majetek, zdroj….) 
+
+Pro vytvoření karty vozidla postupujte následujícím způsobem:
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přehled vozidel** a poté vyberte související odkaz.
+2. Na přehledu vyberte funkci **Nový**.
+3. Na kartě řidiče vypňte potřebné informace.
+
 ![Karta vozidla](media/ac_transport_vehiclecard.png)
 
 K vozidlu lze definovat další údaje: 
@@ -61,6 +67,13 @@ Pro založení Výpisu čerpání postupujte následujícím způsobem:
 
 ## Knihy jízd
 Slouží k záznamům o provozu vozidla, zadává se prostřednictvím Kniha Jízd. 
+
+Pro vyplnění knihy jízd pustupujte pomocí těchto kroků:
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Kniha jízd** a poté vyberte související odkaz.
+2. Vyplňtě řádky dle potřeby.
+    - Typ cesty, Číslo vozidla, Popis, Číslo řidiče, Typ provozu a další.
+3. Zaúčtujte deník.
+
 ![Kniha jízd](media/ac_transport_rides_journal.png)
 
 V případě, že je využívána rozšířená funkcionalita plánování dopravy, tak lze použít funkci pro předgenerování knihy jízd na základě vydaných příkazů k jízdě. 
@@ -71,6 +84,12 @@ Tato část je součástí rozšířené verze **Doprava – plánování**.
 
 V rámci plánování se pracuje s tzv. **Požadavkem dopravy**, který je záznamem o předpokládané dopravě, tyto požadavky je možné vytvářet z dokladů **Prodejní objednávka**, **Nákupní objednávka**, **Objednávka transferu** pomocí funkce **Vytvořit požadavek na dopravu**. 
 
+Pro vytvoření požadavku z nákupní objednávky postupujte následujícím způsobem:
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nákupní objednávky** a poté vyberte související odkaz.
+2. Otevřete existující objednávku nebo vytvořte novou.
+3. Pro vytvoření požadavku na dopravu použijte funkci **Vytvořit požadavek na dopravu**.
+4. Dokončete průvodce požadavku na dopravu.
+
 Tato funkce je průvodcem, kdy předvyplní maximální množství údajů ze vstupního dokladu. Předpokladem je, že tyto požadavky vytváří běžní uživatelé zpracovávající doklady. 
 
 ![Vytvoření požadavku na dopravu](media/ac_transport_planning.png)
@@ -78,7 +97,6 @@ Tato funkce je průvodcem, kdy předvyplní maximální množství údajů ze vs
 Další fází je vlastní „**Plánování dopravy**“ pomocí stránky „Pult dispečera dopravy“ – kde odpovědný pracovník vidí jednotlivé požadavky a může je zpracovávat – plánovat data, přiřazovat vozidla/řidiče, kombinovat dle dostupných kapacit atd. 
 
 V rámci plánování se řeší stavy požadavku: 
-
 - Nový – pouze vytvořený 
 - Zaplánováno – Je vytvořen příkaz k jízdě 
 - Uzavřeno – Doprava byla dokončena 

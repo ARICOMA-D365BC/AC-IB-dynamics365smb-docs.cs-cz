@@ -68,7 +68,7 @@ Pro členění údržby vozidla dle vašich potřeb
 
 ## Šablony výpisu čerpání 
 
-- Šablony výpisu čerpání slouží k vytváření a sledování jednotlivých šablon výpisů. Pole: 
+- Šablony výpisu čerpání slouží k vytváření a sledování jednotlivých šablon výpisů. V šabloně je nutné vyplnit následující pole:
 
     - **Název** a **Popis**.
     - **Čísla výpisů** – číselná řada pro výpisy čerpání PHM.
