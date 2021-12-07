@@ -28,7 +28,7 @@ Pro správnou funkci add-onu je potřeba nastavit a založit i jiné nastavení 
 ### Nastavení faktoringu
 
 Na stránce Nastavení faktoringu je třeba provést základní nastavení pro modul faktoring: 
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nsatavení faktoringu** a poté vyberte související odkaz.
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení faktoringu** a poté vyberte související odkaz.
 2. Na kartě faktoringu vyplňte následující pole:
     - **Účto skupina faktoringu** – účto skupina, která je použita pro účtování faktoringové pohledávky 
     - **Protiúčet nákladů** – účet, na který se zaúčtuje pohledávka za zákazníkem 
