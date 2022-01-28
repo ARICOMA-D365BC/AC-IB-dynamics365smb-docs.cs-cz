@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-FinancialPack/ac-controling-basic-setup.html",
-          "hash": "UK86xLc2XG20IDzi5dheKQ=="
+          "hash": "blafjqcc7yv2QqrBe3jfyg=="
         }
       },
       "is_incremental": true,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-FinancialPack/ac-controling-basic.html",
-          "hash": "iVqvS1jW0qvE6s3REO3+dA=="
+          "hash": "gtEP48vwDeaYs7yyewViDA=="
         }
       },
       "is_incremental": true,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-FinancialPack/ac-factoring-setup.html",
-          "hash": "JI7pVJQFpxBL4kECQrDXpg=="
+          "hash": "U8mF7pBErNLciFnHZp97FQ=="
         }
       },
       "is_incremental": true,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-FinancialPack/ac-factoring.html",
-          "hash": "6AtoKh+2MSfhlkQVDywWZA=="
+          "hash": "ePaU1BRg7FyvK1U/TS+KNw=="
         }
       },
       "is_incremental": true,
@@ -197,6 +197,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/Hierarchical_price_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/Hierarchical_price_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "AC-FinancialPack/media/Insolvence_register.png",
       "output": {
         "resource": {
@@ -208,10 +219,142 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/calendar.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/calendar.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/calendar_detail.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/calendar_detail.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/credit_check-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/credit_check-setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/credit_check.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/credit_check.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/exchange_rate.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/exchange_rate.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "AC-FinancialPack/media/factoring.png",
       "output": {
         "resource": {
           "relative_path": "AC-FinancialPack/media/factoring.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/faktoring_card.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/faktoring_card.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/faktoring_customer_entries.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/faktoring_customer_entries.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/faktoring_lines.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/faktoring_lines.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/faktoring_reverse.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/faktoring_reverse.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/faktoring_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/faktoring_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/faktoring_setup_groupes.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/faktoring_setup_groupes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/faktoring_setup_groupes_alt.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/faktoring_setup_groupes_alt.png"
         }
       },
       "is_incremental": false,
@@ -245,6 +388,17 @@
       "output": {
         "resource": {
           "relative_path": "AC-FinancialPack/media/pack_tracking_return_packing.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/setup_vat.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/setup_vat.png"
         }
       },
       "is_incremental": false,
@@ -941,7 +1095,7 @@
           "hash": "DQ/ncqIDBZcMSt6xx0UC5w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -974,7 +1128,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-ProductivityPack/ac-parcels-setup.html",
-          "hash": "EM3XVEgSvZQWxYngK+HnmQ=="
+          "hash": "yyhEN2B3YWzKEuN6uhqf7A=="
         }
       },
       "is_incremental": true,
@@ -1154,7 +1308,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-ProductivityPack/ac-transport-basic-setup.html",
-          "hash": "kEAPZXuFfUQn/LYacphyvg=="
+          "hash": "aqf6CZsj7iHQHrioJuyBGQ=="
         }
       },
       "is_incremental": true,
@@ -1166,7 +1320,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-ProductivityPack/ac-transport-basic.html",
-          "hash": "zAK03yR2KO2EJSU3nA7cWg=="
+          "hash": "tdXkQKMVPu/UiNtOgJGkwg=="
         }
       },
       "is_incremental": true,
@@ -1721,6 +1875,204 @@
       "output": {
         "resource": {
           "relative_path": "AC-ProductivityPack/media/ac-monetization.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_PHM.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_PHM.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_codes.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_codes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_css.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_css.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_driver_zp.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_driver_zp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_drivercard.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_drivercard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_main.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_main.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_phm_PHMV.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_phm_PHMV.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_phm_PHM_release.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_phm_PHM_release.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_phm_journal.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_phm_journal.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_planning.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_planning.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_rideorder.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_rideorder.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_rides_journal.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_rides_journal.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_templateKH.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_templateKH.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_types.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_types.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_vehiclecard.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_vehiclecard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_vehicles.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_vehicles.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_transport_vehicles_eq.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_transport_vehicles_eq.png"
         }
       },
       "is_incremental": false,
@@ -4557,6 +4909,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/Hierarchical_price_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/Hierarchical_price_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "d365businesscentral/AC-FinancialPack/media/Insolvence_register.png",
       "output": {
         "resource": {
@@ -4568,10 +4931,142 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/calendar.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/calendar.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/calendar_detail.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/calendar_detail.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/credit_check-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/credit_check-setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/credit_check.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/credit_check.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/exchange_rate.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/exchange_rate.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "d365businesscentral/AC-FinancialPack/media/factoring.png",
       "output": {
         "resource": {
           "relative_path": "d365businesscentral/AC-FinancialPack/media/factoring.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_card.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_card.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_customer_entries.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_customer_entries.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_lines.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_lines.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_reverse.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_reverse.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_setup_groupes.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_setup_groupes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_setup_groupes_alt.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_setup_groupes_alt.png"
         }
       },
       "is_incremental": false,
@@ -4605,6 +5100,17 @@
       "output": {
         "resource": {
           "relative_path": "d365businesscentral/AC-FinancialPack/media/pack_tracking_return_packing.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/setup_vat.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/setup_vat.png"
         }
       },
       "is_incremental": false,
@@ -5133,6 +5639,204 @@
       "output": {
         "resource": {
           "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac-monetization.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_PHM.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_PHM.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_codes.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_codes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_css.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_css.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_driver_zp.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_driver_zp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_drivercard.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_drivercard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_main.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_main.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_phm_PHMV.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_phm_PHMV.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_phm_PHM_release.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_phm_PHM_release.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_phm_journal.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_phm_journal.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_planning.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_planning.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_rideorder.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_rideorder.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_rides_journal.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_rides_journal.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_templateKH.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_templateKH.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_types.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_types.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_vehiclecard.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_vehiclecard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_vehicles.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_vehicles.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_vehicles_eq.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_vehicles_eq.png"
         }
       },
       "is_incremental": false,
@@ -5836,7 +6540,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 281,
-          "skipped_file_count": 280
+          "skipped_file_count": 281
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

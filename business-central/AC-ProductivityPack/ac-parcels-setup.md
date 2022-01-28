@@ -103,7 +103,7 @@ Aktualizace těchto dat probíhá ručně pomocí funkce „Resynchronizace mast
 #### Základní nastavení AC Parcels - Integrace Balíkobot
 Pro spuštění funkcí Balíkobotu je potřeba provést nastavení:
 
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení Balíkobotu** a poté vyberte související odkaz.
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení Zásilek** a poté vyberte související odkaz.
 2. Vybrat číselnou řadu pro zásilky
 4. Vybrat kód výchozího expedičního místa
 5. Povolit nebo zakázat automatický tisk protokolů svozu
@@ -189,6 +189,26 @@ Pro definice tiskárny je nutné:
 3. Vybrat ID uživatele, ID sestavy 52068430 a Název tiskárny
 
 Tisk předávacího protokolu se tiskne automaticky po objednání svozu. Pokud uživatel nechce automatický tisk, stačí v Nastavení Balíkobotu vypnout Boolean - Tisk předávacích protokolů svozu. Tisk se provádí z Výchozí tiskárny dle Vašeho zařízení. Případně pokud máte nastavenou výchozí tiskárnu ve **Výběry tiskáren** jako zbytek Vašich tiskových sestav.
+
+## Automatické aktualizace
+
+### Automatická aktualizace master dat
+Automatikcká aktualizace master dat spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje všechna data ze strany Balíkobotu (Ve výchozím stavu v neděli ve 14:00).
+
+Pro zapnutí této funkce postupujte následujícím způsobem:
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení Zásilek** a poté vyberte související odkaz.
+2. V Nastavení zásilek zapněte "Automatická aktualizace master dat".
+3. Uživatel bude vyzván k založení a otevření nové položky fronty úloh, která bude ve stavu "Vyčkávat".
+4. Poté je možné nastavení zavřít.
+
+### Automatická aktualizace stavu přepravy
+Automatická aktualizace stavu přepravy spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje stav přepřavy zásilek za poslední měsíc.
+
+Pro zapnutí této funkce postupujte následujícím způsobem:
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení Zásilek** a poté vyberte související odkaz.
+2. V Nastavení zásilek zapněte "Automatická aktualizace stavu přepravy".
+3. Uživatel bude vyzván k založení a otevření nové položky fronty úloh, která bude ve stavu "Vyčkávat".
+4. Poté je možné nastavení zavřít.
 
 
 ## Viz také

@@ -67,10 +67,93 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="doprava---základ">Doprava - základ</h1>
+<h1 id="doprava">Doprava</h1>
 
-<p>Modul Doprava – základ řeší problematiku evidence vozidel, plánování údržby vozidel, evidence řidičů, evidence knih jízd a evidenci spotřeby pohonných hmot (včetně možnosti importu souborů o nákupech na palivové karty, např. CCS).</p>
-<p><img src="media/transport_basic.png" alt="Doprava - základ" title="Doprava - základ"></p>
+<p>Add-on Doprava řeší problematiku evidence vozidel, plánování údržby vozidel, evidence řidičů, evidence knih jízd a evidenci spotřeby pohonných hmot (včetně možnosti importu souborů o nákupech na palivové karty, např. CCS).</p>
+<h2 id="definice-řidičů">Definice řidičů</h2>
+<p>Karta řidiče definuje sledovanou osobu a k ní navázané informace.</p>
+<p>Pro založení nového řidiče postupujte následujícím způsobem:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přehled řidičů</strong> a poté vyberte související odkaz.</li>
+<li>Na přehledu vyberte funkci <strong>Nový</strong>.</li>
+<li>Na kartě řidiče vypňte potřebné informace.</li>
+</ol>
+<p><img src="media/ac_transport_drivercard.png" alt="Karta řidiče"></p>
+<p>K řidiči lze ukládat „<strong>Odborné způsobilosti</strong>“ – tj. věci související s osobou jako řidičem – řidičská oprávnění, speciální oprávnění a zároveň nastavovat platnosti těchto způsobilostí. Čísleník způsobilostí najdete v sekci navigace na stránce karty řidiče.
+<img src="media/ac_transport_driver_zp.png" alt="Odborné způsobilosti řidiče"></p>
+<h2 id="definice-vozidel">Definice vozidel</h2>
+<p>Vozidla jsou definovány pro potřeby sledování spotřeby a údržby. K vozidlu lze evidovat informace o vozidlu jako vlastním, dále vazbu na přidělenou platební kartu (pro potřeby importu čerpání), přiděleného (výchozího řidiče) a vazby na další záznamy (Majetek, zdroj….)</p>
+<p>Pro vytvoření karty vozidla postupujte následujícím způsobem:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přehled vozidel</strong> a poté vyberte související odkaz.</li>
+<li>Na přehledu vyberte funkci <strong>Nový</strong>.</li>
+<li>Na kartě řidiče vypňte potřebné informace.</li>
+</ol>
+<p><img src="media/ac_transport_vehiclecard.png" alt="Karta vozidla"></p>
+<p>K vozidlu lze definovat další údaje:</p>
+<ul>
+<li><strong>Vybavení</strong> – vybavení jímž je jednotlivé vozidlo vybaveno.</li>
+<li><strong>Měrné jednotky</strong> – používané s tímto vozidlem.</li>
+<li><strong>Náklady</strong> – standardní náklady/ceny pro jednotlivé typy provozu.</li>
+<li><strong>Spotřeba</strong> – standardní spotřeba vozidla pro jednotlivé typy provozu.</li>
+<li><strong>Evidence údržby</strong> – sledování údržby vozidla vč. termínů příští údržby.</li>
+</ul>
+<h2 id="výpis-čerpání-phm">Výpis čerpání PHM</h2>
+<p>Pro zadání čerpání k vozidlům slouží „Výpis čerpání PHM“. Tyto čerpání jsou připravena pro import ze souboru dodavatele, alternativně lze zadat ručně.</p>
+<p>Pro založení Výpisu čerpání postupujte následujícím způsobem:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Výpis čerpání PHM</strong> a poté vyberte související odkaz.</li>
+<li>Na přehledu vyberte funkci <strong>Nový</strong>.</li>
+<li>Na kartě vypňte potřebné informace.</li>
+<li>Vyplňtě jednotlivé řádky a doklad vydejte.</li>
+</ol>
+<p><img src="media/ac_transport_phm_PHMV.png" alt="Výpis čeprání PHM"></p>
+<ol start="5">
+<li><p>Dalším krokem zpracování výpisu je jeho „Vydání“. Na vydaném výpisu je možné použít následující funkce:
+<img src="media/ac_transport_phm_PHM_release.png" alt="Vydání čerpání DPH"></p>
+<ul>
+<li>Vytvoření deníku PHM – pro zapsání položek čerpání k vozidlu</li>
+<li>Vytvoření nákupní faktury – pro vytvoření nákupní faktury na základě čerpání</li>
+</ul>
+</li>
+<li><p>Posledním krokem je zaúčtování Deníku PHM:
+<img src="media/ac_transport_phm_journal.png" alt="Deník PHM"></p>
+</li>
+</ol>
+<h2 id="knihy-jízd">Knihy jízd</h2>
+<p>Slouží k záznamům o provozu vozidla, zadává se prostřednictvím Kniha Jízd.</p>
+<p>Pro vyplnění knihy jízd pustupujte pomocí těchto kroků:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Kniha jízd</strong> a poté vyberte související odkaz.</li>
+<li>Vyplňtě řádky dle potřeby.
+<ul>
+<li>Typ cesty, Číslo vozidla, Popis, Číslo řidiče, Typ provozu a další.</li>
+</ul>
+</li>
+<li>Zaúčtujte deník.</li>
+</ol>
+<p><img src="media/ac_transport_rides_journal.png" alt="Kniha jízd"></p>
+<p>V případě, že je využívána rozšířená funkcionalita plánování dopravy, tak lze použít funkci pro předgenerování knihy jízd na základě vydaných příkazů k jízdě.</p>
+<h2 id="plánování-dopravy">Plánování dopravy</h2>
+<p>Tato část je součástí rozšířené verze <strong>Doprava – plánování</strong>.</p>
+<p>V rámci plánování se pracuje s tzv. <strong>Požadavkem dopravy</strong>, který je záznamem o předpokládané dopravě, tyto požadavky je možné vytvářet z dokladů <strong>Prodejní objednávka</strong>, <strong>Nákupní objednávka</strong>, <strong>Objednávka transferu</strong> pomocí funkce <strong>Vytvořit požadavek na dopravu</strong>.</p>
+<p>Pro vytvoření požadavku z nákupní objednávky postupujte následujícím způsobem:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nákupní objednávky</strong> a poté vyberte související odkaz.</li>
+<li>Otevřete existující objednávku nebo vytvořte novou.</li>
+<li>Pro vytvoření požadavku na dopravu použijte funkci <strong>Vytvořit požadavek na dopravu</strong>.</li>
+<li>Dokončete průvodce požadavku na dopravu.</li>
+</ol>
+<p>Tato funkce je průvodcem, kdy předvyplní maximální množství údajů ze vstupního dokladu. Předpokladem je, že tyto požadavky vytváří běžní uživatelé zpracovávající doklady.</p>
+<p><img src="media/ac_transport_planning.png" alt="Vytvoření požadavku na dopravu"></p>
+<p>Další fází je vlastní „<strong>Plánování dopravy</strong>“ pomocí stránky „Pult dispečera dopravy“ – kde odpovědný pracovník vidí jednotlivé požadavky a může je zpracovávat – plánovat data, přiřazovat vozidla/řidiče, kombinovat dle dostupných kapacit atd.</p>
+<p>V rámci plánování se řeší stavy požadavku:</p>
+<ul>
+<li>Nový – pouze vytvořený</li>
+<li>Zaplánováno – Je vytvořen příkaz k jízdě</li>
+<li>Uzavřeno – Doprava byla dokončena</li>
+</ul>
+<p><img src="media/ac_transport_rideorder.png" alt="vytvoření příkazu k jízdě"></p>
 <p><strong>Viz také</strong></p>
 <p><a href="ac-transport-basic-setup.html">Doprava - základ - nastavení</a><br>
 <a href="ac-productivity-pack.html">Productivity Pack</a></p>

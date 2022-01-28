@@ -69,6 +69,52 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="factoring---nastavení">Factoring - Nastavení</h1>
 
+<p>Základní nastavení add-onu fakoringu.</p>
+<h2 id="nastavení-add-onu-faktoring">Nastavení add-onu Faktoring</h2>
+<h3 id="potřebné-nastavní-business-central">Potřebné nastavní Business Central</h3>
+<p>Pro správnou funkci add-onu je potřeba nastavit a založit i jiné nastavení v Business Central.</p>
+<table>
+<thead>
+<tr>
+<th>Nastavení</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Účty v účtové osnově</strong></td>
+<td>V účtové osnově je nutné založit finanční účty pro sledování podstoupených pohledávek, nákladové a výnosové účty pro přeúčtování faktoringu; pokud již neexistují.</td>
+</tr>
+<tr>
+<td><strong>Účto skupiny pro faktoring</strong></td>
+<td>Přes Účto skupiny zákazníků je nutné založit nové účto skupiny pro faktoring, které se budou používat pro účtování faktoringu. <img src="media/faktoring_setup_groupes.png" alt="Účtoskupiny pro faktoring"></td>
+</tr>
+<tr>
+<td><strong>Náhradní účto skupiny zákazníka</strong></td>
+<td>Je nutné založit nové kombinace náhrad účto skupin zákazníka (dostupné ze stránky Náhr. Účto skupiny zákazníka).<img src="media/faktoring_setup_groupes_alt.png" alt="Náhradní účtoskupiny pro faktoring"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="nastavení-faktoringu">Nastavení faktoringu</h3>
+<p>Na stránce Nastavení faktoringu je třeba provést základní nastavení pro modul faktoring:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení faktoringu</strong> a poté vyberte související odkaz.</li>
+<li>Na kartě faktoringu vyplňte následující pole:
+<ul>
+<li><strong>Účto skupina faktoringu</strong> – účto skupina, která je použita pro účtování faktoringové pohledávky</li>
+<li><strong>Protiúčet nákladů</strong> – účet, na který se zaúčtuje pohledávka za zákazníkem</li>
+<li><strong>Protiúčet výnosů</strong> – účet, na který se zaúčtuje výnos z faktoringu</li>
+<li><strong>DPH účto skupina zboží</strong> – zde je třeba nastavit DPH účto skupinu zboží, která v kombinaci s DPH obchodní účto skupinou ze zákazníka-faktora reprezentuje účtování bez DPH</li>
+<li><strong>Přeúčtovat původní položku</strong> – volba ANO umožňuje dále sledovat pohledávku za původním zákazníkem na podrozvahových účtech</li>
+<li><strong>Účto skupina přeúčtování</strong> a <strong>Protiúčet přeúčtování</strong> – podrozvahové účty, na kterých se bude dále sledovat pohledávka k původnímu zákazníkovi</li>
+<li><strong>Čísla faktoringů</strong> – číselná řada, kterou budou faktoringy číslovány<br>
+<img src="media/faktoring_setup.png" alt="Nastavení faktoringu"></li>
+</ul>
+</li>
+<li>Po vyplnění polí můžete kartu zavřít.</li>
+</ol>
+<h3 id="šablony-faktoringu">Šablony faktoringu</h3>
+<p>Je možné definovat šablony pro převod faktoringových smluv do dokumentů Microsoft Word. Dokument je možné vytvořit na kartě faktoringu pomocí funkce <strong>Vytvořit dokument faktoringu</strong>.</p>
 <p><strong>Viz také</strong></p>
 <p><a href="ac-factoring.html">Faktoring</a><br>
 <a href="ac-finance-pack.html">Financial Pack</a></p>
