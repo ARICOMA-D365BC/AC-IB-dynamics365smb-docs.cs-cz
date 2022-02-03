@@ -14,6 +14,7 @@ ms.author: v-makune
 
 
 # AC Monetizace 
+> Aktualizace 03.02.2022
 
 Jedná se o funkcionalitu umožňující uživateli správu předplatného produktů firmy AUTOCONT v prostředí Business Central. 
 
@@ -30,7 +31,7 @@ V obou případech se spustí krátký průvodce aktivací, v jehož průbě
 
 - E-mail – tento bude využit pro komunikaci ohledně předplatného, např. pro zasílání upozorňování na blížící se termín konce předplatného, apod. 
 
-- Souhlas s [Obchodními podmínkami](https://www.autocont.cz/pas-predplatne-podminky).
+- Souhlas s [Obchodními podmínkami](https://www.autocont.cz/podnikove-aplikace/PAS-predplatne-podminky).
 
 Poznámka: Pokud se neobjeví požadavek na potvrzení, že uživatel opravdu chce vytvořit zkušební předplatné (a otevře se rovnou okno pro výběr plánu předplatného), pak v tomto tenantu již bylo zkušební období někdy dříve aktivováno. 
 

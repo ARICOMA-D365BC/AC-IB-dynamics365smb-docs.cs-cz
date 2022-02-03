@@ -11,8 +11,8 @@ ms.search.keywords: Controling basic, finance
 ms.date: 01/31/2021
 ms.author: AC MartinKunes
 ---
-# Controling Basic - Nastavení
-
+# Sada rozšíření pro Finance - Nastavení
+> Aktualizace 01.02.2022
 ## Nastavení kontroly CREDITCHECK 
 ### Nastavení kontroly CreditCheck
 
@@ -271,5 +271,5 @@ Nastavte příznak v poli Určeno pro vrácení zálohy na záložce Zálohy.
 
 **Viz také**
 
-[Controling Basic](ac-controling-basic.md)  
+[Sada rozšíření pro Finance](ac-controling-basic.md)  
 [Financial Pack](ac-finance-pack.md)  

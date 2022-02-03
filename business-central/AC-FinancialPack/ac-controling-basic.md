@@ -11,7 +11,10 @@ ms.search.keywords: Controling basic, finance
 ms.date: 01/31/2021
 ms.author: AC MartinKunes
 ---
-# Controling Basic
+
+# Sada rozšíření pro Finance
+> Aktualizace: 01.02.2022
+
 
 Add-on modul **Sada rozšíření pro Finance** obsahuje společné funkce pro podporu fungování ostatních add-on modulů balíčku rozšíření financí a současně obsahuje některé doplňující funkce jako:
 
@@ -449,5 +452,5 @@ Tato funkcionalita není od verze BC15 součástí modulu.
 ## Skonto dobropisy pro CZ
 Protože byla z CZ lokalizace vypuštěna základní funkcionalita pro tvorbu prodejních skonto dobropisů, není již rozšiřující funkcionalita součástí modulu **Sada rozšíření aplikace**.
 
-[Controling Basic - Nastavení](ac-controling-basic-setup.md)  
+[Sada rozšíření pro Finance - Nastavení](ac-controling-basic-setup.md)  
 [Financial Pack](ac-finance-pack.md)  
