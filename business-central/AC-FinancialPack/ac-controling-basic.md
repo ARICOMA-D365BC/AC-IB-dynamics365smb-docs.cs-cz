@@ -68,7 +68,7 @@ Jestliže má uživatel v nastavení zaškrtnut  boolean „*Povolit změnu st
 
 Standardní prodejní cenotvorba je založena na myšlence vyhledání nejnižší možné ceny. Toto není vždy vyhovující, pak je možné zvolit tzv. Hierarchický návrh cen. 
 
-Poznámka: Hierarchický návrh je dostupný pouze prodejní ceny zboží. 
+Poznámka: Hierarchický návrh je dostupný pouze pro prodejní ceny zboží. 
 
 Hierarchický návrh ceny znamená, že je cena (ale i řádková sleva) dohledávána v pevně definovaném pořadí (dle hierarchie). V případě nalezení definice na učité úrovni již nehledá dále. 
 

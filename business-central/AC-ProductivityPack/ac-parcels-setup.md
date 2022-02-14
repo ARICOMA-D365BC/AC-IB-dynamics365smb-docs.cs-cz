@@ -210,6 +210,18 @@ Pro zapnutí této funkce postupujte následujícím způsobem:
 3. Uživatel bude vyzván k založení a otevření nové položky fronty úloh, která bude ve stavu "Vyčkávat".
 4. Poté je možné nastavení zavřít.
 
+## Nastavení v Sandboxovém prostředí
+### Zablokování modulem runtime
+
+Při asistovaném nastavení add-onu se může zobrazit hláška "*Požadavek byl zablokován modulem runtime*". 
+
+Pro vyřešení tohoto problému postupujte následujícím způsobem:
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Správa rozšíření** a poté vyberte související odkaz.
+2. Otevře se stránka **Nainstalovaná rozšíření**. 
+3. Zvolte řádek rozšíření **AC Parcels** a poté použijte akci **Konfigurace**.
+4. Na stránce **Konfigurace rozšíření** aktivujte přepínač **Povolit požadavky HttpClient**.
+5. Poté stránku můžete zavřít a spustit znovu Asistovaného průvodce.
+
 
 ## Viz také
 [Zásilky](ac-parcels.md)  
