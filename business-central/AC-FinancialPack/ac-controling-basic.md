@@ -449,6 +449,9 @@ Tato funkcionalita není od verze BC15 součástí modulu.
 ## Finance - Přenesená daňová povinnost
 Tato funkcionalita není od verze BC15 součástí modulu. 
 
+## Spotřební daň
+Tato funkcionalita není od verze BC15 součástí modulu. 
+
 ## Skonto dobropisy pro CZ
 Protože byla z CZ lokalizace vypuštěna základní funkcionalita pro tvorbu prodejních skonto dobropisů, není již rozšiřující funkcionalita součástí modulu **Sada rozšíření aplikace**.
 
