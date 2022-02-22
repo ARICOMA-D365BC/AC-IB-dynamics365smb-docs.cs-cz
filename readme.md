@@ -13,6 +13,7 @@ Markdown soubory naleznete v kořenovém adresáři a poté v každé složce vy
 
 ### HTML soubory
 Html soubory jsou uložené ve složce d365businesscentral v kořenovém adresáři. Následně má pak každý balíček svoji složku, obdobně jako markdown soubory
+
 **Příklad**: HTML soubory pro Productivity Pack
 > AC-IB-dynamics365smb-docs.cs-cz/business-central/d365businesscentral/AC-ProductivityPack/
 
