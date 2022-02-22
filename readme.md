@@ -2,6 +2,22 @@
 
 Tento repozitář slouží k evidenci nápovědy D365 Business Central.
 
+## Struktura repozitáře
+### Markdown soubory
+
+Markdown soubory naleznete v kořenovém adresáři a poté v každé složce vybraného balíčku:
+ - AC-IB-dynamics365smb-docs.cs-cz/business-central/
+ 
+**Příklad**: Markdown soubory pro Productivity Pack
+> AC-IB-dynamics365smb-docs.cs-cz/business-central/AC-ProductivityPack/
+
+### HTML soubory
+Html soubory jsou uložené ve složce d365businesscentral v kořenovém adresáři. Následně má pak každý balíček svoji složku, obdobně jako markdown soubory
+**Příklad**: HTML soubory pro Productivity Pack
+> AC-IB-dynamics365smb-docs.cs-cz/business-central/d365businesscentral/AC-ProductivityPack/
+
+ 
+
 ## Obsah nápovědy
 
 Pro psaní nápovědy k addonům dodržujte náležitosti:
