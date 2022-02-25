@@ -51,7 +51,6 @@
     },
     "fileMetadata": {},
     "template": [
-      "MK",
       "templates/MK"
     ],
     "dest": "d365businesscentral",

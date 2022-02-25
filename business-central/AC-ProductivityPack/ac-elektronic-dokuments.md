@@ -1,5 +1,5 @@
 ---
-title: Electronic documents | Microsoft Docs
+title: AUTOCONT SOLUTIONS - Elektronická fakturace | Microsoft Docs
 description: Electronic_documents
 author: ac-kunes
 ms.service: dynamics365-business-central
@@ -21,9 +21,15 @@ K šířené elektronické fakturaci lze připojit libovolné elektronické př�
 
 ![Elektronická fakturace](media/electronic_documents.png "Elektronická fakturace")
 
+## Elektronická fakturace ISDOC
+
+Viz. popis Elektronická fakturace – rozdíl pouze v tom, jak se faktura odešle.
+
+## Elektronická fakturace -  PDFXChange
+
+Viz. popis Elektronická fakturace – rozdíl pouze v tom, jak se faktura odešle. Tento modul poskytuje nástroje pro elektronické podepsání dokladu, případně možnost doplnění časového razítka.
+
 **Viz také**
 
 [Elektronická fakturace - Nastavení](ac-elektronic-dokuments-setup.md)  
-[Elektronická fakturace ISDOC](ac-elektronic-dokuments-isdoc.md)  
-
 [Productivity Pack](ac-productivity-pack.md)

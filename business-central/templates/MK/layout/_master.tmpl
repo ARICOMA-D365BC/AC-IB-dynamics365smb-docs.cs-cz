@@ -2,7 +2,7 @@
 {{!include(/^styles/.*/)}}
 {{!include(/^fonts/.*/)}}
 {{!include(favicon.ico)}}
-{{!include(logo.png)}}
+{{!include(logo.svg)}}
 {{!include(search-stopwords.json)}}
 <!DOCTYPE html>
 <!--[if IE]><![endif]-->
@@ -45,6 +45,11 @@
           {{>partials/affix}}
           {{/_disableAffix}}
         </div>
+      </div>
+      {{^_disableFooter}}
+      {{>partials/footer}}
+      {{/_disableFooter}}
+    </div>
     {{>partials/scripts}}
   </body>
 </html>
