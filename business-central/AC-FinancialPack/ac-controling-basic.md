@@ -16,21 +16,7 @@ ms.author: AC MartinKunes
 > Aktualizace: 01.02.2022
 
 
-Add-on modul **Sada rozšíření pro Finance** obsahuje společné funkce pro podporu fungování ostatních add-on modulů balíčku rozšíření financí a současně obsahuje některé doplňující funkce jako:
-
-- **Credit Check** – napojení na externí databázi Credit Check a kontrola kredibility firem
-- **Splátkové kalendáře** – rozložení splátek pohledávek a závazků do dílčích plateb
-- **Hierarchický návrh cen** – možnost vypnutí standardního návrhu nejnižších cen
-- **Vymáhání pohledávek** - podpora pro vymáhání dlouhodobých pohledávek, které dosud nebyly uhrazeny. U takových pohledávek je potřeba mít především informaci o stavu pohledávky a mít možnost připojit dokumenty.
-- **PDP** – Režim Přenesené daňové povinnosti – doplnění kontrol limitů při vydávání dokladů.
-- **Skonto dobropisy pro CZ**
-- **Kumulování plateb na Platebním příkazu**
-- **Účtování přeplatků nákupních záloh**
-- **Kontrola registrace k DPH**
-- **Kontroly směnných kurzů**
-- **Viditelný poplatek** - Možnost ke zboží přiřadit tzv. "viditelný poplatek", který se automaticky vkládá do nákupních/prodejních dokladů. Využívá se např. pro účtování poplatku za recyklaci el. odpadu, apod.
-- **Spotřební daň** - Povinnost přiznat spotřební daň vzniká výdejem z daňového skladu – prodej v rámci ČR, interní transfer v rámci ČR. Jednou měsíčně je třeba vykázat splatnou spotřební daň. Na položkách zboží je informace o spotřební dani a o povinnosti daň přiznat. Je k dispozici report, který uzavírá otevřené položky spotřební daně. Dále je k dispozici report z žurnálu poskytující podklad pro Prohlášení o spotřební dani.
-- Další menší úpravy či vylepšení vybraných oblastí (finance, sklady, obecné, atd.)
+Add-on modul **Sada rozšíření pro Finance** obsahuje společné funkce pro podporu fungování ostatních add-on modulů balíčku rozšíření financí. Seznam funkcí naleznete na pravé části stránky. 
 
 Modul Sada rozšíření pro Finance je nutný pro ostatní add-on moduly AC Financial Packu.
 
@@ -105,7 +91,7 @@ Funkcionalita Platebních kalendářů je k dispozici v prodeji i v nákup
 9. Tlačítkem **OK** zavřete stránku. 
 10. Na prodejní faktuře spusťte funkci **Účtovat**. 
 
-![Splátkový kalendář](media/calendar.png)
+
 
 Po zaúčtování prodejní faktury (či objednávky) vzniknou navíc položky zákazníka, které vyrovnají saldo původní položky a k nim vznikne několik nových (se stejným typem dokladu, číslem dokladu, atd.) pohledávek s daty splatnosti a částkami dle platebního kalendáře. 
 
@@ -444,16 +430,7 @@ Zaúčtováním faktury pak pro každý takový řádek s přeplatkem vznikne 
 
 Poznámka: Při použití funkce Odúčtovat přiřazenou zálohu (z karty Zálohového daňového dokladu) dojde analogicky k odúčtování těchto zúčtování přeplatků. 
 
-## Viditelný poplatek
-Tato funkcionalita není od verze BC15 součástí modulu. 
-## Finance - Přenesená daňová povinnost
-Tato funkcionalita není od verze BC15 součástí modulu. 
-
-## Spotřební daň
-Tato funkcionalita není od verze BC15 součástí modulu. 
-
-## Skonto dobropisy pro CZ
-Protože byla z CZ lokalizace vypuštěna základní funkcionalita pro tvorbu prodejních skonto dobropisů, není již rozšiřující funkcionalita součástí modulu **Sada rozšíření aplikace**.
+## Viz také
 
 [Sada rozšíření pro Finance - Nastavení](ac-controling-basic-setup.md)  
 [Financial Pack](ac-finance-pack.md)  

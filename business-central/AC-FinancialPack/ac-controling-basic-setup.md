@@ -12,7 +12,7 @@ ms.date: 01/31/2021
 ms.author: AC MartinKunes
 ---
 # Sada rozšíření pro Finance - Nastavení
-> Aktualizace 01.02.2022
+> Aktualizace: 01.02.2022
 ## Nastavení kontroly CREDITCHECK 
 ### Nastavení kontroly CreditCheck
 
@@ -62,13 +62,12 @@ V nastavení kontroly CreditCheck je možné zapnout aktualizaci vytváření 
 
 ### Nastavení prodeje a pohledávek 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení prodeje a pohledávek** a poté vyberte související odkaz. 
->[!NOTE]
-> Nastavení závisí na používané verz
-2. Ve verzi BC17 pro zapnutí zvolte **Hierarchický návrh cen povolen**.
+>[!TIP]
+> Nastavení závisí na používané verzi. Ve verzi BC17 pro zapnutí zvolte **Hierarchický návrh cen povolen**.
 
 ![Hierarchický návrh cen povolen](media/Hierarchical_price_setup.png)
 
->[!NOTE]
+>[!TIP]
 >Od verze BC18 doporučujeme používat zcela novou funkcionalitu pro cenotvorbu v BC.
 >Vyberte ikonu Žárovky, která otevře funkci Řekněte mi , zadejte **Správa funkcí** a poté vyberte související odkaz. Ověřte, že máte funkci **Aktualizace funkcí: Nové zkušenosti s cenami prodeje** povolenu pro všechny uživatele.
 
@@ -269,7 +268,7 @@ Na stránce Nastavení účtování DPH vyhledejte záznam pro který chcete zap
 Nastavte příznak v poli Určeno pro vrácení zálohy na záložce Zálohy. 
 
 
-**Viz také**
+## Viz také
 
 [Sada rozšíření pro Finance](ac-controling-basic.md)  
 [Financial Pack](ac-finance-pack.md)  

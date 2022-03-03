@@ -12,7 +12,7 @@ ms.date: 06/24/2020
 ms.author: v-makune
 ---
 
-# Zásilky - Integrace Balíkobot
+# AC Parcels - Integrace Balíkobot
 
 Addon zásilek slouží k vytvoření zásilek a přímému tisku štítků vybraných dopravců, odesílání dat o zásilkách přepravci a objednání samotného svozu balíků. Pomocí totoho rozšíření je zrychlen proces zpracování a vytváření zásilek posílaných zákazníkům. Tento Addon využívá API služby Balíkobot.
 
@@ -154,6 +154,6 @@ Pokud chcete zobrazit jednotlivé stavy od přepravce využijte funkci na přehl
  - Jedno expediční místo může být přiřazeno jedné lokaci. Vzniká vazba 1:1.
 
 ## Viz také
-[Nastavení - Zásilky - Integrace Balíkobot](ac-parcels-setup.md)  
+[Nastavení - AC Parcels - Integrace Balíkobot](ac-parcels-setup.md)  
 [AC Productivity Pack](ac-productivity-pack.md)  
 [AUTOCONT řešení](../index.md)

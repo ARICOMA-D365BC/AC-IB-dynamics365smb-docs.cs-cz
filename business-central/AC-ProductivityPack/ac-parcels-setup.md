@@ -12,7 +12,7 @@ ms.date: 06/24/2020
 ms.author: v-makune
 ---
 
-# Nastavení - Zásilky - Integrace Balíkobot
+# Nastavení - AC Parcels - Integrace Balíkobot
 
 
 Pro správné fungování addonu Zásilek je zapotřebí nastavit několik oblastí. Addon se prvotně nastavuje pomocí průvodce a poté je možné nastavení měnit ručně.

@@ -55,4 +55,6 @@ Pro správu předplatného slouží stránka **Seznam předplatných AUTOCONT**,
 - má možnost ukončit předplatné vybraného produktu, 
 - má možnost zrušit předplatné. 
 
- 
+ ## Viz také
+
+ [Productivity Pack](ac-productivity-pack.md)
