@@ -1,5 +1,5 @@
 ---
-title: AUTOCONT SOLUTIONS - Parcels | Microsoft Docs
+title: AUTOCONT SOLUTIONS - AC Parcels | Microsoft Docs
 description: This section describes parcel functionality - Balikobot Integration
 author: ac-kunes
 ms.service: dynamics365-business-central
@@ -13,35 +13,48 @@ ms.author: v-makune
 ---
 
 # AC Parcels - Integrace Balíkobot
+> Aktualizace: 08.03.2022
 
 Addon zásilek slouží k vytvoření zásilek a přímému tisku štítků vybraných dopravců, odesílání dat o zásilkách přepravci a objednání samotného svozu balíků. Pomocí totoho rozšíření je zrychlen proces zpracování a vytváření zásilek posílaných zákazníkům. Tento Addon využívá API služby Balíkobot.
 
 Tento addon je stavěn na základě načítání čárového kódu (čísel) účtovaných dokladů. Zásilky je možno vytvářet z účtovaných prodejních dodávek a faktur. Pokud uživatel vytvoří zásilku z účt. prodejní dodávky, zásilka se vytvoří bez dobírky, naopak pokud ji vytvoří z faktury, tak se zásilka vytvoří s dobírkou.
 
 Seznam přepravců:
- - Česká pošta s.p.
- - DACHER Česká republika
+ - Airway
+ - Česká pošta
+ - Dachser
+ - DB Schenker
  - DHL
- - Direct Parcel Distribution CZ s.r.o.
- - FEDEX
+ - DHL DE
+ - DHL Freight
+ - DHL Freight Euroconnect
+ - DHL Parcel Europe
+ - DPD
+ - DSV
+ - Fedex
  - Fofr
- - Geis CZ s.r.o.
- - Gebrüder Weiss
- - General Logistics Systems Czech Republic s.r.o.
- - Gebrüder Weiss Česká republika
- - Gebrüder Weiss Slovenská republika
+ - Gebrüder Weiss CZ
+ - Gebrüder Weiss SK
+ - Geis
+ - GLS
+ - JAPO Transport
+ - Liftago
+ - Lockers.ai
+ - Magyar Posta
  - Messenger
- - Pošta bez hranic (Frogman s.r.o.)
- - PPL CZ s.r.o. 
+ - Pošta Bez Hranic
+ - PPL
  - Raben
+ - SK Parcel Service
+ - Slovenská pošta
  - Spring
- - Slovenská pošta a.s.
- - TNT Express
- - TOPTRANS EU a.s.
- - WE|DO
- - WE DO - Uloženka
+ - TNT
+ - Top Trans
  - UPS
- - Zásilkovna s.r.o.
+ - We Do
+ - We Do Uloženka
+ - Zásilkovna
+
 
 
 ## Vytvoření prodejní objednávky
@@ -152,6 +165,16 @@ Pokud chcete zobrazit jednotlivé stavy od přepravce využijte funkci na přehl
  - Pokud jsou na prodejní objednávce vyplněny pole Kód přepravce a Kód služby přepravce, je nutné zadat telefonní číslo a e-mail příjemce. Pokud pole nebudou vyplěny nelze doklad vydat.
  - Při zadávání dat na kartě zásilky (automaticky pomocí načtení kódů, nebo ručně) je na kartě zásilky funkce **Ověřit data zásilky**. Po spuštění dostanete informaci, zda jsou předávané informace v pořádku.
  - Jedno expediční místo může být přiřazeno jedné lokaci. Vzniká vazba 1:1.
+
+ ## Infomace o účtu a kontrola platných přepravců
+ Za účely kontroly Vašich předplacených přepravců jsme implementovali metodu WHOIAM, který vypisuje informace o Vašem API připojení a seznam aktivních přepravců.
+
+ Pro ověření Vašeho účtu zda se jedná o testovací nebo produkční a výpis přepravců pokračujte následujícím způsobem:
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přepravci** a poté vyberte související odkaz.
+2. Vyberte jednoho z vašich přepravců a klikněte na funkci **Test spojení**.
+3. Po ověření účtu vyskočí hláška *Připojení ke službě bylo úspěšné.* a zobrazí se Vám inforace o účtu a Aktivní dopravci.
+4. Poté můžete okno zavřít.
 
 ## Viz také
 [Nastavení - AC Parcels - Integrace Balíkobot](ac-parcels-setup.md)  
