@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>AUTOCONT SOLUTIONS - Parcels | Microsoft Docs </title>
+    <title>AUTOCONT SOLUTIONS - AC Parcels | Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="AUTOCONT SOLUTIONS - Parcels | Microsoft Docs ">
+    <meta name="title" content="AUTOCONT SOLUTIONS - AC Parcels | Microsoft Docs ">
     <meta name="generator" content="docfx 2.55.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -69,33 +69,47 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="ac-parcels---integrace-balíkobot">AC Parcels - Integrace Balíkobot</h1>
 
+<blockquote>
+<p>Aktualizace: 08.03.2022</p>
+</blockquote>
 <p>Addon zásilek slouží k vytvoření zásilek a přímému tisku štítků vybraných dopravců, odesílání dat o zásilkách přepravci a objednání samotného svozu balíků. Pomocí totoho rozšíření je zrychlen proces zpracování a vytváření zásilek posílaných zákazníkům. Tento Addon využívá API služby Balíkobot.</p>
 <p>Tento addon je stavěn na základě načítání čárového kódu (čísel) účtovaných dokladů. Zásilky je možno vytvářet z účtovaných prodejních dodávek a faktur. Pokud uživatel vytvoří zásilku z účt. prodejní dodávky, zásilka se vytvoří bez dobírky, naopak pokud ji vytvoří z faktury, tak se zásilka vytvoří s dobírkou.</p>
 <p>Seznam přepravců:</p>
 <ul>
-<li>Česká pošta s.p.</li>
-<li>DACHER Česká republika</li>
+<li>Airway</li>
+<li>Česká pošta</li>
+<li>Dachser</li>
+<li>DB Schenker</li>
 <li>DHL</li>
-<li>Direct Parcel Distribution CZ s.r.o.</li>
-<li>FEDEX</li>
+<li>DHL DE</li>
+<li>DHL Freight</li>
+<li>DHL Freight Euroconnect</li>
+<li>DHL Parcel Europe</li>
+<li>DPD</li>
+<li>DSV</li>
+<li>Fedex</li>
 <li>Fofr</li>
-<li>Geis CZ s.r.o.</li>
-<li>Gebrüder Weiss</li>
-<li>General Logistics Systems Czech Republic s.r.o.</li>
-<li>Gebrüder Weiss Česká republika</li>
-<li>Gebrüder Weiss Slovenská republika</li>
+<li>Gebrüder Weiss CZ</li>
+<li>Gebrüder Weiss SK</li>
+<li>Geis</li>
+<li>GLS</li>
+<li>JAPO Transport</li>
+<li>Liftago</li>
+<li>Lockers.ai</li>
+<li>Magyar Posta</li>
 <li>Messenger</li>
-<li>Pošta bez hranic (Frogman s.r.o.)</li>
-<li>PPL CZ s.r.o.</li>
+<li>Pošta Bez Hranic</li>
+<li>PPL</li>
 <li>Raben</li>
+<li>SK Parcel Service</li>
+<li>Slovenská pošta</li>
 <li>Spring</li>
-<li>Slovenská pošta a.s.</li>
-<li>TNT Express</li>
-<li>TOPTRANS EU a.s.</li>
-<li>WE|DO</li>
-<li>WE DO - Uloženka</li>
+<li>TNT</li>
+<li>Top Trans</li>
 <li>UPS</li>
-<li>Zásilkovna s.r.o.</li>
+<li>We Do</li>
+<li>We Do Uloženka</li>
+<li>Zásilkovna</li>
 </ul>
 <h2 id="vytvoření-prodejní-objednávky">Vytvoření prodejní objednávky</h2>
 <p>Základním krokem procesu vytváření zásilek je prodejní objednávka. Data z prodejní objednávky se přenášejí do dalších dokladů, z kterých se vytváří zásilky, proto je nezbytné zadat bezchybně data již na počátku procesu. (Stejně tak se zásilky dají vytvářet z prodejních faktur.)</p>
@@ -213,6 +227,15 @@ Tato sestava se může nastavit, aby se tiskla automaticky po objednání svozu.
 <li>Při zadávání dat na kartě zásilky (automaticky pomocí načtení kódů, nebo ručně) je na kartě zásilky funkce <strong>Ověřit data zásilky</strong>. Po spuštění dostanete informaci, zda jsou předávané informace v pořádku.</li>
 <li>Jedno expediční místo může být přiřazeno jedné lokaci. Vzniká vazba 1:1.</li>
 </ul>
+<h2 id="infomace-o-účtu-a-kontrola-platných-přepravců">Infomace o účtu a kontrola platných přepravců</h2>
+<p>Za účely kontroly Vašich předplacených přepravců jsme implementovali metodu WHOIAM, který vypisuje informace o Vašem API připojení a seznam aktivních přepravců.</p>
+<p>Pro ověření Vašeho účtu zda se jedná o testovací nebo produkční a výpis přepravců pokračujte následujícím způsobem:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přepravci</strong> a poté vyberte související odkaz.</li>
+<li>Vyberte jednoho z vašich přepravců a klikněte na funkci <strong>Test spojení</strong>.</li>
+<li>Po ověření účtu vyskočí hláška <em>Připojení ke službě bylo úspěšné.</em> a zobrazí se Vám inforace o účtu a Aktivní dopravci.</li>
+<li>Poté můžete okno zavřít.</li>
+</ol>
 <h2 id="viz-také">Viz také</h2>
 <p><a href="ac-parcels-setup.html">Nastavení - AC Parcels - Integrace Balíkobot</a><br>
 <a href="ac-productivity-pack.html">AC Productivity Pack</a><br>

@@ -416,7 +416,7 @@ Režim OSS se na prodejním dokladu zapíná na základě následujících infor
 ## Účtování přeplatků nákupních záloh
 
 >[!NOTE]
->Dále popsaná funkcionalita bude součástí modulu pouze do verze BC21, od verze BC19 jen jako rozšíření funkcionality záloh označených jako „zastaralé.“ 
+>Dále popsaná funkcionalita bude součástí modulu pouze do verze BC14. 
 
 V souvislosti se zavedením Kontrolního hlášení od 1.1.2016 vznikla potřeba řešit čerpání přeplatku nákupní zálohy pod jedním číslem dokladu, stejným datem a i stejným kurzem.  
 

@@ -51,9 +51,12 @@ Funkce **Koupit** produkt na stránce **Nákup produktu firmy AUTOCONT** uživat
 
 Pro správu předplatného slouží stránka **Seznam předplatných AUTOCONT**, kde uživatel: 
 
-- získá přehled o předplacených produktech od firmy AUTOCONT,
+- Získá přehled o předplacených produktech od firmy AUTOCONT,
 - má možnost ukončit předplatné vybraného produktu, 
-- má možnost zrušit předplatné. 
+- má možnost zrušit předplatné,
+- má možnost aktualizovat informace o zákazníkovi (akce Aktualizujte informace o zákazníkovi),
+- má možnost změnit platební kartu – při aktualizaci údajů (viz předchozí) lze zvolit Aktualizovat platební kartu, následně se zobrazí dialog Stripe.
+
 
  ## Viz také
 
