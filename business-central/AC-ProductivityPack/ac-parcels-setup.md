@@ -67,7 +67,7 @@ Ostatní číselníky (Služby přepravce, Manipulační jednotky a Pobočky př
 Expediční místo je místo Vašeho skladu odkud jsou expedovány zásilky. Uživatel může mít několik expedičních míst. Pro každé expediční místo je nutné jiné API, dále je expediční místo spojeno s jednou lokací Vaší společnosti. 
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Expediční místa** a poté vyberte související odkaz. 
-2. Na přehledu vyhrat funci **Nový**
+2. Na přehledu vybrat funkci **Nový**
 3. Zadat **Kód** pro expediční místo, popis, adresu a **Název uživatele a heslo** k Vašemu API.
 4. Zavřít přehled expedičních míst pomocí OK
 

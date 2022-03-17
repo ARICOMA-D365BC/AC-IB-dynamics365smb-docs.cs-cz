@@ -11,8 +11,9 @@ ms.search.keywords: Czech, General parameters, additional functions
 ms.author: v-makune
 ---
 # Obecné parametry
+> Aktualizace 17.03.2022
 
-Add-on modul **Obecné parametry** umožňuje přidat ke kartám v systému Dynamics 365 Business Central neomezené množství nových parametrů pro účely podrobného třídění a filtrování. Parametry lze dle účelu seskupovat do šablon. Modul obsahuje průvodce pro snadné zadávání hodnot parametrů ručním zadáním nebo výběrem z připravených číselníků.
+Add-on modul **Obecné parametry** umožňuje přidat ke kartám zboží nebo dlouhodobého majetku v systému Dynamics 365 Business Central neomezené množství nových parametrů pro účely podrobného třídění a filtrování. Parametry lze dle účelu seskupovat do šablon. Modul obsahuje průvodce pro snadné zadávání hodnot parametrů ručním zadáním nebo výběrem z připravených číselníků.
 
 ![Obecné parametry](media/general_parameters.png "Obecné parametry")
 
