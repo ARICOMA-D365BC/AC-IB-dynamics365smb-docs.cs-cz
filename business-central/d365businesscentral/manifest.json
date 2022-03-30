@@ -24,7 +24,7 @@
           "hash": "Js7SDGGV1RdYBTTea5y2Gg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -36,7 +36,7 @@
           "hash": "reHUNTzvFH3Xr5beWZhXQA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -72,7 +72,7 @@
           "hash": "0hXt3DbBxG/lpc1i1y9w5Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1008,10 +1008,10 @@
       "output": {
         ".html": {
           "relative_path": "AC-ProductivityPack/ac-general-parameters-setup.html",
-          "hash": "J7EDUeZ3v6EDnUC0DprGBw=="
+          "hash": "8/LE9/LPi9R93zfM6MU5og=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1020,10 +1020,10 @@
       "output": {
         ".html": {
           "relative_path": "AC-ProductivityPack/ac-general-parameters.html",
-          "hash": "AfFXZQjGYIBATqzwLud+OQ=="
+          "hash": "NEFtnnPVKH+ZJy0fGqIcGw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1107,7 +1107,7 @@
           "hash": "V3MyMR2gTDWrZTtbIllwow=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1140,10 +1140,10 @@
       "output": {
         ".html": {
           "relative_path": "AC-ProductivityPack/ac-parcels-setup.html",
-          "hash": "1j98kHldKg/KQAy8S+KH3w=="
+          "hash": "WDkjuHsSMDBnRMslqME9EA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1152,10 +1152,10 @@
       "output": {
         ".html": {
           "relative_path": "AC-ProductivityPack/ac-parcels.html",
-          "hash": "ynv9NWPKkqak6ed1uYlb7g=="
+          "hash": "udF9AvXhLD7DuM9+WF/boQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1227,7 +1227,7 @@
           "hash": "HorU4SIBSvxwzq+1evZMDQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2350,6 +2350,105 @@
       "output": {
         "resource": {
           "relative_path": "AC-ProductivityPack/media/general_parameters.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/general_parameters_fa.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/general_parameters_fa.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/general_parameters_list.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/general_parameters_list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/general_parameters_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/general_parameters_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/general_parameters_templates.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/general_parameters_templates.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/general_parameters_templates_values.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/general_parameters_templates_values.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/general_parameters_values.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/general_parameters_values.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/general_parameters_values_lookup.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/general_parameters_values_lookup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/general_parameters_values_translation.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/general_parameters_values_translation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/general_parameters_values_translations_value.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/general_parameters_values_translations_value.png"
         }
       },
       "is_incremental": false,
@@ -6132,6 +6231,105 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_fa.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_fa.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_list.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_templates.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_templates.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_templates_values.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_templates_values.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values_lookup.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values_lookup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values_translation.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values_translation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values_translations_value.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values_translations_value.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/incoming_mail.png",
       "output": {
         "resource": {
@@ -6564,7 +6762,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 283,
-          "skipped_file_count": 279
+          "skipped_file_count": 282
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

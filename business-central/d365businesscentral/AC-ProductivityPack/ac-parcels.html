@@ -166,6 +166,10 @@ Pokud na objednávce není vybrán žádný přepravce, kontrola je na vydání 
 <td><strong>Obsah zásilky</strong></td>
 <td>Obsah zásilky je především pro odesílání mimo EU, kdy je nutné udávat informace o tom co je v zásilce.</td>
 </tr>
+<tr>
+<td><strong>Přílohy zásilky</strong></td>
+<td>Slouží k připojení pdf dokladů k zásilce.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="vytvoření-nové-zásilky-z-účtovaného-dokladu">Vytvoření nové zásilky z účtovaného dokladu</h2>
@@ -235,6 +239,30 @@ Tato sestava se může nastavit, aby se tiskla automaticky po objednání svozu.
 <li>Vyberte jednoho z vašich přepravců a klikněte na funkci <strong>Test spojení</strong>.</li>
 <li>Po ověření účtu vyskočí hláška <em>Připojení ke službě bylo úspěšné.</em> a zobrazí se Vám inforace o účtu a Aktivní dopravci.</li>
 <li>Poté můžete okno zavřít.</li>
+</ol>
+<h2 id="paperless-trade">Paperless Trade</h2>
+<p>Paperless Trade slouží k odeslání elektronické faktury (případě pro-forma Faktury) pro celní řízení zakódované v PDF BASE64.</p>
+<p>V addonu AC Parcels můžete využít funkce k automatického vytvoření a přiložení PDF faktury k zásilce za předpokladu vytváření zásilky z účtované prodejní faktury.
+V případě vytváření zásilky z účtované prodejní dodávky musíte PDF vkládat ručně.</p>
+<h3 id="vytvoření-zásilky-z-účtované-projdení-faktury">Vytvoření zásilky z účtované projdení faktury</h3>
+<p>Předpokladem pro použití je správné nastavení Paperless trade.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Zásilky</strong> a poté vyberte související odkaz.</li>
+<li>Na přehledu zásilek použijte funkci <strong>Vytvořit zásilku</strong>.</li>
+<li>Vložte číslo účtované faktury.</li>
+<li>Systém automaticky vygeneruje PDF faktury a připojí k zásilce.</li>
+<li>Použijte funkci <strong>Vytvořit zásilku</strong> nebo <strong>Vytvořit zásilku a tiskout štítek</strong></li>
+<li>Pokračujte ve zpracování další zásilky nebo formulář zavřete.</li>
+</ol>
+<h3 id="vytvoření-zásilky-z-účtované-prodejní-dodávky">Vytvoření zásilky z účtované prodejní dodávky</h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Zásilky</strong> a poté vyberte související odkaz.</li>
+<li>Na přehledu zásilek použijte funkci <strong>Vytvořit zásilku</strong>.</li>
+<li>Vložte číslo účtované dodávky.</li>
+<li>Systém automaticky doplní data pro zásilku.</li>
+<li>V záložce <strong>Přílohy Zásilky</strong> klikněte do řádku a připojte již dříve ručně vygenerované PDF (pro-formu faktury).</li>
+<li>Použijte funkci <strong>Vytvořit zásilku</strong> nebo <strong>Vytvořit zásilku a tiskout štítek</strong></li>
+<li>Pokračujte ve zpracování další zásilky nebo formulář zavřete.</li>
 </ol>
 <h2 id="viz-také">Viz také</h2>
 <p><a href="ac-parcels-setup.html">Nastavení - AC Parcels - Integrace Balíkobot</a><br>

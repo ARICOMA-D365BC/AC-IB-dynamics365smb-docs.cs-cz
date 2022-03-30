@@ -99,6 +99,8 @@ Pro definici počtu balíků v rámci jedné zásilky existuje pole „Počet ba
 |**Parametry zásilky**|Volitelné parametry zásilky.|
 |**Připojené doklady**|V podokně připojené doklady je možné vidět všechny dodací listy nebo faktury, které byly vloženy do jedné zásilky (funkční pouze, když se zásilka posílá na jednu adresu). |
 |**Obsah zásilky**|Obsah zásilky je především pro odesílání mimo EU, kdy je nutné udávat informace o tom co je v zásilce.|
+|**Přílohy zásilky**|Slouží k připojení pdf dokladů k zásilce.|
+
 ## Vytvoření nové zásilky z účtovaného dokladu
 
 Po zaúčtování dodání nastává proces vytvoření zásilky pro zákazníka. Jedním ze způsobů je vytvoření zásilky s dodacího listu nebo účtované faktury. Pomocí načítání čísla dokladu se automaticky předvyplní formulář **Vytvořit zásilku**. Tímto krokem uživatel nemusí ručně vypisovat údaje o zásilce.
@@ -175,6 +177,35 @@ Pokud chcete zobrazit jednotlivé stavy od přepravce využijte funkci na přehl
 2. Vyberte jednoho z vašich přepravců a klikněte na funkci **Test spojení**.
 3. Po ověření účtu vyskočí hláška *Připojení ke službě bylo úspěšné.* a zobrazí se Vám inforace o účtu a Aktivní dopravci.
 4. Poté můžete okno zavřít.
+
+## Paperless Trade
+
+Paperless Trade slouží k odeslání elektronické faktury (případě pro-forma Faktury) pro celní řízení zakódované v PDF BASE64.
+
+V addonu AC Parcels můžete využít funkce k automatického vytvoření a přiložení PDF faktury k zásilce za předpokladu vytváření zásilky z účtované prodejní faktury.
+V případě vytváření zásilky z účtované prodejní dodávky musíte PDF vkládat ručně.
+
+### Vytvoření zásilky z účtované projdení faktury
+
+Předpokladem pro použití je správné nastavení Paperless trade.
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Zásilky** a poté vyberte související odkaz.
+2. Na přehledu zásilek použijte funkci **Vytvořit zásilku**.
+3. Vložte číslo účtované faktury.
+4. Systém automaticky vygeneruje PDF faktury a připojí k zásilce.
+5. Použijte funkci **Vytvořit zásilku** nebo **Vytvořit zásilku a tiskout štítek**
+6. Pokračujte ve zpracování další zásilky nebo formulář zavřete.
+
+### Vytvoření zásilky z účtované prodejní dodávky
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Zásilky** a poté vyberte související odkaz.
+2. Na přehledu zásilek použijte funkci **Vytvořit zásilku**.
+3. Vložte číslo účtované dodávky.
+4. Systém automaticky doplní data pro zásilku.
+6. V záložce **Přílohy Zásilky** klikněte do řádku a připojte již dříve ručně vygenerované PDF (pro-formu faktury).
+5. Použijte funkci **Vytvořit zásilku** nebo **Vytvořit zásilku a tiskout štítek**
+6. Pokračujte ve zpracování další zásilky nebo formulář zavřete.
+
 
 ## Viz také
 [Nastavení - AC Parcels - Integrace Balíkobot](ac-parcels-setup.md)  

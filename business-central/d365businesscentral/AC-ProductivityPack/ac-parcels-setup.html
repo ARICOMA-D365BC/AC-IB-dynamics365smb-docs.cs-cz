@@ -130,7 +130,7 @@
 <p>Expediční místo je místo Vašeho skladu odkud jsou expedovány zásilky. Uživatel může mít několik expedičních míst. Pro každé expediční místo je nutné jiné API, dále je expediční místo spojeno s jednou lokací Vaší společnosti.</p>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Expediční místa</strong> a poté vyberte související odkaz.</li>
-<li>Na přehledu vyhrat funci <strong>Nový</strong></li>
+<li>Na přehledu vybrat funkci <strong>Nový</strong></li>
 <li>Zadat <strong>Kód</strong> pro expediční místo, popis, adresu a <strong>Název uživatele a heslo</strong> k Vašemu API.</li>
 <li>Zavřít přehled expedičních míst pomocí OK</li>
 </ol>
@@ -278,6 +278,25 @@ o	<a href="https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf">https://
 <li>Zvolte řádek rozšíření <strong>AC Parcels</strong> a poté použijte akci <strong>Konfigurace</strong>.</li>
 <li>Na stránce <strong>Konfigurace rozšíření</strong> aktivujte přepínač <strong>Povolit požadavky HttpClient</strong>.</li>
 <li>Poté stránku můžete zavřít a spustit znovu Asistovaného průvodce.</li>
+</ol>
+<h2 id="nastavení-paperless-trade">Nastavení PaperLess Trade</h2>
+<h3 id="zapnutí-paperless-trade-u-přepravce">Zapnutí Paperless Trade u přepravce</h3>
+<p>Paperless Trade slouží k odeslání elektronické faktury (případě pro-forma Faktury) pro celní řízení.</p>
+<p>Pro správné nastavení postupujte tímto způsobem:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přepravci</strong> a poté vyberte související odkaz.</li>
+<li>Na přehledu přepravců vyberte přepravce, u kterého chcete službu zapnout.</li>
+<li>Službu zapnete vybráním pole <strong>Paperless Trade</strong>.</li>
+<li>Po nastavení můžete přehled zavřít</li>
+</ol>
+<h3 id="automatické-připojení-faktury-k-zásilce">Automatické připojení faktury k zásilce</h3>
+<p>Pro správné fungování Paperless Trade musíte k zásilce připojit PDF soubor faktury (pro-forma faktury).</p>
+<p>V případě vytváření zásilky z účtované prodejní faktury je možné vygenerovat doklad a připojit ho automaticky při vytváření zásilky. Pro správné nastavení pokračujte títmo způsobem:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přepravci</strong> a poté vyberte související odkaz.</li>
+<li>Na přehledu přepravců vyberte přepravce, u kterého chcete zapnout automatické vytváření dokladu.</li>
+<li>Automatické vytváření PLT dokladů zapnete vybárním pole <strong>Vytvořit PLT dokument</strong>.</li>
+<li>Po nastavení můžete přehled zavřít.</li>
 </ol>
 <h2 id="viz-také">Viz také</h2>
 <p><a href="ac-parcels.html">Zásilky</a><br>

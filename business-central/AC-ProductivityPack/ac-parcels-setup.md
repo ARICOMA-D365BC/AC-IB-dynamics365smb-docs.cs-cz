@@ -225,6 +225,31 @@ Pro vyřešení tohoto problému postupujte následujícím způsobem:
 4. Na stránce **Konfigurace rozšíření** aktivujte přepínač **Povolit požadavky HttpClient**.
 5. Poté stránku můžete zavřít a spustit znovu Asistovaného průvodce.
 
+## Nastavení PaperLess Trade
+
+### Zapnutí Paperless Trade u přepravce
+
+Paperless Trade slouží k odeslání elektronické faktury (případě pro-forma Faktury) pro celní řízení.
+
+Pro správné nastavení postupujte tímto způsobem:
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přepravci** a poté vyberte související odkaz.
+2. Na přehledu přepravců vyberte přepravce, u kterého chcete službu zapnout.
+3. Službu zapnete vybráním pole **Paperless Trade**.
+4. Po nastavení můžete přehled zavřít
+
+### Automatické připojení faktury k zásilce
+
+Pro správné fungování Paperless Trade musíte k zásilce připojit PDF soubor faktury (pro-forma faktury). 
+
+V případě vytváření zásilky z účtované prodejní faktury je možné vygenerovat doklad a připojit ho automaticky při vytváření zásilky. Pro správné nastavení pokračujte títmo způsobem:
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přepravci** a poté vyberte související odkaz.
+2. Na přehledu přepravců vyberte přepravce, u kterého chcete zapnout automatické vytváření dokladu.
+3. Automatické vytváření PLT dokladů zapnete vybárním pole **Vytvořit PLT dokument**.
+4. Po nastavení můžete přehled zavřít.
+
+
 
 ## Viz také
 [Zásilky](ac-parcels.md)  

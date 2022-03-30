@@ -69,9 +69,54 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="obecné-parametry">Obecné parametry</h1>
 
-<p>Add-on modul <strong>Obecné parametry</strong> umožňuje přidat ke kartám v systému Dynamics 365 Business Central neomezené množství nových parametrů pro účely podrobného třídění a filtrování. Parametry lze dle účelu seskupovat do šablon. Modul obsahuje průvodce pro snadné zadávání hodnot parametrů ručním zadáním nebo výběrem z připravených číselníků.</p>
-<p><img src="media/general_parameters.png" alt="Obecné parametry" title="Obecné parametry"></p>
-<p><strong>Viz také</strong></p>
+<blockquote>
+<p>Aktualizace 17.03.2022</p>
+</blockquote>
+<p>Add-on modul <strong>Obecné parametry</strong> umožňuje přidat ke kartám <strong>zboží</strong> nebo <strong>dlouhodobého majetku</strong> v systému Dynamics 365 Business Central neomezené množství nových parametrů pro účely podrobného třídění a filtrování. Parametry lze dle účelu seskupovat do šablon. Modul obsahuje průvodce pro snadné zadávání hodnot parametrů ručním zadáním nebo výběrem z připravených číselníků.</p>
+<h2 id="náhled-obecných-parametrů-záznamu">Náhled obecných parametrů záznamu</h2>
+<p>Pro zobrazení seznamu uložených obecných parametrů k danému záznamu (v tomto případě k dlouhodobému majetku) s filtrem na danou entitu postupujte tímto způsobem:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Dlouhodobý majetek</strong> a poté vyberte související odkaz.</li>
+<li>Na přehledu vyberte určitý dlouhodobý majetek, u kterého chcete zobrazit parametry.</li>
+<li>Vyberte v sekci Související, ve skupině <strong>Dlouhodobý majetek</strong> funkci <strong>Obecné parametry</strong>.</li>
+<li>Otevře se Vám okno, kde v horní části můžete vidět název šablony.</li>
+<li>Ve spodní části uvidíte seznam paramtrů a jejich hodnoty.
+<img src="media/general_parameters_fa.png" alt="Obecné parametry karty"></li>
+<li>Pokud má karta nastaveno více šablony parametrů, můžete mezi nimi přepínat, nebo zobrazit všechny hodnoty pomocí smazání filtru na přehledu.</li>
+</ol>
+<h2 id="vložení-a-změna-obecných-parametrů">Vložení a změna obecných parametrů</h2>
+<p>Pro vložení obecných parametrů ke zboží nebo dlouhodobého majetku se používá akce <strong>Vložení obecných parametrů</strong>. Objeví se <strong>průvodce</strong>, pomocí kterého se ke konkrétní kartě vybere šablona (pokud jich je pro danou entitu definováno více než jedna), povinné a nepovinné parametry a nastaví se hodnoty těchto parametrů.</p>
+<p>Pro vložení nebo úpravu obecných parametrů postupjte následujícím způsobem:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Dlouhodobý majetek</strong> a poté vyberte související odkaz.</li>
+<li>Na přehledu v sekci Akce, použijte funkci <strong>Vložení obecných parametrů</strong>.</li>
+<li>Spustí se průvodce pro vkládání.</li>
+</ol>
+<h3 id="průvodce-vložení-obecných-parametrů">Průvodce vložení obecných parametrů</h3>
+<ol>
+<li>V prvním kroku průvodce budete vyzvání k vybrání <strong>Šablony</strong>. Následně k vyplnění řádků, tedy k zadání <strong>Povinných obecných parametrů</strong>.</li>
+<li>Hodnoty vyplníte do polí řádku průvodce. Jako první vyplníte <strong>Šablonu obecných parametrů</strong>, poté <strong>Hodnotu</strong> a nakonec <strong>Popis</strong>.</li>
+<li>V dalším kroku klikněte na <strong>Další</strong>.</li>
+<li>Nyní v dalším okně můžete vyplnit <strong>Nepovinné obecné parametry</strong> obdobným způsobem jako u povinných.</li>
+<li>Po zadání parametrů klikněte na tlačítko <strong>Dokončit</strong>, tím se nastavování uloží.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Stejný postup je použit jak pro vložení, tak i pro změnu parametrů nebo hodnot obecných parametrů daného záznamu.</p>
+</div>
+<h2 id="vyhledávání-záznamů-dle-obecných-parametrů">Vyhledávání záznamů dle obecných parametrů</h2>
+<p>Funkcionalitu obecných parametrů lze využít k vyhledání „podobných“ záznamů. Jinými slovy vyhledání těch záznamů dané entity, které mají například přiřazeny stejné parametry nebo mají stejné hodnoty některých parametrů.</p>
+<p>Pro vyhledání dle parametrů u dlouhodobého majetku pokračujte následujícím způsobem:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Dlouhodobý majetek</strong> a poté vyberte související odkaz.</li>
+<li>Na přehledu v sekci Akce vyberte funkci <strong>Filtrovat dle Obecných parametrů</strong>.</li>
+<li>Otevře se Vám okno kde v prvním kroku vybere <strong>Šablonu parametrů</strong>.</li>
+<li>Dalším krokem je vybrání podle kterých parametrů bude systém filtrovat. Provedete to tak, že kliknete na <strong>tři tečky</strong> v řádku u Filtru obecných parametrů.</li>
+<li>V dalším dialogovém okně vyberete parametry, podle kterých chcete filtrovat.</li>
+<li>Pomocí <strong>OK</strong> spustíte filtrování.</li>
+</ol>
+<p>Pro <strong>zrušení filtru</strong> vyhledávání klikněte v přehledu v sekci Akce na funkci <strong>Vymazat filtry Obecných parametrů</strong>.</p>
+<h2 id="viz-také">Viz také</h2>
 <p><a href="ac-general-parameters-setup.html">Obecné parametry - nastavení</a><br>
 <a href="ac-productivity-pack.html">Productivity Pack</a></p>
 </article>
