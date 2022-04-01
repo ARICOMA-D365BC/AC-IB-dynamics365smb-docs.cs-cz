@@ -80,7 +80,7 @@ Funkcionalita Platebních kalendářů je k dispozici v prodeji i v nákup
 
 **Účtování prodejní faktury s platebním kalendářem**
 
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Prodejní faktur** a poté vyberte související odkaz. 
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Prodejní faktury** a poté vyberte související odkaz. 
 2. Vytvořte novou prodejní fakturu dle vašich zvyklostí. V poli **Datum splatnosti** definujte nejzašší datum pro platební kalendář. 
 3. Spusťte akci **Platební kalendář**. 
 4. Spusťte funkci **Generovat platby**. 

@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-FinancialPack/TOC.html",
-          "hash": "AB3ySPLUBKi+hB1pAb5P3A=="
+          "hash": "TNMmlrlbNm6JbSVSjHmBRA=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-FinancialPack/ac-controling-basic.html",
-          "hash": "reHUNTzvFH3Xr5beWZhXQA=="
+          "hash": "qVgBIi6+stNfa1bbtawb/A=="
         }
       },
       "is_incremental": true,
@@ -133,6 +133,30 @@
         }
       },
       "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "AC-FinancialPack/ac-multiple-payment-methods-setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "AC-FinancialPack/ac-multiple-payment-methods-setup.html",
+          "hash": "QPt+mVI4ZqtNipFopA9WOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "AC-FinancialPack/ac-multiple-payment-methods.md",
+      "output": {
+        ".html": {
+          "relative_path": "AC-FinancialPack/ac-multiple-payment-methods.html",
+          "hash": "yg/geNUkY0D26oaJ1fl4sg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -389,6 +413,28 @@
       "output": {
         "resource": {
           "relative_path": "AC-FinancialPack/media/multiple_payment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/multiple_payment_methods_payment.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/multiple_payment_methods_payment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-FinancialPack/media/multiple_payment_methonds_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-FinancialPack/media/multiple_payment_methonds_overview.png"
         }
       },
       "is_incremental": false,
@@ -828,7 +874,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-ProductivityPack/TOC.html",
-          "hash": "Ord8tW4Zk2oH4QzXXznIeg=="
+          "hash": "kZ6ADGCRbnynSNYHrwawhg=="
         }
       },
       "is_incremental": false,
@@ -1011,7 +1057,7 @@
           "hash": "8/LE9/LPi9R93zfM6MU5og=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1023,7 +1069,7 @@
           "hash": "NEFtnnPVKH+ZJy0fGqIcGw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2593,7 +2639,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-SK/TOC.html",
-          "hash": "Kho57pphIYS+R4akPPyiOQ=="
+          "hash": "x/U3a+FPc8LRPyQmAhCRzg=="
         }
       },
       "is_incremental": false,
@@ -4944,7 +4990,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-Solutions/TOC.html",
-          "hash": "JiLNsLwZ7H1LJmIktIWxyQ=="
+          "hash": "bdyV9P/XF7u2CK3NWUDCTg=="
         }
       },
       "is_incremental": false,
@@ -5212,6 +5258,28 @@
       "output": {
         "resource": {
           "relative_path": "d365businesscentral/AC-FinancialPack/media/multiple_payment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/multiple_payment_methods_payment.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/multiple_payment_methods_payment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/multiple_payment_methonds_overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-FinancialPack/media/multiple_payment_methonds_overview.png"
         }
       },
       "is_incremental": false,
@@ -6761,8 +6829,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 283,
-          "skipped_file_count": 282
+          "total_file_count": 285,
+          "skipped_file_count": 284
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
