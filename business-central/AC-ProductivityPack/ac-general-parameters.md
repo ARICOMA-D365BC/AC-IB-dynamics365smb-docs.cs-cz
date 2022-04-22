@@ -23,9 +23,9 @@ Pro zobrazení seznamu uložených obecných parametrů k danému záznamu (v to
 2. Na přehledu vyberte určitý dlouhodobý majetek, u kterého chcete zobrazit parametry.
 3. Vyberte v sekci Související, ve skupině **Dlouhodobý majetek** funkci **Obecné parametry**.
 4. Otevře se Vám okno, kde v horní části můžete vidět název šablony.
-5. Ve spodní části uvidíte seznam paramtrů a jejich hodnoty.
+5. Ve spodní části uvidíte seznam parametrů a jejich hodnoty.
 ![Obecné parametry karty](media/general_parameters_fa.png)
-6. Pokud má karta nastaveno více šablony parametrů, můžete mezi nimi přepínat, nebo zobrazit všechny hodnoty pomocí smazání filtru na přehledu.
+6. Pokud má karta nastaveno více šablon parametrů, můžete mezi nimi přepínat, nebo zobrazit všechny hodnoty pomocí smazání filtru na přehledu.
 
 
 ## Vložení a změna obecných parametrů
