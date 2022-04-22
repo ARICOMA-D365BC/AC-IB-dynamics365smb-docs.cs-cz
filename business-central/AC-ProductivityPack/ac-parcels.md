@@ -68,7 +68,7 @@ Základním krokem procesu vytváření zásilek je prodejní objednávka. Data 
 - Kód způsobu platby (pokud se jedná o dobírku), variabilní symbol
 - Vaše reference (v případě, že Váš zákazník vyžaduje na štítek např. své číslo objednávky)
 
-Systém nevydá doklad, pokud není vyplněno telefonní číslo a/nebo e-mail! (viz. nastavení kontroly).
+Systém nevydá doklad, pokud není vyplněno telefonní číslo a/nebo e-mail (viz. nastavení kontroly)!
 Pokud na objednávce není vybrán žádný přepravce, kontrola je na vydání dokladu (telefonní číslo a e-mail) vypnutá.
 ### Volitelná pole k zadání před vydáním dokladu
 Uživatel již v prodejní objednávce může zadat volitelné parametry zásilky. K zadání slouží informační panel **Parametry zásilky** na kartě prodejní objednávky. Pomocí tlačítka Vložit se otevře okno s parametry z nastavení, které je možno doplnit dle potřeby. Může se jednat například o:
