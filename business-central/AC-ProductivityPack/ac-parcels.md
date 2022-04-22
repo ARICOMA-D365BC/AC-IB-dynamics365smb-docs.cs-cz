@@ -171,7 +171,7 @@ Pokud chcete zobrazit jednotlivé stavy od přepravce, využijte funkci na přeh
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přepravci** a poté vyberte související odkaz.
 2. Vyberte jednoho z vašich přepravců a klikněte na funkci **Test spojení**.
-3. Po ověření účtu vyskočí hláška *Připojení ke službě bylo úspěšné.* a zobrazí se Vám informace o účtu a Aktivní dopravci.
+3. Po ověření účtu vyskočí hláška *Připojení ke službě bylo úspěšné.* a zobrazí se Vám informace o účtu a Aktivním dopravci.
 4. Poté můžete okno zavřít.
 
 ## Paperless Trade
