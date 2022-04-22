@@ -19,7 +19,7 @@ ms.author: v-makune
 Pro správné fungování addonu Zásilek je zapotřebí nastavit několik oblastí. Addon se prvotně nastavuje pomocí průvodce a poté je možné nastavení měnit ručně.
 
 ## Oblasti nastavení addonu:
-- Číslenou řada
+- Číselná řada
 - Expediční místa
 - Nastavení Zásilek
 - Přepravce
@@ -37,7 +37,7 @@ Ostatní číselníky (Služby přepravce, Manipulační jednotky a Pobočky př
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Asistovaná nastavení** a poté vyberte související odkaz.
 2. Vyberte Nastavení zásilek.
 3. Po přečtení instrukcí klikněte na tlačítko **Další**.
-4. Pokud chcete můžete importovat RapidStart balíček ručně, nebo můžete kliknout na **Další a balíček se stáhne a importuje sám**.
+4. Pokud chcete, můžete importovat RapidStart balíček ručně, nebo můžete kliknout na **Další a balíček se stáhne a importuje sám**.
 5. V dalším kroku vytvořte nové expediční místo pomocí tlačítka **Nový** a vyplňte pole:
     - Kód
     - Uživatelské jméno
@@ -49,26 +49,26 @@ Ostatní číselníky (Služby přepravce, Manipulační jednotky a Pobočky př
     - Město
     - PSČ
 7. V poli **Expediční místo** vyberte nově vytvořený záznam.
-8. V dalším kroku vyberte lokaci vytvořené expediční místo a klikněte na další.
+8. V dalším kroku vyberte lokaci, vytvořené expediční místo, a klikněte na další.
 9. Vytvořte nového přepravce pomocí polí:
-    -  Kód
+    - Kód
     - Jméno
     - Integrační služby: Balíkobot.cz
     - Kód balíkobot
     - Povolit více balíků - ANO
     - Synchronizace master dat - ANO
 10. Vyberte funci **Synchronizovat master data**.
-11. Do pole Číslená řada vyberte patřičnou číselnou řadu pro zásilky.
-12. Jakmile vše vyplníte a kliknete na **Dokončit**, asistovaný průvoce se zavře a začnou se synchronizovat master data.
+11. Do pole Číselná řada vyberte patřičnou číselnou řadu pro zásilky.
+12. Jakmile vše vyplníte a kliknete na **Dokončit**, asistovaný průvodce se zavře a začnou se synchronizovat master data.
 
 ## Ruční úprava nastavení
 ### Expediční místa
 
-Expediční místo je místo Vašeho skladu odkud jsou expedovány zásilky. Uživatel může mít několik expedičních míst. Pro každé expediční místo je nutné jiné API, dále je expediční místo spojeno s jednou lokací Vaší společnosti. 
+Expediční místo je místo Vašeho skladu, odkud jsou expedovány zásilky. Uživatel může mít několik expedičních míst. Pro každé expediční místo je nutné jiné API, dále je expediční místo spojeno s jednou lokací Vaší společnosti. 
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Expediční místa** a poté vyberte související odkaz. 
 2. Na přehledu vybrat funkci **Nový**
-3. Zadat **Kód** pro expediční místo, popis, adresu a **Název uživatele a heslo** k Vašemu API.
+3. Zadat **Kód** pro expediční místo, popis, adresu a **Název uživatele a heslo** k Vašemu API
 4. Zavřít přehled expedičních míst pomocí OK
 
 ![Nastavení AC Parcels](media/BB_exp_pl.png)
@@ -91,13 +91,13 @@ Základní nastavení Balíkobotu je nutné provést na stránce **Nastavení Z�
 Okno nastavení Zásilek obsahuje:
  - **Čísla zásilek** - Číselná řada pro zásilky.
  - **Kód výchozího expedičního místa** - Výchozí expediční místo, odkud budou odváženy zásilky (viz další kapitola)
- - **Tisk předávací protokolů svozu** – Automatický tisk předávacích protokolu po objednání svozu
+ - **Tisk předávacích protokolů svozu** – Automatický tisk předávacích protokolů po objednání svozu
  - **Výchozí název tiskárny** – Určuje tiskárnu štítků
  - **Mezdí doba odezvy** – Určuje dobu timeoutu komunikace v jednotlivé zprávě
  - **Povolen protokol aktivity** - Spuštění sledování logu aktivity
  - **Režim ladění** – Umožňuje odchytávání zpráv v komunikaci s danou službou
  - **Automatická synchronizace master dat** - Spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje všechna data ze strany Balíkobotu.
- - **Automatická aktualizace stavu přepravy** - Spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje stav přepřavy zásilek za poslední měsíc.
+ - **Automatická aktualizace stavu přepravy** - Spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje stav přepravy zásilek za poslední měsíc.
 
 
 Základní nastavení se provede pomocí průvodce nastavení aplikace.
@@ -107,10 +107,10 @@ Aktualizace těchto dat probíhá ručně pomocí funkce „Resynchronizace mast
 Pro spuštění funkcí Balíkobotu je potřeba provést nastavení:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení Zásilek** a poté vyberte související odkaz.
-2. Vybrat číselnou řadu pro zásilky
-4. Vybrat kód výchozího expedičního místa
-5. Povolit nebo zakázat automatický tisk protokolů svozu
-6. Povolit nebo zakázat Protokol aktivity
+2. Vyberte číselnou řadu pro zásilky
+4. Vybertet kód výchozího expedičního místa
+5. Povolte nebo zakažte automatický tisk protokolů svozu
+6. Povolte nebo zakažte Protokol aktivity
 
 ### Nastavení přepravců
 Základní číselník se nahrává pomocí RapidStart balíčku pro Business Central. Tento balíček obsahuje data, která se nestahují z API Balíkobotu:
@@ -148,7 +148,7 @@ Pokud přidáte přepravce až poté, co byla provedeno prvnotní nastavení pom
 Poté je nutné použít funkci **Synronizace master dat**!
 ### Nastavení služeb přepravců
 
-Služby přepravců se stahují automaticky pomocí API Balíkobotu. Je možné vynutit určité nastavení pro jednotlivé služby přepravce. Pro nastavení musíte:
+Služby přepravců se stahují automaticky pomocí API Balíkobotu. Je možné vynutit určité nastavení pro jednotlivé služby přepravce. Postup pro nastavení :
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přepravci** a poté vyberte související odkaz.
 2. V seznamu vyberte požadovaného přepravce a zvolte funkci **Služby přepravce**
 3. Na následující stránce vyplňte pole dle pořeby:
@@ -158,7 +158,7 @@ Služby přepravců se stahují automaticky pomocí API Balíkobotu. Je možné 
     - **Vynutit cenu zásilky**
     - **Vynutit dobírku zásilky**
     - **Vynutit variabilní symbol zásilky**
-    - **Hmotnost na řádku** - Hmotnost musí být vyplěna v řádku zásilky 
+    - **Hmotnost na řádku** - Hmotnost musí být vyplněna v řádku zásilky 
     - **Služby ČP** – Pouze pro Českou poštu - dlouhý textový řetězec služeb pošty nad danou zásilkou
 o	https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf
 
@@ -172,31 +172,31 @@ Parametry pro jednotlivé přepravce jsou stahovány z API balíkobotu.
 
 ### Nastavení způsobu platby - Dobírka
 
-Pro nastavení a používání funkce zásilka na dobírku je zapotřebí nastavit na způsobu platby booeal **Dobírka**.
+Pro nastavení a používání funkce zásilka na dobírku je zapotřebí nastavit na způsobu platby boolean **Dobírka**.
 
 1.  Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Způsob platby** a poté vyberte související odkaz.  
-2. V přehledu zašktněte možnost **Dobírka**.
+2. V přehledu zaškrtněte možnost **Dobírka**.
 3. Zavřete přehled způsobu platby.
  ## Nastavení tisku
 ### PDF reader
 Pro tisk štítků je zapotřebí mít nainstalovaný PDF reader. Pro práci se štítky doporučujeme Foxit pdf a také ho mít nastavený jako výchozí program pro PDF soubory.
 ### Výběr formátu tisku – klientská zóna
-Základním krokem nastavení tisku štítků je definice jakým způsobem se budou generovat PDF se štítky ze strany Balíkobotu. V klientské zóně (https://client.balikobot.cz/) uživatel musí nastavit, zda se bude tisknout ve formátu na celou stránku nebo dle pozic na papíru velikosti A4. Vše záleží na tom, na jaké tiskárně se bude tisknout. Pro tisk na tiskárně pro štítky se nemusí vybírat pozice tisku štítku.
+Základním krokem nastavení tisku štítků je definice, jakým způsobem se budou generovat PDF se štítky ze strany Balíkobotu. V klientské zóně (https://client.balikobot.cz/) uživatel musí nastavit, zda se bude tisknout ve formátu na celou stránku nebo dle pozic na papíru velikosti A4. Vše záleží na tom, na jaké tiskárně se bude tisknout. Pro tisk na tiskárně pro štítky se nemusí vybírat pozice tisku štítku.
 
 ### Výběr tiskárny
  Pro nastavení tisku štítku je potřeba nastavit ID sestavy a přidělit uživateli tiskárnu. Funkce tisk štítků je nastavená, aby tiskla na definové tiskárně.
 
-Pro definice tiskárny je nutné:
+Nutné pro definice tiskárny:
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Výběry tiskáren** a poté vyberte související odkaz. 
 2. Zvolit **Nový**.
-3. Vybrat ID uživatele, ID sestavy 52068430 a Název tiskárny
+3. Vyberte ID uživatele, ID sestavy 52068430 a Název tiskárny
 
-Tisk předávacího protokolu se tiskne automaticky po objednání svozu. Pokud uživatel nechce automatický tisk, stačí v Nastavení Balíkobotu vypnout Boolean - Tisk předávacích protokolů svozu. Tisk se provádí z Výchozí tiskárny dle Vašeho zařízení. Případně pokud máte nastavenou výchozí tiskárnu ve **Výběry tiskáren** jako zbytek Vašich tiskových sestav.
+Tisk předávacího protokolu se tiskne automaticky po objednání svozu. Pokud uživatel nechce automatický tisk, stačí v Nastavení Balíkobotu vypnout Boolean - Tisk předávacích protokolů svozu. Tisk se provádí z Výchozí tiskárny dle Vašeho zařízení. Případně pokud máte nastavenou výchozí tiskárnu ve **Výběry tiskáren** jako ostatní Vaše tiskové sestavy.
 
 ## Automatické aktualizace
 
 ### Automatická aktualizace master dat
-Automatikcká aktualizace master dat spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje všechna data ze strany Balíkobotu (Ve výchozím stavu v neděli ve 14:00).
+Automatická aktualizace master dat spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje všechna data ze strany Balíkobotu (Ve výchozím stavu v neděli ve 14:00).
 
 Pro zapnutí této funkce postupujte následujícím způsobem:
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení Zásilek** a poté vyberte související odkaz.
@@ -205,7 +205,7 @@ Pro zapnutí této funkce postupujte následujícím způsobem:
 4. Poté je možné nastavení zavřít.
 
 ### Automatická aktualizace stavu přepravy
-Automatická aktualizace stavu přepravy spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje stav přepřavy zásilek za poslední měsíc.
+Automatická aktualizace stavu přepravy spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje stav přepravy zásilek za poslední měsíc.
 
 Pro zapnutí této funkce postupujte následujícím způsobem:
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení Zásilek** a poté vyberte související odkaz.
@@ -229,24 +229,24 @@ Pro vyřešení tohoto problému postupujte následujícím způsobem:
 
 ### Zapnutí Paperless Trade u přepravce
 
-Paperless Trade slouží k odeslání elektronické faktury (případě pro-forma Faktury) pro celní řízení.
+Paperless Trade slouží k odeslání elektronické faktury (případě pro-forma faktury) pro celní řízení.
 
 Pro správné nastavení postupujte tímto způsobem:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přepravci** a poté vyberte související odkaz.
 2. Na přehledu přepravců vyberte přepravce, u kterého chcete službu zapnout.
 3. Službu zapnete vybráním pole **Paperless Trade**.
-4. Po nastavení můžete přehled zavřít
+4. Po nastavení můžete přehled zavřít.
 
 ### Automatické připojení faktury k zásilce
 
 Pro správné fungování Paperless Trade musíte k zásilce připojit PDF soubor faktury (pro-forma faktury). 
 
-V případě vytváření zásilky z účtované prodejní faktury je možné vygenerovat doklad a připojit ho automaticky při vytváření zásilky. Pro správné nastavení pokračujte títmo způsobem:
+V případě vytváření zásilky z účtované prodejní faktury je možné vygenerovat doklad a připojit ho automaticky při vytváření zásilky. Pro správné nastavení pokračujte tímto způsobem:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přepravci** a poté vyberte související odkaz.
 2. Na přehledu přepravců vyberte přepravce, u kterého chcete zapnout automatické vytváření dokladu.
-3. Automatické vytváření PLT dokladů zapnete vybárním pole **Vytvořit PLT dokument**.
+3. Automatické vytváření PLT dokladů zapnete vybráním pole **Vytvořit PLT dokument**.
 4. Po nastavení můžete přehled zavřít.
 
 
