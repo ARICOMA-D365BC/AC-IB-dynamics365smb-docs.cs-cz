@@ -122,8 +122,8 @@ Aktualizace těchto dat probíhá ručně pomocí funkce „Resynchronizace mast
  
 Přehled obsahuje i dopravce, které nemáte u Balíkobotu nakonfigurované. Pro takové se neprovádí import dalších dat (viz dále).
 ### Na přehledu přepravců je několik polí k nastavení:
- - **Integrační služba** – Určuje přes jakou integrační službu se přepravce používá (v tomto případě Balikobot.cz)
- - **Povolení synchronizace master dat** – Po zapnutí se mohou stánout master data
+ - **Integrační služba** – Určuje, přes jakou integrační službu se přepravce používá (v tomto případě Balikobot.cz)
+ - **Povolení synchronizace master dat** – Po zapnutí se mohou stáhnout master data
  - **Poslední synchronizace master dat** – Datum poslední synchronizace master dat
  - **Povoleno pro Balíkobot** - Přepravce je povolen a je možné ho používat
  - **Povolit více balíků** - Při vytváření zásilky umožní funkce vytvořit více balíků v rámci jedné zásilky
@@ -139,19 +139,19 @@ Přehled obsahuje i dopravce, které nemáte u Balíkobotu nakonfigurované. Pro
  - **Manipulační jednotky** - Tabulka manipulačních jednotek paletové přepravy
  - **ADR jednotky přepravce** – Tabulka ADR jednotek přepravce
 
-Pokud přidáte přepravce až poté, co byla provedeno prvnotní nastavení pomocí asistovaného nastavení, je nutné správně vyplnit pole:
+Pokud přidáte přepravce až poté, co byla provedeno prvotní nastavení pomocí asistovaného nastavení, je nutné správně vyplnit pole:
 - Kód
 - Adresa URL sledování balíku
 - Integrační služba
 - Kód Balíkobot
 
-Poté je nutné použít funkci **Synronizace master dat**!
+Poté je nutné použít funkci **Synchronizace master dat**!
 ### Nastavení služeb přepravců
 
 Služby přepravců se stahují automaticky pomocí API Balíkobotu. Je možné vynutit určité nastavení pro jednotlivé služby přepravce. Postup pro nastavení :
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přepravci** a poté vyberte související odkaz.
 2. V seznamu vyberte požadovaného přepravce a zvolte funkci **Služby přepravce**
-3. Na následující stránce vyplňte pole dle pořeby:
+3. Na následující stránce vyplňte pole dle potřeby:
     - **Povoleno pro Balíkobot** - Službu je možné používat (ve výchozím stavu povoleno)
     - **Vynutit hmotnost zásilky**
     - **Vynutit objem zásilky**
@@ -184,14 +184,14 @@ Pro tisk štítků je zapotřebí mít nainstalovaný PDF reader. Pro práci se 
 Základním krokem nastavení tisku štítků je definice, jakým způsobem se budou generovat PDF se štítky ze strany Balíkobotu. V klientské zóně (https://client.balikobot.cz/) uživatel musí nastavit, zda se bude tisknout ve formátu na celou stránku nebo dle pozic na papíru velikosti A4. Vše záleží na tom, na jaké tiskárně se bude tisknout. Pro tisk na tiskárně pro štítky se nemusí vybírat pozice tisku štítku.
 
 ### Výběr tiskárny
- Pro nastavení tisku štítku je potřeba nastavit ID sestavy a přidělit uživateli tiskárnu. Funkce tisk štítků je nastavená, aby tiskla na definové tiskárně.
+ Pro nastavení tisku štítku je potřeba nastavit ID sestavy a přidělit uživateli tiskárnu. Funkce tisk štítků je nastavená, aby tiskla na definované tiskárně.
 
 Nutné pro definice tiskárny:
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Výběry tiskáren** a poté vyberte související odkaz. 
 2. Zvolit **Nový**.
 3. Vyberte ID uživatele, ID sestavy 52068430 a Název tiskárny
 
-Tisk předávacího protokolu se tiskne automaticky po objednání svozu. Pokud uživatel nechce automatický tisk, stačí v Nastavení Balíkobotu vypnout Boolean - Tisk předávacích protokolů svozu. Tisk se provádí z Výchozí tiskárny dle Vašeho zařízení. Případně pokud máte nastavenou výchozí tiskárnu ve **Výběry tiskáren** jako ostatní Vaše tiskové sestavy.
+Tisk předávacího protokolu se tiskne automaticky po objednání svozu. Pokud uživatel nechce automatický tisk, stačí v Nastavení Balíkobotu vypnout Boolean - Tisk předávacích protokolů svozu. Tisk se provádí z Výchozí tiskárny dle Vašeho zařízení. Případně, pokud máte nastavenou výchozí tiskárnu ve **Výběry tiskáren**, stejně  jako ostatní Vaše tiskové sestavy.
 
 ## Automatické aktualizace
 
