@@ -109,7 +109,7 @@ Po zaúčtování dodání nastává proces vytvoření zásilky pro zákazníka
 
 ## Ruční vytvoření zásilky
 
-Zásilky lze vytvářet i ručně bez účtovaných dokladů, např. pro odeslání dopisů, nebo dodatečného balíčku. Na přehledu zásilek se nachází funkce „Nový“, která otevře prázdnou kartu zásilky. Karta Zásilky a karta Vytvořit zásilku jsou skoro stejné. Při ručním vytváření zásilky se nedá skenovat číslo účtovaného dokladu a údaje se musí vyplnit ručně. Při tomto vytváření je nutné zadat Stav „Nová“ a přídat jeden řádek. Po nachystání dat pro zásilku funkce „Přidat ke svozu“ zaeviduje zásilku v systému Balíkobotu. Poté je nutné ručně štítek vytisknout.
+Zásilky lze vytvářet i ručně bez účtovaných dokladů, např. pro odeslání dopisů, nebo dodatečného balíčku. Na přehledu zásilek se nachází funkce „Nový“, která otevře prázdnou kartu zásilky. Karta Zásilky a karta Vytvořit zásilku jsou skoro stejné. Při ručním vytváření zásilky se nedá skenovat číslo účtovaného dokladu a údaje se musí vyplnit ručně. Při tomto vytváření je nutné zadat Stav „Nová“ a přidat jeden řádek. Po nachystání dat pro zásilku funkce „Přidat ke svozu“ zaeviduje zásilku v systému Balíkobotu. Poté je nutné ručně štítek vytisknout.
 
 Potřebné kroky pro ruční vytvoření zásilky:
 1. Na přehledu zásilek zvolte funkci **Nový**.
