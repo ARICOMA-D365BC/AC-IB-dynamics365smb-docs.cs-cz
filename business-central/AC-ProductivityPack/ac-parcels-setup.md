@@ -57,7 +57,7 @@ Ostatní číselníky (Služby přepravce, Manipulační jednotky a Pobočky př
     - Kód balíkobot
     - Povolit více balíků - ANO
     - Synchronizace master dat - ANO
-10. Vyberte funci **Synchronizovat master data**.
+10. Vyberte funkci **Synchronizovat master data**.
 11. Do pole Číselná řada vyberte patřičnou číselnou řadu pro zásilky.
 12. Jakmile vše vyplníte a kliknete na **Dokončit**, asistovaný průvodce se zavře a začnou se synchronizovat master data.
 
@@ -67,9 +67,9 @@ Ostatní číselníky (Služby přepravce, Manipulační jednotky a Pobočky př
 Expediční místo je místo Vašeho skladu, odkud jsou expedovány zásilky. Uživatel může mít několik expedičních míst. Pro každé expediční místo je nutné jiné API, dále je expediční místo spojeno s jednou lokací Vaší společnosti. 
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Expediční místa** a poté vyberte související odkaz. 
-2. Na přehledu vybrat funkci **Nový**
-3. Zadat **Kód** pro expediční místo, popis, adresu a **Název uživatele a heslo** k Vašemu API
-4. Zavřít přehled expedičních míst pomocí OK
+2. Na přehledu vyberte funkci **Nový**
+3. Zadejte **Kód** pro expediční místo, popis, adresu a **Název uživatele a heslo** k Vašemu API
+4. Zavřete přehled expedičních míst pomocí OK
 
 ![Nastavení AC Parcels](media/BB_exp_pl.png)
 
@@ -79,8 +79,8 @@ Na kartě dané lokace je potřeba vybrat expediční místo, které je spjaté 
 Pro přiřazení expedičního místa lokaci je zapotřebí nastavit **Kód Expedičního místa**. 
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Lokace** a poté vyberte související odkaz.
-2. Otevřít kartu požadované lokace
-3. Vyplnit pole **Kód expedičního místa** v záložce Obecné
+2. Otevřete kartu požadované lokace
+3. Vyplňte pole **Kód expedičního místa** v záložce Obecné
 
 ![Nastavení AC Parcels](media/BB_lokace.png)
 ### Nastavení Zásilek
@@ -93,7 +93,7 @@ Okno nastavení Zásilek obsahuje:
  - **Kód výchozího expedičního místa** - Výchozí expediční místo, odkud budou odváženy zásilky (viz další kapitola)
  - **Tisk předávacích protokolů svozu** – Automatický tisk předávacích protokolů po objednání svozu
  - **Výchozí název tiskárny** – Určuje tiskárnu štítků
- - **Mezdí doba odezvy** – Určuje dobu timeoutu komunikace v jednotlivé zprávě
+ - **Mezní doba odezvy** – Určuje dobu timeoutu komunikace v jednotlivé zprávě
  - **Povolen protokol aktivity** - Spuštění sledování logu aktivity
  - **Režim ladění** – Umožňuje odchytávání zpráv v komunikaci s danou službou
  - **Automatická synchronizace master dat** - Spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje všechna data ze strany Balíkobotu.
