@@ -176,7 +176,7 @@ Pokud chcete zobrazit jednotlivé stavy od přepravce, využijte funkci na přeh
 
 ## Paperless Trade
 
-Paperless Trade slouží k odeslání elektronické faktury (případě pro-forma Faktury) pro celní řízení zakódované v PDF BASE64.
+Paperless Trade slouží k odeslání elektronické faktury (případě pro-forma faktury) pro celní řízení zakódované v PDF BASE64.
 
 V addonu AC Parcels můžete využít funkce k automatického vytvoření a přiložení PDF faktury k zásilce za předpokladu vytváření zásilky z účtované prodejní faktury.
 V případě vytváření zásilky z účtované prodejní dodávky musíte PDF vkládat ručně.
@@ -189,7 +189,7 @@ Předpokladem pro použití je správné nastavení Paperless trade.
 2. Na přehledu zásilek použijte funkci **Vytvořit zásilku**.
 3. Vložte číslo účtované faktury.
 4. Systém automaticky vygeneruje PDF faktury a připojí k zásilce.
-5. Použijte funkci **Vytvořit zásilku** nebo **Vytvořit zásilku a tiskout štítek**
+5. Použijte funkci **Vytvořit zásilku** nebo **Vytvořit zásilku a tisknout štítek**
 6. Pokračujte ve zpracování další zásilky nebo formulář zavřete.
 
 ### Vytvoření zásilky z účtované prodejní dodávky
