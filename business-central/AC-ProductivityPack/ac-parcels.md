@@ -76,7 +76,6 @@ Uživatel již v prodejní objednávce může zadat volitelné parametry zásilk
 - Kontakt na řidiče
 - Donáška do patra
 - Dopolední doručení
-- Kontrola věku adresáta
 - A mnohé další
 
 ## Karta zásilky
