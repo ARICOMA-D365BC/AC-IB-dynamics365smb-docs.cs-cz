@@ -108,9 +108,9 @@ Pro spuštění funkcí Balíkobotu je potřeba provést nastavení:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení Zásilek** a poté vyberte související odkaz.
 2. Vyberte číselnou řadu pro zásilky
-4. Vybertet kód výchozího expedičního místa
-5. Povolte nebo zakažte automatický tisk protokolů svozu
-6. Povolte nebo zakažte Protokol aktivity
+3. Vyberte kód výchozího expedičního místa
+4. Povolte nebo zakažte automatický tisk protokolů svozu
+5. Povolte nebo zakažte Protokol aktivity
 
 ### Nastavení přepravců
 Základní číselník se nahrává pomocí RapidStart balíčku pro Business Central. Tento balíček obsahuje data, která se nestahují z API Balíkobotu:
