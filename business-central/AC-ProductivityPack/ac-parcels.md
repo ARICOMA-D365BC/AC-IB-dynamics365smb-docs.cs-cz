@@ -15,7 +15,7 @@ ms.author: v-makune
 # AC Parcels - Integrace Balíkobot
 > Aktualizace: 08.03.2022
 
-Addon zásilek slouží k vytvoření zásilek a přímému tisku štítků vybraných dopravců, odesílání dat o zásilkách přepravci a objednání samotného svozu balíků. Pomocí totoho rozšíření je zrychlen proces zpracování a vytváření zásilek posílaných zákazníkům. Tento Addon využívá API služby Balíkobot.
+Addon zásilek slouží k vytvoření zásilek a přímému tisku štítků vybraných dopravců, odesílání dat o zásilkách přepravci a objednání samotného svozu balíků. Pomocí tohoto rozšíření je zrychlen proces zpracování a vytváření zásilek posílaných zákazníkům. Tento Addon využívá API služby Balíkobot.
 
 Tento addon je stavěn na základě načítání čárového kódu (čísel) účtovaných dokladů. Zásilky je možno vytvářet z účtovaných prodejních dodávek a faktur. Pokud uživatel vytvoří zásilku z účt. prodejní dodávky, zásilka se vytvoří bez dobírky, naopak pokud ji vytvoří z faktury, tak se zásilka vytvoří s dobírkou.
 
