@@ -41,7 +41,7 @@ Pro vložení nebo úpravu obecných parametrů postupujte následujícím způs
 
 ### Průvodce vložení obecných parametrů
 
-1. V prvním kroku průvodce budete vyzvání k vybrání **Šablony**. Následně k vyplnění řádků, tedy k zadání **Povinných obecných parametrů**.
+1. V prvním kroku průvodce budete vyzváni k vybrání **Šablony**. Následně k vyplnění řádků, tedy k zadání **Povinných obecných parametrů**.
 2. Hodnoty vyplníte do polí řádku průvodce. Jako první vyplníte **Šablonu obecných parametrů**, poté **Hodnotu** a nakonec **Popis**.
 3. V dalším kroku klikněte na **Další**.
 4. Nyní v dalším okně můžete vyplnit **Nepovinné obecné parametry** obdobným způsobem jako u povinných.
