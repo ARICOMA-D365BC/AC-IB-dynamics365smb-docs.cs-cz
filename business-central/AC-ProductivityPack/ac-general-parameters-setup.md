@@ -27,7 +27,7 @@ Pro založení číselníku obecných parametrů pokračujte tímto způsobem:
 > Funkcionalita nabízí více možností, ale pro obecné parametry jsou vhodné následující datové typy **Text, Code, Integer, Decimal, Boolean, Datetime, DateFormula, Date, Time, Duration, RecordID**.
 > S použitím metody zadávání Tabulka souvisí naplnění polí ID tabulky a ID pole a s použitím metody zadávání Funkce souvisí naplnění ID funkce.
 
-### Defince hodnot parametrů
+### Definice hodnot parametrů
 
 Pro definici hodnot parametrů postupujte následujícím způsobem:
 
@@ -61,7 +61,7 @@ Pro definici překladů hodnot parametrů postupujte následujícím způsobem:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Obecné parametry** a poté vyberte související odkaz.
 2. Na přehledu vyberte parametr, kterému chcete nastavit překlady.
-3. Vyberte v sekci Související, ve skupině **Hodnota** a na přehldu hodnot funkci **Překlady**.
+3. Vyberte v sekci Související, ve skupině **Hodnota** a na přehledu hodnot funkci **Překlady**.
 4. Otevře se okno pro zadání překladů hodnot vybraného parametru, kde vyplníte **Kód jazyka** a **Popis** dle potřeby.
 
 ![Překlady hodnot parametru](media/general_parameters_values_translations_value.png)
@@ -81,7 +81,7 @@ Pro nastavení šablon obecných parametrů pro použití na vybraných entitác
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Šablony obecných parametrů** a poté vyberte související odkaz.
 2. V seznamu šablon vyberte šablonu, pro kterou chcete zadávat parametry.
 3. Vyberte v sekci Související, ve skupině **Šablona** funkci **Parametry**.
-4. Otevře se okno vybrané šablony, kde můžete doplnit parametry. Dále můžete nastavit parametrům to, který bude jako výchozí hodnotou šablony, povinný nebo můžete určit prioritu.
+4. Otevře se okno vybrané šablony, kde můžete doplnit parametry. Dále můžete nastavit parametrům to, který bude výchozí hodnotou šablony, povinný nebo můžete určit prioritu.
 
 ![Parametry šablony obecných parametrů](media/general_parameters_templates_values.png)
 
