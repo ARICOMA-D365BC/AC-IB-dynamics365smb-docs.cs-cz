@@ -63,7 +63,7 @@ Základním krokem procesu vytváření zásilek je prodejní objednávka. Data 
 ![Vytvoření objednávky](media/BB_order.png)
 ### Nutná pole k zadání před vydáním dokladu
 - Adresa zákazníka
-- Kód přepravce, kód služby přepravce případně kód pobočky přepravce
+- Kód přepravce, kód služby přepravce, případně kód pobočky přepravce
 - Zákazníkovo telefonní číslo, e-mail nebo jeden z těchto údajů
 - Kód způsobu platby (pokud se jedná o dobírku), variabilní symbol
 - Vaše reference (v případě, že Váš zákazník vyžaduje na štítek např. své číslo objednávky)
