@@ -30,10 +30,10 @@ Pro zobrazení seznamu uložených obecných parametrů k danému záznamu (v to
 
 ## Vložení a změna obecných parametrů
 
-Pro vložení obecných parametrů ke zboží nebo dlouhodobého majetku se používá akce **Vložení obecných parametrů**. Objeví se **průvodce**, pomocí kterého se ke konkrétní kartě vybere šablona (pokud jich je pro danou entitu definováno více než jedna), povinné a nepovinné parametry a nastaví se hodnoty těchto parametrů.
+Pro vložení obecných parametrů ke zboží nebo dlouhodobému majetku se používá akce **Vložení obecných parametrů**. Objeví se **průvodce**, pomocí kterého se ke konkrétní kartě vybere šablona (pokud jich je pro danou entitu definováno více než jedna), povinné a nepovinné parametry a nastaví se hodnoty těchto parametrů.
 
 
-Pro vložení nebo úpravu obecných parametrů postupjte následujícím způsobem:
+Pro vložení nebo úpravu obecných parametrů postupujte následujícím způsobem:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Dlouhodobý majetek** a poté vyberte související odkaz.
 2. Na přehledu v sekci Akce, použijte funkci **Vložení obecných parametrů**.
@@ -58,8 +58,8 @@ Pro vyhledání dle parametrů u dlouhodobého majetku pokračujte následujíc�
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Dlouhodobý majetek** a poté vyberte související odkaz.
 2. Na přehledu v sekci Akce vyberte funkci **Filtrovat dle Obecných parametrů**.
-3. Otevře se Vám okno kde v prvním kroku vybere **Šablonu parametrů**.
-4. Dalším krokem je vybrání podle kterých parametrů bude systém filtrovat. Provedete to tak, že kliknete na **tři tečky** v řádku u Filtru obecných parametrů.
+3. Otevře se Vám okno, kde v prvním kroku vybere **Šablonu parametrů**.
+4. Dalším krokem je vybrat, podle kterých parametrů bude systém filtrovat. Provedete to tak, že kliknete na **tři tečky** v řádku u Filtru obecných parametrů.
 5. V dalším dialogovém okně vyberete parametry, podle kterých chcete filtrovat.
 6. Pomocí **OK** spustíte filtrování.
 
