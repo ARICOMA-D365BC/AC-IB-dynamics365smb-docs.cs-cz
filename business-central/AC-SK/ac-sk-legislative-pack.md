@@ -24,6 +24,7 @@ ms.author: v-makune
 |Nastavení Výkazu DPH.|[Výkaz DPH - nastavení](ac-sk-vat-statement-setup.md)|
 |Zpracování a export Kontrolního výkazu DPH.|[Kontrolní výkaz DPH](ac-sk-vat-check-report-export.md)|
 |Nastavení Kontrolního výkazu DPH.|[Kontrolní výkaz DPH - nastavení](ac-sk-vat-check-report-setup.md)|
+|Zpracování opravných dokladů.|[Opravné doklady](ac-sk-corrective-documents.md)|
 |Export Intrastatu.|[Intrastat](ac-sk-intrastat.md)|
 |Export Souhrnného hlášení.|[VIES](ac-sk-vies.md)|
 |Nastavení SEPA platebního styku.|[SEPA platby](ac-sk-sepa.md)|
