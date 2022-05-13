@@ -64,6 +64,7 @@
 ### [Nastavení - Výkaz DPH](../AC-SK/ac-sk-vat-statement-setup.md)
 ## [Kontrolní výkaz DPH](../AC-SK/ac-sk-vat-check-report-export.md)
 ### [Nastavení - Kontrolní výkaz DPH](../AC-SK/ac-sk-vat-check-report-setup.md)
+## [Opravné doklady](../AC-SK/ac-sk-corrective-documents.md)
 ## [Intrastat](../AC-SK/ac-sk-intrastat.md)
 ## [VIES](../AC-SK/ac-sk-vies.md)
 ## [SEPA platby](../AC-SK/ac-sk-sepa.md)

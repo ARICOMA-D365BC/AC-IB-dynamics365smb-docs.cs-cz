@@ -54,10 +54,10 @@ Zadání opravných dokladů s použitím nastaveného kódu původu a případn
 > Transakce se zaúčtuje s nastaveným Kódem původu pro vrubopis, Kód původu Položkách DPH původního dokladu se nemění.
 
 > [!WARNING]
-> Nutné nastavení: Nastavení kódů původu, pole Nákupní vrubopis = DEBITNOTE, pole Prodejní vrubopis = DEBITNOTE 
+> Nutné nastavení: Nastavení kódů původu, pole Nákupní vrubopis = DEBITNOTE, pole Prodejní vrubopis = DEBITNOTE .
 
 ## Viz také
 
-[AUTOCONT Řešení](../index.md)
-[SK Legislativní balíček](ac-sk-legislative-pack.md)
+[AUTOCONT Řešení](../index.md)  
+[SK Legislativní balíček](ac-sk-legislative-pack.md)  
 [Výkaz DPH - nastavení](ac-sk-vat-statement-setup.md)

@@ -72,7 +72,7 @@
 <blockquote>
 <p>Aktualizace: 08.03.2022</p>
 </blockquote>
-<p>Addon zásilek slouží k vytvoření zásilek a přímému tisku štítků vybraných dopravců, odesílání dat o zásilkách přepravci a objednání samotného svozu balíků. Pomocí totoho rozšíření je zrychlen proces zpracování a vytváření zásilek posílaných zákazníkům. Tento Addon využívá API služby Balíkobot.</p>
+<p>Addon zásilek slouží k vytvoření zásilek a přímému tisku štítků vybraných dopravců, odesílání dat o zásilkách přepravci a objednání samotného svozu balíků. Pomocí tohoto rozšíření je zrychlen proces zpracování a vytváření zásilek posílaných zákazníkům. Tento Addon využívá API služby Balíkobot.</p>
 <p>Tento addon je stavěn na základě načítání čárového kódu (čísel) účtovaných dokladů. Zásilky je možno vytvářet z účtovaných prodejních dodávek a faktur. Pokud uživatel vytvoří zásilku z účt. prodejní dodávky, zásilka se vytvoří bez dobírky, naopak pokud ji vytvoří z faktury, tak se zásilka vytvoří s dobírkou.</p>
 <p>Seznam přepravců:</p>
 <ul>
@@ -117,34 +117,30 @@
 <h3 id="nutná-pole-k-zadání-před-vydáním-dokladu">Nutná pole k zadání před vydáním dokladu</h3>
 <ul>
 <li>Adresa zákazníka</li>
-<li>Kód přepravce, kód služby přepravce případně kód pobočky přepravce</li>
+<li>Kód přepravce, kód služby přepravce, případně kód pobočky přepravce</li>
 <li>Zákazníkovo telefonní číslo, e-mail nebo jeden z těchto údajů</li>
 <li>Kód způsobu platby (pokud se jedná o dobírku), variabilní symbol</li>
-<li>Vaše reference (v případě, že Váš zákazník vyžaduje na štítek např.: své číslo objednávky)</li>
+<li>Vaše reference (v případě, že Váš zákazník vyžaduje na štítek např. své číslo objednávky)</li>
 </ul>
-<p>Systém nevydá doklad pokud není vyplněno telefonní číslo a/nebo e-mail! (viz. nastavení kontroly).
+<p>Systém nevydá doklad, pokud není vyplněno telefonní číslo a/nebo e-mail (viz. nastavení kontroly)!
 Pokud na objednávce není vybrán žádný přepravce, kontrola je na vydání dokladu (telefonní číslo a e-mail) vypnutá.</p>
 <h3 id="volitelná-pole-k-zadání-před-vydáním-dokladu">Volitelná pole k zadání před vydáním dokladu</h3>
-<p>Uživatel již v prodejní objednávce může zadat volitelné parametry zásilky. K zadání slouží infomrační panel <strong>Parametry zásilky</strong> na kartě prodejní objednávky. Pomocí tlačítka Vložit se otevře okno s parametry z nastavení, které je možno doplnit dle potřeby. Může se jednat například o:</p>
+<p>Uživatel již v prodejní objednávce může zadat volitelné parametry zásilky. K zadání slouží informační panel <strong>Parametry zásilky</strong> na kartě prodejní objednávky. Pomocí tlačítka Vložit se otevře okno s parametry z nastavení, které je možno doplnit dle potřeby. Může se jednat například o:</p>
 <ul>
 <li>Kontrola věku adresáta</li>
 <li>Kontakt na řidiče</li>
 <li>Donáška do patra</li>
 <li>Dopolední doručení</li>
-<li>Kontrola věku adresáta.</li>
-<li>Kontakt na řidiče.</li>
-<li>Donáška do patra.</li>
-<li>Dopolední doručenní.</li>
-<li>A mnohé další.</li>
+<li>A mnohé další</li>
 </ul>
 <h2 id="karta-zásilky">Karta zásilky</h2>
 <p>Karta zásilky se skládá celkem z pěti částí.</p>
 <p><img src="media/BB_parcel_header.png" alt="Vytvoření objednávky">
 <img src="media/bb_parcel_body.png" alt="Vytvoření objednávky"></p>
 <h3 id="hlavička-zásilky">Hlavička zásilky</h3>
-<p>V hlavičce dokladu jsou pouze povinné údaje potřebné k založení zásilky, pro zadání dalších údajů jako jsou rozměry nebo vzkaz řidiči je nutné využít podokno Parametry zásilky. Každý přepravce a služba přepravce má své specifické parametry, které v případně nevyplnění nahlásí zpráva, která informuje o tom, co za údaj není na zásilce vyplněn.</p>
+<p>V hlavičce dokladu jsou pouze povinné údaje potřebné k založení zásilky, pro zadání dalších údajů, jako jsou rozměry nebo vzkaz řidiči, je nutné využít podokno Parametry zásilky. Každý přepravce a služba přepravce má své specifické parametry, které v případě nevyplnění nahlásí zpráva, která informuje o tom, co za údaj není na zásilce vyplněn.</p>
 <h3 id="řádky-zásilky">Řádky zásilky</h3>
-<p>Pro definici počtu balíků v rámci jedné zásilky existuje pole „Počet balíků“. Pokud se bude jednat o balíkovou přepravu (NE PALETOVOU), po zadání počtu balíků se vytvoří řádky zásilky, ke kterým budou přiřazeny jednotlivé štítky od dopravce. V případě paletové přepravy bude toto pole určovat množství jedné manipulační jednotky (nevytvoří se několik řádků, ale vznikne jeden řádek a vyplní se množství; např.: 3 palety).</p>
+<p>Pro definici počtu balíků v rámci jedné zásilky existuje pole „Počet balíků“. Pokud se bude jednat o balíkovou přepravu (NE PALETOVOU), po zadání počtu balíků se vytvoří řádky zásilky, ke kterým budou přiřazeny jednotlivé štítky od dopravce. V případě paletové přepravy bude toto pole určovat množství jedné manipulační jednotky (nevytvoří se několik řádků, ale vznikne jeden řádek a vyplní se množství, např. 3 palety).</p>
 <h3 id="další-části">Další části</h3>
 <table>
 <thead>
@@ -164,7 +160,7 @@ Pokud na objednávce není vybrán žádný přepravce, kontrola je na vydání 
 </tr>
 <tr>
 <td><strong>Obsah zásilky</strong></td>
-<td>Obsah zásilky je především pro odesílání mimo EU, kdy je nutné udávat informace o tom co je v zásilce.</td>
+<td>Obsah zásilky je především pro odesílání mimo EU, kdy je nutné udávat informace o tom, co je v zásilce.</td>
 </tr>
 <tr>
 <td><strong>Přílohy zásilky</strong></td>
@@ -173,30 +169,30 @@ Pokud na objednávce není vybrán žádný přepravce, kontrola je na vydání 
 </tbody>
 </table>
 <h2 id="vytvoření-nové-zásilky-z-účtovaného-dokladu">Vytvoření nové zásilky z účtovaného dokladu</h2>
-<p>Po zaúčtování dodání nastává proces vytvoření zásilky pro zákazníka. Jedním ze způsobů je vytvoření zásilky s dodacího listu nebo účtované faktury. Pomocí načítání čísla dokladu se automaticky předvyplní formulář <strong>Vytvořit zásilku</strong>. Tímto krokem uživatel nemusí ručně vypisovat údaje o zásilce.</p>
+<p>Po zaúčtování dodání nastává proces vytvoření zásilky pro zákazníka. Jedním ze způsobů je vytvoření zásilky z dodacího listu nebo účtované faktury. Pomocí načítání čísla dokladu se automaticky předvyplní formulář <strong>Vytvořit zásilku</strong>. Tímto krokem uživatel nemusí ručně vypisovat údaje o zásilce.</p>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Vytvořit zásilku</strong> a poté vyberte související odkaz.</li>
-<li>Vložte číslo účtovaného dokladu (účtovaná prodejní dodávka, účtovananá prodejní faktura) do pole <strong>Číslo dokladu</strong>. Nebo využijte funkci Skenovat kódy (v případě kdy máte čárový kód s číslem dokladu).</li>
+<li>Vložte číslo účtovaného dokladu (účtovaná prodejní dodávka, účtovananá prodejní faktura) do pole <strong>Číslo dokladu</strong>. Nebo využijte funkci Skenovat kódy (v případě, kdy máte čárový kód s číslem dokladu).</li>
 <li>Uživatel má možnost zadat počet balíků v rámci jedné zásilky.</li>
 <li>Vyberte funkci <strong>Vytvořit zásilku a vytisknout štítek</strong>.</li>
-<li>Zásilka je nyní vytvořena a zároveň je ve stavu <strong>Ke svozu</strong>, tzn. má již od dopravce přidělené číslo, štítek a data jsou na straně Balíkobotu).</li>
+<li>Zásilka je nyní vytvořena a zároveň je ve stavu <strong>Ke svozu</strong>, tzn. má již od dopravce přidělené číslo, štítek a data jsou na straně Balíkobotu.</li>
 </ol>
 <h2 id="ruční-vytvoření-zásilky">Ruční vytvoření zásilky</h2>
-<p>Zásilky lze vytvářet i ručně bez účtovaných dokladů, např.: pro odeslání dopisů, nebo dodatečného balíčku. Na přehledu zásilek se nachází funkce „Nový“, která otevře prázdnou kartu zásilky. Karta Zásilky a karta Vytvořit zásilku jsou skoro stejné. Při ručním vytváření zásilky, se nedá skenovat číslo účtovaného dokladu a údaje se musí vyplnit ručně. Při tomto vytváření je nutné zadat Stav „Nová“ a přídat jeden řádek. Po nachystání dat pro zásilku funkce „Přidat ke svozu“ zaeviduje zásilku v systému Balíkobotu. Poté je nutné ručně štítek vytisknout.</p>
+<p>Zásilky lze vytvářet i ručně bez účtovaných dokladů, např. pro odeslání dopisů, nebo dodatečného balíčku. Na přehledu zásilek se nachází funkce „Nový“, která otevře prázdnou kartu zásilky. Karta Zásilky a karta Vytvořit zásilku jsou skoro stejné. Při ručním vytváření zásilky se nedá skenovat číslo účtovaného dokladu a údaje se musí vyplnit ručně. Při tomto vytváření je nutné zadat Stav „Nová“ a přidat jeden řádek. Po nachystání dat pro zásilku funkce „Přidat ke svozu“ zaeviduje zásilku v systému Balíkobotu. Poté je nutné ručně štítek vytisknout.</p>
 <p>Potřebné kroky pro ruční vytvoření zásilky:</p>
 <ol>
 <li>Na přehledu zásilek zvolte funkci <strong>Nový</strong>.</li>
-<li>Vyplěte potřebná pole pro daného přepavce a jeho službu.</li>
+<li>Vyplňte potřebná pole pro daného přepravce a jeho službu.</li>
 <li>Proveďte funkci <strong>Přidat ke svozu</strong> (zásilka je ve stavu <strong>Ke svozu</strong> a je možné tisknout štítek).</li>
 <li>Proveďte funkci <strong>Tisk štítku</strong>.</li>
 <li>Zásilka je připravena k objednání svozu.</li>
 </ol>
 <h2 id="úprava-zásilky">Úprava zásilky</h2>
-<p>Upravovat zásilky lze pouze pokud jsou ve stavu <strong>Nová</strong>. Pokud je zásilka ve stavu <strong>Svozeno</strong> nelze ji již editovat. Pro úpravu/smazání informací zásilky, musí být zásilka ve stavu <strong>Ke svozu</strong>. Pomocí funkce Odebrat ze svozu se změní stav z <strong>Ke svozu</strong> na <strong>Nová</strong>.</p>
-<p>Po tomto kroku je třeba informovat přepravce, že zásilku mažete nebo upravujete. V tento okamžik je zásilce odebráno číslo od přepravce a je smazán štítek. Po upravení dat uživatel použije funkci <strong>Přidat ke svozu</strong> a pro vytištění nového štítků použije funkci <strong>Tisk štítků</strong>.</p>
+<p>Upravovat zásilky lze pouze tehdy, pokud jsou ve stavu <strong>Nová</strong>. Pokud je zásilka ve stavu <strong>Svozeno</strong>, nelze ji již editovat. Pro úpravu/smazání informací zásilky, musí být zásilka ve stavu <strong>Ke svozu</strong>. Pomocí funkce Odebrat ze svozu se změní stav z <strong>Ke svozu</strong> na <strong>Nová</strong>.</p>
+<p>Po tomto kroku je třeba informovat přepravce, že zásilku mažete nebo upravujete. V tento okamžik je zásilce odebráno číslo od přepravce a je smazán štítek. Po upravení dat uživatel použije funkci <strong>Přidat ke svozu</strong> a pro vytištění nového štítku použije funkci <strong>Tisk štítků</strong>.</p>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Zásilky</strong> a poté vyberte související odkaz.</li>
-<li>Klikněte na řádek ze zásilkou a použijte funkci <strong>Odebrat ze svozu</strong>.</li>
+<li>Klikněte na řádek se zásilkou a použijte funkci <strong>Odebrat ze svozu</strong>.</li>
 <li>Otevřete danou zásilku (nyní má stav <strong>Nová</strong>).</li>
 <li>Doplňte údaje/hodnoty o zásilce (Změna přepravce, Počet balíků, Hmotnost, Rozměry...).</li>
 <li>Použijte funkce <strong>Přidat ke svozu</strong> (zásilka je ve stavu <strong>Ke svozu</strong> a je možné tisknout štítek).</li>
@@ -210,7 +206,7 @@ Pokud na objednávce není vybrán žádný přepravce, kontrola je na vydání 
 <p>Pro objednání svozu je nutné udělat tyto kroky:</p>
 <ol>
 <li>Na přehledu zásilek vybrat funkci <strong>Objednat svoz</strong>.</li>
-<li>Na kartě Objednání svozu zvolte, zda se bude objednávat svoz jednoho přepravce (<strong>Objenad svoz</strong>) nebo všech (<strong>Objednat všechny svozy</strong>).</li>
+<li>Na kartě Objednání svozu zvolte, zda se bude objednávat svoz jednoho přepravce (<strong>Objednat svoz</strong>) nebo všech (<strong>Objednat všechny svozy</strong>).</li>
 <li>Po spuštění funkce se vytiskne <strong>Předávací protokol svozu</strong>.</li>
 </ol>
 <h2 id="tisk-předávacího-protokolu-svozu">Tisk předávacího protokolu svozu</h2>
@@ -223,35 +219,35 @@ Tato sestava se může nastavit, aby se tiskla automaticky po objednání svozu.
 </ol>
 <h2 id="sledování-zásilek">Sledování zásilek</h2>
 <p>Na přehledu zásilek lze na první pohled zahlédnout stav přepravy zásilky. Tento stav není strukturován a je pouze informativní bez detailu. Pro aktualizaci tohoto stavu na řádku zásilky slouží tlačítko <strong>Aktualizovat stav přepravy</strong>.</p>
-<p>Pokud chcete zobrazit jednotlivé stavy od přepravce využijte funkci na přehledu zásilek <strong>Sledování zásilky</strong>, která otevře stránku s jednotlivými stavy přepravy.</p>
+<p>Pokud chcete zobrazit jednotlivé stavy od přepravce, využijte funkci na přehledu zásilek <strong>Sledování zásilky</strong>, která otevře stránku s jednotlivými stavy přepravy.</p>
 <p><img src="media/BB_Tracking.png" alt="Vytvoření objednávky"></p>
 <h2 id="kontroly-a-omezení">Kontroly a omezení</h2>
 <ul>
-<li>Pokud jsou na prodejní objednávce vyplněny pole Kód přepravce a Kód služby přepravce, je nutné zadat telefonní číslo a e-mail příjemce. Pokud pole nebudou vyplěny nelze doklad vydat.</li>
+<li>Pokud jsou na prodejní objednávce vyplněny pole Kód přepravce a Kód služby přepravce, je nutné zadat telefonní číslo a e-mail příjemce. Pokud pole nebudou vyplněna, nelze doklad vydat.</li>
 <li>Při zadávání dat na kartě zásilky (automaticky pomocí načtení kódů, nebo ručně) je na kartě zásilky funkce <strong>Ověřit data zásilky</strong>. Po spuštění dostanete informaci, zda jsou předávané informace v pořádku.</li>
 <li>Jedno expediční místo může být přiřazeno jedné lokaci. Vzniká vazba 1:1.</li>
 </ul>
-<h2 id="infomace-o-účtu-a-kontrola-platných-přepravců">Infomace o účtu a kontrola platných přepravců</h2>
-<p>Za účely kontroly Vašich předplacených přepravců jsme implementovali metodu WHOIAM, který vypisuje informace o Vašem API připojení a seznam aktivních přepravců.</p>
-<p>Pro ověření Vašeho účtu zda se jedná o testovací nebo produkční a výpis přepravců pokračujte následujícím způsobem:</p>
+<h2 id="informace-o-účtu-a-kontrola-platných-přepravců">Informace o účtu a kontrola platných přepravců</h2>
+<p>Za účely kontroly Vašich předplacených přepravců jsme implementovali metodu WHOIAM, která vypisuje informace o Vašem API připojení a seznam aktivních přepravců.</p>
+<p>Pro ověření Vašeho účtu, zda se jedná o testovací nebo produkční, a pro výpis přepravců pokračujte následujícím způsobem:</p>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přepravci</strong> a poté vyberte související odkaz.</li>
 <li>Vyberte jednoho z vašich přepravců a klikněte na funkci <strong>Test spojení</strong>.</li>
-<li>Po ověření účtu vyskočí hláška <em>Připojení ke službě bylo úspěšné.</em> a zobrazí se Vám inforace o účtu a Aktivní dopravci.</li>
+<li>Po ověření účtu vyskočí hláška <em>Připojení ke službě bylo úspěšné.</em> a zobrazí se Vám informace o účtu a Aktivním dopravci.</li>
 <li>Poté můžete okno zavřít.</li>
 </ol>
 <h2 id="paperless-trade">Paperless Trade</h2>
-<p>Paperless Trade slouží k odeslání elektronické faktury (případě pro-forma Faktury) pro celní řízení zakódované v PDF BASE64.</p>
+<p>Paperless Trade slouží k odeslání elektronické faktury (případě pro-forma faktury) pro celní řízení zakódované v PDF BASE64.</p>
 <p>V addonu AC Parcels můžete využít funkce k automatického vytvoření a přiložení PDF faktury k zásilce za předpokladu vytváření zásilky z účtované prodejní faktury.
 V případě vytváření zásilky z účtované prodejní dodávky musíte PDF vkládat ručně.</p>
-<h3 id="vytvoření-zásilky-z-účtované-projdení-faktury">Vytvoření zásilky z účtované projdení faktury</h3>
+<h3 id="vytvoření-zásilky-z-účtované-prodejní-faktury">Vytvoření zásilky z účtované prodejní faktury</h3>
 <p>Předpokladem pro použití je správné nastavení Paperless trade.</p>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Zásilky</strong> a poté vyberte související odkaz.</li>
 <li>Na přehledu zásilek použijte funkci <strong>Vytvořit zásilku</strong>.</li>
 <li>Vložte číslo účtované faktury.</li>
 <li>Systém automaticky vygeneruje PDF faktury a připojí k zásilce.</li>
-<li>Použijte funkci <strong>Vytvořit zásilku</strong> nebo <strong>Vytvořit zásilku a tiskout štítek</strong></li>
+<li>Použijte funkci <strong>Vytvořit zásilku</strong> nebo <strong>Vytvořit zásilku a tisknout štítek</strong></li>
 <li>Pokračujte ve zpracování další zásilky nebo formulář zavřete.</li>
 </ol>
 <h3 id="vytvoření-zásilky-z-účtované-prodejní-dodávky">Vytvoření zásilky z účtované prodejní dodávky</h3>
@@ -261,7 +257,7 @@ V případě vytváření zásilky z účtované prodejní dodávky musíte PDF 
 <li>Vložte číslo účtované dodávky.</li>
 <li>Systém automaticky doplní data pro zásilku.</li>
 <li>V záložce <strong>Přílohy Zásilky</strong> klikněte do řádku a připojte již dříve ručně vygenerované PDF (pro-formu faktury).</li>
-<li>Použijte funkci <strong>Vytvořit zásilku</strong> nebo <strong>Vytvořit zásilku a tiskout štítek</strong></li>
+<li>Použijte funkci <strong>Vytvořit zásilku</strong> nebo <strong>Vytvořit zásilku a tisknout štítek</strong></li>
 <li>Pokračujte ve zpracování další zásilky nebo formulář zavřete.</li>
 </ol>
 <h2 id="viz-také">Viz také</h2>
@@ -275,9 +271,6 @@ V případě vytváření zásilky z účtované prodejní dodávky musíte PDF 
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/AC-ProductivityPack/ac-parcels.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
