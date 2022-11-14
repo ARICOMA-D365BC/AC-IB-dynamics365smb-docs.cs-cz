@@ -404,14 +404,20 @@ Režim OSS se na prodejním dokladu zapíná na základě následujících infor
 - Pole DIČ – režim OSS je možný jen pro zákazníky bez registrace, tedy s nevyplněným DIČ 
 - Kód země z lokace v hlavičce dokladu 
 - Kód země příjemce, resp. Kód země/oblasti DPH 
+- Hodnota příznaku OSS pro kombinaci zemí výše v Nastavení
 
 **Odvod peněz za OSS** 
 
-*V průběhu Q1 2022 bude doplněna sestava, která bude podkladem pro výkazy vůči finančnímu úřadu. Z uzavřených položek DPH za celý kvartál vypočte (a s potřebnými detaily vytiskne) částku, kterou má firma zaplatit na finanční úřad.*
+Kvartálně je třeba připravit podklady a zaplatit DPH finančnímu úřadu. Pro tento účel je připravena funkce Uzavření položek DPH v režimu OSS, která označí položky DPH příznakem OSS uzavřeno a vypočíte Základ a DPH částku v korunách dle zadaného kursu vůči EUR. Výsledkem je tisková sestava dokladující výpočet za jednotlivé kombinace DPH účtoskupin obsažených v zdrojových položkách DPH.
+
+>[!NOTE]
+>Informace o datu uzavření v režimu OSS je obsažena v položce DPH. Díky tomu je možné sestavu spouštět dle potřeby např. pouze pro otevřené položky apod.
 
 **Uzavírání položek DPH** 
 
-*V průběhu Q1 2022 bude upravena funkcionalita uzavírání položek DPH.*
+Systém obsahuje funkci Vypočítat a účtovat vyrovnání DPH OSS, která uzavře položky DPH spadající do filtru. Oproti standardní funkci ale položky v režimu OSS přeúčtuje na zadaný Účet vyrovnání OSS. To je důležité pro následné zaúčtování platby vůči specializovanému finančnímu úřadu, který má tuto agendu na starosti.  
+Oba režimy se tak zpracovávají současně v rámci aktivit spojených s tvorbou výkazu DPH.
+
 
 ## Účtování přeplatků nákupních záloh
 

@@ -251,10 +251,10 @@ V případě používání jiné měny než lokální v zemi registrace, je 
 2. V poli Registrace OSS – EU na záložce DPH potvrďte, že je vaše firma registrována pro režim OSS. 
 3. V poli Kód měny pro OSS na záložce DPH vyberte kód měnu odpovídající měně Euro. 
 4. Vyberte akci Nastavení DPH pro OSS (Související -> DPH účtování). 
-5. Na stránce Nastavení DPH pro OSS zadejte DPH obch.účtoskupinu pro kombinaci zemí zahájení a ukončení přepravy. 
+5. Na stránce Nastavení DPH pro OSS zadejte DPH obch.účtoskupinu pro kombinaci zemí zahájení a ukončení přepravy a zvolte, jestli pro tuto kombinaci má být doklad označen jako OSS.
 
 >[!NOTE]
-> Příznakem OSS se určuje, zda-li uvedená kombinace zemí je či není předmětem režimu OSS. 
+>Kombinace s příznakem OSS = Ne je nutné definovat pro případy, kdy se v praxi objeví potřeba vypnout na prodejním dokladu režim OSS.
 
 
 ## Nastavení účtování přeplatků nákupních záloh
