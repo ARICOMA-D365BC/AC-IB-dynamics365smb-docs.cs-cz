@@ -8,7 +8,7 @@
     <title>AC - Financial pack - Controling Basic | Microsoft Docs </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="AC - Financial pack - Controling Basic | Microsoft Docs ">
-    <meta name="generator" content="docfx 2.55.0.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -390,11 +390,17 @@ Pole Stav pohledávky, umístěné na stránce Informace o pohledávce, slouží
 <li>Pole DIČ – režim OSS je možný jen pro zákazníky bez registrace, tedy s nevyplněným DIČ</li>
 <li>Kód země z lokace v hlavičce dokladu</li>
 <li>Kód země příjemce, resp. Kód země/oblasti DPH</li>
+<li>Hodnota příznaku OSS pro kombinaci zemí výše v Nastavení</li>
 </ul>
 <p><strong>Odvod peněz za OSS</strong></p>
-<p><em>V průběhu Q1 2022 bude doplněna sestava, která bude podkladem pro výkazy vůči finančnímu úřadu. Z uzavřených položek DPH za celý kvartál vypočte (a s potřebnými detaily vytiskne) částku, kterou má firma zaplatit na finanční úřad.</em></p>
+<p>Kvartálně je třeba připravit podklady a zaplatit DPH finančnímu úřadu. Pro tento účel je připravena funkce Uzavření položek DPH v režimu OSS, která označí položky DPH příznakem OSS uzavřeno a vypočíte Základ a DPH částku v korunách dle zadaného kursu vůči EUR. Výsledkem je tisková sestava dokladující výpočet za jednotlivé kombinace DPH účtoskupin obsažených v zdrojových položkách DPH.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Informace o datu uzavření v režimu OSS je obsažena v položce DPH. Díky tomu je možné sestavu spouštět dle potřeby např. pouze pro otevřené položky apod.</p>
+</div>
 <p><strong>Uzavírání položek DPH</strong></p>
-<p><em>V průběhu Q1 2022 bude upravena funkcionalita uzavírání položek DPH.</em></p>
+<p>Systém obsahuje funkci Vypočítat a účtovat vyrovnání DPH OSS, která uzavře položky DPH spadající do filtru. Oproti standardní funkci ale položky v režimu OSS přeúčtuje na zadaný Účet vyrovnání OSS. To je důležité pro následné zaúčtování platby vůči specializovanému finančnímu úřadu, který má tuto agendu na starosti.<br>
+Oba režimy se tak zpracovávají současně v rámci aktivit spojených s tvorbou výkazu DPH.</p>
 <h2 id="účtování-přeplatků-nákupních-záloh">Účtování přeplatků nákupních záloh</h2>
 <div class="NOTE">
 <h5>Note</h5>
