@@ -60,7 +60,14 @@ V nastavení kontroly CreditCheck je možné zapnout aktualizaci vytváření 
 
 ## Nastavení Hierarchického návrhu prodejních cen
 
-### Nastavení prodeje a pohledávek 
+### Metody výpočtu ceny (od verze 22.0, volitelně od 18.0)
+Od verze BC 22 (popř. od BC 18 pokud máte ve Správě funkcí zapnuto „Aktualizace funkcí: Nové zkušenosti s cenami prodeje“) provedete zapnutí hierarchického návrhu prodejních cen zboží takto:
+1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Metody výpočtu ceny** a poté vyberte související odkaz.
+2.	Kliknutím vyberte metodu Nejnižší cena.
+3.	V části Výpočet prodejní ceny vyberte pro Zboží implementaci s názvem **Finanční balíček AC – hierarchický** (kliknutím na hodnotu v poli Implementace použita).
+
+
+### Nastavení prodeje a pohledávek (do verze 21.0)
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení prodeje a pohledávek** a poté vyberte související odkaz. 
 >[!TIP]
 > Nastavení závisí na používané verzi. Ve verzi BC17 pro zapnutí zvolte **Hierarchický návrh cen povolen**.
