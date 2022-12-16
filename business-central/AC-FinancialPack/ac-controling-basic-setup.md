@@ -49,8 +49,8 @@ V nastavení uživatelů na záložce Obecné je nový boolean „**Povolit změ
 
 V nastavení kontroly CreditCheck je možné zapnout aktualizaci vytváření webových zdrojů pro všechny kontakty s vyplněným IČ. 
 
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení služby CreditCheck** a poté vyberte související odkaz. **
-2. Nastavte příznak **Aut. aktualizace webových zdrojů. 
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení služby CreditCheck** a poté vyberte související odkaz.
+2. Nastavte příznak **Aut. aktualizace webových zdrojů**. 
 
 >[!NOTE]
 > Vytváření webových zdrojů pro placený výpis je možné pomocí **Aut. aktualizace webových zdrojů - Plný**, ovšem pouze pokud je vyplněno pole **Přístupový kód**. 
