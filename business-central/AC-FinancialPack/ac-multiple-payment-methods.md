@@ -11,7 +11,7 @@ ms.search.keywords: Multiple payments, finance
 ms.date: 04/01/2022
 ms.author: AC MartinKunes
 ---
-# Více úhrad
+# Více způsobu plateb
 > Aktualizace 01.04.2022
 
 Addon **Více způsobů plateb** rozšiřuje standard prodejních dokladů v oblasti vyrovnání dokladu přímo při účtování.
@@ -105,5 +105,5 @@ V případě zapnutého Povolit registraci EET je na rozpisu platby dostupná ak
 
 ## Viz také
 
-[Nastavení - Více úhad](ac-multiple-payment-methods-setup.md)  
+[Nastavení - Více způsobu plateb](ac-multiple-payment-methods-setup.md)  
 [Financial Pack](ac-finance-pack.md)  

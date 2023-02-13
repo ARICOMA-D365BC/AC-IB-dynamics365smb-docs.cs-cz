@@ -11,7 +11,7 @@ ms.search.keywords: Multiple payments, finance
 ms.date: 01/31/2021
 ms.author: AC MartinKunes
 ---
-# Více úhrad - nastavení
+# Více způsobu plateb - nastavení
 > Aktualizace 01.04.2022
 
 Před tím, než budete moci používat funkcionality více způsobů plateb ve vašich obchodních procesech, musíte provést základní nastavení modulu. Jedná se o číselníky:
@@ -63,5 +63,5 @@ Z důvodů lepší kontroly nakládání s hotovostí či ceninami je obvykle po
 
 ## Viz také
 
-[Více úhad](ac-multiple-payment-methods.md)  
+[Více způsobu plateb](ac-multiple-payment-methods.md)  
 [Financial Pack](ac-finance-pack.md)  

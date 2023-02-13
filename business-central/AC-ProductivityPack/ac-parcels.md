@@ -99,10 +99,10 @@ Pro definici počtu balíků v rámci jedné zásilky existuje pole „Počet ba
 
 ## Vytvoření nové zásilky z účtovaného dokladu
 
-Po zaúčtování dodání nastává proces vytvoření zásilky pro zákazníka. Jedním ze způsobů je vytvoření zásilky z dodacího listu nebo účtované faktury. Pomocí načítání čísla dokladu se automaticky předvyplní formulář **Vytvořit zásilku**. Tímto krokem uživatel nemusí ručně vypisovat údaje o zásilce.
+Po zaúčtování dodání nastává proces vytvoření zásilky pro zákazníka. Jedním ze způsobů je vytvoření zásilky z účtovaných prodejních dodávek, faktur a dodávek ze skladu. Pomocí načítání čísla dokladu se automaticky předvyplní formulář **Vytvořit zásilku**. Tímto krokem uživatel nemusí ručně vypisovat údaje o zásilce.
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Vytvořit zásilku** a poté vyberte související odkaz.
-1. Vložte číslo účtovaného dokladu (účtovaná prodejní dodávka, účtovananá prodejní faktura) do pole **Číslo dokladu**. Nebo využijte funkci Skenovat kódy (v případě, kdy máte čárový kód s číslem dokladu).
+1. Vložte číslo účtovaného dokladu (účtovaná prodejní dodávka, účtovananá prodejní faktura, účtovaná dodávka ze skladu) do pole **Číslo dokladu**. Nebo využijte funkci Skenovat kódy (v případě, kdy máte čárový kód s číslem dokladu).
 1. Uživatel má možnost zadat počet balíků v rámci jedné zásilky.
 1. Vyberte funkci **Vytvořit zásilku a vytisknout štítek**.
 1. Zásilka je nyní vytvořena a zároveň je ve stavu **Ke svozu**, tzn. má již od dopravce přidělené číslo, štítek a data jsou na straně Balíkobotu.
@@ -201,6 +201,13 @@ Předpokladem pro použití je správné nastavení Paperless trade.
 6. V záložce **Přílohy Zásilky** klikněte do řádku a připojte již dříve ručně vygenerované PDF (pro-formu faktury).
 5. Použijte funkci **Vytvořit zásilku** nebo **Vytvořit zásilku a tisknout štítek**
 6. Pokračujte ve zpracování další zásilky nebo formulář zavřete.
+
+## Dostupnost služeb Balíkobotu
+
+Balíkobot nabízí také možnost nahlédnout na stav jednotlivých dostupností služeb a to na stránce https://status.balikobot.cz/
+
+Je zde také možnost notifikací od Balíkobotu a to buď formou e-mailu, přes teams, RSS a další.
+
 
 
 ## Viz také

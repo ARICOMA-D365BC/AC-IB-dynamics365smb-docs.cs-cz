@@ -162,7 +162,12 @@ Služby přepravců se stahují automaticky pomocí API Balíkobotu. Je možné 
     - **Služby ČP** – Pouze pro Českou poštu - dlouhý textový řetězec služeb pošty nad danou zásilkou
 o	https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf
 
-      
+
+### Nastavení API Balíkobotu
+
+Tato systémová tabulka umožňuje nastavit rožšířené nastavení přepravců. Jde o nastavení pro API komunikaci, kde je možno u vybraných přepravců vybírat verze komunikací a další.
+
+Z administrátorského hlediska, je zde možnost nastavit kód přepravce pro komunikaci v případně změn od Balíkobotu (pole API kód přepravce), kdy je název API přepravce delší než 10 znaků. (například DHL Freight EuroConnect, který měl název API "dhlfreight" a nyná využívá "dhlfreightec")
 
 
 
