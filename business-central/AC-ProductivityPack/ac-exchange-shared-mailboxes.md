@@ -5,6 +5,7 @@ Author: AC-Ondřej.Slavík
 Date: 23/03/2023
 Product: dynamics365-business-central
 Contentlocale: cs-cz
+ms.search.keywords: Exchange, Shared, Mailbox, IN Buffer, Agent, E-Mail, Azure
 ---
 
 # Exchange Shared Mailbox
