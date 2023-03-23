@@ -1,40 +1,45 @@
-# Spooler/ExchangeSharedMailbox
-Řešení sestává ze tří objektů:
+---
+Title: "Exchange Shared Mailbox"
+Description: Slouží k importu příloh e-mailů z sdílené e-mailové schránky do Business Centralu, kde mohou být přílohy dále zpracovány.
+Author: AC-Ondřej.Slavík
+Date: 23/03/2023
+Product: dynamics365-business-central
+Contentlocale: cs-cz
+---
 
-    - table 52068368 "Exchange Mailbox_ach",
-    - page 52068375 "Exchange Mailboxes_ach",
-    - codeunit 52068378 "INAgent-ExchangeMailbox_ach".
+# Exchange Shared Mailbox
 
-Tabulka uchovává informace o jednotlivých sdílených schránkách, které chceme vytěžovat, stránka tyto informace zobrazuje a spravuje a codeunit zodpovídá za vlastní vytěžování schránek.
+Řešení Exchange Shared Mailbox umožňuje vytěžování e-mailových zpráv ze sdílené poštovní schránky do IN Bufferu, kde mohou být e-maily dále zpracovány.
 
-Objekty jsou provázány tak, že codeunit se nastaví na novém IN agentovi a jako parametr se mu předá kód schránky, kterou chceme vyčítat.
+## Nastavení
+Podrobnější informace jsou obsaženy v [tomto souboru](ac-exchange-shared-mailboxes-setup.md).
 
+Nastavení sestává z vytvoření záznamu v tabulce Exchange Mailbox na stránce Exchange Mailboxes a spuštění agenta, kterému jako parametr komunikace nastavíme kód sdílené schránky. Jako ID codeunity agenta nastavíme 52068378.
 
-## Tabulka
-Struktura tabulky sestává ze 13 polí:
-    
-    - Code: pro identifikaci schránky,
-    - Email Address: adresa schránky,
-    - Email Batch Size: velikost dávky pro zpracování v jednom běhu,
-    - Enabled: jestli je vytěžování této schránky povoleno,
-    - Client Id: ID klienta (aplikace) tak jak je zobrazeno v registraci aplikace na Azure portále,
-    - Client Secret Key: hodnota tajemství, které bylo přidáno k registraci aplikace na Azure portále,
-    - Redirect URL: URL přesměrování, které bylo přidáno k registraci aplikace na Azure portále,
-    - Consent given: administrátorem udělen souhlas, uživatel nevyplňuje
-    - Attachment filtr: filtr příloh, které se budou vytěžovat
-    - Default Task ID: ID výchozí úlohy, propisuje se do IN Bufferu
-    - Default Source System ID: ID výchozího zdrojového systému, propisuje se do IN Bufferu
-    - SM Template Code: kód šablony SM
-    - SM Status Code: kód statutu SM
+Více informací k nastavení agentů jsou obsaženy v [tomto souboru](ac-spooler-setup.md).
 
-## Stránka
-Funkcionalita na stránce:
+## Použití
+Odešlete e-mail na sdílenou poštovní schránku, kterou jste nastavili pro vytěžování. Jakmile nový e-mail zmizí z došlé pošty a přesune se do archivu, e-mail považujeme za *vytěžený*.
 
-    - Na validaci pole Enabled: přihlášení administrátorským účtem pro udělení souhlasu a poté účtem připojeným ke sdílené schránce pro zpřástupnění pro vyčítání,
-    - Akce:
-        - Renew Token: obnoví token,
-        - Validate Setup: zjistí, zda je vše správně nastaveno
-        - Test Run: jednou spustí vyčítání pomocí příslušného agenta
+Nyní je k nalezení v IN Bufferu:
+1. Pomocí vyhledávací funkce **Řekněte mi, co chcete udělat (Alt + Q)** vyhledejte **IN Buffer**.
+2. Zde jsou v seznamu všechny soubory nahrané v IN Bufferu, budou zde i záznamy s přílohami z právě vytěženého e-mailu.
+3. V následujících polích jsou některé informace, které jsou k souboru dostupné:
 
-## Codeunit
-Vytěží přílohy z e-mailů ve schránce a tyto e-maily zarchivuje, přílohy nahraje do IN Bufferu.
+| Název pole         | Popis                                                 |
+|--------------------|-------------------------------------------------------|
+| **ID úkolu**       | Úloha, která bude zpracovávat danou přílohu           |
+| **Zpracováno**     | Určuje, jestli byla příloha již zpracována            |
+| **ID Agenta**      | Agent, který vytěžení provedl                         |
+| **Název souboru**  | Úplný název přílohy                                   |
+| **Předmět**        | Předmět e-mailu, ze kterého byla přílohy vytěžena     |
+| **Příjemci**       | Příjemci e-mailu, ze kterého byla přílohy vytěžena    |
+| **Příjemci kopie** | CC příjemci e-mailu, ze kterého byla přílohy vytěžena |
+
+4. Pokud je vyplněna úloha v poli **ID úkolu**, pak po kliknutí na akci **Spustit úlohu** dojde ke zpracování přílohy a nahodí se hodnota pole **Zpracováno** na *Ano*.
+
+Více informací k IN Bufferu lze nalézt v [tomto souboru](ac-spooler.md).
+
+## Vizte Také
+[Exchange Shared Mailbox - Nastavení   ](ac-exchange-shared-mailboxes-setup.md)  
+[AC Productivity Pack](ac-pp-productivity-pack.md)
