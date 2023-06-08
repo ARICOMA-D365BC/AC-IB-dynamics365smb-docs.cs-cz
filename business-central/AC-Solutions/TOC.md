@@ -49,6 +49,8 @@
 ### [Nastavení - Centrální číselníky](../AC-productivitypack/ac-centraldatabase-setup.md)
 ## [Spooler](../AC-productivitypack/ac-spooler.md)
 ### [Nastavení - Spooler](../AC-productivitypack/ac-spooler-setup.md)
+## [Sdílená poštovní schránka Exchange](../AC-productivitypack//ac-exchange-shared-mailboxes.md)
+### [Nastavení - Sdílená poštovní schránka Exchange](../AC-productivitypack//ac-exchange-shared-mailboxes-setup.md)
 ## [Evidence nářadí a pomůcek](../AC-productivitypack/ac-production-tools.md)
 ### [Nastavení - Evidence nářadí a pomůcek](../AC-productivitypack/ac-production-tools-setup.md)
 ## [AC Parcels](../AC-productivitypack/ac-parcels.md)

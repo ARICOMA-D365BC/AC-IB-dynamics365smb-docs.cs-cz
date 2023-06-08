@@ -7,17 +7,19 @@ Product: dynamics365-business-central
 Contentlocale: cs-cz
 ms.search.keywords: Exchange, Shared, Mailbox, IN Buffer, Agent, E-Mail, Azure
 ---
-# Exchange Shared Mailbox (nastavení
-V tomto manuálu bude představeno nastavení vyčítání e-mailů ze sdílených schránek do IN Bufferu.
+# Sdílená poštovní schránka Exchange - Nastavení
+> Aktualizace: 12.04.2023
+
+Nastavení vyčítání e-mailů ze sdílených schránek do IN Bufferu.
 
 ## Předpoklady
 
-Je k dispozici O365 účet s právy "Global Admin" a "Exchange Admin". Tomuto účtu v následujícím textu říkáme *administrátorský účet*.
+Je nutné mít k dispozici O365 účet s právy "Global Admin" a "Exchange Admin". Tomuto účtu v následujícím textu říkáme **Administrátorský účet**.
 
-Dalším účtem se přihlašujeme ke sdílené schránce, tento účet může být již zmíněný administrátorský účet, nebo to může být účet jiný, bez administrátorských práv. Tento účet by se neměl jmenovat po zaměstnanci, ale měl by být neosobní, třeba založený k tomuto účelu, například exchangeBC@domena.cz. Tomuto účtu v textu dále říkáme *účet achránky*.
+Dalším účtem se přihlašujeme ke sdílené schránce, tento účet může být již zmíněný administrátorský účet, nebo to může být účet jiný, bez administrátorských práv. Tento účet by se neměl jmenovat po zaměstnanci, ale měl by být neosobní, třeba založený k tomuto účelu, například exchangeBC@domena.cz. Tomuto účtu v textu dále říkáme **Účet schránky**.
 
 ## Nastavení Schránky
-Inspirujeme se návodem od Microsoftu. V době psaní manuálu se nachází na [tomto odkaze](https://learn.microsoft.com/en-us/dynamics365/business-central/marketing-set-up-email-logging?tabs=new-experience). Lze ho nalézt též v Business Centralu na stránku **Asistované nastavení** pod odkazem **Nastavit protokolování e-mailu**.
+Inspirujeme se návodem od [Micorosoftu](https://learn.microsoft.com/en-us/dynamics365/business-central/marketing-set-up-email-logging?tabs=new-experience). Lze ho nalézt též v Business Centralu na stránku **Asistované nastavení** pod odkazem **Nastavit protokolování e-mailu**.
 
 Přepněte manuál do nastavení přes sdílené schránky výběrem záložky **New Experience**.
 
@@ -29,13 +31,13 @@ Podle návodu musíme:
 ### Založení sdílené schránky
 Přihlásíme se do administrátorského centra pro exchange na [tomto odkaze](https://admin.exchange.microsoft.com/#). K tomu použijeme admistrátorský účet.
 
-Zde v Recipients/Mailboxes přidáme sdílenou schránku. Vyplníme Jméno zobrazení, adresu.
+Zde v **Recipients/Mailboxes** přidáme sdílenou schránku. Vyplníme Jméno zobrazení, adresu.
 
 ### Přiřazení účtu ke schránce
 Poté k nově vniknuvší schránce přiřadíme účet schránky. Tento účet již nemusí mít administrátorská práva.
 
 ## Nastavení propojení
-Dále nastavíme v Azure portále aplikaci, která bude k exchange přistupovat. Portál je na [tomto odkaze](https://portal.azure.com/). Přihlásíme se administrátorským účtem.
+Dále nastavíme v [Azure portále](https://portal.azure.com/) aplikaci, která bude k exchange přistupovat. . Přihlásíme se administrátorským účtem.
 
 Opět postupujeme podle Microsoft návodu, kapitola o propojení na Azure AD:
 
@@ -50,8 +52,8 @@ Opět postupujeme podle Microsoft návodu, kapitola o propojení na Azure AD:
 5. V přehledu si pak vykopírujeme *Application ID*.
 
 ## Nastavení v BC
-Na stránce 52068375 *Exchange Mailboxes* jsou následující pole, vyplníme alespoň ta označená tučným fontem:
-
+Na stránce 52068375 **Exchange Mailboxes** jsou následující pole, vyplníme alespoň ta označená tučným fontem:
+  
 | Název pole | Popis |
 |------------|-------|
 | **Code** | Identifikace schránky |
@@ -59,20 +61,21 @@ Na stránce 52068375 *Exchange Mailboxes* jsou následující pole, vyplníme al
 | **Email Batch Size** | velikost dávky pro zpracování v jednom běhu, výchozí je hodnota 50 |
 | Enabled | zda je vytěžování této schránky povoleno |
 | **Client Id** | ID klienta (aplikace) tak jak je zobrazeno v registraci aplikace na Azure portále (výše) |
-| **Client Secret Key** | hodnota tajemství, které bylo přidáno k registraci aplikace na Azure portále (výše)|
-| Redirect URL | URL přesměrování, které bylo přidáno k registraci aplikace na Azure portále (výše)|
-| Attachment Filter | filtr příloh, které se budou vytěžovat (například při hodnotě **@*.pdf** se budou vytěžovat jen soubory PDF)|
+| **Client Secret Key** | hodnota tajemství, které bylo přidáno k registraci aplikace na Azure portále (výše) |
+| Redirect URL | URL přesměrování, které bylo přidáno k registraci aplikace na Azure portále (výše) |
+| Attachment Filter | filtr příloh, které se budou vytěžovat (například při hodnotě **@*.pdf** se budou vytěžovat jen soubory PDF) |
 | Default Task ID | ID výchozí úlohy, propisuje se do IN Bufferu |
 | Default Source System ID | ID výchozího zdrojového systému, propisuje se do IN Bufferu |
 | SM Template Code | kód šablony SM |
 | SM Status Code | kód statutu SM |
 
-Po vyplnění zaškrtneme pole *Enabled*. Systém nás vyzve k přihlášení administrátorským účtem a poté účtem schránky. Administrátorským účtem potvrzujeme všechna oprávnění, která jsme nastavili aplikaci v Azure portále.
+Po vyplnění zaškrtneme pole **Enabled**. Systém nás vyzve k přihlášení administrátorským účtem a poté účtem schránky. Administrátorským účtem potvrzujeme všechna oprávnění, která jsme nastavili aplikaci v Azure portále.
 
-Nakonec můžeme na stránce akcí *Validate Setup* zkontrolovat, zda je vše správně nastaveno.
+Nakonec můžeme na stránce akcí **Validate Setup** zkontrolovat, zda je vše správně nastaveno.
 
 ### Agent
 Dále založíme agenta, který bude vlastní vyčítání provádět. Vyplníme následující hodnoty:
+
 | Název pole | Hodnota |
 |------------|---------|
 | Typ | IN |
@@ -80,12 +83,12 @@ Dále založíme agenta, který bude vlastní vyčítání provádět. Vyplníme
 | Parametr komunikace | Kód schránky, pole *CODE* z tabulky výše. |
 | ID Codeunity agenta | 52068378 |
 
-Ostatní pole na agentovi už nejsou nastavením specifická pro tuto funkcionalitu, více informací o agentech naleznete v [tomto souboru](ac-spooler-setup.md).
+Ostatní pole na agentovi už nejsou nastavením specifická pro tuto funkcionalitu, více informací o agentech naleznete v [Nastavení spooleru](ac-spooler-setup.md).
 
-Teď na stránce schránek můžeme spustit akci *Test Run*, která schránku jednou vyčte. Při tom se přílohy z e-mailu založí do IN Bufferu, kde lze podle pole **Batch ID** později dohledat, jestli přišly v růných zprávách. Zároveň se na sdílené složce vytěžená zpráva zarchivuje.
+Nyní můžeme na stránce schránek spustit akci **Test Run**, která schránku jednou vyčte. Při tom se přílohy z e-mailu založí do IN Bufferu, kde lze podle pole **Batch ID** později dohledat, jestli přišly v růných zprávách. Zároveň se na sdílené složce vytěžená zpráva zarchivuje.
 
-V IN Bufferu pak lze původní zprávu zobrazit přes akci *Zobrazit přílohu*, případně přílohu stáhnout pomocí *Export dokument*.
+V IN Bufferu pak lze původní zprávu zobrazit přes akci **Zobrazit přílohu**, případně přílohu stáhnout pomocí **Export dokument**.
 
 ## Vizte Také
-[Exchange Shared Mailbox](ac-exchange-shared-mailboxes.md)  
-[AC Productivity Pack](ac-pp-productivity-pack.md)
+[Sdílená poštovní schránka Exchange](ac-exchange-shared-mailboxes.md)  
+[AC Productivity Pack](ac-productivity-pack.md)

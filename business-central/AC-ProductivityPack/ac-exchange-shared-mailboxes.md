@@ -8,24 +8,34 @@ Contentlocale: cs-cz
 ms.search.keywords: Exchange, Shared, Mailbox, IN Buffer, Agent, E-Mail, Azure
 ---
 
-# Exchange Shared Mailbox
+# Sdílená poštovní schránka Exchange
+> Aktualizace: 12.04.2023
 
-Řešení Exchange Shared Mailbox umožňuje vytěžování e-mailových zpráv ze sdílené poštovní schránky do IN Bufferu, kde mohou být e-maily dále zpracovány.
+Řešení **Sdílené poštovní schránky Exchange** umožňuje vytěžování e-mailových zpráv ze sdílené poštovní schránky do IN Bufferu, kde mohou být e-maily dále zpracovány.
 
-## Nastavení
-Podrobnější informace jsou obsaženy v [tomto souboru](ac-exchange-shared-mailboxes-setup.md).
+> [!IMPORTANT]
+> **Sdílená poštovní schránka Exchange je rozšířením funkcionality addonu Spooleru.**
 
-Nastavení sestává z vytvoření záznamu v tabulce Exchange Mailbox na stránce Exchange Mailboxes a spuštění agenta, kterému jako parametr komunikace nastavíme kód sdílené schránky. Jako ID codeunity agenta nastavíme 52068378.
+## Příklady využití
 
-Více informací k nastavení agentů jsou obsaženy v [tomto souboru](ac-spooler-setup.md).
+-	Příchozí nákupní faktury ve formátu PDF, které dojdou do sdílené schránky, jsou automaticky založeny jako došlá pošta. Alternativně:
+    - Jsou z nich vytvořeny Nákupní faktury v Business Central.
+    - Jsou předány přes Kofax webovou službu OCR a zpět je založena faktura s daty.
+-	Příchozí nákupní faktury ve formátu XML (např.EDI), které dojdou do sdílené schránky, jsou automaticky založeny jako došlá pošta a z nich vytvořeny Nákupní faktury v Business Central.
+-	Příchozí prodejní objednávky a poptávky s přílohou, které dojdou do sdílené schránky, jsou automaticky založeny jako prodejní doklady s přílohou (publikované dokumenty) v Business Central.
+-	Příchozí katalogy ve formátu XML/XLS, které dojdou do sdílené schránky, jsou automaticky zpracovány do struktur neskladovaného zboží v Business Central.
+-	Další typické možnosti:
+    -	Potvrzení objednávek
+    -	Dodací listy 
+
 
 ## Použití
-Odešlete e-mail na sdílenou poštovní schránku, kterou jste nastavili pro vytěžování. Jakmile nový e-mail zmizí z došlé pošty a přesune se do archivu, e-mail považujeme za *vytěžený*.
+Po odeslání emailu na vybranou sdílenou poštovní schránku, která je nastavena jako výchozí pro vytěžování se automaticky vytěží a poté zmizí z došlé pošty, kde se přesune do archivu. V tento okamžik je možné e-mail považovat za **vytěžený** a je možné ho najít v **IN bufferu**.
 
-Nyní je k nalezení v IN Bufferu:
-1. Pomocí vyhledávací funkce **Řekněte mi, co chcete udělat (Alt + Q)** vyhledejte **IN Buffer**.
+Pro nalezení vytěženého e-mailu:
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **IN Buffer** a poté vyberte související odkaz.
 2. Zde jsou v seznamu všechny soubory nahrané v IN Bufferu, budou zde i záznamy s přílohami z právě vytěženého e-mailu.
-3. V následujících polích jsou některé informace, které jsou k souboru dostupné:
+3. V následujících polích jsou vybrané informace, které jsou k souboru dostupné:
 
 | Název pole         | Popis                                                 |
 |--------------------|-------------------------------------------------------|
@@ -37,10 +47,12 @@ Nyní je k nalezení v IN Bufferu:
 | **Příjemci**       | Příjemci e-mailu, ze kterého byla přílohy vytěžena    |
 | **Příjemci kopie** | CC příjemci e-mailu, ze kterého byla přílohy vytěžena |
 
-4. Pokud je vyplněna úloha v poli **ID úkolu**, pak po kliknutí na akci **Spustit úlohu** dojde ke zpracování přílohy a nahodí se hodnota pole **Zpracováno** na *Ano*.
+4. Pokud je vyplněna úloha v poli **ID úkolu**, pak po kliknutí na akci **Spustit úlohu** dojde ke zpracování přílohy a nastaví se hodnota pole **Zpracováno** na *Ano*.
 
-Více informací k IN Bufferu lze nalézt v [tomto souboru](ac-spooler.md).
+Pro více informací k použití samotného IN Bufferu navštivte [stránku nápovědy](ac-spooler.md).
+
 
 ## Vizte Také
 [Exchange Shared Mailbox - Nastavení   ](ac-exchange-shared-mailboxes-setup.md)  
-[AC Productivity Pack](ac-pp-productivity-pack.md)
+[IN Buffer](ac-spooler.md)  
+[AC Productivity Pack](ac-productivity-pack.md)

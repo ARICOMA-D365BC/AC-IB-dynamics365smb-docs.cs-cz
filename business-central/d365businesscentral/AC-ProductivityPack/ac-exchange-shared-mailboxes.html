@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sd&#237;len&#225; po&#353;tovn&#237; schr&#225;nka Exchange </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Sd&#237;len&#225; po&#353;tovn&#237; schr&#225;nka Exchange ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="sdílená-poštovní-schránka-exchange">Sdílená poštovní schránka Exchange</h1>
+
+<blockquote>
+<p>Aktualizace: 12.04.2023</p>
+</blockquote>
+<p>Řešení <strong>Sdílené poštovní schránky Exchange</strong> umožňuje vytěžování e-mailových zpráv ze sdílené poštovní schránky do IN Bufferu, kde mohou být e-maily dále zpracovány.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p><strong>Sdílená poštovní schránka Exchange je rozšířením funkcionality addonu Spooleru.</strong></p>
+</div>
+<h2 id="příklady-využití">Příklady využití</h2>
+<ul>
+<li>Příchozí nákupní faktury ve formátu PDF, které dojdou do sdílené schránky, jsou automaticky založeny jako došlá pošta. Alternativně:
+<ul>
+<li>Jsou z nich vytvořeny Nákupní faktury v Business Central.</li>
+<li>Jsou předány přes Kofax webovou službu OCR a zpět je založena faktura s daty.</li>
+</ul>
+</li>
+<li>Příchozí nákupní faktury ve formátu XML (např.EDI), které dojdou do sdílené schránky, jsou automaticky založeny jako došlá pošta a z nich vytvořeny Nákupní faktury v Business Central.</li>
+<li>Příchozí prodejní objednávky a poptávky s přílohou, které dojdou do sdílené schránky, jsou automaticky založeny jako prodejní doklady s přílohou (publikované dokumenty) v Business Central.</li>
+<li>Příchozí katalogy ve formátu XML/XLS, které dojdou do sdílené schránky, jsou automaticky zpracovány do struktur neskladovaného zboží v Business Central.</li>
+<li>Další typické možnosti:
+<ul>
+<li>Potvrzení objednávek</li>
+<li>Dodací listy</li>
+</ul>
+</li>
+</ul>
+<h2 id="použití">Použití</h2>
+<p>Po odeslání emailu na vybranou sdílenou poštovní schránku, která je nastavena jako výchozí pro vytěžování se automaticky vytěží a poté zmizí z došlé pošty, kde se přesune do archivu. V tento okamžik je možné e-mail považovat za <strong>vytěžený</strong> a je možné ho najít v <strong>IN bufferu</strong>.</p>
+<p>Pro nalezení vytěženého e-mailu:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>IN Buffer</strong> a poté vyberte související odkaz.</li>
+<li>Zde jsou v seznamu všechny soubory nahrané v IN Bufferu, budou zde i záznamy s přílohami z právě vytěženého e-mailu.</li>
+<li>V následujících polích jsou vybrané informace, které jsou k souboru dostupné:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Název pole</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ID úkolu</strong></td>
+<td>Úloha, která bude zpracovávat danou přílohu</td>
+</tr>
+<tr>
+<td><strong>Zpracováno</strong></td>
+<td>Určuje, jestli byla příloha již zpracována</td>
+</tr>
+<tr>
+<td><strong>ID Agenta</strong></td>
+<td>Agent, který vytěžení provedl</td>
+</tr>
+<tr>
+<td><strong>Název souboru</strong></td>
+<td>Úplný název přílohy</td>
+</tr>
+<tr>
+<td><strong>Předmět</strong></td>
+<td>Předmět e-mailu, ze kterého byla přílohy vytěžena</td>
+</tr>
+<tr>
+<td><strong>Příjemci</strong></td>
+<td>Příjemci e-mailu, ze kterého byla přílohy vytěžena</td>
+</tr>
+<tr>
+<td><strong>Příjemci kopie</strong></td>
+<td>CC příjemci e-mailu, ze kterého byla přílohy vytěžena</td>
+</tr>
+</tbody>
+</table>
+<ol start="4">
+<li>Pokud je vyplněna úloha v poli <strong>ID úkolu</strong>, pak po kliknutí na akci <strong>Spustit úlohu</strong> dojde ke zpracování přílohy a nastaví se hodnota pole <strong>Zpracováno</strong> na <em>Ano</em>.</li>
+</ol>
+<p>Pro více informací k použití samotného IN Bufferu navštivte <a href="ac-spooler.html">stránku nápovědy</a>.</p>
+<h2 id="vizte-také">Vizte Také</h2>
+<p><a href="ac-exchange-shared-mailboxes-setup.html">Exchange Shared Mailbox - Nastavení   </a><br>
+<a href="ac-spooler.html">IN Buffer</a><br>
+<a href="ac-productivity-pack.html">AC Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/AC-ProductivityPack/ac-exchange-shared-mailboxes.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>V t&#233;to sekci</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Zpět na začátek</a>
+            </span>
+            
+            <span><a href="https://muj.autocont.cz/docs/en-us/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

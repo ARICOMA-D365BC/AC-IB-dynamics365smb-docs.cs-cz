@@ -48,6 +48,8 @@
 ### [Nastavení - Centrální číselníky](ac-centraldatabase-setup.md)
 ## [Spooler](ac-spooler.md)
 ### [Nastavení - Spooler](ac-spooler-setup.md)
+## [Sdílená poštovní schránka Exchange](ac-exchange-shared-mailboxes.md)
+### [Nastavení - Sdílená poštovní schránka Exchange](ac-exchange-shared-mailboxes-setup.md)
 ## [Evidence nářadí a pomůcek](ac-production-tools.md)
 ### [Nastavení - Evidence nářadí a pomůcek](ac-production-tools-setup.md)
 ## [AC Parcels - Integrace Balíkobot](ac-parcels.md)
