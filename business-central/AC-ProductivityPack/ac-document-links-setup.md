@@ -1,6 +1,6 @@
 ---
-title: Notificaiton | Microsoft Docs
-description: Nitification
+title: AUTOCONT SOLUTIONS - Připojené dokumenty - Nastavení | Microsoft Docs
+description: Document links
 author: ac-kunes
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -11,6 +11,7 @@ ms.search.keywords: Czech, document links, additional functions
 ms.author: v-makune
 ---
 # Připojené dokumenty - nastavení
+> Aktualizace 16.06.2023
 
 Následující řádky popisují nastavení od těch nezbytných pro samotné zprovoznění (Registrace aplikace v AAD, nastavení Aplikace SharePoint Azure AD) až po nastavení pokrývající speciální požadavky zákazníků (např. při ukládání souborů nebo evidenci doplňujících atributů).
 
@@ -49,10 +50,10 @@ Prvním úkolem je pomocí portálu Azure zaregistrovat aplikaci pro službu Bus
 
 Pro případ ukládání pod účtem aplikace je třeba přidat následující:
 
-|API|Název oprávnění|Type|Description|
+|API|Název oprávnění|Typ|Popis|
 |-|-|-|-|
-|Microsoft Graph|User.Read.All|Application|Read all users' full profiles|
-||Sites.Selected|Application|Access selected site collections|
+|Microsoft Graph|User.Read.All|Aplikace|Čtená kompletních profilů všech uživatelů|
+||Sites.Selected|Aplikace|Přístup k vybraným kolekcím stránek|
 
 ## Aplikace Sharepoint Azure AD
 
@@ -259,7 +260,7 @@ Zde je uveden návod k vytvoření vlastní funkce pro definici atributů popsan
     }
 
 
-**Viz také**
+## Viz také
 
 [Připojené dokumenty](ac-document-links.md)  
 [Productivity Pack](ac-productivity-pack.md)

@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AUTOCONT SOLUTIONS - P&#345;ipojen&#233; dokumenty - Nastaven&#237; | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="AUTOCONT SOLUTIONS - P&#345;ipojen&#233; dokumenty - Nastaven&#237; | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="připojené-dokumenty---nastavení">Připojené dokumenty - nastavení</h1>
+
+<blockquote>
+<p>Aktualizace 16.06.2023</p>
+</blockquote>
+<p>Následující řádky popisují nastavení od těch nezbytných pro samotné zprovoznění (Registrace aplikace v AAD, nastavení Aplikace SharePoint Azure AD) až po nastavení pokrývající speciální požadavky zákazníků (např. při ukládání souborů nebo evidenci doplňujících atributů).</p>
+<h2 id="registrace-aplikace-v-azure-active-directory">Registrace aplikace v Azure Active Directory</h2>
+<p>Prvním úkolem je pomocí portálu Azure zaregistrovat aplikaci pro službu Business Central ve vašem nájemci služby Azure AD. Součástí registrace je také přidělení přístupu k aplikaci příslušným službám. Účelem registrace je zajistit, aby Business Central a služby navzájem znaly údaje o Azure Active Directory (Azure AD).</p>
+<ol>
+<li><p>Přihlaste se na portál Azure a zaregistrujte aplikaci pro Business Central v Azure Active Directory tenant.</p>
+<ul>
+<li>Postupujte podle obecných pokynů na stránce Registrace aplikaci v tenantu služby Azure Active Directory.
+Při přidávání aplikace do nájemce Azure AD musíte zadat následující informace:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Nastavení</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Název</td>
+<td>Zadejte název řešení Business Central, například Business Central - Sharepoint.</td>
+</tr>
+<tr>
+<td>Podporované typy účtů</td>
+<td>Vyberte možnost pouze Účty v organizačním adresáři.</td>
+</tr>
+<tr>
+<td>Přesměrování URL</td>
+<td>Chcete-li zadat webovou aplikaci, nastavte první pole na hodnotu Web. Zadejte adresu URL klienta prohlížeče Business Central a poté OAuthLanding.htm, například: <a href="https://businesscentral.dynamics.com/OAuthLanding.htm">https://businesscentral.dynamics.com/OAuthLanding.htm</a> nebo https://MyServer/BC200/OAuthLanding.htm</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>Po dokončení se na portálu zobrazí Přehled nové aplikace.</p>
+</li>
+<li><p>Zkopírujte <strong>ID aplikace (klienta)</strong>, které bylo přiřazeno aplikaci, <strong>Koncový bod autorizace <strong>OAuth 2.0</strong> (v2)</strong> a také <strong>Adresu URL přesměrování</strong>, kterou jste zadali. Tyto informace použijete později.</p>
+</li>
+</ul>
+</li>
+<li><p>Vytvořte tajný klíč klienta pro registrovanou aplikaci</p>
+<ul>
+<li>Postupujte podle obecných pokynů na stránce Přidání pověření do webové aplikace.</li>
+<li>Než opustíte stránku <strong>Certifikáty a tajné klíče</strong>, zkopírujte hodnotu tajného klíče do dočasného umístění. Po opuštění stránky není hodnota přístupná. Tento klíč použijete později v kódu klientské aplikace.</li>
+</ul>
+</li>
+<li><p>Udělte registrované aplikaci delegované oprávnění pro přístup k požadované službě Sharepoint.
+Na stránce přehledu registrované aplikace vyberte <strong>Oprávnění API &gt; Přidat oprávnění</strong>. Poté pomocí podokna Požádat o oprávnění rozhraní API vyhledejte rozhraní API a přidejte oprávnění. Další informace najdete v tématu Přidání oprávnění pro přístup k webovým rozhraním API v dokumentaci k Azure.</p>
+<p>Následující tabulka vám pomůže nastavit minimální oprávnění:</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Název oprávnění</th>
+<th>Typ</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft Graph</td>
+<td>User.Read.All</td>
+<td>Delegovaný</td>
+<td>Čtní všech uživatelskáý profilů</td>
+</tr>
+<tr>
+<td></td>
+<td>Sites.ReadWrite.All</td>
+<td>Delegovaný</td>
+<td>Úprava nebo odstranění položek ve všech kolekcích lokalit</td>
+</tr>
+<tr>
+<td></td>
+<td>Sites.Read.All</td>
+<td>Delegovaný</td>
+<td>Čtení položek ve všech kolekcích stránek</td>
+</tr>
+<tr>
+<td></td>
+<td>Files.ReadWrite.All</td>
+<td>Delegovaný</td>
+<td>Plný přístup ke všem souborům, ke kterým má uživatel přístup</td>
+</tr>
+</tbody>
+</table>
+<p>Pro případ ukládání pod účtem aplikace je třeba přidat následující:</p>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Název oprávnění</th>
+<th>Typ</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft Graph</td>
+<td>User.Read.All</td>
+<td>Aplikace</td>
+<td>Čtená kompletních profilů všech uživatelů</td>
+</tr>
+<tr>
+<td></td>
+<td>Sites.Selected</td>
+<td>Aplikace</td>
+<td>Přístup k vybraným kolekcím stránek</td>
+</tr>
+</tbody>
+</table>
+<h2 id="aplikace-sharepoint-azure-ad">Aplikace Sharepoint Azure AD</h2>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Prvotní nastavení proveďte pomocí asistovaného nastavení, které vás provede nastavením Aplikace SharePoint Azure AD a navíc doplní i další užitečná nastavení (např. pravidla transformace, viz dále).</p>
+</div>
+<p>Pro každý Sharepoint site, který budete propojovat s Business Central, je třeba definovat propojení:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Aplikace Sharepoint Azure AD</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Aplikace Sharepoint Azure AD zadejte <strong>Kód</strong> a <strong>Popis</strong> nového záznamu.</li>
+<li>V poli <strong>ID aplikace/klienta</strong> zadejte ID aplikace z předchozí kapitoly.</li>
+<li>V poli <strong>Tajný klíč klienta</strong> zadejte klíč z předchozí kapitoly.</li>
+<li>V poli <strong>URL autorizace</strong> zadejte URL z předchozí kapitoly.</li>
+<li>V poli <strong>URL přesměrování</strong> zadejte URL z předchozí kapitoly.</li>
+<li>V poli <strong>Typ pověření</strong> zvolte způsob předávání pověření pro klientskou část. (Autorizační kód – přístup k Sharepoint bude pod oprávněními uživatele v BC; Pověření klienta – přístup k Sharepoint bude pod oprávněním AAD aplikace).</li>
+<li>V poli <strong>Typ pověření na pozadí</strong> zvolte Pověření klienta jako způsob předávání pověření pro úlohy běžící na pozadí (typicky pomocí Fronty úloh apod.).</li>
+<li>Spusťte akci Přihlásit se pro ověření funkčnosti propojení.</li>
+<li>Zavřete stránku.</li>
+</ol>
+<h2 id="nastavení-připojení-dokumentů">Nastavení připojení dokumentů</h2>
+<p>Funkcionalitu modulu je třeba globálně zapnout:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení připojení dokumentů</strong> a poté vyberte související odkaz.</li>
+<li>Aktivujte příznak <strong>Povoleno</strong>.</li>
+<li><strong>BC online</strong>: Pokud systém nenajde aktivní (či již ukončené) předplatné pro tento modul, vyzve uživatele k vytvoření zkušebního předplatné (viz dokumentace k AC Monetizace).
+<strong>BC Onprem</strong>: Přečtěte si Podmínky třetích stran a potvrďte souhlas tlačítkem <strong>Přijímám</strong>.</li>
+<li>Zavřete stránku.</li>
+</ol>
+<h2 id="knihovny-dokumentů">Knihovny dokumentů</h2>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Knihovny dokumentů</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Knihovny dokumentů spusťte akci Nový.</li>
+<li>Na stránce Knihovna dokumentů zadejte <strong>Kód</strong> a <strong>Název</strong> nové knihovny.</li>
+<li>V poli <strong>Typ knihovny</strong> zvolte hodnotu Sharepoint.</li>
+<li>V poli <strong>Aplikace SharePoint Azure AD</strong> vyberte z definovaných aplikací.</li>
+<li>Spusťte akci Nastavit knihovnu SharePoint. Na stránce Výběr knihoven SharePoint vyberte požadovanou knihovnu.</li>
+<li>Zavřete stránku.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Když zapnuté na webu „Chcete vyžadovat rezervaci dokumentů před úpravami“, pak je třeba mít na knihovně zapnuté <strong>Vyžaduje rezervaci dokumentů</strong>.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>V případě potřeby využití informací o datu a času z metadat souborů je třeba nastavit pole Časové pásmo SharePoint. Tím se zajistí soulad mezi těmito informacemi z SharePoint a z BC.</p>
+</div>
+<h2 id="přidání-připojených-dokumentů-k-vybrané-funkcionalitě-bc">Přidání Připojených dokumentů k vybrané funkcionalitě BC</h2>
+<h3 id="krok-1--přidání-na-stránku-jako-pageextension">Krok 1 – Přidání na stránku jako Pageextension</h3>
+<p>Na všechny stránky, kde má být funkcionalita dostupná, musí být doplněno okno s fakty „DocumentLinksFactBox_ach“. Pokud si nejste jistí, jak vytvořit rozšíření stránky (viz následující kód), požádejte svého BC partnera.</p>
+<pre><code>{
+    layout
+    {
+        addlast(factboxes)
+        {
+            part(DocumentLinksFactBox_ach; &quot;Document Links FactBox_ach&quot;)
+            {
+                ApplicationArea = All;
+                Visible = false;
+            }
+        }
+    }
+
+    trigger OnAfterGetCurrRecord()
+    begin
+        UpdateDocumentLinksFactBox();
+    end;
+
+    local procedure UpdateDocumentLinksFactBox()
+    begin
+        CurrPage.DocumentLinksFactBox_ach.Page.SetContext(Rec);
+    end;
+}
+</code></pre>
+<h3 id="krok-2--základní-nastavení-šablony-připojení-dokumentů">Krok 2 – Základní nastavení šablony připojení dokumentů</h3>
+<p>Následující nastavení je pro entitu Zákazník, u které jsou v základu doplněny stránky Zákazníci a Karta zákazníka o potřebné okno s fakty.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Šablony připojení dokumentů</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Šablony připojení dokumentů spusťte akci Nový.</li>
+<li>Na stránce Šablona připojení dokumentů zadejte <strong>Kód</strong> a <strong>Popis</strong> nové šablony.</li>
+<li>V poli <strong>ID tabulky</strong> zadejte 18.</li>
+<li>V poli <strong>Kód knihovny</strong> vyberte knihovnu SharePoint.</li>
+<li>Přepněte příznak <strong>Povoleno</strong> na Ano.</li>
+<li>Zavřete stránku.</li>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Zákazníci</strong> a poté vyberte související odkaz.</li>
+<li>Spusťte akci Přizpůsobení.</li>
+<li>Najděte okno s fakty s názvem Připojené dokumenty, klikněte levým tlačítkem myši a zvolte Zobrazit.</li>
+<li>Pro libovolného zákazníka spusťte akci Zobrazit.</li>
+<li>Najděte okno s fakty s názvem Připojené dokumenty, klikněte levým tlačítkem myši a zvolte Zobrazit.</li>
+<li>Zastavte režim Přizpůsobení stiskem červeného tlačítka Hotovo.</li>
+</ol>
+<h2 id="různé-šablony-pro-filtrované-záznamy">Různé šablony pro filtrované záznamy</h2>
+<p>Potřebujete-li mít šablonu definovánu pouze pro určité záznamy, popř. různé šablony pro jinak filtrované záznamy, můžete na šabloně nastavit filtr tabulky.
+Příklad – šablona pro tuzemské zákazníky:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Šablony připojení dokumentů</strong> a poté vyberte související odkaz</li>
+<li>Vytvořte novou šablonu připojení dokumentů dle postupu pro základní nastavení.</li>
+<li>Rozklikněte AssistEdit u pole Filtr tabulky (viditelné po stisku Zobrazit více).</li>
+<li>Na stránce Úpravy – Filtr tabulky zadejte „21“ do <strong>Číslo pole</strong> a „TUZ*“ do <strong>Filtr pole</strong>.</li>
+<li>Zavřete stránku.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Vytváření nových šablon je možné si usnadnit pomocí akce Zkopírovat šablonu dostupnou na kartě šablony.</p>
+</div>
+<h2 id="rozšířené-možnosti-umístění-souborů">Rozšířené možnosti umístění souborů</h2>
+<p>Na šabloně je možné flexibilně nastavit pravidla pro ukládání souborů při připojení k entitám.</p>
+<h3 id="příklad--smlouvy-se-zákazníky-ukládáme-do-určené-podsložky"><strong>Příklad – smlouvy se zákazníky ukládáme do určené podsložky:</strong></h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Šablony připojení dokumentů</strong> a poté vyberte související odkaz</li>
+<li>Vytvořte novou šablonu připojení dokumentů pro smlouvy se zákazníky dle postupu pro základní nastavení.</li>
+<li>Dále na stránce Šablona připojení dokumentů rozklikněte AssistEdit u pole <strong>Výchozí složka</strong>.</li>
+<li>Na stránce Výběr složky vyberte již existující, popř. vytvořte novou pomocí funkce Nová složka (popř. Nová podsložka) a následně výběr potvrďte stiskem OK.</li>
+<li>V poli <strong>Výchozí složka</strong> zkontrolujte cestu (např. „/ZAK/Smlouvy“)</li>
+<li>Zavřete stránku.</li>
+</ol>
+<h3 id="příklad--každý-zákazník-má-automaticky-vlastní-složku-a-v-ní-podsložku-pro-smlouvy"><strong>Příklad – každý zákazník má automaticky vlastní složku a v ní podsložku pro smlouvy:</strong></h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Šablony připojení dokumentů</strong> a poté vyberte související odkaz.</li>
+<li>Vytvořte novou šablonu připojení dokumentů pro smlouvy se zákazníky dle postupu pro základní nastavení.</li>
+<li>Spusťte akci Parametry šablony.</li>
+<li>Na stránce Parametry šablony připojení dokumentů vytvořte nový řádek pro parametr odpovídající číslu zákazníka (Kód parametru = CISLO-ZAK; Popis = Číslo zákazníka; Zdroj dat = Pole zdrojové tabulky; Číslo pole zdrojové tabulky = 1).</li>
+<li>Vytvořte další nový řádek pro parametr odpovídající názvu zákazníka (Kód parametru = NAZEV-ZAK; Popis = Název zákazníka; Zdroj dat = Pole zdrojové tabulky; Číslo pole zdrojové tabulky = 2).</li>
+<li>Pro odstranění případných nepovolených znaků v názvu zákazníka vyberte ještě v poli <strong>Pravidlo transformace</strong> hodnotu „NAZEV_SHP“.</li>
+<li>Zavřete stránku Parametry šablony připojení dokumentů.</li>
+<li>Na stránce Šablona připojení dokumentů zadejte v poli <strong>Maska relativní cesty</strong> (viditelné po stisku Zobrazit více) hodnotu: {{CISLO-ZAK}}-{{NAZEV-ZAK}}/Smlouvy</li>
+<li>Přepněte příznak <strong>Vytvořit neexistující složku</strong> na Ano.</li>
+<li>Zavřete stránku.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Kromě předdefinovaných zdrojů dat pro parametry šablony je možné nechat si připravit na míru vlastní funkci, která vytvoří požadovaný řetězec. Jedná se o zdroj dat Vlastní funkce, pro který pak v poli <strong>ID vlastní funkce</strong> přiřadíte číslo připravené codeunity.</p>
+</div>
+<h3 id="příklad--soubory-jsou-ukládány-s-generovaným-názvem-souboru"><strong>Příklad – soubory jsou ukládány s generovaným názvem souboru:</strong></h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Šablony připojení dokumentů</strong> a poté vyberte související odkaz.</li>
+<li>Vytvořte novou šablonu připojení dokumentů pro smlouvy se zákazníky dle postupu pro základní nastavení.</li>
+<li>Spusťte akci Parametry šablony.</li>
+<li>Na stránce Parametry šablony připojení dokumentů vytvořte nový řádek pro parametr odpovídající číslu z číselné řady (Kód parametru = CISLO-CR; Popis = Číslo dokumentu; Zdroj dat = Číselná řada; v poli Číselná řada vyberte dle uvážení).</li>
+<li>Vytvořte další nový řádek pro parametr odpovídající názvu zákazníka (Kód parametru = NAZEV; Popis = Název souboru; Zdroj dat = Název souboru; Pravidlo transformace = NAZEV_SHP).</li>
+<li>Vytvořte další nový řádek pro parametr odpovídající názvu zákazníka (Kód parametru = PRIPONA; Popis = Přípona souboru; Zdroj dat = Přípona souboru).</li>
+<li>Zavřete stránku Parametry šablony připojení dokumentů.</li>
+<li>Na stránce Šablona připojení dokumentů zadejte v poli <strong>Maska názvu dokumentu</strong> (viditelné po stisku Zobrazit více) hodnotu: {{CISLO-CR}}-{{NAZEV}}.{{PRIPONA}}</li>
+<li>Zavřete stránku.</li>
+</ol>
+<h2 id="rozšířené-možnosti-nastavení-oprávnění">Rozšířené možnosti nastavení oprávnění</h2>
+<p>V některých případech je třeba omezit přístup uživatelů k šablonám. Existuje možnost definovat jmenovitě uživatele, kteří mají mít přístup:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Šablony připojení dokumentů</strong> a poté vyberte související odkaz.</li>
+<li>Vyberte šablonu a spusťte akci Oprávnění uživatelů.</li>
+<li>Na stránce Uživatelé šablony připojení dokumentů vyberte uživatele s přístupem.</li>
+<li>Zavřete stránku.</li>
+</ol>
+<h2 id="nastavení-atributů-knihovny-dokumentů">Nastavení atributů knihovny dokumentů</h2>
+<p>Nejčastěji je funkcionalita atributů v BC využita k tomu, aby se automatizovaně či ručně doplnila metadata (sloupce) k souboru ukládanému v knihovně Sharepoint (viz Vytvoření sloupce v seznamu nebo knihovně - Podpora Microsoftu).</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Knihovny dokumentů</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Knihovny dokumentů vyberte knihovnu a spusťte akci Atributy dokumentů.</li>
+<li>Na stránce Atributy knihovny dokumentů spusťte akci Přidat sloupec SharePoint.</li>
+<li>Na stránce Výběr sloupce knihovny SharePoint vyberte sloupec knihovny SharePoint, který chcete udržovat prostřednictvím BC.</li>
+<li>Předchozí bod opakujte, dokud nebudete mít přidány všechny požadované sloupce Sharepoint.</li>
+<li>Zavřete stránku.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Pokud se v průběhu času upraví definice hodnot sloupců SharePoint (primárně se jedná o typ Volba), je třeba tyto změny promítnout do BC ručně.</p>
+</div>
+<p>Je-li požadován atribut pro využití pouze na úrovni BC, je možné jej definovat. Následující příklad popisuje jeden povinný atribut pro evidenci jména prodejce</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Knihovny dokumentů</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Knihovny dokumentů vyberte knihovnu a spusťte akci Atributy dokumentů.</li>
+<li>Na stránce Atributy knihovny dokumentů vytvořte nový řádek pro atribut evidující hodnocení zákazníka (Název = Prodejce; Datový typ = Text; Povinný = Ano).</li>
+<li>Na stránce Atributy knihovny dokumentů vytvořte nový řádek pro atribut evidující hodnocení zákazníka (Název = Hodnocení; Datový typ = Volba; Povinný = Ne).</li>
+<li>Pro atribut Hodnocení spusťte akci Hodnoty atributu.</li>
+<li>Na stránce Hodnoty atributu knihovny dokumentů vytvořte tři řádky s hodnotami: Pozitivní, Neutrální, Negativní a zavřete stránku.</li>
+<li>Zavřete stránku.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Hodnota v sloupci <strong>Atribut SharePoint</strong> indikuje, o který typ atributu se jedná.</p>
+</div>
+<h2 id="nastavení-automatického-doplňování-atributů-knihovny-dokumentů">Nastavení automatického doplňování atributů knihovny dokumentů</h2>
+<p>Následující scénář navazuje na předchozí kapitolu, tedy že jeden z definovaných atributů knihovny dokumentů budeme automaticky plnit při nahrávání souboru.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Šablony připojení dokumentů</strong> a poté vyberte související odkaz.</li>
+<li>Vyberte šablonu pro připojení dokumentů k zákazníkům.</li>
+<li>Spusťte akci Parametry šablony.</li>
+<li>Na stránce Parametry šablony připojení dokumentů vytvořte nový řádek pro parametr odpovídající jménu prodejce definovaného na kartě zákazníka (Kód parametru = JMENO-PRODEJCE; Popis = Jméno prodejce; Zdroj dat = Pole návazné tabulky; ID návazné tabulky = 13; Číslo pole návazné tabulky = 1; v poli Vazba tabulky definujte Kód = Kód prodejce).</li>
+<li>Zavřete stránku.</li>
+<li>Na stránce Šablona připojení dokumentů v části Mapování atributů dokumentu nastavte automatické vyplňování atributu knihovny pro jméno prodejce (Název atributu = Prodejce; Mapování na parametr = JMENO-PRODEJCE)</li>
+<li>Zavřete stránku.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>V případě, že máte na knihovně definován větší počet atributů, můžete použít akci Aktualizovat atributy knihovny. Tato akce doplní do řádků pro mapování všechny zde chybějící atributy definované pro související Knihovnu dokumentů.</p>
+</div>
+<h2 id="implementace-vlastní-funkce">Implementace Vlastní funkce</h2>
+<p>Zde je uveden návod k vytvoření vlastní funkce pro definici atributů popsaných v kapitole Rozšířené možnosti umístění souborů.</p>
+<pre><code>{
+    TableNo = &quot;Doc.LinkTemplate Parameter_ach&quot;;
+
+    trigger OnRun()
+    begin
+        // Input/Output of this function is the global variable Rec that contains the current record of the template parameter whose value is to be evaluated
+        // The field Rec.&quot;Source RecordId&quot; contains the id of the record to which the document is linked
+        // The field Rec.&quot;Document FileName&quot; contains the name of the document file that is linked
+
+        // Here write your code to evaluate the parameter value
+        // ...
+
+        // Finally return the value formatted as Text data type in the Rec.&quot;Value&quot; field
+        Rec.&quot;Value&quot; := 'Result value';
+    end;
+}
+</code></pre>
+<h2 id="viz-také">Viz také</h2>
+<p><a href="ac-document-links.html">Připojené dokumenty</a><br>
+<a href="ac-productivity-pack.html">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/AC-ProductivityPack/ac-document-links-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>V t&#233;to sekci</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Zpět na začátek</a>
+            </span>
+            
+            <span><a href="https://muj.autocont.cz/docs/en-us/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

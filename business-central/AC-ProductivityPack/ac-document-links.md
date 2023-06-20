@@ -1,6 +1,6 @@
 ---
-title: Notificaiton | Microsoft Docs
-description: Nitification
+title: AUTOCONT SOLUTIONS - Připojené dokumenty | Microsoft Docs
+description: Document links
 author: ac-kunes
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -11,6 +11,7 @@ ms.search.keywords: Czech, document links, additional functions
 ms.author: v-makune
 ---
 # Připojené dokumenty
+> Aktualizace 16.06.2023
 
 Modul Připojené dokumenty umožnuje k libovolné entitě v D365 Business Central (BC) tzv. **připojit** dokumenty uložené v Sharepoint online. Umožňuje rovněž využít naplno potenciálu takového propojení v možnosti automatického doplňování sloupců Sharepoint dle kontextu získaného právě z konkrétní entity v BC, ke které uživatel dokument připojí.  
 
@@ -131,7 +132,7 @@ Pro zobrazení volitelných atributů v průběhu nahrávání je třeba mít na
 - pole **Zobrazovat dialog** s hodnotou „Vždy“
 
 
-**Viz také**
+## Viz také
 
-[Připojené dokumenty - nastavení](ac-document-links-setup.md)  
+[Odesílání elektronických dokladů - nastavení](ac-document-links-setup.md)  
 [Productivity Pack](ac-productivity-pack.md)

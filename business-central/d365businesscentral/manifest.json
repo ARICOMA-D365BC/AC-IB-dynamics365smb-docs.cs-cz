@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-FinancialPack/TOC.html",
-          "hash": "U6sgXpt0dIXJZ98r+ft0Ry0kOQuUb7Op0veOHhLm3/E="
+          "hash": "jAGbiWoZ3M1ofgRinyyeqX29oP7rA3ItUKyhigOBUZc="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-FinancialPack/ac-pack-tracking-basic-setup.html",
-          "hash": "qdnZVCwOkLy9XXH8M7YCgNe3L1JIHbKZKe/+TzA+9aw="
+          "hash": "jTTwX+gXScgy2jGZ7uDu2u1q3mwihmcFrYutptr3fNI="
         }
       },
       "is_incremental": true,
@@ -874,7 +874,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-ProductivityPack/TOC.html",
-          "hash": "j4RguQtK/0ww11pSn7JNkxgb+b6HXgL3+ooSjjilEZA="
+          "hash": "O0mZA8n4I8t0cM3HpFVCj0L0eb3kfC48pmXr3cnagdE="
         }
       },
       "is_incremental": false,
@@ -954,6 +954,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "AC-ProductivityPack/ac-document-links-setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "AC-ProductivityPack/ac-document-links-setup.html",
+          "hash": "h+M2xftbc0c+xsGXNnVimFFhy4j71RzWx3Gs0NgDJJQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "AC-ProductivityPack/ac-document-links.md",
+      "output": {
+        ".html": {
+          "relative_path": "AC-ProductivityPack/ac-document-links.html",
+          "hash": "5f2I8OZuDDv2RYbqKd7WL/QfPrDfXz2HMaBRAvgpfcQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "AC-ProductivityPack/ac-edi-connector-basic-setup.md",
       "output": {
         ".html": {
@@ -985,7 +1009,7 @@
           "hash": "UCy7LkDhgk9sMn8LWdUyCLyO6o8QjNoUGwRRulUx3Vo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -997,7 +1021,7 @@
           "hash": "NyGgb9gwTLdSVD/eeX/mYgEVhFfHZlBAlfcGj6P/R7w="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1009,7 +1033,7 @@
           "hash": "e0Ekgnfd57njMDrdlXX8eO40glHWjEtamF6lNZGpiW8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1021,7 +1045,7 @@
           "hash": "RpPAboKbaYxVfqFbKlfwABnMmRNUEmjlrP93OPU7RHE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1030,7 +1054,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-ProductivityPack/ac-elektronic-dokuments-setup.html",
-          "hash": "oDbfjItI4MxM8ptnvbOauVZkDsftvFMxjMpsFxuOwIE="
+          "hash": "HekgMJzKCRhBGAzxZ+u2vj2g2Az/4QJAtn3ODCnbYr4="
         }
       },
       "is_incremental": true,
@@ -1042,7 +1066,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-ProductivityPack/ac-elektronic-dokuments.html",
-          "hash": "f+jNhoGesbOTFBcIusuv8jtA//WpaM7A46MCbEhafJc="
+          "hash": "FlulTdG3h+yc3L3YWln/kxc1BIAXZMW4Gxzqm1/xceQ="
         }
       },
       "is_incremental": true,
@@ -1057,7 +1081,7 @@
           "hash": "uoMz9YnsbDwGqDMp/7C7Fm3pXScdLWKZfrswxAcvD2Q="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1069,7 +1093,7 @@
           "hash": "ZpcT2XR9ux9DN81ekFuJR7Qmw9omphblRT1ZZ7ESgmo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1237,7 +1261,7 @@
           "hash": "bL+NbAK/OqkrFiaEPbV155aALBOj8xVCY1RI257uqGE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1273,7 +1297,7 @@
           "hash": "kONkaiQvNg87K9ahY3jY43PglZp5mE6XptKjDGPs2I0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1285,7 +1309,7 @@
           "hash": "qLzFmlsz196jBhhAKJH5x7ozKcA7S9wMjw22EvfNwNI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1965,10 +1989,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac-document-links-sample.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac-document-links-sample.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "AC-ProductivityPack/media/ac-monetization.png",
       "output": {
         "resource": {
           "relative_path": "AC-ProductivityPack/media/ac-monetization.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "AC-ProductivityPack/media/ac_elect_dom_set1.png",
+      "output": {
+        "resource": {
+          "relative_path": "AC-ProductivityPack/media/ac_elect_dom_set1.png"
         }
       },
       "is_incremental": false,
@@ -2566,7 +2612,7 @@
           "hash": "/HGprLqlDUTXrdXDfDVFW9T0h2wSTmamjT1oEQqQtfU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2663,7 +2709,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-SK/TOC.html",
-          "hash": "0P6LSJ+heEN1rPb5gkGBo/xPo4+raccCZ4IY+r88wa0="
+          "hash": "TggRwCRnWQbTkDTQX+fzbf8mXtEDtYVnNoRA0XQSulE="
         }
       },
       "is_incremental": false,
@@ -5026,7 +5072,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-Solutions/TOC.html",
-          "hash": "mAhWLAynyv0e9lqbExyfQnU/EWJxKaEaEG0LJYysgkQ="
+          "hash": "ctLt3sLgwVps37qNZMBeRk0wqjuvqlqj6SnWKuBFzNo="
         }
       },
       "is_incremental": false,
@@ -5862,10 +5908,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac-document-links-sample.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac-document-links-sample.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac-monetization.png",
       "output": {
         "resource": {
           "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac-monetization.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_elect_dom_set1.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_elect_dom_set1.png"
         }
       },
       "is_incremental": false,
@@ -6865,8 +6933,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 288,
-          "skipped_file_count": 287
+          "total_file_count": 290,
+          "skipped_file_count": 288
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

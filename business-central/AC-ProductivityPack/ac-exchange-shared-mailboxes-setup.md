@@ -1,5 +1,5 @@
 ---
-Title: "Exchange Shared Mailbox - nastavení"
+Title: AUTOCONT SOLUTIONS - Sdílená poštovní schránka Exchange - Nastavení
 Description: Slouží k importu příloh e-mailů z sdílené e-mailové schránky do Business Centralu, kde mohou být přílohy dále zpracovány.
 Author: AC-Ondřej.Slavík
 Date: 23/03/2023
