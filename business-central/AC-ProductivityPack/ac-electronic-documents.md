@@ -113,5 +113,5 @@ Následující scénář popisuje situaci, kdy se uživatel v průběhu obchodn�
 
 ## Viz také
 
-[Odesílání elektronických dokladů - Nastavení](ac-elektronic-dokuments-setup.md)  
+[Odesílání elektronických dokladů - Nastavení](ac-electronic-documents-setup.md)  
 [Productivity Pack](ac-productivity-pack.md)

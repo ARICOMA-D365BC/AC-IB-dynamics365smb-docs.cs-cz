@@ -147,5 +147,5 @@ Jedná se o volitelný krok v případě využití placené služby poskytovatel
 
 ## Viz také
 
-[Odesílání elektronických dokladů](ac-elektronic-dokuments.md)  
+[Odesílání elektronických dokladů](ac-electronic-documents.md)  
 [Productivity Pack](ac-productivity-pack.md)

@@ -134,5 +134,5 @@ Pro zobrazení volitelných atributů v průběhu nahrávání je třeba mít na
 
 ## Viz také
 
-[Odesílání elektronických dokladů - nastavení](ac-document-links-setup.md)  
+[Připojené dokumenty - nastavení](ac-document-links-setup.md)  
 [Productivity Pack](ac-productivity-pack.md)

@@ -17,7 +17,7 @@ Sada addonů pro rozšíření funkcionalit provozní části systému pro D365 
 
 |Viz|Také|
 |-|-|
-|Elektronická fakturace slouží k moderní bezpapírové výměně daňových dokladů se zákazníkem.|[Elektronická fakturace](ac-elektronic-dokuments.md)|
+|Elektronická fakturace slouží k moderní bezpapírové výměně daňových dokladů se zákazníkem.|[Elektronická fakturace](ac-electronic-documents.md)|
 |Evidence pošty umožňuje evidovat a řídit schvalování došlých i odesílaných „papírových“ dokumentů přímo v systému Dynamics 365 Business Central.|[Evidence pošty](ac-incoming-mail.md)|
 |Reklamace slouží k evidenci reklamací zboží prodaného i nakoupeného. Také umožňuje evidovat interní reklamace.|[Reklamace](ac-complaints-management.md)|
 |Modul Doprava – základ řeší problematiku evidence vozidel, plánování údržby vozidel, evidence řidičů, evidence knih jízd a evidenci spotřeby pohonných hmot (včetně možnosti importu souborů o nákupech na palivové karty, např. CCS).|[Doprava - základ](ac-transport-basic.md)|
