@@ -1426,7 +1426,7 @@
       "output": {
         ".html": {
           "relative_path": "AC-ProductivityPack/ac-workflow-status-management-setup.html",
-          "hash": "PbLfifilIeLtOnu+JP5KXvzlVfWROeLq43xaFWSru5M="
+          "hash": "JSfTWV1tYvoOGftHeZ3HErC/q1XDm9k5Bp0kENWvss8="
         }
       },
       "is_incremental": false,
@@ -5864,6 +5864,17 @@
       "output": {
         "resource": {
           "relative_path": "d365businesscentral/AC-ProductivityPack/media/WF_states_header.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/WF_states_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/AC-ProductivityPack/media/WF_states_setup.png"
         }
       },
       "is_incremental": false,
