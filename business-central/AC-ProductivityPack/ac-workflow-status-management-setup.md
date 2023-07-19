@@ -82,7 +82,8 @@ Toto nastavení slouží k propojení definovaných šablon řízení stavů s e
 
 ![Nastavení Řízení stavů](media/WF_states_setup.png)
 
-Nastavení řízení stavů bude aktivováno až po následném odhlášení a znovu přihlášení uživatelů, tak jak upozorňuje informativní hláška.
+> [!NOTE]
+> Nastavení řízení stavů bude aktivováno až po následném odhlášení a znovu přihlášení uživatelů, tak jak upozorňuje informativní hláška.
 
 ## Viz také
 
