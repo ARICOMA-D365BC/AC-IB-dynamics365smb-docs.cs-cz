@@ -1,5 +1,5 @@
 ---
-title: AUTOCONT SOLUTIONS - Připojené dokumenty | Microsoft Docs
+title: ARICOMA SOLUTIONS - Připojené dokumenty | Microsoft Docs
 description: Document links
 author: ac-kunes
 ms.service: dynamics365-business-central

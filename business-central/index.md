@@ -1,6 +1,6 @@
 ---
-title: AUTOCONT SOLUTIONS | Microsoft Docs
-description: This section describes AUTOCONT Solutions - Addons
+title: ARICOMA SOLUTIONS | Microsoft Docs
+description: This section describes ARICOMA Solutions - Addons
 author: ac-kunes
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -11,13 +11,13 @@ ms.search.keywords: Czech, productivity, additional functions, sale, warehouse, 
 ms.author: v-makune
 ---
 
-# AC Solutions
+# Solutions
 
 Moduly a addony pro D365 Business Central pro rozšíření funkcí systému.
 
 
 - AC Produktivity Pack 
-- AC Financial Pack
+- Financial Pack
 - SK Legistavie pack
  
 

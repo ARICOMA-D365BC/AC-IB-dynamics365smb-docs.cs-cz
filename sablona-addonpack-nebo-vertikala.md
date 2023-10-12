@@ -1,5 +1,5 @@
 ---
-title: AUTOCONT SOLUTIONS - AC název rozšíření | Microsoft Docs
+title: ARICOMA SOLUTIONS - AC název rozšíření | Microsoft Docs
 description: This section describes rozšíření
 author: ac-kunes
 ms.service: dynamics365-business-central
@@ -24,4 +24,4 @@ Sada addonů pro rozšíření funkcionality  pro D365 Business Central
 
 
 ## Viz také
-[AUTOCONT Solutions](index.md)  
+[ARICOMA Solutions](index.md)  

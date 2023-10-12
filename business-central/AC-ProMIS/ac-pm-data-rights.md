@@ -1,6 +1,6 @@
 ---
 title: "AC Promise - Práva na data"
-author: Autocont
+author: Aricoma
 ms.custom: na
 ms.date: 07/18/2018
 ms.reviewer: na

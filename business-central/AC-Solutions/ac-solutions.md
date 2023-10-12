@@ -1,6 +1,6 @@
 ---
-title: AUTOCONT SOLUTIONS | Microsoft Docs
-description: This section describes AUTOCONT Solutions - Addons
+title: ARICOMA SOLUTIONS | Microsoft Docs
+description: This section describes ARICOMA Solutions - Addons
 author: ac-kunes
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -21,14 +21,14 @@ Data jsou dostupná kdykoliv a odkudkoliv. Provoz informačního systému je mo�
 
 Více informací k Business Central naleznete na našich stránkách [ACDynamics365.cz](https://www.acdynamics365.cz/aplikace/provoz-mensi-firmy).
 
-**Nasazení Microsoft Dynamics 365 Business Central od společnosti AUTOCONT je jednoduché a rychlé díky široké škále rozšiřujících modulů a oborových řešení.**
+**Nasazení Microsoft Dynamics 365 Business Central od společnosti ARICOMA je jednoduché a rychlé díky široké škále rozšiřujících modulů a oborových řešení.**
 
-## AUTOCONT ROZŠIŘUJÍCÍ MODULY
+## ARICOMA ROZŠIŘUJÍCÍ MODULY
 
 Standardní systém Dynamics 365 Business Central rozšiřujeme o řadu funkcionalit doplňujících legislativní požadavky a osvědčené postupy.
 Jednotlivé funcionality jsme seskupili do následujících balíčků.
 
-### [AC Financial Pack](../AC-FinancialPack/ac-finance-pack.md) - rozšíření pro finance
+### [Financial Pack](../AC-FinancialPack/ac-finance-pack.md) - rozšíření pro finance
   - Sada rozšíření aplikace
   - Insolvenční rejstřík
   - Faktoring
@@ -37,7 +37,7 @@ Jednotlivé funcionality jsme seskupili do následujících balíčků.
   - Evidence obalů základ (EKOKOM)
   - Evidence vratných obalů (Vratné obaly)
 
-### [AC Productivity Pack](../AC-ProductivityPack/ac-productivity-pack.md) - rozšíření pro produktivitu
+### [Productivity Pack](../AC-ProductivityPack/ac-productivity-pack.md) - rozšíření pro produktivitu
   - Elektronická fakturace
   - Datové schránky
   - Evidence pošty
@@ -56,7 +56,7 @@ Jednotlivé funcionality jsme seskupili do následujících balíčků.
   - Zásilky
 ### [SK Legislative Pack](../AC-SK/ac-sk-legislative-pack.md) - rozšíření o Slovenskou legislativu a Slovenský jazyk
 
-## AUTOCONT OBOROVÁ ŘEŠENÍ
+## ARICOMA OBOROVÁ ŘEŠENÍ
 Kromě rozšiřujících modulů jsou k dispozici níže uvedená specializovaná oborová řešení.
 
 - Lázeňství, hotelnictví a wellness
@@ -75,6 +75,6 @@ Kromě rozšiřujících modulů jsou k dispozici níže uvedená specializovan�
 
 
 ## Viz také
-[AC Financial Pack](../AC-FinancialPack/ac-finance-pack.md)  
-[AC Productivity Pack](../AC-ProductivityPack/ac-productivity-pack.md)  
+[Financial Pack](../AC-FinancialPack/ac-finance-pack.md)  
+[Productivity Pack](../AC-ProductivityPack/ac-productivity-pack.md)  
 [SK Legislative Pack](../AC-SK/ac-sk-legislative-pack.md)

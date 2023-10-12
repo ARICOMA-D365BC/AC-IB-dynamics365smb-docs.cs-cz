@@ -126,5 +126,5 @@ Na formuláři Úlohy spooleru lze přes tlačítko Funkce exportovat, importova
 
 ## Viz také
 [Spooler](ac-spooler.md)
-[AC Productivity Pack](ac-productivity-pack.md)  
-[AUTOCONT řešení](../index.md) 
+[Productivity Pack](ac-productivity-pack.md)  
+[ARICOMA řešení](../index.md) 

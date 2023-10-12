@@ -1,5 +1,5 @@
 ---
-title: AUTOCONT SOLUTIONS - AC Parcels - Balikobot integration - setup | Microsoft Docs
+title: ARICOMA SOLUTIONS - Parcels - Balikobot integration - setup | Microsoft Docs
 description: This section describes parcel functionality - Setup of Balikobot
 author: ac-kunes
 ms.service: dynamics365-business-central
@@ -12,7 +12,7 @@ ms.date: 06/24/2020
 ms.author: v-makune
 ---
 
-# Nastavení - AC Parcels - Integrace Balíkobot
+# Nastavení - Parcels - Integrace Balíkobot
 > Aktualizace: 08.03.2022
 
 
@@ -32,7 +32,7 @@ Pro správné fungování addonu Zásilek je zapotřebí nastavit několik oblas
 
 
 Ostatní číselníky (Služby přepravce, Manipulační jednotky a Pobočky přepravce) si addon stahuje z API Balíkobotu.
-## Nastavení AC Parcels pomocí průvodce
+## Nastavení Parcels pomocí průvodce
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Asistovaná nastavení** a poté vyberte související odkaz.
 2. Vyberte Nastavení zásilek.
@@ -71,7 +71,7 @@ Expediční místo je místo Vašeho skladu, odkud jsou expedovány zásilky. U�
 3. Zadejte **Kód** pro expediční místo, popis, adresu a **Název uživatele a heslo** k Vašemu API
 4. Zavřete přehled expedičních míst pomocí OK
 
-![Nastavení AC Parcels](media/BB_exp_pl.png)
+![Nastavení Parcels](media/BB_exp_pl.png)
 
 ### Nastavení lokací
 Na kartě dané lokace je potřeba vybrat expediční místo, které je spjaté s daným API. Pokud bude více lokací, je nutné na každé nastavit příslušné expediční místo. Toto slouží k omezení chybovosti uživatelů, aby nemohli spojit do zásilky doklady s různými expedičními místy.
@@ -82,11 +82,11 @@ Pro přiřazení expedičního místa lokaci je zapotřebí nastavit **Kód Expe
 2. Otevřete kartu požadované lokace
 3. Vyplňte pole **Kód expedičního místa** v záložce Obecné
 
-![Nastavení AC Parcels](media/BB_lokace.png)
+![Nastavení Parcels](media/BB_lokace.png)
 ### Nastavení Zásilek
 
 Základní nastavení Balíkobotu je nutné provést na stránce **Nastavení Zásilek**.
-![Nastavení AC Parcels](media/BB_setup.png)
+![Nastavení Parcels](media/BB_setup.png)
 
 Okno nastavení Zásilek obsahuje:
  - **Čísla zásilek** - Číselná řada pro zásilky.
@@ -103,7 +103,7 @@ Okno nastavení Zásilek obsahuje:
 Základní nastavení se provede pomocí průvodce nastavení aplikace.
 Ostatní tabulky se stahují a plní po zapnutí synchronizace master dat.
 Aktualizace těchto dat probíhá ručně pomocí funkce „Resynchronizace master dat“.
-#### Základní nastavení AC Parcels - Integrace Balíkobot
+#### Základní nastavení Parcels - Integrace Balíkobot
 Pro spuštění funkcí Balíkobotu je potřeba provést nastavení:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení Zásilek** a poté vyberte související odkaz.
@@ -226,7 +226,7 @@ Při asistovaném nastavení add-onu se může zobrazit hláška "*Požadavek by
 Pro vyřešení tohoto problému postupujte následujícím způsobem:
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Správa rozšíření** a poté vyberte související odkaz.
 2. Otevře se stránka **Nainstalovaná rozšíření**. 
-3. Zvolte řádek rozšíření **AC Parcels** a poté použijte akci **Konfigurace**.
+3. Zvolte řádek rozšíření **Parcels** a poté použijte akci **Konfigurace**.
 4. Na stránce **Konfigurace rozšíření** aktivujte přepínač **Povolit požadavky HttpClient**.
 5. Poté stránku můžete zavřít a spustit znovu Asistovaného průvodce.
 
@@ -258,5 +258,5 @@ V případě vytváření zásilky z účtované prodejní faktury je možné vy
 
 ## Viz také
 [Zásilky](ac-parcels.md)  
-[AC Productivity Pack](ac-productivity-pack.md)  
-[AUTOCONT řešení](../index.md)
+[Productivity Pack](ac-productivity-pack.md)  
+[ARICOMA řešení](../index.md)

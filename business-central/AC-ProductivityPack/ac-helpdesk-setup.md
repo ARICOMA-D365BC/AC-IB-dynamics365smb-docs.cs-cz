@@ -1,7 +1,7 @@
 ---
 Title: "HelpDesk - Setup"
 Description: 
-Author: AUTOCONT
+Author: ARICOMA
 Date: 04/04/2019
 Product: dynamics365-business-central
 Contentlocale: cs-cz
@@ -125,4 +125,4 @@ Po založení šablony je nutné nastavit tuto šablonu na stránce **Nastavení
 
 ## Viz také
 [HelpDesk](ac-helpdesk.md)  
-[AC Productivity Pack](ac-productivity-pack.md)
+[Productivity Pack](ac-productivity-pack.md)

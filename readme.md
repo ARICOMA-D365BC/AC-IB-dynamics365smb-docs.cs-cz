@@ -60,7 +60,7 @@ Pro psaní nápovědy k addonům dodržujte náležitosti:
 ```
 ## Viz také
 [HelpDeks - Nastavení](business-central/AC-IB/ac-helpdesk-setup.md)  
-[AC Productivity pack](business-central/AC-IB/ac-productivity-pack.md)
+[Productivity pack](business-central/AC-IB/ac-productivity-pack.md)
 ```
 
 - Pro základní editaci je zde [šablona](template.md).

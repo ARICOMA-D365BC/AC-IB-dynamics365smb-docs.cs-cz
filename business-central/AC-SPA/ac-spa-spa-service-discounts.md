@@ -1,6 +1,6 @@
 ﻿---
     title: "Slevy lázeňských služeb"
-    author: AutoCont
+    author: Aricoma
     ms.date: 04/30/2018
     ms.topic: article
     ms.prod: dynamics-nav-2017

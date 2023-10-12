@@ -12,9 +12,9 @@ ms.date: 01/31/2021
 ms.author: AC MartinKunes
 ---
 
-# Odstraněné funkce z AC Financial Pack
+# Odstraněné funkce z Financial Pack
 
-Tato stránka obsahuje seznam funkcionalit, které byly přesunuty, odstraněny nebo nahrazeny z AC Financial Packu.
+Tato stránka obsahuje seznam funkcionalit, které byly přesunuty, odstraněny nebo nahrazeny z Financial Packu.
 
 ## Viditelný poplatek
 

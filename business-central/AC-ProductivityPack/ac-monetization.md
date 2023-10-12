@@ -1,6 +1,6 @@
 ---
-title: AUTOCONT SOLUTIONS - AC Monetization | Microsoft Docs
-description: This section describes parcel functionality - AC Monetization
+title: ARICOMA SOLUTIONS - Monetization | Microsoft Docs
+description: This section describes parcel functionality - Monetization
 author: ac-kunes
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -16,16 +16,16 @@ ms.author: v-makune
 # AC Monetizace 
 > Aktualizace 03.02.2022
 
-Jedná se o funkcionalitu umožňující uživateli správu předplatného produktů firmy AUTOCONT v prostředí Business Central. 
+Jedná se o funkcionalitu umožňující uživateli správu předplatného produktů firmy ARICOMA v prostředí Business Central. 
 
 ## Aktivace Zkušebního období 
 
 Každý produkt má 30-ti denní zkušební období pro ověření, zda funkcionalita zákazníkovi vyhovuje. Aktivaci lze provést buď: 
 
-   - **Automaticky** při spuštění Asistovaného nastavení příslušného produktu (Instalace & Rozšíření -> Asistovaná nastavení, část Nastavit rozšíření AUTOCONT).
-   - Otevřením stránky **Nákup produktu firmy AUTOCONT** a spuštěním akce **Koupit produkt** (pozn. seznam obsahuje všechna komerčně dostupná rozšíření; před aktivací je nutná instalace rozšíření).
+   - **Automaticky** při spuštění Asistovaného nastavení příslušného produktu (Instalace & Rozšíření -> Asistovaná nastavení, část Nastavit rozšíření ARICOMA).
+   - Otevřením stránky **Nákup produktu firmy ARICOMA** a spuštěním akce **Koupit produkt** (pozn. seznam obsahuje všechna komerčně dostupná rozšíření; před aktivací je nutná instalace rozšíření).
 
-![Nákup produktu firmy AUTOCONT](media/ac-monetization.png)
+![Nákup produktu firmy ARICOMA](media/ac-monetization.png)
 
 V obou případech se spustí krátký průvodce aktivací, v jehož průběhu je třeba povinně zadat: 
 
@@ -39,9 +39,9 @@ Poznámka: Pokud se neobjeví požadavek na potvrzení, že uživatel opravdu ch
 
 Kdykoliv v průběhu zkušebního období je možné zakoupit produkt s tím, že zákazník nepřijde o zbývající část zkušebního období. 
 
-O blížícím se konci zkušebního období informuje uživatele oznámení na Domovské stránce s odkazem na stránku **Nákup produktu firmy AUTOCONT**. 
+O blížícím se konci zkušebního období informuje uživatele oznámení na Domovské stránce s odkazem na stránku **Nákup produktu firmy ARICOMA**. 
 
-Funkce **Koupit** produkt na stránce **Nákup produktu firmy AUTOCONT** uživatele postupně provede jednotlivými kroky: 
+Funkce **Koupit** produkt na stránce **Nákup produktu firmy ARICOMA** uživatele postupně provede jednotlivými kroky: 
 
 - **Výběr plánu** – nejprve je třeba zvolit, zda-li chce zákazník obnovovat předplatné každý měsíc nebo jednou ročně.
 - **Detaily zákazníka** – Doplnění chybějících údajů o firmě potřebných pro objednávku a fakturaci.
@@ -49,9 +49,9 @@ Funkce **Koupit** produkt na stránce **Nákup produktu firmy AUTOCONT** uživat
 
 ## Správa předplatného 
 
-Pro správu předplatného slouží stránka **Seznam předplatných AUTOCONT**, kde uživatel: 
+Pro správu předplatného slouží stránka **Seznam předplatných ARICOMA**, kde uživatel: 
 
-- Získá přehled o předplacených produktech od firmy AUTOCONT,
+- Získá přehled o předplacených produktech od firmy ARICOMA,
 - má možnost ukončit předplatné vybraného produktu, 
 - má možnost zrušit předplatné,
 - má možnost aktualizovat informace o zákazníkovi (akce Aktualizujte informace o zákazníkovi),

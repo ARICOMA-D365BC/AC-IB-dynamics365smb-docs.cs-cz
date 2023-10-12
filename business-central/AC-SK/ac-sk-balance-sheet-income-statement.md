@@ -1,6 +1,6 @@
 ---
-title: AUTOCONT SOLUTIONS - SK Legistaltive Pack | Microsoft Docs
-description: This section describes AUTOCONT Solutions - Slovak legislation - 
+title: ARICOMA SOLUTIONS - SK Legistaltive Pack | Microsoft Docs
+description: This section describes ARICOMA Solutions - Slovak legislation - 
 author: ac-kunes
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -37,6 +37,6 @@ Pak již stačí výsledný soubor naimportovat do elektronického formuláře f
 
 ## Viz také
 
-[AUTOCONT Řešení](../index.md)  
+[ARICOMA Řešení](../index.md)  
 [SK Legislativní balíček](ac-sk-legislative-pack.md)   
 [Export účetní zavěrky - SK - nastavení](ac-sk-balance-sheet-income-statement-setup.md)

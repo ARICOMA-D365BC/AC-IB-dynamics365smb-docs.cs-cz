@@ -105,5 +105,5 @@ Další možností, jak dostat položky do archívu je pomocí **reportů R40029
 
 ## Viz také
 [Spooler - Nastavení](ac-spooler-setup.md)
-[AC Productivity Pack](ac-productivity-pack.md)  
-[AUTOCONT řešení](../index.md)
+[Productivity Pack](ac-productivity-pack.md)  
+[ARICOMA řešení](../index.md)

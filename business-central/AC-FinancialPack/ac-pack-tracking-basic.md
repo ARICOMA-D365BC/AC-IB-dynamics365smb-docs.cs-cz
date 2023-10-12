@@ -1,6 +1,6 @@
 ---
-title: Autocont - Pack Tracking Basic | Microsoft Docs
-description:  This section describes Autocont Pack Tracking Basic AddOn
+title: Aricoma - Pack Tracking Basic | Microsoft Docs
+description:  This section describes Aricoma Pack Tracking Basic AddOn
 author: ACPJanousek
 ms.service: dynamics365-business-central
 ms.topic: article

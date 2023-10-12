@@ -1,6 +1,6 @@
 ﻿---
     title: "Koeficienty přepočtu zboží"
-    author: AutoCont
+    author: Aricoma
     ms.date: 04/30/2018
     ms.topic: article
     ms.prod: dynamics-nav-2017

@@ -1,6 +1,6 @@
 ---
-title: AUTOCONT SOLUTIONS - SK Legistaltive Pack | Microsoft Docs
-description: This section describes AUTOCONT Solutions - Slovak legislation
+title: ARICOMA SOLUTIONS - SK Legistaltive Pack | Microsoft Docs
+description: This section describes ARICOMA Solutions - Slovak legislation
 author: ac-kunes
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -11,7 +11,7 @@ ms.search.keywords: Slovak, , additional functions, sale, VAT
 ms.author: v-makune
 ---
 
-# AC - Slovak Legistive Pack
+# Slovak Legistive Pack
 
  AddOn Modul Slovak Localization doplňuje systém Dynamics 365 Business Central CZ o funkcionality pro podporu slovenské legislativy. Česká funkcionalita z větší části pokrývá i slovenské legislativní požadavky. Tento modul pak doplňuje pouze rozdílové funkcionality, pro pokrytí specifických požadavků slovenské legislativy.
 
@@ -35,6 +35,6 @@ ms.author: v-makune
 
 ## Viz také
 
-[AUTOCONT Řešení](../index.md)  
+[ARICOMA Řešení](../index.md)  
 [Financial Pack](../AC-FinancialPack/ac-finance-pack.md)  
 [Productivity Pack](../AC-ProductivityPack/ac-productivity-pack.md)

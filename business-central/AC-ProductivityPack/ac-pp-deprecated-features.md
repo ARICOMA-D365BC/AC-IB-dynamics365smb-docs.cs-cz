@@ -12,9 +12,9 @@ ms.date: 01/31/2021
 ms.author: AC MartinKunes
 ---
 
-# Odstraněné funkce z AC Productivity Pack
+# Odstraněné funkce z Productivity Pack
 
-Tato stránka obsahuje seznam a popis funkcionalit, které byly odstraněny z AC Financial Packu.
+Tato stránka obsahuje seznam a popis funkcionalit, které byly odstraněny z Financial Packu.
 
 ## název funkcionality
 

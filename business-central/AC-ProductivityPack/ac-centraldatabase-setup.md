@@ -110,5 +110,5 @@ Nastavení slouží k určení relačních vazeb, které zajišťují, aby při 
 ## Viz také
 
 [Centrální číselníky](ac-centraldatabase.md)`  
-[AC Productivity Pack](ac-productivity-pack.md)  
-[AUTOCONT řešení](../index.md)
+[Productivity Pack](ac-productivity-pack.md)  
+[ARICOMA řešení](../index.md)

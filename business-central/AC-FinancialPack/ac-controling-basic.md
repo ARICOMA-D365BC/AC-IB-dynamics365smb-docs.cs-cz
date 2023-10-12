@@ -18,7 +18,7 @@ ms.author: AC MartinKunes
 
 Add-on modul **Sada rozšíření pro Finance** obsahuje společné funkce pro podporu fungování ostatních add-on modulů balíčku rozšíření financí. Seznam funkcí naleznete na pravé části stránky. 
 
-Modul Sada rozšíření pro Finance je nutný pro ostatní add-on moduly AC Financial Packu.
+Modul Sada rozšíření pro Finance je nutný pro ostatní add-on moduly Financial Packu.
 
 ## Credit Check
 
@@ -192,7 +192,7 @@ Pokud pro takový pracovní den nenajde záznam v tabulce Směnné kurzy, zobr
 
 Funkcionalita slouží jako podpora pro vymáhání pohledávek, které dosud nebyly uhrazeny. U takových pohledávek je potřeba mít především aktuální informaci o stavu pohledávky a průběhu vymáhání. 
 
-Poznámka: V případě potřeby připojovat k evidenci elektronické dokumenty, zvažte využití addonu Publikování SharePoint od firmy AUTOCONT., popř. jiný produkt třetí strany. 
+Poznámka: V případě potřeby připojovat k evidenci elektronické dokumenty, zvažte využití addonu Publikování SharePoint od firmy ARICOMA., popř. jiný produkt třetí strany. 
 
 Stav vymáhání pohledávky je zobrazen v Informačním okně **Podrobnosti položky zákazníka**. Díky tomu má uživatel okamžitě k dispozici tuto základní informaci, ale také detailní informace na jedno kliknutí. 
 

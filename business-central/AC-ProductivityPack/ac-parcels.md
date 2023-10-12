@@ -1,5 +1,5 @@
 ---
-title: AUTOCONT SOLUTIONS - AC Parcels | Microsoft Docs
+title: ARICOMA SOLUTIONS - Parcels | Microsoft Docs
 description: This section describes parcel functionality - Balikobot Integration
 author: ac-kunes
 ms.service: dynamics365-business-central
@@ -12,7 +12,7 @@ ms.date: 06/24/2020
 ms.author: v-makune
 ---
 
-# AC Parcels - Integrace Balíkobot
+# Parcels - Integrace Balíkobot
 > Aktualizace: 08.03.2022
 
 Addon zásilek slouží k vytvoření zásilek a přímému tisku štítků vybraných dopravců, odesílání dat o zásilkách přepravci a objednání samotného svozu balíků. Pomocí tohoto rozšíření je zrychlen proces zpracování a vytváření zásilek posílaných zákazníkům. Tento Addon využívá API služby Balíkobot.
@@ -178,7 +178,7 @@ Pokud chcete zobrazit jednotlivé stavy od přepravce, využijte funkci na přeh
 
 Paperless Trade slouží k odeslání elektronické faktury (případě pro-forma faktury) pro celní řízení zakódované v PDF BASE64.
 
-V addonu AC Parcels můžete využít funkce k automatického vytvoření a přiložení PDF faktury k zásilce za předpokladu vytváření zásilky z účtované prodejní faktury.
+V addonu Parcels můžete využít funkce k automatického vytvoření a přiložení PDF faktury k zásilce za předpokladu vytváření zásilky z účtované prodejní faktury.
 V případě vytváření zásilky z účtované prodejní dodávky musíte PDF vkládat ručně.
 
 ### Vytvoření zásilky z účtované prodejní faktury
@@ -211,6 +211,6 @@ Je zde také možnost notifikací od Balíkobotu a to buď formou e-mailu, přes
 
 
 ## Viz také
-[Nastavení - AC Parcels - Integrace Balíkobot](ac-parcels-setup.md)  
-[AC Productivity Pack](ac-productivity-pack.md)  
-[AUTOCONT řešení](../index.md)
+[Nastavení - Parcels - Integrace Balíkobot](ac-parcels-setup.md)  
+[Productivity Pack](ac-productivity-pack.md)  
+[ARICOMA řešení](../index.md)

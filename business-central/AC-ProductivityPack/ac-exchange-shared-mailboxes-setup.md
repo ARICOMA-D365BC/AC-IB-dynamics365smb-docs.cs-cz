@@ -1,5 +1,5 @@
 ---
-Title: AUTOCONT SOLUTIONS - Sdílená poštovní schránka Exchange - Nastavení
+Title: ARICOMA SOLUTIONS - Sdílená poštovní schránka Exchange - Nastavení
 Description: Slouží k importu příloh e-mailů z sdílené e-mailové schránky do Business Centralu, kde mohou být přílohy dále zpracovány.
 Author: AC-Ondřej.Slavík
 Date: 23/03/2023
@@ -91,4 +91,4 @@ V IN Bufferu pak lze původní zprávu zobrazit přes akci **Zobrazit přílohu*
 
 ## Vizte Také
 [Sdílená poštovní schránka Exchange](ac-exchange-shared-mailboxes.md)  
-[AC Productivity Pack](ac-productivity-pack.md)
+[Productivity Pack](ac-productivity-pack.md)

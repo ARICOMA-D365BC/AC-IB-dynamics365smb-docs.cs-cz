@@ -1,5 +1,5 @@
 ---
-title: AUTOCONT SOLUTIONS - Odesílání elektronických dokladů | Microsoft Docs
+title: ARICOMA SOLUTIONS - Odesílání elektronických dokladů | Microsoft Docs
 description: Electronic documents Setup
 author: ac-kunes
 ms.service: dynamics365-business-central

@@ -1,6 +1,6 @@
 ---
-title: AUTOCONT SOLUTIONS - SK Legistaltive Pack| Microsoft Docs
-description: This section describes AUTOCONT Solutions - Slovak legislation
+title: ARICOMA SOLUTIONS - SK Legistaltive Pack| Microsoft Docs
+description: This section describes ARICOMA Solutions - Slovak legislation
 author: ac-kunes
 ms.service: dynamics365-business-central
 ms.topic: article
@@ -23,6 +23,6 @@ Pro export výkazu DPH použijte následující postup:
 
 ## Viz také
 
-[AUTOCONT Řešení](../index.md)
+[ARICOMA Řešení](../index.md)
 [SK Legislativní balíček](ac-sk-legislative-pack.md)
 [Výkaz DPH - nastavení](ac-sk-vat-statement-setup.md)

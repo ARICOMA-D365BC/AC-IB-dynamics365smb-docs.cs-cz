@@ -42,5 +42,5 @@ Při ruční synchronizaci lze pomocí filtrů přesně specifikovat, jaké tabu
 
 ## Viz také
 [Nastavení Centrálních číselníků](ac-centraldatabase-setup.md)
-[AC Productivity Pack](ac-productivity-pack.md)  
-[AUTOCONT řešení](../index.md)
+[Productivity Pack](ac-productivity-pack.md)  
+[ARICOMA řešení](../index.md)

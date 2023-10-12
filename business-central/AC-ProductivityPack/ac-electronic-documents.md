@@ -1,5 +1,5 @@
 ---
-title: AUTOCONT SOLUTIONS - Odesílání elektronických dokladů | Microsoft Docs
+title: ARICOMA SOLUTIONS - Odesílání elektronických dokladů | Microsoft Docs
 description: Electronic_documents
 author: ac-kunes
 ms.service: dynamics365-business-central
@@ -25,7 +25,7 @@ Formát ISDOC vychází ze standardu UBL (Universal Business Language) a doplňu
 
 Formát XML dodávaný v rámci modulu je možné s výhodou použít pro výměnu dokladů mezi firmami, které používají tento modul. Podobně jako u formátu ISDOC je možné připojit i elektronické přílohy. Pro uživatelské zobrazení XML dokumentu (strukturovaná data využitelná pro automatické exporty do informačních systémů) lze definovat tzv. XSD šablony, které transformují data z XML do vizuální podoby HTML dokumentu.
 
-A v neposlední řadě funkcionalita rozšiřuje (v kombinaci s jinými addony od AUTOCONT) možnosti odesílání dokladů. V případě požadavku na protokolovanou komunikaci je možné využít addon [Spooler](https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/AC-ProductivityPack/ac-spooler.html).
+A v neposlední řadě funkcionalita rozšiřuje (v kombinaci s jinými addony od ARICOMA) možnosti odesílání dokladů. V případě požadavku na protokolovanou komunikaci je možné využít addon [Spooler](https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/AC-ProductivityPack/ac-spooler.html).
 
 ## Pouze BC OnPrem
 Ve spolupráci s modulem [Datové schránky](https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/AC-ProductivityPack/ac-data-boxes.html) je lze doklady odesílat i tímto komunikačním kanálem. Datové schránky fungují na podobném principu jako běžná e-mailová schránka, samotné technické řešení však zajišťuje důvěryhodnost doručování datových zpráv, kdy každá je opatřena elektronickou značku (e-razítko) a časovou značku (kvalifikované časové razítko). Pro více informací navštivte [oficiální stránky](https://info.mojedatovaschranka.cz/).
