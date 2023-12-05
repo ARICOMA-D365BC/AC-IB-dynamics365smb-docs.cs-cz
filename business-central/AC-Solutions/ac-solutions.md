@@ -11,6 +11,10 @@ ms.search.keywords: Czech, productivity, additional functions, sale, warehouse, 
 ms.author: v-makune
 ---
 
+# Z Autocontu se stává Aricoma
+Autocont se mění. Stejně jako ostatní značky ve skupině přijímá nové jméno Aricoma. Ta sjednocuje firmy zaměřené na IT infrastrukturu, cloudové technologie, podnikové aplikace, kybernetickou bezpečnost, digitalizaci veřejného sektoru a systémovou integraci. Jako Aricoma chceme zákazníkům nabídnout rozšíření služeb a řešení pod jednotnou značkou a komplexnější přístup k jejich potřebám.
+
+
 # Microsoft Dynamics 365 Business Central
 
 Microsoft Dynamics 365 Business Central je moderní informační systém pro malé a středně velké společnosti, které hledají jednoduché a snadno přizpůsobitelné řešení s komplexním pokrytím jejich potřeb a s intuitivním uživatelským prostředím. Nabízí zvýšení produktivity a konkurenceschopnosti, šetří vstupní investice a snižuje starosti spojené s provozem a bezpečností.
