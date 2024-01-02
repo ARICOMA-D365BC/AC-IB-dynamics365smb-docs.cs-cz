@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AC - Financial pack - Controling Basic | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="AC - Financial pack - Controling Basic | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="sada-rozšíření-pro-finance---nastavení">Sada rozšíření pro Finance - Nastavení</h1>
+
+<blockquote>
+<p>Aktualizace: 01.02.2022</p>
+</blockquote>
+<h2 id="nastavení-kontroly-creditcheck">Nastavení kontroly CREDITCHECK</h2>
+<h3 id="nastavení-kontroly-creditcheck-1">Nastavení kontroly CreditCheck</h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení služby CreditCheck</strong> a poté vyberte související odkaz.</li>
+<li>Spusťte funkci <strong>Nastavit výchozí webovou službu</strong>, která naplní URL služby.</li>
+<li>Službu spustíte pomocí tlačítka <strong>Povoleno</strong>.</li>
+</ol>
+<p><img src="media/credit_check-setup.png" alt="Nastavení služby CreditCheck"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Pokud vaše firma nepoužívá Kontakty, je třeba zapnout <strong>Nepoužívat kontakty pro CreditCheck</strong>. Pak se při stažení dat z CrediChecku budou plnit přímo pole „<strong>Stav CreditCheck</strong>“ na kartě zákazníka, dodavatele.</p>
+</div>
+<h3 id="aktualizace-informací-o-bonitě">Aktualizace informací o bonitě</h3>
+<p>Aktualizaci je možné provádět manuálně dle potřeby nebo nechat systém provádět aktualizaci v pravidelných intervalech.</p>
+<p>Pro automatické nastavení postupujte takto:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení služby CreditCheck</strong> a poté vyberte související odkaz.</li>
+<li>Nastavte příznak <strong>Automatická aktualizace</strong>.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Vytvořená položka fronty úloh je ve výchozím stavu nastavena na spouštění v 6:00 v pracovní dny.</p>
+</div>
+<p>Manuální aktualizaci provedete pomocí funkce Aktualizace stavu CreditCheck takto:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Aktualizace stavu CreditCheck</strong> a poté vyberte související odkaz.</li>
+<li>Službu spustíte pomocí tlačítka Ok.</li>
+</ol>
+<h3 id="nastavení-uživatelů">Nastavení uživatelů</h3>
+<p>V nastavení uživatelů na záložce Obecné je nový boolean „<strong>Povolit změnu stavu CreditCheck</strong>“, který po-kud jej má uživatel zaškrtnut, pak mu umožní zrušit naimportovaný stav.</p>
+<h3 id="nastavení-a-aktualizace-webových-zdrojů">Nastavení a aktualizace webových zdrojů</h3>
+<p>V nastavení kontroly CreditCheck je možné zapnout aktualizaci vytváření webových zdrojů pro všechny kontakty s vyplněným IČ.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení služby CreditCheck</strong> a poté vyberte související odkaz.</li>
+<li>Nastavte příznak <strong>Aut. aktualizace webových zdrojů</strong>.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Vytváření webových zdrojů pro placený výpis je možné pomocí <strong>Aut. aktualizace webových zdrojů - Plný</strong>, ovšem pouze pokud je vyplněno pole <strong>Přístupový kód</strong>.</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Vytvořená položka fronty úloh je ve výchozím stavu nastavena na spouštění v 6:00 v pracovní dny.</p>
+</div>
+<h2 id="nastavení-hierarchického-návrhu-prodejních-cen">Nastavení Hierarchického návrhu prodejních cen</h2>
+<h3 id="metody-výpočtu-ceny-od-verze-220-volitelně-od-180">Metody výpočtu ceny (od verze 22.0, volitelně od 18.0)</h3>
+<p>Od verze BC 22 (popř. od BC 18 pokud máte ve Správě funkcí zapnuto „Aktualizace funkcí: Nové zkušenosti s cenami prodeje“) provedete zapnutí hierarchického návrhu prodejních cen zboží takto:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Metody výpočtu ceny</strong> a poté vyberte související odkaz.</li>
+<li>Kliknutím vyberte metodu Nejnižší cena.</li>
+<li>V části Výpočet prodejní ceny vyberte pro Zboží implementaci s názvem <strong>Finanční balíček AC – hierarchický</strong> (kliknutím na hodnotu v poli Implementace použita).</li>
+</ol>
+<h3 id="nastavení-prodeje-a-pohledávek-do-verze-210">Nastavení prodeje a pohledávek (do verze 21.0)</h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení prodeje a pohledávek</strong> a poté vyberte související odkaz.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Nastavení závisí na používané verzi. Ve verzi BC17 pro zapnutí zvolte <strong>Hierarchický návrh cen povolen</strong>.</p>
+</div>
+<p><img src="media/Hierarchical_price_setup.png" alt="Hierarchický návrh cen povolen"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Od verze BC18 doporučujeme používat zcela novou funkcionalitu pro cenotvorbu v BC.
+Vyberte ikonu Žárovky, která otevře funkci Řekněte mi , zadejte <strong>Správa funkcí</strong> a poté vyberte související odkaz. Ověřte, že máte funkci <strong>Aktualizace funkcí: Nové zkušenosti s cenami prodeje</strong> povolenu pro všechny uživatele.</p>
+</div>
+<h2 id="nastavení-kumulování-plateb">Nastavení kumulování plateb</h2>
+<h3 id="nastavení-dodavatele-pro-kumulaci-plateb">Nastavení dodavatele pro kumulaci plateb</h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Dodavatelé</strong> a poté vyberte související odkaz.</li>
+<li>Otevřete kartu dodavatele pro kterého chcete povolit kumulaci plateb.</li>
+<li>Na stránce Karta dodavatele v záložce Platby nastavte <strong>Kumulovat platby</strong>.</li>
+</ol>
+<p>Nastavení parametrů kumulace na bankovním účtu</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Banky</strong> a poté vyberte související odkaz.</li>
+<li>Otevřete kartu bankovního účtu pro který chcete nastavit kumulaci plateb.</li>
+<li>Na stránce Karta bankovního účtu v záložce Platební příkazy/Bankovní výpisy nastavte kumulaci plateb dle potřeby.</li>
+</ol>
+<h3 id="možnosti-nastavení-kumulace-plateb">Možnosti nastavení kumulace plateb</h3>
+<ul>
+<li>Pole <strong>Kumulovat platební příkazy</strong> – zapíná/vypíná kumulaci</li>
+<li>Pole <strong>Kumulovat export podle variabilního symbolu</strong> – kumulace se za VS</li>
+<li>Pole <strong>Kumulovat export podle konstantního symbolu</strong> – kumuluje se za KS</li>
+<li>Pole <strong>Kumulovat export podle specifického symbolu</strong> – kumuluje se za SS</li>
+<li>Pole <strong>Číselná řada variabilního symbolu</strong> – pokud se nekumuluje dle VS, KS nebo SS, pak se do pole VS doplní číslo dle zde nastavené číselné řady (SS a KS se vezmou z prvního slučovaného řádku příkazu)</li>
+<li>Pole <strong>Popis kumulovaného řádku plat. příkazu</strong> – popis pro vytvořený kumulovaný řádek</li>
+</ul>
+<h2 id="nastavení-kontroly-registrace-k-dph">Nastavení kontroly registrace k DPH</h2>
+<h3 id="registrace-kdph-na-dokladech">Registrace k DPH na dokladech</h3>
+<p>V Nastavení financí se zadává datumový vzorec, který systém použije (ve vztahu k pracovnímu datu) pro definici období, ve kterém upozorňuje uživatele na zastaralou informaci o registraci k DPH. Není-li pole Vzorec data kontroly DIČ na dokladech vyplněno, je upozorňování vypnuté.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení financí</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Nastavení financí v záložce Ostatní nastavte pole <strong>Vzorec data kontroly DIČ na dokladech</strong>.</li>
+</ol>
+<h2 id="nastavení-kontrol-směnných-kurzů">Nastavení kontrol směnných kurzů</h2>
+<h3 id="kontrola-správnosti-při-zadávání-směnného-kursu">Kontrola správnosti při zadávání směnného kursu</h3>
+<p>Na každé v systému definované cizí měně se dají nastavit horní a dolní limit hodnoty v lokální měně. Zvlášť výhodné je to u málo používaných měn, kdy je o to větší riziko chyby uživatele při zadávání kursu na dokladu, apod. Je-li pole s limitem na měně prázdný, kontrola se neprování.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Měny</strong> a poté vyberte související odkaz.</li>
+<li>Spusťte akci <strong>Upravit</strong>.</li>
+<li>Na stránce karta měny v záložce Obecné nastavte pole <strong>Horní limit Částky vzt. sm.kurzu</strong> a <strong>Dolní limit Částky vzt. sm.kurzu</strong>.</li>
+</ol>
+<h3 id="kontrola-existence-směnného-kursu">Kontrola existence směnného kursu</h3>
+<p>V Nastavení financí se zadává datumový vzorec, který systém použije (ve vztahu k zúčtovacímu datu) pro definici období, ve kterém upozorňuje uživatele na neexistenci záznamu v tabulce směnných kurzů. Není-li pole Vzorec pro kontr.sm.kurzu na dokl. vyplněno, je upozorňování vypnuté.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení financí</strong> a poté vyberte související odkaz.</li>
+<li>Spusťte akci <strong>Upravit</strong>.</li>
+<li>Na stránce Nastavení financí v záložce Ostatní nastavte pole <strong>Vzorec pro kontr.sm.kurzu na dokl</strong>.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Obvykle se nastavuje „-1D“ pro denní směnné kursy.</p>
+</div>
+<h2 id="nastavení-vymáhání-pohledávek">Nastavení vymáhání pohledávek</h2>
+<h3 id="druhy-vymáhání">Druhy vymáhání</h3>
+<p>Specifické typy vymáhání lze nastavit pomocí číselníku Druhy vymáhání:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Druhy vymáhání</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Druhy vymáhání zadejte kód pro nový záznam (např. „FACTORING“ pro rozlišení důvodu vzniku pohledávky). Tento můžete doplnit i upřesňujícím popisem v poli Popis.</li>
+</ol>
+<h2 id="nastavení-rozšíření-číselné-řady">Nastavení rozšíření číselné řady</h2>
+<h3 id="nastavení-masky-číselné-řady">Nastavení masky číselné řady</h3>
+<p>Nové pole pro strukturu masky číselné řady bylo přidáno do tabulky číselné řady, kde uživatel definuje poziční strukturu čísla generovaného v této číselné řadě. Tato funkce umožňuje jednodušeji vytvářet nové číselné řady pro nový fiskální rok a snižuje množství chyb.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Číselná řada</strong> a poté vyberte související odkaz.</li>
+<li>V poli <strong>Maska</strong> nastavte kombinaci pevných a zástupných znaků ve formátu „<strong>XXrrcccc</strong>“
+<ul>
+<li>XX – fixní část čísla; musí být velkými písmeny, délka není omezena (jen celková délka výsledného čísla)</li>
+<li>rr (popř. rrrr) – označení roku, které doplní generátor ze zadaného počátečního datumu</li>
+<li>cccc - variabilní část čísla; musí být malými písmeny, délka není omezena (jen celková délka výsledného čísla)</li>
+</ul>
+</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Nastavíte-li masku „BVY1rrcccccc“, pak generátor spuštěný s počátečním datem 1.1.2021 vytvoří řádek číselné řady, kde Počáteční číslo bude „BVY121000001“ a Poslední číslo bude „BVY121999999“.</p>
+</div>
+<h3 id="nastavení-návazností-číselných-řad">Nastavení návazností číselných řad</h3>
+<p>Byla přidána nová tabulka Návaznost číselné řady.</p>
+<ol>
+<li><p>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Číselná řada</strong> a poté vyberte související odkaz.</p>
+</li>
+<li><p>Vyberte akci <strong>Návaznosti</strong>.</p>
+</li>
+<li><p>Dle určení číselné řady vyplňte některý ze sloupců:</p>
+<ul>
+<li><p><strong>Návazná číselná řada</strong> – jaká číselná řada má být použita v navázané aktivitě, když má zdrojový dokument zadanou číselnou řadu: objednávka vytvořená z poptávky, objednávka vytvořená z hromadné objednávky</p>
+</li>
+<li><p><strong>Číselná řada účtování</strong> – jaká číselná řada má být použita pro zaúčtovaný doklad, když má zdrojový dokument zadanou číselnou řadu: zaúčtovaný prodejní/nákupní/servisní doklad (faktura, dobropis), vydaná upomínka, vydané penále, účtovaná dodávka/příjemka skladu, účtovaná montážní zakázka, účtovaný příjem/výdej zásob, účtovaná obj. fyz. inventury</p>
+</li>
+<li><p><strong>Číselná řada dodávky</strong> – jaká číselná řada má být použita pro účtovanou dodávku, když má zdrojový dokument zadanou číselnou řadu: účtovaná prodejní dodávka z prodejní objednávky nebo faktury, dodávka transferu z objednávky transferu</p>
+</li>
+<li><p><strong>Číselná řada příjemky</strong> – jaká číselná řada má být použita pro účtovanou příjemku, když má zdrojový dokument zadanou číselnou řadu: účtovaná nákupní příjemka z nákupní objednávky nebo faktury, příjemka transferu z objednávky transferu.</p>
+</li>
+<li><p><strong>Číselná řada dodávky skladu</strong> - jaká číselná řada má být použita pro dodávku ze skladu, když má zdrojový dokument zadanou číselnou řadu: dodávka ze skladu z objednávky prodejní/nákupní/transferu.</p>
+</li>
+<li><p><strong>Číselná řada příjemky skladu</strong> - jaká číselná řada má být použita pro příjemku na sklad, když má zdrojový dokument zadanou číselnou řadu: příjemka na sklad z objednávky prodejní/nákupní/transferu.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="nastavení-zaokrouhlení-dle-způsobu-úhrady">Nastavení zaokrouhlení dle způsobu úhrady</h2>
+<p>Nastavení zaokrouhlení se provádí různě v závislosti na měně, jako je tomu u jiných podobných parametrů:</p>
+<p><strong>Nastavení pro lokální měnu</strong></p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení financí</strong> a poté vyberte související odkaz.</li>
+<li>Vyberte akci Nastavení zaokrouhlení faktur.</li>
+<li>Na stránce Nastavení zaokrouhlení faktur definujte nastavení zaokrouhlení pro všechny způsoby plateb, u kterých má být jiné nastavení než to výchozí z Nastavení financí.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Pohled je filtrován na prázdný Kód měny.</p>
+</div>
+<p><strong>Nastavení pro cizí měny</strong></p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Způsoby plateb</strong> a poté vyberte související odkaz.</li>
+<li>Vyberte akci Nastavení zaokrouhlení faktur.</li>
+<li>Na stránce Nastavení zaokrouhlení faktur definujte nastavení zaokrouhlení pro cizí měny v kombinaci s vybraným způsobem platby, u kterých má být jiné nastavení než to výchozí z Karty měny.</li>
+</ol>
+<h2 id="nastavení-krácení-odpočtu-dph">Nastavení krácení odpočtu DPH</h2>
+<h3 id="nastavení-účtování-dph">Nastavení účtování DPH</h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení účtování DPH</strong> a poté vyberte související odkaz.</li>
+</ol>
+<p>Pro kombinace DPH účto skupin, kde se bude řešit krácení vstupní DPH koeficientem, musí být nastaveno (kromě jiného):</p>
+<ul>
+<li>Typ účtování koeficientu DPH</li>
+<li>Koef.DPH účto skupiny zboží</li>
+</ul>
+<p>Dále musí být nastaveny nové kombinace stejné DPH obchodní účto skupiny a DPH účto skupiny zboží definované v poli „Koef.DPH účto skupiny zboží“ (viz výše) s Typem výpočtu DPH = Plná DPH</p>
+<p>Pro tyto kombinace musí být nastaveno (kromě jiného):</p>
+<ul>
+<li>„Účet opravy neodčitatelné DPH“ – použije se jako protiúčet běžného nákupního účtu DPH při přeúčtování krácení odpočtu DPH koeficientem.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Nastavené kombinace DPH účto skupin s Typem výpočtu DPH = Plná DPH nevstupují do výkazu DPH.</p>
+</div>
+<p><img src="media/setup_vat.png" alt="Nastavení účtování DHP"></p>
+<h3 id="nastavení-zálohového-koeficientu">Nastavení zálohového koeficientu</h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení financí</strong> a poté vyberte související odkaz.</li>
+<li>V poli Zálohový koeficient DPH&quot; na záložce DPH nastavte hodnotu procenta platného pro aktuální účetní období.</li>
+</ol>
+<h2 id="nastavení-registrace-k-dph-ve-více-zemích">Nastavení registrace k DPH ve více zemích</h2>
+<h3 id="více-dič-zákazníků">Více DIČ zákazníků</h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Zákazníci</strong> a poté vyberte související odkaz.</li>
+<li>Vyberte akci  Země/oblasti registrace.</li>
+<li>Zadejte kód země a DIČ pro vybraného zákazníka.</li>
+<li>Dále doplňte DPH obch. účtoskupinu, která se má použít v případě prodeje zákazníkovi do této země.</li>
+</ol>
+<h3 id="více-dič-dodavatelů">Více DIČ dodavatelů</h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Dodavatelé</strong> a poté vyberte související odkaz.</li>
+<li>Vyberte akci Země/oblasti registrace (Související -&gt; Dodavatel).</li>
+<li>Zadejte kód země a DIČ pro vybraného dodavatele.</li>
+<li>Dále doplňte DPH obch. účtoskupinu, která se má použít v případě nákupu z této země dodatatele.</li>
+</ol>
+<h3 id="více-registrací-k-dph">Více registrací k DPH</h3>
+<p>Základní nastavení spočívá v evidenci registrací k DPH v jednotlivých zemích a nastavení, jak má systém měnit DPH účtoskupiny v dokladech pro správné zpracování položek DPH při uzavírání DPH a pro správnou tvorbu podkladů (nejčastěji pro účetní kanceláře v daných zemích).</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Informace o společnosti</strong> a poté vyberte související odkaz.</li>
+<li>Vyberte akci Země/oblasti registrace.</li>
+<li>Na stránce Země/oblasti registrace zadejte kód země a DIČ společnosti registrované v této zemi. Pro vytvořený záznam doplňte Kód měny (místní) určující měnu, ve které se podává přiznání k DPH ve vybrané zemi.</li>
+<li>Zavřete stránce Země/oblasti registrace.</li>
+<li>Vyberte akci Směry registrace Země/oblasti.</li>
+<li>Na stránce Směry registrace Země/oblasti definujte, jak má systém nahrazovat DPH obch.účtoskupiny na dokladech.</li>
+</ol>
+<p>V případě používání jiné měny než lokální v zemi registrace, je nutné udržovat kursy mezi měnou dokladu a lokální měnou země registrace.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Měny</strong> a poté vyberte související odkaz.</li>
+<li>Vyberte akci Směnné kursy země/oblasti registrace.</li>
+<li>Zadejte datum a směnný kurs.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Systém neobsahuje funkcionalitu pro import směnných kursů země/oblasti registrace.</p>
+</div>
+<h3 id="oss--eu-režim">OSS – EU režim</h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení financí</strong> a poté vyberte související odkaz.</li>
+<li>V poli Registrace OSS – EU na záložce DPH potvrďte, že je vaše firma registrována pro režim OSS.</li>
+<li>V poli Kód měny pro OSS na záložce DPH vyberte kód měnu odpovídající měně Euro.</li>
+<li>Vyberte akci Nastavení DPH pro OSS (Související -&gt; DPH účtování).</li>
+<li>Na stránce Nastavení DPH pro OSS zadejte DPH obch.účtoskupinu pro kombinaci zemí zahájení a ukončení přepravy a zvolte, jestli pro tuto kombinaci má být doklad označen jako OSS.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Kombinace s příznakem OSS = Ne je nutné definovat pro případy, kdy se v praxi objeví potřeba vypnout na prodejním dokladu režim OSS.</p>
+</div>
+<h2 id="nastavení-účtování-přeplatků-nákupních-záloh">Nastavení účtování přeplatků nákupních záloh</h2>
+<p>Popsaná automatizace při účtování finální faktury se zapíná v Nastavení účtování DPH pro vybrané kombinace účtoskupin. Pokud je toto chování vhodné pouze pro některé případy, je třeba pro ně míst vydefinované zvláštní DPH účtoskupiny (zboží).</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení účtování DPH</strong> a poté vyberte související odkaz.</li>
+</ol>
+<p>Na stránce Nastavení účtování DPH vyhledejte záznam pro který chcete zapnout a zvolte funkci Úpravy.</p>
+<p>Nastavte příznak v poli Určeno pro vrácení zálohy na záložce Zálohy.</p>
+<h2 id="viz-také">Viz také</h2>
+<p><a href="controling-basic.html">Sada rozšíření pro Finance</a><br>
+<a href="finance-pack.html">Financial Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/FinancialPack/controling-basic-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>V t&#233;to sekci</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Zpět na začátek</a>
+            </span>
+            
+            <span><a href="https://muj.autocont.cz/docs/en-us/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

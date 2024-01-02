@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AC - Financial pack -  Multiple payments | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="AC - Financial pack -  Multiple payments | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="více-způsobu-plateb">Více způsobu plateb</h1>
+
+<blockquote>
+<p>Aktualizace 01.04.2022</p>
+</blockquote>
+<p>Addon <strong>Více způsobů plateb</strong> rozšiřuje standard prodejních dokladů v oblasti vyrovnání dokladu přímo při účtování.
+Na dokladech prodejní faktura či prodejní dobropis je namísto jednoho způsobu platby je nově možné definovat více způsobů, typicky část úhrady platební kartou a část v hotovosti.</p>
+<p>Funkcionalita rozšiřuje možnosti nastavení pravidel uživatelům i v případě použití jednoho způsobu platby, a to jak na prodejních tak i nákupních dokladech. Cílem je omezení chybovosti uživatelů prostřednictvím jejich přiřazení k určitým „pokladním místům“.
+V praxi se ale stává, že zákazník chce uhradit na místě v hotovosti doklad, který měl být uhrazen bankovním převodem. Pak je možné využít i funkčnost modulu a definovat kombinaci úhrady na zaúčtované faktuře (dobropisu) či na vystavené záloze.
+Pro evidenci protiúčtu vyrovnání je možné používat všechny tři možnosti protiúčtů, které obsahuje lokalizace (Finanční účet, Bankovní účet, Pokladna). Nejběžnější je však <strong>použití Pokladny jako protiúčtu</strong>, které umožňuje kombinovat použití Více způsobů plateb a Pokladních dokladů a přináší s sebou výhody v oblasti zaokrouhlování (je automaticky řešeno až na pokladním dokladu).</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Modul tvoří základ pro podporu maloobchodního prodeje formou Cash&amp;Carry. Funkcionalita není dostupná na objednávkách (obecně na prodejních/nákupních dokladech, kde je možná částečná fakturace). Pokud si ji na tyto doklady přidáte, pak si musíte ošetřit programově či metodicky potenciálně konfliktní stavy.
+Možnost definice více způsobů plateb není standardně k dispozici na žádném nákupním dokladu, ale je možné je tam doplnit v rámci zákaznického rozšíření funkcionality.</p>
+</div>
+<h2 id="účtování-prodejní-faktury-s-více-způsoby-úhrady">Účtování prodejní faktury s více způsoby úhrady</h2>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Prodejní faktury</strong> a poté vyberte související odkaz.</li>
+<li>Vytvořte novou prodejní fakturu dle vašich zvyklostí.</li>
+<li>Na stránce <strong>Prodejní faktura</strong> spusťte akci <strong>Vydat</strong> a poté spusťte funkci <strong>Rozpis platby</strong>.</li>
+<li>Zadejte částku v hotovosti, kterou jste obdrželi od zákazníka.</li>
+<li>V dalším kroku zadejte do řádků další způsoby úhrady a částku hrazenou daným způsobem.</li>
+<li>V poli Vrátit hotovost (LM) zjistěte částku, jakou máte zákazníkovi vrátit.</li>
+<li>Tlačítkem <strong>OK</strong> zavřete stránku.</li>
+<li>Na stránce Prodejní faktura spusťte funkci Účtovat.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Pokud nezadáte částku v hotovosti, musíte v řádcích zadat částky přesně do výše částky dokladu (tedy tak, aby v poli Zůstatek byla hodnota nula).</p>
+</div>
+<p><img src="media/multiple_payment_methods_payment.png" alt="Rozpis platby"></p>
+<h2 id="dodatečná-úhrada-zaúčtované-prodejní-faktury">Dodatečná úhrada zaúčtované prodejní faktury</h2>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Účtované prodejní faktury</strong> a poté vyberte související odkaz.</li>
+<li>Najděte příslušný doklad a otevřete jeho kartu.</li>
+<li>Na stránce Účtovaná prodejní faktura spusťte funkci <strong>Rozpis platby</strong>.</li>
+<li>Zadejte částku v hotovosti, kterou jste obdrželi od zákazníka.</li>
+<li>V dalším kroku zadejte do řádků další způsoby úhrady a částku hrazenou daným způsobem.</li>
+<li>V poli Vrátit hotovost (LM) zjistěte částku, jakou máte zákazníkovi vrátit.</li>
+<li>Na stránce Rozpis platby spusťte funkci Účtovat pro zaúčtování jedné či více vyrovnávacích položek (typicky pokladních dokladů).</li>
+<li>Tlačítkem <strong>OK</strong> zavřete stránku.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Obdobný postup lze použít na stránce Účtovaný prodejní dobropis.
+Je-li doklad nezaokrouhlený, zaokrouhlení částky hotovosti k vrácení probíhá až při účtování vyrovnání prostřednictvím nastaveného zaokrouhlení ve funkcionalitě Pokladní doklady.</p>
+</div>
+<h2 id="evidence-úhrady--zjednodušený-režim">Evidence úhrady – zjednodušený režim</h2>
+<p>V případě, že zákazník chce provést vyrovnání dokladu při účtování pouze jedním způsobem, např. bankovní kartou, lze použít zjednodušený režim zadáním vybraného Kódu způsobu platby přímo v hlavičce dokladu.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Prodejní faktury</strong> a poté vyberte související odkaz.</li>
+<li>Najděte příslušný doklad a otevřete jeho kartu.</li>
+<li>Na stránce Prodejní faktura vyberte v poli <strong>Kód způsobu platby</strong> odpovídající hodnotu.</li>
+<li>Na stránce Prodejní faktura spusťte funkci Účtovat.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Obdobný postup lze použít na stránce Účtovaný prodejní dobropis.</p>
+</div>
+<h2 id="evidence-úhrady--zjednodušený-režim-se-záměnou-způsobu-platby">Evidence úhrady – zjednodušený režim se záměnou Způsobu platby</h2>
+<p>Poměrně běžnou praxí je, že na kartách zákazníků je definován preferovaný či povolený způsob platby (typicky úhrada v hotovosti). Když je ale takových kódů (z důvodů požadavků na evidenci) více, je třeba zajistit zaúčtování dokladu s kódem příslušným uživateli, který doklad účtuje. V případě zapnutého Kontrola způsobu platby na prod.dokl. provede změnu systém automaticky (viz <a href="http://muj.autocont.cz/docs/cs-cz/d365businesscentral/FinancialPack/multiple-payment-methods-setup.html#nastaven%C3%AD-zp%C5%AFsob%C5%AF-platby">Nastavení způsobů platby</a>).</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení více způsobů plateb</strong> a poté vyberte související odkaz.</li>
+<li>Ověřte, že je zapnuta volba <strong>Kontrola způsobu platby na prod.dokl</strong>.</li>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení uživatelů</strong> a poté vyberte související odkaz.</li>
+<li>Ověřte, že je na přihlášeném uživateli nastaven <strong>Kód platebního místa</strong>.</li>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Zákazníci</strong> a poté vyberte související odkaz.</li>
+<li>Najděte příslušného zákazníka a otevřete jeho kartu.</li>
+<li>V poli <strong>Kód způsobu platby</strong> nastavte způsob, který má nastavenu hodnotu Hotovost ve sloupci Typ operace pokladny, ale který nemá definovaný <strong>Kód platebního místa</strong> (viz „Hotově“ dle obrázku v <strong>Nastavení způsobů platby</strong>)</li>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Prodejní faktury</strong> a poté vyberte související odkaz.</li>
+<li>Spuštěním akce Nový vytvořte nový doklad.</li>
+<li>Na stránce Prodejní faktura zadejte zákazníka (viz výše)</li>
+<li>Zadejte alespoň jeden řádek faktury.</li>
+<li>Na stránce Prodejní faktura spusťte funkci Vydat.</li>
+</ol>
+<h2 id="evidence-eet-přímo-z-rozpisu-platby">Evidence EET přímo z rozpisu platby</h2>
+<p>V některých případech je požadováno vytvoření evidence EET (legislativa v ČR) již na rozpisu platby, tedy ještě před zaúčtováním dokladu (např. pro tisk podkladů pro realizaci dobírky, apod.).</p>
+<p>V případě zapnutého Povolit registraci EET je na rozpisu platby dostupná akce Registrovat EET, resp. Storno EET (viz <a href="http://muj.autocont.cz/docs/cs-cz/d365businesscentral/FinancialPack/multiple-payment-methods-setup.html#nastaven%C3%AD-zp%C5%AFsob%C5%AF-platby">Nastavení způsobů platby</a>).</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení více způsobů plateb</strong> a poté vyberte související odkaz.</li>
+<li>Ověřte, že je zapnuta volba Povolit registraci EET.</li>
+<li>Vytvořte novou prodejní fakturu dle vašich zvyklostí.</li>
+<li>Na stránce Prodejní faktura spusťte akci Vydat a poté spusťte funkci Rozpis platby.</li>
+<li>Zadejte částku v hotovosti, kterou jste obdrželi od zákazníka.</li>
+<li>V dalším kroku zadejte do řádků další způsoby úhrady a částku hrazenou daným způsobem.</li>
+<li>Spusťte akci Registrovat EET.</li>
+<li>Tlačítkem <strong>OK</strong> zavřete stránku.</li>
+</ol>
+<h2 id="viz-také">Viz také</h2>
+<p><a href="multiple-payment-methods-setup.html">Nastavení - Více způsobu plateb</a><br>
+<a href="finance-pack.html">Financial Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/FinancialPack/multiple-payment-methods.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>V t&#233;to sekci</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Zpět na začátek</a>
+            </span>
+            
+            <span><a href="https://muj.autocont.cz/docs/en-us/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

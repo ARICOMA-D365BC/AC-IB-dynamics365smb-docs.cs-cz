@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AC - Financial pack -  Multiple payments | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="AC - Financial pack -  Multiple payments | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="více-způsobu-plateb---nastavení">Více způsobu plateb - nastavení</h1>
+
+<blockquote>
+<p>Aktualizace 01.04.2022</p>
+</blockquote>
+<p>Před tím, než budete moci používat funkcionality více způsobů plateb ve vašich obchodních procesech, musíte provést základní nastavení modulu. Jedná se o číselníky:</p>
+<ul>
+<li>Způsoby platby</li>
+<li>Platební místa</li>
+<li>Nastavení uživatelů</li>
+</ul>
+<h2 id="nastavení-způsobů-platby">Nastavení Způsobů platby</h2>
+<p>V seznamu Způsoby plateb vytvořte kódy reprezentující používané způsoby plateb (např. hotovost, karta, stravenky,… dle platné legislativy a dle očekávaného rozsahu použití ve firmě) tak, aby bylo možné následně definovat úhradu zákazníkem v požadované struktuře.</p>
+<p>Existuje-li ve firmě více přepážek či poboček, je obvyklé evidovat operace na těchto místech odděleně. V takovém případě je třeba vydefinovat pro každý způsob úhrady i příslušný počet protiúčtů. Protiúčtem může být finanční účet či bankovní účet, nicméně nejčastěji se používá karta pokladny.</p>
+<p>Dále je třeba definovat <em>Typ pokladní operace</em> pro další kontrolní mechanismy funkcionality. Vždy musí existovat řádek s typem „Hotovost“, který systém použije při zadání přijaté částky v hotovosti pro vytvoření řádku rozpisu plateb.</p>
+<p>Při ručním vytváření řádků Rozpisu platby je Kód způsobu platby filtrován dle Kódu platebního místa přiřazeného uživateli (viz dále).</p>
+<p><img src="media/multiple_payment_methonds_overview.png" alt="Způsoby plateb"></p>
+<h2 id="nastavení-platebních-míst">Nastavení platebních míst</h2>
+<p>Pokud si firma vydefinuje způsoby plateb s více pokladnami, může být pro ni výhodné pojmenovat si jednotlivá fyzická pokladní místa a definovat uživatele, které na nich pracují.</p>
+<p>V seznamu Platební místa si vydefinujte všechna místa, kde mohou zákazníci hradit své závazky vůči vaší firmě.</p>
+<p>V seznamu Nastavení uživatelů přiřaďte vybraným uživatelům obsluhujícím zákazníky příslušný kód platebního místa. Tímto přiřazením docílíte usměrňování chování uživatelů s cílem zamezit chybám z nepozornosti. <strong>Viz: Přiřazení způsobů plateb k uživatelům.</strong></p>
+<p>Přiřazením Kódu platebního místa na způsobu platby docílíte větší kontroly uživatelů, aby nebylo možné omylem provést úhradu vůči protiúčtu, který není uživateli přiřazen.</p>
+<h2 id="nastavení-více-způsobů-plateb">Nastavení Více způsobů plateb</h2>
+<p>Popis jednotlivých parametrů:</p>
+<ul>
+<li><strong>Povolit více typů hotovosti</strong> – dovolí definovat více způsobů plateb se stejným typem pokladní operace a pro stejné platební místo. Je nutné, pokud chcete např. umožnit přijímat i cizí měnu na pokladních místech.</li>
+<li><strong>Kontrola způsobu platby na prod.dokl.</strong> – tímto lze nastavit, aby systém při akci Vydání na prodejním dokladu kontroloval, je-li použit odpovídající Způsob platby (tedy s přiřazeným Platebním místem stejným jako má nastaven uživatel, který akci Vydání spustil). Pokud je vše správně nastaveno, systém změní Způsob platby na dokladu, v opačném případě systém zobrazí chybové hlášení.</li>
+<li><strong>Kontrola způsobu platby na nák.dokl.</strong> – dtto, ale pro nákupní doklady.</li>
+<li><strong>Povolit registraci EET</strong> – zapíná kontrolu, že v řádcích Rozpisu platby lze použít pouze takové, které mají nastaven sloupec Kód platebního zařízení EET.</li>
+<li><strong>Kontrolovat fiskální tiskárnu</strong> – tímto nastavením se zapíná vynucení použití funkcionality integrace s tzv. Fiskálními tiskárnami, jejich použití je povinné v legislativním prostředí Slovenské republiky (viz <a href="https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/FinancialPack/fiscal-printers.html">Fiskální tiskárny</a>).</li>
+</ul>
+<p>Na záložce Číslování lze nastavit číselnou řadu pro doklady platby. Tato se použije pouze v případě, že použijete způsob platby s jiným protiúčtem než Pokladna (pokladny mají vlastní číselné řady viz <a href="https://docs.microsoft.com/cs-cz/dynamics365/business-central/localfunctionality/czech/ui-extensions-cash-desk-localization-cz#nastaven%C3%AD-%C4%8D%C3%ADseln%C3%BDch-%C5%99ad-pro-p%C5%99%C3%ADjmov%C3%A9-a-v%C3%BDdajov%C3%A9-doklady">Nastavení číselných řad pro příjmové a výdajové doklady</a>).</p>
+<h2 id="přiřazení-způsobů-plateb-k-uživatelům">Přiřazení způsobů plateb k uživatelům</h2>
+<p>Z důvodů lepší kontroly nakládání s hotovostí či ceninami je obvykle požadována samostatná evidence pro každého uživatele. Aby se omezila chybovost, je možné každému uživateli přiřadit jeho vlastní Kód platebního místa.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení uživatelů</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Nastavení uživatelů vyberte ve sloupci Kód platebního místa požadovanou hodnotu.</li>
+</ol>
+<h2 id="viz-také">Viz také</h2>
+<p><a href="multiple-payment-methods.html">Více způsobu plateb</a><br>
+<a href="finance-pack.html">Financial Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/FinancialPack/multiple-payment-methods-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>V t&#233;to sekci</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Zpět na začátek</a>
+            </span>
+            
+            <span><a href="https://muj.autocont.cz/docs/en-us/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

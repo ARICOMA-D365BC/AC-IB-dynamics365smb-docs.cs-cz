@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ARICOMA SOLUTIONS - Parcels - Balikobot integration - setup | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ARICOMA SOLUTIONS - Parcels - Balikobot integration - setup | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="nastavení---parcels---integrace-balíkobot">Nastavení - Parcels - Integrace Balíkobot</h1>
+
+<blockquote>
+<p>Aktualizace: 08.03.2022</p>
+</blockquote>
+<p>Pro správné fungování addonu Zásilek je zapotřebí nastavit několik oblastí. Addon se prvotně nastavuje pomocí průvodce a poté je možné nastavení měnit ručně.</p>
+<h2 id="oblasti-nastavení-addonu">Oblasti nastavení addonu:</h2>
+<ul>
+<li>Číselná řada</li>
+<li>Expediční místa</li>
+<li>Nastavení Zásilek</li>
+<li>Přepravce</li>
+<li>Nastavení lokací</li>
+<li>Parametry zásilky</li>
+<li>Nastavení tisku</li>
+<li>Nastavení způsobu platby (dobírka)</li>
+<li>Automatické aktualizace</li>
+<li>Nastavení v Sandboxovém prostředí</li>
+</ul>
+<p>Ostatní číselníky (Služby přepravce, Manipulační jednotky a Pobočky přepravce) si addon stahuje z API Balíkobotu.</p>
+<h2 id="nastavení-parcels-pomocí-průvodce">Nastavení Parcels pomocí průvodce</h2>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Asistovaná nastavení</strong> a poté vyberte související odkaz.</li>
+<li>Vyberte Nastavení zásilek.</li>
+<li>Po přečtení instrukcí klikněte na tlačítko <strong>Další</strong>.</li>
+<li>Pokud chcete, můžete importovat RapidStart balíček ručně, nebo můžete kliknout na <strong>Další a balíček se stáhne a importuje sám</strong>.</li>
+<li>V dalším kroku vytvořte nové expediční místo pomocí tlačítka <strong>Nový</strong> a vyplňte pole:
+<ul>
+<li>Kód</li>
+<li>Uživatelské jméno</li>
+<li>Heslo</li>
+</ul>
+</li>
+<li>Můžete také vyplnit dodatečné informace:
+<ul>
+<li>Popis</li>
+<li>Jméno</li>
+<li>Adresa</li>
+<li>Město</li>
+<li>PSČ</li>
+</ul>
+</li>
+<li>V poli <strong>Expediční místo</strong> vyberte nově vytvořený záznam.</li>
+<li>V dalším kroku vyberte lokaci, vytvořené expediční místo, a klikněte na další.</li>
+<li>Vytvořte nového přepravce pomocí polí:
+<ul>
+<li>Kód</li>
+<li>Jméno</li>
+<li>Integrační služby: Balíkobot.cz</li>
+<li>Kód balíkobot</li>
+<li>Povolit více balíků - ANO</li>
+<li>Synchronizace master dat - ANO</li>
+</ul>
+</li>
+<li>Vyberte funkci <strong>Synchronizovat master data</strong>.</li>
+<li>Do pole Číselná řada vyberte patřičnou číselnou řadu pro zásilky.</li>
+<li>Jakmile vše vyplníte a kliknete na <strong>Dokončit</strong>, asistovaný průvodce se zavře a začnou se synchronizovat master data.</li>
+</ol>
+<h2 id="ruční-úprava-nastavení">Ruční úprava nastavení</h2>
+<h3 id="expediční-místa">Expediční místa</h3>
+<p>Expediční místo je místo Vašeho skladu, odkud jsou expedovány zásilky. Uživatel může mít několik expedičních míst. Pro každé expediční místo je nutné jiné API, dále je expediční místo spojeno s jednou lokací Vaší společnosti.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Expediční místa</strong> a poté vyberte související odkaz.</li>
+<li>Na přehledu vyberte funkci <strong>Nový</strong></li>
+<li>Zadejte <strong>Kód</strong> pro expediční místo, popis, adresu a <strong>Název uživatele a heslo</strong> k Vašemu API</li>
+<li>Zavřete přehled expedičních míst pomocí OK</li>
+</ol>
+<p><img src="media/BB_exp_pl.png" alt="Nastavení Parcels"></p>
+<h3 id="nastavení-lokací">Nastavení lokací</h3>
+<p>Na kartě dané lokace je potřeba vybrat expediční místo, které je spjaté s daným API. Pokud bude více lokací, je nutné na každé nastavit příslušné expediční místo. Toto slouží k omezení chybovosti uživatelů, aby nemohli spojit do zásilky doklady s různými expedičními místy.</p>
+<p>Pro přiřazení expedičního místa lokaci je zapotřebí nastavit <strong>Kód Expedičního místa</strong>.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Lokace</strong> a poté vyberte související odkaz.</li>
+<li>Otevřete kartu požadované lokace</li>
+<li>Vyplňte pole <strong>Kód expedičního místa</strong> v záložce Obecné</li>
+</ol>
+<p><img src="media/BB_lokace.png" alt="Nastavení Parcels"></p>
+<h3 id="nastavení-zásilek">Nastavení Zásilek</h3>
+<p>Základní nastavení Balíkobotu je nutné provést na stránce <strong>Nastavení Zásilek</strong>.
+<img src="media/BB_setup.png" alt="Nastavení Parcels"></p>
+<p>Okno nastavení Zásilek obsahuje:</p>
+<ul>
+<li><strong>Čísla zásilek</strong> - Číselná řada pro zásilky.</li>
+<li><strong>Kód výchozího expedičního místa</strong> - Výchozí expediční místo, odkud budou odváženy zásilky (viz další kapitola)</li>
+<li><strong>Tisk předávacích protokolů svozu</strong> – Automatický tisk předávacích protokolů po objednání svozu</li>
+<li><strong>Výchozí název tiskárny</strong> – Určuje tiskárnu štítků</li>
+<li><strong>Mezní doba odezvy</strong> – Určuje dobu timeoutu komunikace v jednotlivé zprávě</li>
+<li><strong>Povolen protokol aktivity</strong> - Spuštění sledování logu aktivity</li>
+<li><strong>Režim ladění</strong> – Umožňuje odchytávání zpráv v komunikaci s danou službou</li>
+<li><strong>Automatická synchronizace master dat</strong> - Spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje všechna data ze strany Balíkobotu.</li>
+<li><strong>Automatická aktualizace stavu přepravy</strong> - Spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje stav přepravy zásilek za poslední měsíc.</li>
+</ul>
+<p>Základní nastavení se provede pomocí průvodce nastavení aplikace.
+Ostatní tabulky se stahují a plní po zapnutí synchronizace master dat.
+Aktualizace těchto dat probíhá ručně pomocí funkce „Resynchronizace master dat“.</p>
+<h4 id="základní-nastavení-parcels---integrace-balíkobot">Základní nastavení Parcels - Integrace Balíkobot</h4>
+<p>Pro spuštění funkcí Balíkobotu je potřeba provést nastavení:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení Zásilek</strong> a poté vyberte související odkaz.</li>
+<li>Vyberte číselnou řadu pro zásilky</li>
+<li>Vyberte kód výchozího expedičního místa</li>
+<li>Povolte nebo zakažte automatický tisk protokolů svozu</li>
+<li>Povolte nebo zakažte Protokol aktivity</li>
+</ol>
+<h3 id="nastavení-přepravců">Nastavení přepravců</h3>
+<p>Základní číselník se nahrává pomocí RapidStart balíčku pro Business Central. Tento balíček obsahuje data, která se nestahují z API Balíkobotu:</p>
+<h4 id="tabulka-přepravců">Tabulka přepravců</h4>
+<p>Ostatní tabulky se stahují a plní po synchronizaci master dat a v tabulce přepravců.
+Aktualizace těchto dat probíhá ručně pomocí funkce „Resynchronizace master dat“.
+<img src="media/BB_shipping-agents.png" alt="Nastavení Balíkobotu"></p>
+<p>Přehled obsahuje i dopravce, které nemáte u Balíkobotu nakonfigurované. Pro takové se neprovádí import dalších dat (viz dále).</p>
+<h3 id="na-přehledu-přepravců-je-několik-polí-k-nastavení">Na přehledu přepravců je několik polí k nastavení:</h3>
+<ul>
+<li><strong>Integrační služba</strong> – Určuje, přes jakou integrační službu se přepravce používá (v tomto případě Balikobot.cz)</li>
+<li><strong>Povolení synchronizace master dat</strong> – Po zapnutí se mohou stáhnout master data</li>
+<li><strong>Poslední synchronizace master dat</strong> – Datum poslední synchronizace master dat</li>
+<li><strong>Povoleno pro Balíkobot</strong> - Přepravce je povolen a je možné ho používat</li>
+<li><strong>Povolit více balíků</strong> - Při vytváření zásilky umožní funkce vytvořit více balíků v rámci jedné zásilky</li>
+<li><strong>Paletová přeprava</strong></li>
+<li><strong>Počet manipulačních jednotek</strong> - U paletové přepravy je možnost nastavit více manipulačních jednotek</li>
+<li><strong>Pouze pobočky</strong> – Určuje, že přepravce slouží pouze jako výdejní místo</li>
+<li><strong>Maximální délka adresy</strong> – Nastavuje délku adresy u vybraného přepravce</li>
+</ul>
+<h3 id="funkce-nad-přepravci">Funkce nad přepravci</h3>
+<ul>
+<li><strong>Test spojení</strong> – Test komunikace mezi integrační službou a Business Central</li>
+<li><strong>Synchronizace master dat</strong> – Spustí synchronizaci master dat</li>
+<li><strong>Služby přepravců</strong> - Tabulka služeb jednotlivých přepravců</li>
+<li><strong>Pobočky přepravců</strong> - Tabulka lokalit, kde si mohou zákazníci zboží od přepravce převzít</li>
+<li><strong>Manipulační jednotky</strong> - Tabulka manipulačních jednotek paletové přepravy</li>
+<li><strong>ADR jednotky přepravce</strong> – Tabulka ADR jednotek přepravce</li>
+</ul>
+<p>Pokud přidáte přepravce až poté, co byla provedeno prvotní nastavení pomocí asistovaného nastavení, je nutné správně vyplnit pole:</p>
+<ul>
+<li>Kód</li>
+<li>Adresa URL sledování balíku</li>
+<li>Integrační služba</li>
+<li>Kód Balíkobot</li>
+</ul>
+<p>Poté je nutné použít funkci <strong>Synchronizace master dat</strong>!</p>
+<h3 id="nastavení-služeb-přepravců">Nastavení služeb přepravců</h3>
+<p>Služby přepravců se stahují automaticky pomocí API Balíkobotu. Je možné vynutit určité nastavení pro jednotlivé služby přepravce. Postup pro nastavení :</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přepravci</strong> a poté vyberte související odkaz.</li>
+<li>V seznamu vyberte požadovaného přepravce a zvolte funkci <strong>Služby přepravce</strong></li>
+<li>Na následující stránce vyplňte pole dle potřeby:
+<ul>
+<li><strong>Povoleno pro Balíkobot</strong> - Službu je možné používat (ve výchozím stavu povoleno)</li>
+<li><strong>Vynutit hmotnost zásilky</strong></li>
+<li><strong>Vynutit objem zásilky</strong></li>
+<li><strong>Vynutit cenu zásilky</strong></li>
+<li><strong>Vynutit dobírku zásilky</strong></li>
+<li><strong>Vynutit variabilní symbol zásilky</strong></li>
+<li><strong>Hmotnost na řádku</strong> - Hmotnost musí být vyplněna v řádku zásilky</li>
+<li><strong>Služby ČP</strong> – Pouze pro Českou poštu - dlouhý textový řetězec služeb pošty nad danou zásilkou
+o	<a href="https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf">https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf</a></li>
+</ul>
+</li>
+</ol>
+<h3 id="nastavení-api-balíkobotu">Nastavení API Balíkobotu</h3>
+<p>Tato systémová tabulka umožňuje nastavit rožšířené nastavení přepravců. Jde o nastavení pro API komunikaci, kde je možno u vybraných přepravců vybírat verze komunikací a další.</p>
+<p>Z administrátorského hlediska, je zde možnost nastavit kód přepravce pro komunikaci v případně změn od Balíkobotu (pole API kód přepravce), kdy je název API přepravce delší než 10 znaků. (například DHL Freight EuroConnect, který měl název API &quot;dhlfreight&quot; a nyná využívá &quot;dhlfreightec&quot;)</p>
+<h2 id="parametry-zásilek">Parametry zásilek</h2>
+<p>Parametry pro jednotlivé přepravce jsou stahovány z API balíkobotu.</p>
+<h3 id="nastavení-způsobu-platby---dobírka">Nastavení způsobu platby - Dobírka</h3>
+<p>Pro nastavení a používání funkce zásilka na dobírku je zapotřebí nastavit na způsobu platby boolean <strong>Dobírka</strong>.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Způsob platby</strong> a poté vyberte související odkaz.</li>
+<li>V přehledu zaškrtněte možnost <strong>Dobírka</strong>.</li>
+<li>Zavřete přehled způsobu platby.</li>
+</ol>
+<h2 id="nastavení-tisku">Nastavení tisku</h2>
+<h3 id="pdf-reader">PDF reader</h3>
+<p>Pro tisk štítků je zapotřebí mít nainstalovaný PDF reader. Pro práci se štítky doporučujeme Foxit pdf a také ho mít nastavený jako výchozí program pro PDF soubory.</p>
+<h3 id="výběr-formátu-tisku--klientská-zóna">Výběr formátu tisku – klientská zóna</h3>
+<p>Základním krokem nastavení tisku štítků je definice, jakým způsobem se budou generovat PDF se štítky ze strany Balíkobotu. V klientské zóně (<a href="https://client.balikobot.cz/">https://client.balikobot.cz/</a>) uživatel musí nastavit, zda se bude tisknout ve formátu na celou stránku nebo dle pozic na papíru velikosti A4. Vše záleží na tom, na jaké tiskárně se bude tisknout. Pro tisk na tiskárně pro štítky se nemusí vybírat pozice tisku štítku.</p>
+<h3 id="výběr-tiskárny">Výběr tiskárny</h3>
+<p>Pro nastavení tisku štítku je potřeba nastavit ID sestavy a přidělit uživateli tiskárnu. Funkce tisk štítků je nastavená, aby tiskla na definované tiskárně.</p>
+<p>Nutné pro definice tiskárny:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Výběry tiskáren</strong> a poté vyberte související odkaz.</li>
+<li>Zvolit <strong>Nový</strong>.</li>
+<li>Vyberte ID uživatele, ID sestavy 52068430 a Název tiskárny</li>
+</ol>
+<p>Tisk předávacího protokolu se tiskne automaticky po objednání svozu. Pokud uživatel nechce automatický tisk, stačí v Nastavení Balíkobotu vypnout Boolean - Tisk předávacích protokolů svozu. Tisk se provádí z Výchozí tiskárny dle Vašeho zařízení. Případně, pokud máte nastavenou výchozí tiskárnu ve <strong>Výběry tiskáren</strong>, stejně  jako ostatní Vaše tiskové sestavy.</p>
+<h2 id="automatické-aktualizace">Automatické aktualizace</h2>
+<h3 id="automatická-aktualizace-master-dat">Automatická aktualizace master dat</h3>
+<p>Automatická aktualizace master dat spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje všechna data ze strany Balíkobotu (Ve výchozím stavu v neděli ve 14:00).</p>
+<p>Pro zapnutí této funkce postupujte následujícím způsobem:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení Zásilek</strong> a poté vyberte související odkaz.</li>
+<li>V Nastavení zásilek zapněte &quot;Automatická aktualizace master dat&quot;.</li>
+<li>Uživatel bude vyzván k založení a otevření nové položky fronty úloh, která bude ve stavu &quot;Vyčkávat&quot;.</li>
+<li>Poté je možné nastavení zavřít.</li>
+</ol>
+<h3 id="automatická-aktualizace-stavu-přepravy">Automatická aktualizace stavu přepravy</h3>
+<p>Automatická aktualizace stavu přepravy spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje stav přepravy zásilek za poslední měsíc.</p>
+<p>Pro zapnutí této funkce postupujte následujícím způsobem:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení Zásilek</strong> a poté vyberte související odkaz.</li>
+<li>V Nastavení zásilek zapněte &quot;Automatická aktualizace stavu přepravy&quot;.</li>
+<li>Uživatel bude vyzván k založení a otevření nové položky fronty úloh, která bude ve stavu &quot;Vyčkávat&quot;.</li>
+<li>Poté je možné nastavení zavřít.</li>
+</ol>
+<h2 id="nastavení-v-sandboxovém-prostředí">Nastavení v Sandboxovém prostředí</h2>
+<h3 id="zablokování-modulem-runtime">Zablokování modulem runtime</h3>
+<p>Při asistovaném nastavení add-onu se může zobrazit hláška &quot;<em>Požadavek byl zablokován modulem runtime</em>&quot;.</p>
+<p>Pro vyřešení tohoto problému postupujte následujícím způsobem:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Správa rozšíření</strong> a poté vyberte související odkaz.</li>
+<li>Otevře se stránka <strong>Nainstalovaná rozšíření</strong>.</li>
+<li>Zvolte řádek rozšíření <strong>Parcels</strong> a poté použijte akci <strong>Konfigurace</strong>.</li>
+<li>Na stránce <strong>Konfigurace rozšíření</strong> aktivujte přepínač <strong>Povolit požadavky HttpClient</strong>.</li>
+<li>Poté stránku můžete zavřít a spustit znovu Asistovaného průvodce.</li>
+</ol>
+<h2 id="nastavení-paperless-trade">Nastavení PaperLess Trade</h2>
+<h3 id="zapnutí-paperless-trade-u-přepravce">Zapnutí Paperless Trade u přepravce</h3>
+<p>Paperless Trade slouží k odeslání elektronické faktury (případě pro-forma faktury) pro celní řízení.</p>
+<p>Pro správné nastavení postupujte tímto způsobem:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přepravci</strong> a poté vyberte související odkaz.</li>
+<li>Na přehledu přepravců vyberte přepravce, u kterého chcete službu zapnout.</li>
+<li>Službu zapnete vybráním pole <strong>Paperless Trade</strong>.</li>
+<li>Po nastavení můžete přehled zavřít.</li>
+</ol>
+<h3 id="automatické-připojení-faktury-k-zásilce">Automatické připojení faktury k zásilce</h3>
+<p>Pro správné fungování Paperless Trade musíte k zásilce připojit PDF soubor faktury (pro-forma faktury).</p>
+<p>V případě vytváření zásilky z účtované prodejní faktury je možné vygenerovat doklad a připojit ho automaticky při vytváření zásilky. Pro správné nastavení pokračujte tímto způsobem:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přepravci</strong> a poté vyberte související odkaz.</li>
+<li>Na přehledu přepravců vyberte přepravce, u kterého chcete zapnout automatické vytváření dokladu.</li>
+<li>Automatické vytváření PLT dokladů zapnete vybráním pole <strong>Vytvořit PLT dokument</strong>.</li>
+<li>Po nastavení můžete přehled zavřít.</li>
+</ol>
+<h2 id="viz-také">Viz také</h2>
+<p><a href="parcels.html">Zásilky</a><br>
+<a href="productivity-pack.html">Productivity Pack</a><br>
+<a href="../index.html">ARICOMA řešení</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/ProductivityPack/parcels-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>V t&#233;to sekci</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Zpět na začátek</a>
+            </span>
+            
+            <span><a href="https://muj.autocont.cz/docs/en-us/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

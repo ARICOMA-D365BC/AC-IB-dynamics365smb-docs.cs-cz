@@ -1,7 +1,7 @@
 ---
 title: ARICOMA SOLUTIONS | Microsoft Docs
 description: This section describes ARICOMA Solutions - Addons
-author: ac-kunes
+author: kunes
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
@@ -22,6 +22,6 @@ Moduly a addony pro D365 Business Central pro rozšíření funkcí systému.
  
 
 ## Viz také
-[Financial Pack](AC-FinancialPack/ac-finance-pack.md)  
-[Productivity Pack](AC-ProductivityPack/ac-productivity-pack.md)  
-[SK Legislativní balíček](AC-SK/ac-sk-legislative-pack.md)
+[Financial Pack](FinancialPack/finance-pack.md)  
+[Productivity Pack](ProductivityPack/productivity-pack.md)  
+[SK Legislativní balíček](SK/sk-legislative-pack.md)

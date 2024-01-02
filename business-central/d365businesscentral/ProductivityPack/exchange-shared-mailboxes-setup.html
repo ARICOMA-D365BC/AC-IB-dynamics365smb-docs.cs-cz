@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sd&#237;len&#225; po&#353;tovn&#237; schr&#225;nka Exchange - Nastaven&#237; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Sd&#237;len&#225; po&#353;tovn&#237; schr&#225;nka Exchange - Nastaven&#237; ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="sdílená-poštovní-schránka-exchange---nastavení">Sdílená poštovní schránka Exchange - Nastavení</h1>
+
+<blockquote>
+<p>Aktualizace: 12.04.2023</p>
+</blockquote>
+<p>Nastavení vyčítání e-mailů ze sdílených schránek do IN Bufferu.</p>
+<h2 id="předpoklady">Předpoklady</h2>
+<p>Je nutné mít k dispozici O365 účet s právy &quot;Global Admin&quot; a &quot;Exchange Admin&quot;. Tomuto účtu v následujícím textu říkáme <strong>Administrátorský účet</strong>.</p>
+<p>Dalším účtem se přihlašujeme ke sdílené schránce, tento účet může být již zmíněný administrátorský účet, nebo to může být účet jiný, bez administrátorských práv. Tento účet by se neměl jmenovat po zaměstnanci, ale měl by být neosobní, třeba založený k tomuto účelu, například exchangeBC@domena.cz. Tomuto účtu v textu dále říkáme <strong>Účet schránky</strong>.</p>
+<h2 id="nastavení-schránky">Nastavení Schránky</h2>
+<p>Inspirujeme se návodem od <a href="https://learn.microsoft.com/en-us/dynamics365/business-central/marketing-set-up-email-logging?tabs=new-experience">Micorosoftu</a>. Lze ho nalézt též v Business Centralu na stránku <strong>Asistované nastavení</strong> pod odkazem <strong>Nastavit protokolování e-mailu</strong>.</p>
+<p>Přepněte manuál do nastavení přes sdílené schránky výběrem záložky <strong>New Experience</strong>.</p>
+<p>Podle návodu musíme:</p>
+<ol>
+<li>Založit sdílenou schránku</li>
+<li>Přiřadit ke schránce účet, přes který budeme vyčítat (jak je uvedeno výše, tento účet nemusí být administrátorský)</li>
+</ol>
+<h3 id="založení-sdílené-schránky">Založení sdílené schránky</h3>
+<p>Přihlásíme se do administrátorského centra pro exchange na <a href="https://admin.exchange.microsoft.com/#">tomto odkaze</a>. K tomu použijeme admistrátorský účet.</p>
+<p>Zde v <strong>Recipients/Mailboxes</strong> přidáme sdílenou schránku. Vyplníme Jméno zobrazení, adresu.</p>
+<h3 id="přiřazení-účtu-ke-schránce">Přiřazení účtu ke schránce</h3>
+<p>Poté k nově vniknuvší schránce přiřadíme účet schránky. Tento účet již nemusí mít administrátorská práva.</p>
+<h2 id="nastavení-propojení">Nastavení propojení</h2>
+<p>Dále nastavíme v <a href="https://portal.azure.com/">Azure portále</a> aplikaci, která bude k exchange přistupovat. . Přihlásíme se administrátorským účtem.</p>
+<p>Opět postupujeme podle Microsoft návodu, kapitola o propojení na Azure AD:</p>
+<ol>
+<li><p>Založíme novou registraci aplikace.</p>
+</li>
+<li><p>v <strong>Manage/Authentication</strong> přidáme <em>Redirect URL</em> ve tvaru {adresaslužby}/OAuthLanding.htm, například <em>http://localhost:8080/BC215/OAuthLanding.htm</em>.</p>
+</li>
+<li><p>Pod <strong>API Permissions</strong> přidáme k GRAPH API delegované oprávnění <em>Mail.ReadWrite.Shared</em>. Pak udělíme souhlas správce.</p>
+</li>
+<li><p>Pod <strong>Certificates &amp; Secrets</strong> přidáme nové tajemství, někam si schováme pole <em>value</em>.</p>
+</li>
+<li><p>V přehledu si pak vykopírujeme <em>Application ID</em>.</p>
+</li>
+</ol>
+<h2 id="nastavení-v-bc">Nastavení v BC</h2>
+<p>Na stránce 52068375 <strong>Exchange Mailboxes</strong> jsou následující pole, vyplníme alespoň ta označená tučným fontem:</p>
+<table>
+<thead>
+<tr>
+<th>Název pole</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Code</strong></td>
+<td>Identifikace schránky</td>
+</tr>
+<tr>
+<td><strong>Email Address</strong></td>
+<td>adresa sdílené schránky</td>
+</tr>
+<tr>
+<td><strong>Email Batch Size</strong></td>
+<td>velikost dávky pro zpracování v jednom běhu, výchozí je hodnota 50</td>
+</tr>
+<tr>
+<td>Enabled</td>
+<td>zda je vytěžování této schránky povoleno</td>
+</tr>
+<tr>
+<td><strong>Client Id</strong></td>
+<td>ID klienta (aplikace) tak jak je zobrazeno v registraci aplikace na Azure portále (výše)</td>
+</tr>
+<tr>
+<td><strong>Client Secret Key</strong></td>
+<td>hodnota tajemství, které bylo přidáno k registraci aplikace na Azure portále (výše)</td>
+</tr>
+<tr>
+<td>Redirect URL</td>
+<td>URL přesměrování, které bylo přidáno k registraci aplikace na Azure portále (výše)</td>
+</tr>
+<tr>
+<td>Attachment Filter</td>
+<td>filtr příloh, které se budou vytěžovat (například při hodnotě <strong>@*.pdf</strong> se budou vytěžovat jen soubory PDF)</td>
+</tr>
+<tr>
+<td>Default Task ID</td>
+<td>ID výchozí úlohy, propisuje se do IN Bufferu</td>
+</tr>
+<tr>
+<td>Default Source System ID</td>
+<td>ID výchozího zdrojového systému, propisuje se do IN Bufferu</td>
+</tr>
+<tr>
+<td>SM Template Code</td>
+<td>kód šablony SM</td>
+</tr>
+<tr>
+<td>SM Status Code</td>
+<td>kód statutu SM</td>
+</tr>
+</tbody>
+</table>
+<p>Po vyplnění zaškrtneme pole <strong>Enabled</strong>. Systém nás vyzve k přihlášení administrátorským účtem a poté účtem schránky. Administrátorským účtem potvrzujeme všechna oprávnění, která jsme nastavili aplikaci v Azure portále.</p>
+<p>Nakonec můžeme na stránce akcí <strong>Validate Setup</strong> zkontrolovat, zda je vše správně nastaveno.</p>
+<h3 id="agent">Agent</h3>
+<p>Dále založíme agenta, který bude vlastní vyčítání provádět. Vyplníme následující hodnoty:</p>
+<table>
+<thead>
+<tr>
+<th>Název pole</th>
+<th>Hodnota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Typ</td>
+<td>IN</td>
+</tr>
+<tr>
+<td>Druh komunikace</td>
+<td>E-mail</td>
+</tr>
+<tr>
+<td>Parametr komunikace</td>
+<td>Kód schránky, pole <em>CODE</em> z tabulky výše.</td>
+</tr>
+<tr>
+<td>ID Codeunity agenta</td>
+<td>52068378</td>
+</tr>
+</tbody>
+</table>
+<p>Ostatní pole na agentovi už nejsou nastavením specifická pro tuto funkcionalitu, více informací o agentech naleznete v <a href="spooler-setup.html">Nastavení spooleru</a>.</p>
+<p>Nyní můžeme na stránce schránek spustit akci <strong>Test Run</strong>, která schránku jednou vyčte. Při tom se přílohy z e-mailu založí do IN Bufferu, kde lze podle pole <strong>Batch ID</strong> později dohledat, jestli přišly v růných zprávách. Zároveň se na sdílené složce vytěžená zpráva zarchivuje.</p>
+<p>V IN Bufferu pak lze původní zprávu zobrazit přes akci <strong>Zobrazit přílohu</strong>, případně přílohu stáhnout pomocí <strong>Export dokument</strong>.</p>
+<h2 id="vizte-také">Vizte Také</h2>
+<p><a href="exchange-shared-mailboxes.html">Sdílená poštovní schránka Exchange</a><br>
+<a href="productivity-pack.html">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/ProductivityPack/exchange-shared-mailboxes-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>V t&#233;to sekci</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Zpět na začátek</a>
+            </span>
+            
+            <span><a href="https://muj.autocont.cz/docs/en-us/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
