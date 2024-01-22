@@ -12,37 +12,39 @@ ms.author: v-mapust
 ---
 # Správa atributů
 
-Modul **Správa atributů** je rozšíření pro hromadnou práci s atributy zboží tak, aby uživatel nemusel zadávat atributy zboží u jednotlivých produktů, ale aby mohl je přidat, upravit či smazat pro všechny produkty na jedné stránce.
+Modul **Správa atributů** je rozšíření pro hromadnou práci s atributy zboží tak, aby uživatel nemusel zadávat atributy zboží u jednotlivých produktů, ale aby je mohl přidat, upravit či smazat pro všechny produkty na jedné stránce.
 
-Hlavní stránkou tohoto rozšíření je Správa atributů, ze které vychází celý modul.
+Hlavní stránkou tohoto rozšíření je **Správa atributů**, ze které vychází celý modul.
 
 ## Vytváření nových atributů
 
-1. Na stránce **Správa atributů** vyberte ikonu **Nový**.
-2. Zadejte **Číslo zboží**, **Název atributu** a **Hodnotu atributu**.
-3. Do pole **Akce** se automaticky přidá hodnota **Vytvořit**.
-4. Nyní vyberte ikonu **Zápis dat**.
-
-Pro kontrolu si můžete zobrazit stránku **Zboží** a podívat se do atributů zboží u zboží, pro které jste zadávaly atribut.
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Správa atributů** a poté vyberte související odkaz.
+2. Na stránce **Správa atributů** vyberte ikonu **Nový**.
+3. Zadejte **Číslo zboží**, **Název atributu** a **Hodnotu atributu**.
+4. Do pole **Akce** se automaticky přidá hodnota **Vytvořit**.
+5. Nyní vyberte ikonu **Zápis dat**.
 
 ![Název](media/CreateNew.png)
+
+Pro kontrolu si můžete zobrazit stránku **Zboží** a podívat se do atributů zboží u zboží, pro které jste zadávaly atribut.
 
 ## Úprava existujích atributů
 
 Po vytvoření atributů je možné atributy upravovat nebo je smazat.
 První je ale potřeba existující atributy zobrazit následovně:
 
-1. Na stránce **Správa atributů** vybereme ikonku **Načtení dat** a nyní si můžeme zafiltrovat které atributy zboží chceme načíst podle zboží či názvu atributu.
-2. Po vyfiltrování klikneme na tlačítko **OK**.
-3. Následně si můžeme vyfiltrovat hodnotu atributu a kliknout na tlačítko **OK**. Pokud si hodnotu atributu filtrovat nepřejeme, klikneme na tlačítko **Zrušit**.
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Správa atributů** a poté vyberte související odkaz.
+2. Na stránce **Správa atributů** vyberte ikonu **Načtení dat** a nyní si můžete zafiltrovat které atributy zboží chcete načíst podle zboží či názvu atributu.
+3. Po vyfiltrování klikněte na tlačítko **OK**.
+4. Následně si můžete vyfiltrovat hodnotu atributu a kliknout na tlačítko **OK**. Pokud si hodnotu atributu filtrovat nepřejete, klikněte na tlačítko **Zrušit**.
 
 ![Název](media/FilterAttributes.png)
 
-Zobrazená data můžeme libovolně upravovat. Pokud si přejeme u daného atributu zboží změnit hodnotu, změníme hodnotu v poli **Hodnota atributu** a systém automaticky změní hodnotu pole akce na **Upravit**. Pokud si přejeme daný atribut smazat, změníme hodnotu pole akce na **Smazat**. Jakmile máme všechny úpravy provedené, vybereme ikonku **Zápis dat** čímž změny aplikujeme na data u zboží.
+Zobrazená data můžete libovolně upravovat. Pokud si přejete u daného atributu zboží změnit hodnotu, změníte hodnotu v poli **Hodnota atributu** a systém automaticky změní hodnotu pole akce na **Upravit**. Pokud si přejete daný atribut smazat, změníte hodnotu pole akce na **Smazat**. Jakmile máte všechny úpravy provedené, vyberete ikonku **Zápis dat** čímž změny aplikujete na data u zboží.
 
 ![Název](media/Changes.png)
 
-Pokud si přejeme hromadně smazat několik atributů zboží, klikneme u jednoho ze záznamů na **Tři tečky** a klikneme na tlačítko **Vybrat více**. To nám umožní vybrat více záznamů kliknutím na **Kroužek** před požadovaným záznamem. Jakmile máme vybrané všechny požadované záznamy, vybereme ikonku **Nastavit na smazat**, čímž se u vybraných záznamů nastaví hodnota pole akce na **Smazat**. Pro aplikování změn opět vybereme ikonku **Zápis dat**.
+Pokud si přejete hromadně smazat několik atributů zboží, klikněte u jednoho ze záznamů na **Tři tečky** a klikněte na tlačítko **Vybrat více**. To Vám umožní vybrat více záznamů kliknutím na **Kroužek** před požadovaným záznamem. Jakmile máte vybrané všechny požadované záznamy, vyberete ikonku **Nastavit na smazat**, čímž se u vybraných záznamů nastaví hodnota pole akce na **Smazat**. Pro aplikování změn opět vyberete ikonku **Zápis dat**.
 
 ![Název](media/SetToDelete.png)
 
@@ -54,7 +56,7 @@ Podle předchozí části si opět můžete vyfiltrovat a načíst data v Busine
 
 ![Název](media/ExcelAttributes.png)
 
-V Excelu si můžete upravit hodnoty podle potřeby a poté kliknout na ikonku **Import dat** v Business Central a vložit zde excelový soubor. Po vložení se zobrazí data v Business Central. Hodnota pole **Akce** bude určena podle hodnoty kterou jste zadali v Excelu. Pokud jste žádnou nezadali, tak se upraví podle změn provedených s daným atributem. Například pokud zadáte číslo zboží a název atributu existujícího atributu zboží, ale zadáte jinou hodnotu atributu než tu, kterou u něj teď je, hodnota pole bude automaticky změněna na hodnotu **Upravit**.
+V Excelu si můžete upravit hodnoty podle potřeby a poté kliknout na ikonku **Import dat** v Business Central a vložit zde excelový soubor. Po vložení se zobrazí data v Business Central. Hodnota pole **Akce** bude určena podle hodnoty, kterou jste zadali v Excelu. Pokud jste žádnou nezadali, tak se upraví podle změn provedených s daným atributem. Například pokud zadáte číslo zboží a název atributu existujícího atributu zboží, ale zadáte jinou hodnotu atributu než tu, která u něj teď je, hodnota pole bude automaticky změněna na hodnotu **Upravit**.
 
 Takto naimportovaná data můžete zkontrolovat a upravit. Po kontrole vyberete ikonku **Zápis dat** a data se propíší ke  zboží.
 
