@@ -40,11 +40,14 @@ První je ale potřeba existující atributy zobrazit následovně:
 
 ![Název](media/FilterAttributes.png)
 
-Zobrazená data můžete libovolně upravovat. Pokud si přejete u daného atributu zboží změnit hodnotu, změníte hodnotu v poli **Hodnota atributu** a systém automaticky změní hodnotu pole akce na **Upravit**. Pokud si přejete daný atribut smazat, změníte hodnotu pole akce na **Smazat**. Jakmile máte všechny úpravy provedené, vyberete ikonku **Zápis dat** čímž změny aplikujete na data u zboží.
+Zobrazená data můžete libovolně upravovat. Pokud si přejete u daného atributu zboží změnit hodnotu, změníte hodnotu v poli **Hodnota atributu** a systém automaticky změní hodnotu pole akce na **Upravit**. Pokud si přejete daný atribut smazat, změníte hodnotu pole akce na **Smazat**. Jakmile máte všechny úpravy provedené, vyberete ikonu **Zápis dat** čímž změny aplikujete na data u zboží.
+
+> [!NOTE]
+> Pokud nevyberete ikonu **Zápis dat**, data zůstanou nezměněna. Načtením dat přes ikonu **Načtení dat** se automaticky přepíšou data již zapsané na stránce a neaplikují se na atributy zboží.
 
 ![Název](media/Changes.png)
 
-Pokud si přejete hromadně smazat několik atributů zboží, klikněte u jednoho ze záznamů na **Tři tečky** a klikněte na tlačítko **Vybrat více**. To Vám umožní vybrat více záznamů kliknutím na **Kroužek** před požadovaným záznamem. Jakmile máte vybrané všechny požadované záznamy, vyberete ikonku **Nastavit na smazat**, čímž se u vybraných záznamů nastaví hodnota pole akce na **Smazat**. Pro aplikování změn opět vyberete ikonku **Zápis dat**.
+Pokud si přejete hromadně smazat několik atributů zboží, klikněte u jednoho ze záznamů na **Tři tečky** a klikněte na tlačítko **Vybrat více**. To Vám umožní vybrat více záznamů kliknutím na **Kroužek** před požadovaným záznamem. Jakmile máte vybrané všechny požadované záznamy, vyberte ikonku **Nastavit na smazat**, čímž se u vybraných záznamů nastaví hodnota pole akce na **Smazat**. Pro aplikování změn opět vyberete ikonku **Zápis dat**.
 
 ![Název](media/SetToDelete.png)
 
@@ -52,13 +55,13 @@ Pokud si přejete hromadně smazat několik atributů zboží, klikněte u jedno
 
 Další možností úpravy atributů je pomocí aplikace Excel.
 
-Podle předchozí části si opět můžete vyfiltrovat a načíst data v Business Central. Tyto data si pomocí ikonky **Export dat** můžete vyexportovat do excelového souboru. Popřípadě můžete dát **Export dat** bez předešlého filtrování a načtení dat pro získání rozložení excelového souboru.
+Podle předchozí části si opět můžete vyfiltrovat a načíst data v Business Central. Tyto data si pomocí ikony **Export dat** můžete vyexportovat do excelového souboru. Popřípadě můžete dát **Export dat** bez předešlého filtrování a načtení dat pro získání rozložení excelového souboru.
 
 ![Název](media/ExcelAttributes.png)
 
-V Excelu si můžete upravit hodnoty podle potřeby a poté kliknout na ikonku **Import dat** v Business Central a vložit zde excelový soubor. Po vložení se zobrazí data v Business Central. Hodnota pole **Akce** bude určena podle hodnoty, kterou jste zadali v Excelu. Pokud jste žádnou nezadali, tak se upraví podle změn provedených s daným atributem. Například pokud zadáte číslo zboží a název atributu existujícího atributu zboží, ale zadáte jinou hodnotu atributu než tu, která u něj teď je, hodnota pole bude automaticky změněna na hodnotu **Upravit**.
+V Excelu si můžete upravit hodnoty podle potřeby a poté kliknout na ikonu **Import dat** v Business Central a vložit zde excelový soubor. Po vložení se zobrazí data v Business Central. Hodnota pole **Akce** bude určena podle hodnoty, kterou jste zadali v Excelu. Pokud jste žádnou nezadali, tak se upraví podle změn provedených s daným atributem. Například pokud zadáte číslo zboží a název atributu existujícího atributu zboží, ale zadáte jinou hodnotu atributu než tu, která u něj teď je, hodnota pole bude automaticky změněna na hodnotu **Upravit**.
 
-Takto naimportovaná data můžete zkontrolovat a upravit. Po kontrole vyberete ikonku **Zápis dat** a data se propíší ke  zboží.
+Takto naimportovaná data můžete zkontrolovat a upravit. Po kontrole vyberte ikonu **Zápis dat** a data se propíší ke  zboží.
 
 ![Název](media/ImportedAttributes.png)
 
