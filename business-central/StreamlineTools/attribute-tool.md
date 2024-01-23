@@ -1,20 +1,15 @@
 ---
-title: Attribute Tool | Microsoft Docs
+title: Attribute Tool
 description: Attribute Tool documents
 author: pustka
 ms.service: dynamics365-business-central
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.search.keywords: Czech, Attribute Tool, additional functions
-ms.author: v-mapust
 ---
 # Správa atributů
 
-Modul **Správa atributů** je rozšíření pro hromadnou práci s atributy zboží tak, aby uživatel nemusel zadávat atributy zboží u jednotlivých produktů, ale aby je mohl přidat, upravit či smazat pro všechny produkty na jedné stránce.
+Modul **Správa atributů** je rozšíření pro hromadnou práci s atributy zboží tak, aby uživatel nemusel zadávat atributy zboží u jednotlivých produktů, ale aby je mohl přidat, upravit či smazat pro všechny produkty na jedné stránce. Součástí nástroje je i export a import atributů do souboru excel
 
-Hlavní stránkou tohoto rozšíření je **Správa atributů**, ze které vychází celý modul.
+Funkcionalita je dostupná na stránce **Správa atributů**, odkud se spouští jednotlivé funkce pro práci s atributy.
 
 ## Vytváření nových atributů
 
@@ -26,7 +21,7 @@ Hlavní stránkou tohoto rozšíření je **Správa atributů**, ze které vych�
 
 ![Název](media/CreateNew.png)
 
-Pro kontrolu si můžete zobrazit stránku **Zboží** a podívat se do atributů zboží u zboží, pro které jste zadávaly atribut.
+Pro kontrolu si můžete zobrazit stránku **Zboží** a pro dané zboží ověřit atributy, které jste zadali.   
 
 ## Úprava existujích atributů
 
