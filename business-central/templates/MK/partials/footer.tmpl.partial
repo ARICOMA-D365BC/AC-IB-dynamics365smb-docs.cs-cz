@@ -8,7 +8,7 @@
         <a href="#top">Zpět na začátek</a>
       </span>
       {{{_appFooter}}}
-      {{^_appFooter}}<span><a href="https://muj.autocont.cz/docs/en-us/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/AC-Solutions/ac-solutions.html"><strong>CZECH</strong></span></span>{{/_appFooter}}
+      {{^_appFooter}}<span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></span></span>{{/_appFooter}}
     </div>
   </div>
 </footer>

@@ -72,3 +72,4 @@
 ## [Daňové odpisy](../SK/sk-tax-depreciation.md)
 # [Streamline Tools](streamlinetools.md)
 ## [Attribute Tool](attribute-tool.md)
+# [Podpora](../support/support.md)
