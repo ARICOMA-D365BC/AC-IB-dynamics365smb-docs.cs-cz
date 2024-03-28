@@ -70,3 +70,6 @@
 ## [Institut nespolehlivosti plátce](sk-unreability-payer.md)
 ## [Odsouhlasení salda](sk-balance-reconciliation.md)
 ## [Daňové odpisy](sk-tax-depreciation.md)
+# [Streamline Tools](../StreamlineTools/streamlinetools.md)
+## [Attribute Tool](../StreamlineTools/attribute-tool.md)
+

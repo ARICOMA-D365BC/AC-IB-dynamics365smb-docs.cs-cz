@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "FinancialPack/TOC.html",
-          "hash": "baVtNUVM2Rj+zKL9FN/pvyVLWrwlfDfqD5A4ihT7TrI="
+          "hash": "CyKGVmaduwJxVe0kstcZzLD4W4kYKWFhbMogZCZXNeM="
         }
       },
       "is_incremental": false,
@@ -24,7 +24,7 @@
           "hash": "8aTPa1LT4Y/gnNh365ZxTApS8MmSkhuB75OClR5JZUg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -36,7 +36,7 @@
           "hash": "W+IvEsfof4zfnqdCRAfvyw0IplzfpEw51nXP4Yk6CdE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -48,7 +48,7 @@
           "hash": "5eET41nLyFq+7mjZRKq4LmTowZHXSnd7nnptkixWHPY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -60,7 +60,7 @@
           "hash": "49Mex49Tdjh2kjcianEciulXg5UcjuS5ZRNADvRM6YA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -72,7 +72,7 @@
           "hash": "T56e+2uaG0CvYUxwKVHbYw6D6CzAGjrEHazuuu15BfI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -84,7 +84,7 @@
           "hash": "yJtsWb+TL38O05k3LRvXhdd9XCWozkdhTdDsvvyL4Hk="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -96,7 +96,7 @@
           "hash": "hFJFm3nlw0N/y6ntS50IeufV5AqzZXbLqC+3M7OtbrY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -108,7 +108,7 @@
           "hash": "f9hOTbC56ZmqcizAORnibHx/XkAOqMjmuHrdAjek3hg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -120,7 +120,7 @@
           "hash": "7fkU6wTKqHdSfuMbmDkEcmguX0nHf8BGtO5lO5LnWvQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -132,7 +132,7 @@
           "hash": "522KmubYdCgj3A1qUj/bg6TIZZmH+Fj3eVXlYNutHGY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -397,7 +397,7 @@
           "hash": "yKydgq/IuS9IDh4M7FvApWMclr9qskMaPltY7gXdkl4="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -409,7 +409,7 @@
           "hash": "PkygSv5pZcJjLcqLo6U9qz5/62fYMUzmdg7F14acysE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -421,7 +421,7 @@
           "hash": "nY/fzPLqiR1+CgukOb1BVlHPT+T2HZL9C75s26v5CPk="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -433,7 +433,7 @@
           "hash": "TKaN3MPqt3U/oR2u9zQaq4jahesTcwN3Nim37bzlhT8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -445,7 +445,7 @@
           "hash": "HwCEfwwU7LDO9wLgrTqG2fsdPJAaNbsWM/my2cvg1jk="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -457,7 +457,7 @@
           "hash": "cOkZTgDc5NNwm/nu4f4XnbOTV460zAzFD6Lx9e8n2r8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -469,7 +469,7 @@
           "hash": "sq5MH5HPsZtrKvNhAzLuhMiSoLFB/dcp249EFtDcO34="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -481,7 +481,7 @@
           "hash": "rKtBWkv7VgA/DEUwcoTG4CsGNhjxF3bmTVu2/a5rGgA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -874,7 +874,7 @@
       "output": {
         ".html": {
           "relative_path": "ProductivityPack/TOC.html",
-          "hash": "LahwGO7in2xUbyxGkEnrwv6uhz4RqOVTZJLhi8c6oEw="
+          "hash": "e1G8MxQS082DmBR7F3fKIgErfb/oNifLDNhlrSzAVUA="
         }
       },
       "is_incremental": false,
@@ -2672,7 +2672,7 @@
       "output": {
         ".html": {
           "relative_path": "SK/TOC.html",
-          "hash": "v7VhRvN52y5WOT9KEtNaGWKLuqh/qoNnbH+evGQOlXM="
+          "hash": "dTGnZ7sFiABION88o64kXhcuqMjbdG8V69rRPw78nns="
         }
       },
       "is_incremental": false,
@@ -5035,7 +5035,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/TOC.html",
-          "hash": "vwv+I01GN/R39KDSScTsFbnjAo8yDf8eaOZ8EBfpXoM="
+          "hash": "6DPtF8bzDXnjdD4l0bsdrDIRnN67MSvwfAN1noNdDUI="
         }
       },
       "is_incremental": false,
@@ -5111,1716 +5111,159 @@
     },
     {
       "type": "Toc",
+      "source_relative_path": "StreamlineTools/TOC.md",
+      "output": {
+        ".html": {
+          "relative_path": "StreamlineTools/TOC.html",
+          "hash": "wl/SC5yMMrW203DxnWryF1rl1/RJQGXfaHCYJScUqso="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "StreamlineTools/attribute-tool.md",
+      "output": {
+        ".html": {
+          "relative_path": "StreamlineTools/attribute-tool.html",
+          "hash": "TdQr3j1slm5fY7NQJFXTDRrDGi35drJtqJoE91/wItY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/Changes.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/Changes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/CreateNew.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/CreateNew.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/ExcelAttributes.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/ExcelAttributes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/FilterAttributes.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/FilterAttributes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/ImportedAttributes.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/ImportedAttributes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/SetToDelete.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/SetToDelete.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "StreamlineTools/media/readme.md",
+      "output": {
+        ".html": {
+          "relative_path": "StreamlineTools/media/readme.html",
+          "hash": "GnoCQ8BVK+ABE2Zo5OOiTohsxZ0dx9P2QDVmHkXip9M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/ui-search/search.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/ui-search/search.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/ui-search/search_small.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/ui-search/search_small.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "StreamlineTools/readme.md",
+      "output": {
+        ".html": {
+          "relative_path": "StreamlineTools/readme.html",
+          "hash": "TNpvWn6g/ZqB41uC9pqKkS0iH2/54kSDw9XrYLal39I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "StreamlineTools/streamlinetools.md",
+      "output": {
+        ".html": {
+          "relative_path": "StreamlineTools/streamlinetools.html",
+          "hash": "L0KWOKBRgYfPitDgfLc5D1+i2oY1aaSFAw2F+EYLQAU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
       "source_relative_path": "TOC.md",
       "output": {
         ".html": {
           "relative_path": "TOC.html",
           "hash": "tZoDiyrjqWE4+BqMjD+vpLGWCuKM1xJnvdmefYyeWJo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/Hierarchical_price_setup.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/Hierarchical_price_setup.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/Insolvence_register.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/Insolvence_register.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/calendar.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/calendar.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/calendar_detail.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/calendar_detail.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/credit_check-setup.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/credit_check-setup.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/credit_check.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/credit_check.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/exchange_rate.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/exchange_rate.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/factoring.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/factoring.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_card.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_card.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_customer_entries.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_customer_entries.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_lines.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_lines.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_reverse.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_reverse.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_setup.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_setup.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_setup_groupes.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_setup_groupes.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_setup_groupes_alt.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/faktoring_setup_groupes_alt.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/fiscal_printers.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/fiscal_printers.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/multiple_payment.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/multiple_payment.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/multiple_payment_methods_payment.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/multiple_payment_methods_payment.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/multiple_payment_methonds_overview.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/multiple_payment_methonds_overview.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/pack_tracking_return_packing.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/pack_tracking_return_packing.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/setup_vat.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/setup_vat.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/ui-search/search.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/ui-search/search.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-FinancialPack/media/ui-search/search_small.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-FinancialPack/media/ui-search/search_small.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_CREATE.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_CREATE.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_Tracking.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_Tracking.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_collect.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_collect.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_exp_pl.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_exp_pl.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_lokace.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_lokace.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_order.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_order.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_parcel_header.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_parcel_header.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_setup.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_setup.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_shipping-agents.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/BB_shipping-agents.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/HD_detail_description.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/HD_detail_description.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/HD_dispatch_board.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/HD_dispatch_board.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/HD_general_setup.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/HD_general_setup.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/HD_request_priorities.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/HD_request_priorities.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/HD_serial_no.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/HD_serial_no.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/HD_sharepoint.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/HD_sharepoint.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-closed_mail.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-closed_mail.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-data_record.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-data_record.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-doc_attached.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-doc_attached.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-doc_create.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-doc_create.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-doc_publish.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-doc_publish.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-incoming-card-mail.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-incoming-card-mail.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-incoming-mail-card.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-incoming-mail-card.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-incoming-mail.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-incoming-mail.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-interaction-template-setup.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-interaction-template-setup.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-interaction-templates.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-interaction-templates.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-layout.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-layout.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-mail-mgt-setup.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-mail-mgt-setup.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-mail-record-templates.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-mail-record-templates.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-mail-records.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-mail-records.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-mail.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-mail.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-navigate.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-navigate.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-no-series.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-no-series.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-order.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-order.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-related_item.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-related_item.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-send_request.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-send_request.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-sheet.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-sheet.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-status-mgt-setup.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/IM-status-mgt-setup.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/Notifications-date_filters.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/Notifications-date_filters.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/Notifications-email.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/Notifications-email.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/Notifications-event_template_card.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/Notifications-event_template_card.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/Notifications-phases.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/Notifications-phases.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/WF_Templates.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/WF_Templates.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/WF_change_status.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/WF_change_status.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/WF_states.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/WF_states.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/WF_states_header.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/WF_states_header.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/WF_states_setup.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/WF_states_setup.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac-document-links-sample.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac-document-links-sample.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac-monetization.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac-monetization.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_elect_dom_set1.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_elect_dom_set1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_PHM.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_PHM.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_codes.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_codes.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_css.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_css.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_driver_zp.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_driver_zp.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_drivercard.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_drivercard.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_main.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_main.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_phm_PHMV.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_phm_PHMV.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_phm_PHM_release.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_phm_PHM_release.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_phm_journal.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_phm_journal.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_planning.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_planning.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_rideorder.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_rideorder.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_rides_journal.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_rides_journal.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_setup.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_setup.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_templateKH.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_templateKH.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_types.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_types.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_vehiclecard.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_vehiclecard.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_vehicles.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_vehicles.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_vehicles_eq.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ac_transport_vehicles_eq.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/bb_parcel_body.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/bb_parcel_body.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaint-fulfilment_methods.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaint-fulfilment_methods.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-causes.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-causes.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-closing.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-closing.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-complaint_list.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-complaint_list.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-creation.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-creation.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-document.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-document.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-documents.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-documents.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-filtered.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-filtered.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-history.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-history.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-line.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-line.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-line_dispatcher.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-line_dispatcher.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-line_pending.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-line_pending.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-no.series.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-no.series.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-notes.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-notes.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-reasons.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-reasons.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-setup.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-setup.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-status_management.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-status_management.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-status_mgt._setup.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-status_mgt._setup.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-status_mgt._statuses.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints-status_mgt._statuses.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/complaints.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/data_boxes.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/data_boxes.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/electronic_documents.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/electronic_documents.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_fa.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_fa.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_list.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_list.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_setup.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_setup.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_templates.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_templates.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_templates_values.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_templates_values.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values_lookup.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values_lookup.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values_translation.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values_translation.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values_translations_value.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/general_parameters_values_translations_value.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/incoming_mail.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/incoming_mail.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/job_queue.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/job_queue.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/nast_bb.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/nast_bb.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/notification.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/notification.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/sharepoint.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/sharepoint.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/spooler-setup.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/spooler-setup.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/tools.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/tools.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/transport_basic.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/transport_basic.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/transport_planing.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/transport_planing.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ui-search/search.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ui-search/search.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/ui-search/search_small.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/ui-search/search_small.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/workflow_status.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/workflow_status.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-ProductivityPack/media/workflow_tables.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-ProductivityPack/media/workflow_tables.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-SK/media/SEPA.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-SK/media/SEPA.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-SK/media/VAT_check_report.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-SK/media/VAT_check_report.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-SK/media/VAT_check_report_section.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-SK/media/VAT_check_report_section.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-SK/media/VAT_statement-template.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-SK/media/VAT_statement-template.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-SK/media/VAT_statement.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-SK/media/VAT_statement.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-SK/media/XML_mapping.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-SK/media/XML_mapping.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-SK/media/ac-sk-intrastat.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-SK/media/ac-sk-intrastat.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-SK/media/account_schedules.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-SK/media/account_schedules.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-SK/media/customer-unreliability-payer.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-SK/media/customer-unreliability-payer.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-SK/media/setup_source_code.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-SK/media/setup_source_code.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-SK/media/ui-search/search.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-SK/media/ui-search/search.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-SK/media/ui-search/search_small.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-SK/media/ui-search/search_small.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-SK/media/unreliability-payer-xml.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-SK/media/unreliability-payer-xml.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-SK/media/unreliability-payer/customer-unreliability-payer.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-SK/media/unreliability-payer/customer-unreliability-payer.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-SK/media/unreliability-payer/unreliability-payer-xml.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-SK/media/unreliability-payer/unreliability-payer-xml.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-Solutions/media/ACD365BC_SaaS.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-Solutions/media/ACD365BC_SaaS.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-Solutions/media/ACD365BC_SaaS_1280x720.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-Solutions/media/ACD365BC_SaaS_1280x720.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-Solutions/media/ui-search/search.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-Solutions/media/ui-search/search.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "d365businesscentral/AC-Solutions/media/ui-search/search_small.png",
-      "output": {
-        "resource": {
-          "relative_path": "d365businesscentral/AC-Solutions/media/ui-search/search_small.png"
         }
       },
       "is_incremental": false,
@@ -8478,6 +6921,94 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/Changes.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/Changes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/CreateNew.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/CreateNew.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/ExcelAttributes.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/ExcelAttributes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/FilterAttributes.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/FilterAttributes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/ImportedAttributes.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/ImportedAttributes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/SetToDelete.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/SetToDelete.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/ui-search/search.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/ui-search/search.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/ui-search/search_small.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/ui-search/search_small.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "d365businesscentral/logo.png",
       "output": {
         "resource": {
@@ -8557,8 +7088,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 286,
-          "skipped_file_count": 286
+          "total_file_count": 290,
+          "skipped_file_count": 289
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
