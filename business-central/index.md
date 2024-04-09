@@ -18,7 +18,7 @@ Moduly a addony pro D365 Business Central pro rozšíření funkcí systému.
 
 - AC Produktivity Pack 
 - Financial Pack
-- SK Legistavie pack
+- SK Legislative pack
  
 
 ## Viz také
