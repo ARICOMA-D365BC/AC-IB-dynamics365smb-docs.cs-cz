@@ -88,11 +88,21 @@ Karta zásilky se skládá celkem z pěti částí.
 V hlavičce dokladu jsou pouze povinné údaje potřebné k založení zásilky, pro zadání dalších údajů, jako jsou rozměry nebo vzkaz řidiči, je nutné využít podokno Parametry zásilky. Každý přepravce a služba přepravce má své specifické parametry, které v případě nevyplnění nahlásí zpráva, která informuje o tom, co za údaj není na zásilce vyplněn.
 ### Řádky zásilky
 Pro definici počtu balíků v rámci jedné zásilky existuje pole „Počet balíků“. Pokud se bude jednat o balíkovou přepravu (NE PALETOVOU), po zadání počtu balíků se vytvoří řádky zásilky, ke kterým budou přiřazeny jednotlivé štítky od dopravce. V případě paletové přepravy bude toto pole určovat množství jedné manipulační jednotky (nevytvoří se několik řádků, ale vznikne jeden řádek a vyplní se množství, např. 3 palety).
+
+### Paramety zásilky
+Každý přepravce může mít specifické doplňkové parametry a možnosti dopravy. 
+Parametry se automaticky synchronizují po aktualizaci master dat. Výběr parametrů pro zásilku je možné přes infopanel na prodejním dokladu, nebo na kartě zásilky v sekci **Parametry zásilky**.
+
+Pro celý seznam dostupých parametrů přepravců, který se synchronizuje z Balíkobotu, bežte:
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení parametrů zásilek** a poté vyberte související odkaz.
+
+Pokud zde nenajdete potřebný parametr, navštivte [dokumentaci](https://balikobot.docs.apiary.io/) Balíkobotu. Pokud ho nenalezne ani zde, je možné, že daný parametr není podporovaný.
+
 ### Další části
 
 |Část|Popis|
 |-|-|
-|**Parametry zásilky**|Volitelné parametry zásilky.|
 |**Připojené doklady**|V podokně připojené doklady je možné vidět všechny dodací listy nebo faktury, které byly vloženy do jedné zásilky (funkční pouze, když se zásilka posílá na jednu adresu). |
 |**Obsah zásilky**|Obsah zásilky je především pro odesílání mimo EU, kdy je nutné udávat informace o tom, co je v zásilce.|
 |**Přílohy zásilky**|Slouží k připojení pdf dokladů k zásilce.|
