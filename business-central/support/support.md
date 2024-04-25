@@ -15,7 +15,9 @@ ms.author: martinkunes
 
 **Aplikace k našim řešením** naleznete na GitHub stránkách [ARICOMA Solutions](https://github.com/ARICOMA-D365BC/ARICOMA-SOLUTIONS).
 
-**Dokumentaci k našim řešením** naleznete na stránkách [ARICOMA Solutions](https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/AC-Solutions/ac-solutions.html).
+**Dokumentaci k našim řešením** naleznete na stránkách [ARICOMA Solutions](https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html).
+
+**Naše aplikace** pro Business Central online naleznete i na [Microsoft Appsource](https://appsource.microsoft.com/cs-cz/marketplace/apps?page=1&search=aricoma&product=dynamics-365-business-central)
 
 ## Kontakty
 
