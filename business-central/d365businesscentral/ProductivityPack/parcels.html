@@ -141,6 +141,14 @@ Pokud na objednávce není vybrán žádný přepravce, kontrola je na vydání 
 <p>V hlavičce dokladu jsou pouze povinné údaje potřebné k založení zásilky, pro zadání dalších údajů, jako jsou rozměry nebo vzkaz řidiči, je nutné využít podokno Parametry zásilky. Každý přepravce a služba přepravce má své specifické parametry, které v případě nevyplnění nahlásí zpráva, která informuje o tom, co za údaj není na zásilce vyplněn.</p>
 <h3 id="řádky-zásilky">Řádky zásilky</h3>
 <p>Pro definici počtu balíků v rámci jedné zásilky existuje pole „Počet balíků“. Pokud se bude jednat o balíkovou přepravu (NE PALETOVOU), po zadání počtu balíků se vytvoří řádky zásilky, ke kterým budou přiřazeny jednotlivé štítky od dopravce. V případě paletové přepravy bude toto pole určovat množství jedné manipulační jednotky (nevytvoří se několik řádků, ale vznikne jeden řádek a vyplní se množství, např. 3 palety).</p>
+<h3 id="paramety-zásilky">Paramety zásilky</h3>
+<p>Každý přepravce může mít specifické doplňkové parametry a možnosti dopravy.
+Parametry se automaticky synchronizují po aktualizaci master dat. Výběr parametrů pro zásilku je možné přes infopanel na prodejním dokladu, nebo na kartě zásilky v sekci <strong>Parametry zásilky</strong>.</p>
+<p>Pro celý seznam dostupých parametrů přepravců, který se synchronizuje z Balíkobotu, bežte:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení parametrů zásilek</strong> a poté vyberte související odkaz.</li>
+</ol>
+<p>Pokud zde nenajdete potřebný parametr, navštivte <a href="https://balikobot.docs.apiary.io/">dokumentaci</a> Balíkobotu. Pokud ho nenalezne ani zde, je možné, že daný parametr není podporovaný.</p>
 <h3 id="další-části">Další části</h3>
 <table>
 <thead>
@@ -150,10 +158,6 @@ Pokud na objednávce není vybrán žádný přepravce, kontrola je na vydání 
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong>Parametry zásilky</strong></td>
-<td>Volitelné parametry zásilky.</td>
-</tr>
 <tr>
 <td><strong>Připojené doklady</strong></td>
 <td>V podokně připojené doklady je možné vidět všechny dodací listy nebo faktury, které byly vloženy do jedné zásilky (funkční pouze, když se zásilka posílá na jednu adresu).</td>
@@ -275,7 +279,7 @@ V případě vytváření zásilky z účtované prodejní dodávky musíte PDF 
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/ProductivityPack/parcels.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/ProductivityPack/parcels.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
                   </li>
                 </ul>
               </div>
