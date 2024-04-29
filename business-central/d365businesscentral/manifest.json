@@ -2411,7 +2411,7 @@
           "hash": "nThH71gUTUDOz2f+CExaZAvavNpiypcvNmA5lCTL8+w="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2423,7 +2423,7 @@
           "hash": "RribMSy/n3uSTI4MbVgcDDHULbPoW8oInPftMqKGbIA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2495,7 +2495,7 @@
           "hash": "iyYr/kQiSXqwSmxwqSI81/Ic35qeurnhTWOFmBLRubg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -7020,6 +7020,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "d365businesscentral/support/media/support.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/support/media/support.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "d365businesscentral/templates/MK/logo.png",
       "output": {
         "resource": {
@@ -7093,7 +7104,7 @@
       "output": {
         ".html": {
           "relative_path": "support/support.html",
-          "hash": "7sMS1y9Fw+F4Gru9XPZkVIyM8X2KHOh8UJsLqvYgb18="
+          "hash": "vFZNmU4FZo7vrb2YgwCy0NUyL650563jKXxDiWD2IP4="
         }
       },
       "is_incremental": false,
@@ -7124,7 +7135,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 291,
-          "skipped_file_count": 289
+          "skipped_file_count": 290
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
