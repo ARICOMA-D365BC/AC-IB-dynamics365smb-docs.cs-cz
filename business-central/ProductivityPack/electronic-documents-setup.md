@@ -137,7 +137,7 @@ Následně je třeba pro každého zákazníka nastavit specifické parametry pr
 3. Vyplňte **Typ procesu Spooler, ID Cílohového systému Spooleru a Parametr komunikace Spooleru.**
 4. Zavřete stránku.
 
-Pro více informací navštivte dokumentaci modulu [Spooler](https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/ProductivityPack/spooler.html).
+Pro více informací navštivte dokumentaci modulu [Spooler](https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/ProductivityPack/spooler.html).
 
 ## OnPrem – Odesílání přes Datovou schránku
 

@@ -70,7 +70,7 @@ V případě, že zákazník chce provést vyrovnání dokladu při účtování
 
 ## Evidence úhrady – zjednodušený režim se záměnou Způsobu platby
 
-Poměrně běžnou praxí je, že na kartách zákazníků je definován preferovaný či povolený způsob platby (typicky úhrada v hotovosti). Když je ale takových kódů (z důvodů požadavků na evidenci) více, je třeba zajistit zaúčtování dokladu s kódem příslušným uživateli, který doklad účtuje. V případě zapnutého Kontrola způsobu platby na prod.dokl. provede změnu systém automaticky (viz [Nastavení způsobů platby](http://muj.autocont.cz/docs/cs-cz/d365businesscentral/FinancialPack/multiple-payment-methods-setup.html#nastaven%C3%AD-zp%C5%AFsob%C5%AF-platby)).
+Poměrně běžnou praxí je, že na kartách zákazníků je definován preferovaný či povolený způsob platby (typicky úhrada v hotovosti). Když je ale takových kódů (z důvodů požadavků na evidenci) více, je třeba zajistit zaúčtování dokladu s kódem příslušným uživateli, který doklad účtuje. V případě zapnutého Kontrola způsobu platby na prod.dokl. provede změnu systém automaticky (viz [Nastavení způsobů platby](http://www.aricoma.com/docs/cs-cz/d365businesscentral/FinancialPack/multiple-payment-methods-setup.html#nastaven%C3%AD-zp%C5%AFsob%C5%AF-platby)).
 
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení více způsobů plateb** a poté vyberte související odkaz.
@@ -91,7 +91,7 @@ Poměrně běžnou praxí je, že na kartách zákazníků je definován prefero
 
 V některých případech je požadováno vytvoření evidence EET (legislativa v ČR) již na rozpisu platby, tedy ještě před zaúčtováním dokladu (např. pro tisk podkladů pro realizaci dobírky, apod.).
 
-V případě zapnutého Povolit registraci EET je na rozpisu platby dostupná akce Registrovat EET, resp. Storno EET (viz [Nastavení způsobů platby](http://muj.autocont.cz/docs/cs-cz/d365businesscentral/FinancialPack/multiple-payment-methods-setup.html#nastaven%C3%AD-zp%C5%AFsob%C5%AF-platby)).
+V případě zapnutého Povolit registraci EET je na rozpisu platby dostupná akce Registrovat EET, resp. Storno EET (viz [Nastavení způsobů platby](http://www.aricoma.com/docs/cs-cz/d365businesscentral/FinancialPack/multiple-payment-methods-setup.html#nastaven%C3%AD-zp%C5%AFsob%C5%AF-platby)).
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení více způsobů plateb** a poté vyberte související odkaz.
 2.	Ověřte, že je zapnuta volba Povolit registraci EET.
