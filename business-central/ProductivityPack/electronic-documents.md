@@ -27,6 +27,8 @@ Formát XML dodávaný v rámci modulu je možné s výhodou použít pro výmě
 
 A v neposlední řadě funkcionalita rozšiřuje (v kombinaci s jinými addony od ARICOMA) možnosti odesílání dokladů. V případě požadavku na protokolovanou komunikaci je možné využít addon [Spooler](https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/ProductivityPack/spooler.html).
 
+Součástí modulu je i podpora odesílání e-mailů v návaznosti na zákaznické procesy. Typickým příkladem je notifikace zákazníků o stavech, kterých nabývá jejich objednávka. Nicméně je potřeba programová úprava v podobě volání funkce, které je popsáno v [nastavení modulu](https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/ProductivityPack/electronic-documents-setup.html)
+
 ## Pouze BC OnPrem
 Ve spolupráci s modulem [Datové schránky](https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/ProductivityPack/data-boxes.html) je lze doklady odesílat i tímto komunikačním kanálem. Datové schránky fungují na podobném principu jako běžná e-mailová schránka, samotné technické řešení však zajišťuje důvěryhodnost doručování datových zpráv, kdy každá je opatřena elektronickou značku (e-razítko) a časovou značku (kvalifikované časové razítko). Pro více informací navštivte [oficiální stránky](https://info.mojedatovaschranka.cz/).
 

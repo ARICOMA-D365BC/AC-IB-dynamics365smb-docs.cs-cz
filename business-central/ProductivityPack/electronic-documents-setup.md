@@ -77,6 +77,49 @@ Pro používání ISDOC formátu je třeba nastavit mapování požívaných zp�
 3.	Zadejte 10 ve sloupci Kód způsobu ISDOC.
 4.	Opakujte pro další používané způsoby plateb (42 - Převod na účet, 48 – Platba kartou,… více viz [isdoc.cz/6.0.2/xsd/isdoc-invoice-6.0.2.xsd](https://isdoc.cz/6.0.2/xsd/isdoc-invoice-6.0.2.xsd))
 
+## Obecné e-maily - nastavení
+### Definice e-mailu
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přehled nastavení odesílání obecných e-mailů** a poté vyberte související odkaz.
+2. Na stránce Přehled nastavení odesílání obecných e-mailů spusťte akci *Nový*.
+3. Na kartě Nastavení odesílání obecných e-mailů vyberte *Typ* a *Kód jazyka*, které jsou určující kombinací pro nalezení správné šablony e-mailu. Prázdný kód jazyka je platný pro všechny jazyky, není-li nalezen nastavení pro určitý kód.
+4. V poli *E-mail scénář* vyberte způsob odeslání e-mailu.
+5. V poli *Předmět* můžete definovat text předmětu e-mailu (není povinné).
+6. Do *E-maily Skrytá* a *E-maily Kopie* zadejte e-maily adresátů, kterým má být zaslán nad rámec definovaných příjemců předaných při volání funkce (nejsou povinné).
+7. V poli *ID tabulky těla e-mailu* vyberte tabulku, z jejích dat bude vytvářen samotný e-mail.
+8. V poli *ID sestavy těla zprávy* vyberte sestavu definující tělo e-mailu.
+9. V poli *Kód rozvržení textu e-mailu* pak vyberte specifický layout, který chcete pro vytvoření e-mailu použít (např. tedy jiná jazyková mutace).
+10. Je-li nastavení hotové, zapněte příznak *Aktivní* a zavřete kartu.
+
+> [!NOTE]
+>Pro addon Řízení stavů je k dispozici Akce, pomocí které můžete při změně stavu spustit vytvoření a odeslání obecného e-mailu.
+>Popis parametrů akce: 1 = Typ, 2 = E-mail, 3 = Kód jazyka (Volitelný), 4 = Předmět (Volitelný), 5 = Kopie (Volitelný), 6 = Skrytá (Volitelný)
+
+### Přílohy e-mailu
+Do e-mailu lze nechat vložit i přílohy spuštěním sestavy nad libovolnou tabulkou. Při volání funkce je ale nutné předat odkaz na příslušný záznam tabulky a funkcionalita najde všechna nastavení příloh pro stejnou tabulku a vytvoří PDF přílohu. 
+Pro nastavení postupujte takto:
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přehled nastavení odesílání obecných e-mailů** a poté vyberte související odkaz.
+2. Na stránce Přehled nastavení odesílání obecných e-mailů spusťte akci *Úpravy*.
+3. Na kartě Nastavení odesílání obecných e-mailů jděte na záložku Přílohy nastavení odesílání obecných e-mailů a vytvořte zde nový řádek.
+4. V poli *Název přílohy* zadejte název souboru, jaký má mít při vložení do e-mailu. Lze přebírat hodnotu z libovolného pole tabulky, např. definice "Objednávka č. [3].pdf" pak pojmenuje soubor "Objednávka č. 101123.pdf".
+5. V poli *Číslo tabulky přílohy* vyberte tabulku, z jejíž dat má být vytvořena příloha.
+6. V poli *Číslo sestavy přílohy* vyberte sestavu, která má vytvořit pdf soubor nad daty tabulky.
+7. Je-li třeba nastavit specifické parametry sestavy, spusťte akci Naplnit parametry a definujte je do otevřené stránky sestavy.
+8. Zavřete kartu.
+
+### Příklad funkce pro vytvoření e-mailu
+Následující kód znázorňuje volání funkcí, které nejprve vytvoří e-mail, následně předá zavolá funkci pro vytvoření příloh nad záznamem ze kterého se vytváří samotný e-mail. Další funkce vytvoří relace e-mailu. Poslední funkcí je zařazení e-mailu do fronty úloh k odeslání.
+{
+...
+    EMailManagement.InitEMail(EmailTypeEnum, LanguageCode, SrcRecordRef, Recipients, Subject, CC, BCC);
+    EMailManagement.AddEMailAttachments(SrcRecordRef);
+    IF AddEPrimaryEmailRelation THEN
+        EMailManagement.AddEMailPrimaryRelation(SrcRecordRef);
+    IF AddRelatedEmailRelation THEN
+        EMailManagement.AddEMailRelatedRelation(SrcRecordRef);
+    EMailManagement.EnqueueEMail();
+...
+}
+
 ## Volitelné – Odesílání přes Spooler
 Pokud máte aktivní modul Spooler, můžete odesílat doklady jeho prostřednictvím. Nedoporučuje se pro odesílání emailů, spíše pro pokrytí zákaznických požadavků s potřebou protokolované komunikace.
 Pro modul Odesílání elektronických dokladů je třeba nastavit výchozí označení **typu procesu**.
