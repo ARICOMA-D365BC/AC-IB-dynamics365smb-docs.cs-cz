@@ -420,21 +420,25 @@ Oba režimy se tak zpracovávají současně v rámci aktivit spojených s tvorb
 
 
 ## Účtování přeplatků nákupních záloh
-
->[!NOTE]
->Dále popsaná funkcionalita bude součástí modulu pouze do verze BC14. 
-
 V souvislosti se zavedením Kontrolního hlášení od 1.1.2016 vznikla potřeba řešit čerpání přeplatku nákupní zálohy pod jedním číslem dokladu, stejným datem a i stejným kurzem.  
 
-Celý postup lze realizovat ručně. Ovšem vzhledem k jeho komplikovanosti byla do systému doplněna funkcionalita, kdy v rámci konečné vyúčtovací faktury se přeúčtuje čerpání přeplatku zálohy. 
+Celý postup lze realizovat ručně. Ovšem vzhledem k jeho komplikovanosti byla do systému doplněna funkcionalita, kdy v rámci konečné vyúčtovací faktury se přeúčtuje čerpání přeplatku z jedné či více záloh. 
 
 ### Vrácení přeplatku nákupní zálohy 
+Po vytvoření finální nákupní faktury je možné vložit další řádek s částkou přeplatku a příznakem Určeno pro vrácení zálohy (příznak je následně i na řádku zaúčtované faktury). Tento řádek na faktuře musí být účtován v režimu bez DPH. K faktuře musí být přiřazeny zálohy v částkách obsahující účtovaný přeplatek.
 
+Zaúčtováním takovéto faktury dojde také k přeúčtování částky přeplatku ze zálohové na nezálohovou položku dodavatele připravenou k vrácení peněz.
+
+>[!NOTE]
+>Na zaúčtované faktuře, která obsahuje alespoň jeden řádek účtovaný jako přeplatek, nelze aplikovat funkce odúčtování přiřazených záloh ani dodatečné přiřazení záloh.
+
+### Vrácení přeplatku nákupní zálohy (BC14 a starší)
 Po vytvoření finální nákupní faktury a přiřazení uhrazené nákupní zálohy je v případě přeplatku na záloze možné vložit další řádek s částkou přeplatku a příznakem Určeno pro vrácení zálohy (příznak je následně i na řádku zaúčtované faktury). 
 
 Zaúčtováním faktury pak pro každý takový řádek s přeplatkem vznikne položka dodavatele typu Dobropis. Vrácení peněz dodavatelem (Refundace) pak uživatel vyrovná právě s těmito vzniklými položkami. 
 
-Poznámka: Při použití funkce Odúčtovat přiřazenou zálohu (z karty Zálohového daňového dokladu) dojde analogicky k odúčtování těchto zúčtování přeplatků. 
+>[!NOTE] 
+>Při použití funkce Odúčtovat přiřazenou zálohu (z karty Zálohového daňového dokladu) dojde analogicky k odúčtování těchto zúčtování přeplatků. 
 
 ## Viz také
 

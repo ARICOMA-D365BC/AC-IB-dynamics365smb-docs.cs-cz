@@ -269,10 +269,8 @@ V případě používání jiné měny než lokální v zemi registrace, je 
 Popsaná automatizace při účtování finální faktury se zapíná v Nastavení účtování DPH pro vybrané kombinace účtoskupin. Pokud je toto chování vhodné pouze pro některé případy, je třeba pro ně míst vydefinované zvláštní DPH účtoskupiny (zboží). 
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení účtování DPH** a poté vyberte související odkaz.
-
-Na stránce Nastavení účtování DPH vyhledejte záznam pro který chcete zapnout a zvolte funkci Úpravy. 
-
-Nastavte příznak v poli Určeno pro vrácení zálohy na záložce Zálohy. 
+2. Na stránce Nastavení účtování DPH vyhledejte záznam pro který chcete zapnout a zvolte funkci Úpravy. 
+3. Na stránce Karta nastavení účto DPH nastavte příznak Určeno pro vrácení zálohy. 
 
 
 ## Viz také
