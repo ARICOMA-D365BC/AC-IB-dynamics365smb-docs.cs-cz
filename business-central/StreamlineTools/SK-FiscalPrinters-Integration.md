@@ -8,7 +8,7 @@ ms.search.keywords: Czech, SK Fiscal Printers Integration, Streamline Tools
 ---
 # SK Fiscal Printers Integration for Dynamics 365 Business Central
 
-**SK Fiscal Printers Integration** je rozšířením pro informační systém Microsoft Dynamics 365 Business Central, které poskytuje přímé propojení s fiskálními tiskárnami od firmy VAROS řady eKASA FT5000. Toto řešení je navrženo tak, aby plně splňovalo slovenské legislativní požadavky dle zákona 289/2008 Z.z., který upravuje evidenci tržeb z prodeje zboží a služeb v hotovosti či jinými způsoby (např. platební kartou, stravenkami nebo šeky). Modul zjednodušuje plnění legislativních povinností tím, že automatizuje registraci a tisk fiskálních dokladů přímo z prostředí Dynamics 365 Business Central.
+**SK Fiscal Printers Integration** je rozšířením pro informační systém Microsoft Dynamics 365 Business Central, které poskytuje přímé propojení s fiskálními tiskárnami od firmy VAROS řady [eKASA FT5000](http://www.varos.sk/vyrobky-FT5000). Toto řešení je navrženo tak, aby plně splňovalo slovenské legislativní požadavky dle zákona 289/2008 Z.z., který upravuje evidenci tržeb z prodeje zboží a služeb v hotovosti či jinými způsoby (např. platební kartou, stravenkami nebo šeky). Modul zjednodušuje plnění legislativních povinností tím, že automatizuje registraci a tisk fiskálních dokladů přímo z prostředí Dynamics 365 Business Central.
 
 ## Hlavní přínosy SK Fiscal Printers Integration
 
@@ -19,9 +19,10 @@ ms.search.keywords: Czech, SK Fiscal Printers Integration, Streamline Tools
 
 Díky této integraci mohou firmy výrazně zjednodušit své administrativní a účetní procesy. Automatizace fiskální evidence a snadná správa dokladů snižuje chybovost při manuálním zadávání a šetří čas. Navíc modul poskytuje transparentní a rychlý přístup k záznamům o prodeji, což usnadňuje kontrolu a audity. Tímto řešením dosáhnete vyšší efektivity v souladu s právními požadavky a zároveň zlepšíte zákaznický komfort díky rychlému vystavování a registraci fiskálních dokladů.
 
-Technické informace firmy VAROS viz Manuály. 
+Technické informace firmy VAROS viz [Manuály](http://www.varos.sk/manualy.php). 
 
-Modul vyžaduje „Core Localization Pack for Czech“, pro naplnění ostatních požadavků Slovenské legislativy zvolte SK legislativní balíček a SK jazykový balíček od Aricoma.
+> [!NOTE]
+> Modul vyžaduje „Core Localization Pack for Czech“, pro naplnění ostatních požadavků Slovenské legislativy zvolte [SK legislativní balíček](https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.autocontas%7CAID.pas_2021_3%7CPAPPID.6faf8513-1781-444c-8c20-032a6f1efe06?tab=Overview) a [SK jazykový balíček](https://appsource.microsoft.com/en-us/product/project-madeira/PUBID.autocontas%7CAID.pas_2021_5%7CPAPPID.a90b83b0-d99d-4156-9c65-526b37fe3497) od Aricoma.
 
 
 <!-- ![Přehled zboží](media/SK-FiscalPrinters.png) -->
