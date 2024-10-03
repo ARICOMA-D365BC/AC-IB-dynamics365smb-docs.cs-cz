@@ -130,6 +130,51 @@
 <li>Zadejte 10 ve sloupci Kód způsobu ISDOC.</li>
 <li>Opakujte pro další používané způsoby plateb (42 - Převod na účet, 48 – Platba kartou,… více viz <a href="https://isdoc.cz/6.0.2/xsd/isdoc-invoice-6.0.2.xsd">isdoc.cz/6.0.2/xsd/isdoc-invoice-6.0.2.xsd</a>)</li>
 </ol>
+<h2 id="obecné-e-maily---nastavení">Obecné e-maily - nastavení</h2>
+<h3 id="definice-e-mailu">Definice e-mailu</h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přehled nastavení odesílání obecných e-mailů</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Přehled nastavení odesílání obecných e-mailů spusťte akci <em>Nový</em>.</li>
+<li>Na kartě Nastavení odesílání obecných e-mailů vyberte <em>Typ</em> a <em>Kód jazyka</em>, které jsou určující kombinací pro nalezení správné šablony e-mailu. Prázdný kód jazyka je platný pro všechny jazyky, není-li nalezen nastavení pro určitý kód.</li>
+<li>V poli <em>E-mail scénář</em> vyberte způsob odeslání e-mailu.</li>
+<li>V poli <em>Předmět</em> můžete definovat text předmětu e-mailu (není povinné).</li>
+<li>Do <em>E-maily Skrytá</em> a <em>E-maily Kopie</em> zadejte e-maily adresátů, kterým má být zaslán nad rámec definovaných příjemců předaných při volání funkce (nejsou povinné).</li>
+<li>V poli <em>ID tabulky těla e-mailu</em> vyberte tabulku, z jejích dat bude vytvářen samotný e-mail.</li>
+<li>V poli <em>ID sestavy těla zprávy</em> vyberte sestavu definující tělo e-mailu.</li>
+<li>V poli <em>Kód rozvržení textu e-mailu</em> pak vyberte specifický layout, který chcete pro vytvoření e-mailu použít (např. tedy jiná jazyková mutace).</li>
+<li>Je-li nastavení hotové, zapněte příznak <em>Aktivní</em> a zavřete kartu.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Pro addon Řízení stavů je k dispozici Akce, pomocí které můžete při změně stavu spustit vytvoření a odeslání obecného e-mailu.
+Popis parametrů akce: 1 = Typ, 2 = E-mail, 3 = Kód jazyka (Volitelný), 4 = Předmět (Volitelný), 5 = Kopie (Volitelný), 6 = Skrytá (Volitelný)</p>
+</div>
+<h3 id="přílohy-e-mailu">Přílohy e-mailu</h3>
+<p>Do e-mailu lze nechat vložit i přílohy spuštěním sestavy nad libovolnou tabulkou. Při volání funkce je ale nutné předat odkaz na příslušný záznam tabulky a funkcionalita najde všechna nastavení příloh pro stejnou tabulku a vytvoří PDF přílohu.
+Pro nastavení postupujte takto:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přehled nastavení odesílání obecných e-mailů</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Přehled nastavení odesílání obecných e-mailů spusťte akci <em>Úpravy</em>.</li>
+<li>Na kartě Nastavení odesílání obecných e-mailů jděte na záložku Přílohy nastavení odesílání obecných e-mailů a vytvořte zde nový řádek.</li>
+<li>V poli <em>Název přílohy</em> zadejte název souboru, jaký má mít při vložení do e-mailu. Lze přebírat hodnotu z libovolného pole tabulky, např. definice &quot;Objednávka č. [3].pdf&quot; pak pojmenuje soubor &quot;Objednávka č. 101123.pdf&quot;.</li>
+<li>V poli <em>Číslo tabulky přílohy</em> vyberte tabulku, z jejíž dat má být vytvořena příloha.</li>
+<li>V poli <em>Číslo sestavy přílohy</em> vyberte sestavu, která má vytvořit pdf soubor nad daty tabulky.</li>
+<li>Je-li třeba nastavit specifické parametry sestavy, spusťte akci Naplnit parametry a definujte je do otevřené stránky sestavy.</li>
+<li>Zavřete kartu.</li>
+</ol>
+<h3 id="příklad-funkce-pro-vytvoření-e-mailu">Příklad funkce pro vytvoření e-mailu</h3>
+<p>Následující kód znázorňuje volání funkcí, které nejprve vytvoří e-mail, následně předá zavolá funkci pro vytvoření příloh nad záznamem ze kterého se vytváří samotný e-mail. Další funkce vytvoří relace e-mailu. Poslední funkcí je zařazení e-mailu do fronty úloh k odeslání.
+{
+...
+EMailManagement.InitEMail(EmailTypeEnum, LanguageCode, SrcRecordRef, Recipients, Subject, CC, BCC);
+EMailManagement.AddEMailAttachments(SrcRecordRef);
+IF AddEPrimaryEmailRelation THEN
+EMailManagement.AddEMailPrimaryRelation(SrcRecordRef);
+IF AddRelatedEmailRelation THEN
+EMailManagement.AddEMailRelatedRelation(SrcRecordRef);
+EMailManagement.EnqueueEMail();
+...
+}</p>
 <h2 id="volitelné--odesílání-přes-spooler">Volitelné – Odesílání přes Spooler</h2>
 <p>Pokud máte aktivní modul Spooler, můžete odesílat doklady jeho prostřednictvím. Nedoporučuje se pro odesílání emailů, spíše pro pokrytí zákaznických požadavků s potřebou protokolované komunikace.
 Pro modul Odesílání elektronických dokladů je třeba nastavit výchozí označení <strong>typu procesu</strong>.</p>
@@ -146,7 +191,7 @@ Pro modul Odesílání elektronických dokladů je třeba nastavit výchozí ozn
 <li>Vyplňte <strong>Typ procesu Spooler, ID Cílohového systému Spooleru a Parametr komunikace Spooleru.</strong></li>
 <li>Zavřete stránku.</li>
 </ol>
-<p>Pro více informací navštivte dokumentaci modulu <a href="https://muj.autocont.cz/docs/cs-cz/dynamics365/business-central/ProductivityPack/spooler.html">Spooler</a>.</p>
+<p>Pro více informací navštivte dokumentaci modulu <a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/ProductivityPack/spooler.html">Spooler</a>.</p>
 <h2 id="onprem--odesílání-přes-datovou-schránku">OnPrem – Odesílání přes Datovou schránku</h2>
 <p><strong>Popisovaná funkcionalita je dostupná pouze v OnPrem verzi!</strong></p>
 <p>Pokud máte zakoupen modul Datové schránky, můžete odesílat doklady i tímto komunikačním kanálem. Výhodou takové komunikace je, že je zajištěna důvěryhodnost doručování datových zpráv.</p>
@@ -197,7 +242,7 @@ Pro modul Odesílání elektronických dokladů je třeba nastavit výchozí ozn
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/ProductivityPack/electronic-documents-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/ProductivityPack/electronic-documents-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
                   </li>
                 </ul>
               </div>

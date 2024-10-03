@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "FinancialPack/controling-basic-setup.html",
-          "hash": "iiMGI4IhPeD3oVWRfdxuWy9tOMwy0ElspI2um0LglYo="
+          "hash": "PmexrSIrD9XaD1KIE1xR3EZkQX3Ojh4dYhwTuEBf85Q="
         }
       },
       "is_incremental": true,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "FinancialPack/controling-basic.html",
-          "hash": "v8/ZxJnOFADH2pZBH8Rj+BWZzqMswfT2Di4dbcBckwo="
+          "hash": "Zo3uAZVoA/uBEEGl+bJlzfZW06NAVhK67+IiVcClQPQ="
         }
       },
       "is_incremental": true,
@@ -394,7 +394,7 @@
       "output": {
         ".html": {
           "relative_path": "FinancialPack/multiple-payment-methods-setup.html",
-          "hash": "rVJHKv7gX0xsGTAd6AAo/3IYD9m9XBdfEbBjKt56JFU="
+          "hash": "acfCYl+bAbM3bmi0/wcKQDnzP1PJO1sRTaPD9IFE9co="
         }
       },
       "is_incremental": true,
@@ -406,7 +406,7 @@
       "output": {
         ".html": {
           "relative_path": "FinancialPack/multiple-payment-methods.html",
-          "hash": "hyQ+g9gJpA/8IsSdne/ZpMw80+uKG2PAiz7Ip14FytM="
+          "hash": "BAAv/8h8U+rokfhBycgjPSVXfedT36M/rkytjxdPwqI="
         }
       },
       "is_incremental": true,
@@ -1006,7 +1006,7 @@
       "output": {
         ".html": {
           "relative_path": "ProductivityPack/electronic-documents-setup.html",
-          "hash": "UxFwp6Z2A5nbAU6thd6nulXO3E9CoHten+5Vc2TMjSU="
+          "hash": "rnuwyjMDcokNnHIKbIPiVVHZXNd9CF0ZtivBsHP8YZg="
         }
       },
       "is_incremental": true,
@@ -1018,7 +1018,7 @@
       "output": {
         ".html": {
           "relative_path": "ProductivityPack/electronic-documents.html",
-          "hash": "w0iydMEy1iO0Rxj8OKF7EYAuZxJsoRc+i0MehAb3vt8="
+          "hash": "DKuHMMjWXhSAQ4WfFVJNQtzPp/6MoFzItb/uDyHY7UY="
         }
       },
       "is_incremental": true,
@@ -5110,6 +5110,42 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "StreamlineTools/Business-Pack.md",
+      "output": {
+        ".html": {
+          "relative_path": "StreamlineTools/Business-Pack.html",
+          "hash": "Al+YyIm6nsFiVb/UKguXkS62gmQU7EEG9mgmzPK+dd8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "StreamlineTools/GPTom-Integration.md",
+      "output": {
+        ".html": {
+          "relative_path": "StreamlineTools/GPTom-Integration.html",
+          "hash": "lzNysv7+kI/vFOd2UDG18qsilX4JGSlqpZD4SnS6bAQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "StreamlineTools/SK-FiscalPrinters-Integration.md",
+      "output": {
+        ".html": {
+          "relative_path": "StreamlineTools/SK-FiscalPrinters-Integration.html",
+          "hash": "kjBurdsZpp/bcJVLpPovtbiEXRbZ3pXHS2JIVOSmfjI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "StreamlineTools/TOC.md",
       "output": {
@@ -5179,10 +5215,98 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/GPTomIntg1_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/GPTomIntg1_1280x720.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/GPTomIntg2_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/GPTomIntg2_1280x720.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/GPTomIntg3_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/GPTomIntg3_1280x720.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/GPTomIntg4_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/GPTomIntg4_1280x720.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "StreamlineTools/media/ImportedAttributes.png",
       "output": {
         "resource": {
           "relative_path": "StreamlineTools/media/ImportedAttributes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/SalesPack1_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/SalesPack1_1280x720.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/SalesPack2_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/SalesPack2_1280x720.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/SalesPack3_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/SalesPack3_1280x720.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "StreamlineTools/media/SalesPack4_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "StreamlineTools/media/SalesPack4_1280x720.png"
         }
       },
       "is_incremental": false,
@@ -5251,7 +5375,7 @@
       "output": {
         ".html": {
           "relative_path": "StreamlineTools/streamlinetools.html",
-          "hash": "AMNPjKJJo6Pw8Cpoi/bwaM5pLbW817+v40W/UUC4ogc="
+          "hash": "DZs/LS5k2utC18wGQZ8OIXNONF8DPpMAonAovZGwWow="
         }
       },
       "is_incremental": true,
@@ -6965,10 +7089,98 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/GPTomIntg1_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/GPTomIntg1_1280x720.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/GPTomIntg2_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/GPTomIntg2_1280x720.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/GPTomIntg3_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/GPTomIntg3_1280x720.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/GPTomIntg4_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/GPTomIntg4_1280x720.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "d365businesscentral/StreamlineTools/media/ImportedAttributes.png",
       "output": {
         "resource": {
           "relative_path": "d365businesscentral/StreamlineTools/media/ImportedAttributes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/SalesPack1_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/SalesPack1_1280x720.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/SalesPack2_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/SalesPack2_1280x720.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/SalesPack3_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/SalesPack3_1280x720.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/StreamlineTools/media/SalesPack4_1280x720.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/StreamlineTools/media/SalesPack4_1280x720.png"
         }
       },
       "is_incremental": false,
@@ -7107,7 +7319,7 @@
           "hash": "vFZNmU4FZo7vrb2YgwCy0NUyL650563jKXxDiWD2IP4="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -7134,8 +7346,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 291,
-          "skipped_file_count": 290
+          "total_file_count": 294,
+          "skipped_file_count": 294
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
