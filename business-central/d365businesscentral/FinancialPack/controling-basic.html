@@ -402,16 +402,22 @@ Pole Stav pohledávky, umístěné na stránce Informace o pohledávce, slouží
 <p>Systém obsahuje funkci Vypočítat a účtovat vyrovnání DPH OSS, která uzavře položky DPH spadající do filtru. Oproti standardní funkci ale položky v režimu OSS přeúčtuje na zadaný Účet vyrovnání OSS. To je důležité pro následné zaúčtování platby vůči specializovanému finančnímu úřadu, který má tuto agendu na starosti.<br>
 Oba režimy se tak zpracovávají současně v rámci aktivit spojených s tvorbou výkazu DPH.</p>
 <h2 id="účtování-přeplatků-nákupních-záloh">Účtování přeplatků nákupních záloh</h2>
+<p>V souvislosti se zavedením Kontrolního hlášení od 1.1.2016 vznikla potřeba řešit čerpání přeplatku nákupní zálohy pod jedním číslem dokladu, stejným datem a i stejným kurzem.</p>
+<p>Celý postup lze realizovat ručně. Ovšem vzhledem k jeho komplikovanosti byla do systému doplněna funkcionalita, kdy v rámci konečné vyúčtovací faktury se přeúčtuje čerpání přeplatku z jedné či více záloh.</p>
+<h3 id="vrácení-přeplatku-nákupní-zálohy">Vrácení přeplatku nákupní zálohy</h3>
+<p>Po vytvoření finální nákupní faktury je možné vložit další řádek s částkou přeplatku a příznakem Určeno pro vrácení zálohy (příznak je následně i na řádku zaúčtované faktury). Tento řádek na faktuře musí být účtován v režimu bez DPH. K faktuře musí být přiřazeny zálohy v částkách obsahující účtovaný přeplatek.</p>
+<p>Zaúčtováním takovéto faktury dojde také k přeúčtování částky přeplatku ze zálohové na nezálohovou položku dodavatele připravenou k vrácení peněz.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Dále popsaná funkcionalita bude součástí modulu pouze do verze BC14.</p>
+<p>Na zaúčtované faktuře, která obsahuje alespoň jeden řádek účtovaný jako přeplatek, nelze aplikovat funkce odúčtování přiřazených záloh ani dodatečné přiřazení záloh.</p>
 </div>
-<p>V souvislosti se zavedením Kontrolního hlášení od 1.1.2016 vznikla potřeba řešit čerpání přeplatku nákupní zálohy pod jedním číslem dokladu, stejným datem a i stejným kurzem.</p>
-<p>Celý postup lze realizovat ručně. Ovšem vzhledem k jeho komplikovanosti byla do systému doplněna funkcionalita, kdy v rámci konečné vyúčtovací faktury se přeúčtuje čerpání přeplatku zálohy.</p>
-<h3 id="vrácení-přeplatku-nákupní-zálohy">Vrácení přeplatku nákupní zálohy</h3>
+<h3 id="vrácení-přeplatku-nákupní-zálohy-bc14-a-starší">Vrácení přeplatku nákupní zálohy (BC14 a starší)</h3>
 <p>Po vytvoření finální nákupní faktury a přiřazení uhrazené nákupní zálohy je v případě přeplatku na záloze možné vložit další řádek s částkou přeplatku a příznakem Určeno pro vrácení zálohy (příznak je následně i na řádku zaúčtované faktury).</p>
 <p>Zaúčtováním faktury pak pro každý takový řádek s přeplatkem vznikne položka dodavatele typu Dobropis. Vrácení peněz dodavatelem (Refundace) pak uživatel vyrovná právě s těmito vzniklými položkami.</p>
-<p>Poznámka: Při použití funkce Odúčtovat přiřazenou zálohu (z karty Zálohového daňového dokladu) dojde analogicky k odúčtování těchto zúčtování přeplatků.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Při použití funkce Odúčtovat přiřazenou zálohu (z karty Zálohového daňového dokladu) dojde analogicky k odúčtování těchto zúčtování přeplatků.</p>
+</div>
 <h2 id="viz-také">Viz také</h2>
 <p><a href="controling-basic-setup.html">Sada rozšíření pro Finance - Nastavení</a><br>
 <a href="finance-pack.html">Financial Pack</a></p>
@@ -423,7 +429,7 @@ Oba režimy se tak zpracovávají současně v rámci aktivit spojených s tvorb
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/AutoContCZ/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/FinancialPack/controling-basic.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/FinancialPack/controling-basic.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
                   </li>
                 </ul>
               </div>

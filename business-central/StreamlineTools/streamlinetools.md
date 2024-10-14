@@ -2,6 +2,7 @@
 title: ARICOMA SOLUTIONS | Microsoft Docs
 description: This section describes ARICOMA Solutions - Addons
 author: kunes
+date: 30.9.2024
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
@@ -10,7 +11,6 @@ ms.workload: na
 ms.search.keywords: Czech, productivity, additional functions, sale, warehouse, invoicing, barcode, claims, transportation, workflow
 ms.author: martinkunes
 ---
-
 
 # Streamline Tools
 

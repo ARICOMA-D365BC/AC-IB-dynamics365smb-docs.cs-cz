@@ -6,33 +6,32 @@ date: 09/30/2024
 ms.service: dynamics-365-business-central
 ms.search.keywords: Czech, Business Pack, Streamline Tools
 ---
+# **Business Pack**
 
-# Business Pack
+**Business Pack integruje často používaná pole a okna s fakty přímo do vašich stránek.**
 
-**Business Pack integrates frequently used fields and fact boxes directly into your pages.**
-
-Tired of manually setting up field views in your Business Central?  
-Business Pack automatically adds useful and frequently used fields and fact boxes directly to pages so you can focus on what matters – your business.  
+Už vás nebaví ručně nastavovat zobrazení polí ve vašem Business Central?  
+Business Pack automaticky přidává užitečná a často používaná pole a okna s fakty přímo na stránky, abyste se mohli soustředit na to podstatné – Vaše podnikání.  
 
 ![Prodejní objednávky](media/SalesPack1_1280x720.png)
 
-## Main Benefits of Business Pack
+## Hlavní přínosy Business Pack
 
-- Automatic display of key fields – adds fields for important data such as recipient's address and city, delivery date, payment method, company ID, and VAT number.
-- Fact boxes on key pages – quick access to important information on pages such as Sales and Purchase Orders, Deliveries, and Invoices.
-- Easy visibility and editing – all fields and fact boxes are visible by default.
+- Automatické zobrazení klíčových polí – přidává pole pro důležitá data, jako je adresa a město příjemce, datum dodávky, způsob platby, IČO a DIČ.
+- Okna s fakty na klíčových stránkách – rychlý přístup k důležitým informacím na stránkách, jako jsou Prodejní a Nákupní objednávky, Dodávky a Faktury.
+- Snadná viditelnost a úpravy – ve výchozím nastavení jsou viditelná všechna pole a okna s fakty.
 
-## Key Features of the Application Include
+## Klíčové funkce aplikace zahrnují
 
-- Overviews of sales and purchase orders with key information.
-- Adding new fact boxes and fields for better data management.
-- Adding notes to customers and sales documents.
-- Detailed overviews of items and their inventory.
+- Přehledy prodejních a nákupních objednávek s klíčovými informacemi.
+- Přidání nových oken s fakty a polí pro lepší správu dat.
+- Přidání poznámek k zákazníkům a prodejním dokladům.
+- Detailní přehledy zboží a jejich zásob.
 
 ![Přehled zboží](media/SalesPack4_1280x720.png)
 
-Simplify your work and increase productivity with Business Pack!  
+Zjednodušte si práci a zvyšte produktivitu s Business Packem!  
 
-## See Also
-[ARICOMA Solutions](../index.md)  
-[Streamline Tools](../StreamlineTools/streamlinetools.md)
+## Viz také
+[ARICOMA Řešení](../index.md)  
+[Streamline Tools](../StreamlineTools/streamlinetools.md)  
