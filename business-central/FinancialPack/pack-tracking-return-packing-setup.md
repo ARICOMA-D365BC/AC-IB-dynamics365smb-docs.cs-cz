@@ -13,16 +13,93 @@ ms.author: AC MartinKunes
 ---
 # Evidence vratných obalů (Vratné obaly) - Nastavení
 
+Add-on modul Evidence vratných obalů je rozšířením modulu Zásoby. Umožňuje sledování oběhu vratných obalů a paletového hospodářství. Lze pomocí něj sledovat obalová salda obchodních partnerů s vazbou na příslušné obchodní transakce (Nákup, Prodej, Příjem, Výdej, Transfer, Spotřeba a Výroba) a dále pak sledovat aktuální cenu obalů. 
 
-Jednoduchý popis vybrané kapitoly tématu.
+Pro správné fungování modulu vratné obaly, je nutné předem provést některá nastavení:
+- **Nastavit výpočtové vzorce**
+- **Nastavit číselné řady**
+- **Založit kategorie vratných obalů**
+- **Založit šablony deníků vratných obalů**
 
-## Podkapitola tématu
+## Nastavení výpočtových vzorců a číselných řad
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení vrat. obalů** a poté vyberte související odkaz.
+2. Na stránce **Nastavení vrat. Obalů** na záložce **Obecné** je nutné nastavit výpočtové vzorce.
+![Nastavení vrat. obalů](media/nastavení%20vrat.%20obalů.jpg)
 
-Detailní popis podkapitol. Může zde být i postup nastavení nebo použití. Také se nadpisy kde se nachází jeden # se přenáší do náhledové tabulky "In this article"
+Karta obecné obsahuje tyto pole: 
 
-### Detail podkapitoly
+- **Vzorec data platnosti v prodeji** – zadejte dobu, do kdy má zákazník povinnost vratný obal vrátit 
+    
 
-Určeno pro detailní informace, pokud by se exitovala ještě hlubší podkapitola.
+- **Vzorec data platnosti v nákupu** – zadejte dobu, do kdy máte povinnost vratný obal vrátit dodavateli 
+    
+
+- **Bezpečná doba pro vrácení** – tato funkce umožňuje nastavit dodatečnou lhůtu k základní lhůtě pro vrácení vratných obalů.  Systém vás po uplynutí této "bezpečné doby" upozorní na obaly, které nebyly včas vráceny. 
+    
+
+- **Označit vrácení jako opravu**  
+    
+
+- **Nevyrovnávat prodej. položky** – pokud je tato volba aktivní, vypne se automatické vyrovnání položky vrat. obalu při dobropsání (prodej). 
+    
+
+- **Nevyrovnávat nákup. položky** – pokud je tato volba aktivní, vypne se automatické vyrovnání položky vrat. obalu při dobropsání (nákup). 
+    
+
+- **Vyrovnávat dle plátce** – volba nastavuje vyrovnávání položek vrat. obalů dle plátce uvedeného na prodejním dokladu. V případě, že tato volba není zaškrtnuta, provádí se vyrovnání dle zákazníka. 
+    
+
+- **Vyrovnávat dle věřitele** – volba nastavuje vyrovnávání položek vrat. obalů dle věřitele uvedeného na nákupním dokladu. V případě, že tato volba není zaškrtnuta, provádí se vyrovnání dle dodavatele. 
+    
+
+- **Vyrovnávat dle zboží** – volba nastavuje vyrovnávání položek vrat. obalů dle zboží, které je svázáno s daným vratným obalem. V případě, že tato volba není zaškrtnuta, provádí se vyrovnání dle vratného obalu
+
+3. Pro správnou funkci je též nutno nastavit na stránce **Nastavení vrat. Obalů** na záložce **Číslování** číselnou řadu vratných obalů.
+![nastaveni vrat. obalu cislovani](media/nastaveni%20vrat.%20obalu%20cislovani.jpg)
+4. V případě, že nemáte vytvořenou číselnou řadu pro vratné obaly, rozbalte řádek **Čísla vrat. obalů** klikněte na funkci **Nový** a vytvořte novou číselnou řadu.
+5. Zadejte Kód, Popis, Počáteční číslo a Poslední číslo číselné řady.
+6. Zaškrtněte políčko Výchozí čísla pro automatické vyplňování čísel při zadávaní nových požadavků.
+![ciselna rada](media/ciselna%20rada.jpg)
+
+## Nastavení kategorií vratných obalů
+Dalším krokem je nastavení kategorií vratných obalů. Kategorie vratných obalů slouží k filtraci v přehledových funkcích a tiskových sestavách.
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Kategorie vrat. obalů** a poté vyberte související odkaz.
+2. Na stránce **Kategorie vrat. obalů** vyberte akci **Nový** a poté zadejte **Kód** a **Popis.**
+![kategorie vrat. obalu](media/kategorie%20vrat.%20obalu.png)
+
+## Nastavení Šablon deníků vrat. Obalů
+Šablony deníků slouží k předpřipravení deníků pro účtování o vratných obalech (jedná se o obdobnou funkčnost jako šablony deníků zboží).
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Šablona deníku vrat. obalu** a poté vyberte související odkaz.
+2. Na stránce **Šablona deníku vrat. Obalu** vyberte akci **Nový** a poté zadejte **Název, Popis, Číselná řada, Číselná řada účtování** a **Kód původu**.
+![sablona deniku vrat. obalu](media/sablona%20deniku%20vrat.%20obalu.jpg)
+
+## Nastavení karet vratných obalů
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přehled vrat. Obalů** a poté vyberte související odkaz.
+2. Na stránce **Přehled vrat. Obalů** vyberte akci **Nový**.
+![prehled vrat. obalu](media/prehled%20vrat.%20obalu.jpg)
+3. Po vybrání akce **Nový** se otevře **Karta vrat. obalu.**
+![karta vrat obalu](media/karta%20vrat.%20obalu.jpg)
+Každá Karta vratného obalu obsahuje tato pole: 
+
+- **Číslo** – zvolte číselnou řadu vratných obalů 
+    
+- **Popis** – název vratného obalu 
+    
+- **Kód kategorie vrat. obalu** – identifikace kategorie vratného obalu 
+    
+- **Vyhledávací popis** 
+    
+- **Pohyb** – needitovatelné pole s odkazem do tabulky „**Položky vrat. Obalu**“. Zde zobrazená hodnota udává stav salda vratných obalů 
+    
+- **Vzorec data platnosti v prodeji** – zadejte dobu, do kdy má zákazník povinnost vratný obal vrátit 
+    
+- **Vzorec data platnosti v nákupu** – zadejte dobu, do kdy máte povinnost vratný obal vrátit dodavateli 
+    
+- **Uzavřeno** – pole pro uzavření(zamezení) dalšího použití dané karty vratného obalu
+
+Nastavené hodnoty mají v případě, že jsou vyplněny, přednost před obecným nastavením.
+
+Z karty je dále možnost s pomocí akce **Související** zobrazit **Položky vrat. Obalu** a **Poznámky**.
 
 **Viz také**  
 
