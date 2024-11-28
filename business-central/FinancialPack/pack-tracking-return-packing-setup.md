@@ -1,7 +1,7 @@
 ---
 title: NAZEV TEMA | Microsoft Docs
 description: Jednoduchy popis tematu
-author: Makowka-Tomas
+author: Makowka-Tomas ARICOMA
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
