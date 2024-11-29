@@ -11,7 +11,7 @@ ms.search.keywords: klicova slova,
 ms.date: 11/28/2024
 ms.author: Makowka-Tomas
 ---
-# Evidence vratných obalů (Vratné obaly)
+# Vratné obaly
 
 Add-on modul **Evidence vratných obalů** je rozšířením modulu Zásoby systému Dynamics 365 Business Central. Umožňuje sledování oběhu vratných obalů a paletového hospodářství. Lze pomocí něj sledovat obalová salda obchodních partnerů s vazbou na příslušné obchodní transakce (Nákup, Prodej, Příjem, Výdej, Transfer, Spotřeba a Výroba) a dále pak sledovat aktuální cenu obalů.
 
