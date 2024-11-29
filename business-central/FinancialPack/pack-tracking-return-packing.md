@@ -8,7 +8,7 @@ ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.search.keywords: klicova slova, 
-ms.date: 11/28/2024
+ms.date: 11/29/2024
 ms.author: Makowka-Tomas
 ---
 # Vratné obaly
