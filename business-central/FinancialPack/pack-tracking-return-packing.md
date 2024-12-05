@@ -14,7 +14,7 @@ ms.author: Makowka-Tomas
 # Vratné obaly
 ## Nový standard v efektivitě obalového hospodářství
 
-Představte si, že každý obal, paleta či přepravka má svůj příběh, který můžete jednoduše sledovat a spravovat. Modul Vratné obaly v systému Dynamics 365 Business Central je vaším klíčem k dokonalé kontrole nad obalovým hospodářstvím. 
+Představte si, že každý obal, paleta či přepravka má svůj příběh, který můžete jednoduše sledovat a spravovat. Modul **Vratné obaly** v systému Dynamics 365 Business Central je vaším klíčem k dokonalé kontrole nad obalovým hospodářstvím. 
 
 V dnešní době, kdy je udržitelnost prioritou a efektivní řízení zdrojů nezbytností, vám tento modul umožní **optimalizovat oběh vratných obalů** a přinést do vaší společnosti **přehlednost** a **úspory**. Ať už sledujete salda obchodních partnerů, spravujete nákupní a prodejní transakce, nebo potřebujete **detailní reporting**, Vratné obaly vás nikdy nezklamou.
 
