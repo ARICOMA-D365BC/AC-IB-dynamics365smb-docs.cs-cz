@@ -24,6 +24,7 @@ Pro správné fungování modulu vratné obaly, je nutné předem provést někt
 ## Nastavení výpočtových vzorců a číselných řad
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení vrat. obalů** a poté vyberte související odkaz.
 2. Na stránce **Nastavení vrat. Obalů** na záložce **Obecné** je nutné nastavit výpočtové vzorce.
+
 ![Nastavení vrat. obalů](media/nastavení%20vrat.%20obalů.jpg)
 
 Karta obecné obsahuje tyto pole: 
@@ -55,30 +56,39 @@ Karta obecné obsahuje tyto pole: 
 - **Vyrovnávat dle zboží** – volba nastavuje vyrovnávání položek vrat. obalů dle zboží, které je svázáno s daným vratným obalem. V případě, že tato volba není zaškrtnuta, provádí se vyrovnání dle vratného obalu
 
 3. Pro správnou funkci je též nutno nastavit na stránce **Nastavení vrat. Obalů** na záložce **Číslování** číselnou řadu vratných obalů.
+
 ![nastaveni vrat. obalu cislovani](media/nastaveni%20vrat.%20obalu%20cislovani.jpg)
+
 4. V případě, že nemáte vytvořenou číselnou řadu pro vratné obaly, rozbalte řádek **Čísla vrat. obalů** klikněte na funkci **Nový** a vytvořte novou číselnou řadu.
 5. Zadejte Kód, Popis, Počáteční číslo a Poslední číslo číselné řady.
 6. Zaškrtněte políčko Výchozí čísla pro automatické vyplňování čísel při zadávaní nových požadavků.
+
 ![ciselna rada](media/ciselna%20rada.jpg)
 
 ## Nastavení kategorií vratných obalů
 Dalším krokem je nastavení kategorií vratných obalů. Kategorie vratných obalů slouží k filtraci v přehledových funkcích a tiskových sestavách.
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Kategorie vrat. obalů** a poté vyberte související odkaz.
 2. Na stránce **Kategorie vrat. obalů** vyberte akci **Nový** a poté zadejte **Kód** a **Popis.**
+
 ![kategorie vrat. obalu](media/kategorie%20vrat.%20obalu.png)
 
 ## Nastavení Šablon deníků vrat. Obalů
 Šablony deníků slouží k předpřipravení deníků pro účtování o vratných obalech (jedná se o obdobnou funkčnost jako šablony deníků zboží).
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Šablona deníku vrat. obalu** a poté vyberte související odkaz.
 2. Na stránce **Šablona deníku vrat. Obalu** vyberte akci **Nový** a poté zadejte **Název, Popis, Číselná řada, Číselná řada účtování** a **Kód původu**.
+
 ![sablona deniku vrat. obalu](media/sablona%20deniku%20vrat.%20obalu.jpg)
 
 ## Nastavení karet vratných obalů
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přehled vrat. Obalů** a poté vyberte související odkaz.
 2. Na stránce **Přehled vrat. Obalů** vyberte akci **Nový**.
+
 ![prehled vrat. obalu](media/prehled%20vrat.%20obalu.jpg)
+
 3. Po vybrání akce **Nový** se otevře **Karta vrat. obalu.**
+
 ![karta vrat obalu](media/karta%20vrat.%20obalu.jpg)
+
 Každá Karta vratného obalu obsahuje tato pole: 
 
 - **Číslo** – zvolte číselnou řadu vratných obalů 
