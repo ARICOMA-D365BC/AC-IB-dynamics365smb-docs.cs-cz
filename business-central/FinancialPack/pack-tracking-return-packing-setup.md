@@ -58,13 +58,16 @@ Dalším krokem je nastavení kategorií vratných obalů. Kategorie vratných o
 ![kategorie vrat. obalu](media/kategorie%20vrat.%20obalu.png)
 
 ## Nastavení Šablon deníků vrat. Obalů
+
 Šablony deníků slouží k předpřipravení deníků pro účtování o vratných obalech (jedná se o obdobnou funkčnost jako šablony deníků zboží).
+
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Šablona deníku vrat. obalu** a poté vyberte související odkaz.
 2. Na stránce **Šablona deníku vrat. Obalu** vyberte akci **Nový** a poté zadejte **Název, Popis, Číselná řada, Číselná řada účtování** a **Kód původu**.
 
 ![sablona deniku vrat. obalu](media/sablona%20deniku%20vrat.%20obalu.jpg)
 
 ## Nastavení karet vratných obalů
+
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přehled vrat. Obalů** a poté vyberte související odkaz.
 2. Na stránce **Přehled vrat. Obalů** vyberte akci **Nový**.
 
@@ -76,8 +79,7 @@ Dalším krokem je nastavení kategorií vratných obalů. Kategorie vratných o
 
 Každá Karta vratného obalu obsahuje tato pole: 
 
-- **Číslo** – zvolte číselnou řadu vratných obalů 
-    
+- **Číslo** – zvolte číselnou řadu vratných obalů
 - **Popis** – název vratného obalu 
     
 - **Kód kategorie vrat. obalu** – identifikace kategorie vratného obalu 
