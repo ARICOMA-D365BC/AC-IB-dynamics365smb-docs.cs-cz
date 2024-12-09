@@ -47,7 +47,7 @@ Abychom vám usnadnili práci, přinášíme přehled nejčastějších scéná�
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přehled vrat. Obalů** a poté vyberte související odkaz.
 2. Na stránce **Přehled vrat. Obalů** vyberte akci **Nový**.
 
-![prehled vrat. obalu](media/prehled%20vrat.%20obalu.jpg)
+![prehled vrat. obalu](media/return-packing-list.jpg)
 
 3. Po vybrání akce **Nový** se otevře **Karta vrat. obalu**.
 
@@ -84,7 +84,7 @@ Pro nastavení počátečních stavů salda obalů využijeme deníky vratných 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Deník vratných obalů** a poté vyberte související odkaz.
 2. Na stránce **Deník vratných obalů** vyplňte následující pole.
 
-![Deník vratných obalů](media/denik%20vratnych%20obalu.jpg)
+![Deník vratných obalů](media/return-packing-journal.jpg)
 
 Deník vratných obalů obsahuje tyto pole:  
 
@@ -119,7 +119,7 @@ Oddělení nákupu se na základě zvýšené poptávky rozhodlo objednat nové 
 3. Na řádcích objednávky vybereme požadované zboží a množství
 4. Navíc ručně přidáme zboží vytvořené pro vratný obal
 
-![nákupní objednávka](media/nakupni%20objednavka.png)
+![nákupní objednávka](media/return-packing-purchase-order.png)
 
 > [!IMPORTANT]
 > Pro správné fungování je nutné, aby byla karta zboží propojena s kartou vratného obalu viz. **Zavedení nového obalu**.
@@ -139,7 +139,7 @@ Zákazník si objednal 1x **Stůl ATÉNY (1896-S)** a 4x **Křeslo PAŘÍŽ, če
 3. Na řádcích objednávky vyplníme objednané zboží a množství
 4. Navíc ručně přidáme zboží vytvořené pro vratný obal
 
-![prodejni objednavka](media/prodejni%20objednavka.png)
+![Prodejní objednávka](media/return-packing-sales-order.png)
 
 > [!IMPORTANT]
 > Pro správné fungování je nutné, aby byla karta zboží propojena s kartou vratného obalu viz. **Zavedení nového obalu**.
@@ -153,14 +153,14 @@ Pro efektivní správu vratných obalů máte k dispozici různé reporty, kter�
 - **Podklad pro výkaz obalů:** Slouží k přípravě podkladů pro výkaznictví.
 - **Účtování vratných obalů – test:** Umožňuje otestovat správnost účtování vratných obalů.  
 - **Žurnály vrat. obalů:** Při každém účtování položky vratného obalu je vytvořen záznam v Žurnálu vratného obalu (obdoba Žurnálu zboží)
-![Žurnály vratných obalů](media/zurnaly%20vrat.%20obalu.png)
+![Žurnály vratných obalů](media/return-packing-registers.png)
 - **Žurnál vratných obalů – množství:** Nabízí detail množstevních pohybů jednotlivých žurnálů vratných obalů.
   - Na řádku číslo zvolíme konkrétní žurnál, u kterého chceme znát detail
-![Žurnál vratných obalů - množství](media/zurnal%20vrat.%20obalu%20-%20mnozstvi.png)
+![Žurnál vratných obalů - množství](media/return-packing-quantity.png)
 
 - Jestliže necháme řádek prázdný, sestava vytiskne detail všech žurnálů viz. Foto níže
 
-![Žurnál vrat. obalů - množství tisk](media/zurnal%20vrat.%20obalu%20-%20mnozstvi%20tisk.png)
+![Žurnál vrat. obalů - množství tisk](media/return-packing-quantity-print.png)
 
 - **Detailní pohyby vratných obalů:** Poskytuje detailní historii všech pohybů vratných obalů.
 - **Přesun vratných obalů:** Přehled přesunů vratných obalů mezi sklady či zákazníky.  
@@ -168,17 +168,17 @@ Pro efektivní správu vratných obalů máte k dispozici různé reporty, kter�
   - Je třeba zadat číslo zákazníka a období (datum), pro které chceme zjistit stav salda
   - Sestavu můžeme spustit za **Zákazníka** nebo za **Plátce**
 
-![Saldo vratných obalů zákazníka](media/saldo%20vrat.%20obalu%20zákazníka.png)
+![Saldo vratných obalů zákazníka](media/return-packing-customer-balance.png)
 
-![Saldo vratných obalů zákazníka tisk](media/saldo%20vrat.%20obalu%20zákazníka%20detail.png)
+![Saldo vratných obalů zákazníka tisk](media/return-packing-customer-balance-detail.png)
 
 - **Saldo vratných obalů dodavatele:** Zobrazuje stav salda vratných obalů u vašich dodavatelů.
   - Je třeba zadat číslo dodavatele a období (datum) pro které chceme zjistit stav salda
   - Sestavu můžeme spustit za **Dodavatele** nebo za **Věřitele**
 
-![Saldo vratných obalů dodavatele](media/saldo%20vrat.%20obalu%20dodavatele.png)
+![Saldo vratných obalů dodavatele](media/return-packing-vendor-balance.png)
 
-![Saldo vratných obalů dodavatele tisk](media/saldo%20vrat.%20obalu%20dodavatele%20detail.png)
+![Saldo vratných obalů dodavatele tisk](media/return-packing-vendor-balance-detail.png)
 
 **Viz také**  
 
