@@ -80,8 +80,7 @@ Dalším krokem je nastavení kategorií vratných obalů. Kategorie vratných o
 Každá Karta vratného obalu obsahuje tato pole: 
 
 - **Číslo** – zvolte číselnou řadu vratných obalů
-- **Popis** – název vratného obalu 
-    
+- **Popis** – název vratného obalu
 - **Kód kategorie vrat. obalu** – identifikace kategorie vratného obalu 
     
 - **Vyhledávací popis** 
