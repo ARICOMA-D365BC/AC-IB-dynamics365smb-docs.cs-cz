@@ -25,7 +25,7 @@ Dejte sbohem zbytečnému chaosu ve skladovém hospodářství a využijte syst�
 
 - **Samostatná evidence Vratných obalů:** Naše řešení umožňuje detailní evidenci vratných obalů, včetně čísla, popisu, kategorie a dalších důležitých údajů. Tím zajišťujeme, že každý obal je vždy pod kontrolou.
 - **Integrace se zásobami:** V rámci standardní funkcionality zásob lze ke kartám zboží přiřadit odpovídající vratný obal. Například pro paletu lze vytvořit kartu zboží “Paleta” a na ni přiřadit kartu vratného obalu “Paleta”. Tento systém zajišťuje hladkou integraci a snadné sledování obalů při každém pohybu zboží.
-- **Automatizace na dokladech:** Na nákupních a prodejních dokladech lze vkládat karty zboží s přiřazenými vratnými obaly. Při účtování dokladů vznikají položky vratných dokladů, které slouží ke sledování příjmů a výdejů vratných obalů. Tento proces umožňuje efektivní sledování obalového salda dodavatele nebo odběratele.
+- **Automatizace na dokladech:** Na nákupních a prodejních dokladech lze vkládat karty zboží s přiřazenými vratnými obaly. Při účtování dokladů vznikají položky vratných dokladů, které slouží ke sledování příjmů a výdejů vratných obalů. Tento proces umožňuje efektivní sledování obalového salda dodavatele nebo zákazníka.
 - **Deník vratných obalů:** Pro ruční pohyby vratných obalů slouží Deník vratných obalů, kde lze realizovat ruční příjem a výdej obalů, nastavit počáteční stavy nebo provést korekci dle skutečného stavu. Tento nástroj poskytuje flexibilitu a přesnost při správě obalů.
 
 ![Karta vratného obalu](media/return-packing-card.png)
@@ -44,8 +44,8 @@ Abychom vám usnadnili práci, přinášíme přehled nejčastějších scéná�
 
 ### Zavedení nového obalu
 
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přehled vrat. Obalů** a poté vyberte související odkaz.
-2. Na stránce **Přehled vrat. Obalů** vyberte akci **Nový**.
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přehled vrat. obalů** a poté vyberte související odkaz.
+2. Na stránce **Přehled vrat. obalů** vyberte akci **Nový**.
 
 ![prehled vrat. obalu](media/return-packing-list.png)
 
@@ -59,14 +59,14 @@ Každá Karta vratného obalu obsahuje tato pole:
 - **Popis** – název vratného obalu
 - **Kód kategorie vrat. obalu** – identifikace kategorie vratného obalu
 - **Vyhledávací popis**
-- **Pohyb** – needitovatelné pole s odkazem do tabulky „**Položky vrat. Obalu**“. Zde zobrazená hodnota udává stav salda vratných obalů
+- **Pohyb** – needitovatelné pole s odkazem do tabulky „**Položky vrat. obalu**“. Zde zobrazená hodnota udává stav salda vratných obalů
 - **Vzorec data platnosti v prodeji** – zadejte dobu, do kdy má zákazník povinnost vratný obal vrátit
 - **Vzorec data platnosti v nákupu** – zadejte dobu, do kdy máte povinnost vratný obal vrátit dodavateli
 - **Uzavřeno** – pole pro uzavření(zamezení) dalšího použití dané karty vratného obalu
 
 Nastavené hodnoty mají v případě, že jsou vyplněny, přednost před obecným nastavením.
 
-Z karty je dále možnost s pomocí akce **Související** zobrazit **Položky vrat. Obalu** a **Poznámky**.
+Z karty je dále možnost s pomocí akce **Související** zobrazit **Položky vrat. obalu** a **Poznámky**.
 
 Jelikož každý Vratný obal je zbožím, je také nutno vytvořit kartu zboží daného vratného obalu a přiřadit jí číslo Vratného obalu. Volba „dvojité“ evidence je z důvodu oddělení sledování expirace vratných obalů od účetních operací.
 
@@ -88,15 +88,15 @@ Pro nastavení počátečních stavů salda obalů využijeme deníky vratných 
 
 Deník vratných obalů obsahuje tyto pole:  
 
-- **Typ položky –** vyberte, zda se jedná o Nákup, Prodej, Příjem, Výdej  
-- **Číslo dokladu –** vyplňte číslo dokladu  
-- **Číslo vratného obalu –** vyberte číslo související karty vratného obalu  
-- **Číslo zboží –** vyberte číslo souvisejícího karty zboží  
-- **Typ původu –** needitovatelné pole vyplněné automaticky na základě pole Typ položky  
-- **Číslo původu** – vyberte číslo konkrétního dodavatele  
-- **Popis** – název vratného obalu  
-- **Množství** – zadejte počet kusů vratného obalu  
-- **Vyrovnává položku –** vyberte položku k vyrovnání
+- **Typ položky** – vyberte, zda se jedná o Nákup, Prodej, Příjem, Výdej  
+- **Číslo dokladu** – vyplňte číslo dokladu  
+- **Číslo vratného obalu** – vyberte číslo související karty vratného obalu  
+- **Číslo zboží** – vyberte číslo související karty zboží  
+- **Typ původu** – needitovatelné pole vyplněné automaticky na základě pole Typ položky  
+- **Číslo původu** – vyberte číslo konkrétního dodavatele
+- **Popis** – název vratného obalu
+- **Množství** – zadejte počet kusů vratného obalu
+- **Vyrovnává položku** – vyberte položku k vyrovnání
 
 3. Po vyplnění požadovaných polí vyberte akci **Tisk**, kde můžete zkontrolovat správnost vyplnění.  
 4. Na základě preferencí vyberte akci **Účto**, nebo **Účto a tisk**.
@@ -173,7 +173,7 @@ Pro efektivní správu vratných obalů máte k dispozici různé reporty, kter�
 ![Saldo vratných obalů zákazníka tisk](media/return-packing-customer-balance-detail.png)
 
 - **Saldo vratných obalů dodavatele:** Zobrazuje stav salda vratných obalů u vašich dodavatelů.
-  - Je třeba zadat číslo dodavatele a období (datum) pro které chceme zjistit stav salda
+  - Je třeba zadat číslo dodavatele a období (datum), pro které chceme zjistit stav salda
   - Sestavu můžeme spustit za **Dodavatele** nebo za **Věřitele**
 
 ![Saldo vratných obalů dodavatele](media/return-packing-vendor-balance.png)

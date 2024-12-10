@@ -22,7 +22,7 @@ Pro správné fungování modulu vratné obaly, je nutné předem provést někt
 ## Nastavení výpočtových vzorců a číselných řad
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení vrat. obalů** a poté vyberte související odkaz.
-2. Na stránce **Nastavení vrat. Obalů** na záložce **Obecné** je nutné nastavit výpočtové vzorce.
+2. Na stránce **Nastavení vrat. obalů** na záložce **Obecné** je nutné nastavit výpočtové vzorce.
 
 ![Nastavení vrat. obalů](media/return-packing-setup.png)
 
@@ -38,7 +38,7 @@ Karta obecné obsahuje tyto pole:
 - **Vyrovnávat dle věřitele** – volba nastavuje vyrovnávání položek vrat. obalů dle věřitele uvedeného na nákupním dokladu. V případě, že tato volba není zaškrtnuta, provádí se vyrovnání dle dodavatele.
 - **Vyrovnávat dle zboží** – volba nastavuje vyrovnávání položek vrat. obalů dle zboží, které je svázáno s daným vratným obalem. V případě, že tato volba není zaškrtnuta, provádí se vyrovnání dle vratného obalu
 
-3. Pro správnou funkci je též nutno nastavit na stránce **Nastavení vrat. Obalů** na záložce **Číslování** číselnou řadu vratných obalů.
+3. Pro správnou funkci je též nutno nastavit na stránce **Nastavení vrat. obalů** na záložce **Číslování** číselnou řadu vratných obalů.
 
 ![Nastavení číslování vrat. obalu](media/return-packing-setup-numbering.png)
 
