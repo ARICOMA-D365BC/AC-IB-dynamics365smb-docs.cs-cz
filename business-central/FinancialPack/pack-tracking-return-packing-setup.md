@@ -24,7 +24,7 @@ Pro správné fungování modulu vratné obaly, je nutné předem provést někt
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení vrat. obalů** a poté vyberte související odkaz.
 2. Na stránce **Nastavení vrat. Obalů** na záložce **Obecné** je nutné nastavit výpočtové vzorce.
 
-![Nastavení vrat. obalů](media/return-packing-setup.jpg)
+![Nastavení vrat. obalů](media/return-packing-setup.png)
 
 Karta obecné obsahuje tyto pole:
 
@@ -40,13 +40,13 @@ Karta obecné obsahuje tyto pole:
 
 3. Pro správnou funkci je též nutno nastavit na stránce **Nastavení vrat. Obalů** na záložce **Číslování** číselnou řadu vratných obalů.
 
-![Nastavení číslování vrat. obalu](media/return-packing-setup-numbering.jpg)
+![Nastavení číslování vrat. obalu](media/return-packing-setup-numbering.png)
 
 4. V případě, že nemáte vytvořenou číselnou řadu pro vratné obaly, rozbalte řádek **Čísla vrat. obalů** klikněte na funkci **Nový** a vytvořte novou číselnou řadu.
 5. Zadejte Kód, Popis, Počáteční číslo a Poslední číslo číselné řady.
 6. Zaškrtněte políčko Výchozí čísla pro automatické vyplňování čísel při zadávaní nových požadavků.
 
-![Číselná řada vrat. obalů](media/return-packing-no-series.jpg)
+![Číselná řada vrat. obalů](media/return-packing-no-series.png)
 
 ## Nastavení kategorií vratných obalů
 
@@ -64,18 +64,18 @@ Dalším krokem je nastavení kategorií vratných obalů. Kategorie vratných o
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Šablona deníku vrat. obalu** a poté vyberte související odkaz.
 2. Na stránce **Šablona deníku vrat. Obalu** vyberte akci **Nový** a poté zadejte **Název, Popis, Číselná řada, Číselná řada účtování** a **Kód původu**.
 
-![Šablona deníku vrat. obalu](media/return-packing-journal-template.jpg)
+![Šablona deníku vrat. obalu](media/return-packing-journal-template.png)
 
 ## Nastavení karet vratných obalů
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přehled vrat. Obalů** a poté vyberte související odkaz.
 2. Na stránce **Přehled vrat. Obalů** vyberte akci **Nový**.
 
-![Přehled vrat. obalů](media/return-packing-list.jpg)
+![Přehled vrat. obalů](media/return-packing-list.png)
 
 3. Po vybrání akce **Nový** se otevře **Karta vrat. obalu.**
 
-![Karta vrat. obalu](media/return-packing-card.jpg)
+![Karta vrat. obalu](media/return-packing-card.png)
 
 Každá Karta vratného obalu obsahuje tato pole:
 
