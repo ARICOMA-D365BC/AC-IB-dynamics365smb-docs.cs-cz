@@ -10,7 +10,7 @@ ms.search.keywords: pack tracking, return packing, financial pack
 # Vratné obaly - Nastavení
 > Aktualizace: 01.12.2024
 
-Add-on modul Evidence vratných obalů je rozšířením modulu Zásoby. Umožňuje sledování oběhu vratných obalů a paletového hospodářství. Lze pomocí něj sledovat obalová salda obchodních partnerů s vazbou na příslušné obchodní transakce (Nákup, Prodej, Příjem, Výdej, Transfer, Spotřeba a Výroba) a dále pak sledovat aktuální cenu obalů.
+Modul Evidence vratných obalů je rozšířením modulu Zásoby. Umožňuje sledování oběhu vratných obalů a paletového hospodářství. Lze pomocí něj sledovat obalová salda obchodních partnerů s vazbou na příslušné obchodní transakce (Nákup, Prodej, Příjem, Výdej, Transfer, Spotřeba a Výroba) a dále pak sledovat aktuální cenu obalů.
 
 Pro správné fungování modulu vratné obaly, je nutné předem provést některá nastavení:
 
@@ -57,19 +57,19 @@ Dalším krokem je nastavení kategorií vratných obalů. Kategorie vratných o
 
 ![Kategorie vrat. obalu](media/return-packing-categories.png)
 
-## Nastavení Šablon deníků vrat. Obalů
+## Nastavení Šablon deníků vrat. obalů
 
 Šablony deníků slouží k předpřipravení deníků pro účtování o vratných obalech (jedná se o obdobnou funkčnost jako šablony deníků zboží).
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Šablona deníku vrat. obalu** a poté vyberte související odkaz.
-2. Na stránce **Šablona deníku vrat. Obalu** vyberte akci **Nový** a poté zadejte **Název, Popis, Číselná řada, Číselná řada účtování** a **Kód původu**.
+2. Na stránce **Šablona deníku vrat. obalu** vyberte akci **Nový** a poté zadejte **Název, Popis, Číselná řada, Číselná řada účtování** a **Kód původu**.
 
 ![Šablona deníku vrat. obalu](media/return-packing-journal-template.png)
 
 ## Nastavení karet vratných obalů
 
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přehled vrat. Obalů** a poté vyberte související odkaz.
-2. Na stránce **Přehled vrat. Obalů** vyberte akci **Nový**.
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přehled vrat. obalů** a poté vyberte související odkaz.
+2. Na stránce **Přehled vrat. obalů** vyberte akci **Nový**.
 
 ![Přehled vrat. obalů](media/return-packing-list.png)
 
@@ -83,14 +83,14 @@ Každá Karta vratného obalu obsahuje tato pole:
 - **Popis** – název vratného obalu
 - **Kód kategorie vrat. obalu** – identifikace kategorie vratného obalu
 - **Vyhledávací popis**
-- **Pohyb** – needitovatelné pole s odkazem do tabulky „**Položky vrat. Obalu**“. Zde zobrazená hodnota udává stav salda vratných obalů
+- **Pohyb** – needitovatelné pole s odkazem do tabulky „**Položky vrat. obalu**“. Zde zobrazená hodnota udává stav salda vratných obalů
 - **Vzorec data platnosti v prodeji** – zadejte dobu, do kdy má zákazník povinnost vratný obal vrátit
 - **Vzorec data platnosti v nákupu** – zadejte dobu, do kdy máte povinnost vratný obal vrátit dodavateli
 - **Uzavřeno** – pole pro uzavření(zamezení) dalšího použití dané karty vratného obalu
 
 Nastavené hodnoty mají v případě, že jsou vyplněny, přednost před obecným nastavením.
 
-Z karty je dále možnost s pomocí akce **Související** zobrazit **Položky vrat. Obalu** a **Poznámky**.
+Z karty je dále možnost s pomocí akce **Související** zobrazit **Položky vrat. obalu** a **Poznámky**.
 
 **Viz také**  
 
