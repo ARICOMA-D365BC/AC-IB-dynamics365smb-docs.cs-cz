@@ -47,7 +47,7 @@ Abychom vám usnadnili práci, přinášíme přehled nejčastějších scéná�
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přehled vrat. Obalů** a poté vyberte související odkaz.
 2. Na stránce **Přehled vrat. Obalů** vyberte akci **Nový**.
 
-![prehled vrat. obalu](media/return-packing-list.jpg)
+![prehled vrat. obalu](media/return-packing-list.png)
 
 3. Po vybrání akce **Nový** se otevře **Karta vrat. obalu**.
 
@@ -84,7 +84,7 @@ Pro nastavení počátečních stavů salda obalů využijeme deníky vratných 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Deník vratných obalů** a poté vyberte související odkaz.
 2. Na stránce **Deník vratných obalů** vyplňte následující pole.
 
-![Deník vratných obalů](media/return-packing-journal.jpg)
+![Deník vratných obalů](media/return-packing-journal.png)
 
 Deník vratných obalů obsahuje tyto pole:  
 
