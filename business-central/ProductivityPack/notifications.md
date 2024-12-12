@@ -11,9 +11,11 @@ ms.search.keywords: Czech, Notification, additional functions, power automate, b
 
 Modul Správa upozornění v Dynamics 365 Business Central umožňuje uživatelům snadno vytvářet upozornění pro různé tabulky a pole bez nutnosti programování. Díky možnosti filtrování záznamů mohou uživatelé sledovat pouze relevantní položky a definovat fáze událostí pro monitorování jejich vývoje v čase. Upozornění jsou standardně generována jako Úlohy uživatele a mohou být také zasílána emailem. Upozornění formou emailu může být buď s pevně definovanou jednoduchou strukturou nebo email s dynamickým obsahem vytvářeným prostřednictvím funkcionality Word rozvržení.
 
-
+:::image type="content" source="media/notification-events.png" alt-text="Události upozornění":::
 
 Pro pokročilé notifikace modul generuje integrační události (business events), které umožňují propojení s externími systémy jako je Power Automate, Dataverse a jiné. Tyto systémy mohou reagovat na události a provádět další akce, jako je vytváření oznámení v Teams nebo záznamů v SharePoint. Upozornění lze vytvářet ručně nebo automaticky prostřednictvím Fronty úloh, což zajišťuje flexibilitu a efektivitu v řízení procesů.
+
+:::image type="content" source="media/notification-pa-business-event.png" alt-text="Power Automate - Business Events":::
 
 ## Klíčové funkce
 
