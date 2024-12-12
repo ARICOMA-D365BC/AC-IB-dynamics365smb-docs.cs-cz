@@ -72,7 +72,7 @@
           "hash": "fYF/EYFMBWGL2DattjXYqEe/OgF0wNIJxX655JosWwk="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -678,7 +678,7 @@
           "hash": "cD7F40p3e3F6ku8IyFaflDPlspHdofoetXpfTLnbXtA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -690,7 +690,7 @@
           "hash": "qnUP08Ax2fmCbEtaPgoRYKTWxAHu/ZcTwmVjiRJWVsY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -2670,7 +2670,7 @@
       "output": {
         ".html": {
           "relative_path": "ProductivityPack/notifications-setup.html",
-          "hash": "Mzuf50/XRjLAm1bB+qIZJTqzb+3zQyhTHEuVo1phxjk="
+          "hash": "QEr3Z2MfvXcyb9vVxTZWRnhXLnwTFtCI4QoEGLGY0sY="
         }
       },
       "is_incremental": false,
@@ -2682,7 +2682,7 @@
       "output": {
         ".html": {
           "relative_path": "ProductivityPack/notifications.html",
-          "hash": "dod3cO2+jjiZWE83C2Qp7lzOibfsAUw7qDKqUhBMX9o="
+          "hash": "JxvrJ8rfmLJIuqofeDKbQaBAF7tVjdOgyOe8uQgYxu4="
         }
       },
       "is_incremental": false,
@@ -7280,6 +7280,83 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "d365businesscentral/ProductivityPack/media/notification-event-emails.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/ProductivityPack/media/notification-event-emails.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/ProductivityPack/media/notification-event-template-card.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/ProductivityPack/media/notification-event-template-card.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/ProductivityPack/media/notification-event-templates-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/ProductivityPack/media/notification-event-templates-setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/ProductivityPack/media/notification-event-templates-setup2.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/ProductivityPack/media/notification-event-templates-setup2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/ProductivityPack/media/notification-events.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/ProductivityPack/media/notification-events.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/ProductivityPack/media/notification-homepage.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/ProductivityPack/media/notification-homepage.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/ProductivityPack/media/notification-pa-business-event.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/ProductivityPack/media/notification-pa-business-event.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "d365businesscentral/ProductivityPack/media/sharepoint.png",
       "output": {
         "resource": {
@@ -8055,7 +8132,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 295,
-          "skipped_file_count": 292
+          "skipped_file_count": 293
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
