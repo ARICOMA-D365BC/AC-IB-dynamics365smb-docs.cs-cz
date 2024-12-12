@@ -8,6 +8,7 @@ ms.service: dynamics-365-business-central
 ms.search.keywords: Notifications, power automate, business events 
 ---
 # Správa upozornění
+> Update: 12.12.2024
 
 Modul Správa upozornění v Dynamics 365 Business Central umožňuje uživatelům snadno vytvářet upozornění pro různé tabulky a pole bez nutnosti programování. Díky možnosti filtrování záznamů mohou uživatelé sledovat pouze relevantní položky a definovat fáze událostí pro monitorování jejich vývoje v čase. Upozornění jsou standardně generována jako Úlohy uživatele a mohou být také zasílána emailem. Upozornění formou emailu může být buď s pevně definovanou jednoduchou strukturou nebo email s dynamickým obsahem vytvářeným prostřednictvím funkcionality Word rozvržení.
 

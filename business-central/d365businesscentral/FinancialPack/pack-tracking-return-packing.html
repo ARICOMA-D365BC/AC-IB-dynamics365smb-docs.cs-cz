@@ -82,7 +82,7 @@ Typické vratné obaly zahrnují <strong>palety, přepravky, sudy, lahve</strong
 <ul>
 <li><strong>Samostatná evidence Vratných obalů:</strong> Naše řešení umožňuje detailní evidenci vratných obalů, včetně čísla, popisu, kategorie a dalších důležitých údajů. Tím zajišťujeme, že každý obal je vždy pod kontrolou.</li>
 <li><strong>Integrace se zásobami:</strong> V rámci standardní funkcionality zásob lze ke kartám zboží přiřadit odpovídající vratný obal. Například pro paletu lze vytvořit kartu zboží “Paleta” a na ni přiřadit kartu vratného obalu “Paleta”. Tento systém zajišťuje hladkou integraci a snadné sledování obalů při každém pohybu zboží.</li>
-<li><strong>Automatizace na dokladech:</strong> Na nákupních a prodejních dokladech lze vkládat karty zboží s přiřazenými vratnými obaly. Při účtování dokladů vznikají položky vratných dokladů, které slouží ke sledování příjmů a výdejů vratných obalů. Tento proces umožňuje efektivní sledování obalového salda dodavatele nebo odběratele.</li>
+<li><strong>Automatizace na dokladech:</strong> Na nákupních a prodejních dokladech lze vkládat karty zboží s přiřazenými vratnými obaly. Při účtování dokladů vznikají položky vratných dokladů, které slouží ke sledování příjmů a výdejů vratných obalů. Tento proces umožňuje efektivní sledování obalového salda dodavatele nebo zákazníka.</li>
 <li><strong>Deník vratných obalů:</strong> Pro ruční pohyby vratných obalů slouží Deník vratných obalů, kde lze realizovat ruční příjem a výdej obalů, nastavit počáteční stavy nebo provést korekci dle skutečného stavu. Tento nástroj poskytuje flexibilitu a přesnost při správě obalů.</li>
 </ul>
 <p><img src="media/return-packing-card.png" alt="Karta vratného obalu"></p>
@@ -98,8 +98,8 @@ Typické vratné obaly zahrnují <strong>palety, přepravky, sudy, lahve</strong
 </ul>
 <h3 id="zavedení-nového-obalu">Zavedení nového obalu</h3>
 <ol>
-<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přehled vrat. Obalů</strong> a poté vyberte související odkaz.</li>
-<li>Na stránce <strong>Přehled vrat. Obalů</strong> vyberte akci <strong>Nový</strong>.</li>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přehled vrat. obalů</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Přehled vrat. obalů</strong> vyberte akci <strong>Nový</strong>.</li>
 </ol>
 <p><img src="media/return-packing-list.png" alt="prehled vrat. obalu"></p>
 <ol start="3">
@@ -112,13 +112,13 @@ Typické vratné obaly zahrnují <strong>palety, přepravky, sudy, lahve</strong
 <li><strong>Popis</strong> – název vratného obalu</li>
 <li><strong>Kód kategorie vrat. obalu</strong> – identifikace kategorie vratného obalu</li>
 <li><strong>Vyhledávací popis</strong></li>
-<li><strong>Pohyb</strong> – needitovatelné pole s odkazem do tabulky „<strong>Položky vrat. Obalu</strong>“. Zde zobrazená hodnota udává stav salda vratných obalů</li>
+<li><strong>Pohyb</strong> – needitovatelné pole s odkazem do tabulky „<strong>Položky vrat. obalu</strong>“. Zde zobrazená hodnota udává stav salda vratných obalů</li>
 <li><strong>Vzorec data platnosti v prodeji</strong> – zadejte dobu, do kdy má zákazník povinnost vratný obal vrátit</li>
 <li><strong>Vzorec data platnosti v nákupu</strong> – zadejte dobu, do kdy máte povinnost vratný obal vrátit dodavateli</li>
 <li><strong>Uzavřeno</strong> – pole pro uzavření(zamezení) dalšího použití dané karty vratného obalu</li>
 </ul>
 <p>Nastavené hodnoty mají v případě, že jsou vyplněny, přednost před obecným nastavením.</p>
-<p>Z karty je dále možnost s pomocí akce <strong>Související</strong> zobrazit <strong>Položky vrat. Obalu</strong> a <strong>Poznámky</strong>.</p>
+<p>Z karty je dále možnost s pomocí akce <strong>Související</strong> zobrazit <strong>Položky vrat. obalu</strong> a <strong>Poznámky</strong>.</p>
 <p>Jelikož každý Vratný obal je zbožím, je také nutno vytvořit kartu zboží daného vratného obalu a přiřadit jí číslo Vratného obalu. Volba „dvojité“ evidence je z důvodu oddělení sledování expirace vratných obalů od účetních operací.</p>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Zboží</strong> a poté vyberte související odkaz.</li>
@@ -139,15 +139,15 @@ Typické vratné obaly zahrnují <strong>palety, přepravky, sudy, lahve</strong
 <p><img src="media/return-packing-journal.png" alt="Deník vratných obalů"></p>
 <p>Deník vratných obalů obsahuje tyto pole:  </p>
 <ul>
-<li><strong>Typ položky –</strong> vyberte, zda se jedná o Nákup, Prodej, Příjem, Výdej  </li>
-<li><strong>Číslo dokladu –</strong> vyplňte číslo dokladu  </li>
-<li><strong>Číslo vratného obalu –</strong> vyberte číslo související karty vratného obalu  </li>
-<li><strong>Číslo zboží –</strong> vyberte číslo souvisejícího karty zboží  </li>
-<li><strong>Typ původu –</strong> needitovatelné pole vyplněné automaticky na základě pole Typ položky  </li>
-<li><strong>Číslo původu</strong> – vyberte číslo konkrétního dodavatele  </li>
-<li><strong>Popis</strong> – název vratného obalu  </li>
-<li><strong>Množství</strong> – zadejte počet kusů vratného obalu  </li>
-<li><strong>Vyrovnává položku –</strong> vyberte položku k vyrovnání</li>
+<li><strong>Typ položky</strong> – vyberte, zda se jedná o Nákup, Prodej, Příjem, Výdej  </li>
+<li><strong>Číslo dokladu</strong> – vyplňte číslo dokladu  </li>
+<li><strong>Číslo vratného obalu</strong> – vyberte číslo související karty vratného obalu  </li>
+<li><strong>Číslo zboží</strong> – vyberte číslo související karty zboží  </li>
+<li><strong>Typ původu</strong> – needitovatelné pole vyplněné automaticky na základě pole Typ položky  </li>
+<li><strong>Číslo původu</strong> – vyberte číslo konkrétního dodavatele</li>
+<li><strong>Popis</strong> – název vratného obalu</li>
+<li><strong>Množství</strong> – zadejte počet kusů vratného obalu</li>
+<li><strong>Vyrovnává položku</strong> – vyberte položku k vyrovnání</li>
 </ul>
 <ol start="3">
 <li>Po vyplnění požadovaných polí vyberte akci <strong>Tisk</strong>, kde můžete zkontrolovat správnost vyplnění.</li>
@@ -227,7 +227,7 @@ Typické vratné obaly zahrnují <strong>palety, přepravky, sudy, lahve</strong
 <ul>
 <li><strong>Saldo vratných obalů dodavatele:</strong> Zobrazuje stav salda vratných obalů u vašich dodavatelů.
 <ul>
-<li>Je třeba zadat číslo dodavatele a období (datum) pro které chceme zjistit stav salda</li>
+<li>Je třeba zadat číslo dodavatele a období (datum), pro které chceme zjistit stav salda</li>
 <li>Sestavu můžeme spustit za <strong>Dodavatele</strong> nebo za <strong>Věřitele</strong></li>
 </ul>
 </li>

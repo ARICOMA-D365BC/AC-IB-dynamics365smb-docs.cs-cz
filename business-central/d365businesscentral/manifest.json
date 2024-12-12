@@ -675,7 +675,7 @@
       "output": {
         ".html": {
           "relative_path": "FinancialPack/pack-tracking-return-packing-setup.html",
-          "hash": "VgaDVArnt85C95VZXQSaHjdRV2aYtC0GPbPijGgrD+4="
+          "hash": "cD7F40p3e3F6ku8IyFaflDPlspHdofoetXpfTLnbXtA="
         }
       },
       "is_incremental": false,
@@ -687,7 +687,7 @@
       "output": {
         ".html": {
           "relative_path": "FinancialPack/pack-tracking-return-packing.html",
-          "hash": "1egM4zOYUrVGRv/K9JOjaw8NYuMDfB1wj+nivBn0O3c="
+          "hash": "qnUP08Ax2fmCbEtaPgoRYKTWxAHu/ZcTwmVjiRJWVsY="
         }
       },
       "is_incremental": false,
@@ -2278,6 +2278,83 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "ProductivityPack/media/notification-event-emails.png",
+      "output": {
+        "resource": {
+          "relative_path": "ProductivityPack/media/notification-event-emails.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "ProductivityPack/media/notification-event-template-card.png",
+      "output": {
+        "resource": {
+          "relative_path": "ProductivityPack/media/notification-event-template-card.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "ProductivityPack/media/notification-event-templates-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "ProductivityPack/media/notification-event-templates-setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "ProductivityPack/media/notification-event-templates-setup2.png",
+      "output": {
+        "resource": {
+          "relative_path": "ProductivityPack/media/notification-event-templates-setup2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "ProductivityPack/media/notification-events.png",
+      "output": {
+        "resource": {
+          "relative_path": "ProductivityPack/media/notification-events.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "ProductivityPack/media/notification-homepage.png",
+      "output": {
+        "resource": {
+          "relative_path": "ProductivityPack/media/notification-homepage.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "ProductivityPack/media/notification-pa-business-event.png",
+      "output": {
+        "resource": {
+          "relative_path": "ProductivityPack/media/notification-pa-business-event.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "ProductivityPack/media/readme.md",
       "output": {
@@ -2596,7 +2673,7 @@
           "hash": "Mzuf50/XRjLAm1bB+qIZJTqzb+3zQyhTHEuVo1phxjk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2605,10 +2682,10 @@
       "output": {
         ".html": {
           "relative_path": "ProductivityPack/notifications.html",
-          "hash": "OYhjt00pdhjXi3CvUg42cBtbEtD6GXEMJ12YGDqrlzA="
+          "hash": "dod3cO2+jjiZWE83C2Qp7lzOibfsAUw7qDKqUhBMX9o="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -2704,7 +2781,7 @@
           "hash": "sD01E6eETTVmA32vL1B0hA2K3XFiHQvJMc0O8pQQaPk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5960,6 +6037,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-categories.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-categories.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-customer-balance-detail.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-customer-balance-detail.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-customer-balance.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-customer-balance.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-item-card.png",
       "output": {
         "resource": {
@@ -5971,10 +6081,153 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-journal-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-journal-template.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-journal.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-journal.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-list.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-no-series.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-no-series.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-purch-order.png",
       "output": {
         "resource": {
           "relative_path": "d365businesscentral/FinancialPack/media/return-packing-purch-order.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-purchase-order.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-purchase-order.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-quantity-print.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-quantity-print.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-quantity.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-quantity.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-registers.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-registers.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-sales-order.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-sales-order.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-setup-numbering.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-setup-numbering.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-vendor-balance-detail.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-vendor-balance-detail.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/return-packing-vendor-balance.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/return-packing-vendor-balance.png"
         }
       },
       "is_incremental": false,
@@ -7802,7 +8055,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 295,
-          "skipped_file_count": 293
+          "skipped_file_count": 292
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

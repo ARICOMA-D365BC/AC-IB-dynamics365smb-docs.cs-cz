@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Notificaiton | Microsoft Docs </title>
+    <title>Notifications </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Notificaiton | Microsoft Docs ">
+    <meta name="title" content="Notifications ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -69,8 +69,32 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="správa-upozornění">Správa upozornění</h1>
 
-<p>Add-on modul Správa upozornění umožňuje systémové upozorňování na stavy dat a procesů evidovaných v systému Dynamics 365 Business Central. Upozorňování pracuje jak interně v prostředí systému, tak i externě formou e-mailu.</p>
-<p>Základem použití modulu je definování sledovaných stavů a událostí v systému, na které je třeba upozornit uživatele nebo na ně určitým způsobem reagovat. Kromě sledování aktuální události lze sledovat i vývoj události v čase.</p>
+<p>Modul Správa upozornění v Dynamics 365 Business Central umožňuje uživatelům snadno vytvářet upozornění pro různé tabulky a pole bez nutnosti programování. Díky možnosti filtrování záznamů mohou uživatelé sledovat pouze relevantní položky a definovat fáze událostí pro monitorování jejich vývoje v čase. Upozornění jsou standardně generována jako Úlohy uživatele a mohou být také zasílána emailem. Upozornění formou emailu může být buď s pevně definovanou jednoduchou strukturou nebo email s dynamickým obsahem vytvářeným prostřednictvím funkcionality Word rozvržení.</p>
+<p><img src="media/notification-events.png" alt="Události upozornění"></p>
+<p>Pro pokročilé notifikace modul generuje integrační události (business events), které umožňují propojení s externími systémy jako je Power Automate, Dataverse a jiné. Tyto systémy mohou reagovat na události a provádět další akce, jako je vytváření oznámení v Teams nebo záznamů v SharePoint. Upozornění lze vytvářet ručně nebo automaticky prostřednictvím Fronty úloh, což zajišťuje flexibilitu a efektivitu v řízení procesů.</p>
+<p><img src="media/notification-pa-business-event.png" alt="Power Automate - Business Event"></p>
+<h2 id="klíčové-funkce">Klíčové funkce</h2>
+<ul>
+<li><strong>Uživatelská definice upozornění na události systému:</strong> Modul umožňuje flexibilně vytvářet upozornění pro téměř libovolné tabulky a pole systému bez nutnosti dalšího programování. Záznamy je možné různě filtrovat a tím sledovat pouze požadované položky.</li>
+<li><strong>Události lze sledovat v čase:</strong> Uživatelé mohou definovat fáze událostí a sledovat tak jejich vývoj v čase, což umožňuje proaktivní reakce a lepší řízení procesů.</li>
+<li><strong>Upozornění formou Úlohy uživatele a emailem:</strong> Upozornění jsou standardně vytvářena jako Úlohy uživatele a mohou být současně zasílána emailem, což zajišťuje, že uživatelé jsou vždy informováni.</li>
+<li><strong>Integrace s Power Automate pro pokročilé notifikace:</strong> Modul současně generuje integrační události (business events), které umožňují propojení s externími systémy jako jsou Power Automate, Dataverse a jiné. Tyto systémy mohou reagovat na události a provádět další akce, jako je vytváření oznámení v Teams nebo záznamů v SharePoint, což zvyšuje automatizaci a efektivitu.</li>
+<li><strong>Ruční i automatické vytváření upozornění:</strong> Upozornění mohou být vytvářena ručně spuštěním funkce Zpracovat události nebo automaticky prostřednictvím Fronty úloh, což poskytuje flexibilitu a pohodlí při správě upozornění.</li>
+</ul>
+<h2 id="praktické-scénáře-použití">Praktické scénáře použití</h2>
+<ul>
+<li>Upozornění na blížící se vypršení platnosti prodejních nabídek</li>
+<li>Upozornění na vytvoření Prodejní objednávky s kratším datem dodání jak 2 týdny</li>
+<li>Upozornění na blížící se splatnost pohledávek</li>
+<li>Upozornění na založení nového zboží</li>
+<li>Upozornění na založení nového zákazníka nebo dodavatele</li>
+<li>Upozornění na vytvoření nové výrobní, montážní nebo servisní zakázky</li>
+<li>Upozornění na dokončení výrobní, montážní nebo servisní zakázky</li>
+<li>Upozornění na přidělení Servisní zakázky</li>
+<li>Upozornění na zaplacení zálohové faktury</li>
+<li>Upozornění na zaúčtovaný příjem na zadaný sklad</li>
+<li>Upozornění na převod zboží na zadaný sklad např. expediční lokaci, recyklační sklad pro likvidaci zboží, apod.</li>
+</ul>
 <p><strong>Viz také</strong></p>
 <p><a href="notifications-setup.html">Správa upozornění - nastavení</a><br>
 <a href="productivity-pack.html">Productivity Pack</a></p>
@@ -82,7 +106,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/return-packing-pj/business-central/ProductivityPack/notifications.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/ProductivityPack/notifications.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
                   </li>
                 </ul>
               </div>

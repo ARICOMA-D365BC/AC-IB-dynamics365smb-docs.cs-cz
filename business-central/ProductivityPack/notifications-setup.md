@@ -11,6 +11,7 @@ ms.search.keywords: Czech, Notification setup, additional functions
 ms.author: v-makune
 ---
 # Nastavení modulu Správa upozornění
+> Update: 12.12.2024
 
 Modul **Správa upozornění** umožňuje **systémové upozorňování** na stavy dat a procesů evidovaných v systému Microsoft Dynamics 365 Business Central. Upozorňování pracuje jak interně v prostředí systému, tak i externě formou e-mailu. Modul dokáže pracovat off-line, jelikož nereaguje na okamžitou změnu v datech, ale **zasílá informace v naplánovaných intervalech**. Kromě sledování aktuální události lze sledovat i vývoj události v čase.
 
