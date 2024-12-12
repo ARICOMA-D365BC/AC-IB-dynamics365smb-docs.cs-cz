@@ -1,6 +1,6 @@
 ---
-title: Notificaiton
-description: Event Notification
+title: Notificaitons
+description: Event Notifications
 author: janousek
 date: 11/30/2024
 reviewer: janousek
