@@ -8,6 +8,7 @@ ms.service: dynamics-365-business-central
 ms.search.keywords: pack tracking, return packing, financial pack, setup, rapidstart
 ---
 # Evidence obalů (EKO-KOM) – Nastavení
+
 > Aktualizace: 01.3.2025
 
 Prvním krokem při práci s modulem **Evidence obalů** je vytvoření **Výkazů obalů**. Ty představují nadřazené kategorie, které slouží jako základ pro následné nastavování parametrů obalové evidence. V systému lze založit libovolný počet těchto výkazů, přičemž každý z nich může obsahovat specifická data podle potřeb firmy nebo legislativy.
@@ -16,10 +17,7 @@ Pokud plánujete pracovat s parametrizací systému **EKO-KOM**, je nutné nejpr
 
 Jakmile je výkaz obalů vytvořen, nastavují se podrobnější parametry, které definují strukturu a vlastnosti evidovaných obalů. Tento proces zahrnuje rozdělení obalů do specifických skupin a jejich následnou klasifikaci podle stanovených kritérií. Správné nastavení těchto prvků zajišťuje přesnou evidenci a usnadňuje následné vykazování podle legislativních požadavků.
 
-<video width="640" height="360" controls>
-  <source src="media/pack-tracking.mp4" type="video/mp4">
-  Váš prohlížeč nepodporuje přehrávání videí.
-</video>
+<video src="media/pack-tracking.mp4" width="640" height="360" controls></video>
 
 Pro správné nastavení je nutné provést následující kroky:
 
@@ -92,9 +90,7 @@ V každém založeném Výkazu obalů lze definovat výjimky, specifikované sta
 
 ![Vyjímky prvku výkazu obalů](media/pack-tracking-exceptions.png)
 
-
-
-
 ## Viz také
+
 [Evidence obalů základ (EKOKOM)](pack-tracking-basic.md)  
 [Financial Pack](finance-pack.md)  
