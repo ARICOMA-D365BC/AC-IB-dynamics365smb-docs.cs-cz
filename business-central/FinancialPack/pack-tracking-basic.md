@@ -1,6 +1,6 @@
 ---
 title: Evidence obalů (EKO-KOM)
-description: Návod jak evidovat a používat modul Evidence obalů (EKOKOM)
+description: Návod jak používat modul Evidence obalů (EKOKOM)
 author: Makowka-Tomas
 date: 2/20/2025
 reviewer: janousek
