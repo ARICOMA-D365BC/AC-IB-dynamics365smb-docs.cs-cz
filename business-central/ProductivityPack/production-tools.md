@@ -10,7 +10,7 @@ ms.search.keywords: tool evidence, production tools, productivity pack
 # Evidence nástrojů a pomůcek
 > Aktualizace: 01.12.2024
 
-Získejte plnou kontrolu nad vašemi nástroji a vybavením díky chytrému řešení, pomocí našeho modulu integrovaného přímo do systému Business Central. Sledujte pohyb nástrojů, minimalizujte ztráty a prodlužte jeho životnost díky snadnému přehledu o evidenci, zápůjčkách, kontrolách a údržbě. Modul Evidence nástrojů a pomůcek řeší problematiku evidence nástrojů, pomůcek a forem a jiných potřeb obvykle evidovaných pomocí skladové evidence systému. Tento modul je postaven nad základy evidence majetku, s ohledem na sjednocení evidence pro potřeby sledování dlouhodobého majetku a výrobní evidence, tj. půjčování nástrojů a pomůcek.
+Získejte plnou kontrolu nad svými nástroji a vybavením díky našemu chytrému řešení, které je přímo integrované do systému Business Central. Sledujte pohyb nástrojů, minimalizujte ztráty a prodlužte jejich životnost díky snadnému přehledu o evidenci, zápůjčkách, kontrolách a údržbě. Náš modul Evidence nástrojů a pomůcek efektivně řeší problematiku evidence nástrojů, pomůcek, forem a dalších potřeb, které jsou obvykle evidovány pomocí skladové evidence systému. Tento modul je postaven na základech evidence majetku a sjednocuje evidenci pro potřeby sledování dlouhodobého majetku a výrobní evidence, včetně půjčování nástrojů a pomůcek.
 
 ![Karta nástrojů](media/production-tools-tool-card.png)
 
@@ -175,8 +175,6 @@ Jak již bylo zmíněno, všechny vytvořené položky je možné sledovat na ka
 
 ![Položky evidence nástrojů - zobrazení](media/production-tools-tool-ledger-entries.png)
 
-> [!TIP]
-> Na stránku **Položky evidence nástrojů** je možné se dostat i přes klávesovou zkratku **CTRL + F7** z karet **Přehled evidence nástrojů**, nebo z karet jednotlivých nástrojů.
 
 ## Viz také
 
