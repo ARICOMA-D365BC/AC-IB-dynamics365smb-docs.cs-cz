@@ -89,7 +89,7 @@ Abychom vám usnadnili práci, přinášíme přehled nejčastějších scénár
 
 **Ukázka pomocí obrázků:**
 
-![Deník nástrojů - šablony](media/production-tools-tool-journal-templatelist.png)
+![Deník nástrojů - šablony](media/resized_production-tools-journal-templatelist2.png)
 
 **Řádky deníku nástrojů:**
 ![Deník nástrojů - přijetí](media/production-tools-tool-journal-positiveadjustment.png)
@@ -111,7 +111,7 @@ Abychom vám usnadnili práci, přinášíme přehled nejčastějších scénár
 
 **Ukázka pomocí obrázků:**
 
-![Deník nástrojů - šablony](media/production-tools-tool-journal-templatelist.png)
+![Deník nástrojů - šablony](media/resized_production-tools-journal-templatelist2.png)
 
 **Řádky deníku nástrojů:**
 ![Deník nástrojů - zapůjčit](media/production-tools-tool-journal-lend.png)
@@ -135,7 +135,7 @@ Abychom vám usnadnili práci, přinášíme přehled nejčastějších scénár
 
 **Ukázka pomocí obrázků:**
 
-![Deník nástrojů - šablony](media/production-tools-tool-journal-templatelist.png)
+![Deník nástrojů - šablony](media/resized_production-tools-journal-templatelist2.png)
 
 **Řádky deníku nástrojů:**
 ![Deník nástrojů - vrátit](media/production-tools-tool-journal-return.png)
@@ -158,7 +158,7 @@ Abychom vám usnadnili práci, přinášíme přehled nejčastějších scénár
 
 **Ukázka pomocí obrázků:**
 
-![Deník nástrojů - šablony](media/production-tools-tool-journal-templatelist.png)
+![Deník nástrojů - šablony](media/resized_production-tools-journal-templatelist2.png)
 
 **Řádky deníku nástrojů:**
 ![Deník nástrojů - výdej](media/production-tools-tool-journal-negativeadjustment.png)
