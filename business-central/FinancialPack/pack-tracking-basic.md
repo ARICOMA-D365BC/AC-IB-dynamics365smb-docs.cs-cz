@@ -1,39 +1,68 @@
 ---
-title: Aricoma - Pack Tracking Basic | Microsoft Docs
-description:  This section describes Aricoma Pack Tracking Basic AddOn
-author: ACPJanousek
-ms.service: dynamics365-business-central
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.search.keywords: Pack tracking, inventory, item, report,
-ms.date: 01/31/2020 TODO
-ms.author: v-pejano
+title: Evidence obalů (EKO-KOM)
+description: Návod jak používat modul Evidence obalů (EKOKOM)
+author: Makowka-Tomas
+date: 2/20/2025
+reviewer: janousek
+ms.service: dynamics-365-business-central
+ms.search.keywords: pack tracking, return packing, financial pack, rapidstart, help, report
 ---
+# Evidence obalů (EKO-KOM)
 
-# Evidence obalů základ (EKOKOM)
-Modul Evidence obalů je rozšířením oblasti Zásoby.  
-Modul zakládá samostatnou evidenci obalů svázanou s oblastí zásob a standardními pohyby zboží (nákup, prodej, příjem, výdej, transfer, spotřeba a výroba).  
+> Aktualizace: 01.3.2025
 
-Evidence obalů obsahuje klasifikaci druhů obalů. Umožňuje spravovat libovolný počet podkladů pro potřeby obalového výkaznictví požadovaného interně firmou nebo legislativou (základní parametrizace výkazu EKO-KOM pro potřeby výkaznictví příslušnými osobami dle Zákona o obalech č. 477/2001 Sb. je součástí).  
+Obaly hrají klíčovou roli v celém dodavatelském řetězci – chrání zboží, usnadňují manipulaci a pomáhají splnit legislativní požadavky. Jejich správa je však často náročná, ať už se jedná o **obaly pro jedno použití**, **obaly pro opakované použití nebo obaly s různými podmínkami zpoplatnění**.
 
-Položky obalů se vyrovnávají automaticky na pozadí při pohybech zboží, a proto zpracování podkladů pro Evidenci obalů uživatele nijak nezatěžuje.
-Výstupem modulu je tisková sestava **Podklad pro výkaz obalů**, která poskytuje podklady pro vyplnění vyžadovaných tiskopisů.
+Ruční evidence těchto obalů může být nepřehledná a náchylná k chybám. Firmy se často potýkají s nesrovnalostmi v reportech, složitým dohledáváním dat nebo neefektivním vykazováním odpovědným institucím. Modul Evidence obalů (EKOKOM) tento proces automatizuje a zajišťuje přesnou evidenci napříč celým životním cyklem obalů.
+
+## Moderní přístup k evidenci obalů
+
+Modul **Evidence obalů (EKOKOM)** pro **MicrosoftDynamics 365 Business Central** vám poskytne plnou kontrolu nadobaly všech typů. Umožňuje evidovat a sledovat nejen **obalyna jedno použití**, ale i **opakovaně použitelné obaly**a rozlišovat je dle zpoplatnění – **zpoplatněné, předplacené aneplacené**.
+
+Systém automaticky propojuje obaly s pohyby zboží, čímž eliminuje potřebu manuálního zaznamenávání. Díky plné integraci s výkaznictvím EKO-KOM jsou všechny legislativní podklady připraveny automaticky a v souladu se **Zákonem o obalech č. 477/2001 Sb**.
+
+### Funkce modulu Evidence obalů (EKOKOM)
+
+- **Automatická evidence všech typů obalů** - Modul rozlišuje obaly dle použití i zpoplatnění a umožňuje přesnou klasifikaci v souladu s firemními a legislativními požadavky.
+- **Plná integrace se skladovým hospodářstvím** - Obaly jsou pevně propojeny s materiálovými toky a evidovány spolu s pohybem zboží, což umožňuje přesné sledování jejich stavu.
+- **Legislativní výkaznictví EKO-KOM** - Systém automaticky generuje podklady pro výkaz obalů a další reporty dle platné legislativy, čímž eliminuje chybovost a urychluje administrativní procesy.
+- **Přiřazení obalových prvků ke zboží** - Každý obal lze propojit s konkrétními produkty a evidovat je společně v rámci skladového hospodářství.
+- **Přehledné reporty a sestavy** - Díky snadno dostupným reportům získáte vždy aktuální přehled o stavu obalového hospodářství a připravené podklady pro reporting.
 
 ## Přiřazování prvků Výkazu obalů
-Po korektním nastavení add-on modulu **Evidence obalů základ** je možné na kartách Zboží přiřazovat prvky Výkazu obalů.  
-Přiřazení se provede na příslušných kartách Zboží, v nabídce zvolte Akce/Zboží/**Prvky výkazu obalů**.  
 
-Pro každé zboží a jeho měrnou jednotku lze přiřadit libovolný počet prvků výkazů obalů (zařadit zboží do několika výkazů). Přiřazení prvku je vázáno na **Kód pro vykazování** a **Typ pohybu**. Kombinaci těchto hodnot doplňuje **Kód** určující pozici ve výkazu. Pole **Hmotnost** je vztaženo k měrné jednotce na řádku výkazu.  
+Pro správné fungování modulu **Evidence obalů** je nutné na kartách zboží přiřadit odpovídající prvky výkazu obalů.
 
-## Vytváření sestav
-Pomocí vyhledávací funkce ![Žárovka, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat") vyhledejte **Podklad pro výkaz obalů**.
-Slouží jako podklad pro výkaz o produkci obalů pro společnost EKO-KOM, a. s. Uvedená sestava zobrazí podklady pro vyplnění Výkazu obalů. 
+Toto přiřazení se provádí přímo na kartě zboží v nabídce **Související** > **Zboží** > **Prvky výkazu obalů**.
 
-Pokud chceme označit položky jako vykázané, je nutno pro možnost nevykázaných položek zatrhnout pole **Označit položky** a vyplnit pole **Číslo výpisu**.  
-Data použitá do výkazu lze filtrovat, např. podle Zúčtovacího data, Kódu pro vykazování jednotlivých položek apod.
+![Cesta k modulu kartě zboží](media/pack-tracking-item-card.png)
+
+Každé zboží a jeho měrná jednotka mohou být zařazeny do jednoho nebo více výkazů obalů. Přiřazení prvku je vázáno na **Kód pro vykazování** a **Typ pohybu**. Tyto hodnoty společně určují zařazení obalu do správné kategorie ve výkazu. Doplněním **Kódu** se nastaví konkrétní pozice ve výkazu a pole **Hmotnost** se vztahuje k měrné jednotce na řádku výkazu.
+
+![Modul na kartě zboží](media/pack-tracking-item-card-module.png)
+
+## Reporting
+
+Modul Evidence obalů základ poskytuje komplexní nástroje pro reporting obalového hospodářství. Díky integrovanému systému můžete snadno generovat podklady pro výkaznictví a zajistit tak soulad s legislativními požadavky.
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Podklad pro výkaz obalů** a poté vyberte související odkaz.
+2. Zobrazí se dialogové okno s možnostmi nastavení reportu.
+
+V této sestavě lze nastavit:
+
+![Podklad pro výkaz obalů](media/pack-tracking-report.png)
+
+- **Položky** - Umožňuje zvolit, zda se mají zobrazit **všechny obaly**, **nevykázané obaly** nebo již **vykázané obaly**.
+  - **Nevykázané** - Obaly, které dosud nebyly zahrnuty do žádného výkazu. Pokud je chcete vykázat, je nutné aktivovat volbu **Označit položky**.
+  - **Vykázané** - Obaly, které již byly zahrnuty v předchozích výkazech.
+- **Označit položky** - Dostupné pouze při volbě **Nevykázané**. Tato volba umožňuje označit obaly pro vykázání, čímž zajistíte, že nebudou v budoucích reportech vedeny jako „nevykázané“.
+- **Číslo výpisu** - Slouží k jednoznačné identifikaci konkrétního výkazu.
+- **Filtr: Položka výkazu obalů** - Umožňuje upřesnit vykazovaná data podle **kódu pro vykazování, zúčtovacího data, čísla výpisu nebo kódu prvku výkazu obalů**.
+  - Pokud aktivujete volbu **Označit položky**, systém vás automaticky přesměruje na pole **Kód prvku výkazu obalů**, kde je nutné vybrat odpovídající klasifikaci.
+
+Po nastavení parametrů můžete sestavu exportovat, vytisknout nebo zobrazit náhled.
 
 ## Viz také
-[Nastavení - Evidence obalů základ (EKOKOM)](pack-tracking-basic-setup.md)  
-[Financial Pack](finance-pack.md)  
+
+[Nastavení - Evidence obalů základ (EKOKOM)](pack-tracking-basic-setup.md)
+[Financial Pack](finance-pack.md)
