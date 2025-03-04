@@ -10,7 +10,7 @@ ms.search.keywords: tool evidence, production tools, productivity pack
 # Evidence nástrojů a pomůcek
 > Aktualizace: 01.12.2024
 
-Získejte plnou kontrolu nad svými nástroji a vybavením díky našemu chytrému řešení, které je přímo integrované do systému Business Central. Sledujte pohyb nástrojů, minimalizujte ztráty a prodlužte jejich životnost díky snadnému přehledu o evidenci, zápůjčkách, kontrolách a údržbě. Náš modul Evidence nástrojů a pomůcek efektivně řeší problematiku evidence nástrojů, pomůcek, forem a dalších potřeb, které jsou obvykle evidovány pomocí skladové evidence systému. Tento modul je postaven na základech evidence majetku a sjednocuje evidenci pro potřeby sledování dlouhodobého majetku a výrobní evidence, včetně půjčování nástrojů a pomůcek.
+Získejte plnou kontrolu nad svými nástroji a vybavením díky chytrému řešení, které je přímo integrované do systému Business Central. Sledujte pohyb nástrojů, minimalizujte ztráty a prodlužte jeho životnost díky snadnému přehledu o evidenci, zápůjčkách, kontrolách a údržbě. Náš modul **Evidence nástrojů a pomůcek** řeší problematiku evidence nástrojů, pomůcek, forem a jiných potřeb, které jsou obvykle evidovány pomocí skladové evidence systému. Tento modul je postaven na základech evidence majetku a sjednocuje evidenci pro potřeby sledování dlouhodobého majetku a výrobní evidence, včetně půjčování nástrojů a pomůcek.
 
 ![Karta nástrojů](media/production-tools-tool-card.png)
 
@@ -89,7 +89,7 @@ Abychom vám usnadnili práci, přinášíme přehled nejčastějších scénár
 
 **Ukázka pomocí obrázků:**
 
-![Deník nástrojů - šablony](media/production-tools-tool-journal-templatelist.png)
+![Deník nástrojů - šablony](media/resized_production-tools-journal-templatelist2.png)
 
 **Řádky deníku nástrojů:**
 ![Deník nástrojů - přijetí](media/production-tools-tool-journal-positiveadjustment.png)
@@ -111,7 +111,7 @@ Abychom vám usnadnili práci, přinášíme přehled nejčastějších scénár
 
 **Ukázka pomocí obrázků:**
 
-![Deník nástrojů - šablony](media/production-tools-tool-journal-templatelist.png)
+![Deník nástrojů - šablony](media/resized_production-tools-journal-templatelist2.png)
 
 **Řádky deníku nástrojů:**
 ![Deník nástrojů - zapůjčit](media/production-tools-tool-journal-lend.png)
@@ -135,7 +135,7 @@ Abychom vám usnadnili práci, přinášíme přehled nejčastějších scénár
 
 **Ukázka pomocí obrázků:**
 
-![Deník nástrojů - šablony](media/production-tools-tool-journal-templatelist.png)
+![Deník nástrojů - šablony](media/resized_production-tools-journal-templatelist2.png)
 
 **Řádky deníku nástrojů:**
 ![Deník nástrojů - vrátit](media/production-tools-tool-journal-return.png)
@@ -158,7 +158,7 @@ Abychom vám usnadnili práci, přinášíme přehled nejčastějších scénár
 
 **Ukázka pomocí obrázků:**
 
-![Deník nástrojů - šablony](media/production-tools-tool-journal-templatelist.png)
+![Deník nástrojů - šablony](media/resized_production-tools-journal-templatelist2.png)
 
 **Řádky deníku nástrojů:**
 ![Deník nástrojů - výdej](media/production-tools-tool-journal-negativeadjustment.png)

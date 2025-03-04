@@ -10,9 +10,9 @@ ms.search.keywords: pack tracking, production tools, productivity pack
 # Evidence nástrojů a pomůcek - Nastavení
 > Aktualizace: 01.12.2024
 
- Modul **Evidence nástrojů a pomůcek** řeší problematiku evidence nástrojů, pomůcek a forem a jiných potřeb obvykle evidovaných pomocí skladové evidence systému. Tento modul je postaven nad základy evidence majetku, s ohledem na sjednocení evidence pro potřeby sledování dlouhodobého majetku a výrobní evidence, tj. půjčování nástrojů a pomůcek.
+ Náš modul **Evidence nástrojů a pomůcek** řeší problematiku evidence nástrojů, pomůcek, forem a jiných potřeb, které jsou obvykle evidovány pomocí skladové evidence systému. Tento modul je postaven na základech evidence majetku a sjednocuje evidenci pro potřeby sledování dlouhodobého majetku a výrobní evidence, včetně půjčování nástrojů a pomůcek.
 
- Pro plnohodnotné používání modulu je nutné je nastavit dle potřeb konkrétní společnosti. Níže jsou popsáný jednotlivé části nastavení.
+ Pro plnohodnotné používání modulu je nutné je nastavit dle potřeb konkrétní společnosti. Níže jsou popsány jednotlivé části nastavení.
 
 ### Šablony deníku evidence nástrojů
 
@@ -28,6 +28,7 @@ ms.search.keywords: pack tracking, production tools, productivity pack
 
 > [!IMPORTANT]  
 > **Je nutné vytvořit alespoň jednu šablonu deníku evidence nástrojů, aby bylo možné zadávat pohyby nástrojů**.
+
 > [!TIP]
 > Je možné mít jednu šablonu pro všechny typy pohybů, tedy šablonu, kde při vytvoření nezadáte žádný **Výchozí typ položky**.
 
@@ -38,7 +39,7 @@ ms.search.keywords: pack tracking, production tools, productivity pack
 3. Klikněte na tlačítko **+ Nový** pro vytvoření nové číselné řady.
 4. Do pole **Kód** zadejte jedinečný identifikátor pro číselnou řadu.
 5. Do pole **Popis** zadejte stručný popis, který vysvětluje účel číselné řady.
-6. Do pole **Číselný rozsah** zadejte počáteční a koncové číslo řady.
+6. Do polí **Počáteční číslo** a **Poslední číslo** zadejte počáteční a koncové číslo řady.
 7. Zaškrtněte pole **Výchozí čísla**, pokud chcete, aby systém automaticky generoval čísla v této číselné řadě.
 8. Uložte číselnou řadu kliknutím na tlačítko **Uložit**.
 
