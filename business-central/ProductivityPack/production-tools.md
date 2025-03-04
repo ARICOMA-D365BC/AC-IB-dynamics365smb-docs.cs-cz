@@ -175,8 +175,6 @@ Jak již bylo zmíněno, všechny vytvořené položky je možné sledovat na ka
 
 ![Položky evidence nástrojů - zobrazení](media/production-tools-tool-ledger-entries.png)
 
-> [!TIP]
-> Na stránku **Položky evidence nástrojů** je možné se dostat i přes klávesovou zkratku **CTRL + F7** z karet **Přehled evidence nástrojů**, nebo z karet jednotlivých nástrojů.
 
 ## Viz také
 
