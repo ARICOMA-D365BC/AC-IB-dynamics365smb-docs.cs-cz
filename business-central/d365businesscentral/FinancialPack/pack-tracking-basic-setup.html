@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Aricoma - Pack Tracking Basic Setup | Microsoft Docs </title>
+    <title>Evidence obal&#367; (EKO-KOM) &#8211; Nastaven&#237; </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Aricoma - Pack Tracking Basic Setup | Microsoft Docs ">
+    <meta name="title" content="Evidence obal&#367; (EKO-KOM) &#8211; Nastaven&#237; ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,116 +67,77 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="evidence-obalů-základ-ekokom---nastavení">Evidence obalů základ (EKOKOM) - Nastavení</h1>
+<h1 id="evidence-obalů-eko-kom--nastavení">Evidence obalů (EKO-KOM) – Nastavení</h1>
 
-<p>Pro zajištění fungování add-on modulu <strong>Evidence obalů základ</strong> je třeba provést nutné kroky nastavení.</p>
-<h2 id="založení-výkazu-obalů">Založení Výkazu obalů</h2>
-<p>V systému lze založit potřebný počet různých Výkazů obalů. Pomocí <img src="media/ui-search/search_small.png" alt="Žárovka, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat"> vyhledejte <strong>Výkazy obalů</strong>.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>Pokud se chystáte importovat poskytnuté soubory parametrizace EKO-KOM, je nutné založit Výkaz obalů s kódem <strong>EKO-KOM</strong>.</p>
-</div>
+<blockquote>
+<p>Aktualizace: 01.3.2025</p>
+</blockquote>
+<p>Prvním krokem při práci s modulem <strong>Evidence obalů</strong> je vytvoření <strong>Výkazů obalů</strong>. Ty představují nadřazené kategorie, které slouží jako základ pro následné nastavování parametrů obalové evidence. V systému lze založit libovolný počet těchto výkazů, přičemž každý z nich může obsahovat specifická data podle potřeb firmy nebo legislativy.</p>
+<p>Pokud plánujete pracovat s parametrizací systému <strong>EKO-KOM</strong>, je nutné nejprve vytvořit <strong>Výkaz obalů s kódem EKO-KOM</strong>. Tento krok umožní správný import souborů s přednastavenými hodnotami.</p>
+<p>Jakmile je výkaz obalů vytvořen, nastavují se podrobnější parametry, které definují strukturu a vlastnosti evidovaných obalů. Tento proces zahrnuje rozdělení obalů do specifických skupin a jejich následnou klasifikaci podle stanovených kritérií. Správné nastavení těchto prvků zajišťuje přesnou evidenci a usnadňuje následné vykazování podle legislativních požadavků.</p>
+<p><video src="media/pack-tracking.mp4" width="640" height="360" controls=""></video></p>
+<p>Pro správné nastavení je nutné provést následující kroky:</p>
+<ul>
+<li><strong>Založení Výkazu obalů</strong></li>
+<li><strong>Parametrizace Výkazu obalů EKO-KOM</strong></li>
+<li><strong>Definice prvků Výkazu obalů (struktury výkazu)</strong></li>
+<li><strong>Založení prvků ve Výkazu obalů (definice vlastního výkazu)</strong></li>
+<li><strong>Založení výjimek ve výkazu obalů</strong></li>
+</ul>
+<h2 id="založení-výkazu-obalů">Založení výkazu obalů</h2>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Výkazy obalů</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Výkazy obalů</strong> je nutné založit nový řádek s <strong>Kódem</strong> EKO-KOM.</li>
+</ol>
+<p><img src="media/pack-tracking-packing-statements.png" alt="Výkazy obalů"></p>
+<p>Po vyplnění <strong>Kódu</strong> a <strong>Popisu</strong> máte dále na výběr zvolit:</p>
+<ul>
+<li><strong>Výkaz VRP</strong> – Označuje, zda bude tento výkaz použit pro definici viditelných recyklačních poplatků.</li>
+<li><strong>Počítat VRP při vydání prodejního dokladu</strong> – Aktivuje funkci automatického výpočtu recyklačních poplatků na prodejních dokladech.</li>
+<li><strong>Typ účtu VRP</strong> – Určuje typ účtu, který bude použit pro evidenci viditelných recyklačních poplatků v prodejním dokladu.</li>
+<li><strong>Číslo účtu VRP</strong> – Definuje konkrétní účet, na který se budou recyklační poplatky účtovat.</li>
+</ul>
 <h2 id="parametrizace-výkazu-obalů-eko-kom">Parametrizace Výkazu obalů EKO-KOM</h2>
-<p>Součástí dodávky add-on modulu Evidence obalů jsou excelové soubory <em>ekokom_def.xlsx</em> a <em>ekokom.xlsx</em> obsahující parametrizaci pro <strong>Výkaz obalů EKO-KOM</strong>.<br>
-Soubory s parametrizací lze do systému nahrát pomocí služby <strong>RapidStart</strong>.</p>
-<h2 id="definice-prvků-výkazu-obalů-struktury-výkazu">Definice prvků Výkazu obalů (struktury výkazu)</h2>
-<p>Pro každý založený výkaz je nutno nadefinovat jeho prvky. Pomocí vyhledávací funkce <img src="media/ui-search/search_small.png" alt="Žárovka, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat"> vyhledejte <strong>Definice prvků výkazu obalů</strong>.<br>
-Prvky ve výkazu lze seskupovat do pozic na výkazu. Celkem lze definovat 10 pozic (seskupení prvků). Prvky v rámci jedné pozice mají dále přiřazený kód.</p>
-<p>Pole formuláře Definice prvků výkazu obalů:</p>
-<table>
-<thead>
-<tr>
-<th>Pole</th>
-<th>Popis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Kód pro vykazování</strong></td>
-<td>Kód výkazu založeného v předchozím kroku</td>
-</tr>
-<tr>
-<td><strong>Pozice</strong></td>
-<td>Uživatelem určená skupina prvků výkazu</td>
-</tr>
-<tr>
-<td><strong>Kód</strong></td>
-<td>Kód prvku v rámci pozice</td>
-</tr>
-<tr>
-<td><strong>Popis</strong></td>
-<td>Popis prvku výkazu</td>
-</tr>
-<tr>
-<td><strong>Umístění ve výkazu</strong></td>
-<td>Textová popisná informace</td>
-</tr>
-</tbody>
-</table>
-<p>Lze tak například vytvořit tabulku s těmito hodnotami:</p>
-<table>
-<thead>
-<tr>
-<th>Kód pro vykazování</th>
-<th>Pozice</th>
-<th>Kód</th>
-<th>Popis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>EKO-KOM</td>
-<td>P1</td>
-<td>1</td>
-<td>Obaly pro jedno použití</td>
-</tr>
-<tr>
-<td>EKO-KOM</td>
-<td>P1</td>
-<td>2</td>
-<td>Obaly pro opakované použití</td>
-</tr>
-<tr>
-<td>EKO-KOM</td>
-<td>P2</td>
-<td>1</td>
-<td>Zpoplatněné</td>
-</tr>
-<tr>
-<td>EKO-KOM</td>
-<td>P2</td>
-<td>2</td>
-<td>Předplacené</td>
-</tr>
-<tr>
-<td>EKO-KOM</td>
-<td>P2</td>
-<td>3</td>
-<td>Neplacené</td>
-</tr>
-</tbody>
-</table>
-<h2 id="založení-prvků-ve-výkazu-obalů-definice-vlastního-výkazu">Založení prvků ve Výkazu obalů (definice vlastního výkazu)</h2>
-<p>Definice vlastního výkazu se provádí založením prvků Výkazu obalů. Pomocí vyhledávací funkce <img src="media/ui-search/search_small.png" alt="Žárovka, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat"> vyhledejte <strong>Prvky výkazu obalů</strong>. Ve formuláři se definují jednotlivé řádky výkazu tak, že se vybírají z dříve definovaných prvků pro jednotlivé pozice výkazu. Pole <em>Popis</em> je pak systémem doplněno v závislosti na plnění pole na stránce <strong>Definice prvků vykazu obalů</strong>.</p>
-<p>Záznam stránky <strong>Prvky výkazu obalů</strong> tak může vypadat třeba takto:</p>
-<table>
-<thead>
-<tr>
-<th>Kód pro vykazování</th>
-<th>Kód</th>
-<th>Popis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>EKO-KOM</td>
-<td>13</td>
-<td>Obaly pro jedno použití neplacené</td>
-</tr>
-</tbody>
-</table>
+<p>Pro správnou funkčnost výkaznictví EKO-KOM je nutné nejprve provést odpovídající parametrizaci. Veškeré potřebné soubory s nastavením budou nahrávány za pomoci konfiguračních balíčků, které zajistí rychlé a bezchybné zavedení požadovaných údajů do systému.</p>
+<p>Abychom vám tento proces co nejvíce usnadnili, připravili jsme asistované nastavení, které vás krok za krokem provede celým procesem konfigurace. Díky tomu můžete snadno aplikovat potřebná data bez nutnosti manuálního nastavování jednotlivých parametrů.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Asistované nastavení</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Asistované nastavení</strong> pod záložkou <strong>Nastavení rozšíření ARICOMA</strong> naleznete <strong>Nastavit Evidenci obalů EKO-KOM</strong>.</li>
+<li>Spusťte nastavení.</li>
+</ol>
+<h2 id="definice-prvků-výkazu-obalů">Definice prvků Výkazu obalů</h2>
+<p>Pro každý založený výkaz je nutno nadefinovat jeho prvky. Každá kategorie (Pozice) obsahuje jednotlivé prvky (Kód), které popisují konkrétní charakteristiky obalu.</p>
+<p><img src="media/pack-tracking-definition.png" alt="Struktura prvků Výkazu obalů)"></p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Definice prvků výkazu obalů</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Definice prvků výkazu obalů</strong> vyplňte řádky dle následujících kritérií.
+<ul>
+<li><strong>Kód pro vykazování</strong> - Kód výkazu založeného v předchozím kroku.</li>
+<li><strong>Pozice</strong> - Určuje skupinu prvků v rámci výkazu.</li>
+<li><strong>Kód</strong> - Jednoznačný identifikátor prvku v dané pozici.</li>
+<li><strong>Popis</strong> - Popis prvku výkazu.</li>
+<li><strong>Umístění ve výkazu</strong> - Doplňující popis určující, kde se prvek v rámci výkazu nachází.</li>
+</ul>
+</li>
+</ol>
+<p>V případě EKO-KOMu vypadá vyplněná tabulka následovně.</p>
+<p><img src="media/pack-tracking-packing-statement-elements-def.png" alt="Definice prvků výkazu obalů"></p>
+<h2 id="založení-prvků-ve-výkazu-obalů">Založení prvků ve Výkazu obalů</h2>
+<p>Na stránce Prvky výkazu obalů se definují konkrétní řádky výkazu na základě dříve nadefinovaných prvků. Každý řádek je složen z kombinace kategorií a jejich jednotlivých prvků, což umožňuje přesnou identifikaci obalového materiálu podle jeho vlastností. Systém automaticky generuje popis na základě přiřazených hodnot, což eliminuje možnost nesprávné klasifikace.</p>
+<p><img src="media/pack-tracking-element.png" alt="Prvek výkazu obalů"></p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Prvky výkazu obalů</strong> a poté vyberte související odkaz.</li>
+<li>Z dříve nadefinovaných prvků zde nadefinujte jednotlivé řádky výkazu.</li>
+<li>Pole <strong>Popis</strong> je následně automaticky doplněno systémem v závislosti na plnění pole na stránce <strong>Definice prvků výkazu obalů</strong>.</li>
+</ol>
+<p><img src="media/pack-tracking-packing-statement-elements.png" alt="Prvky výkazu obalů"></p>
 <h2 id="založení-výjimek-ve-výkazu-obalů">Založení výjimek ve výkazu obalů</h2>
-<p>V každém založeném <strong>Výkazu obalů</strong> lze definovat výjimky, specifikované stavem řádků v Deníku zboží, které nebudou do výkazu zahrnuty. Pomocí vyhledávací funkce <img src="media/ui-search/search_small.png" alt="Žárovka, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat"> vyhledejte <strong>Výjimky prvku výkazu obalů</strong>.  Výjimka je definována údaji zadanými do polí <strong>Typ pohybu</strong>, <strong>ID pole</strong>, <strong>Hodnota</strong> a <strong>Pozice</strong> (ve výkazu). Pro vytvoření výjimky je nutné specifikovat také <strong>Kód prvku</strong>.</p>
+<p>V každém založeném Výkazu obalů lze definovat výjimky, specifikované stavem řádků v Deníku zboží, které nebudou do výkazu zahrnuty.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Vyjímky prvku výkazu obalů</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Výjimky prvku výkazu obalů</strong> specifikujte <strong>Kód prvku</strong>, <strong>Typ pohybu</strong>, <strong>ID pole</strong>, <strong>Hodnota</strong> a <strong>Pozice</strong>.</li>
+</ol>
+<p><img src="media/pack-tracking-exceptions.png" alt="Vyjímky prvku výkazu obalů"></p>
 <h2 id="viz-také">Viz také</h2>
 <p><a href="pack-tracking-basic.html">Evidence obalů základ (EKOKOM)</a><br>
 <a href="finance-pack.html">Financial Pack</a></p>
@@ -188,7 +149,7 @@ Prvky ve výkazu lze seskupovat do pozic na výkazu. Celkem lze definovat 10 poz
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/return-packing-pj/business-central/FinancialPack/pack-tracking-basic-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/FinancialPack/pack-tracking-basic-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
                   </li>
                 </ul>
               </div>

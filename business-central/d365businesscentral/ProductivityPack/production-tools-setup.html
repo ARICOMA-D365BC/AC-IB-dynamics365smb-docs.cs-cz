@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Production tools setup | Microsoft Docs </title>
+    <title>Evidence n&#225;stroj&#367; a pom&#367;cek - nastaven&#237; </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Production tools setup | Microsoft Docs ">
+    <meta name="title" content="Evidence n&#225;stroj&#367; a pom&#367;cek - nastaven&#237; ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,10 +67,87 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="evidence-nářadí-a-pomůcek---nastavení">Evidence nářadí a pomůcek - Nastavení</h1>
+<h1 id="evidence-nástrojů-a-pomůcek---nastavení">Evidence nástrojů a pomůcek - Nastavení</h1>
 
+<blockquote>
+<p>Aktualizace: 01.12.2024</p>
+</blockquote>
+<p>Náš modul <strong>Evidence nástrojů a pomůcek</strong> řeší problematiku evidence nástrojů, pomůcek, forem a jiných potřeb, které jsou obvykle evidovány pomocí skladové evidence systému. Tento modul je postaven na základech evidence majetku a sjednocuje evidenci pro potřeby sledování dlouhodobého majetku a výrobní evidence, včetně půjčování nástrojů a pomůcek.</p>
+<p>Pro plnohodnotné používání modulu je nutné je nastavit dle potřeb konkrétní společnosti. Níže jsou popsány jednotlivé části nastavení.</p>
+<h3 id="šablony-deníku-evidence-nástrojů">Šablony deníku evidence nástrojů</h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci řekněte mi" title="Řekněte mi, co chcete udělat"> a do vyhledávacího pole zadejte <strong>Šablony deníku evidence nástrojů</strong>, poté vyberte související odkaz.</li>
+<li>Otevře se stránka <strong>Šablony deníku evidence nástrojů</strong>.</li>
+<li>Klikněte na tlačítko <strong>+ Nový</strong> pro vytvoření <strong>nové šablony</strong>.</li>
+<li>Do pole <strong>Název šablony</strong> zadejte název, který nejlépe vystihuje účel této šablony.</li>
+<li>V poli <strong>Výchozí typ položky vyberte typ položky</strong>, například <strong>Zapůjčit</strong>, pokud chcete, aby šablona sloužila pouze k evidenci zápůjček.</li>
+<li>Do pole <strong>Číselná řada dokladů</strong> zadejte nebo vyberte číselnou řadu, která bude použita k evidenci pohybů.</li>
+<li>Uložte šablonu kliknutím na tlačítko <strong>Uložit</strong></li>
+</ol>
+<p><img src="media/production-tools-tool-journal-template.png" alt="Evidence nástrojů a pomůcek - nastavení šablony"></p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p><strong>Je nutné vytvořit alespoň jednu šablonu deníku evidence nástrojů, aby bylo možné zadávat pohyby nástrojů</strong>.</p>
+</div>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Je možné mít jednu šablonu pro všechny typy pohybů, tedy šablonu, kde při vytvoření nezadáte žádný <strong>Výchozí typ položky</strong>.</p>
+</div>
+<h3 id="přidání-číselné-řady">Přidání číselné řady</h3>
+<ol>
+<li>Klikněte na pole <strong>Číselná řada</strong>.</li>
+<li>Otevře se stránka <strong>Číselné řady</strong>.</li>
+<li>Klikněte na tlačítko <strong>+ Nový</strong> pro vytvoření nové číselné řady.</li>
+<li>Do pole <strong>Kód</strong> zadejte jedinečný identifikátor pro číselnou řadu.</li>
+<li>Do pole <strong>Popis</strong> zadejte stručný popis, který vysvětluje účel číselné řady.</li>
+<li>Do polí <strong>Počáteční číslo</strong> a <strong>Poslední číslo</strong> zadejte počáteční a koncové číslo řady.</li>
+<li>Zaškrtněte pole <strong>Výchozí čísla</strong>, pokud chcete, aby systém automaticky generoval čísla v této číselné řadě.</li>
+<li>Uložte číselnou řadu kliknutím na tlačítko <strong>Uložit</strong>.</li>
+</ol>
+<p><img src="media/production-tools-add-no.series.png" alt="Evidence nástrojů a pomůcek - přidání číselné řady"></p>
+<h3 id="nastavení-typů-položky-evidence-nástrojů">Nastavení typů položky evidence nástrojů</h3>
+<p>Každá šablona deníku může mít definovány kontroly povinných údajů. Postupujte podle následujících kroků:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci řekněte mi" title="Řekněte mi, co chcete udělat"> a do vyhledávacího pole zadejte <strong>Nastavení typů položky evidence nástrojů</strong> poté vyberte související odkaz.</li>
+<li>Otevře se stránka <strong>Nastavení typů položky evidence nástrojů</strong>.</li>
+<li>Klikněte na tlačítko <strong>+ Nový</strong>, čímž vytvoříte nový řádek pro daný typ položky.</li>
+<li>Vyberte typ položky. Na výběr jsou následující možnosti:
+<ul>
+<li><strong>Příjem</strong> – zařazení evidovaného množství nástroje.</li>
+<li><strong>Výdej</strong> – vyřazení nástroje z evidence.</li>
+<li><strong>Zapůjčit</strong> – evidence zapůjčení nástroje.</li>
+<li><strong>Vrátit</strong> – evidence vrácení zapůjčeného nástroje.</li>
+</ul>
+</li>
+<li>Pro každý typ položky nastavte povinné údaje, které bude nutné vyplnit v deníku nástrojů.</li>
+</ol>
+<p><img src="media/production-tools-tool-entry-type-setup.png" alt="Evidence nástrojů a pomůcek - nastavení typů položky"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong>Povinné údaje pomáhají zajistit správnost záznamů v deníku a odpovídající evidenci nástrojů</strong>.</p>
+</div>
+<h3 id="nastavení-typů-poškození">Nastavení typů poškození</h3>
+<p>Nastavení typů poškození slouží k rozlišení poškozených evidovaných kusů. Tyto informace mohou být využity pro případné náhrady ze strany zaměstnanců, kteří poškozené nářadí vrací, nebo pro pozdější statistické vyhodnocování.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci řekněte mi" title="Řekněte mi, co chcete udělat"> a do vyhledávacího pole zadejte <strong>Typy poškození</strong> následně vyberte související odkaz.</li>
+<li>Otevře se stránka <strong>Typy poškození</strong>.</li>
+<li>Pro přidání nového typu poškození klikněte na tlačítko <strong>+ Nový</strong>.</li>
+<li>Vyplňte následující pole:
+<ul>
+<li><strong>Kód</strong> – jedinečný kód pro typ poškození.</li>
+<li><strong>Popis</strong> – slovní popis poškození.</li>
+<li><strong>EAN</strong> – čárový kód, který je možné použít při práci se čtečkami čárových kódů.</li>
+</ul>
+</li>
+<li>Vyplňte pole dle potřeby a uložte nastavení.</li>
+</ol>
+<p><img src="media/production-tools-damage-types.png" alt="Evidence nástrojů a pomůcek - Nastavení typů poškození"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p><strong>Správná definice typů poškození umožňuje přesnější evidenci a lepší analýzu stavu nástrojů v budoucnosti.</strong>.</p>
+</div>
 <p><strong>Viz také</strong></p>
-<p><a href="production-tools.html">Evidence nářadí a pomůcek</a><br>
+<p><a href="production-tools.html">Evidence nástrojů a pomůcek</a><br>
 <a href="productivity-pack.html">Productivity Pack</a></p>
 </article>
           </div>
@@ -80,7 +157,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/return-packing-pj/business-central/ProductivityPack/production-tools-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/ProductivityPack/production-tools-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
                   </li>
                 </ul>
               </div>
