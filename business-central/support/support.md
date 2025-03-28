@@ -26,6 +26,6 @@ ms.author: martinkunes
 
 ## Kontakty
 
-Komentáře, návrhy, nebo chyby mohou být hlášeny prostřednictvím [Issues](https://github.com/ARICOMA-D365BC/AC-Solutions/issues) na GitHub stránkách nebo na email bc_support@aricoma.com.
+Komentáře, návrhy, nebo chyby mohou být hlášeny prostřednictvím [Issues](https://github.com/ARICOMA-D365BC/AC-Solutions/issues) na GitHub stránkách nebo na email **bc_support@aricoma.com**.
 
 Pro obchodní informace a požadavky použijte [Kontakt](https://www.aricoma.com/cs/co-delame/podnikove-aplikace/informacni-systemy-microsoft/erp-pro-stredni-a-mensi-firmy#contact).
