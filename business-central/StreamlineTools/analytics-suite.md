@@ -3,13 +3,14 @@ title: Analytics Suite
 description: Analytics Suite pro Dynamics 365 Business Central je výkonný nástroj pro analýzu a vizualizaci dat.
 author: Makowka-Tomas
 date: 28/05/2025
-app: Analytics Suite
-app.pack: Streamline Tools
+reviewer: janousek
 ms.service: dynamics-365-business-central
 ms.search.keywords: Analytics Suite, Streamline Tools, Power BI
 ---
 
 # Analytics Suite - Power BI řešení pro Dynamics 365 Business Central
+
+> Aktualizace: 28.05.2025
 
 Analytics Suite přináší firmám výkonný nástroj pro analýzu dat a vizualizaci klíčových ukazatelů. Umožňuje snadno propojit, filtrovat a analyzovat finanční, prodejní i provozní data, což vede k rychlejšímu a efektivnějšímu rozhodování. Díky interaktivním dashboardům a automatizovaným reportům získáte lepší přehled o výkonnosti firmy a odhalíte nové obchodní příležitosti.
 
