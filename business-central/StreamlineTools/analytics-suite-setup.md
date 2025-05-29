@@ -2,7 +2,7 @@
 title: Analytics Suite – Nastavení
 description: Návod pro nastavení modulu Analytics Suite pro Dynamics 365 Business Central
 author: Makowka-Tomas
-date: 28/05/2025
+date: 01/06/2025
 reviewer: janousek
 ms.service: dynamics-365-business-central
 ms.search.keywords: Analytics Suite, Power BI, data, business intelligence
@@ -10,7 +10,7 @@ ms.search.keywords: Analytics Suite, Power BI, data, business intelligence
 
 # Analytics Suite – Nastavení
 
-> Aktualizace: 28.05.2025
+> Aktualizace: 01.06.2025
 
 Modul **Analytics Suite** rozšiřuje možnosti analýzy dat a vizualizace klíčových ukazatelů v prostředí Dynamics 365 Business Central. Pro správné fungování je nutné provést následující nastavení:
 
@@ -51,9 +51,6 @@ Pro správné zobrazení reportů a dashboardů je nutné propojit Power BI apli
 
 1. Přejděte na [powerbi.com](https://powerbi.com) a přihlaste se.
 2. V levém panelu zvolte **Aplikace**.
-
-![Aplikace](media/analytics-suite-apps.png)
-
 3. Klikněte na **Získat aplikace**.
 
 ![Získat aplikace](media/analytics-suite-get-apps.png)
