@@ -87,6 +87,6 @@ Chcete mít ve své firmě nástroj, který vám umožní okamžitý přístup k
 Kontaktujte nás pro nezávaznou konzultaci a zjistěte, jak vám Power BI Analytics Suite pro Dynamics 365 Business Central přinese konkurenční výhodu.
 
 ## Viz také
-
+[Analytics Suite - Nastavení](../StreamlineTools/analytics-suite-setup.md)  
 [Řešení ARICOMA](../index.md)  
-[Streamline Tools](../StreamlineTools/streamlinetools.md)
+[Streamline Tools](../StreamlineTools/streamlinetools.md)  
