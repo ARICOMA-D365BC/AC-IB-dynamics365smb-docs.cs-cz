@@ -40,5 +40,5 @@ Souhrnný Výkaz to je **52068870**.
 
 ## Viz také
 
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [SK Legislativní balíček](sk-legislative-pack.md)

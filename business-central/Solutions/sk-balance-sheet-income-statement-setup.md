@@ -42,6 +42,6 @@ Příklad můžete vidět na obrázku níže:
 
 ## Viz také
 
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [SK Legislativní balíček](sk-legislative-pack.md)  
 [Export účetní závěrky - SK](sk-balance-sheet-income-statement.md)

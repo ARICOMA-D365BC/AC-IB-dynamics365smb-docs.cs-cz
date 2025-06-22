@@ -37,6 +37,6 @@ Pak již stačí výsledný soubor naimportovat do elektronického formuláře f
 
 ## Viz také
 
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [SK Legislativní balíček](sk-legislative-pack.md)   
 [Export účetní zavěrky - SK - nastavení](sk-balance-sheet-income-statement-setup.md)

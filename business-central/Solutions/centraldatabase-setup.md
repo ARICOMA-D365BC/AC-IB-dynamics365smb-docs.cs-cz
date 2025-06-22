@@ -111,4 +111,4 @@ Nastavení slouží k určení relačních vazeb, které zajišťují, aby při 
 
 [Centrální číselníky](centraldatabase.md)`  
 [Productivity Pack](productivity-pack.md)  
-[ARICOMA řešení](../index.md)
+[ARICOMA řešení](solutions.md)

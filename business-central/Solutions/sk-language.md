@@ -23,5 +23,5 @@ Pro změnu jazyka postupujte tímto způsobem:
 5. Jakmile proběhne aktualizace Business Central v prohlížeči, budete mít Business Central ve slovenštině.  
 
 
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [SK Legislativní balíček](sk-legislative-pack.md)

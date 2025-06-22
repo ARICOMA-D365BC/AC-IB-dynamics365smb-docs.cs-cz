@@ -47,5 +47,5 @@ Nastavení slouží pro mapování polí v aplikaci na uzly .xml. Tato tabulka j
 
 
 
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [SK Legislativní balíček](sk-legislative-pack.md)

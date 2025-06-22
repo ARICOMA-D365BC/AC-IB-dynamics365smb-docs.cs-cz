@@ -106,4 +106,4 @@ Další možností, jak dostat položky do archívu je pomocí **reportů R40029
 ## Viz také
 [Spooler - Nastavení](spooler-setup.md)
 [Productivity Pack](productivity-pack.md)  
-[ARICOMA řešení](../index.md)
+[ARICOMA řešení](solutions.md)

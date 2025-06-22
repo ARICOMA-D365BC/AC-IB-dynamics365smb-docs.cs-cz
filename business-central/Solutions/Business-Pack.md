@@ -33,5 +33,5 @@ Business Pack automaticky přidává užitečná a často používaná pole a ok
 Zjednodušte si práci a zvyšte produktivitu s Business Packem!  
 
 ## Viz také
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [Streamline Tools](streamlinetools.md)  

@@ -81,4 +81,4 @@ Tuto administrativní operaci je možné provést přímo z BC, ale samozřejmě
 ## Viz také
 [Nastavení Integrace s GP tom](GPtom-Integration-setup.md)  
 [Streamline Tools](streamlinetools.md)  
-[ARICOMA řešení](../index.md)
+[ARICOMA řešení](solutions.md)

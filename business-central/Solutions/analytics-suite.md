@@ -92,5 +92,5 @@ Kontaktujte nás pro nezávaznou konzultaci a zjistěte, jak vám Power BI Analy
 
 ## Viz také
 [Analytics Suite - Nastavení](analytics-suite-setup.md)  
-[Řešení ARICOMA](../index.md)  
+[Řešení ARICOMA](solutions.md)  
 [Streamline Tools](streamlinetools.md)  

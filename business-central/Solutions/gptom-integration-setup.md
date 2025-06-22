@@ -102,4 +102,4 @@ procedure CancelTransaction(var PaymentTerminalTransaction: Record PaymentTermin
 ## Viz také
 [Integrace s GP tom](gptom-integration.md)  
 [Streamline Tools](streamlinetools.md)  
-[ARICOMA řešení](../index.md)
+[ARICOMA řešení](solutions.md)

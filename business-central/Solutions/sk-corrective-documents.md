@@ -58,6 +58,6 @@ Zadání opravných dokladů s použitím nastaveného kódu původu a případn
 
 ## Viz také
 
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [SK Legislativní balíček](sk-legislative-pack.md)  
 [Výkaz DPH - nastavení](sk-vat-statement-setup.md)

@@ -27,5 +27,5 @@ Pro zpracování příkazu pro úhradu či výpisu ve formátu SEPA je využita 
 
 ## Viz také
 
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [SK Legislativní balíček](sk-legislative-pack.md)

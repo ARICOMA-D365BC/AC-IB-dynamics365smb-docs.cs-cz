@@ -73,6 +73,6 @@ Pro jednotlivé sekce je potřeba nastavit sloupce, které budou exportovány do
 
 ## Viz také
 
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [SK Legislativní balíček](sk-legislative-pack.md)  
 [Kontrolní výkaz DPH](sk-vat-check-report-export.md)

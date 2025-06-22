@@ -29,5 +29,5 @@ Technické informace firmy VAROS viz [Manuály](http://www.varos.sk/manualy.php)
 
 
 ## Viz také
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [Streamline Tools](streamlinetools.md)  

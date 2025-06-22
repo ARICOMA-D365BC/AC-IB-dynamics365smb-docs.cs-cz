@@ -223,4 +223,4 @@ Je zde také možnost notifikací od Balíkobotu a to buď formou e-mailu, přes
 ## Viz také
 [Nastavení - Parcels - Integrace Balíkobot](parcels-setup.md)  
 [Productivity Pack](productivity-pack.md)  
-[ARICOMA řešení](../index.md)
+[ARICOMA řešení](solutions.md)

@@ -43,4 +43,4 @@ Při ruční synchronizaci lze pomocí filtrů přesně specifikovat, jaké tabu
 ## Viz také
 [Nastavení Centrálních číselníků](centraldatabase-setup.md)
 [Productivity Pack](productivity-pack.md)  
-[ARICOMA řešení](../index.md)
+[ARICOMA řešení](solutions.md)

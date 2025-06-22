@@ -39,6 +39,6 @@ Sada addonů pro rozšíření funkcionalit provozní části systému pro D365 
 
 
 Viz také
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [Financial Pack](finance-pack.md)  
 [Slovak Legistive Pack](sk-legislative-pack.md)   

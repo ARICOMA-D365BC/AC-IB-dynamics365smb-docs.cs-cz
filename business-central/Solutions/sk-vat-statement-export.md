@@ -23,6 +23,6 @@ Pro export výkazu DPH použijte následující postup:
 
 ## Viz také
 
-[ARICOMA Řešení](../index.md)
+[ARICOMA Řešení](solutions.md)
 [SK Legislativní balíček](sk-legislative-pack.md)
 [Výkaz DPH - nastavení](sk-vat-statement-setup.md)

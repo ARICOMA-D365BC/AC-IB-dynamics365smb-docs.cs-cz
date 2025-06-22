@@ -104,6 +104,6 @@ V Nastavení financí a Nastavení účtování DPH je možné aktivovat systém
 
 ## Viz také
 
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [SK Legislativní balíček](sk-legislative-pack.md)   
 [Výkaz DPH - export](sk-vat-statement-export.md)

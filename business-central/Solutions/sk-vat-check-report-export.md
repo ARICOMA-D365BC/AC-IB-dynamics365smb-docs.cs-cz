@@ -48,6 +48,6 @@ Kontrolní výkaz je nutné uzavřít až po kontrole údajů. Po uzavření kon
 
 ## Viz také
 
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [SK Legislativní balíček](sk-legislative-pack.md)  
 [Kontrolní výkaz DPH - nastavení](sk-vat-check-report-setup.md)

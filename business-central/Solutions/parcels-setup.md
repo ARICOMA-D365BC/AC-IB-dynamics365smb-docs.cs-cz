@@ -259,4 +259,4 @@ V případě vytváření zásilky z účtované prodejní faktury je možné vy
 ## Viz také
 [Zásilky](parcels.md)  
 [Productivity Pack](productivity-pack.md)  
-[ARICOMA řešení](../index.md)
+[ARICOMA řešení](solutions.md)

@@ -35,6 +35,6 @@ ms.author: v-makune
 
 ## Viz také
 
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [Financial Pack](finance-pack.md)  
 [Productivity Pack](productivity-pack.md)

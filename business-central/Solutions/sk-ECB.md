@@ -26,5 +26,5 @@ Do tabulky směnných kurzů se naimportuje kurz s datumem platnosti posunutým 
 
 ## Viz také
 
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [SK Legislativní balíček](sk-legislative-pack.md)

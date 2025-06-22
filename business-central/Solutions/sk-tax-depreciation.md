@@ -33,5 +33,5 @@ Neaktivujte pole **Použít počet dní platnosti** a nezadávejte hodnotu do po
 
 ## Viz také
 
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [SK Legislativní balíček](sk-legislative-pack.md)

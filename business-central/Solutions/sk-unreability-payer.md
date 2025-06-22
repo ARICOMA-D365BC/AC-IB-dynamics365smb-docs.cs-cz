@@ -51,5 +51,5 @@ Tato kontrola se provede automaticky při akci Vydání, které není povoleno, 
 4. Zapněte **Automaticky aktualizovat pro vytvoření položky fronty úloh**. Systém nabídne otevření Karty položky fronty úloh, kde je možné změnit parametry spouštění. Výchozím nastavení je aktualizace jednou denně ve 20:00 hod.
 ## Viz také
 
-[ARICOMA Řešení](../index.md)  
+[ARICOMA Řešení](solutions.md)  
 [SK Legislativní balíček](sk-legislative-pack.md)

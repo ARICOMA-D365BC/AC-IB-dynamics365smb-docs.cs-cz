@@ -127,4 +127,4 @@ Na formuláři Úlohy spooleru lze přes tlačítko Funkce exportovat, importova
 ## Viz také
 [Spooler](spooler.md)
 [Productivity Pack](productivity-pack.md)  
-[ARICOMA řešení](../index.md) 
+[ARICOMA řešení](solutions.md) 
