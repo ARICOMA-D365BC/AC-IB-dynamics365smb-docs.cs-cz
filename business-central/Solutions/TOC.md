@@ -8,6 +8,7 @@
 ## [Více způsobu plateb](multiple-payment-methods.md)
 ### [Nastavení - Více způsobu plateb](multiple-payment-methods-setup.md)
 ## [Integrace s GP tom](gptom-integration.md)
+### [Nastavení - Integrace s GP tom](gptom-integration-setup.md)
 ## [Analytics Suite](analytics-suite.md)
 ### [Analytics Suite - Nastavení](analytics-suite-setup.md)
 ## [Business Pack](business-pack.md)

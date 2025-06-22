@@ -76,4 +76,4 @@ Pro správné zobrazení reportů a dashboardů je nutné propojit Power BI apli
 ## Viz také
 
 [Analytics Suite – Přehled](analytics-suite.md)  
-[Streamline Tools](../StreamlineTools/streamlinetools.md)
+[Streamline Tools](streamlinetools.md)

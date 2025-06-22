@@ -24,6 +24,6 @@ ms.search.keywords: Czech, productivity, additional functions, sale, warehouse, 
 
 ## Viz také
 [ARICOMA Řešení](../index.md)  
-[Financial Pack](../FinancialPack/finance-pack.md)  
-[Productivity Pack](../ProductivityPack/productivity-pack.md)  
-[SK Legislativní balíček](../SK/sk-legislative-pack.md)
+[Financial Pack](finance-pack.md)  
+[Productivity Pack](productivity-pack.md)  
+[SK Legislativní balíček](sk-legislative-pack.md)

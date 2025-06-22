@@ -28,6 +28,6 @@ Sada addonů pro rozšíření funkcionality financí pro D365 Business Central
 
 ## Viz také
 [ARICOMA Řešení](../index.md)  
-[Productivity Pack](../ProductivityPack/productivity-pack.md)    
-[Slovak Legistive Pack](../SK/sk-legislative-pack.md)  
+[Productivity Pack](productivity-pack.md)    
+[Slovak Legistive Pack](sk-legislative-pack.md)  
  

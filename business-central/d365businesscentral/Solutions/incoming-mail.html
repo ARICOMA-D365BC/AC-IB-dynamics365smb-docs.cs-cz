@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Incoming mail | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Incoming mail | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="evidence-pošty">Evidence pošty</h1>
+
+<p>Add-on modul <strong>Evidence pošty</strong> rozšiřuje moduly <strong>Nákupu</strong> a <strong>Prodeje</strong> systému Microsoft Dynamics 365 Business Central o podporu evidence doručené a odeslané pošty. Evidovanou poštu je možné řízeně zpracovávat pomocí modulu <strong>Workflow (Řízení stavů)</strong>, provázat s nákupními či prodejními doklady a prostřednictvím modulu <strong>Publikování SharePoint</strong> a nebo modulu <strong>Došlé doklady</strong> připojit ke kartě evidované pošty naskenovaný či elektronicky přijatý dokument. Další možností je propojení karty evidence pošty se záznamem v modulu <strong>Datové schránky</strong>.</p>
+<h2 id="vytvoření-nové-karty-evidence-pošty">Vytvoření nové Karty evidence pošty</h2>
+<p>Po provedení potřebných nastavení lze vytvářet dokumenty Evidence pošty. Dokumenty lze vytvářet ručně a to, tak že:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Evidence pošty</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Šablony evidence pošty</strong> vyberte kód pro správnou Šablonu evidence pošty.
+<img src="media/IM-mail-record-templates.png" alt="Šablony evidence pošty">
+<img src="media/IM-incoming-mail.png" alt="Evidence pošty"></li>
+<li>V přehledu <strong>Evidence pošty</strong> vyberte funkci <strong>Nový</strong>.</li>
+<li>Vytvořte nový doklad Evidence pošty.
+<img src="media/IM-incoming-mail-card.png" alt="Karta evidence pošty"></li>
+</ol>
+<p><strong>Karta evidence pošty</strong> zobrazuje relevantní informace vztahující se k danému dokladu. Pole <strong>Číslo</strong> se vyplní automaticky dalším číslem z číselné řady. <strong>Typ kontaktu</strong> a <strong>Číslo kontaktu</strong> specifikuje o jaký doklad se jedná – Dodavatel, Zákazník, Kontakt (vyplňuje se pokud zatím neexistuje Dodavatel a nebo Zákazník).</p>
+<p>Všechny údaje v bílých polích lze editovat (je tedy možné vyplnit pole <strong>Popis</strong>, všechny datumové pole, <strong>Kód platební podmínky</strong>, <strong>Kód prodejce/nákupčího, Kód měny, Číslo externího dokladu</strong> atd., které se následně převezmou do vytvořeného dokladu. Dále lze zadat evidenční pole <strong>Částka včetně DPH</strong> a <strong>Částka bez DPH</strong>.
+<img src="media/IM-incoming-card-mail.png" alt="Karta evidence pošty II">
+V záložce <strong>Stav</strong> se po založení objeví nový záznam s výchozím stavem podle definice v šabloně řízení stavů. Dále lze vyplnit – <strong>Další zodpovědnou osobu</strong> (buď z Uživatelů a nebo z modulu Zaměstnanci) a textové pole <strong>Popis stavu</strong>.</p>
+<p>V záložce <strong>Související došlý doklad</strong> lze vytvořit anebo připojit či odpojit Došlý doklad. Jedná se o vazbu na modul <strong>Došlá pošta (detailněji viz modul – Došlá pošta)</strong>.</p>
+<p><img src="media/IM-data_record.png" alt="Záznam dat. schránky">
+Jestliže se jedná o doklad vytvořený z Datové schránky je možno si nechat zobrazit původní doklad přes funkci – <strong>Proces/Záznam dat. schránky (detailněji viz  modul – Datové schránky)</strong>.</p>
+<p><strong>Dimenze</strong> jsou automaticky naplněny při vyplňování jednotlivých polí na kartě evidence pošty tzn. na základě vyplnění <strong>Čísla kontaktu</strong>, <strong>Kódu prodejce/nákupčího</strong>. V případě, že uživatel chce tyto dimenze upravit či změnit je zde funkce <strong>Pošta/Dimenze</strong>.</p>
+<p>Po vyplnění všech potřebných dat je vhodné doklad odsouhlasit a zamezit jeho změnám. Jedná se o funkci – <strong>Proces/Vydat</strong>.</p>
+<h3 id="poznámky-k-požadavku">Poznámky k požadavku</h3>
+<p>Uživatelé mohou zadat řádkové poznámky dostupné jako funkce <strong>Související/Pošta/Poznámky</strong>. Jedná se o Řádky poznámek na kartě požadavku – tyto strukturované poznámky obsahují pole Datum, Poznámka (100 znaků) a Kód.
+<img src="media/IM-sheet.png" alt="List poznámek evidence pošty"></p>
+<h3 id="dokumenty">Dokumenty</h3>
+<p>Pokud je instalován modul <strong>Publikování SharePoint</strong>, pak je možné u každé Karty evidence pošty pomocí funkce <strong>Dokumenty/Publikovat</strong> publikovat dokument a pomocí funkce <strong>Zobrazit</strong> zobrazit publikovaný dokument <strong>(detailněji viz modul - SharePoint)</strong>.
+<img src="media/IM-doc_publish.png" alt="Dokument"></p>
+<h3 id="připojené-dokumenty">Připojené dokumenty</h3>
+<p>Pomocí funkce <strong>Související/Pošta/Přílohy</strong> lze ke kartě připojit jakýkoliv doklad, který je následně uložen do tabulky systému Microsoft Dynamics 365 Business Central.
+<img src="media/IM-doc_attached.png" alt="Připojené dokumenty"></p>
+<h3 id="tisk">Tisk</h3>
+<p>Pomocí funkce <strong>Reporty/Tisk</strong> na stránce <strong>Karta evidence pošty</strong> se spustí sestava <strong>Evidence pošty</strong> (do vstupního filtru se nabídne číslo aktuálně zobrazeného požadavku, rozsah tisku lze pak blíže specifikovat prostřednictvím filtrů a parametrů.</p>
+<h2 id="zpracování-požadavku">Zpracování požadavku</h2>
+<p>Po vytvoření Karty evidence pošty je dokument možno dále zpracovávat.</p>
+<h3 id="schvalování-požadavku">Schvalování požadavku</h3>
+<p>Pokud je vytvořeno a povoleno workflow Výměny došlých dokladů a vytvořeno Nastavení uživatelů schvalování lze Odeslat požadavek ke schvalování – funkce <strong>Akce/Odeslat požadavek ke schválení (detailněji viz modul – Schvalování)</strong>. Pokud karta pošty nebyla schválena nelze Vytvořit doklad.
+<img src="media/IM-send_request.png" alt="Odeslat požadavek ke schválení">
+Požadavek na schválení lze schválit pomocí funkce – <strong>Související/Pošta/Schvalování</strong> a nebo jej zrušit pomocí funkce – <strong>Akce/Zrušit požadavek na schválení</strong>.</p>
+<h3 id="vytvoření-interakce">Vytvoření interakce</h3>
+<p>Po spuštění funkce <strong>Vytvoř interakci</strong> vznikne ke Kartě kontaktu odpovídající Položka protokolu interakce dle <strong>Nastavení šablon interakce</strong> pro <strong>Příchozí</strong> a <strong>Odchozí poštu (detailněji viz modul - Marketing)</strong>.</p>
+<h3 id="vytvoření-dokladu">Vytvoření dokladu</h3>
+<p>Lze využít funkce <strong>Vytvořit doklad</strong>. Uživateli se zobrazí dotaz, jaký doklad se má vytvořit a po vytvoření se automaticky zobrazí karta nového dokladu.</p>
+<p><img src="media/IM-doc_create.png" alt="Vytvořit doklad"></p>
+<p>Do hlavičky vytvořeného dokladu se přenesou všechny údaje z Karty evidence pošty. Pokud jsou na kartě evidence pošty vyplněny dimenze a v Šabloně evidence pošty je zaškrtnuto pole Přenášet dimenze do dokladu, tak budou přeneseny také dimenze do vytvořeného dokladu. Tento doklad lze otevřít standardní funkcionalitou Navigace, přes funkce – Navigace a nebo Související doklady pošty.</p>
+<h3 id="objednávky-kontaktu">Objednávky kontaktu</h3>
+<p>Pomocí funkce <strong>Objednávky kontaktu</strong> si lze nechat zobrazit přehled Nákupních nebo Prodejních řádků a to podle typu Kontaktu. Řádky jsou zafiltrované:</p>
+<ul>
+<li>řádky <strong>Nákupní objednávky</strong> nebo <strong>Nákupní objednávky vratky</strong> a to k zadanému číslu Dodavatele.</li>
+<li>řádky <strong>Prodejní objednávky</strong> nebo <strong>Prodejní objednávky vratky</strong> a to k zadanému číslu Zákazníka.
+<img src="media/IM-order.png" alt="Objednávky kontaktu"></li>
+</ul>
+<h3 id="navigovat-související-doklady-pošty">Navigovat (Související doklady pošty)</h3>
+<p>Standardní funkce <strong>Navigovat</strong> zobrazí kartu evidence pošty a <strong>Související doklady pošty</strong>.
+<img src="media/IM-navigate.png" alt="Navigovat">
+Pomocí funkce <strong>Související doklady pošty</strong> nebo funkce <strong>Zobrazit Související položky</strong> v rámci Navigace se zobrazí detailní přehled všech souvisejících dokladů k vybrané kartě evidence pošty.
+<img src="media/IM-related_item.png" alt="Související položky"></p>
+<h2 id="pult-evidence-pošty">Pult evidence pošty</h2>
+<p>Pult evidence pošty je dostupný následujícím způsobem.</p>
+<ul>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Pult evidence pošty</strong> a poté vyberte související odkaz.</li>
+</ul>
+<p>Tato stránka umožňuje souhrnný pohled na neuzavřené karty evidence pošty. Nabízí přehledové zobrazení požadavků s přednastavenými volitelnými filtry v záhlaví pro snadnější vyhledávání a orientaci. Nejprve je třeba zvolit, o jaké karty evidence pošty se jedná, tzn. šablonu evidence pošty. Dále pak lze požadavky filtrovat např. podle <strong>Zákazníka</strong> či <strong>Dodavatele</strong>, <strong>Stavu</strong>, podle <strong>Zodpovědné osoby</strong> či podle <strong>Typu pošty</strong>. Zobrazený přehled požadavků je možno navíc seřadit podle různých klíčů, zvl. podle čísla, zákazníka nebo dodavatele, datumu či zodpovědné osoby. Dole pod přehledem karet jsou pak doplňující informace o <strong>Stavu požadavku</strong>, <strong>Částce dokladu</strong>, <strong>Částce ke schválení</strong> a <strong>Schválené částce</strong>.</p>
+<p>Vybraný požadavek lze pak zobrazit volbou <strong>Karta</strong>. Dále jsou zde funkce pro <strong>Vytvořit interakci</strong>, <strong>Stáhnout zprávy z datové schránky</strong>, <strong>Navigovat</strong> případně přidat <strong>Poznámky</strong>, nebo zobrazit připojené <strong>Dokumenty</strong>.
+<img src="media/IM-mail.png" alt="Zobrazený požadavek"></p>
+<h2 id="uzavřená-evidence-pošty">Uzavřená evidence pošty</h2>
+<p>Uzavřená evidence pošty je dostupná:</p>
+<ul>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Uzavřená evidence pošty</strong> a poté vyberte související odkaz.
+Zobrazením stránky <strong>Uzavřená evidence pošty</strong> se zobrazí uzavřené požadavky, tj. požadavky, které už byly vyřízeny. Požadavky jsou uzavírány ručně prostřednictvím funkce Uzavřít evidenci pošty.
+Vybraný požadavek lze pak zobrazit volbou <strong>Zobrazit</strong>. Dále jsou zde funkce pro zobrazení <strong>Související doklady pošty</strong> a <strong>Záznam datové schránky</strong>.
+<img src="media/IM-closed_mail.png" alt="Uzavřená evidence pošty"></li>
+</ul>
+<h2 id="viz-také">Viz také</h2>
+<p><a href="incoming-mail-setup.html">Evidence pošty - nastavení</a><br>
+<a href="productivity-pack.html">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/2025_NewStructure/business-central/Solutions/incoming-mail.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>V t&#233;to sekci</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Zpět na začátek</a>
+            </span>
+            
+            <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

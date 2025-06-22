@@ -32,7 +32,7 @@ Více informací k Business Central naleznete na našich stránkách [ACDynamics
 Standardní systém Dynamics 365 Business Central rozšiřujeme o řadu funkcionalit doplňujících legislativní požadavky a osvědčené postupy.
 Jednotlivé funcionality jsme seskupili do následujících balíčků.
 
-### [Financial Pack](../FinancialPack/finance-pack.md) - rozšíření pro finance
+### [Financial Pack](finance-pack.md) - rozšíření pro finance
   - Sada rozšíření aplikace
   - Insolvenční rejstřík
   - Faktoring
@@ -41,7 +41,7 @@ Jednotlivé funcionality jsme seskupili do následujících balíčků.
   - Evidence obalů základ (EKOKOM)
   - Evidence vratných obalů (Vratné obaly)
 
-### [Productivity Pack](../ProductivityPack/productivity-pack.md) - rozšíření pro produktivitu
+### [Productivity Pack](productivity-pack.md) - rozšíření pro produktivitu
   - Elektronická fakturace
   - Datové schránky
   - Evidence pošty
@@ -58,7 +58,7 @@ Jednotlivé funcionality jsme seskupili do následujících balíčků.
   - Spooler
   - Evidence nářadí a pomůcek
   - Zásilky
-### [SK Legislative Pack](../SK/sk-legislative-pack.md) - rozšíření o Slovenskou legislativu a Slovenský jazyk
+### [SK Legislative Pack](sk-legislative-pack.md) - rozšíření o Slovenskou legislativu a Slovenský jazyk
 
 ## ARICOMA OBOROVÁ ŘEŠENÍ
 Kromě rozšiřujících modulů jsou k dispozici níže uvedená specializovaná oborová řešení.
@@ -79,6 +79,6 @@ Kromě rozšiřujících modulů jsou k dispozici níže uvedená specializovan�
 
 
 ## Viz také
-[Financial Pack](../FinancialPack/finance-pack.md)  
-[Productivity Pack](../ProductivityPack/productivity-pack.md)  
-[SK Legislative Pack](../SK/sk-legislative-pack.md)
+[Financial Pack](finance-pack.md)  
+[Productivity Pack](productivity-pack.md)  
+[SK Legislative Pack](sk-legislative-pack.md)

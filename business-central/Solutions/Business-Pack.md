@@ -34,4 +34,4 @@ Zjednodušte si práci a zvyšte produktivitu s Business Packem!
 
 ## Viz také
 [ARICOMA Řešení](../index.md)  
-[Streamline Tools](../StreamlineTools/streamlinetools.md)  
+[Streamline Tools](streamlinetools.md)  
