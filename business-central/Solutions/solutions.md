@@ -49,5 +49,5 @@ Kromě rozšiřujících modulů jsou k dispozici níže uvedená specializovan�
 ## Viz také
 [Financial Pack](finance-pack.md)  
 [Productivity Pack](productivity-pack.md)  
-[Streamline Tools](streamline-tools.md)
+[Streamline Tools](streamlinetools.md)
 [SK Legislative Pack](sk-legislative-pack.md)
