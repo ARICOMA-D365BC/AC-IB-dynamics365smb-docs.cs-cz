@@ -13,7 +13,7 @@ ms.search.keywords: Czech, finance, productivity, Slovak localization, Power BI
 Aricoma aplikace a moduly rozšiřující podnikový informační systém Microsoft Dynamics 365 Business Central.
 
 [ARICOMA řešení](Solutions/solutions.md)  
-- [Financial Pack](FinancialPack/finance-pack.md)  
-- [Productivity Pack](ProductivityPack/productivity-pack.md)  
-- [Streamline Tools](StreamlineTools/streamline-tools.md)  
-- [SK Lokalizace](SK/sk-legislative-pack.md)
+- [Financial Pack](Solutions/finance-pack.md)  
+- [Productivity Pack](Solutions/productivity-pack.md)  
+- [Streamline Tools](Solutions/streamline-tools.md)  
+- [SK Lokalizace](Solutions/sk-legislative-pack.md)  

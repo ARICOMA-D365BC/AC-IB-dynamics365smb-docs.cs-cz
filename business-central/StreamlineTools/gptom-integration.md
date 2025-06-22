@@ -28,11 +28,11 @@ In this case, this is the standard BC functionality where the user uses the Post
 4.	Na stránce **Registrovat platbu** zadejte v poli Částka hodnotu pro úhradu terminálem.
 5.	Spusťte akci *Zaplatit*.
 6.	Na terminálu se objeví dialog „Přiložte kartu“.
-![Attach Card](media/GPtom_toPay.webp)
+![Attach Card](media/GPtom_toPay.png)
 7.	Po úspěšné úhradě se objeví dialog, kde obsluha provede odeslání dokladu o platbě (popř. může rovnou Dokončit proces)
-![Successful payment](media/GPtom_succPayment.webp)
+![Successful payment](media/GPtom_succPayment.png)
 8.	V dialogu pro odeslání účtenky je předvyplněn způsob odeslání nastavený pro příslušný terminál
-![Sending receipt](media/GPtom_printReceipt.webp)
+![Sending receipt](media/GPtom_printReceipt.png)
 9.	Po ukončení procesu platby na terminálu se na stránce Registrovat platbu objeví oznámení s výsledkem operace, vč. volby Otevřít položku pro zobrazení položky s detaily o proběhlé komunikaci s terminálem.
 
 > [!TIP]
