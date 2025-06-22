@@ -15,5 +15,5 @@ Aricoma aplikace a moduly rozšiřující podnikový informační systém Micros
 [ARICOMA řešení](Solutions/solutions.md)  
 - [Financial Pack](Solutions/finance-pack.md)  
 - [Productivity Pack](Solutions/productivity-pack.md)  
-- [Streamline Tools](Solutions/streamline-tools.md)  
+- [Streamline Tools](Solutions/streamlinetools.md)  
 - [SK Lokalizace](Solutions/sk-legislative-pack.md)  
