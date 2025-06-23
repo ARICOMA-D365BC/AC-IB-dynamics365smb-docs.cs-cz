@@ -5736,7 +5736,9 @@
     },
     {
       "type": "Conceptual",
+
       "source_relative_path": "Solutions/complaints-management-setup.md",
+
       "output": {
         ".html": {
           "relative_path": "Solutions/complaints-management-setup.html",
@@ -12840,7 +12842,9 @@
     },
     {
       "type": "Resource",
+
       "source_relative_path": "d365businesscentral/Solutions/media/HD_sharepoint.png",
+
       "output": {
         "resource": {
           "relative_path": "d365businesscentral/Solutions/media/HD_sharepoint.png"
@@ -12886,8 +12890,10 @@
       "type": "Resource",
       "source_relative_path": "d365businesscentral/Solutions/media/IM-doc_attached.png",
       "output": {
+
         "resource": {
           "relative_path": "d365businesscentral/Solutions/media/IM-doc_attached.png"
+
         }
       },
       "is_incremental": false,
@@ -15902,8 +15908,10 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
+
           "total_file_count": 385,
           "skipped_file_count": 385
+
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
