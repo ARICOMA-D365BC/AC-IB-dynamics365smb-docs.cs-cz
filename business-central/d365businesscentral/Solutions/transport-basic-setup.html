@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Transport basic setup | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Transport basic setup | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="doprava-základ---nastavení">Doprava základ - Nastavení</h1>
+
+<h2 id="nastavení-dopravy">Nastavení dopravy</h2>
+<p>Pro základní nastavení addonu dopravy porakčujte následujícím způsobem:</p>
+<ol>
+<li><p>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení dopravy</strong> a poté vyberte související odkaz.</p>
+</li>
+<li><p>Na kartě nastavení dopravy je několik polí k nastavení:</p>
+<ul>
+<li><strong>Čísla vozidel</strong> – číselná řada pro vytváření vozidel.</li>
+<li><strong>Čísla řidičů</strong> – číselná řada pro vytváření řidičů.</li>
+</ul>
+</li>
+<li><p>Dále Nastavení Dopravy obsahuje v ovládacím panelu další možnosti nastavení a doplnění číselníků:</p>
+<p><img src="media/transport_setup.png" alt="Nastavení dopravy"></p>
+</li>
+</ol>
+<h3 id="kódy-odborné-způsobilosti">Kódy odborné způsobilosti</h3>
+<ul>
+<li>Číselník reprezentující schopnosti/dovednosti/oprávnění řidičů</li>
+<li>Tato oprávnění lze následně přidělit vč. časové platnosti konkrétnímu řidiči</li>
+</ul>
+<p><img src="media/transport_codes.png" alt="Kódy způsobilosti"></p>
+<h3 id="kódy-phm">Kódy PHM</h3>
+<p>Číselník druhů paliv používaných ve vozidlech a s vazbou na karty, které jsou vám fakturovány jejich dodavateli (např. různé druhy pohonných hmot, poplatky,…).  Tato vazba je následně použita při vytváření nákupních faktur z výpisu čerpání.
+<img src="media/transport_PHM.png" alt="Kódy PHM"></p>
+<h2 id="typy-vozidel">Typy vozidel</h2>
+<p>Číselník typů vozidel používaných ve vašem parku a členěných dle vašich potřeb
+<img src="media/transport_vehicles.png" alt="Typy vozidel"></p>
+<h2 id="vybavení-vozidla">Vybavení vozidla</h2>
+<p>Seznam položek výbavy, které chcete evidovat pro vozidla
+<img src="media/transport_vehicles_eq.png" alt="Vybavení vozidel"></p>
+<h2 id="typy-údržby">Typy údržby</h2>
+<p>Pro členění údržby vozidla dle vašich potřeb
+<img src="media/transport_main.png" alt="Typy údržby"></p>
+<h2 id="typy-provozu">Typy provozu</h2>
+<p>Číselník je možné použít ke stanovování různých nákladů a normovaných spotřeb u vozidel v závislosti na typu vozidla.</p>
+<p><img src="media/transport_types.png" alt="Typy provozu"></p>
+<h2 id="šablony-knihy-jízd">Šablony knihy jízd</h2>
+<ul>
+<li>Šablony umožnují definovat deník pro určitý záznam – například řidič, nebo vozidlo.</li>
+<li>Šablona knihy jízd obsahuje jeden řádek pro každou šablonu, pole:
+<ul>
+<li><strong>Vynutit návaznost stavu</strong> – řádky musí být zadávány v pořadí, v jaké byly jízdy uskutečněny.</li>
+<li><strong>Čas jízdy nutný</strong> – uživatel musí zadat dobu trvání jízdy.</li>
+</ul>
+</li>
+</ul>
+<p><img src="media/transport_templateKH.png" alt="Šablony knihy jízd"></p>
+<h2 id="šablony-výpisu-čerpání">Šablony výpisu čerpání</h2>
+<ul>
+<li><p>Šablony výpisu čerpání slouží k vytváření a sledování jednotlivých šablon výpisů. V šabloně je nutné vyplnit následující pole:</p>
+<ul>
+<li><strong>Název</strong> a <strong>Popis</strong>.</li>
+<li><strong>Čísla výpisů</strong> – číselná řada pro výpisy čerpání PHM.</li>
+<li><strong>Čísla vydaných výpisů</strong> – číselná řada pro vydané výpisy čerpání PHM.</li>
+<li>parametry pro elektronické zpracování vyúčtování <strong>Cesta pro import</strong>, <strong>Typ souboru pro import</strong>, <strong>Typ objektu pro import</strong>, <strong>ID objektu pro import</strong>, <strong>Název objektu pro import</strong>.</li>
+<li><strong>Číslo dodavatele</strong> – je nutné vyplnit, budou-li z výpisů generovány nákupní faktury.</li>
+<li><strong>Číslo dodavatele PHM</strong> – needitovatelné, je zkopírováno ze stejného pole na kartě dodavatele (jedná se o číslo dodavatele PHM, které uvádí v elektronických výpisech, a které je kontrolováno při jejich importu).</li>
+<li><strong>Šablona deníku PHM</strong> – je nutné vyplnit, budou-li z výpisů generovány deníky PHM.</li>
+<li><strong>List deníku PHM</strong> – je nutné vyplnit, budou-li z výpisů generovány deníky PHM.</li>
+</ul>
+</li>
+</ul>
+<p><img src="media/transport_css.png" alt="Šablony výpisu čerpání PHM - CSS"></p>
+<h2 id="dodavatelé">Dodavatelé</h2>
+<p>V případě, že budou využívány deníky čerpání PHM, tak je nutné nastavit na dodavateli následující údaje:</p>
+<ul>
+<li>Číslo dodavatele PHM (Fuel Vendor No.) – jde o pole, které je kontrolované v průběhu zadávání výpisu čerpání PHM nebo jeho importu</li>
+<li>Katalog zboží dodavatele PHM – pro označení zboží ve výpisu dodavatele a jeho napárování na karty zboží v systému.</li>
+</ul>
+<p><strong>Viz také</strong></p>
+<p><a href="transport-basic.html">Doprava - základ</a><br>
+<a href="productivity-pack.html">Productivity Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/2025_NewStructure/business-central/Solutions/transport-basic-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>V t&#233;to sekci</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Zpět na začátek</a>
+            </span>
+            
+            <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
