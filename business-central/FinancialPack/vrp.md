@@ -1,5 +1,5 @@
 ---
-title: Veřejné recyklační příspěvky (VRP)
+title: Viditelné recyklační příspěvky (VRP)
 description: Stručný průvodce, jak VRP pomáhá efektivně řídit environmentální poplatky v Business Central.
 author: Makowka-Tomas
 date: 29/05/2025
@@ -8,11 +8,11 @@ ms.service: dynamics-365-business-central
 ms.search.keywords: VRP, recyklační příspěvky, obaly, poplatky, Business Central, ekologie
 ---
 
-# Veřejné recyklační příspěvky (VRP)
+# Viditelné recyklační příspěvky (VRP)
 
 > Aktualizace: 01.06.2025
 
-Veřejné recyklační příspěvky (VRP) umožňují firmám jednoduše a přehledně evidovat poplatky spojené s recyklací obalů přímo v systému **Business Central**. Díky propojení s modulem **Evidence obalů (EKOKOM)** je možné VRP automaticky vypočítat a zahrnout do prodejních dokladů.
+Viditelné recyklační příspěvky (VRP) umožňují firmám jednoduše a přehledně evidovat poplatky spojené s recyklací obalů přímo v systému **Business Central**. Díky propojení s modulem **Evidence obalů (EKOKOM)** je možné VRP automaticky vypočítat a zahrnout do prodejních dokladů.
 
 ## Jak VRP funguje?
 

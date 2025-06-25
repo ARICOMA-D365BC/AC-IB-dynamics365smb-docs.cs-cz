@@ -1,6 +1,6 @@
 ---
 title: VRP – Nastavení a konfigurace
-description: Technický návod pro nastavení veřejných recyklačních příspěvků (VRP) v Business Central
+description: Technický návod pro nastavení viditelných recyklačních příspěvků (VRP) v Business Central
 author: Makowka-Tomas
 date: 29/05/2025
 reviewer: janousek
@@ -12,7 +12,7 @@ ms.search.keywords: VRP, recyklační příspěvky, obaly, nastavení, účty, B
 
 > Aktualizace: 01.06.2025
 
-Pro správnou funkci **VRP (veřejné recyklační příspěvky)** je nutné provést několik kroků v prostředí Business Central. Tento návod popisuje, jak aktivovat funkci VRP, nastavit účty, definovat prvky VRP a propojit je s kartami zboží.
+Pro správnou funkci **VRP (viditelné recyklační příspěvky)** je nutné provést několik kroků v prostředí Business Central. Tento návod popisuje, jak aktivovat funkci VRP, nastavit účty, definovat prvky VRP a propojit je s kartami zboží.
 
 ## Aktivace VRP ve výkazu obalů
 
@@ -64,4 +64,4 @@ Příklad faktury s VRP:
 
 ## Viz také
 
-[Veřejné recyklační příspěvky (VRP) – Přehled a využití](vrp.md)
+[Viditelné recyklační příspěvky (VRP) – Přehled a využití](vrp.md)
