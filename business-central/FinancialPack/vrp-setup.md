@@ -57,11 +57,11 @@ Příklad faktury s VRP:
 
 ![Faktura s VRP](media/vrp-doc-example.png)
 
-## Doporučení
+> [!TIP]
 
-- **Zkontrolujte měny** – příspěvky je možné nastavit zvlášť pro CZK a EUR.
-- **Definujte všechny potřebné kombinace** – například VRP za kg pro CZK i EUR, VRP za kus pro CZK i EUR.
-- **Ověřte účty VRP** – správné zaúčtování na účet (např. 548) je klíčové pro správnou evidenci.
+> - **Zkontrolujte měny** – příspěvky je možné nastavit zvlášť pro CZK a EUR.
+> - **Definujte všechny potřebné kombinace** – například VRP za kg pro CZK i EUR, VRP za kus pro CZK i EUR.
+> - **Ověřte účty VRP** – správné zaúčtování na účet (např. 548) je klíčové pro správnou evidenci.
 
 ## Viz také
 
