@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AC - Financial pack -  Factoring | Microsoft Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="AC - Financial pack -  Factoring | Microsoft Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="factoring">Factoring</h1>
+
+<p>Add-on modul Faktoring rozšiřuje možnosti oblasti Správa financí systému Dynamics 365 Business Central o možnost evidence a účtování postoupení pohledávek a vytváření faktoringových smluv. Je podporována i varianta regresního faktoringu, kdy faktor může pohledávku/závazek vrátit.</p>
+<p>Funkčnost add-on modulu je integrovaná s add-on modulem Napojení na MS Word. Využitím této integrace lze na základě definovaných šablon vytvářet faktoringové smlouvy ze systému Dynamics 365 Business Central do dokumentů Microsoft Word.</p>
+<h2 id="pořízení-dokladu-faktoringu">Pořízení dokladu faktoringu</h2>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přehled faktoringů</strong> a poté vyberte související odkaz.</li>
+<li>Na přehledu klikněte na tlačítko <strong>Nový</strong>.</li>
+<li>Na kartě dokladu Faktoringu do hlavičky doplťe informaci o <strong>zákazníkovi</strong> a <strong>zúčtovací datum</strong>.</li>
+<li>Konkrétní položky/závazky, které mají být podstoupeny, lze vybrat pomocí polí <strong>Typ položky</strong> a <strong>Číslo položky</strong>. Pokud se jedná o regresivní faktoring, faktor může pohledávku/závazek vrátit, musí být zaškrtnuto pole <strong>Regresní faktoring</strong> na řádku dokladu.</li>
+</ol>
+<p><img src="media/faktoring_card.png" alt="Karta fakctoringu"></p>
+<h2 id="zaúčtování-faktoringu">Zaúčtování faktoringu</h2>
+<p>Pro zaúčtování faktoringu postupujte následujícím způsobem:</p>
+<ol>
+<li>Před zaúčtováním dokladu faktoringu je doklad třeba <strong>vydat</strong>.</li>
+<li>Pro zaúčtování použijte funkci <strong>Účtování</strong>.</li>
+<li>Zaúčtováním dokladu vznikne doklad <strong>Zaúčtovaný faktoring</strong>.</li>
+</ol>
+<p>Řádky dokladu Zaúčtovaný faktoring jsou rozděleny <strong>do tří záložek</strong>:</p>
+<ul>
+<li><strong>Pohledávky</strong> – postoupené položky.</li>
+<li><strong>Faktoring pohledávky</strong> – nově vzniklé položky zákazníka k faktorovi.</li>
+<li><strong>Platby</strong> – položky typu platba, které vyrovnávají faktoringové pohledávky.</li>
+</ul>
+<p><img src="media/faktoring_lines.png" alt="Záložky faktoringu"></p>
+<p>Účtováním faktoringu jsou uzavřeny původní položky zákazníka/dodavatele a k faktorovi jsou zaúčtovány nové pohledávky.</p>
+<p>Finanční účtování je určeno <strong>Účto skupinou faktoringu</strong> z Nastavení faktoringu:</p>
+<p><img src="media/faktoring_customer_entries.png" alt="Položky zákazníka"></p>
+<p>Pokud je v Nastavení faktoringu zapnuté <strong>Přeúčtovat původní položku</strong>, vznikne u původního zákazníka/dodavatele nová zákaznická/dodavatelská položka. Ta umožňuje sledovat saldo původních zákazníků/dodavatelů včetně postoupených dokladů. Finanční účtování je určeno <strong>Účto skupinou přeúčtování</strong> z Nastavení faktoringu. V Nastavení účto skupin zákazníka by pro tuto účto skupinu měl být nastaven podrozvahový účet. Podrozvahová položka je uzavřena v okamžiku uzavření faktoringové pohledávky.</p>
+<h2 id="vrácení-faktoringové-pohledávky">Vrácení faktoringové pohledávky</h2>
+<p>Pokud se jedná o regresní faktoring (faktor může pohledávku vrátit) musí být doklad zaúčtován se zaškrtnutým pole Regresní faktoring na řádku dokladu.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Účtovaný faktoring</strong> a poté vyberte související odkaz.</li>
+<li>Vyberte zaúčtovaný doklad, který chcete zpracovat.</li>
+<li>Na kartě účtovaného faktoringu použijte funkci <strong>Vrátit pohledávku faktoringu</strong>
+<img src="media/faktoring_reverse.png" alt="Vrácení faktoringu"></li>
+<li>Po tomto příkazu systém odúčtuje nově vzniklou faktoringovou položku a naúčtuje ji zpět k zákazníkovi / dodavateli.</li>
+</ol>
+<p><strong>Viz také</strong></p>
+<p><a href="factoring-setup.html">Nastavení - Faktoring</a><br>
+<a href="finance-pack.html">Financial Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/2025_NewStructure/business-central/Solutions/factoring.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>V t&#233;to sekci</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Zpět na začátek</a>
+            </span>
+            
+            <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 ---
 title: Analytics Suite
 description: Analytics Suite pro Dynamics 365 Business Central je výkonný nástroj pro analýzu a vizualizaci dat.
-author: Makowka-Tomas
+author: janousek
 date: 28/05/2025
 reviewer: janousek
 ms.service: dynamics-365-business-central
@@ -42,11 +42,15 @@ Analytics Suite pro finance poskytuje komplexní přehled nad klíčovými finan
 
 Řešení je plně integrované s Finančními výkazy definovanými v Business Central a umožňuje uživatelům vytvářet interaktivní reporty nad finančními daty. Nabízí například analýzy mzdových nákladů, porovnání tržeb podle středisek či jiných dimenzí definovaných v BC. Díky intuitivnímu ovládání a přizpůsobitelným vizualizacím získáte okamžitý přehled o finanční výkonnosti podniku a podpoříte efektivní rozhodování.
 
+![Analytics Suite - Finance](media/analytics-suite-fin-rep-1.png "Analytics Suite - Finance")  
+
 ### Banky
 
 Modul Analytics Suite pro bankovní data poskytuje komplexní přehled o finančních transakcích, stavech účtů a pohybu peněz. Umožňuje sledovat platební operace a řídit likviditu s vyšší přesností, rychle reagovat na změny ve finančních tocích.
 
 Uživatelé mohou snadno analyzovat příchozí a odchozí platby, sledovat vývoj zůstatků na účtech a identifikovat potenciální finanční rizika. Modul také umožňuje porovnání historických dat s aktuálními trendy, což podporuje lepší rozhodování v oblasti správy financí a bankovních operací.
+
+![Analytics Suite - Banky](media/analytics-suite-bank-acc.png "Analytics Suite - Banky")  
 
 ### Pohledávky
 
@@ -87,6 +91,6 @@ Chcete mít ve své firmě nástroj, který vám umožní okamžitý přístup k
 Kontaktujte nás pro nezávaznou konzultaci a zjistěte, jak vám Power BI Analytics Suite pro Dynamics 365 Business Central přinese konkurenční výhodu.
 
 ## Viz také
-
+[Analytics Suite - Nastavení](../StreamlineTools/analytics-suite-setup.md)  
 [Řešení ARICOMA](../index.md)  
-[Streamline Tools](../StreamlineTools/streamlinetools.md)
+[Streamline Tools](../StreamlineTools/streamlinetools.md)  
