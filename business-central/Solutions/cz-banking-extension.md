@@ -11,9 +11,9 @@ ms.search.keywords: banking, finance, czech, API
 
 > Update 30.05.2025
 
-TModul rozšiřuje funkčnost „Bankovní doklady pro Česko (rozšíření)“, která je součástí českých lokálních funkčností D365 Business Central (dále jen BC).
+Modul Rozšíření CZ bankovnictví rozšiřuje funkčnost „Bankovní doklady pro Česko (rozšíření)“, která je součástí českých lokálních funkčností Dynamics 365 Business Central (dále jen BC).
 
-Hlavním přínosem modulu Rozšíření CZ bankovnictví je zjednodušení importu a následného zpracování bankovních výpisů a tím snížení rutinních činností uživatelů.
+Hlavním přínosem modulu je zjednodušení importu a následného zpracování bankovních výpisů a tím snížení rutinních činností uživatelů.
 
 Výhodou je variabilita v nastavení importu bankovních výpisů do BC a jejich následné zpracování, kdy lze individuálně nastavit režim pro každý bankovní účet zvlášť.
 
