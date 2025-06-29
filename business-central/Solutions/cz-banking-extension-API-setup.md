@@ -99,7 +99,7 @@ Následující parametry je třeba doplnit do Rozšířeného nastavení v pří
 
 ### Zprovoznění API Business suite služby
 
-Pro využití služby [API Business suite](https://www.kb.cz/cs/kbapi/sluzby-kb-api/api-business-suite) od Komerční bankymusíte mít aktivovánu vybranou aplikaci internetového bankovnictví (*Moje Banka Business*, or *Profibanka*, or *Mobilní banka Business*).
+Pro využití služby [API Business suite](https://www.kb.cz/cs/kbapi/sluzby-kb-api/api-business-suite) od Komerční banky musíte mít aktivovánu vybranou aplikaci internetového bankovnictví (*Moje Banka Business*, or *Profibanka*, or *Mobilní banka Business*).
 
 Základní kroky pro zprovoznění API rozhraní jsou:
 

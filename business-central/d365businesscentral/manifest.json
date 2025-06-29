@@ -51,7 +51,7 @@
           "hash": "soVQZovNz5Rv8rccwAepPfOSvrOuUdTV/5SVJS59itw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -66,7 +66,7 @@
           "hash": "KaCauqKCWGPRx9VQdJLpvsMuH5sQSDgESHqVXx+rM7o="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -81,7 +81,7 @@
           "hash": "eYI4/ZX16pupDXAGZMoAqm66xOho8ekfBqRSFmVDtBU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -5746,7 +5746,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/TOC.html",
-          "hash": "reDW84wjmzih86UW90qhyX7jXLWdXtxhouKzrg2sHog="
+          "hash": "T20VLIeKeW8TM0sOwiak6uDfQSlVMhWLYo7pepo+Da4="
         }
       },
       "is_incremental": false,
@@ -5869,7 +5869,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/cz-banking-extension-API-setup.html",
-          "hash": "ebdJ8XK6lhDr2+jMOG9VS6AuW6GSvD8lOm/OrIIJAcc="
+          "hash": "I5wGWKXPDW1pgDwzGHBIwmmFMqSvbI7UUADmBuKNQf0="
         }
       },
       "is_incremental": false,
@@ -10356,6 +10356,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/cz-banking-ext-central-stack.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/cz-banking-ext-central-stack.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/cz-banking-ext-schema-advanced.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/cz-banking-ext-schema-advanced.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/FinancialPack/media/cz-banking-ext-schema-basic.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/FinancialPack/media/cz-banking-ext-schema-basic.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "d365businesscentral/FinancialPack/media/denik vratnych obalu.jpg",
       "output": {
         "resource": {
@@ -14118,6 +14151,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/cz-banking-ext-central-stack.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/cz-banking-ext-central-stack.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/cz-banking-ext-schema-advanced.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/cz-banking-ext-schema-advanced.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/cz-banking-ext-schema-basic.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/cz-banking-ext-schema-basic.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "d365businesscentral/Solutions/media/data_boxes.png",
       "output": {
         "resource": {
@@ -16059,7 +16125,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 391,
-          "skipped_file_count": 385
+          "skipped_file_count": 390
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
