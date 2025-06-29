@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CZ Banking Extension </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="CZ Banking Extension ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="rozšířené-cz-bankovnictví">Rozšířené CZ bankovnictví</h1>
+
+<blockquote>
+<p>Update 30.05.2025</p>
+</blockquote>
+<p>Modul Rozšíření CZ bankovnictví rozšiřuje funkčnost „Bankovní doklady pro Česko (rozšíření)“, která je součástí českých lokálních funkčností Dynamics 365 Business Central (dále jen BC).</p>
+<p>Hlavním přínosem modulu je zjednodušení importu a následného zpracování bankovních výpisů a tím snížení rutinních činností uživatelů.</p>
+<p>Výhodou je variabilita v nastavení importu bankovních výpisů do BC a jejich následné zpracování, kdy lze individuálně nastavit režim pro každý bankovní účet zvlášť.</p>
+<p>Modul umožňuje podporu uživatelů při zpracování výpisů ve 2 úrovních: Základní a Pokročilá.</p>
+<h2 id="základní-varianta">Základní varianta</h2>
+<h3 id="bankovní-výpisy">Bankovní výpisy</h3>
+<p>Přístup k funkcionalitě získáte zakoupením předplatného pro první bankovní účet. Tato varianta neřeší počet účtů, pro které ji budete využívat. Ovšem práce je ruční v rámci společnosti a pro konkrétní banku, v případě více účtů u jedné banky podporuje import více výpisů najednou.
+I k této variantě je možné si dokoupit některý z nabízených <a href="cz-banking-extension-API-setup.html">doplňků pro API komunikací s bankou</a>.</p>
+<p><img src="media/cz-banking-ext-schema-basic.png" alt="Základní varianta modulu Rozšíření CZ bankovnictví"></p>
+<h3 id="platební-příkazy">Platební příkazy</h3>
+<p>V základní variantě se používá standardní funkce pro Export na stránce Vydaný platební příkaz. V případě nastaveného API rozhraní je výpis odeslán bez stažení souboru na klientský počítač.</p>
+<h2 id="pokročilá-varianta">Pokročilá varianta</h2>
+<h3 id="bankovní-výpisy-1">Bankovní výpisy</h3>
+<p>Přístup k funkcionalitě umožňující plnou automatizaci (s výjimkou finálního zaúčtování Deníku plateb) získáte zakoupením předplatného pro více bankovních účtů.
+Pokročilá varianta přináší možnost automatizace všech kroků:</p>
+<ul>
+<li>nahrávání bankovních výpisů (pomocí metod bez ručního vstupu, typicky API či jiné na míru vyvinuté metody)</li>
+<li>spouštění importů bankovních výpisů napříč firmami</li>
+<li>automatizaci zpracování výpisů až po vytvoření záznamů v Deníku plateb, vč. návrhu spárování</li>
+</ul>
+<p><img src="media/cz-banking-ext-schema-advanced.png" alt="pokročilá varianta modulu Rozšíření CZ bankovnictví"></p>
+<h3 id="platební-příkazy-1">Platební příkazy</h3>
+<p>V rámci rozvoje budeme modulu bude v průběhu roku 2026 dopracována podpora automatizace odesílání Vydaných platebních příkazů napříč společnostmi a bankovními účty.</p>
+<h2 id="příklady-použití">Příklady použití</h2>
+<p>Následující kapitoly popisují nejběžnější scénáře použití funkcionality pro import výpisů a export platebních příkazů.
+V příkladných scénářích je popisován import výpisů ve formátu .gpc viz <a href="cz-banking-extension-setup#form%C3%A1ty-bankovn%C3%ADch-v%C3%BDpis%C5%AF-a-platebn%C3%ADch-p%C5%99%C3%ADkaz%C5%AF">Formáty bankovních výpisů a platebních příkazů</a>.</p>
+<h3 id="základní--import--a-zpracování-jednoho-výpisu">Základní – Import  a zpracování jednoho výpisu</h3>
+<p>V tomto případě se jedná o standardní funkcionalitu BC. Uživatel otevře novou kartu Bankovního výpisu a spustí akci <em>Import bankovního výpisu</em>.
+Po importu uživatel použije funkci <em>Vydat a vytvořit deník</em> k jeho zaúčtování.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Detailní popis funkčnosti a nastavení viz <a href="https://learn.microsoft.com/cs-cz/dynamics365/business-central/localfunctionality/czech/bank-feature?source=recommendations#bank-statement-and-payment-orders">CZ Bankovní výpisy a Platební příkazy</a>.</p>
+</div>
+<h3 id="základní--import-a-zpracování-hromadného-výpisu">Základní – Import a zpracování hromadného výpisu</h3>
+<p>Jedná se o situaci, kdy jeden soubor bankovního výpisu obsahuje více bankovních výpisů pro jeden nebo více bankovních účtů.</p>
+<p>Nastavení pro funkčnost viz <a href="cz-banking-extension-setup#form%C3%A1ty-bankovn%C3%ADch-v%C3%BDpis%C5%AF-a-platebn%C3%ADch-p%C5%99%C3%ADkaz%C5%AF">Formáty bankovních výpisů a platebních příkazů</a> a <a href="cz-banking-extension-setup#podp%C5%AFrn%C3%A1-nastaven%C3%AD-pro-import-v%C3%BDpis%C5%AF">Podpůrná nastavení pro import bankovních výpisů</a>.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Import bankovních výpisů</strong> a poté vyberte související odkaz.</li>
+<li>Spusťte akci <em>Importovat…</em></li>
+<li>Přetáhněte soubor nebo pro procházení klikněte a soubor vyberte.</li>
+<li>Po stisku OK se automaticky otevře Zásobník bankovních výpisů. Jedná se o dočasní tabulku pro přehled importovaných výpisů a jejich okamžité zpracování. Proto je nutné pokračovat dalším krokem.</li>
+<li>Spusťte akci <em>Zpracování</em> pro vytvoření bankovního výpisu do nastavené úrovně zpracování.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Při importu po vybrání souboru, se může zobrazit hláška „Není co importovat. Chcete zobrazit přehled s bankovními výpisy?“ Po kliknutí na ANO se zobrazí soubory s detailem chyby.</p>
+</div>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Most common errors:</p>
+<ul>
+<li>Importovaný soubor již v BC existuje --&gt; v tom případě je v poli Stav zobrazený stav zpracování v BC.</li>
+<li>Číslo bankovního účtu nebylo rozpoznáno --&gt; v tom případě je pole „Číslo bankovního účtu“ vyznačeno červeně.
+&gt; - Buď importovaný soubor nepatří do importované společnosti
+&gt; - nebo v souboru bankovního výpisu je číslo účtu v jiném formátu, obvykle předčíslí a číslo účtu bez pomlčky.  V tomto případě proveďte nastavení dle <a href="cz-banking-extension-setup#%C4%8D%C3%ADslo-bank%C3%BA%C4%8Dtu-na-bankv%C3%BDpisu-voliteln%C3%A9">Číslo bank.účtu na bank.výpisu (volitelné)</a>.</li>
+</ul>
+</div>
+<h3 id="základní--import-a-zpracování-více-souborů-výpisů">Základní – Import a zpracování více souborů výpisů</h3>
+<p>Jedná se typicky o situaci, kdy se používají soubory obsahující pouze jeden bankovní výpis a je třeba takových souborů importovat více najednou.
+Soubory je potřeba zkomprimovat do jednoho .zip souboru, který bude naimportován, přičemž dojde k automatické extrakci.</p>
+<p>Postup importu bankovního výpisu je stejný, jak je popsáno v <a href="#z%C3%A1kladn%C3%AD--import-a-zpracov%C3%A1n%C3%AD-hromadn%C3%A9ho-v%C3%BDpisu">Základní - Import a zpracování hromadného bankovního výpisu</a>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Více souborů najednou lze předat přímo v dialogovém okně pro výběr souboru (od verze BC26).</p>
+</div>
+<h3 id="základní--export-souboru-platebního-příkazu">Základní – Export souboru platebního příkazu</h3>
+<p>Export platebních příkazů se provádí na kartě Vydaného platebního příkazu spuštěním akce <em>Exportovat</em>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>V případě zakoupení některého z <a href="cz-banking-extension-API-setup.html">API rozšíření</a> lze příkaz takto exportovat přímo do systému vaší banky.</p>
+</div>
+<h3 id="pokročilá--manuální-import-pro-více-společností">Pokročilá – manuální import pro více společností</h3>
+<p>Scénář popisuje situaci, kdy v prostředí BC je více společností a import bankovních výpisů bude prováděn centrálně pro více společností najednou z lokálního úložiště.</p>
+<p>Importuje se do tabulky Centrální zásobník bankovních výpisů. Záznamy tabulky jsou společné pro všechny společnosti. Importované výpisy jsou zde uložené pro další zpracování. Po jejich zpracování je vhodné je průběžně mazat.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>V Nastavení rozšířeného CZ bankovnictví zapněte automatické čištění.</p>
+</div>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Centrální zásobník bankovních výpisů</strong> a poté vyberte související odkaz.</li>
+<li>Spusťte funkci <em>Import…</em></li>
+<li>Přetáhněte soubor nebo pro procházení klikněte a soubor vyberte.</li>
+<li>Po stisku OK se výpisy automaticky naimportují do řádků Centrálního zásobníku bankovních výpisů. Každý výpis se založí na samostatný řádek.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Pokud importujete soubor ve formátu .zip, funkčnost z komprimovaných souborů naimportuje pouze podporované formáty. Pokud jsou v .zip nepodporované formáty, import je ignoruje.</p>
+<p>Více souborů najednou lze předat přímo v dialogovém okně pro výběr souboru (od verze BC26).</p>
+</div>
+<h3 id="pokročilá--automatizovaný-import-pro-více-společností">Pokročilá – automatizovaný import pro více společností</h3>
+<p>V tomto případě se jedná o situaci, kdy v prostředí BC je více společností a import bankovních výpisů bude prováděn centrálně pro všechny společnosti automaticky bez zásahu uživatele.</p>
+<p>Příkladem může být přímá komunikace s bankou prostřednictvím API, kdy si BC přímo stahuje výpisy nebo realizované transakce a ukládá je do Centrálního zásobníku bankovních výpisů pro jejich další zpracování.</p>
+<p>Popis nastavení automatizace importu najdete v <a href="cz-banking-extension-setup#automatick%C3%A9-stahov%C3%A1n%C3%AD-v%C3%BDpis%C5%AF-do-centr%C3%A1ln%C3%ADho-z%C3%A1sobn%C3%ADku">Automatické stahování výpisů do centrálního zásobníku</a></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Pokyny pro vytvoření vlastní automatizace importu najdete v <a href="cz-banking-extension-setup#vlastn%C3%AD-funkce-pro-stahov%C3%A1n%C3%AD-v%C3%BDpis%C5%AF-do-centr%C3%A1ln%C3%ADho-z%C3%A1sobn%C3%ADku">Vlastní funkce pro stahování výpisů do centrálního zásobníku</a>.</p>
+</div>
+<h3 id="pokročilá--manuální-zpracování-výpisů">Pokročilá – manuální zpracování výpisů</h3>
+<p>Na příkladu ručního zpracování si ukážeme kroky, které je třeba po načtení výpisu provést, abychom dospěli až k zaúčtování deníku.</p>
+<p>Tento způsob zpracování se může hodit v situaci s větším počtem účetních, kdy každý/každá má na starosti jednu nebo málo firem s více bankovními účty. V takovém případě si každý uživatel z jednoho místa vytvoří výpisy ve společnostech či pro banky, které má na starosti:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Centrální zásobník bankovních výpisů</strong> a poté vyberte související odkaz.</li>
+<li>V poli <strong>Název společnosti</strong> vyberte společnost.</li>
+<li>Zapněte příznak <strong>Pouze bankovní výpisy společnosti</strong> pro zobrazení výpisů náležejících k vybrané společnosti.</li>
+<li>Zvolte funkci <em>Zpracovat</em> a potvrďte spuštění volbou Ano. Tím se v příslušné společnosti vytvoří Bankovní výpisy pro řádky, pro které ještě vytvořeny nebyly – v sloupci <strong>Stav</strong> a <strong>Číslo bankovního výpisu</strong> je vidět výsledek.</li>
+<li>Kliknutím na hodnotu v poli <strong>Stav</strong> (nebo přímo na Číslo bankovního výpisu) v řádku dojde k otevření buď Bankovního výpisu, Deníku plateb nebo Vydaného bankovního výpisu v závislosti na hodnotě pole Stav. Proveďte další kroky vedoucí k zaúčtování výpisu v Deníku plateb.</li>
+<li>Vraťte se na Centrální zásobník bankovních výpisů a pokračujte dalšími výpisy, popř. další společností.</li>
+</ol>
+<p><img src="media/cz-banking-ext-central-stack.png" alt="Central Bank Statement Stack"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Pokud nedošlo k vytvoření bankovního výpisu, nebo importujete nový bankovní účet, zkontrolujte nastavení viz <a href="cz-banking-extension-setup.md/#nastaven%C3%AD-automatizace-importu-a-zpracov%C3%A1n%C3%AD-bankovn%C3%ADch-v%C3%BDpis%C5%AF-prost%C5%99ednictv%C3%ADm-centr%C3%A1ln%C3%ADho-z%C3%A1sobn%C3%ADku">Nastavení automatizace importu a zpracování bankovních výpisů prostřednictvím centrálního zásobníku</a></p>
+</div>
+<h3 id="pokročilá--automatizované-zpracování-výpisů">Pokročilá – automatizované zpracování výpisů</h3>
+<p>Automatizované zpracování importovaných výpisů je stále častěji využíváno nejen ve firmách s menším počtem účetních obsluhujících více společností s mnoha bankovními účty. Úspora času spočívá v procesování centrálně importovaných výpisů dle nastavených parametrů, tedy jejich přenášení do jednotlivých společností včetně zpracování do definované úrovně (např. až do návrhu řádků v Deníku plateb).</p>
+<p>Funkcionalita ví, které výpisy již byly importovány a v intervalu 14 dní zpětně pouze doplní chybějící (pokud dosud nebyl vstupní soubor k dispozici nebo když záznam v Centrálním zásobníku obsluha smaže).</p>
+<p>Prostřednictvím stránky Centrální zásobník bankovních výpisů má uživatel přehled o stavu zpracování v jednotlivých společnostech a může ji využívat jako tzv. pult dispečera (z řádku si může otevřít záznam v jiné společnosti a stav změnit, např. výpis zaúčtovat):</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Centrální zásobník bankovních výpisů</strong> a poté vyberte související odkaz.</li>
+<li>V poli <strong>Název společnosti</strong> vyberte společnost.</li>
+<li>Setřiďte si sloupec <strong>Datum výpisu</strong> Sestupně.</li>
+<li>Přejděte na řádek, kde <strong>Stav</strong> není Zaúčtováno. Kliknutím na hodnotu v poli <strong>Stav</strong> otevřete záznam a proveďte další kroky vedoucí k zaúčtování výpisu v Deníku plateb.</li>
+<li>Vraťte se na Centrální zásobník bankovních výpisů a pokračujte dalšími řádky, dokud nebudou všechny ve stavu Zaúčtováno.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Ověřte nastavení pro automatizaci viz <a href="cz-banking-extension-setup.md/#podp%C5%AFrn%C3%A1-nastaven%C3%AD-pro-automatick%C3%A9-zpracov%C3%A1n%C3%AD-v%C3%BDpis%C5%AF">Podpůrná nastavení pro automatické zpracování výpisů</a>.</p>
+</div>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Pro práci s Centrálním zásobníkem bankovních výpisů musí uživatel disponovat standardní sadou oprávnění pro založení a zpracovávání bankovních výpisů ve společnostech, ve kterých mají být výpisy tímto nástrojem obsluhovány.</p>
+</div>
+<h3 id="pokročilá--automatizovaný-export-platebních-příkazů">Pokročilá – automatizovaný export platebních příkazů</h3>
+<p>Funkcionalita bude doplněna v průběhu roku 2026.</p>
+<p><strong>See also</strong></p>
+<p><a href="cz-banking-extension-setup.html">Nastavení rozšířeného CZ bankovnictví</a><br>
+<a href="cz-banking-extension-API-setup.html">Nastavení API konektorů</a><br>
+<a href="finance-pack.html">Financial Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/FinancialPack/cz-banking-extension.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>V t&#233;to sekci</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Zpět na začátek</a>
+            </span>
+            
+            <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CZ Banking Extension - API connector settings </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="CZ Banking Extension - API connector settings ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="nastavení-api-konektorů">Nastavení API konektorů</h1>
+
+<blockquote>
+<p>Update 30.05.2025</p>
+</blockquote>
+<h2 id="čsob-api-konektor">ČSOB API konektor</h2>
+<h3 id="zprovoznění-služby-čsob-business-connector">Zprovoznění služby ČSOB Business Connector</h3>
+<p>Kroky ke zprovoznění služby jsou tyto:</p>
+<ul>
+<li>povolení služby ČSOB Business Connector u smlouvy o využívání služby CEB,</li>
+<li>získání certifikátu od certifikační autority nebo přímo od banky,</li>
+<li>registrace certifikátu pro použití ve službě ČSOB Business Connector v portálu,</li>
+<li>konfigurace služby ČSOB Business Connector v portálu,</li>
+<li>nastavení klientské aplikace v Business Central</li>
+</ul>
+<p><strong>Povolení služby ČSOB Business Connector u smlouvy o využívání služby CEB</strong>
+Zakázání, resp. povolení, služby ČSOB Business Connector je možné provést v portálu nebo pobočce banky</p>
+<p><strong>Získání certifikátu</strong></p>
+<p>Služba ČSOB Business Connector umožňuje používat certifikáty vydané certifikačními autoritami I. Certifikační autorita a PostSignum. Pro použití ve službě ČSOB Business Connector jsou vhodné pouze takzvané Serverové komerční certifikáty, které musí umožňovat takzvanou Klientskou autentizaci.</p>
+<p>Certifikát lze získat také přímo od banky, což lze provést v zásadě 2 způsoby, buď</p>
+<ul>
+<li>prostředky Windows (např. s pomocí IT pracovníka)
+<ul>
+<li>ruční vytvoření žádosti o certifikát v klientském počítači (např. pomocí nástroje Windows <em>certmgr.msc</em>),</li>
+<li>podání žádosti o certifikát a vydání certifikátu (CEB -&gt; Business Connector -&gt; <em>Požádat o certifikát</em> a následně stažení certifikát volbou <em>Stáhnout</em>)</li>
+<li>instalace vydaného certifikátu v klientském počítači (např. pomocí nástroje Windows <em>certmgr.msc</em>)</li>
+</ul>
+</li>
+<li>nebo za pomoci aplikace <em>ČSOB Business Connector</em>(získání komunikačního certifikátu je popsáno v příručce <a href="https://www.csob.cz/documents/10710/15532355/csob-business-connector-prirucka.pdf?v2401">csob-business-connector-implementacni-prirurucka.pdf</a>). Jedná se o
+<ul>
+<li>instalaci aplikace ČSOB Business Connector na počítač (kapitola 2),</li>
+<li>získání komunikačního certifikátu (kapitola 3).</li>
+</ul>
+</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Aplikace ČSOB Business Connector nebude pro běžnou práci využívána. Doporučujeme v ní ale nastavit upozornění na vypršení certifikátu (viz příručka v kapitole Obnova komunikačního certifikátu).</p>
+</div>
+<p><strong>Registrace certifikátu</strong></p>
+<p>V případě certifikátu od banky (viz výše) je automaticky registrován.</p>
+<p><strong>Konfigurace služby ČSOB Business Connector v portálu</strong>
+V portálu je nutné povolit požadované operace, které bude klient pomocí ČSOB Business Connectoru využívat. V našem případě se jedná o <em>Stahování výpisů pro konkrétní účty</em> a <em>Odesílání podepsaných souborů platebních příkazů pro konkrétní účty</em>.</p>
+<p><strong>Nastavení klientské aplikace v Business Central</strong></p>
+<p>Pro nastavení Business Central je třeba stáhnout komunikační certifikát ve formátu pfx:</p>
+<ol>
+<li>vStiskněte klávesy Windows + R a do otevřeného okénka napište certmgr.msc a stiskněte OK.</li>
+<li>V nástroji certmgr rozbalte po levé straně Osobní a v seznamu nalezněte řádek certifikátu. Bude mít vydavatele CEB Business Connector CA a jméno subjektu, které jste zvolili.</li>
+<li>Stiskněte na certifikátu pravé tlačítko myši a v kontextovém menu vyberte Všechny úkoly a Exportovat…</li>
+<li>V průvodci exportem certifikátu vyberte Ano, exportovat privátní klíč a následně proveďte export do souboru PKCS #12 s koncovkou .pfx. Zadané heslo budete potřebovat v dalším kroku.</li>
+</ol>
+<p>Dalším krokem je nastavení přístupu v Business Central:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Klienti ČSOB CEB</strong> a poté vyberte související odkaz.</li>
+<li>Zadejte ČSOB v poli Kód na novém řádku</li>
+<li>Do pole <strong>Popis</strong> zadejte např. „ČSOB API“</li>
+<li>V poli <strong>API</strong> ponechte hodnotu „Produkční prostředí“.</li>
+<li>V poli <em>Dostupný pro</em> ponechte hodnotu „Společnost“ pro nastavení společného přístupu pro všechny oprávněné uživatele modulu.</li>
+<li>V poli <strong>Číslo smlouvy</strong> zadejte hodnotu ze smlouvy o přístupu k API, kterou jste s bankou podepsali.</li>
+<li>Spusťte akci<em>Nahrát certifikát</em> a vyberte soubor s certifikátem ve formátu pfx.</li>
+<li>Zadejte heslo k certifikátu v poli <strong>Heslo k certifikátu</strong>.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Chcete-li přístup určovat podle přihlášení uživatele, musí si každý uživatel sám provést výše uvedené nastavení Klienta ČSOB CEB. V poli <strong>Dostupný pro</strong> vybere hodnotu „Uživatel“.</p>
+</div>
+<p><strong>Specifické parametry pro ČSOB API konektor</strong>
+Následující parametry je třeba doplnit do Rozšířeného nastavení v případě, že chcete používat ČSOB API konektor pro import bankovních výpisů:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení exportu/importu banky</strong> a poté vyberte související odkaz.</li>
+<li>Přejděte na vybraný řádek typu Import.</li>
+<li>Spusťte akci <em>Rozšířené nastavení</em>.</li>
+<li>V poli <strong>Poskytovatel bankovních výpisů</strong> vyberte hodnotu „ČSOB CEN Connector“.</li>
+<li>V poli <strong>Kód klienta ČSOB CEB</strong> vyberte kód klienta definovaný v předchozím kapitole.</li>
+<li>V poli <strong>Formát souboru ČSOB CEB</strong> vyberte volbu GPC reprezentující formát ABO.</li>
+<li>V poli <strong>Kódování obsahu</strong> doplňte hodnotu – viz kap. <a href="cz-banking-extension-setup.md/#Nastaven%C3%AD-k%C3%B3dov%C3%A1n%C3%AD-pro-import">Nastavení kódování pro import</a></li>
+<li>V poli <strong>ID procedury zpracování</strong> zkontrolujte, že se doplnila hodnota 52057431 (Bank Stmt.Imp.-ABO Acb).</li>
+</ol>
+<p>Následující parametry je třeba doplnit do Rozšířeného nastavení v případě, že chcete používat ČSOB API konektor pro export platebních příkazů:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení exportu/importu banky</strong> a poté vyberte související odkaz.</li>
+<li>Přejděte na vybraný řádek typu Export.</li>
+<li>Spusťte akci <em>Rozšířené nastavení</em>.</li>
+<li>V poli <strong>Poskytovatel bankovních výpisů</strong> vyberte hodnotu „ČSOB CEN Connector“.</li>
+<li>V poli <strong>Kód klienta ČSOB CEB</strong> vyberte kód klienta definovaný v předchozím kapitole.</li>
+<li>V poli <strong>Formát souboru ČSOB CEB</strong> vyberte volbu KPC reprezentující formát ABO.</li>
+<li>V poli <strong>ID procedury zpracování</strong> zkontrolujte, že se doplnila hodnota 52057438 (Paym.Order Export-ABO acb).</li>
+</ol>
+<h2 id="kb-api-konektor">KB API konektor</h2>
+<h3 id="launch-of-the-api-business-suite-service">Launch of the API Business suite service</h3>
+<p>Pro využití služby <a href="https://www.kb.cz/cs/kbapi/sluzby-kb-api/api-business-suite">API Business suite</a> od Komerční bankymusíte mít aktivovánu vybranou aplikaci internetového bankovnictví (<em>Moje Banka Business</em>, or <em>Profibanka</em>, or <em>Mobilní banka Business</em>).</p>
+<p>Základní kroky pro zprovoznění API rozhraní jsou:</p>
+<ul>
+<li>Firma si aktivuje v KB službu API Business Suite.</li>
+<li>Firma zažádá u firmy Aricoma o Autorizační klíč, který bude vygenerován speciálně pro ni a díky němuž Aricoma zaregistruje KB API konektor v KB.</li>
+<li>Firma nastaví modul v Business Central.</li>
+<li>Firma udělí souhlas BC aplikaci ke se stahováním dat z KB a vybere bankovní účty, ke kterým bude mít BC přístup.</li>
+</ul>
+<p><strong>Získání Autorizačního klíče</strong></p>
+<p>Kontaktujte nás e-mailem na adrese <a href="mailto:bc_sales@aricoma.com">bc_sales@aricoma.com</a>. Stačí nám pouze jméno vaší firmy, v odpovědi vám zašleme Autorizační klíč. Tento je určen pouze pro potřeby vaší firmy a nesmí být používán nikým jiným.</p>
+<p><strong>Nastavení modulu v BC</strong></p>
+<p>Dalším krokem je nastavení přístupu v Business Central:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Klienti KB API</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Klienti KB API zadejte „KB“ v poli <strong>Kód</strong> na novém řádku.</li>
+<li>Do pole <strong>Popis</strong> zadejte např. „KB API“.</li>
+<li>V poli <strong>API</strong> ponechte hodnotu „Produkční prostředí“.</li>
+<li>V poli <strong>Autorizační klíč</strong> zadejte hodnotu, kterou jste obdrželi od Aricoma (viz předchozí odstavec).</li>
+<li>V poli <strong>Počet dnů transakční historie</strong> zadejte 10</li>
+</ol>
+<p><strong>Udělení souhlasu</strong></p>
+<ol>
+<li>Na stránce Klienti KB API spusťte akci <em>Autorizovat klienta</em></li>
+<li>V automaticky otevřeném novém okně se objeví dialog banky, kde po přihlášení budete vyzváni k udělení souhlasu s použitím aplikace „Aricoma KB konektor“.</li>
+<li>Ihned poté se objeví další výzva k přihlášení, po kterém vyberete bankovní účty, ke který má mít „Aricoma KB konektor“ přístup.</li>
+</ol>
+<!-- ### Specific parameters for KB API connector
+-->
+<p><strong>See also</strong></p>
+<p><a href="cz-banking-extension-setup.html">Nastavení rozšířeného CZ bankovnictví</a><br>
+<a href="cz-banking-extension.html">Rozšířené CZ bankovnictví</a><br>
+<a href="finance-pack.html">Financial Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/Solutions/cz-banking-extension-API-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>V t&#233;to sekci</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Zpět na začátek</a>
+            </span>
+            
+            <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

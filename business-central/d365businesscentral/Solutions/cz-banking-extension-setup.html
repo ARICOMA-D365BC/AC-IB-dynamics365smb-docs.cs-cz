@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CZ Banking Extension - Setup </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="CZ Banking Extension - Setup ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../TOC.html">
+    <meta property="docfx:tocrel" content="TOC.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="nastavení-rozšířeného-cz-bankovnictví">Nastavení rozšířeného CZ bankovnictví</h1>
+
+<blockquote>
+<p>Update 30.05.2025</p>
+</blockquote>
+<p>Modul Rozšíření CZ bankovnictví je potřeba zapnout, v produkčním prostředí bude uživatel požádán o aktivaci předplatného (viz  <a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/ProductivityPack/monetization.html">dokumentace k monetizaci</a>).</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení rozšíření CZ bankovnictví</strong> a poté vyberte související odkaz.</li>
+<li>Aktivujte <strong>Povoleno</strong> pro zapnutí funkcionality.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Před nastavením spusťte Asistované nastavení pro tento modul, který najdete v Asistovaná nastavení -&gt; Nastavení rozšíření ARICOMA. Ten vám umožní nahrát konfigurační balíček a jeho prostřednictvím doplnit vzorová nastavení, na která se mimo jiné odkazují scénáře v dalších kapitolách.</p>
+</div>
+<h2 id="formáty-bankovních-výpisů-a-platebních-příkazů">Formáty bankovních výpisů a platebních příkazů</h2>
+<p>Modul Rozšíření CZ bankovnictví je určen primárně pro optimalizaci práce s výpisy a příkazy, nicméně obsahuje i univerzální import bankovních výpisů v ABO formátu (*.gpc), který v základní podobě podporuje většina bank v České republice. Rovněž umožňuje export platebních příkazů v ABO formátu (*.kpc).</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Využijte některý z doplňků k tomuto addonu pro API komunikaci právě s vaší bankou.</p>
+</div>
+<h3 id="nastavení-pro-manuální-dávkový-import-výpisů">Nastavení pro manuální dávkový import výpisů</h3>
+<p>Pokud vaše banka podporuje elektronické výpisy, které obsahují více transakce pro více účtů, je možné toho využít pro vytvoření více výpisů najednou (v rámci jedné společnosti).</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení exportu/importu banky</strong> a poté vyberte související odkaz.</li>
+<li>Přejděte na vybraný řádek (např. s kódem „CZBE_ABO-IMP-LOCAL“)</li>
+<li>Zkontrolujte, že v poli <strong>ID procedury zpracování</strong> je hodnota 52057427 umožňující import výpisů prostřednictvím akce Import bankovních výpisů.</li>
+<li>Spusťte akci <em>Rozšířené nastavení</em></li>
+<li>Na stránce Rozšířené nastavení importu výpisů ověřte, že je příznak <strong>Dávkový import povolen</strong> nastaven na Ano.</li>
+<li>Zkontrolujte, že v poli <strong>ID procedury zpracování</strong> je hodnota 52057431 určená pro zpracování souborů ve formátu ABO.</li>
+</ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Aktivujte pole Podpora souborů ZIP pro povolení importu více souborů výpisů najednou v rámci jednoho zip souboru.</p>
+</div>
+<h4 id="nastavení-kódování-pro-import">Nastavení kódování pro import</h4>
+<p>V případě nesprávných znaků v naimportovaném výpisu je třeba upravit použité kódování. Nastavte správné kódování v poli <strong>Kódování obsahu</strong>. Pro ověření funkčnosti nastaveného kódování doporučujeme použít akci <em>Test kódování obsahu</em> na stránce Rozšířené nastavení importu výpisů.</p>
+<h3 id="nastavení-pro-manuální-import-bankovních-výpisů-prostřednictvím-api">Nastavení pro manuální import bankovních výpisů prostřednictvím API</h3>
+<p>Pokud máte od Aricoma zakoupen doplněk pro API komunikaci s vaší bankou a nechcete využívat podpory automatizace zpracování, pak je třeba upravit nastavení. Detailní popis všech kroků je v dokumentaci ke každému doplňku, nicméně samotný import se v případě formátu ABO nastaví takto:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení exportu/importu banky</strong> a poté vyberte související odkaz.</li>
+<li>Přejděte na vybraný řádek (např. s kódem „CZBE_ABO-IMP-LOCAL“)</li>
+<li>Řádek označte, stiskněte Ctrl+C, přejděte na nový řádek a stiskněte Ctrl+V.</li>
+<li>Přejmenujte v poli <strong>Kód</strong> např. na „CZBE_ABO-IMP-API“</li>
+<li>Zkontrolujte, že v poli <strong>ID procedury zpracování</strong> je hodnota 52057427 umožňující import výpisů prostřednictvím akce Import bankovních výpisů.</li>
+<li>Spusťte akci <em>Rozšířené nastavení</em>.</li>
+<li>Na stránce Rozšířené nastavení importu výpisů spusťte akci <em>Nový</em>.</li>
+<li>V poli <strong>Popis</strong> můžete upravit předvyplněný text.</li>
+<li>Doplňte parametry pro API konektor – viz <a href="ext-banking-API-setup.md">documentace</a> ke konkrétnímu API.</li>
+</ol>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Pokud takto vytvořené nastavení importu banky použijete na kartě Bankovního účtu, pak uživatel každým stiskem tlačítka Import na kartě Bankovního výpisu, popř. při spuštění funkce Import bankovního výpisu začne komunikovat s API rozhraním banky. To nemusí být vždy žádoucí, banky obvykle mají nastaveny limity pro počet dotazů (např. za 10 minut).</p>
+</div>
+<h2 id="nastavení-automatizace-importu-a-zpracování-bankovních-výpisů-prostřednictvím-centrálního-zásobníku">Nastavení automatizace importu a zpracování bankovních výpisů prostřednictvím centrálního zásobníku</h2>
+<p>Automatizaci lze nastavit pouze pro metody, u kterých není vyžadován zásah uživatele. Nelze ji tedy použít pro import z lokálního úložiště, ale je typicky vhodná pro komunikaci s bankou prostřednictvím API.</p>
+<h3 id="nastavení-stahování-do-centrálního-zásobníku">Nastavení stahování do centrálního zásobníku</h3>
+<p>Následující postup navazuje na výsledek nastavení z kapitoly  <a href="#nastaven%C3%AD-pro-manu%C3%A1ln%C3%AD-import-bankovn%C3%ADch-v%C3%BDpis%C5%AF-prost%C5%99ednictv%C3%ADm-api">Nastavení pro manuální import bankovních výpisů prostřednictvím API</a>.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení exportu/importu banky</strong> a poté vyberte související odkaz.</li>
+<li>Přejděte na vybraný řádek (např. s kódem „CZBE_ABO-IMP-API“)</li>
+<li>Spusťte akci <em>Rozšířené nastavení</em>.</li>
+<li>Na stránce Rozšířené nastavení importu výpisů nastavte pole <strong>Povoleno pro Centrální zásobník</strong> na hodnotu Ano.</li>
+</ol>
+<h3 id="automatické-stahování-výpisů-do-centrálního-zásobníku">Automatické stahování výpisů do centrálního zásobníku</h3>
+<p>Zapnout automatické stahování výpisů do Centrálního zásobníku je nutné pouze v jedné společnosti. Funkce pak v této společnosti prochází všechna rozšířená nastavení pro import výpisů, kde má pole <strong>Povoleno pro Centrální zásobník</strong> hodnotu Ano. Dle těchto nastavení naimportuje výpisy dostupné na rozhraní umožňující import bez zásahu uživatele (typicky API).</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení rozšíření CZ bankovnictví</strong> a poté vyberte související odkaz.</li>
+<li>Nastavte příznak <strong>Automaticky stahovat výpisy do centrálního zásobníku</strong>.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Vytvořená položka fronty úloh je ve výchozím nastavení spuštěna v 5:45 ráno ve všední dny.</p>
+</div>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Chcete-li omezit nastavení, podle kterých bude automat (viz výše) provádět import, můžete nastavit filtr na kód v poli Řetězec parametrů na kartě Položky fronty úloh (např. „CZBE_ABO*“).</p>
+</div>
+<h3 id="nastavení-importu-z-centrálního-zásobníku">Nastavení importu z centrálního zásobníku</h3>
+<p>Následující postup prochází klíčové nastavení, které je součástí vzorových dat.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení exportu/importu banky</strong> a poté vyberte související odkaz.</li>
+<li>Přejděte na řádek s kódem „CZBE_ABO-IMP-CENTRAL“.</li>
+<li>Zkontrolujte, že v poli <strong>ID procedury zpracování</strong> je hodnota 52057427.</li>
+<li>Spusťte akci <em>Rozšířené nastavení</em>.</li>
+<li>V poli <strong>Poskytovatel bankovních výpisů</strong> vyberte hodnotu „Centrální zásobník“.</li>
+<li>Zkontrolujte, že v poli <strong>ID procedury zpracování</strong> je hodnota 52057429 určená pro zpracování souborů ve formátu ABO</li>
+</ol>
+<h3 id="nastavení-bankovních-účtů-pro-automatizaci">Nastavení bankovních účtů pro automatizaci</h3>
+<p>Pro centrální zpracování a z toho planoucí možnosti automatizace zpracování je třeba jednoznačně definovat, do kterých společností patří které bankovní účty. K tomu slouží evidence Nastavení zpracování bankovních výpisů. Do této tabulky se automaticky zakládají všechna čísla účtů, které obsahovaly soubory importované do Centrálního zásobníku bankovních výpisů. Následně je třeba přiřadit účet k některé ze společností v BC.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení zpracování bankovních výpisů</strong> a poté vyberte související odkaz.</li>
+<li>Vyberte řádek s číslem účtu, který nastavujete.</li>
+<li>Je-li účet veden v cizí měně, vyberte příslušný kód v poli <strong>Kód měny</strong>.</li>
+<li>V dolní části stránky v části Nastavení vyplňte pro příslušnou Společnost pole <strong>Počáteční datum výpisu</strong>, od kterého se má provádět zpracování výpisů. Toto datum se vztahuje na Datum výpisu.</li>
+</ol>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Počet záznamů v této tabulce s vyplněným Počátečním datem výpisu je určující pro kontrolu počtu účtů v předplatném. V případě, že je definován větší počet, než kolik je platný v předplatném, není možné otevřít Centrální zásobník a musí být nejprve ponížen počet platných záznamů v tomto nastavení. Vypnutí importu je možné nastavením příznaku <strong>Zpracování zakázáno</strong>.</p>
+</div>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Pokud máte nový bankovní účet, ale zatím se žádný výpis neimportoval, nastavení můžete provést i v předstihu ručním vložením čísla účtu.</p>
+</div>
+<h3 id="automatické-zpracování-výpisu-z-centrálního-zásobníku">Automatické zpracování výpisu z centrálního zásobníku</h3>
+<p>Zapnout automatické zpracování výpisů z Centrálního zásobníku je nutné pouze v jedné společnosti.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení rozšíření CZ bankovnictví</strong> a poté vyberte související odkaz.</li>
+<li>Nastavte příznak <strong>Automaticky vytvářet bankovní výpisy</strong>.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Vytvořená položka fronty úloh je ve výchozím nastavení spuštěna v 6:00 ráno ve všední dny.</p>
+</div>
+<h3 id="čištění-zpracovaných-výpisů-z-centrálního-zásobníku-bankovních-výpisů">Čištění zpracovaných výpisů z Centrálního zásobníku bankovních výpisů</h3>
+<p>Doporučujeme průběžně mazat již zpracované záznamy v tabulce Centrální zásobník bankovních výpisů, nejlépe automatizovanou úlohou v jedné firmě:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení rozšíření CZ bankovnictví</strong> a poté vyberte související odkaz.</li>
+<li>Nastavte příznak <strong>Automaticky čistit centrální zásobník</strong>.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Vytvořená položka fronty úloh je ve výchozím nastavení spuštěna v 6:00 ráno ve všední dny. Automatická dávka ve výchozím nastavení maže výkazy starší 14 dnů, ale lze ji přepsat v dialogovém okně sestavy (pole „Vzorec data“).</p>
+</div>
+<h2 id="podpůrná-nastavení-pro-import-výpisů">Podpůrná nastavení pro import výpisů</h2>
+<h3 id="automatické-formátování-čísla-účtu-volitelné">Automatické formátování čísla účtu (volitelné)</h3>
+<p>Zapnutí této funkce zajistí automatické formátování čísel bankovních účtů v BC, čím dojde k eliminaci problémů s importem bankovních výpisů</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Informace o společnosti</strong> a poté vyberte související odkaz.</li>
+<li>Aktivujte pole <strong>Formátovat číslo účtu</strong></li>
+</ol>
+<h3 id="číslo-bankúčtu-na-bankvýpisu-volitelné">Číslo bank.účtu na bank.výpisu (volitelné)</h3>
+<p>Slouží pro zadání přesného formátu čísla bankovního účtu, který je v souborech výpisů, pokud se liší od hodnoty zadané standardně v poli Číslo bankovního účtu.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Bankovní účty</strong> a poté vyberte související odkaz.</li>
+<li>Vyplňte pole <strong>Číslo bank.účtu na bank.výpisu</strong></li>
+</ol>
+<h2 id="podpůrná-nastavení-pro-automatické-zpracování-výpisů">Podpůrná nastavení pro automatické zpracování výpisů</h2>
+<h3 id="poslední-úroveň-dávkového-zpracování-povinné">Poslední úroveň dávkového zpracování (povinné)</h3>
+<p>Určuje, jaká je poslední úroveň automatického zpracování bankovních výpisů. Samotné zpracování bankovního výpisu probíhá standardním procesem: Bankovní výpis / Vydaný bankovní výpis / Deník</p>
+<ol>
+<li><p>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Bankovní účty</strong> a poté vyberte související odkaz.</p>
+</li>
+<li><p>Vyberte požadovanou hodnotu v poli <strong>Poslední úroveň bankovního výpisu</strong>:</p>
+<ul>
+<li>Bankovní výpis (výchozí hodnota)</li>
+<li>Vydaný bankovní výpis</li>
+<li>Deník</li>
+</ul>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Obvykle se nastaví hodnota <em>Deník</em>. Hodnota <em>Bankovní výpis</em> se nastaví v případě, kdy je třeba provést v importovaném bankovnímu výpisu ruční změnu (např. import platebního avíza).</p>
+</div>
+<h3 id="číselná-řada-povinné">Číselná řada (povinné)</h3>
+<p>Je nutné nastavit stejnou číselnou řadu pro nevydané a vydané bankovní výpisy na Kartě bankovního účtu.
+Tato číselná řada musí mít aktivované Ruční číslování a vyplněnou Masku. Maska musí obsahovat min. 2 znaky pro rok (rr) a volné číslo (ccc).<br>
+Funkčnost zpracování bankovních výpisů automaticky čísluje bankovní výpisy v BC tak, že vkládá dle masky rok a pořadové číslo výpisu přidělené bankou.</p>
+<h3 id="kontrolovat-obraty-bankovního-výpisu-volitelné">Kontrolovat obraty bankovního výpisu (volitelné)</h3>
+<p>Při „Vydání“ bankovního výpisu funkce kontroluje, zda obrat výpisu souhlasí na rozdíl mezi Počátečním a Koncovým saldem výpisu uvedeným na hlavičce bankovního výpisu. Počáteční a Koncové saldo výpisu se importuje ze souboru Bankovního výpisu.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Bankovní účty</strong> a poté vyberte související odkaz.</li>
+<li>Aktivujte pole <strong>Kontrolovat obraty bankovního výpisu</strong></li>
+</ol>
+<h2 id="úpravy-na-míru">Úpravy na míru</h2>
+<h3 id="vlastní-funkce-pro-stahování-výpisů-do-centrálního-zásobníku">Vlastní funkce pro stahování výpisů do centrálního zásobníku</h3>
+<p>V případě, že stahujete výpisy v jiném formátu nebo pokud potřebujete specificky upravený import, musí váš partner vytvořit vlastní procesní codeunitu řešící import bankovních výpisů do zásobníku bankovních výpisů.
+Zásobník by měl být naplněn neformátovanými daty tak, jak jsou přímo v souboru bankovního výpisu příslušného formátu (o formátování a validaci dat se stará až funkce na vytváření bankovních výpisů).</p>
+<pre><code>codeunit xxx &quot;Bank Stmt.Imp.-MyFormat&quot;
+
+TableNo = &quot;Bank Stmt. Import Request Acb&quot;;
+
+trigger OnRun()
+var
+    DotNetStreamReader: Codeunit DotNet_StreamReader;
+    InStream: InStream;
+   TempCentralBankStmtBufferAcb: Record &quot;Central Bank Stmt. Buffer Acb&quot; temporary;
+    TempBankStmtLineBufferAcb: Record &quot;Bank Stmt. Line Buffer Acb&quot; temporary;
+
+begin
+    //StreamReader initialization to read the contents of the dump file:
+    Rec.CreateStreamReader(InStream, DotNetStreamReader); 
+    
+    //Where to populate the contents of the StreamReader dump into temporary tables - see examples below
+
+    //Example of header filling:
+    NextBufferNo += 1;
+    TempCentralBankStmtBufferAcb.Init();
+    TempCentralBankStmtBufferAcb.&quot;No.&quot; := NextBufferNo;
+    TempCentralBankStmtBufferAcb.&quot;Account No.&quot; :=  ;    //our account no.
+    TempCentralBankStmtBufferAcb.&quot;Statement No.&quot; := ;
+    TempCentralBankStmtBufferAcb.&quot;Statement Date&quot; := ;
+    TempCentralBankStmtBufferAcb.&quot;Starting Balance&quot; := ;
+    TempCentralBankStmtBufferAcb.&quot;Ending Balance&quot; := ;
+    TempCentralBankStmtBufferAcb.Insert();
+
+    //Example of filling rows:
+    TempBankStmtLineBufferAcb.Init();
+    TempBankStmtLineBufferAcb.&quot;Buffer No.&quot; := NextBufferNo;
+    TempBankStmtLineBufferAcb.&quot;Line No.&quot; := NextLineNo;
+    TempBankStmtLineBufferAcb.&quot;Variable Symbol&quot; := ;
+    TempBankStmtLineBufferAcb.&quot;Constant Symbol&quot; := ;
+    TempBankStmtLineBufferAcb.&quot;Specific Symbol&quot; := ;
+    TempBankStmtLineBufferAcb.&quot;Account No.&quot; := ;   //account no. in 16+4 format
+    TempBankStmtLineBufferAcb.Description := ;
+    TempBankStmtLineBufferAcb.Amount := ;
+    TempBankStmtLineBufferAcb.Insert();
+    NextLineNo += 1;
+
+    //Save the result of processing:
+    Rec.SetData(TempCentralBankStmtBufferAcb, TempBankStmtLineBufferAcb); 
+end;
+</code></pre>
+<p><strong>See also</strong></p>
+<p><a href="cz-banking-extension-API-setup.html">Nastavení API konektorů</a><br>
+<a href="cz-banking-extension.html">Rozšířené CZ bankovnictví</a><br>
+<a href="finance-pack.html">Financial Pack</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/Solutions/cz-banking-extension-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>V t&#233;to sekci</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Zpět na začátek</a>
+            </span>
+            
+            <span><a href="https://www.aricoma.com/docs/en-us/dynamics365/business-central/Solutions/solutions.html"><strong>ENGLISH</strong><strong>/</strong><a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/Solutions/solutions.html"><strong>CZECH</strong></a></a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

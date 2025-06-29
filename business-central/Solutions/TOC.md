@@ -38,7 +38,7 @@
 ### [Nastavení - Reklamace](complaints-management-setup.md)
 ## [Rozšíření CZ bankovnictví](cz-banking-extension.md)
 ### [Nastavení - Rozšíření CZ bankovnictví](cz-banking-extension-setup.md)
-### [Nastavení - Rozšíření CZ bankovnictví - API](cz-banking-extension-api-setup.md)
+### [Nastavení - API konektorů](cz-banking-extension-api-setup.md)
 ## [Rozšíření fronty úloh](job-queue-extension.md)
 ### [Nastavení - Rozšíření fronty úloh](job-queue-extension-setup.md)
 ## [Řízení stavů (WorkFlow)](workflow-status-management.md)
