@@ -26,7 +26,7 @@ Modul umožňuje podporu uživatelů při zpracování výpisů ve 2 úrovních:
 Přístup k funkcionalitě získáte zakoupením předplatného pro první bankovní účet. Tato varianta neřeší počet účtů, pro které ji budete využívat. Ovšem práce je ruční v rámci společnosti a pro konkrétní banku, v případě více účtů u jedné banky podporuje import více výpisů najednou.
 I k této variantě je možné si dokoupit některý z nabízených [doplňků pro API komunikací s bankou](cz-banking-extension-API-setup.md).
 
-![Základní varianta modulu Rozšíření CZ bankovnictví](media/ExtCZbanking-schema_Basic.png)
+![Základní varianta modulu Rozšíření CZ bankovnictví](media/cz-banking-ext-schema-basic.png)
 
 ### Platební příkazy
 
