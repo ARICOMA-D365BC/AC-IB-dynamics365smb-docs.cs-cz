@@ -2,7 +2,7 @@
 title: Business Pack
 description: Business Pack
 author: janousek
-date: 09/30/2024
+date: 05/30/2025
 reviewer: janousek
 ms.service: dynamics-365-business-central
 ms.search.keywords: Czech, Business Pack, Streamline Tools
