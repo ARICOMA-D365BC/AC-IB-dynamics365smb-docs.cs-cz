@@ -3,4 +3,4 @@
 <!-- # [Financial PACK](FinancialPack/finance-pack.md) -->
 <!-- # [SK PACK](sk/sk-legislative-pack.md) -->
 <!-- # [StreamLine Tools](Streamlinetools/streamlinetools.md) -->
-# [Podpora](support/support.md)
+# [Podpora](solutions/support.md)

@@ -78,9 +78,4 @@
 
 # [Nákup a správa modulů Aricoma](monetization.md)
 
-<!-- 
-## [Fiskální tiskárny](fiscal-printers.md)
-### [Nastavení - Fiskální tiskárny](fiscal-printers-setup.md)
- -->
-
-# [Podpora](../support/support.md)
+# [Podpora](support.md)

@@ -5694,18 +5694,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Solutions/Business-Pack.md",
-      "output": {
-        ".html": {
-          "relative_path": "Solutions/Business-Pack.html",
-          "hash": "glOqh0fCjAbr4ljXop0JGpdbYTcFLOOETu3KZe5oReM="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "Solutions/SK-FiscalPrinters-Integration.md",
       "output": {
         ".html": {
@@ -5734,10 +5722,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/TOC Original Order.html",
-          "hash": "cOmsk09yzFP2W+YxqCcRrxFnhPX7PGcEJvorWbOv22o="
+          "hash": "ZiHwgaMscpqLL95Ye9wLRfmsZvh3KxMoT8GbYKlqAmI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5746,7 +5734,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/TOC.html",
-          "hash": "T20VLIeKeW8TM0sOwiak6uDfQSlVMhWLYo7pepo+Da4="
+          "hash": "5kABdxYxQ7VV7GrYs46D2tChf/mheLOTpVFVH/m60lM="
         }
       },
       "is_incremental": false,
@@ -5783,6 +5771,18 @@
         ".html": {
           "relative_path": "Solutions/attribute-tool.html",
           "hash": "C0/P3wfXos1oRTp/rO1nb0dPUyBKR/IAiPdzcbryI1c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Solutions/business-pack.md",
+      "output": {
+        ".html": {
+          "relative_path": "Solutions/business-pack.html",
+          "hash": "J6cNZlApIGt3mVO5SFQdedKon1cG8uG8MOh+G95MOOs="
         }
       },
       "is_incremental": true,
@@ -5983,7 +5983,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/electronic-documents-setup.html",
-          "hash": "kqOqd8Nebvzek+VjLeHb7gegSbG/OS5Vbb0txmhEAd0="
+          "hash": "Htvnj4FzorEWrbAzGkDo2VjDJhkFnI+W0poa/aB3M3Y="
         }
       },
       "is_incremental": true,
@@ -5995,7 +5995,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/electronic-documents.html",
-          "hash": "xtEsqxEtokzF4XHdFJzoC7qSzd0Hw+WZemOg8U6B5As="
+          "hash": "HByuNvwx2ObsWkknphuKYYAl+oefgmK3wRk8y/E0t6o="
         }
       },
       "is_incremental": true,
@@ -6127,10 +6127,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/gptom-integration-setup.html",
-          "hash": "YGltBsPTwIqF+wpgOF6R0jafYylHNFhCXE2kMWt3Xfw="
+          "hash": "tfGW9K5uBF/62xgbRC0tHBPNhYarptGedm9/OKIP3x4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6139,10 +6139,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/gptom-integration.html",
-          "hash": "t3Kf6ALD1deSlF9UMTwKn4WAWq6YXlqJaT38E7+5uaM="
+          "hash": "7QhIqtYC8gadX8JcWIpkUzA1KWMZGBd9rQYH00i8frE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -8707,6 +8707,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "Solutions/media/support.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/support.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "Solutions/media/tools-process_720.png",
       "output": {
         "resource": {
@@ -8997,7 +9008,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/monetization.html",
-          "hash": "W83lHBsladUJCIyxEd4sRAA2Kd3cUoL+JWEX8x1WIBY="
+          "hash": "FE31+Zj/4TH6Mc3KFBYyGmFmUfpvjHLQ697du5mlAJo="
         }
       },
       "is_incremental": true,
@@ -9528,7 +9539,19 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/streamlinetools.html",
-          "hash": "QUQFsG/hUqPcQpmdz6nQ4MwVb8mKSJkOIIPgWsHVW/Y="
+          "hash": "VZuxSsYXqEOgS4CxYJJPRv9jhJTssafETU4x57PJ1DE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Solutions/support.md",
+      "output": {
+        ".html": {
+          "relative_path": "Solutions/support.html",
+          "hash": "5QxKyQgSd3e+4NJ02EM+/Zz4t/DqJ++coqAjJJ4jDCA="
         }
       },
       "is_incremental": true,
@@ -10271,7 +10294,7 @@
       "output": {
         ".html": {
           "relative_path": "TOC.html",
-          "hash": "0yA1imxNOoacrrAcXSaB/b0bq8DWhIEDm80s1Rauq8g="
+          "hash": "tXFr/Grd3tj7dZUfVxtDsFBxJvYKZX1+BAZrEyq7JKg="
         }
       },
       "is_incremental": false,
@@ -15174,6 +15197,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/support.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/support.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "d365businesscentral/Solutions/media/tools-process_720.png",
       "output": {
         "resource": {
@@ -16124,7 +16158,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 391,
+          "total_file_count": 392,
           "skipped_file_count": 391
         },
         "ResourceDocumentProcessor": {

@@ -21,7 +21,7 @@ V dalších krocích je uživatel proveden registrací prvního platebního term
 ### Nastavení terminálů
 Každé fyzické zařízení musí být zaevidováno v tabulce Platební terminály. Popis nastavení dále odpovídá nejběžnější konfiguraci, kterou je evidence plateb kartou.
 
-> [!POZNÁMKA]
+> [!NOTE]
 >Aplikace GP Tom umožňuje evidenci i hotovostních nebo kryptoměnových plateb, Tyto možnosti jsou podporovány, nicméně nejsou popisována žádná další nastavení v BC, při kterých registrace takových operací dávaly smysl.
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Platební terminály** a poté vyberte související odkaz.
 2.	Na stránce **Platební terminály** klikněte na funkci *Nový* a vytvořte novou platební terminál.

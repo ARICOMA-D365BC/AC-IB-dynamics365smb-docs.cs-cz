@@ -2,7 +2,7 @@
 title: Business Pack
 description: Přehled funkcí a výhod rozšíření Business Pack pro Microsoft Dynamics 365 Business Central.
 author: Makowka-Tomas
-date: 30/05/2025
+date: 01/07/2025
 reviewer: janousek
 ms.service: dynamics-365-business-central
 ms.search.keywords: Business Pack, infopanely, přidaná pole, efektivita, bez kódu
