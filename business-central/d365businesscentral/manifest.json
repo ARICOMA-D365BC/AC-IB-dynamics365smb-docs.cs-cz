@@ -775,6 +775,83 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "FinancialPack/media/vrp-doc-example.png",
+      "output": {
+        "resource": {
+          "relative_path": "FinancialPack/media/vrp-doc-example.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "FinancialPack/media/vrp-process-overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "FinancialPack/media/vrp-process-overview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "FinancialPack/media/vrp-report.png",
+      "output": {
+        "resource": {
+          "relative_path": "FinancialPack/media/vrp-report.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "FinancialPack/media/vrp-setup-bc.png",
+      "output": {
+        "resource": {
+          "relative_path": "FinancialPack/media/vrp-setup-bc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "FinancialPack/media/vrp-setup-elements.png",
+      "output": {
+        "resource": {
+          "relative_path": "FinancialPack/media/vrp-setup-elements.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "FinancialPack/media/vrp-setup-item-card.png",
+      "output": {
+        "resource": {
+          "relative_path": "FinancialPack/media/vrp-setup-item-card.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "FinancialPack/media/vrp-setup-vykaz.png",
+      "output": {
+        "resource": {
+          "relative_path": "FinancialPack/media/vrp-setup-vykaz.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "FinancialPack/multiple-payment-methods-setup.md",
       "output": {
@@ -871,6 +948,30 @@
         }
       },
       "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "FinancialPack/vrp-setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "FinancialPack/vrp-setup.html",
+          "hash": "xcV386X3dZhiyP0b3lAQDgVpRM3eOM5kJplWGOHhsM8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "FinancialPack/vrp.md",
+      "output": {
+        ".html": {
+          "relative_path": "FinancialPack/vrp.html",
+          "hash": "9jj+vZIueblyEpElcfVLZNlz/e1JeISwcWOzmLpFBH8="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5701,7 +5802,7 @@
           "hash": "9eQ0A82NeTcKn+Pb//wj2aP8Z72Tw1NzEMYp36d2b/g="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5713,7 +5814,7 @@
           "hash": "YyGv87f56P/4qLUG82lVEm8WvGl3gmm9soh58zLX9tg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5734,7 +5835,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/TOC.html",
-          "hash": "5kABdxYxQ7VV7GrYs46D2tChf/mheLOTpVFVH/m60lM="
+          "hash": "3lUFD4r778d71iBl+2LD672b4qPHdqeCJBxkPMhLhi4="
         }
       },
       "is_incremental": false,
@@ -5749,7 +5850,7 @@
           "hash": "8ofpjv5Iomensvhhxb7YNVMWmGqWIcoT+j7HY+FHnas="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5761,7 +5862,7 @@
           "hash": "UQRR1qbDaQjRbg+YqvDKsbwrQO8yykwTA2Cc2eD+U00="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5773,7 +5874,7 @@
           "hash": "C0/P3wfXos1oRTp/rO1nb0dPUyBKR/IAiPdzcbryI1c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5782,10 +5883,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/business-pack.html",
-          "hash": "J6cNZlApIGt3mVO5SFQdedKon1cG8uG8MOh+G95MOOs="
+          "hash": "zgIqWkIYrIiYUk6jiYdvQEnJzbO5DKrQwCspWJhDSVU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5797,7 +5898,7 @@
           "hash": "eCokz7v22dDBgYrQQoi95Egze20PTwW35MIbijhsfMA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5809,7 +5910,7 @@
           "hash": "KdviLClDeVuA0w46YwBNy1NzHTv16lyGkKzNOaEVbaA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5821,7 +5922,7 @@
           "hash": "NDnxbd/h513U42D+nhFDnPfrzA07mYP7BLMchSiXsc4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5833,7 +5934,7 @@
           "hash": "OHEk9s3Tvp707if1KT80BatDT97TgWNZxihREk0vyAk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5845,7 +5946,7 @@
           "hash": "FREIRB+xRIQU7M9nlWVvMyTG4/v4GEhBYw4yWtbHHfY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5857,7 +5958,7 @@
           "hash": "Fby8RkVdVW+4HULZaik2tFJpaEOfmSE0YfafKeciVeo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5887,7 +5988,7 @@
           "hash": "eawPLw+jCJKJ+Nuw0sQmMnnsU8LJnaAVVfJ1I9sik68="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5902,7 +6003,7 @@
           "hash": "21eTfn9tzHyKLZobbzBHO2UPoYrt2N/WL8qpUq/98u4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5914,7 +6015,7 @@
           "hash": "Gl6ljm1uZhl9MSX4VWbR/1/zhjbopJskb2CKRpv2VzM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5926,7 +6027,7 @@
           "hash": "6UllbCVRrYa4v1NZ+foDuOpfK8nYL+H9zjRMJJUb65U="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5938,7 +6039,7 @@
           "hash": "/q9Vh4EDlTsYSVKFEWFcJoR/5yCAxWHg1x7Z3pUTQvo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5950,7 +6051,7 @@
           "hash": "pfu2goRpdw69tA5P2syZWxe46e8zJ8z5k4PfgYnEATc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5962,7 +6063,7 @@
           "hash": "bXOlO3P4RCsgAcgYxpeWukYNb2CYS+6P/ZaQLbeN3Ps="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5974,7 +6075,7 @@
           "hash": "36G85H0Q0EkruGpwAITKXoT7e2nuxHBtpIFUO0wVvJI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5986,7 +6087,7 @@
           "hash": "Htvnj4FzorEWrbAzGkDo2VjDJhkFnI+W0poa/aB3M3Y="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5998,7 +6099,7 @@
           "hash": "HByuNvwx2ObsWkknphuKYYAl+oefgmK3wRk8y/E0t6o="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6010,7 +6111,7 @@
           "hash": "SwmJKgy+rQFS4Y0XCgyBCr7rnWrr0RCTsnGRrY06C8o="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6022,7 +6123,7 @@
           "hash": "NM40Msx6gbePqCZdb96sXV0i/7Ufuj282VakbcWfS2g="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6034,7 +6135,7 @@
           "hash": "UFjfHrCkFQtQi1nVVGpMJm7eSByioFT9iX0Jt984Q08="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6046,7 +6147,7 @@
           "hash": "K70e+UUeb0u5lCKvc0E8LeuV11L7bT/6cyR6croKvg4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6058,7 +6159,7 @@
           "hash": "Vkr/aLxBr3zgFG8g4V5geo+bkR+pnGkxe3zN8AdrgYA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6070,7 +6171,7 @@
           "hash": "1Nlt/rlcV+5ouFCvi3jtK+K0YFBT5bl6UVf3TbvdBZw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6082,7 +6183,7 @@
           "hash": "Cy6aglGryPHINK8P32DU4EbBZVKkIvL3UiVq7s2wSHE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6094,7 +6195,7 @@
           "hash": "VVaXFBnyFbqA0iNU72nFr31nhMucs8Y2PEAc2/5RnvA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6106,7 +6207,7 @@
           "hash": "f3QzCvUHF5onu89c51TIWiE/Fx4EI9Zw4wpRi3weCVI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6118,7 +6219,7 @@
           "hash": "oUPdwxmpxCgnwBO9dz16ZYKyhQR/a9DhO17g6AUsUEs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6154,7 +6255,7 @@
           "hash": "BaggQXknVYUeYal7tSCGav9JdA1GtOqcJc12avHKG38="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6166,7 +6267,7 @@
           "hash": "7p3TGUJaj5G2OmIKlK1SkMjXAyxhPGLyJ+m1I7jQO24="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6178,7 +6279,7 @@
           "hash": "/l3MjP8F/kCBBF09n6HKxKD4KKDwEgX030srVt9ipPE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6190,7 +6291,7 @@
           "hash": "hS/MXDBQkjKAnQieMMAclDjXSACi5W31r3Pv+xsW08Q="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6202,7 +6303,7 @@
           "hash": "PJcMVtYyaOzMQI98Kt3b2EP9Vzh+W6OWriq66oMT9+w="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6214,7 +6315,7 @@
           "hash": "AnX2uIwR/bN0n6iGxSiM4ceBP4khjbZF/NtR51yMu1Q="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6226,7 +6327,7 @@
           "hash": "VlrX2A3UltmTwhIEpdm0ofo2SmHkhqnWNPWe1hxQazQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6238,7 +6339,7 @@
           "hash": "7Qqi2mT091ZosM8nJY+fektnI/yBsq1Jn8pc5g0bfJo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6903,17 +7004,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "Solutions/media/SalesPack1_1280x720.png",
-      "output": {
-        "resource": {
-          "relative_path": "Solutions/media/SalesPack1_1280x720.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "Solutions/media/SalesPack2_1280x720.png",
       "output": {
         "resource": {
@@ -6929,17 +7019,6 @@
       "output": {
         "resource": {
           "relative_path": "Solutions/media/SalesPack3_1280x720.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "Solutions/media/SalesPack4_1280x720.png",
-      "output": {
-        "resource": {
-          "relative_path": "Solutions/media/SalesPack4_1280x720.png"
         }
       },
       "is_incremental": false,
@@ -7413,6 +7492,50 @@
       "output": {
         "resource": {
           "relative_path": "Solutions/media/bb_parcel_body.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/business-pack-customers.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/business-pack-customers.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/business-pack-items.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/business-pack-items.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/business-pack-sales-order-lines.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/business-pack-sales-order-lines.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/business-pack-sales-orders.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/business-pack-sales-orders.png"
         }
       },
       "is_incremental": false,
@@ -8993,6 +9116,83 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "Solutions/media/vrp-doc-example.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/vrp-doc-example.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/vrp-process-overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/vrp-process-overview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/vrp-report.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/vrp-report.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/vrp-setup-bc.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/vrp-setup-bc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/vrp-setup-elements.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/vrp-setup-elements.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/vrp-setup-item-card.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/vrp-setup-item-card.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/vrp-setup-vykaz.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/vrp-setup-vykaz.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "Solutions/media/workflow_tables.png",
       "output": {
         "resource": {
@@ -9011,7 +9211,7 @@
           "hash": "FE31+Zj/4TH6Mc3KFBYyGmFmUfpvjHLQ697du5mlAJo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9023,7 +9223,7 @@
           "hash": "d3nEzwhjQIkKudyj9dJ+Dw00RwQgXNVrK1viiEYyWm8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9035,7 +9235,7 @@
           "hash": "4SohQThcOeOj3ILY2l+6L6p4SW7C7D90y+QVJ2AkgsE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9047,7 +9247,7 @@
           "hash": "cu62xn0r3pE80uL5LB+OucA5ZeBJ7fJESJaXIjypglU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9059,7 +9259,7 @@
           "hash": "UAeHnfZAsWpy/OgPnJ6WeKcVU1hX44HFrRCJlVmMf1U="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9071,7 +9271,7 @@
           "hash": "rsJ+sOQxXS2gN+zyqo8HIB2UqLwig60Hcog/aX5+QJ4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9083,7 +9283,7 @@
           "hash": "Koy/heaVp/looXL6y0bmwOpGJ/2jmbxBIxMaGFNPJok="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9098,7 +9298,7 @@
           "hash": "MUb2XcZ4CYAQYC0hrNjy71NbH/U02OFG5Ghin18yNlw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9110,7 +9310,7 @@
           "hash": "J1PcyGHMaCGrnZJXRyMvLQAAeg00xq9ZTpHJr0QtZmc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9122,7 +9322,7 @@
           "hash": "xR0AcEXZBOD5lZuYvvCintPb5sDzfSk4bJFq5KREoUc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9134,7 +9334,7 @@
           "hash": "SVKboE6aAZ3sN6zHiWZV3R6STMCCeAduZr/xu8SDbVk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9146,7 +9346,7 @@
           "hash": "6RLQgHSeSxRpQCwcGj8tQu2CzaMuw9I5LjOwuCUuH7U="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9158,7 +9358,7 @@
           "hash": "32muFVU9Y5egZgZ7gJc63q6OP6tPu8W3roK3QZzbtYw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9170,7 +9370,7 @@
           "hash": "lhCLj5E5ChODQklV7kHsTd3O8vILGXEFNyOWuFrDM/w="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9182,7 +9382,7 @@
           "hash": "8yE3NC4Q/2YJ/amI5AgEQt6AO1ZHXczW1WQadt8HlEc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9194,7 +9394,7 @@
           "hash": "2eloZgFfxeYUWHBW5KkdQ0QKSHEDMLLA8dd5yYPtsCA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9206,7 +9406,7 @@
           "hash": "bdtRFFxcvONEQR8YuqKi4Us/EEAEbw70T/ub6lSTGQk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9218,7 +9418,7 @@
           "hash": "sBDVkOTmRYY1XrC+rvcnN2VcwsilTNescnFaG0eJnPA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9230,7 +9430,7 @@
           "hash": "9kFrksVIjLRA+De8SQRIFdVriUdssGj26G5AzZjgVe8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9242,7 +9442,7 @@
           "hash": "rKKYg34EYNdP8QBfBYUo+5c5kp6d0V9xckNVLW1zOnQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9254,7 +9454,7 @@
           "hash": "iAixWzgQ1CY23lC3iSu474m+8RsHnqYU2wm6s5LzQR0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9266,7 +9466,7 @@
           "hash": "H0+JaWV4tfBt9ePt9rZ1aGouN/84g0sGqulODXmglNE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9278,7 +9478,7 @@
           "hash": "Yn9QF775YHN5c2ah5nbns6yWyscMQl6dcyjd3hbEkTs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9290,7 +9490,7 @@
           "hash": "loHjiEKb5xOKk86Cso/rJERLq/zcinFi5BwKNZWFzck="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9302,7 +9502,7 @@
           "hash": "lNEKMRtW9MWaeak07Xky+KzsFwV25r5w8vLKFxvDEyk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9314,7 +9514,7 @@
           "hash": "A/1hab68TBygWEuWdMSuChyQytNspCgOlAe/TRTBu0E="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9326,7 +9526,7 @@
           "hash": "HR5yfBbQqyHqDphJeTU6yi+7hYY3gmEi7gucSaluO4M="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9338,7 +9538,7 @@
           "hash": "55jW20SG53OL8gQbORn8tUu26gIN5Z29iBJQfd3DLdU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9350,7 +9550,7 @@
           "hash": "91DW8NNeSUQKMfh/Hkc08HPIkgl/+vGDZwCXX0xQn8Q="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9362,7 +9562,7 @@
           "hash": "epo2hoNMtAg2USxyF38L2moWMapswMDQ2LGQEMMkk5E="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9374,7 +9574,7 @@
           "hash": "WJxWqOXrhNxLAEq6sXoHzVp46/vfiv2P6VlYNMn1NII="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9386,7 +9586,7 @@
           "hash": "2xQRYDL2FZja7hfVhwnGtriogRh0dBNxWaLulQ0EmjM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9398,7 +9598,7 @@
           "hash": "81FyejeKJ+Q6r1f8y5azxTlbPUfDvDdVwFttPr0sl+8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9410,7 +9610,7 @@
           "hash": "Way1hPMRTuajdGxHgV4LU2B/ZUO9jqspyAo3d8dKI2s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9422,7 +9622,7 @@
           "hash": "tG1IcGb7nIGN1Ybgh4At+hTV33y/0M9buaG+OYBvHVE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9434,7 +9634,7 @@
           "hash": "l2CVjXZ7VBl2RvlfDgyvJFPLEK6lJcz7EVU2A8DLfKA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9446,7 +9646,7 @@
           "hash": "hnX0AO27AsG8qKf3YtSS5gvpHE4vd/FrvNt8JriUw7c="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9458,7 +9658,7 @@
           "hash": "nZJYdPt9gYi2ZEM/hKcxwUu7J/sG8T4XLSbrnhtPgNM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9470,7 +9670,7 @@
           "hash": "EZLplnP3WAZBpJOh3yl70WS/nT0d68Yq6f1L8/xCxeI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9482,7 +9682,7 @@
           "hash": "F8jNSmYMFeYdQvxCNs6RbJpheQsAn6vQEpOWphW4qIo="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9494,7 +9694,7 @@
           "hash": "Vtnu4N+Okl3HxX0jO5MAOcerGAcJu6X0zIN13Q39rhs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9518,7 +9718,7 @@
           "hash": "+xFwBqH7gVoQLemCQUsQzUirVY/yAFocUxOv+Tkless="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9530,7 +9730,7 @@
           "hash": "LyTHGvPFqx3/0+V+IYGfV8jDgKodyMki9/RwKzidECc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9542,7 +9742,7 @@
           "hash": "VZuxSsYXqEOgS4CxYJJPRv9jhJTssafETU4x57PJ1DE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9566,7 +9766,7 @@
           "hash": "nloaGA016l99AZxIh3sjTGSN6zLc9iekf+SMEsVtbq4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9578,7 +9778,7 @@
           "hash": "QD31VCL1/t7pb72mrstEEV573rq8gd1y0G5hjPrRMzQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9590,7 +9790,7 @@
           "hash": "91Flv8ZDBij/QmK3pscffr7n6gQawwINXNLK++NGYEk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9602,7 +9802,31 @@
           "hash": "UxvAzORlts3xBoP8gmT2NoiUwIO9oj75rMB5TFHTpbw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Solutions/vrp-setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "Solutions/vrp-setup.html",
+          "hash": "bZgtKgNLek+wLi7ofzElvAAduepwwxiJ4xgsER/Hh/E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Solutions/vrp.md",
+      "output": {
+        ".html": {
+          "relative_path": "Solutions/vrp.html",
+          "hash": "p4J/eMaDXmPVCjDGzZsEGMQXU75JAGKDfRukLAk70LA="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9614,7 +9838,7 @@
           "hash": "OTSOQBO1Oc2s89c32H/3KVcB52WYvX9sHOOiu9JTbyY="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9626,7 +9850,7 @@
           "hash": "wm8S8NFCDZdzBtaFhglPoNLyUeiK99u4L9pkzTu/pcU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -16158,7 +16382,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 392,
+          "total_file_count": 396,
           "skipped_file_count": 391
         },
         "ResourceDocumentProcessor": {
