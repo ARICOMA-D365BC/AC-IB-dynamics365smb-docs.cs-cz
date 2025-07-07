@@ -16,6 +16,8 @@
 ### [Nastavení - Evidence nářadí a pomůcek](production-tools-setup.md)
 ## [Evidence obalů základ (EKOKOM)](pack-tracking-basic.md)
 ### [Nastavení - Evidence obalů základ (EKOKOM)](pack-tracking-basic-setup.md)
+## [Evidence obalů - Recyklační příspěvky (VRP)](vrp.md)
+### [Nastavení - Evidence obalů - Recyklační příspěvky (VRP)](vrp-setup.md)
 ## [Evidence obalů - Vratné obaly](pack-tracking-return-packing.md)
 ### [Nastavení - Evidence obalů - Vratné obaly](pack-tracking-return-packing-setup.md)
 ## [Evidence pošty](incoming-mail.md)
