@@ -8,11 +8,11 @@ ms.service: dynamics-365-business-central
 ms.search.keywords: Slovak, localization, SK Fiscal Printers Integration
 ---
 
-# Slovak Legislative Pack
+# Slovenská lokalizace
 
 > Aktualizace 31.07.2025
 
- Modul Slovak Legislative Pack doplňuje systém Dynamics 365 Business Central CZ o funkcionality pro podporu slovenské legislativy. Česká funkcionalita z větší části pokrývá i slovenské legislativní požadavky. Tento modul pak doplňuje pouze rozdílové funkcionality, pro pokrytí specifických požadavků slovenské legislativy.
+ Slovenská lokalizace doplňuje systém Dynamics 365 Business Central CZ o funkcionality pro podporu slovenské legislativy. Česká funkcionalita z větší části pokrývá i slovenské legislativní požadavky. Tento modul pak doplňuje pouze rozdílové funkcionality, pro pokrytí specifických požadavků slovenské legislativy.
 
 |Viz|Také|
 |-|-|
