@@ -75,7 +75,7 @@
 ## [Odsouhlasení salda](sk-balance-reconciliation.md)
 ## [Daňové odpisy](sk-tax-depreciation.md)
 ## [SK Integrace s fiskálními tiskárnami](SK-FiscalPrinters-Integration.md)
-
+### [Nastavení - SK Integrace s fiskálními tiskárnami](SK-FiscalPrinters-Integration-setup.md)
 # [Odstraněné funkce](fp-deprecated-features.md)
 
 # [Nákup a správa modulů Aricoma](monetization.md)
