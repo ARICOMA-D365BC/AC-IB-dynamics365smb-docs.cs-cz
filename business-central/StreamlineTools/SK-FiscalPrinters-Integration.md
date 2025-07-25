@@ -36,7 +36,7 @@ V následujícím textu je popsány scénáře podporované modulem Integrace s 
 ### Vytvoření daňového dokladu na fiskální tiskárně
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Prodejní faktury** a poté vyberte související odkaz.
-2. Na stránce **Prodejní faktury** klikněte na funkci Nový a vytvořte novou prodejní fakturu.
+2. Na stránce **Prodejní faktury** klikněte na funkci *Nový* a vytvořte novou prodejní fakturu.
 3. Doplňte řádky dokladu dle potřeby.
 
 > [!IMPORTANT]
