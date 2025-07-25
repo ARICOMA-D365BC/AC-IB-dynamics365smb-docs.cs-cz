@@ -12,6 +12,7 @@ ms.author: v-makune
 ---
 
 # Kontrolní výkaz DPH - nastavení
+> Aktualizace 31.07.2025
 
 Pro zajištění správné funkčnosti je potřeba nastavit několik níže uvedených oblastí.
 
@@ -52,6 +53,18 @@ Pro zajištění správného vykazování Kontrolního výkazu DPH je potřeba n
 ![Import nespolehlivých plátců DPH z xml formátu](media/VAT_check_report.png)
 
 3. Potvrďte pomocí tlačítka **OK**.
+
+> [!WARNING]
+> Pole **Sekce kontrolního výkazu DPH** musí být nastaveno pouze na jednom řádku výkazu DPH pro stejné hodnoty v polích:
+>
+> - Typ obecného účtování
+> - DPH obchodní účto skupina
+> - DPH účto skupina zboží
+> - Typ částky
+> - Filtr typu dokladu
+> - Filtr kódu původu
+>
+> Pokud je stejná hodnota sekce nastavena na více řádcích pro stejné hodnoty polí výše, dochází ke zdvojení částek.
 
 ## Nastavení sekcí kontrolního výkazu DPH
 
