@@ -1,19 +1,18 @@
 ---
-title: ARICOMA SOLUTIONS - SK Legistaltive Pack | Microsoft Docs
+title: ARICOMA SOLUTIONS - SK Legislative Pack
 description: This section describes ARICOMA Solutions - Slovak legislation
 author: kunes
-ms.service: dynamics365-business-central
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.search.keywords: Slovak, , additional functions, sale, VAT
-ms.author: v-makune
+date: 07/31/2025
+reviewer: janousek
+ms.service: dynamics-365-business-central
+ms.search.keywords: Slovak, localization, SK Fiscal Printers Integration
 ---
 
-# Slovak Legistive Pack
+# Slovak Legislative Pack
 
- AddOn Modul Slovak Localization doplňuje systém Dynamics 365 Business Central CZ o funkcionality pro podporu slovenské legislativy. Česká funkcionalita z větší části pokrývá i slovenské legislativní požadavky. Tento modul pak doplňuje pouze rozdílové funkcionality, pro pokrytí specifických požadavků slovenské legislativy.
+> Aktualizace 31.07.2025
+
+ Modul Slovak Legislative Pack doplňuje systém Dynamics 365 Business Central CZ o funkcionality pro podporu slovenské legislativy. Česká funkcionalita z větší části pokrývá i slovenské legislativní požadavky. Tento modul pak doplňuje pouze rozdílové funkcionality, pro pokrytí specifických požadavků slovenské legislativy.
 
 |Viz|Také|
 |-|-|
@@ -32,6 +31,7 @@ ms.author: v-makune
 |Import dat pro podnikatelské subjekty, u kterých nastaly důvody pro zrušení registrace platitele daně z přidané hodnoty.|[Institut nespolehlivosti plátce](sk-unreability-payer.md)|
 |Odsouhlasení salda zákazníka a dodavatele.|[Odsouhlasení salda](sk-balance-reconciliation.md)|
 |Uplatnění daňových odpisů dle počtu kalendárných měsíců dle Zákona o dani z příjmů.|[Daňové odpisy](sk-tax-depreciation.md)|
+|Integrace s SK fiskálními tiskárnami poskytuje přímé propojení s fiskálními tiskárnami od firmy VAROS.|[Integrace s SK fiskálními tiskárnami](SK-FiscalPrinters-Integration.md)|
 
 ## Viz také
 
