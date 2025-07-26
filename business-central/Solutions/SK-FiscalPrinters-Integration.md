@@ -168,5 +168,5 @@ V případě nejasností je možné si zobrazit soubory, které jsou předmětem
 ## Viz také
 
 [Nastavení Integrace s SK fiskálními tiskárnami](SK-FiscalPrinters-Integration-setup.md)  
-[ARICOMA Řešení](../index.md)  
-[Streamline Tools](../StreamlineTools/streamlinetools.md)  
+[Streamline Tools](streamlinetools.md)  
+[ARICOMA řešení](solutions.md)

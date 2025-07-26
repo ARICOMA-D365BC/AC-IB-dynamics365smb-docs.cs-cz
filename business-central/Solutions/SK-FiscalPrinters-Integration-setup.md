@@ -103,5 +103,5 @@ Následující tabulka zobrazuje specifické DPH režimy použitelné na fiskál
 ## Viz také
 
 [Integrace s SK fiskálními tiskárnami](SK-FiscalPrinters-Integration.md)  
-[ARICOMA Řešení](../index.md)  
-[Streamline Tools](../StreamlineTools/streamlinetools.md)
+[Streamline Tools](streamlinetools.md)  
+[ARICOMA řešení](solutions.md)
