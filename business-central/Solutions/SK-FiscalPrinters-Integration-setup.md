@@ -90,7 +90,6 @@ Následující tabulka zobrazuje specifické DPH režimy použitelné na fiskál
 | Poukaz                       | V poli **Typ řádku fiskálního dokladu** vyberte „D – Poukaz“. |
 | Vratné obaly                       | V poli **Typ řádku fiskálního dokladu** vyberte „V - Vratné obaly“. |
 | Zaokrouhlení                 | V poli **Typ řádku fiskálního dokladu** vyberte „RND – zaokrouhlení“.<br>V poli **Důvod osvobození od DPH fiskálního dokladu** vyberte „N – Osvobozeno od daně“. |
-
 | Cestovní kanceláře                | V poli **Důvod osvobození od DPH fiskálního dokladu** vyberte „K - Cestovní kanceláře“. |
 | Osvobození od daně           | V poli **Důvod osvobození od DPH fiskálního dokladu** vyberte „N – Osvobozeno od daně“. |
 | Přenesení daňové povinnosti  | V poli **Důvod osvobození od DPH fiskálního dokladu** vyberte „P – Přenesení daňové povinnosti“. |
