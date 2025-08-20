@@ -7,9 +7,10 @@ reviewer: janousek
 ms.service: dynamics-365-business-central
 ms.search.keywords: banking, finance, czech, API
 ---
+
 # Rozšířené CZ bankovnictví
 
-> Update 30.05.2025
+> Update 19.08.2025
 
 Modul Rozšíření CZ bankovnictví rozšiřuje funkčnost „Bankovní doklady pro Česko (rozšíření)“, která je součástí českých lokálních funkčností Dynamics 365 Business Central (dále jen BC).
 
@@ -41,7 +42,7 @@ Pokročilá varianta přináší možnost automatizace všech kroků:
 
 - nahrávání bankovních výpisů (pomocí metod bez ručního vstupu, typicky API či jiné na míru vyvinuté metody)
 - spouštění importů bankovních výpisů napříč firmami
-- automatizaci zpracování výpisů až po vytvoření záznamů v Deníku plateb, vč. návrhu spárování
+- automatizaci zpracování výpisů přes možnost vytvoření záznamů v Deníku plateb (vč. návrhu spárování) až po zaúčtování deníku.
 
 ![pokročilá varianta modulu Rozšíření CZ bankovnictví](media/cz-banking-ext-schema-advanced.png)
 
@@ -77,12 +78,12 @@ Nastavení pro funkčnost viz [Formáty bankovních výpisů a platebních pří
 > [!NOTE]
 > Při importu po vybrání souboru, se může zobrazit hláška „Není co importovat. Chcete zobrazit přehled s bankovními výpisy?“ Po kliknutí na ANO se zobrazí soubory s detailem chyby.
 > [!TIP]
-> Most common errors:
+> Nejčastější chyby:
 >
 > - Importovaný soubor již v BC existuje --> v tom případě je v poli Stav zobrazený stav zpracování v BC.
 > - Číslo bankovního účtu nebylo rozpoznáno --> v tom případě je pole „Číslo bankovního účtu“ vyznačeno červeně.
-    > - Buď importovaný soubor nepatří do importované společnosti
-    > - nebo v souboru bankovního výpisu je číslo účtu v jiném formátu, obvykle předčíslí a číslo účtu bez pomlčky.  V tomto případě proveďte nastavení dle [Číslo bank.účtu na bank.výpisu (volitelné)](cz-banking-extension-setup\#číslo-bankúčtu-na-bankvýpisu-volitelné).
+>  - Buď importovaný soubor nepatří do importované společnosti
+>  - nebo v souboru bankovního výpisu je číslo účtu v jiném formátu, obvykle předčíslí a číslo účtu bez pomlčky.  V tomto případě proveďte nastavení dle [Číslo bank.účtu na bank.výpisu (volitelné)](cz-banking-extension-setup\#číslo-bankúčtu-na-bankvýpisu-volitelné).
 
 ### Základní – Import a zpracování více souborů výpisů
 
@@ -147,7 +148,7 @@ Tento způsob zpracování se může hodit v situaci s větším počtem účetn
 ![Central Bank Statement Stack](media/cz-banking-ext-central-stack.png)
 
 > [!TIP]
-> Pokud nedošlo k vytvoření bankovního výpisu, nebo importujete nový bankovní účet, zkontrolujte nastavení viz [Nastavení automatizace importu a zpracování bankovních výpisů prostřednictvím centrálního zásobníku](cz-banking-extension-setup.md/#nastavení-automatizace-importu-a-zpracování-bankovních-výpisů-prostřednictvím-centrálního-zásobníku)
+> Pokud nedošlo k vytvoření bankovního výpisu, nebo importujete nový bankovní účet, zkontrolujte nastavení viz [Nastavení automatizace importu a zpracování bankovních výpisů prostřednictvím centrálního zásobníku](cz-banking-extension-setup/#nastavení-automatizace-importu-a-zpracování-bankovních-výpisů-prostřednictvím-centrálního-zásobníku)
 
 ### Pokročilá – automatizované zpracování výpisů
 
@@ -164,15 +165,20 @@ Prostřednictvím stránky Centrální zásobník bankovních výpisů má uživ
 5. Vraťte se na Centrální zásobník bankovních výpisů a pokračujte dalšími řádky, dokud nebudou všechny ve stavu Zaúčtováno.
 
 > [!NOTE]
-> Ověřte nastavení pro automatizaci viz [Podpůrná nastavení pro automatické zpracování výpisů](cz-banking-extension-setup.md/#podpůrná-nastavení-pro-automatické-zpracování-výpisů).
+> Ověřte nastavení pro automatizaci viz [Podpůrná nastavení pro automatické zpracování výpisů](cz-banking-extension-setup/#podpůrná-nastavení-pro-automatické-zpracování-výpisů).
 > [!IMPORTANT]
 > Pro práci s Centrálním zásobníkem bankovních výpisů musí uživatel disponovat standardní sadou oprávnění pro založení a zpracovávání bankovních výpisů ve společnostech, ve kterých mají být výpisy tímto nástrojem obsluhovány.
+
+### Pokročilá – okamžité automatizované účtování jednotlivých plateb
+
+Kombinací importu jednotlivých transakcí v průběhu dne s nastavením automatického importu a účtování výpisů lze docílit takřka online aktualizaci saldokonta. Tím lze např. výrazně urychlit dodávky zákazníkům po zaplacení zálohy.
+Podmínkou je použití API konektoru banky, která tuto možnost podporuje.
 
 ### Pokročilá – automatizovaný export platebních příkazů
 
 Funkcionalita bude doplněna v průběhu roku 2026.
 
-**See also**
+**See also**  
 
 [Nastavení rozšířeného CZ bankovnictví](cz-banking-extension-setup.md)  
 [Nastavení API konektorů](cz-banking-extension-API-setup.md)  

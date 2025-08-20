@@ -7,9 +7,10 @@ reviewer: janousek
 ms.service: dynamics-365-business-central
 ms.search.keywords: banking, finance, czech, API
 ---
+
 # Nastavení rozšířeného CZ bankovnictví
 
-> Update 30.05.2025
+> Update 19.08.2025
 
 Modul Rozšíření CZ bankovnictví je potřeba zapnout, v produkčním prostředí bude uživatel požádán o aktivaci předplatného (viz  [dokumentace k monetizaci](https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/ProductivityPack/monetization.html)).
 
@@ -151,7 +152,7 @@ Slouží pro zadání přesného formátu čísla bankovního účtu, který je 
 
 ### Poslední úroveň dávkového zpracování (povinné)
 
-Určuje, jaká je poslední úroveň automatického zpracování bankovních výpisů. Samotné zpracování bankovního výpisu probíhá standardním procesem: Bankovní výpis / Vydaný bankovní výpis / Deník
+Určuje, jaká je poslední úroveň automatického zpracování bankovních výpisů. Samotné zpracování bankovního výpisu probíhá standardním procesem: Bankovní výpis / Vydaný bankovní výpis / Deník / Zaúčtování plateb.
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Bankovní účty** a poté vyberte související odkaz.
 
@@ -159,15 +160,19 @@ Určuje, jaká je poslední úroveň automatického zpracování bankovních vý
     - Bankovní výpis (výchozí hodnota)
     - Vydaný bankovní výpis
     - Deník
+    - Zaúčtovat deník
 
-> [!NOTE]
+> [!TIP]
 > Obvykle se nastaví hodnota *Deník*. Hodnota *Bankovní výpis* se nastaví v případě, kdy je třeba provést v importovaném bankovnímu výpisu ruční změnu (např. import platebního avíza).
+> [!NOTE]
+> V případě volby Zaúčtovat deník dojde k zaúčtování výpisu pouze tehdy, jsou-li na všech řádcích výpisu doplněny čísla účtu (zákazníka, dodavatele, zaměstnance, finančního účtu). Dalším pravidlem je, že číslo finančního účtu nesmí být rovno účtu nastaveného v poli **Účet nepřiřazených plateb** na kartě bankovního účtu.
 
-### Číselná řada (povinné)
+### Číselná řada (nepovinné)
+
+Funkčnost zpracování bankovních výpisů může automaticky číslovat nevydané i vydané bankovní výpisy v BC tak, že vkládá dle masky rok a pořadové číslo výpisu přidělené bankou.
 
 Je nutné nastavit stejnou číselnou řadu pro nevydané a vydané bankovní výpisy na Kartě bankovního účtu.
 Tato číselná řada musí mít aktivované Ruční číslování a vyplněnou Masku. Maska musí obsahovat min. 2 znaky pro rok (rr) a volné číslo (ccc).  
-Funkčnost zpracování bankovních výpisů automaticky čísluje bankovní výpisy v BC tak, že vkládá dle masky rok a pořadové číslo výpisu přidělené bankou.
 
 ### Kontrolovat obraty bankovního výpisu (volitelné)
 

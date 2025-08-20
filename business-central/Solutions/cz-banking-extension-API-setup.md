@@ -9,7 +9,7 @@ ms.search.keywords: banking, finance, czech, API
 ---
 # Nastavení API konektorů
 
-> Update 30.05.2025
+> Update 19.08.2025
 
 ## ČSOB API konektor
 
@@ -33,12 +33,12 @@ Služba ČSOB Business Connector umožňuje používat certifikáty vydané cert
 Certifikát lze získat také přímo od banky, což lze provést v zásadě 2 způsoby, buď
 
 - prostředky Windows (např. s pomocí IT pracovníka)
-    - ruční vytvoření žádosti o certifikát v klientském počítači (např. pomocí nástroje Windows *certmgr.msc*),
-    - podání žádosti o certifikát a vydání certifikátu (CEB -> Business Connector -> *Požádat o certifikát* a následně stažení certifikát volbou *Stáhnout*)
-    - instalace vydaného certifikátu v klientském počítači (např. pomocí nástroje Windows *certmgr.msc*)
+  - ruční vytvoření žádosti o certifikát v klientském počítači (např. pomocí nástroje Windows *certmgr.msc*),
+  - podání žádosti o certifikát a vydání certifikátu (CEB -> Business Connector -> *Požádat o certifikát* a následně stažení certifikát volbou *Stáhnout*)
+  - instalace vydaného certifikátu v klientském počítači (např. pomocí nástroje Windows *certmgr.msc*)
 - nebo za pomoci aplikace *ČSOB Business Connector*(získání komunikačního certifikátu je popsáno v příručce [csob-business-connector-implementacni-prirurucka.pdf](https://www.csob.cz/documents/10710/15532355/csob-business-connector-prirucka.pdf?v2401)). Jedná se o
-    - instalaci aplikace ČSOB Business Connector na počítač (kapitola 2),
-    - získání komunikačního certifikátu (kapitola 3).
+  - instalaci aplikace ČSOB Business Connector na počítač (kapitola 2),
+  - získání komunikačního certifikátu (kapitola 3).
 
 > [!TIP]
 > Aplikace ČSOB Business Connector nebude pro běžnou práci využívána. Doporučujeme v ní ale nastavit upozornění na vypršení certifikátu (viz příručka v kapitole Obnova komunikačního certifikátu).
@@ -131,6 +131,61 @@ Dalším krokem je nastavení přístupu v Business Central:
 
 <!-- ### Specific parameters for KB API connector
 -->
+
+## Erste API konektor
+
+### Zprovoznění služby Premium API
+
+Pro zprovoznění API rozhraní je třeba
+
+- registrovat se na Erste Developer Portal (EDP),
+- na portálu vytvořit aplikaci,
+- požádat o přístup aplikace do produkčního prostředí a
+- nastavit modul v Business Central.
+
+**Registrace firmy v EDP**  
+
+Při registraci doplníte požadované informace o vaší firmě, viz [Postup registrace](https://developers.erstegroup.com/docs/tutorial/step-by-step#registrujte-se).
+
+**Vytvoření aplikace**  
+
+V organizaci je třeba vytvořit novou "aplikaci" a propojit ji s bankou, viz [postup](https://developers.erstegroup.com/docs/guides/general-user-manual-application/#p-ipojen-k-bance). Doplňte následující parametry:
+
+| Vlastnost        | Hodnota         |
+| ---------------  | --------------- |
+| Název aplikace   | Aricoma Erste API Connector |
+| Typ              | Web             |
+| Platforma        | Server          |
+| Jazyk            | Jiný            |
+| Použití aplikace | Final API Consumer |
+
+Banky:
+
+- Česká spořitelna, a.s.
+
+Připojení k API:
+
+- vyberte *Premium - Accounts API* a *Premium - Payments API*
+- povolte OAuth2
+
+**Žádost o přístup do produkčního prostředí**  
+
+Je-li vše správně nastaveno (a potvrzeno bankou), na záložce Produkce lze vygenerovat přístupové údaje.
+
+**Nastavení modulu v BC**  
+
+Dalším krokem je nastavení přístupu v Business Central:
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Klienti Erste API** a poté vyberte související odkaz.
+2. Na stránce Klienti Erste API zadejte „ČS“ v poli **Kód** na novém řádku.
+3. Do pole **Popis** zadejte např. „ČS API“.
+4. Do pole **Připojená banka** vyberte „Česká spořitelna“.
+5. V poli **API prostředí** vyberte hodnotu „Produkční prostředí“.
+6. V poli **API klíč** zadejte hodnotu získanou z portálu (viz předchozí odstavec).
+7. V poli **ID klienta** zadejte hodnotu získanou z portálu (viz předchozí odstavec).
+8. V poli **Tajný klíč klienta** zadejte hodnotu získanou z portálu (viz předchozí odstavec).
+9. V poli **Platnost autorizace** můžete změnit platnost autorizace na dobu kratší než je maximální povolená doba, a to 180 dní.
+10. Spusťe akci *Autorizovat klienta*, úspěch se projeví změnou přepnutím příznaku **Klient je autorizovaný**.
 
 **See also**  
 
