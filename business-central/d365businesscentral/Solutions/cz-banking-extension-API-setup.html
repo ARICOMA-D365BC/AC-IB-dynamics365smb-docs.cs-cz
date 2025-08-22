@@ -70,7 +70,7 @@
 <h1 id="nastavení-api-konektorů">Nastavení API konektorů</h1>
 
 <blockquote>
-<p>Update 30.05.2025</p>
+<p>Update 19.08.2025</p>
 </blockquote>
 <h2 id="čsob-api-konektor">ČSOB API konektor</h2>
 <h3 id="zprovoznění-služby-čsob-business-connector">Zprovoznění služby ČSOB Business Connector</h3>
@@ -185,6 +185,74 @@ Následující parametry je třeba doplnit do Rozšířeného nastavení v pří
 </ol>
 <!-- ### Specific parameters for KB API connector
 -->
+<h2 id="erste-api-konektor">Erste API konektor</h2>
+<h3 id="zprovoznění-služby-premium-api">Zprovoznění služby Premium API</h3>
+<p>Pro zprovoznění API rozhraní je třeba</p>
+<ul>
+<li>registrovat se na Erste Developer Portal (EDP),</li>
+<li>na portálu vytvořit aplikaci,</li>
+<li>požádat o přístup aplikace do produkčního prostředí a</li>
+<li>nastavit modul v Business Central.</li>
+</ul>
+<p><strong>Registrace firmy v EDP</strong></p>
+<p>Při registraci doplníte požadované informace o vaší firmě, viz <a href="https://developers.erstegroup.com/docs/tutorial/step-by-step#registrujte-se">Postup registrace</a>.</p>
+<p><strong>Vytvoření aplikace</strong></p>
+<p>V organizaci je třeba vytvořit novou &quot;aplikaci&quot; a propojit ji s bankou, viz <a href="https://developers.erstegroup.com/docs/guides/general-user-manual-application/#p-ipojen-k-bance">postup</a>. Doplňte následující parametry:</p>
+<table>
+<thead>
+<tr>
+<th>Vlastnost</th>
+<th>Hodnota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Název aplikace</td>
+<td>Aricoma Erste API Connector</td>
+</tr>
+<tr>
+<td>Typ</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>Platforma</td>
+<td>Server</td>
+</tr>
+<tr>
+<td>Jazyk</td>
+<td>Jiný</td>
+</tr>
+<tr>
+<td>Použití aplikace</td>
+<td>Final API Consumer</td>
+</tr>
+</tbody>
+</table>
+<p>Banky:</p>
+<ul>
+<li>Česká spořitelna, a.s.</li>
+</ul>
+<p>Připojení k API:</p>
+<ul>
+<li>vyberte <em>Premium - Accounts API</em> a <em>Premium - Payments API</em></li>
+<li>povolte OAuth2</li>
+</ul>
+<p><strong>Žádost o přístup do produkčního prostředí</strong></p>
+<p>Je-li vše správně nastaveno (a potvrzeno bankou), na záložce Produkce lze vygenerovat přístupové údaje.</p>
+<p><strong>Nastavení modulu v BC</strong></p>
+<p>Dalším krokem je nastavení přístupu v Business Central:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Klienti Erste API</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Klienti Erste API zadejte „ČS“ v poli <strong>Kód</strong> na novém řádku.</li>
+<li>Do pole <strong>Popis</strong> zadejte např. „ČS API“.</li>
+<li>Do pole <strong>Připojená banka</strong> vyberte „Česká spořitelna“.</li>
+<li>V poli <strong>API prostředí</strong> vyberte hodnotu „Produkční prostředí“.</li>
+<li>V poli <strong>API klíč</strong> zadejte hodnotu získanou z portálu (viz předchozí odstavec).</li>
+<li>V poli <strong>ID klienta</strong> zadejte hodnotu získanou z portálu (viz předchozí odstavec).</li>
+<li>V poli <strong>Tajný klíč klienta</strong> zadejte hodnotu získanou z portálu (viz předchozí odstavec).</li>
+<li>V poli <strong>Platnost autorizace</strong> můžete změnit platnost autorizace na dobu kratší než je maximální povolená doba, a to 180 dní.</li>
+<li>Spusťe akci <em>Autorizovat klienta</em>, úspěch se projeví změnou přepnutím příznaku <strong>Klient je autorizovaný</strong>.</li>
+</ol>
 <p><strong>See also</strong></p>
 <p><a href="cz-banking-extension-setup.html">Nastavení rozšířeného CZ bankovnictví</a><br>
 <a href="cz-banking-extension.html">Rozšířené CZ bankovnictví</a><br>
