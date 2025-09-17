@@ -15,6 +15,98 @@ ms.author: Robert Jelen
 
 > Aktualizace: 21.09.2025
 
+## Nastavení rozšíření DPH
+
+### Nastavení registrace k DPH na dokladech
+
+V Nastavení financí se zadává datumový vzorec, který systém použije (ve vztahu k pracovnímu datu) pro definici období, ve kterém upozorňuje uživatele na zastaralou informaci o registraci k DPH. Není-li pole Vzorec data kontroly DIČ na dokladech vyplněno, je upozorňování vypnuté.  
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení financí** a poté vyberte související odkaz.
+2. Na stránce Nastavení financí v záložce Ostatní nastavte pole **Vzorec data kontroly DIČ na dokladech**.
+
+### Nastavení krácení odpočtu DPH
+
+#### Nastavení účtování DPH
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení účtování DPH** a poté vyberte související odkaz.
+
+Pro kombinace DPH účto skupin, kde se bude řešit krácení vstupní DPH koeficientem, musí být nastaveno (kromě jiného):
+
+- Typ účtování koeficientu DPH
+- Koef.DPH účto skupiny zboží
+
+Dále musí být nastaveny nové kombinace stejné DPH obchodní účto skupiny a DPH účto skupiny zboží definované v poli „Koef.DPH účto skupiny zboží“ (viz výše) s Typem výpočtu DPH = Plná DPH  
+
+Pro tyto kombinace musí být nastaveno (kromě jiného):
+
+- „Účet opravy neodčitatelné DPH“ – použije se jako protiúčet běžného nákupního účtu DPH při přeúčtování krácení odpočtu DPH koeficientem.
+
+>[!NOTE]
+>Nastavené kombinace DPH účto skupin s Typem výpočtu DPH = Plná DPH nevstupují do výkazu DPH.
+
+![Nastavení účtování DHP](media/setup_vat.png)
+
+#### Nastavení zálohového koeficientu
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení financí** a poté vyberte související odkaz.
+2. V poli Zálohový koeficient DPH" na záložce DPH nastavte hodnotu procenta platného pro aktuální účetní období.
+
+### Nastavení registrace k DPH ve více zemích
+
+#### Více DIČ zákazníků
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Zákazníci** a poté vyberte související odkaz.
+2. Vyberte akci  Země/oblasti registrace.
+3. Zadejte kód země a DIČ pro vybraného zákazníka.
+4. Dále doplňte DPH obch. účtoskupinu, která se má použít v případě prodeje zákazníkovi do této země.
+
+#### Více DIČ dodavatelů
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Dodavatelé** a poté vyberte související odkaz.
+2. Vyberte akci Země/oblasti registrace (Související -> Dodavatel).
+3. Zadejte kód země a DIČ pro vybraného dodavatele.
+4. Dále doplňte DPH obch. účtoskupinu, která se má použít v případě nákupu z této země dodatatele.
+
+#### Více registrací k DPH
+
+Základní nastavení spočívá v evidenci registrací k DPH v jednotlivých zemích a nastavení, jak má systém měnit DPH účtoskupiny v dokladech pro správné zpracování položek DPH při uzavírání DPH a pro správnou tvorbu podkladů (nejčastěji pro účetní kanceláře v daných zemích).
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Informace o společnosti** a poté vyberte související odkaz.
+2. Vyberte akci Země/oblasti registrace.
+3. Na stránce Země/oblasti registrace zadejte kód země a DIČ společnosti registrované v této zemi. Pro vytvořený záznam doplňte Kód měny (místní) určující měnu, ve které se podává přiznání k DPH ve vybrané zemi.
+4. Zavřete stránce Země/oblasti registrace.
+5. Vyberte akci Směry registrace Země/oblasti.
+6. Na stránce Směry registrace Země/oblasti definujte, jak má systém nahrazovat DPH obch.účtoskupiny na dokladech.
+
+V případě používání jiné měny než lokální v zemi registrace, je nutné udržovat kursy mezi měnou dokladu a lokální měnou země registrace.
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Měny** a poté vyberte související odkaz.
+2. Vyberte akci Směnné kursy země/oblasti registrace.
+3. Zadejte datum a směnný kurs.
+
+>[!NOTE]
+> Systém neobsahuje funkcionalitu pro import směnných kursů země/oblasti registrace.
+
+#### OSS – EU režim
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení financí** a poté vyberte související odkaz.
+2. V poli Registrace OSS – EU na záložce DPH potvrďte, že je vaše firma registrována pro režim OSS.
+3. V poli Kód měny pro OSS na záložce DPH vyberte kód měnu odpovídající měně Euro.
+4. Vyberte akci Nastavení DPH pro OSS (Související -> DPH účtování).
+5. Na stránce Nastavení DPH pro OSS zadejte DPH obch.účtoskupinu pro kombinaci zemí zahájení a ukončení přepravy a zvolte, jestli pro tuto kombinaci má být doklad označen jako OSS.
+
+>[!NOTE]
+>Kombinace s příznakem OSS = Ne je nutné definovat pro případy, kdy se v praxi objeví potřeba vypnout na prodejním dokladu režim OSS.
+
+### Nastavení účtování přeplatků nákupních záloh
+
+Popsaná automatizace při účtování finální faktury se zapíná v Nastavení účtování DPH pro vybrané kombinace účtoskupin. Pokud je toto chování vhodné pouze pro některé případy, je třeba pro ně míst vydefinované zvláštní DPH účtoskupiny (zboží).
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení účtování DPH** a poté vyberte související odkaz.
+2. Na stránce Nastavení účtování DPH vyhledejte záznam pro který chcete zapnout a zvolte funkci Úpravy.
+3. Na stránce Karta nastavení účto DPH nastavte příznak Určeno pro vrácení zálohy.
+
+
 ## Nastavení kontroly CREDITCHECK
 
 ### Nastavení kontroly CreditCheck
@@ -77,9 +169,7 @@ Od verze BC 22 (popř. od BC 18 pokud máte ve Správě funkcí zapnuto „Aktua
 
 >[!TIP]
 > Nastavení závisí na používané verzi. Ve verzi BC17 pro zapnutí zvolte **Hierarchický návrh cen povolen**.
-
-![Hierarchický návrh cen povolen](media/Hierarchical_price_setup.png)
-
+>![Hierarchický návrh cen povolen](media/Hierarchical_price_setup.png)
 >[!TIP]
 >Od verze BC18 doporučujeme používat zcela novou funkcionalitu pro cenotvorbu v BC.
 >Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Správa funkcí** a poté vyberte související odkaz. Ověřte, že máte funkci **Aktualizace funkcí: Nové zkušenosti s cenami prodeje** povolenu pro všechny uživatele.
@@ -106,15 +196,6 @@ Nastavení parametrů kumulace na bankovním účtu
 - Pole **Kumulovat export podle specifického symbolu** – kumuluje se za SS
 - Pole **Číselná řada variabilního symbolu** – pokud se nekumuluje dle VS, KS nebo SS, pak se do pole VS doplní číslo dle zde nastavené číselné řady (SS a KS se vezmou z prvního slučovaného řádku příkazu)
 - Pole **Popis kumulovaného řádku plat. příkazu** – popis pro vytvořený kumulovaný řádek
-
-## Nastavení kontroly registrace k DPH
-
-### Registrace k DPH na dokladech
-
-V Nastavení financí se zadává datumový vzorec, který systém použije (ve vztahu k pracovnímu datu) pro definici období, ve kterém upozorňuje uživatele na zastaralou informaci o registraci k DPH. Není-li pole Vzorec data kontroly DIČ na dokladech vyplněno, je upozorňování vypnuté.  
-
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení financí** a poté vyberte související odkaz.
-2. Na stránce Nastavení financí v záložce Ostatní nastavte pole **Vzorec data kontroly DIČ na dokladech**.
 
 ## Nastavení kontrol směnných kurzů
 
@@ -202,88 +283,6 @@ Nastavení zaokrouhlení se provádí různě v závislosti na měně, jako je
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Způsoby plateb** a poté vyberte související odkaz.
 2. Vyberte akci Nastavení zaokrouhlení faktur.
 3. Na stránce Nastavení zaokrouhlení faktur definujte nastavení zaokrouhlení pro cizí měny v kombinaci s vybraným způsobem platby, u kterých má být jiné nastavení než to výchozí z Karty měny.
-
-## Nastavení krácení odpočtu DPH
-
-### Nastavení účtování DPH
-
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení účtování DPH** a poté vyberte související odkaz.
-
-Pro kombinace DPH účto skupin, kde se bude řešit krácení vstupní DPH koeficientem, musí být nastaveno (kromě jiného):
-
-- Typ účtování koeficientu DPH
-- Koef.DPH účto skupiny zboží
-
-Dále musí být nastaveny nové kombinace stejné DPH obchodní účto skupiny a DPH účto skupiny zboží definované v poli „Koef.DPH účto skupiny zboží“ (viz výše) s Typem výpočtu DPH = Plná DPH  
-
-Pro tyto kombinace musí být nastaveno (kromě jiného):
-
-- „Účet opravy neodčitatelné DPH“ – použije se jako protiúčet běžného nákupního účtu DPH při přeúčtování krácení odpočtu DPH koeficientem.
-
->[!NOTE]
->Nastavené kombinace DPH účto skupin s Typem výpočtu DPH = Plná DPH nevstupují do výkazu DPH.
-
-![Nastavení účtování DHP](media/setup_vat.png)
-
-### Nastavení zálohového koeficientu
-
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení financí** a poté vyberte související odkaz.
-2. V poli Zálohový koeficient DPH" na záložce DPH nastavte hodnotu procenta platného pro aktuální účetní období.
-
-## Nastavení registrace k DPH ve více zemích
-
-### Více DIČ zákazníků
-
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Zákazníci** a poté vyberte související odkaz.
-2. Vyberte akci  Země/oblasti registrace.
-3. Zadejte kód země a DIČ pro vybraného zákazníka.
-4. Dále doplňte DPH obch. účtoskupinu, která se má použít v případě prodeje zákazníkovi do této země.
-
-### Více DIČ dodavatelů
-
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Dodavatelé** a poté vyberte související odkaz.
-2. Vyberte akci Země/oblasti registrace (Související -> Dodavatel).
-3. Zadejte kód země a DIČ pro vybraného dodavatele.
-4. Dále doplňte DPH obch. účtoskupinu, která se má použít v případě nákupu z této země dodatatele.
-
-### Více registrací k DPH
-
-Základní nastavení spočívá v evidenci registrací k DPH v jednotlivých zemích a nastavení, jak má systém měnit DPH účtoskupiny v dokladech pro správné zpracování položek DPH při uzavírání DPH a pro správnou tvorbu podkladů (nejčastěji pro účetní kanceláře v daných zemích).
-
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Informace o společnosti** a poté vyberte související odkaz.
-2. Vyberte akci Země/oblasti registrace.
-3. Na stránce Země/oblasti registrace zadejte kód země a DIČ společnosti registrované v této zemi. Pro vytvořený záznam doplňte Kód měny (místní) určující měnu, ve které se podává přiznání k DPH ve vybrané zemi.
-4. Zavřete stránce Země/oblasti registrace.
-5. Vyberte akci Směry registrace Země/oblasti.
-6. Na stránce Směry registrace Země/oblasti definujte, jak má systém nahrazovat DPH obch.účtoskupiny na dokladech.
-
-V případě používání jiné měny než lokální v zemi registrace, je nutné udržovat kursy mezi měnou dokladu a lokální měnou země registrace.
-
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Měny** a poté vyberte související odkaz.
-2. Vyberte akci Směnné kursy země/oblasti registrace.
-3. Zadejte datum a směnný kurs.
-
->[!NOTE]
-> Systém neobsahuje funkcionalitu pro import směnných kursů země/oblasti registrace.
-
-### OSS – EU režim
-
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení financí** a poté vyberte související odkaz.
-2. V poli Registrace OSS – EU na záložce DPH potvrďte, že je vaše firma registrována pro režim OSS.
-3. V poli Kód měny pro OSS na záložce DPH vyberte kód měnu odpovídající měně Euro.
-4. Vyberte akci Nastavení DPH pro OSS (Související -> DPH účtování).
-5. Na stránce Nastavení DPH pro OSS zadejte DPH obch.účtoskupinu pro kombinaci zemí zahájení a ukončení přepravy a zvolte, jestli pro tuto kombinaci má být doklad označen jako OSS.
-
->[!NOTE]
->Kombinace s příznakem OSS = Ne je nutné definovat pro případy, kdy se v praxi objeví potřeba vypnout na prodejním dokladu režim OSS.
-
-## Nastavení účtování přeplatků nákupních záloh
-
-Popsaná automatizace při účtování finální faktury se zapíná v Nastavení účtování DPH pro vybrané kombinace účtoskupin. Pokud je toto chování vhodné pouze pro některé případy, je třeba pro ně míst vydefinované zvláštní DPH účtoskupiny (zboží).
-
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení účtování DPH** a poté vyberte související odkaz.
-2. Na stránce Nastavení účtování DPH vyhledejte záznam pro který chcete zapnout a zvolte funkci Úpravy.
-3. Na stránce Karta nastavení účto DPH nastavte příznak Určeno pro vrácení zálohy.
 
 ## Viz také
 
