@@ -1,18 +1,19 @@
 ---
-title: ARICOMA SOLUTIONS - SK Legistaltive Pack| Microsoft Docs
-description: This section describes ARICOMA Solutions - Slovak legislation
+title: ARICOMA SOLUTIONS - SK legislativní balíček| Microsoft Docs
+description: Popis ARICOMA rozšíření pro Business Central
 author: kunes
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: Slovak, , additional functions, sale, VAT
-ms.author: v-makune
+ms.search.keywords: Slovensko, lokalizace, rozšiřující funkcionality, DPH
+ms.author: Martin Kuneš
 ---
 
 # Kontrolní výkaz DPH - nastavení
-> Aktualizace 31.07.2025
+
+> Aktualizace 21.09.2025
 
 Pro zajištění správné funkčnosti je potřeba nastavit několik níže uvedených oblastí.
 
@@ -36,7 +37,6 @@ XML schéma ke Kontrolnímu výkazu DPH je potřebné do aplikace naimportovat d
 6. do pole **Přiřazeno legislativě** vyberte hodnotu **SK**.
 7. Potvrďte pomocí tlačítka **OK**.
 
-
 ## Nastavení řádků výkazu DPH - rozšíření
 
 Pro zajištění správného vykazování Kontrolního výkazu DPH je potřeba nastavit pole v řádcích výkazu DPH:
@@ -44,13 +44,13 @@ Pro zajištění správného vykazování Kontrolního výkazu DPH je potřeba n
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Výkazy DPH** a poté vyberte související odkaz.
 2. Pro jednotlivé řádky výkazu DPH definujte pole:
 
-- Filtr kódu původu
-- Typ dokladu
-- Filtr typu dokladu
-- Sekce kontrolního výkazu DPH
-- Sekce kontrolního výkazu DPH pro fyzické osoby
+   - Filtr kódu původu
+   - Typ dokladu
+   - Filtr typu dokladu
+   - Sekce kontrolního výkazu DPH
+   - Sekce kontrolního výkazu DPH pro fyzické osoby
 
-![Import nespolehlivých plátců DPH z xml formátu](media/VAT_check_report.png)
+   ![Import nespolehlivých plátců DPH z xml formátu](media/VAT_check_report.png)
 
 3. Potvrďte pomocí tlačítka **OK**.
 
@@ -82,7 +82,11 @@ Pro jednotlivé sekce je potřeba nastavit sloupce, které budou exportovány do
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Sekce kontrolního výkazu DPH** a poté vyberte související odkaz.
 2. Označte řádek, pro který chcete nastavovat sloupce a poté zvolte funkci **Akce** -> **Sekce** -> **Nastavení sloupců sekcí výkazu**.
-3. Zadejte kódy dle plateného nařízení pro vykazování. V poli **Přiřazené pole v řádku výkazu** je nastavení z jakého systémového pole bude hodnota naplněna do Kontrolního výkazu.
+3. Zadejte kódy dle platného nařízení pro vykazování. V poli **Přiřazené pole v řádku výkazu** je nastavení, z jakého systémového pole bude hodnota naplněna do Kontrolního výkazu.
+
+> [!WARNING]
+> Pro zachování možnosti exportovat Kontrolní výkaz dle různých XML schémat, je třeba mít definovány pro každé schéma všechny sloupce.
+> ![Import nespolehlivých plátců DPH z xml formátu](media/VAT_check_report_section_columns.png)
 
 ## Viz také
 
