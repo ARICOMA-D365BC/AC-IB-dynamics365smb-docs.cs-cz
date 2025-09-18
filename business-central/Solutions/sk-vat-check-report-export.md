@@ -1,16 +1,18 @@
 ---
-title: ARICOMA SOLUTIONS - SK Legistaltive Pack| Microsoft Docs
-description: This section describes ARICOMA Solutions - Slovak legislation
+title: ARICOMA SOLUTIONS - SK legislativní balíček| Microsoft Docs
+description: Popis ARICOMA rozšíření pro Business Central
 author: kunes
 ms.service: dynamics365-business-central
 ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.search.keywords: Slovak, , additional functions, sale, VAT
-ms.author: v-makune
+ms.search.keywords: Slovensko, lokalizace, rozšiřující funkcionality, DPH
+ms.author: Martin Kuneš
 ---
 # Kontrolní výkaz DPH
+
+> Aktualizace 21.09.2025
 
 Funkcionalita umožňuje zpracování Kontrolního výkazu DPH a jeho export do souboru formátu xml, který je možné importovat na portál Finanční správy SR nebo do aplikace eDane.
 
@@ -24,7 +26,6 @@ Funkcionalita umožňuje zpracování Kontrolního výkazu DPH a jeho export do 
 
 > [!NOTE]
 > Pole **Detailní položka** v řádcích KV slouží pro systémové označení řádku. Pokud má hodnotu ANO  položku do kontrolního výkazu nevybere (nepřenese se do xml a nereportuje se na Finanční správu). Při uzavření KV se uzavřou i položky, které budou mít v tomto poli hodnotu ANO.
-
 > [!NOTE]
 > Pole **Upozornění** v řádcích KV je informativní pole, které upozorňuje na chybějící údaje u jednotlivých dokladů načítaných do KV.
 
