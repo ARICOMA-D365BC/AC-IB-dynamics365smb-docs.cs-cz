@@ -30,5 +30,5 @@ Pokud máte [nastaveno použití QR](sk-qr-bysquare-setup) pro vybraný způsob 
 ## Viz také
 
 [ARICOMA Řešení](solutions.md)  
-[SK Legislativní balíček](sk-legislative-pack.md)
-[Nastavení QR kódů na prodejních dokladech](sk-qr-bysquare-setup.md)
+[SK Legislativní balíček](sk-legislative-pack.md)  
+[Nastavení QR kódů na prodejních dokladech](sk-qr-bysquare-setup.md)  

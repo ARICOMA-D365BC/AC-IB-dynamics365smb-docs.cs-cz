@@ -40,5 +40,5 @@ Hlavní přepínač funkcionality QR kódů na prodejních dokladech je v Nastav
 ## Viz také
 
 [ARICOMA Řešení](solutions.md)  
-[SK Legislativní balíček](sk-legislative-pack.md)
-[QR kódy na prodejních dokladech](sk-qr-bysquare.md)
+[SK Legislativní balíček](sk-legislative-pack.md)  
+[QR kódy na prodejních dokladech](sk-qr-bysquare.md)  
