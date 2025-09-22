@@ -69,7 +69,7 @@ Tato funkcionalita je při správném nastavení vhodná nejen české, ale i pr
 
 **Funkce Vypočti a účtuj koeficient DPH**  
 
-Tato funkce umožňuje připravit tiskovou sestavu, popř. i zaúčtovat vypočtené odpočty DPH. Funkce pracuje pouze s položkami DPH obsahující kombinace účtoskupin nastavené pro odpočty DPH (viz [Sada rozšíření pro Finance - Nastavení - Krácení odpočtu DPH](controling-basic-setup#nastavení-krácení-odpočtu-dph)).
+Tato funkce umožňuje připravit tiskovou sestavu, popř. i zaúčtovat vypočtené odpočty DPH. Funkce pracuje pouze s položkami DPH obsahující kombinace účtoskupin nastavené pro odpočty DPH (viz [Sada rozšíření pro Finance - Nastavení - Krácení odpočtu DPH](app-extension-set-setup#nastavení-krácení-odpočtu-dph)).
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Vypočti a účtuj koeficient DPH** a poté vyberte související odkaz.
 2. V Možnostech vyplňte:
@@ -365,13 +365,13 @@ Potřeby firem v oblasti práce s číselnými řadami bývají rozmanitějš�
 
 Návaznosti lze využít v nejrůznějších oblastech, typicky na nákupních, prodejních, servisních dokladech či vazbě na ně, na objednávkách transferu, apod.
 
-Pro více informací navštivte [Nastavení](controling-basic-setup#nastavení-návazností-číselných-řad).
+Pro více informací navštivte [Nastavení](app-extension-set-setup#nastavení-návazností-číselných-řad).
 
 ## Zaokrouhlední faktury dle způsobu úhrady
 
 V praxi se často vyskytuje potřeba řešit zaokrouhlování faktur různě podle kontextu způsobu úhrady, např. jinak pro hotovostní operace, jinak pro úhrady z účtu či jinak pro doklady s úhradou pomocí zálohové faktury. Takovou možnost dnes firma má pro zaokrouhlení pomocí rozšířeného nastavení na bázi Kódu způsobu platby.
 
-Pro více informací navštivte [Nastavení](controling-basic-setup#nastavení-zaokrouhlení-dle-způsobu-úhrady).
+Pro více informací navštivte [Nastavení](app-extension-set-setup#nastavení-zaokrouhlení-dle-způsobu-úhrady).
 
 ## Ostatní funkcionality
 
@@ -440,5 +440,5 @@ Sestava **Definice datových struktur** může sloužit jako dokumentace k mig
 
 ## Viz také
 
-[Sada rozšíření pro Finance - Nastavení](controling-basic-setup.md)  
+[Sada rozšíření pro Finance - Nastavení](app-extension-set-setup.md)  
 [Financial Pack](finance-pack.md)  
