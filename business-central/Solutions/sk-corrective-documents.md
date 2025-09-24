@@ -11,7 +11,8 @@ ms.search.keywords: Slovak, , additional functions, internal correction, debit m
 ms.author: v-makune
 ---
 # Opravné doklady
-> Aktualizace: 13.05.2022
+
+> Aktualizace 31.05.2024
 
 Zadání opravných dokladů s použitím nastaveného kódu původu a případným vyplněním původního čísla dokladu umožňuje správně přiřadit nebo vyloučit tyto transakce do Výkazu DPH. Podmínkou je nastavení polí Filtr kódu původu, Typ dokladu a Filtr typu dokladu na řádku Výkazu DPH.
 

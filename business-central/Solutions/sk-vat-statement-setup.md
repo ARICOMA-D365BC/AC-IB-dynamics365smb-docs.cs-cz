@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Výkaz DPH - nastavení
 
+> Aktualizace 31.05.2024
+
 Pro generování výkazu DPH je využita standardní funkčnost systému. Tato funkčnost byla upravena o specifika slovenského vykazování.
 
 Pro zajištění správné kalkulace částek Výkazu DPH a exportu do požadované struktury XML dle slovenské legislativy, je potřeba nastavit několik níže uvedených oblastí.

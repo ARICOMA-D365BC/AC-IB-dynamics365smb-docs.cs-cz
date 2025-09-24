@@ -12,7 +12,8 @@ ms.author: v-makune
 ---
 
 # Institut nespolehlivosti plátce
-> Aktualizace: 03.03.2022
+
+> Aktualizace 31.05.2024
 
 Funkcionalita zahrnuje systémové kontroly, které upozorňují uživatele na nespolehlivého plátce DPH při zpracování dokladů. Dále obsahuje kontroly, zda je použitý bankovní účet partnera registrovaný pro podnikání v SR dle zákona 222/2004 Z.z.
 

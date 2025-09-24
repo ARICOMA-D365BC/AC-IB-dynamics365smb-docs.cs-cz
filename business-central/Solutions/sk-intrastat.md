@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Výkaz Intrastat
 
+> Aktualizace 31.05.2024
+
 Pro účely generování výkazu Intrastat se používá standartní funkcionalita.
 
 Rozdíl oproti standardní funkčnosti je v struktuře souboru s příponou .xml generovaném pro účely slovenského vykazování.

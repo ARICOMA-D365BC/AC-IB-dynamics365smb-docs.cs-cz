@@ -13,6 +13,8 @@ ms.author: jelen
 
 # Nastavení QR kódů na prodejních dokladech
 
+> Aktualizace 21.09.2025
+
 ## Nastavení API
 
 Registrační údaje pro přístup k API službě **by square®** je třeba zadat do Business Central.
