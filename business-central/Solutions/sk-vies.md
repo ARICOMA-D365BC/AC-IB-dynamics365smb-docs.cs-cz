@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Souhrnný výkaz (VIES)
 
+> Aktualizace 31.05.2024
+
 Na vytvoření Souhrnného výkazu je použita standartní funkcionalita.
 
 Rozdíl oproti standardní funkčnosti je v struktuře souboru XML generovaném pro účely slovenského vykazování.

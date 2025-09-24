@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Import směnných kurzů z ECB
 
+> Aktualizace 31.05.2024
+
 Při importu směnných kurzů z ECB je zajištěn datumový posun platnosti směnného kurzu.
 Do tabulky směnných kurzů se naimportuje kurz s datumem platnosti posunutým o 1 den dopředu oproti datumu vyhlášení na webových stránkách ECB.
 

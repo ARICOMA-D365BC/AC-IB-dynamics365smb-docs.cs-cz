@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Daňové odpisy
 
+> Aktualizace 31.05.2024
+
 Podle Zákona o dani z príjmov č. 595/2003 Z. z  může daňovník uplatnit roční odpisy v prvním roce odepisování jen ve výši odpovídající počtu kalendářních měsíců, ve kterých se majetek využíval na zabezpečení příjmů.
 
 ## Nastavení krácení odpisů v 1. roce

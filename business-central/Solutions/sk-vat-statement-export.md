@@ -12,6 +12,8 @@ ms.author: v-makune
 ---
 # Výkaz DPH - export
 
+> Aktualizace 31.05.2024
+
 Pro zpracování Výkazu DPH je využita standardní funkcionalita Výkazu DPH. Z důvodu zapracování slovenských legislativních specifik byla standardní funkčnost Výkazu DPH rozšířena o dodatečné funkčnosti tak, aby byla zajištěna správná kalkulace částek výkazu DPH a aby bylo možné exportovat XML soubor v požadovaném formátu. Vyexportovaný soubor je možné importovat na portál Finanční správy SR nebo do aplikace eDane.
 
 Pro export výkazu DPH použijte následující postup:

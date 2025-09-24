@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # SEPA Platby
 
+> Aktualizace 31.05.2024
+
 Pro zpracování příkazu pro úhradu či výpisu ve formátu SEPA je využita standartní funkčnost systému.
 
 ## Nastavení SEPA platebního styku:
