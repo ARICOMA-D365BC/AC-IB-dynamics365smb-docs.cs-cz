@@ -8,6 +8,7 @@ ms.service: dynamics-365-business-central
 ms.search.keywords: GP Tom Integration, Streamline Tools, Global Payments
 ---
 # Integrace s GP tom
+
 > Update 07.07.2025
 
 Addon **Integrace s GP tom** je určen především pro bezešvou integraci Business Central s platebními terminály, aby se staly nativní součástí obchodních procesů. Navíc umožnuje provádět i související obslužné operace přímo z prostředí BC.
@@ -29,11 +30,11 @@ V tomto případě se jedná o standardní funkcionalitu BC, kde uživatel pro z
 4. Na stránce **Registrovat platbu** zadejte v poli Částka hodnotu pro úhradu terminálem.
 5. Spusťte akci *Zaplatit*.
 6. Na terminálu se objeví dialog „Přiložte kartu“.
-![Attach Card](media/GPtom_toPay.png)
+    <img src="media/gptom_topay.png" alt="Attach Card" width="50%" height="50%">
 7. Po úspěšné úhradě se objeví dialog, kde obsluha provede odeslání dokladu o platbě (popř. může rovnou Dokončit proces)
-![Successful payment](media/GPtom_succPayment.png)
+    <img src="media/gptom_succpayment.png" alt="Successful payment" width="50%" height="50%">
 8. V dialogu pro odeslání účtenky je předvyplněn způsob odeslání nastavený pro příslušný terminál
-![Sending receipt](media/GPtom_printReceipt.png)
+    <img src="media/gptom_printreceipt.png" alt="Sending receipt" width="50%" height="50%">
 9. Po ukončení procesu platby na terminálu se na stránce Registrovat platbu objeví oznámení s výsledkem operace, vč. volby Otevřít položku pro zobrazení položky s detaily o proběhlé komunikaci s terminálem.
 
 > [!TIP]
@@ -59,7 +60,7 @@ Specifickým nastavením je myšleno především zpracování spropitného a ji
 
 Tuto operaci je možné provést přímo z BC, ale samozřejmě i [na terminálu](https://www.gptom.com/docs/manual/zakladni-funkce/storno-platby/) (podmínky storna jsou dány podmínkami GP tom v závislosti na konkrétním trhu).
 
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Transakce platebního terminálu** a poté vyberte související odkaz. 
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Transakce platebního terminálu** a poté vyberte související odkaz.
 2. Na stránce **Transakce platebního terminálu** vyberte záznam, který chcete stornovat.
 3. Spusťte akci *Storno transakce*.
 4. Na potvrzujícím dialogu stiskněte Ano.
@@ -69,7 +70,7 @@ Tuto operaci je možné provést přímo z BC, ale samozřejmě i [na terminálu
 
 Může se stát, že terminál bude zpracovávat transakci déle, než je nastavená čekací doba. Nebo že transakce byla zrušena přímo na terminálu. V takovém případě je třeba, aby se dodatečně aktualizovala evidence v BC tak, aby obsahovala finální stav transakce.
 
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Transakce platebního terminálu** a poté vyberte související odkaz. 
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Transakce platebního terminálu** a poté vyberte související odkaz.
 2. Na stránce **Transakce platebního terminálu** vyberte záznam, který chcete aktualizovat (s hodnotou „Vytvořená“ v poli Stav transakce).
 3. Spusťte akci *Aktualizovat stav transakce*.
 4. Ověřte, že se změnil stav transakce a byly doplněny další údaje identifikují transakci (např. ID transakce).
@@ -82,7 +83,7 @@ Tato možnost je dostupná pouze na terminálu v seznamu plateb.
 
 Tuto administrativní operaci je možné provést přímo z BC, ale samozřejmě i [na terminálu](https://www.gptom.com/docs/manual/zakladni-funkce/uzaverka/).
 
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Platební terminály** a poté vyberte související odkaz. 
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Platební terminály** a poté vyberte související odkaz.
 2. Na stránce **Platební terminály** vyberte terminál, na kterém chcete provést uzávěrku.
 3. Spusťte akci *Provést uzávěrku*.
 4. V aplikaci na terminálu se otevře seznam uzavřených dávek.
