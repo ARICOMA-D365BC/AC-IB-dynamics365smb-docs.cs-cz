@@ -28,7 +28,7 @@ Pro aktivování slovenských funkčností využijte následující postup:
 ## Nastavení XML schémat
 
 > [!TIP]
-> Kompletní nastavení Kontrolního výkazu DPH najdete v Konfiguračním balíčku, který získáte spuštěním Asistovaného nastavení *Nastavit SK lokalizaci* (buď do nové Společnosti, popř. volbou pro nahrazení staršího balíčku v existující společnosti).
+> Kompletní nastavení XML schémat najdete v Konfiguračním balíčku, který získáte spuštěním Asistovaného nastavení *Nastavit SK lokalizaci* (buď pouze naimportujte poslední verzi pomocí tlačítka *AssistEdit* ve stávající společnosti nebo v prázdné společnosti proveďte kompletní import vzorové parametrizace pomocí akce *Použít balíček*).
 
 XML schéma ke Kontrolnímu výkazu DPH je potřebné do aplikace naimportovat do XML schémat.
 
@@ -44,7 +44,9 @@ XML schéma ke Kontrolnímu výkazu DPH je potřebné do aplikace naimportovat d
 >
 > | XML port ID | Platnost    |
 > |   --------  | -------     |
-> |   52068871  | od 1.1.2020 |
+> |   52068903  | od 1.1.2017 |
+> |   52068904  | od 1.1.2021 |
+> |   52068845  | od 1.1.2023 |
 > |   52068847  | od 1.1.2025 |
 
 ## Nastavení řádků výkazu DPH - rozšíření
