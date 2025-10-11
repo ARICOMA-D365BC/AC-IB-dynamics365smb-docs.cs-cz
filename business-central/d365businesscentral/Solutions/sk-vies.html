@@ -69,6 +69,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="souhrnný-výkaz-vies">Souhrnný výkaz (VIES)</h1>
 
+<blockquote>
+<p>Aktualizace 31.05.2024</p>
+</blockquote>
 <p>Na vytvoření Souhrnného výkazu je použita standartní funkcionalita.</p>
 <p>Rozdíl oproti standardní funkčnosti je v struktuře souboru XML generovaném pro účely slovenského vykazování.</p>
 <h2 id="nastavení-financí">Nastavení financí</h2>
@@ -79,17 +82,41 @@
 <li>Potvrďte pomocí tlačítka <strong>OK</strong>.</li>
 </ol>
 <h2 id="nastavení-xml-schémat">Nastavení XML schémat</h2>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Kompletní nastavení XML schémat najdete v Konfiguračním balíčku, který získáte spuštěním Asistovaného nastavení <em>Nastavit SK lokalizaci</em> (buď pouze naimportujte poslední verzi pomocí tlačítka <em>AssistEdit</em> ve stávající společnosti nebo v prázdné společnosti proveďte kompletní import vzorové parametrizace pomocí akce <em>Použít balíček</em>).</p>
+</div>
 <p>Do XML schémat naimportujte aktuální šablonu XML schématu dle následujícího postupu:</p>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>XML schémata</strong> a poté vyberte související odkaz.</li>
 <li>Na stránce <strong>XML schémata</strong> v sekci <strong>Proces</strong> vyberte akci <strong>Načíst schéma</strong>.</li>
 <li>Otevře se vám okno pro import, kde vyberete příslušný XML soubor.</li>
 <li>Po importu se na kartě <strong>XML schémata</strong> objeví nový řádek.</li>
-<li>V příslušném řádku pro každé XML vyberte správné číslo ve sloupci SML portID.
-Souhrnný Výkaz to je <strong>52068870</strong>.</li>
+<li>Do pole <strong>XML port ID</strong> vyberte hodnotu pro příslušný rok platnosti - viz tabulka níže.</li>
 <li>V poli <strong>Přiřazeno legislativě</strong> vyberte hodnotu <strong>SK</strong>.</li>
 <li>Potvrďte pomocí tlačítka <strong>OK</strong>.</li>
 </ol>
+<div class="NOTE">
+<h5>Note</h5>
+<table>
+<thead>
+<tr>
+<th>XML port ID</th>
+<th>Platnost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>52068871</td>
+<td>od 1.1.2019</td>
+</tr>
+<tr>
+<td>52068870</td>
+<td>od 1.1.2022</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h2 id="viz-také">Viz také</h2>
 <p><a href="solutions.html">ARICOMA Řešení</a><br>
 <a href="sk-legislative-pack.html">SK Legislativní balíček</a></p>
@@ -101,7 +128,7 @@ Souhrnný Výkaz to je <strong>52068870</strong>.</li>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/2025_NewStructure/business-central/Solutions/sk-vies.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/Solutions/sk-vies.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
                   </li>
                 </ul>
               </div>
