@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Export účetní zavěrky - SK - nastavení
 
+> Aktualizace 31.05.2024
+
 Pro definování statutárních výkazů slovenské legislativy (Rozvahy a Výkazu zisků a ztrát) je v systému D365 BC využívána standartní funkčnost účetních schémat doplněná o úpravy, které umožňují import účetní závěrky na portál Finanční správy SR prostřednictvím .xml souboru.
 
 Pro zajištění exportu účetní závěrky je potřeba nastavit několik níže uvedených oblastí.

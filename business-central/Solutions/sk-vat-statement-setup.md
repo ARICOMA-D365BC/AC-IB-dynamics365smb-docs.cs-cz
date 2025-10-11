@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Výkaz DPH - nastavení
 
+> Aktualizace 31.05.2024
+
 Pro generování výkazu DPH je využita standardní funkčnost systému. Tato funkčnost byla upravena o specifika slovenského vykazování.
 
 Pro zajištění správné kalkulace částek Výkazu DPH a exportu do požadované struktury XML dle slovenské legislativy, je potřeba nastavit několik níže uvedených oblastí.
@@ -27,16 +29,26 @@ Pro aktivování slovenských funkčností využijte následující postup:
 
 ## Nastavení XML schémat
 
+> [!TIP]
+> Kompletní nastavení XML schémat najdete v Konfiguračním balíčku, který získáte spuštěním Asistovaného nastavení *Nastavit SK lokalizaci* (buď pouze naimportujte poslední verzi pomocí tlačítka *AssistEdit* ve stávající společnosti nebo v prázdné společnosti proveďte kompletní import vzorové parametrizace pomocí akce *Použít balíček*).
+
 Do XML schémat naimportujte aktuální šablonu XML schématu dle následujícího postupu:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **XML schémata** a poté vyberte související odkaz.
 2. Na stránce **XML schémata** v sekci **Proces** vyberte akci **Načíst schéma**.
 3. Otevře se vám okno pro import, kde vyberete příslušný XML soubor.
 4. Po importu se na kartě **XML schémata** objeví nový řádek.
-5. V příslušném řádku pro každé XML vyberte správné číslo ve sloupci SML portID.
-Pro Výkaz DPH od roku 2018 to je **52068861**, pro Výkaz DPH do roku 2017 to je **52068860**, pro Kontrolní výkaz DPH **52068903** a pro Souhrnný Výkaz to je **52068870**.
+5. Do pole **XML port ID** vyberte hodnotu pro příslušný rok platnosti - viz tabulka níže.
 6. V poli **Přiřazeno legislativě** vyberte hodnotu **SK**.
 7. Potvrďte pomocí tlačítka **OK**.
+
+>[!NOTE]
+>
+> | XML port ID | Platnost    |
+> |   --------  | -------     |
+> |   52068861  | od 1.1.2018 |
+> |   52068862  | od 1.1.2021 |
+> |   52068860  | od 1.1.2025 |
 
 ## Nastavení šablon výkazu DPH
 
@@ -58,10 +70,10 @@ Pro zajištění správného vykazování DPH je potřeba nastavit pole v řádc
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Výkazy DPH** a poté vyberte související odkaz.
 2. Pro jednotlivé řádky výkazu DPH definujte pole:
 
-- Filtr kódu původu
-- Typ dokladu
-- Filtr typu dokladu
-- ID elementu XML schématu - vyplěním bude automaticky vyplněn i Kód atributu DPH
+    - Filtr kódu původu
+    - Typ dokladu
+    - Filtr typu dokladu
+    - ID elementu XML schématu - vyplěním bude automaticky vyplněn i Kód atributu DPH
 
 3. Potvrďte pomocí tlačítka **OK**.
 
@@ -105,5 +117,5 @@ V Nastavení financí a Nastavení účtování DPH je možné aktivovat systém
 ## Viz také
 
 [ARICOMA Řešení](solutions.md)  
-[SK Legislativní balíček](sk-legislative-pack.md)   
+[SK Legislativní balíček](sk-legislative-pack.md)
 [Výkaz DPH - export](sk-vat-statement-export.md)

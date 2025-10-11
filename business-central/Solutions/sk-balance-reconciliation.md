@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Odlouhlasení pohledávek a závazků
 
+> Aktualizace 31.05.2024
+
 V souladu s ustanovením §29 a §30 zák.č. 431/2002 Zz. o účetnictví v platném znění vykonávají účetní jednotky inventarizaci ke dni sestavení řádné nebo mimořádné účetní závěrky.
 Pro tyto účely mohou být použity sestavy „Odsouhlasení salda dodavatele“ a „Odsouhlasení salda zákazníka“.
 

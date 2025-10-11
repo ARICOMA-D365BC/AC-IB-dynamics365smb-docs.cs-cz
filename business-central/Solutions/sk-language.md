@@ -13,6 +13,8 @@ ms.author: v-makune
 
 # Slovenský jazyk pro Business Central
 
+> Aktualizace 31.05.2024
+
 Tato nápověda Vám pomůže nastavit Business Central do slovenského jazyka.
 
 Pro změnu jazyka postupujte tímto způsobem:

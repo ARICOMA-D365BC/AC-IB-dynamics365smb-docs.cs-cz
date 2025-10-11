@@ -13,6 +13,8 @@ ms.author: jelen
 
 # QR kódy na prodejních dokladech
 
+> Aktualizace 21.09.2025
+
 Tato funkcionalita integruje Business Central se službou **by square®**. K využívání služby je třeba se u ní za firmu zaregistrovat a objednat si některý z [balíčků](https://app.bysquare.com/App/BalikySluzieb) dle počtu generovaných QR kódů.
 
 QR kódy ve formátu **PAY by square** se zobrazují na těchto sestavách:
