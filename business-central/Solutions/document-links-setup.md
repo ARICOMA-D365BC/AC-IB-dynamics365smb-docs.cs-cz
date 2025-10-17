@@ -98,7 +98,7 @@ Funkcionalitu modulu je třeba globálně zapnout:
 ## Přidání Připojených dokumentů k vybrané funkcionalitě BC
 ### Krok 1 – Přidání na stránku jako Pageextension
 
-Na všechny stránky, kde má být funkcionalita dostupná, musí být doplněno okno s fakty „DocumentLinksFactBox_ach“. Pokud si nejste jistí, jak vytvořit rozšíření stránky (viz následující kód), požádejte svého BC partnera.
+Na všechny stránky, kde má být funkcionalita dostupná, musí být doplněno okno s fakty „DocumentLinksFactBox_ach“. Pokud si nejste jistí, jak vytvořit rozšíření stránky (viz následující kód), požádejte svého Business Central partnera.
 
     {
         layout
@@ -200,7 +200,7 @@ V některých případech je třeba omezit přístup uživatelů k šablonám. E
 4.	Zavřete stránku.
 
 ## Nastavení atributů knihovny dokumentů
-Nejčastěji je funkcionalita atributů v BC využita k tomu, aby se automatizovaně či ručně doplnila metadata (sloupce) k souboru ukládanému v knihovně Sharepoint (viz Vytvoření sloupce v seznamu nebo knihovně - Podpora Microsoftu).
+Nejčastěji je funkcionalita atributů v Business Central využita k tomu, aby se automatizovaně či ručně doplnila metadata (sloupce) k souboru ukládanému v knihovně Sharepoint (viz Vytvoření sloupce v seznamu nebo knihovně - Podpora Microsoftu).
 
 1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Knihovny dokumentů** a poté vyberte související odkaz.
 2.	Na stránce Knihovny dokumentů vyberte knihovnu a spusťte akci Atributy dokumentů.
@@ -210,7 +210,7 @@ Nejčastěji je funkcionalita atributů v BC využita k tomu, aby se automatizov
 6.	Zavřete stránku.
 
 > [!NOTE]
-> Pokud se v průběhu času upraví definice hodnot sloupců SharePoint (primárně se jedná o typ Volba), je třeba tyto změny promítnout do BC ručně. 
+> Pokud se v průběhu času upraví definice hodnot sloupců SharePoint (primárně se jedná o typ Volba), je třeba tyto změny promítnout do Business Central ručně. 
 
 Je-li požadován atribut pro využití pouze na úrovni BC, je možné jej definovat. Následující příklad popisuje jeden povinný atribut pro evidenci jména prodejce
 1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Knihovny dokumentů** a poté vyberte související odkaz.

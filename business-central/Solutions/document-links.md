@@ -37,10 +37,10 @@ Chci bez vazby nahrát dokument.
 6.	Zavřete stránku. 
 
 > [!NOTE]
-> Pro automatické přidávání položek knihovny v BC pro nové soubory/složky přidané přímo na SharePoint (synchronizace obsahu) je možné na knihovně dokumentů zapnout volbu **Automatická synchronizace SharePoint**.
+> Pro automatické přidávání položek knihovny v Business Central pro nové soubory/složky přidané přímo na SharePoint (synchronizace obsahu) je možné na knihovně dokumentů zapnout volbu **Automatická synchronizace SharePoint**.
 
 ## Vytvoření složky v knihovně BC
-Kromě nahrání souboru je rovněž možné přímo v BC knihovně vytvořit složku, která se automaticky založí i v SharePoint.
+Kromě nahrání souboru je rovněž možné přímo v Business Central knihovně vytvořit složku, která se automaticky založí i v SharePoint.
 
 1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Knihovny dokumentů** a poté vyberte související odkaz..
 2.	Spusťte akci Položky pro otevření seznamu položek knihovny evidovaných v BC.
@@ -52,7 +52,7 @@ Kromě nahrání souboru je rovněž možné přímo v BC knihovně vytvořit sl
 
 
 ## Připojené dokumenty
-Pokud chcete zjistit, ke kterým všem entitám v BC je příslušný dokument připojen, postupujte takto:
+Pokud chcete zjistit, ke kterým všem entitám v Business Central je příslušný dokument připojen, postupujte takto:
 
 1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Knihovny dokumentů** a poté vyberte související odkaz.
 2.	Spusťte akci Položky pro otevření seznamu položek knihovny evidovaných v BC.

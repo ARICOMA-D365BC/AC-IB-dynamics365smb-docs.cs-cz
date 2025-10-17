@@ -16,7 +16,7 @@ Modul Rozšíření CZ bankovnictví rozšiřuje funkčnost „Bankovní doklady
 
 Hlavním přínosem modulu je zjednodušení importu a následného zpracování bankovních výpisů a tím snížení rutinních činností uživatelů.
 
-Výhodou je variabilita v nastavení importu bankovních výpisů do BC a jejich následné zpracování, kdy lze individuálně nastavit režim pro každý bankovní účet zvlášť.
+Výhodou je variabilita v nastavení importu bankovních výpisů do Business Central a jejich následné zpracování, kdy lze individuálně nastavit režim pro každý bankovní účet zvlášť.
 
 Modul umožňuje podporu uživatelů při zpracování výpisů ve 2 úrovních: Základní a Pokročilá.
 
@@ -80,7 +80,7 @@ Nastavení pro funkčnost viz [Formáty bankovních výpisů a platebních pří
 > [!TIP]
 > Nejčastější chyby:
 >
-> - Importovaný soubor již v BC existuje --> v tom případě je v poli Stav zobrazený stav zpracování v BC.
+> - Importovaný soubor již v Business Central existuje --> v tom případě je v poli Stav zobrazený stav zpracování v BC.
 > - Číslo bankovního účtu nebylo rozpoznáno --> v tom případě je pole „Číslo bankovního účtu“ vyznačeno červeně.
 >  - Buď importovaný soubor nepatří do importované společnosti
 >  - nebo v souboru bankovního výpisu je číslo účtu v jiném formátu, obvykle předčíslí a číslo účtu bez pomlčky.  V tomto případě proveďte nastavení dle [Číslo bank.účtu na bank.výpisu (volitelné)](cz-banking-extension-setup\#číslo-bankúčtu-na-bankvýpisu-volitelné).
@@ -93,7 +93,7 @@ Soubory je potřeba zkomprimovat do jednoho .zip souboru, který bude naimportov
 Postup importu bankovního výpisu je stejný, jak je popsáno v [Základní - Import a zpracování hromadného bankovního výpisu](#základní--import-a-zpracování-hromadného-výpisu).
 
 > [!NOTE]
-> Více souborů najednou lze předat přímo v dialogovém okně pro výběr souboru (od verze BC26).
+> Více souborů najednou lze předat přímo v dialogovém okně pro výběr souboru (od verze Business Central version 26).
 
 ### Základní – Export souboru platebního příkazu
 
@@ -104,7 +104,7 @@ Export platebních příkazů se provádí na kartě Vydaného platebního pří
 
 ### Pokročilá – manuální import pro více společností
 
-Scénář popisuje situaci, kdy v prostředí BC je více společností a import bankovních výpisů bude prováděn centrálně pro více společností najednou z lokálního úložiště.
+Scénář popisuje situaci, kdy v prostředí Business Central je více společností a import bankovních výpisů bude prováděn centrálně pro více společností najednou z lokálního úložiště.
 
 Importuje se do tabulky Centrální zásobník bankovních výpisů. Záznamy tabulky jsou společné pro všechny společnosti. Importované výpisy jsou zde uložené pro další zpracování. Po jejich zpracování je vhodné je průběžně mazat.
 
@@ -119,13 +119,13 @@ Importuje se do tabulky Centrální zásobník bankovních výpisů. Záznamy ta
 > [!NOTE]
 > Pokud importujete soubor ve formátu .zip, funkčnost z komprimovaných souborů naimportuje pouze podporované formáty. Pokud jsou v .zip nepodporované formáty, import je ignoruje.
 >
-> Více souborů najednou lze předat přímo v dialogovém okně pro výběr souboru (od verze BC26).
+> Více souborů najednou lze předat přímo v dialogovém okně pro výběr souboru (od verze Business Central version 26).
 
 ### Pokročilá – automatizovaný import pro více společností
 
-V tomto případě se jedná o situaci, kdy v prostředí BC je více společností a import bankovních výpisů bude prováděn centrálně pro všechny společnosti automaticky bez zásahu uživatele.
+V tomto případě se jedná o situaci, kdy v prostředí Business Central je více společností a import bankovních výpisů bude prováděn centrálně pro všechny společnosti automaticky bez zásahu uživatele.
 
-Příkladem může být přímá komunikace s bankou prostřednictvím API, kdy si BC přímo stahuje výpisy nebo realizované transakce a ukládá je do Centrálního zásobníku bankovních výpisů pro jejich další zpracování.
+Příkladem může být přímá komunikace s bankou prostřednictvím API, kdy si Business Central přímo stahuje výpisy nebo realizované transakce a ukládá je do Centrálního zásobníku bankovních výpisů pro jejich další zpracování.
 
 Popis nastavení automatizace importu najdete v [Automatické stahování výpisů do centrálního zásobníku](cz-banking-extension-setup\#automatické-stahování-výpisů-do-centrálního-zásobníku)
 

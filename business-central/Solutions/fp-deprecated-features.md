@@ -21,7 +21,7 @@ Tato stránka obsahuje seznam funkcionalit, které byly přesunuty, odstraněny 
 
 |Přesunuto, Smazáno nebo Nahrazeno?|Kdy?|
 |----|----|
-|Smazáno|od verze BC15|
+|Smazáno|od verze Business Central version 15|
 
 
 ## Finance - Přenesená daňová povinnost
@@ -29,7 +29,7 @@ Tato stránka obsahuje seznam funkcionalit, které byly přesunuty, odstraněny 
 
 |Přesunuto, Smazáno nebo Nahrazeno?|Kdy?|
 |----|----|
-|Smazáno|od verze BC15|
+|Smazáno|od verze Business Central version 15|
 
 
 ## Skonto dobropisy pro CZ
@@ -37,7 +37,7 @@ Tato stránka obsahuje seznam funkcionalit, které byly přesunuty, odstraněny 
 
 |Přesunuto, Smazáno nebo Nahrazeno?|Kdy?|
 |----|----|
-|Nahrazeno|od verze BC15|
+|Nahrazeno|od verze Business Central version 15|
 
 Protože byla z CZ lokalizace vypuštěna základní funkcionalita pro tvorbu prodejních skonto dobropisů, není již rozšiřující funkcionalita součástí modulu Sada rozšíření aplikace.
 
@@ -45,7 +45,7 @@ Protože byla z CZ lokalizace vypuštěna základní funkcionalita pro tvorbu 
 
 |Přesunuto, Smazáno nebo Nahrazeno?|Kdy?|
 |----|----|
-|Smazáno|od verze BC15|
+|Smazáno|od verze Business Central version 15|
 
 ## Viz také
 [Financial Pack](finance-pack.md)  

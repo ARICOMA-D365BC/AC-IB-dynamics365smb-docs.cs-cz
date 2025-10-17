@@ -29,7 +29,7 @@ Každé fyzické zařízení musí být zaevidováno v tabulce Platební termin�
 4.	V poli *ID terminálu* zadejte číslo přiřazené terminálu.
 5.	V poli *Uživatelské jméno obchodníka GP tom* zadejte jméno (e-mail) uživatele terminálu.
 6.	V poli *Heslo obchodníka GP tom* zadejte heslo uživatele terminálu.
-7.	V poli *Časový limit transakcí GP tom (s)* ponechte výchozí hodnotu, pokud nemáte specifický požadavek na zkrácení či prodloužení času, kdy BC neukončí čekání na odezvu z terminálu.
+7.	V poli *Časový limit transakcí GP tom (s)* ponechte výchozí hodnotu, pokud nemáte specifický požadavek na zkrácení či prodloužení času, kdy Business Central neukončí čekání na odezvu z terminálu.
 8.	V poli *Preferovaný typ platby* zvolte Karta. 
 9.	V poli *Preferovaný typ účtenky* zvolte, má-li být stvrzenka z terminálu vytisknuta nebo zaslána e-mailem či na mobilní telefon.
 10.	V poli *Čísla dokladů plateb* vyberte číselnou řadu pro označení záznamů o platbách v BC.
