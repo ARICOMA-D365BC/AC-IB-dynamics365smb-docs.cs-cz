@@ -40,6 +40,9 @@ Nastavení slouží pro mapování polí v aplikaci na uzly .xml. Tato tabulka j
 
 ![Mapování souboru](media/sk-intrastat.png)
 
+> [!TIP]
+> Kompletní nastavení mapování najdete v Konfiguračním balíčku, který získáte spuštěním Asistovaného nastavení *Nastavit SK lokalizaci* (buď pouze naimportujte poslední verzi pomocí tlačítka *AssistEdit* ve stávající společnosti nebo v prázdné společnosti proveďte kompletní import vzorové parametrizace pomocí akce *Použít balíček*).
+
 ## Export souboru pro Intrastat
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Deníky Intrastat** a poté vyberte související odkaz.
