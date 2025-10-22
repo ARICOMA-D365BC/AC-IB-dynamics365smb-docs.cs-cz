@@ -163,7 +163,7 @@ Zaúčtováním takovéto faktury dojde také k přeúčtování částky přepl
 >[!NOTE]
 >Na zaúčtované faktuře, která obsahuje alespoň jeden řádek účtovaný jako přeplatek, nelze aplikovat funkce odúčtování přiřazených záloh ani dodatečné přiřazení záloh.
 
-#### Vrácení přeplatku nákupní zálohy (BC14 a starší)
+#### Vrácení přeplatku nákupní zálohy (Business Central version 14 a starší)
 
 Po vytvoření finální nákupní faktury a přiřazení uhrazené nákupní zálohy je v případě přeplatku na záloze možné vložit další řádek s částkou přeplatku a příznakem Určeno pro vrácení zálohy (příznak je následně i na řádku zaúčtované faktury).
 
@@ -174,7 +174,7 @@ Zaúčtováním faktury pak pro každý takový řádek s přeplatkem vznikne 
 
 ## Credit Check
 
-Jedná se o integraci BC na komerční službu CreditCheck, která slouží pro kontrolu bonity partnerů.
+Jedná se o integraci Business Central na komerční službu CreditCheck, která slouží pro kontrolu bonity partnerů.
 
 Proto, aby v systému bylo co nejvíce informací o vybraném partnerovi, jsou informace importovány přes webovou službu Creditcheck ERP viz. <http://www.creditcheck.cz/ProductDetail.aspx?id=02>.
 
@@ -406,7 +406,7 @@ Sestava **Definice datových struktur** může sloužit jako dokumentace k mig
 
     Na Deníku odsouhlasení doplněna funkce Účto a Tisk.
 
-    Poznámka: Od verze BC19 je doporučeno využívat novější funkcionalitu Bankovní dokumenty, která nevyužívá Deník odsouhlasení.
+    Poznámka: Od verze Business Central version 19 je doporučeno využívat novější funkcionalitu Bankovní dokumenty, která nevyužívá Deník odsouhlasení.
 
 - **Pokladny**
 
@@ -418,7 +418,7 @@ Sestava **Definice datových struktur** může sloužit jako dokumentace k mig
 
     Nová CU 52057071 "QR Code_acb", kde je funkce pro QR kód pro prodejní fakturu. Používá se .NET komponenta Microsoft.Dynamics.Nav.MX.dll, která je standardní AddIn od MS. Příklad použití je v reportu 52057066 "Sales - Invoice QR_acb", jen tisk samotného QR kódu a příklad volání funkce.
 
-    Poznámka: v BC online je nutné použít odlišný způsob – viz [Barcode Fonts with Business Central Online - Business Central | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-report-barcode-fonts#one-dimensional-barcode-fonts-with-business-central-online)
+    Poznámka: v Business Central online je nutné použít odlišný způsob – viz [Barcode Fonts with Business Central Online - Business Central | Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-report-barcode-fonts#one-dimensional-barcode-fonts-with-business-central-online)
 
 ### Sklad
 

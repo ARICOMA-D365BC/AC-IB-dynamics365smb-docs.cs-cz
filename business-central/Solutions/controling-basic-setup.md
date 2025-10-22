@@ -157,7 +157,7 @@ V nastavení kontroly CreditCheck je možné zapnout aktualizaci vytváření 
 
 ### Metody výpočtu ceny (od verze 22.0, volitelně od 18.0)
 
-Od verze BC 22 (popř. od BC 18 pokud máte ve Správě funkcí zapnuto „Aktualizace funkcí: Nové zkušenosti s cenami prodeje“) provedete zapnutí hierarchického návrhu prodejních cen zboží takto:
+Od verze Business Central version 22 (popř. od Business Central version 18 pokud máte ve Správě funkcí zapnuto „Aktualizace funkcí: Nové zkušenosti s cenami prodeje“) provedete zapnutí hierarchického návrhu prodejních cen zboží takto:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Metody výpočtu ceny** a poté vyberte související odkaz.
 2. Kliknutím vyberte metodu Nejnižší cena.
@@ -168,10 +168,10 @@ Od verze BC 22 (popř. od BC 18 pokud máte ve Správě funkcí zapnuto „Aktua
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení prodeje a pohledávek** a poté vyberte související odkaz.
 
 >[!TIP]
-> Nastavení závisí na používané verzi. Ve verzi BC17 pro zapnutí zvolte **Hierarchický návrh cen povolen**.
+> Nastavení závisí na používané verzi. Ve verzi Business Central version 17 pro zapnutí zvolte **Hierarchický návrh cen povolen**.
 >![Hierarchický návrh cen povolen](media/Hierarchical_price_setup.png)
 >[!TIP]
->Od verze BC18 doporučujeme používat zcela novou funkcionalitu pro cenotvorbu v BC.
+>Od verze Business Central version 18 doporučujeme používat zcela novou funkcionalitu pro cenotvorbu v BC.
 >Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Správa funkcí** a poté vyberte související odkaz. Ověřte, že máte funkci **Aktualizace funkcí: Nové zkušenosti s cenami prodeje** povolenu pro všechny uživatele.
 
 ## Nastavení kumulování plateb

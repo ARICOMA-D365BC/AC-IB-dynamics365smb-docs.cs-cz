@@ -51,7 +51,7 @@ Specifickým nastavením je myšleno především zpracování spropitného a ji
 5. Na záložce Platba klikněte na *Zobrazit více*.
 6. Zapněte příznak *Vybrat spropitné*, pokud se má na terminálu uživateli nabídnout zadání spropitného. V poli *Částka spropitného* pak zadejte částku, která se má na terminálu objevit.
 7. V poli *Měna* zadejte měnu, ve které má být úhrada provedena.
-8. V poli *Referenční číslo* můžete změnit označení transakce využívané pro trasovatelnost mezi záznamy v BC a v GP Tom.
+8. V poli *Referenční číslo* můžete změnit označení transakce využívané pro trasovatelnost mezi záznamy v Business Central a v GP Tom.
 9. Na záložce Možnosti vyberte v poli *Typ účtenky* hodnotu E-mail nebo Telefon; pak je třeba v poli Účtenku odeslat na zadat e-mailovou adresu, resp. telefonní číslo.
 10. Spusťte akci *Zaplatit*.
 11. Na terminálu se objeví dialog „Přiložte kartu“ a postupujte stejně jako je popsáno od bodu 6 dále v předchozí kapitole.
@@ -68,7 +68,7 @@ Tuto operaci je možné provést přímo z BC, ale samozřejmě i [na terminálu
 
 ### Aktualizace stavu transakce
 
-Může se stát, že terminál bude zpracovávat transakci déle, než je nastavená čekací doba. Nebo že transakce byla zrušena přímo na terminálu. V takovém případě je třeba, aby se dodatečně aktualizovala evidence v BC tak, aby obsahovala finální stav transakce.
+Může se stát, že terminál bude zpracovávat transakci déle, než je nastavená čekací doba. Nebo že transakce byla zrušena přímo na terminálu. V takovém případě je třeba, aby se dodatečně aktualizovala evidence v Business Central tak, aby obsahovala finální stav transakce.
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Transakce platebního terminálu** a poté vyberte související odkaz.
 2. Na stránce **Transakce platebního terminálu** vyberte záznam, který chcete aktualizovat (s hodnotou „Vytvořená“ v poli Stav transakce).

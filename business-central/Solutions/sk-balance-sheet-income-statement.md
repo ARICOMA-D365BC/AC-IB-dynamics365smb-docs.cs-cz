@@ -17,7 +17,7 @@ ms.author: v-makune
 
 Slovenské statutární výkazy, Rozvaha a Výkaz zisků a ztrát, se dle požadavku Finanční správy SR importují sloučené, v jednom .xml souboru.
 
-Pro zajištění tohoto požadavku je v D365 BC použita standardní funkčnost účetních schémat rozšířena o dodatečné úpravy. Samotný export pracuje s uloženými výsledky účetních schémat.
+Pro zajištění tohoto požadavku je v D365 Business Central použita standardní funkčnost účetních schémat rozšířena o dodatečné úpravy. Samotný export pracuje s uloženými výsledky účetních schémat.
 
 ## Uložení výsledků účetních schémat pro export
 

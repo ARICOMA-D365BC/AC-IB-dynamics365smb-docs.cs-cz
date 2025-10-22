@@ -25,7 +25,7 @@ S touto funkcionalitou bylo možné
 
 |Přesunuto, Smazáno nebo Nahrazeno?|Proč?|Kdy?|
 |----|----|----|
-|Smazáno|Důvod proč je smázáno|od verze BC15|
+|Smazáno|Důvod proč je smázáno|od verze Business Central version 15|
 
 
 

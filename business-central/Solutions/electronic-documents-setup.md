@@ -72,7 +72,7 @@ Poznámka: Průvodce doplní i nastavení pro odesílání PDF pomocí funkciona
 
 ## Nastavení ISDOC – Způsoby platby
 
-Pro používání ISDOC formátu je třeba nastavit mapování požívaných způsobů plateb v BC na způsoby platby definované ve formátu ISDOC elementem „PaymentMeansCodeType“.
+Pro používání ISDOC formátu je třeba nastavit mapování požívaných způsobů plateb v Business Central na způsoby platby definované ve formátu ISDOC elementem „PaymentMeansCodeType“.
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Způsoby platby** a poté vyberte související odkaz.
 2. Na stránce Způsoby platby přejděte na řádek odpovídající hotovostní úhradě.

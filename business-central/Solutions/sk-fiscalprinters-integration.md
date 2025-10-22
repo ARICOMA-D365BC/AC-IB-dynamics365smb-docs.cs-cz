@@ -52,7 +52,7 @@ Pokud je vše správně nastaveno, spolu s jinými vznikla Fiskální položka (
 
 ### Úhrada zaúčtované faktury na fiskální tiskárně
 
-Tento scénář popisuje hotovostní úhradu zaúčtované faktury v případě, že je fiskální tiskárna v BC připojena k entitě Bankovní účet. V případě připojení k entitě Pokladna, stačí vytvořit pokladní doklad běžným způsobem (obdobně jako dále v [Úhrada zálohové faktury na fiskální tiskárně](#úhrada-zálohové-faktury-na-fiskální-tiskárně)).
+Tento scénář popisuje hotovostní úhradu zaúčtované faktury v případě, že je fiskální tiskárna v Business Central připojena k entitě Bankovní účet. V případě připojení k entitě Pokladna, stačí vytvořit pokladní doklad běžným způsobem (obdobně jako dále v [Úhrada zálohové faktury na fiskální tiskárně](#úhrada-zálohové-faktury-na-fiskální-tiskárně)).
 
 > [!NOTE]
 > Více v [Propojení fiskálních tiskáren na Bankovní účty / Pokladny](./SK-FiscalPrinters-Integration-setup.md#propojení-fiskálních-tiskáren-na-bankovní-účty--pokladny).
@@ -125,7 +125,7 @@ Ostatní funkce eKASA a Přehledy prodejů (Denní uzávěrka, Měsíční…) j
 ### Hotovostní operace bez Business Central
 
 Všechny výše uvedené hotovostní operace (Daňový doklad, Vklad, Výběr, Úhrada faktury, Storno faktury, Mincovka) je možné provádět ručně v SW „Tlačový manažér“.
-Dodatečně je možné provést příslušné úkony v BC s tím, že fiskální tiskárna bude vypnuta a vytvořené fiskální položky se dodatečně ručně označí jako „Registrované“ (viz dále).
+Dodatečně je možné provést příslušné úkony v Business Central s tím, že fiskální tiskárna bude vypnuta a vytvořené fiskální položky se dodatečně ručně označí jako „Registrované“ (viz dále).
 
 ### Další operace s fiskálními položkami
 
@@ -151,14 +151,14 @@ Pokud již není účelné znovu položku registrovat (typicky když byl doklad 
 
 #### Tisk kopie fiskální dokladu
 
-Pokud je třeba vytisknout kopii fiskálního dokladu (v průběhu tisku došel papír nebo byl doklad jinak poškozen), je možné přímo z BC vytisknout doklad znovu:
+Pokud je třeba vytisknout kopii fiskálního dokladu (v průběhu tisku došel papír nebo byl doklad jinak poškozen), je možné přímo z Business Central vytisknout doklad znovu:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Fiskální položky** a poté vyberte související odkaz.
 2. Na stránce **Fiskální položky** najděte příslušný záznam a spusťte akci Tisk kopie fiskálního dokladu.
 
 #### Zobrazení vyměňovaných dat
 
-V případě nejasností je možné si zobrazit soubory, které jsou předmětem výměny mezi BC a fiskální tiskárnou. Tyto jsou evidovány přímo v položkách:
+V případě nejasností je možné si zobrazit soubory, které jsou předmětem výměny mezi Business Central a fiskální tiskárnou. Tyto jsou evidovány přímo v položkách:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Fiskální položky** a poté vyberte související odkaz.
 2. Na stránce **Fiskální položky** najděte příslušný záznam.
