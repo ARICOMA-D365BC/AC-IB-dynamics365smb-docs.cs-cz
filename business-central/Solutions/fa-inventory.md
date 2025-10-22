@@ -10,7 +10,7 @@ ms.search.keywords: Aricoma, Finance, Fixed Assets, Inventory, Physical Inventor
 
 # Inventura majetku
 
-Aplikace **Inventura majetku** slouží pro fyzickou inventarizaci majetku v systému [!INCLUDE [d365fin_long_md](../../includes/d365fin_long_md.md)] za využití QR kódů.
+Aplikace **Inventura majetku** slouží pro fyzickou inventarizaci majetku v systému [!INCLUDE [d365fin_long_md](../includes/d365fin_long_md.md)] za využití QR kódů.
 
 Už žádné chaotické tabulky, ztracené papíry ani nekonečné dohledávání majetku. Přináší efektivní řešení inventarizace pomocí QR kódů a mobilního zařízení, které propojuje jednoduchost, přesnost a úsporu času. Díky inventuře majetku pomocí QR kódů získáte:
 
