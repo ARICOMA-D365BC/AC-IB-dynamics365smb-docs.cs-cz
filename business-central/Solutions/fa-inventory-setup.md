@@ -12,11 +12,17 @@ ms.search.keywords: Aricoma, Finance, Fixed Assets, Inventory, Physical Inventor
 
 Aplikaci **Inventura majetku** je potřeba nastavit dle následujícího popisu.
 
-- Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat") a zadejte **Nastavení fyz. inventury DM** a poté vyberte související odkaz.  
-- Na stránce **Nastavení fyz. inventury DM** lze:
+## Nastavení inventury DM
+
+- Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat") a zadejte **Nastavení inventury DM** a poté vyberte související odkaz.  
+- Na stránce **Nastavení inventury DM** lze:
   - definovat strukturu QR kódu – **Pole 1 .. 5 DM pro QR kód**.  
   - při účtování vynutit vyplnění kódu umístění sekce **Účtování**.  
   - Nastavit automatické uložení GPS polohy při skenování-sekce **Ostatní**.
+
+![Nastavení inventury DM](media/fa-inventory-setup.png)  
+
+## Nastavení Šablon deníku inventury DM
 
 - Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat") a zadejte **Šablony deníku inventury DM** a poté vyberte související odkaz.  
 - Na stránce **Šablony deníku inventury DM** je třeba vytvořit parametrizaci.  
@@ -31,4 +37,4 @@ Aplikaci **Inventura majetku** je potřeba nastavit dle následujícího popisu.
 
 ## Související informace
 [Inventura majetku](fa-inventory.md)  
-[ARICOMA řešení](solutions.md)
+[ARICOMA řešení](solutions.md)  
