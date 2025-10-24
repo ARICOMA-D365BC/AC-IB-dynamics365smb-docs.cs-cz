@@ -16,8 +16,9 @@ Aplikaci **Inventura majetku** je potřeba nastavit dle následujícího popisu.
 
 - Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat") a zadejte **Nastavení inventury DM** a poté vyberte související odkaz.  
 - Na stránce **Nastavení inventury DM** lze:
-  - definovat strukturu QR kódu – **Pole 1 .. 5 DM pro QR kód**.  
-  - při účtování vynutit vyplnění kódu umístění sekce **Účtování**.  
+  - definovat strukturu QR kódu – **Pole 1 .. 4 DM pro QR kód**.
+  - sestava pro tisk QR kódu.
+  - při účtování vynutit vyplnění polí sekce **Účtování**.  
   - Nastavit automatické uložení GPS polohy při skenování-sekce **Ostatní**.
 
 ![Nastavení inventury DM](media/fa-inventory-setup.png)  
@@ -26,7 +27,7 @@ Aplikaci **Inventura majetku** je potřeba nastavit dle následujícího popisu.
 
 - Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat") a zadejte **Šablony deníku inventury DM** a poté vyberte související odkaz.  
 - Na stránce **Šablony deníku inventury DM** je třeba vytvořit parametrizaci.  
-- Na stránce **Šablony deníku inventury DM**  přes akci **Související/Šablona/Listy** lze vytvořit jednotlivé listy pro inventuru majetku např. pro jednotlivé střediska, umístění, odpovědné zaměst-nance, ...
+- Na stránce **Šablony deníku inventury DM**  přes akci **Související/Šablona/Listy** lze vytvořit jednotlivé listy pro inventuru majetku např. pro jednotlivé střediska, umístění, odpovědné zaměstnance, ...
 
 ## Nastavení online map
 
