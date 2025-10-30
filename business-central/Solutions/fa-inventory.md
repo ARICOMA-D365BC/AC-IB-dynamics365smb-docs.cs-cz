@@ -74,7 +74,7 @@ Akce **Vypočítat inventuru DM** obsahuje tyto pole:
 - **Středisko kód (globální dimenze 1)** – vyberte středisko ve kterém chcete inventarizovat majetek.
 - **Zakázka kód (globální dimenze 2)** – vyberte zakázku pro kterou chcete inventarizovat majetek.
 
-![Deník inventury](media/fa-inventory-journal.png)
+![Deník inventury](media/fa-inventory-denik-dimenze.png)
 
 **Tisk štítků případně inventurní sestavy pro ruční zpracování (doplňkový způsob zpracování).**
 
