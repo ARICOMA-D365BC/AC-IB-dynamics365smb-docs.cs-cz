@@ -60,7 +60,7 @@ Už žádné chaotické tabulky, ztracené papíry ani nekonečné dohledáván�
 
 - Na stránce **Deník inventury DM** vyberte Akce/Funkce **Vypočítat stav majetku.**  
 
-![Deník inventury - návrh](media/fa-inventory-vypocitat-majetek.png)
+![Deník inventury - návrh](media/fa-inventory-calculate.png)
 
 Akce **Vypočítat inventuru DM** obsahuje tyto pole:
 
@@ -74,7 +74,7 @@ Akce **Vypočítat inventuru DM** obsahuje tyto pole:
 - **Středisko kód (globální dimenze 1)** – vyberte středisko, ve kterém chcete inventarizovat majetek.
 - **Zakázka kód (globální dimenze 2)** – vyberte zakázku, pro kterou chcete inventarizovat majetek.
 
-![Deník inventury](media/fa-inventory-denik-dimenze.png)
+![Deník inventury](media/fa-inventory-journal-dimensions.png)
 
 **Tisk štítků případně inventurní sestavy pro ruční zpracování (doplňkový způsob zpracování).**
 
@@ -82,7 +82,7 @@ Akce **Vypočítat inventuru DM** obsahuje tyto pole:
 - Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Deník inventury DM** a poté vyberte související odkaz.
 - Na stránce **Deník inventury DM** vyberte Akce/účtování **Seznam inventury DM** . Tisk formuláře pro ruční zpracování inventury (doplňkový způsob zpracování).
 
-![Tisk štítků](media/fa-inventory-label.png)
+![Tisk štítků](media/fa-inventory-qr2.png)
 
 ### Inventura majetku – zpracování (na mobilním zařízení)
 
@@ -133,7 +133,7 @@ Akce **Vypočítat inventuru DM** obsahuje tyto pole:
   - **GPS latitude**
   - **GPS longitude**
 
-![Karta majetku - online mapy](media/fa-inventory-zjisti-gps.png)
+![Karta majetku - online mapy](media/fa-inventory-get-gps.png)
 ![Umístění majetku na mapě](media/fa-inventory-maps2.png)
 
 ## Související informace
