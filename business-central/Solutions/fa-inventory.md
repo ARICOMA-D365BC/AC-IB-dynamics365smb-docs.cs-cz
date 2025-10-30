@@ -91,7 +91,7 @@ Akce **Vypočítat inventuru DM** obsahuje tyto pole:
 - Pomocí akci **Skenovat** , kterou naleznete proklikem přes 3 tečky v pravém dolním rohu aplikace se přepnete do page ve které pak načítáte jednotlivé QR kódy majetku a případně k nim můžete zadat **Poznámku**. **Poznámky** je vhodné nadefinovat do **Kódů standardních textů** tak, aby uživatel nemusel vypisovat celý text. Pokud majetek není v deníku inven-tury systém navrhne a automaticky vytvoří nový řádek. Pokud je v **Nastavení fyz. inventury DM** zaškrtnuta volba **Uložit GPS polohu automaticky při skenování systém při naskenován**í automaticky uloží i GPS souřadnice.
 - Pomocí akce **Mapy online** je možno si nechat zobrazit polohu majetku na mapě, nebo se nechat navigovat k majetku dle uložených **GPS souřadnic.**
 
-![Deník inventury](media/fa-inventory-mobile4.png)
+![Deník inventury](media/fa-inventory-scan.png)
 
 ### Inventura majetku –  ruční zpracování (doplňkový způsob zpracování)
 
