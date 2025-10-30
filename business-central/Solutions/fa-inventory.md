@@ -42,7 +42,7 @@ Už žádné chaotické tabulky, ztracené papíry ani nekonečné dohledáván�
     - Inventura se schválí a zaúčtuje.  
     - Výstupy je možné **vytisknout** nebo **publikovat do SharePointu** pro další využití.  
 
-![Deník inventury - návrh](media/fa-inventory-pc.png)
+![Deník inventury - návrh](media/fa-inventory-pc2.png)
 
 ### Proč zvolit inventuru majetku pomocí QR kódů
 
