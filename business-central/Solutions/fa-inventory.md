@@ -2,7 +2,7 @@
 title: FA - Inventory
 description: Fixed Assets Inventory is a powerful extension designed to simplify and digitize the physical inventory of fixed assets. 
 author: janousek
-date: 16/10/2025
+date: 30/10/2025
 reviewer: janousek
 ms.service: dynamics-365-business-central
 ms.search.keywords: Aricoma, Finance, Fixed Assets, Inventory, Physical Inventory
