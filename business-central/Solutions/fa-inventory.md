@@ -133,7 +133,7 @@ Akce **Vypočítat inventuru DM** obsahuje tyto pole:
   - **GPS latitude**
   - **GPS longitude**
 
-![Karta majetku - online mapy](media/fa-inventory-maps1.png)
+![Karta majetku - online mapy](media/fa-inventory-zjisti-gps.png)
 ![Umístění majetku na mapě](media/fa-inventory-maps2.png)
 
 ## Související informace
