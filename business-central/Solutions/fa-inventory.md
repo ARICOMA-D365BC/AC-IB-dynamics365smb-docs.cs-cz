@@ -17,7 +17,7 @@ Už žádné chaotické tabulky, ztracené papíry ani nekonečné dohledáván�
 ## Výhody řešení
 
 - **Rychlost a efektivita** – Stačí naskenovat kód případně k němu zadat poznámku a máte základ inventury hotov.
-- **Přesnost dat** –Minimální chybovost díky automatickému dohledání majetku.
+- **Přesnost dat** – Minimální chybovost díky automatickému dohledání majetku.
 - **Online přehled** – Data o majetku dostupná kdykoliv a odkudkoliv.  
 - **Snadná správa změn** – Změna umístění, střediska či odpovědné osoby? Na pár kliknutí.
 - **Ekologické řešení** – Bez papírování, vše digitálně.
@@ -88,7 +88,7 @@ Akce **Vypočítat inventuru DM** obsahuje tyto pole:
 
 - Na mobilním zařízení vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat") a nebo přímo odkaz na **Deník inventury DM** (mobil).
 - Přes ikonu v dolním pravém rohu   se přepnete do seznamu akcí nad deníkem inventury. Přes akci **Vybrat deník** vyberte správný inventurní seznam  **Název listu**.
-- Pomocí akci **Skenovat** , kterou naleznete proklikem přes 3 tečky v pravém dolním rohu aplikace se přepnete do page ve které pak načítáte jednotlivé QR kódy majetku a případně k nim můžete zadat **Poznámku**. **Poznámky** je vhodné nadefinovat do **Kódů standardních textů** tak, aby uživatel nemusel vypisovat celý text. Pokud majetek není v deníku inven-tury systém navrhne a automaticky vytvoří nový řádek. Pokud je v **Nastavení fyz. inventury DM** zaškrtnuta volba **Uložit GPS polohu automaticky při skenování systém při naskenován**í automaticky uloží i GPS souřadnice.
+- Pomocí akci **Skenovat** , kterou naleznete proklikem přes 3 tečky v pravém dolním rohu aplikace se přepnete do page ve které pak načítáte jednotlivé QR kódy majetku a případně k nim můžete zadat **Poznámku**. **Poznámky** je vhodné nadefinovat do **Kódů standardních textů** tak, aby uživatel nemusel vypisovat celý text. Pokud majetek není v deníku inventury systém navrhne a automaticky vytvoří nový řádek. Pokud je v **Nastavení fyz. inventury DM** zaškrtnuta volba **Uložit GPS polohu automaticky při skenování systém při naskenování** automaticky uloží i GPS souřadnice.
 - Pomocí akce **Mapy online** je možno si nechat zobrazit polohu majetku na mapě, nebo se nechat navigovat k majetku dle uložených **GPS souřadnic.**
 
 ![Deník inventury](media/fa-inventory-scan.png)
