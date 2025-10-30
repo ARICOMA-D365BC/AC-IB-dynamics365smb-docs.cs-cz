@@ -34,7 +34,7 @@ Už žádné chaotické tabulky, ztracené papíry ani nekonečné dohledáván�
     - Automaticky se ukládá **GPS poloha**, což pomáhá zpřesnit evidenci.  
     - Díky mapovému zobrazení se můžete nechat **navigovat k poslední známé poloze majetku**.  
 
-![Deník inventury - návrh](media/fa-inventory-mobile-gps-small.png)
+![Deník inventury - návrh](media/fa-inventory-mobile-gps-small2.png)
 
 **3. Dokončení inventury v kanceláři**  
     - V systému se zpracují požadavky na změny (např. nový kód umístění, střediska, zaměstnance).  
