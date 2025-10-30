@@ -60,7 +60,7 @@ Už žádné chaotické tabulky, ztracené papíry ani nekonečné dohledáván�
 
 - Na stránce **Deník inventury DM** vyberte Akce/Funkce **Vypočítat stav majetku.**  
 
-![Deník inventury - návrh](media/fa-inventory-calculate.png)
+![Deník inventury - návrh](media/fa-inventory-vypocitat-majetek.png)
 
 Akce **Vypočítat inventuru DM** obsahuje tyto pole:
 
