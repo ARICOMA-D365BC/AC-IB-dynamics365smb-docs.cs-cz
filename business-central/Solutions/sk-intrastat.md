@@ -13,7 +13,7 @@ ms.author: v-makune
 
 # Výkaz Intrastat
 
-> Aktualizace 31.05.2024
+> Aktualizace 17.10.2025
 
 Pro účely generování výkazu Intrastat se používá standartní funkcionalita.
 
@@ -27,6 +27,9 @@ Pro aktivování slovenských funkčností jsou potřebná tato nastavení, vyu�
 2. Na kartě **Nastavení financí** je nutné vybrat do pole **Legislativa** hodnotu **SK**.
 3. Potvrďte pomocí tlačítka **OK**.
 
+> [!IMPORTANT]
+> Od verze 25 je potřeba mít nastavenu základní funkcionalitu v *Nastavení hlášení Intrastat* (viz [dokumentace](https://learn.microsoft.com/cs-cz/dynamics365/business-central/finance-how-setup-report-intrastat)).
+
 ## Intrastat mapování souboru
 
 Nastavení slouží pro mapování polí v aplikaci na uzly .xml. Tato tabulka je součástí dodávaného konfiguračního balíčku.
@@ -36,6 +39,9 @@ Nastavení slouží pro mapování polí v aplikaci na uzly .xml. Tato tabulka j
 3. Potvrďte pomocí tlačítka **OK**.
 
 ![Mapování souboru](media/sk-intrastat.png)
+
+> [!TIP]
+> Kompletní nastavení mapování najdete v Konfiguračním balíčku, který získáte spuštěním Asistovaného nastavení *Nastavit SK lokalizaci* (buď pouze naimportujte poslední verzi pomocí tlačítka *AssistEdit* ve stávající společnosti nebo v prázdné společnosti proveďte kompletní import vzorové parametrizace pomocí akce *Použít balíček*).
 
 ## Export souboru pro Intrastat
 

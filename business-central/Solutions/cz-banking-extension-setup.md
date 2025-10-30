@@ -169,7 +169,7 @@ Určuje, jaká je poslední úroveň automatického zpracování bankovních vý
 
 ### Číselná řada (nepovinné)
 
-Funkčnost zpracování bankovních výpisů může automaticky číslovat nevydané i vydané bankovní výpisy v BC tak, že vkládá dle masky rok a pořadové číslo výpisu přidělené bankou.
+Funkčnost zpracování bankovních výpisů může automaticky číslovat nevydané i vydané bankovní výpisy v Business Central tak, že vkládá dle masky rok a pořadové číslo výpisu přidělené bankou.
 
 Je nutné nastavit stejnou číselnou řadu pro nevydané a vydané bankovní výpisy na Kartě bankovního účtu.
 Tato číselná řada musí mít aktivované Ruční číslování a vyplněnou Masku. Maska musí obsahovat min. 2 znaky pro rok (rr) a volné číslo (ccc).  

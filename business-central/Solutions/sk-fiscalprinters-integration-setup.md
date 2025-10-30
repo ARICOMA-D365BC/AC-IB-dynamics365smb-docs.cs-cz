@@ -39,7 +39,7 @@ Každé fyzické zařízení musí být zaevidováno v číselníku Fiskální t
 10. Nastavte **Časový limit integrace (s)** na hodnotu 60.
 11. V poli **ID zařízení** zadejte výrobní kód fiskální tiskárny Varos.
 12. V poli **Požadovaná platnost párování** zadejte počet dnů platnosti, např. 365 dní.
-13. Spusťte akci *Spárovat se zařízením* (VAROS API). Varos tiskárna vygeneruje a vytiskne ověřovací kód, který zadáte do dialogu v BC a potvrdíte. Ověřte, že se u fiskální tiskárny nastavil příznak **Spárováno se zařízením** na Ano.
+13. Spusťte akci *Spárovat se zařízením* (VAROS API). Varos tiskárna vygeneruje a vytiskne ověřovací kód, který zadáte do dialogu v Business Central a potvrdíte. Ověřte, že se u fiskální tiskárny nastavil příznak **Spárováno se zařízením** na Ano.
 14. V poli **Párování platné do** systém automaticky doplní platnost propojení s fiskální tiskárnou.
 
 > [!NOTE]
