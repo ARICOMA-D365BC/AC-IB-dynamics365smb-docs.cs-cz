@@ -52,7 +52,7 @@ Už žádné chaotické tabulky, ztracené papíry ani nekonečné dohledáván�
 **Příprava a generování deníků inventury pro jednotlivé střediska, umístění, zaměstnance (na jednotlivé listy deníku).**
 
 - Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte Deník inventury DM a poté vyberte související odkaz.  
-- Na stránce Deník inventury DM vyberte a nebo vytvořte nový Název listu. Pro vytvoření no-vého listu vyberte akci Nový.  
+- Na stránce Deník inventury DM vyberte a nebo vytvořte nový Název listu. Pro vytvoření nového listu vyberte akci Nový.  
 
 - Na stránce **Deník inventury DM** vyberte Akce/Funkce **Vypočítat stav majetku.**  
 
@@ -66,9 +66,9 @@ Akce **Vypočítat inventuru DM** obsahuje tyto pole:
 - **Filtr** – vyfiltrování majetku pro inventuru.
 - **Číslo** – vyberte čísla majetku, který chcete inventarizovat.
 - **Kód umístění DM** – vyberte umístění ve kterém chcete inventarizovat majetek.
-- **Odpovědný zaměstnanec** – vyberte zaměstnance kterého majetek chcete inventari-zovat.
-- **Středisko kód (globální dimenze 1)** – vyberte středisko ve kterém chcete inventarizo-vat majetek.
-- **Zakázka kód (globální dimenze 2)** – vyberte zakázku pro kterou chcete inventarizo-vat majetek.
+- **Odpovědný zaměstnanec** – vyberte zaměstnance kterého majetek chcete inventarizovat.
+- **Středisko kód (globální dimenze 1)** – vyberte středisko ve kterém chcete inventarizovat majetek.
+- **Zakázka kód (globální dimenze 2)** – vyberte zakázku pro kterou chcete inventarizovat majetek.
 
 ![Deník inventury](media/fa-inventory-journal.png)
 
@@ -78,13 +78,13 @@ Akce **Vypočítat inventuru DM** obsahuje tyto pole:
 - Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Deník inventury DM** a poté vyberte související odkaz.
 - Na stránce **Deník inventury DM** vyberte Akce/účtování **Seznam inventury DM** . Tisk formuláře pro ruční zpracování inventury (doplňkový způsob zpracování).
 
-![Tisk štítků](media/fa-inventory-label.png)
+![Tisk štítků](media/fa-inventory-qr2.png)
 
 ### Inventura majetku – zpracování (na mobilním zařízení)
 
 - Na mobilním zařízení vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat") a nebo přímo odkaz na **Deník inventury DM** (mobil).
 - Přes ikonu v dolním pravém rohu   se přepnete do seznamu akcí nad deníkem inventury. Přes akci **Vybrat deník** vyberte správný inventurní seznam  **Název listu**.
-- Pomocí akci **Skenovat** se přepnete do page ve které pak načítáte jednotlivé QR kódy majetku a případně k nim můžete zadat **Poznámku**. **Poznámky** je vhodné nadefinovat do **Kódů stan-dardních textů** tak, aby uživatel nemusel vypisovat celý text. Pokud majetek není v deníku inven-tury systém navrhne a automaticky vytvoří nový řádek. Pokud je v **Nastavení fyz. inventury DM** za-škrtnuta volba **Uložit GPS polohu automaticky při skenování systém při naskenován**í auto-maticky uloží i GPS souřadnice.
+- Pomocí akci **Skenovat** , kterou naleznete proklikem přes 3 tečky v pravém dolním rohu aplikace se přepnete do page ve které pak načítáte jednotlivé QR kódy majetku a případně k nim můžete zadat **Poznámku**. **Poznámky** je vhodné nadefinovat do **Kódů stan-dardních textů** tak, aby uživatel nemusel vypisovat celý text. Pokud majetek není v deníku inven-tury systém navrhne a automaticky vytvoří nový řádek. Pokud je v **Nastavení fyz. inventury DM** za-škrtnuta volba **Uložit GPS polohu automaticky při skenování systém při naskenován**í auto-maticky uloží i GPS souřadnice.
 - Pomocí akce **Mapy online** je možno si nechat zobrazit polohu majetku na mapě, nebo se nechat navigovat k majetku dle uložených **GPS souřadnic.**
 
 ![Deník inventury](media/fa-inventory-mobile4.png)
