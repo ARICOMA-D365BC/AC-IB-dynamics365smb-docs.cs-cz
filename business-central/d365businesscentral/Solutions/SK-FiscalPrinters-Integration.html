@@ -102,7 +102,7 @@
 <p>Na prodejním dokladu musí být nastaveno <strong>Ceny vč. DPH</strong> na Ano. Systém na to uživatele upozorní při zadání Kódu způsobu platby s nastaveným příznakem <strong>Fiskální daňový doklad</strong>.</p>
 </div>
 <ol start="4">
-<li>V poli <strong>Kód způsobu platby</strong> vyberte způsob platby propojený s fiskální tiskárnou (viz <a href="SK-FiscalPrinters-Integration-setup.html#nastaven%C3%AD-zp%C5%AFsob%C5%AF-plateb">Nastavení způsobů plateb</a> se zapnutým příznakem <strong>Fiskální daňový doklad</strong>).</li>
+<li>V poli <strong>Kód způsobu platby</strong> vyberte způsob platby propojený s fiskální tiskárnou (viz <a href="sk-fiscalprinters-integration-setup.html#nastaven%C3%AD-zp%C5%AFsob%C5%AF-plateb">Nastavení způsobů plateb</a> se zapnutým příznakem <strong>Fiskální daňový doklad</strong>).</li>
 <li>Zaúčtujte doklad.</li>
 </ol>
 <p>Pokud je vše správně nastaveno, spolu s jinými vznikla Fiskální položka (viz akce <em>Najít položky</em>) a na fiskální tiskárně je vytištěn daňový doklad obsahující jednotlivé řádky zaúčtované prodejní faktury.</p>
@@ -111,10 +111,10 @@
 <p>Ve fiskálních položkách je možné zjistit, zda-li je bloček daňovým dokladem dle hodnoty v poli <strong>Daňový doklad</strong>.</p>
 </div>
 <h3 id="úhrada-zaúčtované-faktury-na-fiskální-tiskárně">Úhrada zaúčtované faktury na fiskální tiskárně</h3>
-<p>Tento scénář popisuje hotovostní úhradu zaúčtované faktury v případě, že je fiskální tiskárna v BC připojena k entitě Bankovní účet. V případě připojení k entitě Pokladna, stačí vytvořit pokladní doklad běžným způsobem (obdobně jako dále v <a href="#%C3%BAhrada-z%C3%A1lohov%C3%A9-faktury-na-fisk%C3%A1ln%C3%AD-tisk%C3%A1rn%C4%9B">Úhrada zálohové faktury na fiskální tiskárně</a>).</p>
+<p>Tento scénář popisuje hotovostní úhradu zaúčtované faktury v případě, že je fiskální tiskárna v Business Central připojena k entitě Bankovní účet. V případě připojení k entitě Pokladna, stačí vytvořit pokladní doklad běžným způsobem (obdobně jako dále v <a href="#%C3%BAhrada-z%C3%A1lohov%C3%A9-faktury-na-fisk%C3%A1ln%C3%AD-tisk%C3%A1rn%C4%9B">Úhrada zálohové faktury na fiskální tiskárně</a>).</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Více v <a href="SK-FiscalPrinters-Integration-setup.html#propojen%C3%AD-fisk%C3%A1ln%C3%ADch-tisk%C3%A1ren-na-bankovn%C3%AD-%C3%BA%C4%8Dty--pokladny">Propojení fiskálních tiskáren na Bankovní účty / Pokladny</a>.</p>
+<p>Více v <a href="sk-fiscalprinters-integration-setup.html#propojen%C3%AD-fisk%C3%A1ln%C3%ADch-tisk%C3%A1ren-na-bankovn%C3%AD-%C3%BA%C4%8Dty--pokladny">Propojení fiskálních tiskáren na Bankovní účty / Pokladny</a>.</p>
 </div>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Deníky plateb</strong> a poté vyberte související odkaz.</li>
@@ -170,7 +170,7 @@
 <p>Ostatní funkce eKASA a Přehledy prodejů (Denní uzávěrka, Měsíční…) jsou k dispozici v programu Tlačový manažér.</p>
 <h3 id="hotovostní-operace-bez-business-central">Hotovostní operace bez Business Central</h3>
 <p>Všechny výše uvedené hotovostní operace (Daňový doklad, Vklad, Výběr, Úhrada faktury, Storno faktury, Mincovka) je možné provádět ručně v SW „Tlačový manažér“.
-Dodatečně je možné provést příslušné úkony v BC s tím, že fiskální tiskárna bude vypnuta a vytvořené fiskální položky se dodatečně ručně označí jako „Registrované“ (viz dále).</p>
+Dodatečně je možné provést příslušné úkony v Business Central s tím, že fiskální tiskárna bude vypnuta a vytvořené fiskální položky se dodatečně ručně označí jako „Registrované“ (viz dále).</p>
 <h3 id="další-operace-s-fiskálními-položkami">Další operace s fiskálními položkami</h3>
 <h4 id="registrace-položky">Registrace položky</h4>
 <p>Pokud se fiskální doklad nevytiskne, může být (kromě problému se samotnou tiskárnou) problém v tom, že se nepovedlo z nějakého důvodu správně tzv. „registrovat“ položku. Informaci o registraci si nese Fiskální položka – viz sloupce <strong>Registrováno</strong> a <strong>Datum a čas registrace</strong>.</p>
@@ -190,16 +190,16 @@ Dodatečně je možné provést příslušné úkony v BC s tím, že fiskální
 </ol>
 <div class="NOTE">
 <h5>Note</h5>
-<p>V tomto případě zvažte nastavení vyšší hodnoty v poli <strong>Časový limit integrace (ms)</strong> u příslušné fiskální tiskárny (viz <a href="SK-FiscalPrinters-Integration-setup.html#setting-up-fiscal-printers">Nastavení fiskálních tiskáren</a>)..</p>
+<p>V tomto případě zvažte nastavení vyšší hodnoty v poli <strong>Časový limit integrace (ms)</strong> u příslušné fiskální tiskárny (viz <a href="sk-fiscalprinters-integration-setup.html#setting-up-fiscal-printers">Nastavení fiskálních tiskáren</a>)..</p>
 </div>
 <h4 id="tisk-kopie-fiskální-dokladu">Tisk kopie fiskální dokladu</h4>
-<p>Pokud je třeba vytisknout kopii fiskálního dokladu (v průběhu tisku došel papír nebo byl doklad jinak poškozen), je možné přímo z BC vytisknout doklad znovu:</p>
+<p>Pokud je třeba vytisknout kopii fiskálního dokladu (v průběhu tisku došel papír nebo byl doklad jinak poškozen), je možné přímo z Business Central vytisknout doklad znovu:</p>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Fiskální položky</strong> a poté vyberte související odkaz.</li>
 <li>Na stránce <strong>Fiskální položky</strong> najděte příslušný záznam a spusťte akci Tisk kopie fiskálního dokladu.</li>
 </ol>
 <h4 id="zobrazení-vyměňovaných-dat">Zobrazení vyměňovaných dat</h4>
-<p>V případě nejasností je možné si zobrazit soubory, které jsou předmětem výměny mezi BC a fiskální tiskárnou. Tyto jsou evidovány přímo v položkách:</p>
+<p>V případě nejasností je možné si zobrazit soubory, které jsou předmětem výměny mezi Business Central a fiskální tiskárnou. Tyto jsou evidovány přímo v položkách:</p>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Fiskální položky</strong> a poté vyberte související odkaz.</li>
 <li>Na stránce <strong>Fiskální položky</strong> najděte příslušný záznam.</li>
@@ -207,7 +207,7 @@ Dodatečně je možné provést příslušné úkony v BC s tím, že fiskální
 <li>Spusťte akci <em>Stáhnout potvrzení registrace</em> (přijatá data – interní data o registraci).</li>
 </ol>
 <h2 id="viz-také">Viz také</h2>
-<p><a href="SK-FiscalPrinters-Integration-setup.html">Nastavení Integrace s SK fiskálními tiskárnami</a><br>
+<p><a href="sk-fiscalprinters-integration-setup.html">Nastavení Integrace s SK fiskálními tiskárnami</a><br>
 <a href="streamlinetools.html">Streamline Tools</a><br>
 <a href="solutions.html">ARICOMA řešení</a></p>
 </article>
@@ -218,7 +218,7 @@ Dodatečně je možné provést příslušné úkony v BC s tím, že fiskální
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/Solutions/SK-FiscalPrinters-Integration.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/Solutions/sk-fiscalprinters-integration.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
                   </li>
                 </ul>
               </div>

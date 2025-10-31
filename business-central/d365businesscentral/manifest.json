@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "FinancialPack/TOC.html",
-          "hash": "t1Wep1gRs7kc9UHEuZD8wdY1ox+aFnfnyY/2pHDOkSM="
+          "hash": "1FrccqCFZsqm37xhNi7F8Bipr8pkU7iQPV+3uyjNY8g="
         }
       },
       "is_incremental": false,
@@ -1376,7 +1376,7 @@
       "output": {
         ".html": {
           "relative_path": "ProductivityPack/TOC.html",
-          "hash": "t1Wep1gRs7kc9UHEuZD8wdY1ox+aFnfnyY/2pHDOkSM="
+          "hash": "1FrccqCFZsqm37xhNi7F8Bipr8pkU7iQPV+3uyjNY8g="
         }
       },
       "is_incremental": false,
@@ -3460,7 +3460,7 @@
       "output": {
         ".html": {
           "relative_path": "SK/TOC.html",
-          "hash": "t1Wep1gRs7kc9UHEuZD8wdY1ox+aFnfnyY/2pHDOkSM="
+          "hash": "1FrccqCFZsqm37xhNi7F8Bipr8pkU7iQPV+3uyjNY8g="
         }
       },
       "is_incremental": false,
@@ -5831,30 +5831,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Solutions/SK-FiscalPrinters-Integration-setup.md",
-      "output": {
-        ".html": {
-          "relative_path": "Solutions/SK-FiscalPrinters-Integration-setup.html",
-          "hash": "/qhXAtC9zEJtRHcQ03zGP6Iawm5Ld1jx99bfvRxsu9w="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "Solutions/SK-FiscalPrinters-Integration.md",
-      "output": {
-        ".html": {
-          "relative_path": "Solutions/SK-FiscalPrinters-Integration.html",
-          "hash": "aMTq4ffcofT8VyFAuj2cnzsm2K6LKzcpf4tQphFxTCk="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "Solutions/TOC OLD.md",
       "output": {
         ".html": {
@@ -5871,7 +5847,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/TOC Original Order.html",
-          "hash": "ZiHwgaMscpqLL95Ye9wLRfmsZvh3KxMoT8GbYKlqAmI="
+          "hash": "ZEYfgJNgOmm4+4PYACJb6rb6adGC8XNT6qMUR65o99g="
         }
       },
       "is_incremental": false,
@@ -5883,7 +5859,22 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/TOC.html",
-          "hash": "T7zTiAnkce+KZng7ezBIJrB64P2Cbz4TNMDDTKzSmCc="
+          "hash": "tmNmWrmVOsF5agTMkVLzd7PPiztMJ33tZ3xHAqm6APo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "Solutions/_template.md",
+      "output": {
+        ".html": {
+          "relative_path": "Solutions/_template.html",
+          "hash": "j/N7IkkedrauGJS1PQYfNkFGawz0D+0bVIuifMhtXVs="
         }
       },
       "is_incremental": false,
@@ -5919,10 +5910,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/app-extension-set-setup.html",
-          "hash": "ma3fPlzjWjELsYzqqlS5MAXnnhTq1Zn99mO1jRjEL9o="
+          "hash": "vaMCknAxg3/x11ir17gaLbxfwbk3KUfGDg5jkrL+tPE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5934,10 +5925,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/app-extension-set.html",
-          "hash": "DlbCu/VVIYVxAnIYZtiu+SLHwf4gCaHpR6dx5tciQN0="
+          "hash": "YRWfBZDXa+MtSFp2vhPRuZKzzmoBLHNWETWf/4hXjCc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6018,10 +6009,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/controling-basic-setup.html",
-          "hash": "8uH3NLFLJchvtgnPev2Igq7CvCRE9Pybfk9KhXIxM+g="
+          "hash": "hBSdFMlEbr2LR0OrbjPohaGfLimxtTGU6vXwl6lM6dA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6033,10 +6024,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/controling-basic.html",
-          "hash": "pPmERTL/W3WCeCGjHiuk08aeEGBK9JIslvWONbcC1dg="
+          "hash": "/Ru1I00Pu292pDQsdb58/7pVy994xSRUfmJlFR5mHnw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6044,14 +6035,14 @@
         "InvalidFileLink"
       ],
       "type": "Conceptual",
-      "source_relative_path": "Solutions/cz-banking-extension-API-setup.md",
+      "source_relative_path": "Solutions/cz-banking-extension-api-setup.md",
       "output": {
         ".html": {
-          "relative_path": "Solutions/cz-banking-extension-API-setup.html",
-          "hash": "j95k2fXw+fVdVwgRewgiHgrOZRsL7otVSW/nZ2lBKN8="
+          "relative_path": "Solutions/cz-banking-extension-api-setup.html",
+          "hash": "nwRptG1SPwyldRGuXJaKsfjOmUTaIWrsy9nLJd2Iwnw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6063,10 +6054,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/cz-banking-extension-setup.html",
-          "hash": "7PT4QERjvQctomUvWcAsFwQYA6bZd8CAS893G47E+Lg="
+          "hash": "RR0krIocxvfOhLOKuUXsYk4xv+KTvOwVBMuvpFleRsA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6078,10 +6069,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/cz-banking-extension.html",
-          "hash": "8JlGyBIV8OwESvy1UPsIdOnkgNk86QfT3QBAOL90xdY="
+          "hash": "SX7p1OA3xmLsF/uUCOSFxZwRvTPevt5SVWM5DLO5Ck8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6114,10 +6105,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/document-links-setup.html",
-          "hash": "/q9Vh4EDlTsYSVKFEWFcJoR/5yCAxWHg1x7Z3pUTQvo="
+          "hash": "jUvmOLJWTnfxbZmaGmnb0thWoawguupITrWdRbvpEeA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6126,10 +6117,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/document-links.html",
-          "hash": "pfu2goRpdw69tA5P2syZWxe46e8zJ8z5k4PfgYnEATc="
+          "hash": "VhkkvE0HtBmPmEhaQVbC8enZFXQgFAVNPpP0qVvBxyI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6162,10 +6153,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/electronic-documents-setup.html",
-          "hash": "Htvnj4FzorEWrbAzGkDo2VjDJhkFnI+W0poa/aB3M3Y="
+          "hash": "5ZD4r9qjb4X+J+PqiDp3y/Cf3ERMJv/XAGTTuNdNwWA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6174,10 +6165,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/electronic-documents.html",
-          "hash": "HByuNvwx2ObsWkknphuKYYAl+oefgmK3wRk8y/E0t6o="
+          "hash": "mGV9vBClR6T8wKtrNgTBXX7NR5yyNAP8Mm8Pp5SaeNM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6202,6 +6193,30 @@
         }
       },
       "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Solutions/fa-inventory-setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "Solutions/fa-inventory-setup.html",
+          "hash": "rQfzIZeBcKEluXhL/J/lfjfMnyRC7nk9P4Yl0NUVzoQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Solutions/fa-inventory.md",
+      "output": {
+        ".html": {
+          "relative_path": "Solutions/fa-inventory.html",
+          "hash": "Hxzo8k7l5T90c9Rrk0fbE1sCdq3b9W6EVl+7GN6MD5g="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6237,7 +6252,7 @@
           "hash": "Vkr/aLxBr3zgFG8g4V5geo+bkR+pnGkxe3zN8AdrgYA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6270,10 +6285,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/fp-deprecated-features.html",
-          "hash": "VVaXFBnyFbqA0iNU72nFr31nhMucs8Y2PEAc2/5RnvA="
+          "hash": "i7z8V23MYJZZXyWqSMrBWsplID/Olf7Je8SLfck/yDU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6306,7 +6321,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/gptom-integration-setup.html",
-          "hash": "tfGW9K5uBF/62xgbRC0tHBPNhYarptGedm9/OKIP3x4="
+          "hash": "LIDfMQ9ZqwRDYZtL5puV0y9YTHPD0+M2vkeWgZfe8gA="
         }
       },
       "is_incremental": false,
@@ -6318,7 +6333,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/gptom-integration.html",
-          "hash": "ZPsPk7Sn7kLoP/OnUrSGGdaes9OEKCX+kh5OIyjmZ1g="
+          "hash": "mh9YVRDsNuHyo0soBX5MFUW5RdCUQDsoHSNaNuVuBrI="
         }
       },
       "is_incremental": false,
@@ -7339,6 +7354,105 @@
       "output": {
         "resource": {
           "relative_path": "Solutions/media/exchange_rate.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/fa-inventory-calculate.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/fa-inventory-calculate.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/fa-inventory-get-gps.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/fa-inventory-get-gps.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/fa-inventory-journal-dimensions.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/fa-inventory-journal-dimensions.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/fa-inventory-maps.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/fa-inventory-maps.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/fa-inventory-mobile-gps-small.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/fa-inventory-mobile-gps-small.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/fa-inventory-pc.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/fa-inventory-pc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/fa-inventory-qr.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/fa-inventory-qr.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/fa-inventory-scan.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/fa-inventory-scan.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/fa-inventory-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/fa-inventory-setup.png"
         }
       },
       "is_incremental": false,
@@ -9456,10 +9570,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/pp-deprecated-features.html",
-          "hash": "lhCLj5E5ChODQklV7kHsTd3O8vILGXEFNyOWuFrDM/w="
+          "hash": "iLy8Zhls2TtUOrEIJeh4bIyQBF5CtGLi1Dul9CLFOvA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9522,7 +9636,7 @@
           "hash": "9kFrksVIjLRA+De8SQRIFdVriUdssGj26G5AzZjgVe8="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9606,7 +9720,7 @@
           "hash": "iG+rrTnFth7dGmDC15lAEISfeKrQxVtrJImv6XcOl0A="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9615,7 +9729,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/sk-balance-sheet-income-statement-setup.html",
-          "hash": "/8dk9CwakGobKNmKdgYchiHOWiSO5vG9IoaQpIlcs5E="
+          "hash": "QPIgjwbUpPRWBHd9DK/RfFpzHd+FlVhIiCBw1QzUZ4A="
         }
       },
       "is_incremental": false,
@@ -9627,7 +9741,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/sk-balance-sheet-income-statement.html",
-          "hash": "+LsrEgfiBGNgeEKsH44czrwsTmJYHLeMcqgvas9T/NM="
+          "hash": "caHTenetg1Bwu5t3XzglqNjxjHucLj3p9Sdyg8ex/uE="
         }
       },
       "is_incremental": false,
@@ -9642,7 +9756,7 @@
           "hash": "RDFC6fwTvMtaPjI7f50aj7Y4sBmmbKUZWfBFUf7yn3o="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9654,6 +9768,30 @@
           "hash": "xAzTM576QvLpC6wuLGar+N/8BROLtft0/tcMJs4o48o="
         }
       },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Solutions/sk-fiscalprinters-integration-setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "Solutions/sk-fiscalprinters-integration-setup.html",
+          "hash": "qRHS5Ayh+3Ih+XMuqmUZg1wukW0IfIospYLs5dM+fBQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Solutions/sk-fiscalprinters-integration.md",
+      "output": {
+        ".html": {
+          "relative_path": "Solutions/sk-fiscalprinters-integration.html",
+          "hash": "n4iFp6YPZgFw1BrbfQ/64iNlTaVLdaXWhHyACjd2/8M="
+        }
+      },
       "is_incremental": false,
       "version": ""
     },
@@ -9663,7 +9801,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/sk-intrastat.html",
-          "hash": "UgBYnSnTLIrlyaZO08SDyf9jnLVhZgi4ibcggf/Xif8="
+          "hash": "dLG2BfuRNJhkqV0qXYPfYW2XxueiLXJY4tnTgZbFpjc="
         }
       },
       "is_incremental": false,
@@ -9678,7 +9816,7 @@
           "hash": "gshckkvDKvUjibLw4FTYouG9AgE6PNDiZZf3p9Y9k54="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9687,7 +9825,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/sk-legislative-pack.html",
-          "hash": "LmiI7HH6qeyLoE616keugBXCXSOjP380SgVzQoaB0Jc="
+          "hash": "+ZL1JK8MkLCElpYy9udMq/oCUSz6vhJQifmfTJtiVmI="
         }
       },
       "is_incremental": false,
@@ -9702,7 +9840,7 @@
           "hash": "d+1Aj5/I4+B+a7f88EAJgjLUw2ZoPJ30G5Zc8ZurZ3s="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9717,7 +9855,7 @@
           "hash": "Eg9PIauaezwR1DiXc5o7glRQ9PfCJLtbuQ9/EQx6fC4="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9729,7 +9867,7 @@
           "hash": "ufQMb2LJMOn+T7d9pou71tunkcIJ3EJkzglyDtpDYwE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9741,7 +9879,7 @@
           "hash": "QwBdPAhPxhQV3VR+qJEZJsBdkiOg2pki+d3ewAFsuRY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9753,7 +9891,7 @@
           "hash": "9FvQgwsf8NsOhbVVOZJrSAWprxFRlxvpSk/r18TeSGg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9765,7 +9903,7 @@
           "hash": "bIPcN1LhGEo9gLguzX8HkwfAe4wSrw8rbsRQrDr8fdY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9777,7 +9915,7 @@
           "hash": "aSkdqvAkNJ4UYO2IDXEYB+PAygW8zeyNf+SMs1aOyDI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9789,7 +9927,7 @@
           "hash": "dgVxniST6FaT3TkbI1GP8Nq6USe7SUMb6EBRjfDmDRI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9801,7 +9939,7 @@
           "hash": "K14XTshFiDW7fQeRQ5NzpRcm0tpd6mrMFaaTSe7M1Ok="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9813,7 +9951,7 @@
           "hash": "nWQIRxhRL7UJ5RWeR5WJX0HoP/eIo/AGA38/hLwiKLQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9882,7 +10020,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/streamlinetools.html",
-          "hash": "VZuxSsYXqEOgS4CxYJJPRv9jhJTssafETU4x57PJ1DE="
+          "hash": "rrSv9OE1zX3Yc8hdVWyE/opUgUojio/9hoQvUmAPKNQ="
         }
       },
       "is_incremental": false,
@@ -10038,7 +10176,7 @@
       "output": {
         ".html": {
           "relative_path": "StreamlineTools/TOC.html",
-          "hash": "t1Wep1gRs7kc9UHEuZD8wdY1ox+aFnfnyY/2pHDOkSM="
+          "hash": "1FrccqCFZsqm37xhNi7F8Bipr8pkU7iQPV+3uyjNY8g="
         }
       },
       "is_incremental": false,
@@ -16705,7 +16843,7 @@
       "output": {
         ".html": {
           "relative_path": "support/TOC.html",
-          "hash": "t1Wep1gRs7kc9UHEuZD8wdY1ox+aFnfnyY/2pHDOkSM="
+          "hash": "1FrccqCFZsqm37xhNi7F8Bipr8pkU7iQPV+3uyjNY8g="
         }
       },
       "is_incremental": false,
@@ -16770,8 +16908,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 409,
-          "skipped_file_count": 392
+          "total_file_count": 412,
+          "skipped_file_count": 389
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

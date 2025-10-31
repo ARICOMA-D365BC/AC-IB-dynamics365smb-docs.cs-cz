@@ -8,7 +8,7 @@ ms.service: dynamics-365-business-central
 ms.search.keywords: Aricoma, Finance, Fixed Assets, Inventory, Physical Inventory
 ---
 
-# Inventura majetku — Nastavení
+# Inventura majetku - Nastavení
 
 Aplikaci **Inventura majetku** je potřeba nastavit dle následujícího popisu.
 

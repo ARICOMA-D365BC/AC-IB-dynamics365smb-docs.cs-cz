@@ -30,6 +30,8 @@
 ### [Nastavení - Insolvenční rejstřík](insolvence-register-setup.md)
 ## [Integrace s GP tom](gptom-integration.md)
 ### [Nastavení - Integrace s GP tom](gptom-integration-setup.md)
+## [Inventura majetku](fa-inventory.md)
+### [Nastavení - Inventura majetku](fa-inventory-setup.md)
 ## [Obecné parametry](general-parameters.md)
 ### [Nastavení - Obecné parametry](general-parameters-setup.md)
 ## [Odesílání elektronických dokladů](electronic-documents.md)

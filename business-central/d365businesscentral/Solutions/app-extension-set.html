@@ -194,7 +194,7 @@ Oba režimy se tak zpracovávají současně v rámci aktivit spojených s tvorb
 <h5>Note</h5>
 <p>Na zaúčtované faktuře, která obsahuje alespoň jeden řádek účtovaný jako přeplatek, nelze aplikovat funkce odúčtování přiřazených záloh ani dodatečné přiřazení záloh.</p>
 </div>
-<h4 id="vrácení-přeplatku-nákupní-zálohy-bc14-a-starší">Vrácení přeplatku nákupní zálohy (BC14 a starší)</h4>
+<h4 id="vrácení-přeplatku-nákupní-zálohy-business-central-version-14-a-starší">Vrácení přeplatku nákupní zálohy (Business Central version 14 a starší)</h4>
 <p>Po vytvoření finální nákupní faktury a přiřazení uhrazené nákupní zálohy je v případě přeplatku na záloze možné vložit další řádek s částkou přeplatku a příznakem Určeno pro vrácení zálohy (příznak je následně i na řádku zaúčtované faktury).</p>
 <p>Zaúčtováním faktury pak pro každý takový řádek s přeplatkem vznikne položka dodavatele typu Dobropis. Vrácení peněz dodavatelem (Refundace) pak uživatel vyrovná právě s těmito vzniklými položkami.</p>
 <div class="NOTE">
@@ -202,7 +202,7 @@ Oba režimy se tak zpracovávají současně v rámci aktivit spojených s tvorb
 <p>Při použití funkce Odúčtovat přiřazenou zálohu (z karty Zálohového daňového dokladu) dojde analogicky k odúčtování těchto zúčtování přeplatků.</p>
 </div>
 <h2 id="credit-check">Credit Check</h2>
-<p>Jedná se o integraci BC na komerční službu CreditCheck, která slouží pro kontrolu bonity partnerů.</p>
+<p>Jedná se o integraci Business Central na komerční službu CreditCheck, která slouží pro kontrolu bonity partnerů.</p>
 <p>Proto, aby v systému bylo co nejvíce informací o vybraném partnerovi, jsou informace importovány přes webovou službu Creditcheck ERP viz. <a href="http://www.creditcheck.cz/ProductDetail.aspx?id=02">http://www.creditcheck.cz/ProductDetail.aspx?id=02</a>.</p>
 <p>Společnost CreditCheck deklaruje, že každý den ve své databázi českých firem provádí 185 různých typů kontrol. Služba Creditcheck ERP je zdarma stejně tak jako vytvoření výpisu CreditcheckList. V databázi Creditcheck lze tedy prověřovat partnera bez přihlášení. V případech, kdy je u firmy nalezen oranžový nebo červený semafor je potřeba se pro prohlédnutí detailů přihlásit. Toto je placená služba, kterou si zákazník dle své potřeby uzavře s CreditCheck.</p>
 <h3 id="stav-creditcheck">Stav CreditCheck</h3>
@@ -392,7 +392,7 @@ Pole Stav pohledávky, umístěné na stránce Informace o pohledávce, slouží
 </li>
 <li><p><strong>Banky</strong></p>
 <p>Na Deníku odsouhlasení doplněna funkce Účto a Tisk.</p>
-<p>Poznámka: Od verze BC19 je doporučeno využívat novější funkcionalitu Bankovní dokumenty, která nevyužívá Deník odsouhlasení.</p>
+<p>Poznámka: Od verze Business Central version 19 je doporučeno využívat novější funkcionalitu Bankovní dokumenty, která nevyužívá Deník odsouhlasení.</p>
 </li>
 <li><p><strong>Pokladny</strong></p>
 <p>Do hlavičky pokladního dokladu je doplněno pole Oprava. Je-li uživatelem zapnuto, bude systém účtovat na stejné strany účtů, ale s opačným znaménkem. Díky tomu opravný doklad nenavyšuje obraty na stranách účtů.</p>
@@ -402,7 +402,7 @@ Pole Stav pohledávky, umístěné na stránce Informace o pohledávce, slouží
 <ul>
 <li><p><strong>QR kód pro platbu na prodejní faktuře</strong></p>
 <p>Nová CU 52057071 &quot;QR Code_acb&quot;, kde je funkce pro QR kód pro prodejní fakturu. Používá se .NET komponenta Microsoft.Dynamics.Nav.MX.dll, která je standardní AddIn od MS. Příklad použití je v reportu 52057066 &quot;Sales - Invoice QR_acb&quot;, jen tisk samotného QR kódu a příklad volání funkce.</p>
-<p>Poznámka: v BC online je nutné použít odlišný způsob – viz <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-report-barcode-fonts#one-dimensional-barcode-fonts-with-business-central-online">Barcode Fonts with Business Central Online - Business Central | Microsoft Docs</a></p>
+<p>Poznámka: v Business Central online je nutné použít odlišný způsob – viz <a href="https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-report-barcode-fonts#one-dimensional-barcode-fonts-with-business-central-online">Barcode Fonts with Business Central Online - Business Central | Microsoft Docs</a></p>
 </li>
 </ul>
 <h3 id="sklad">Sklad</h3>
