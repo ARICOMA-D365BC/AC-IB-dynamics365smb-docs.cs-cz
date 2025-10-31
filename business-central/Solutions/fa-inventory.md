@@ -34,7 +34,7 @@ Už žádné chaotické tabulky, ztracené papíry ani nekonečné dohledáván�
     - Automaticky se ukládá **GPS poloha**, což pomáhá zpřesnit evidenci.  
     - Díky mapovému zobrazení se můžete nechat **navigovat k poslední známé poloze majetku**.  
 
-![Deník inventury - návrh](media/fa-inventory-mobile-gps-small2.png)
+![Deník inventury - návrh](media/fa-inventory-mobile-gps-small.png)
 
 **3. Dokončení inventury v kanceláři**  
     - V systému se zpracují požadavky na změny (např. nový kód umístění, střediska, zaměstnance).  
@@ -42,7 +42,7 @@ Už žádné chaotické tabulky, ztracené papíry ani nekonečné dohledáván�
     - Inventura se schválí a zaúčtuje.  
     - Výstupy je možné **vytisknout** nebo **publikovat do SharePointu** pro další využití.  
 
-![Deník inventury - návrh](media/fa-inventory-pc2.png)
+![Deník inventury - návrh](media/fa-inventory-pc.png)
 
 ### Proč zvolit inventuru majetku pomocí QR kódů
 
@@ -82,7 +82,7 @@ Akce **Vypočítat inventuru DM** obsahuje tyto pole:
 - Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Deník inventury DM** a poté vyberte související odkaz.
 - Na stránce **Deník inventury DM** vyberte Akce/účtování **Seznam inventury DM** . Tisk formuláře pro ruční zpracování inventury (doplňkový způsob zpracování).
 
-![Tisk štítků](media/fa-inventory-qr2.png)
+![Tisk štítků](media/fa-inventory-qr.png)
 
 ### Inventura majetku – zpracování (na mobilním zařízení)
 
@@ -134,7 +134,7 @@ Akce **Vypočítat inventuru DM** obsahuje tyto pole:
   - **GPS longitude**
 
 ![Karta majetku - online mapy](media/fa-inventory-get-gps.png)
-![Umístění majetku na mapě](media/fa-inventory-maps2.png)
+![Umístění majetku na mapě](media/fa-inventory-maps.png)
 
 ## Související informace
 [Inventura majetku - Nastavení](fa-inventory-setup.md)  

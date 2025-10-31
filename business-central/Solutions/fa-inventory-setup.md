@@ -21,7 +21,7 @@ Aplikaci **Inventura majetku** je potřeba nastavit dle následujícího popisu.
   - při účtování vynutit vyplnění polí sekce **Účtování**.  
   - Nastavit automatické uložení GPS polohy při skenování-sekce **Ostatní**.
 
-![Nastavení inventury DM](media/fa-inventory-setup2.png)  
+![Nastavení inventury DM](media/fa-inventory-setup.png)  
 
 ## Nastavení Šablon deníku inventury DM
 
