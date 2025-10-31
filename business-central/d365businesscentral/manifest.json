@@ -5838,7 +5838,7 @@
           "hash": "YyGv87f56P/4qLUG82lVEm8WvGl3gmm9soh58zLX9tg="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5859,7 +5859,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/TOC.html",
-          "hash": "tmNmWrmVOsF5agTMkVLzd7PPiztMJ33tZ3xHAqm6APo="
+          "hash": "lPpzb6tztboz9rpPVscK+TeZZvzWFn86IXbdO0f2dpY="
         }
       },
       "is_incremental": false,
@@ -6012,7 +6012,7 @@
           "hash": "hBSdFMlEbr2LR0OrbjPohaGfLimxtTGU6vXwl6lM6dA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6027,7 +6027,7 @@
           "hash": "/Ru1I00Pu292pDQsdb58/7pVy994xSRUfmJlFR5mHnw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6042,7 +6042,7 @@
           "hash": "nwRptG1SPwyldRGuXJaKsfjOmUTaIWrsy9nLJd2Iwnw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6057,7 +6057,7 @@
           "hash": "RR0krIocxvfOhLOKuUXsYk4xv+KTvOwVBMuvpFleRsA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6072,7 +6072,7 @@
           "hash": "SX7p1OA3xmLsF/uUCOSFxZwRvTPevt5SVWM5DLO5Ck8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6108,7 +6108,7 @@
           "hash": "jUvmOLJWTnfxbZmaGmnb0thWoawguupITrWdRbvpEeA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6120,7 +6120,7 @@
           "hash": "VhkkvE0HtBmPmEhaQVbC8enZFXQgFAVNPpP0qVvBxyI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6156,7 +6156,7 @@
           "hash": "5ZD4r9qjb4X+J+PqiDp3y/Cf3ERMJv/XAGTTuNdNwWA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6168,7 +6168,7 @@
           "hash": "mGV9vBClR6T8wKtrNgTBXX7NR5yyNAP8Mm8Pp5SaeNM="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6201,7 +6201,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/fa-inventory-setup.html",
-          "hash": "rQfzIZeBcKEluXhL/J/lfjfMnyRC7nk9P4Yl0NUVzoQ="
+          "hash": "wgdIIS5fy6eADMeVptHuv+pUjNQcSWHG8aYAiRrEMjo="
         }
       },
       "is_incremental": false,
@@ -6264,7 +6264,7 @@
           "hash": "1Nlt/rlcV+5ouFCvi3jtK+K0YFBT5bl6UVf3TbvdBZw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6276,7 +6276,7 @@
           "hash": "Cy6aglGryPHINK8P32DU4EbBZVKkIvL3UiVq7s2wSHE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6288,7 +6288,7 @@
           "hash": "i7z8V23MYJZZXyWqSMrBWsplID/Olf7Je8SLfck/yDU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6324,7 +6324,7 @@
           "hash": "LIDfMQ9ZqwRDYZtL5puV0y9YTHPD0+M2vkeWgZfe8gA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6336,7 +6336,7 @@
           "hash": "mh9YVRDsNuHyo0soBX5MFUW5RdCUQDsoHSNaNuVuBrI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9450,7 +9450,7 @@
           "hash": "cu62xn0r3pE80uL5LB+OucA5ZeBJ7fJESJaXIjypglU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9462,7 +9462,7 @@
           "hash": "UAeHnfZAsWpy/OgPnJ6WeKcVU1hX44HFrRCJlVmMf1U="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9612,7 +9612,7 @@
           "hash": "bdtRFFxcvONEQR8YuqKi4Us/EEAEbw70T/ub6lSTGQk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9624,7 +9624,7 @@
           "hash": "sBDVkOTmRYY1XrC+rvcnN2VcwsilTNescnFaG0eJnPA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9648,7 +9648,7 @@
           "hash": "rKKYg34EYNdP8QBfBYUo+5c5kp6d0V9xckNVLW1zOnQ="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9660,7 +9660,7 @@
           "hash": "iAixWzgQ1CY23lC3iSu474m+8RsHnqYU2wm6s5LzQR0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9672,7 +9672,7 @@
           "hash": "H0+JaWV4tfBt9ePt9rZ1aGouN/84g0sGqulODXmglNE="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9684,7 +9684,7 @@
           "hash": "Yn9QF775YHN5c2ah5nbns6yWyscMQl6dcyjd3hbEkTs="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9696,7 +9696,7 @@
           "hash": "loHjiEKb5xOKk86Cso/rJERLq/zcinFi5BwKNZWFzck="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9708,7 +9708,7 @@
           "hash": "lNEKMRtW9MWaeak07Xky+KzsFwV25r5w8vLKFxvDEyk="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9732,7 +9732,7 @@
           "hash": "QPIgjwbUpPRWBHd9DK/RfFpzHd+FlVhIiCBw1QzUZ4A="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9744,7 +9744,7 @@
           "hash": "caHTenetg1Bwu5t3XzglqNjxjHucLj3p9Sdyg8ex/uE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9768,7 +9768,7 @@
           "hash": "xAzTM576QvLpC6wuLGar+N/8BROLtft0/tcMJs4o48o="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9780,7 +9780,7 @@
           "hash": "qRHS5Ayh+3Ih+XMuqmUZg1wukW0IfIospYLs5dM+fBQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9792,7 +9792,7 @@
           "hash": "n4iFp6YPZgFw1BrbfQ/64iNlTaVLdaXWhHyACjd2/8M="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9804,7 +9804,7 @@
           "hash": "dLG2BfuRNJhkqV0qXYPfYW2XxueiLXJY4tnTgZbFpjc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9828,7 +9828,7 @@
           "hash": "+ZL1JK8MkLCElpYy9udMq/oCUSz6vhJQifmfTJtiVmI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9840,7 +9840,7 @@
           "hash": "d+1Aj5/I4+B+a7f88EAJgjLUw2ZoPJ30G5Zc8ZurZ3s="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9855,7 +9855,7 @@
           "hash": "Eg9PIauaezwR1DiXc5o7glRQ9PfCJLtbuQ9/EQx6fC4="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -9999,7 +9999,7 @@
           "hash": "uqoopP+GeSoDo82tPrKZgf0+sCfi2FfvjtP3N4BwgFM="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -10011,7 +10011,7 @@
           "hash": "2tUVujp6wzLTYszU2vFwKq+T9vAhFxCvx4EAa+a0dk0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -14912,6 +14912,105 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/fa-inventory-calculate.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/fa-inventory-calculate.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/fa-inventory-get-gps.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/fa-inventory-get-gps.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/fa-inventory-journal-dimensions.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/fa-inventory-journal-dimensions.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/fa-inventory-maps.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/fa-inventory-maps.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/fa-inventory-mobile-gps-small.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/fa-inventory-mobile-gps-small.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/fa-inventory-pc.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/fa-inventory-pc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/fa-inventory-qr.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/fa-inventory-qr.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/fa-inventory-scan.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/fa-inventory-scan.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/fa-inventory-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/fa-inventory-setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "d365businesscentral/Solutions/media/factoring.png",
       "output": {
         "resource": {
@@ -16909,7 +17008,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 412,
-          "skipped_file_count": 389
+          "skipped_file_count": 411
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
