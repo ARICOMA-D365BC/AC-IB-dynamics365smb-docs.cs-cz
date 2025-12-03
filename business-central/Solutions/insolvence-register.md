@@ -139,7 +139,7 @@ Report automaticky upozorňuje na vstup obchodního partnera (kontaktu/zákazní
 ![ir-check-report.png](media/ir-check-report.png)
 
 > [!NOTE]
-> Lze nastavit, aby byl uživatel pravidelně upozorňován, že má sestavu spustit a případně vyřešit. To lze nastavit prostřednictvím **[Úloh uživatele](https://learn.microsoft.com/cs-cz/dynamics365/business-central/across-user-tasks)** . Další možností je nastavit Plán pro spouštění sestavy do schránky uživatele.
+> Lze nastavit, aby byl uživatel pravidelně upozorňován, že má sestavu spustit a případně vyřešit. To lze nastavit prostřednictvím **[Úloh uživatele](https://learn.microsoft.com/cs-cz/dynamics365/business-central/across-user-tasks)** . Další možností je nastavit **Plán spouštění sestavy do schránky uživatele**.
 
 ## Sestava Přehled prodejních dokladů v insolvenci
 
