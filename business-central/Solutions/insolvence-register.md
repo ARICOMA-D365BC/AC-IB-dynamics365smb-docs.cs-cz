@@ -9,13 +9,14 @@ ms.search.keywords: Aricoma, Finance, Insolvency register
 ---
 # Insolvenční rejstřík
 
-Aplikace **Insolvenční rejstřík** slouží k evidenci záznamů stahovaných z  https://isir.justice.cz o insolvenčním řízení společností.
-**Insolvenční rejstřík (ISIR)** je veřejně dostupná online databáze spravovaná **Ministerstvem spravedlnosti ČR**, která eviduje informace o insolvenčních řízeních fyzických i právnických osob. Obsahuje:
+**Insolvenční rejstřík** je rozšíření pro Microsoft Dynamics 365 Business Central, které umožňuje automatické ověřování platební schopnosti zákazníků a dodavatelů na základě dat stahovaných z oficiálního Insolvenčního rejstříku České republiky https://isir.justice.cz. **Insolvenční rejstřík (ISIR)** je veřejně dostupná online databáze spravovaná **Ministerstvem spravedlnosti ČR**, která eviduje informace o insolvenčních řízeních fyzických i právnických osob.
+
+Databáze obsahuje:
 
 - Rozhodnutí insolvenčního soudu (zahájení řízení, úpadek, oddlužení apod.)
 - Přihlášky pohledávek věřitelů
 - Zprávy insolvenčního správce
-Identifikační údaje o dlužníkovi (jméno, IČO, datum narození)
+- Identifikační údaje o dlužníkovi (jméno, IČO, datum narození)
 - Spisovou dokumentaci řízení v chronologickém pořadí
 
 Rejstřík je důležitý pro:
@@ -38,9 +39,27 @@ Záznamy zůstávají v rejstříku **3 roky po ukončení řízení**.
 - Umožnit účtování při insolvenci pro konkrétní doklad
 - Kompletní informace o probíhajících i ukončených insolvenčních řízeních partnerů přímo v Business Central
 
+### Cloud verze a serverová architektura
+
+Pro cloudové verze Business Central je využívána **serverová část aplikace**, která zajišťuje:
+
+- Centralizované načítání všech záznamů z ISIR (Insolvenční rejstřík)
+- Poskytování API pro dotazy z klientské části IR
+- Automatickou synchronizaci dat mezi serverem a klientskými aplikacemi
+
+Serverová architektura eliminuje nutnost každé Business Central instance stahovat kompletní data z ISIR, což výrazně zvyšuje výkonnost a spolehlivost služby.
+
+V případě **On-Premises varianty** Business Central je možné zvolit mezi dvěma způsoby implementace:
+
+- **Serverová varianta** - využívá centralizovaný server pro stahování dat z ISIR, stejně jako cloudová verze. Tato varianta snižuje velikost databáze, neboť jsou stahována pouze data subjektů, kteří jsou v dané instanci Business Central evidováni jako zákazníci, dodavatelé či kontakty.
+- **Přímé stahování** - z ISIR se stahují kompletní data přímo do databáze konkrétní instance Business Central bez využití centrálního serveru. Tento přístup je vhodný pro organizace, které preferují plnou kontrolu nad svými daty a nevyužívají cloudové služby.
+
+
+
+
 ## Použití
 
-### Zobrazení informací o insolvenci 
+### Zobrazení informací o insolvenci partnera
 
 - Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Zákazníci** a poté vyberte související odkaz.
 - Přejděte na záznam se zákazníkem se záznamem v insolvenčním rejstříku.
