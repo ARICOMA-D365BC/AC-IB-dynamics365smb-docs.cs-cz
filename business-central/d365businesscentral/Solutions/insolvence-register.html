@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>AC - Financial pack -  Insolvence register | Microsoft Docs </title>
+    <title>Insolvence register </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="AC - Financial pack -  Insolvence register | Microsoft Docs ">
+    <meta name="title" content="Insolvence register ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -69,12 +69,132 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="insolvenční-rejstřík">Insolvenční rejstřík</h1>
 
-<p>Add-on <strong>Insolvenční rejstřík</strong> slouží k evidenci záznamů stahovaných z  <a href="https://isir.justice.cz">https://isir.justice.cz</a> o insolvenčním řízení společností.</p>
-<p>Je nástrojem pro další akce s kontakty společnosti, které jsou v insolvenčním řízení, např. při zadávání prodejních dokladů, jejich účtování (dodání, fakturace). Poskytuje vybraným osobám společnosti aktuální informace o nových záznamech v insolvenčním rejstříku.</p>
-<p><img src="media/Insolvence_register.png" alt="Insolvenční rejstřík" title="Insolvenční rejstřík"></p>
-<p><strong>Viz také</strong></p>
+<p><strong>Insolvenční rejstřík</strong> je rozšíření pro Microsoft Dynamics 365 Business Central, které umožňuje automatické ověřování platební schopnosti zákazníků a dodavatelů na základě dat stahovaných z oficiálního Insolvenčního rejstříku České republiky <a href="https://isir.justice.cz">https://isir.justice.cz</a>. <strong>Insolvenční rejstřík (ISIR)</strong> je veřejně dostupná online databáze spravovaná <strong>Ministerstvem spravedlnosti ČR</strong>, která eviduje informace o insolvenčních řízeních fyzických i právnických osob.</p>
+<p>Databáze obsahuje:</p>
+<ul>
+<li>Rozhodnutí insolvenčního soudu (zahájení řízení, úpadek, oddlužení apod.)</li>
+<li>Přihlášky pohledávek věřitelů</li>
+<li>Zprávy insolvenčního správce</li>
+<li>Identifikační údaje o dlužníkovi (jméno, IČO, datum narození)</li>
+<li>Spisovou dokumentaci řízení v chronologickém pořadí</li>
+</ul>
+<p>Rejstřík je důležitý pro:</p>
+<ul>
+<li><strong>Věřitele</strong> – kvůli přihlášení pohledávek</li>
+<li><strong>Dlužníky</strong> – pro sledování průběhu řízení</li>
+<li><strong>Podnikatele</strong> – pro prověření obchodních partnerů</li>
+<li><strong>Veřejnost</strong> – pro ověření finanční spolehlivosti osob a firem</li>
+</ul>
+<p>Záznamy zůstávají v rejstříku <strong>3 roky po ukončení řízení</strong>.</p>
+<p><strong>Aplikace Insolvenční rejstřík</strong> pro Business Central zpřístupňuje tato veřejná data přímo do Business Central tak, aby měla společnost tyto informace přímo integrovány do obchodních procesů. Zavede-li firma do systému nového partnera (zákazníka, dodavatele, kontakt) se záznamem v ISIR, popř. se zavedený partner do ISIR dostane dodatečně, uživatel systému je o této skutečnosti informován.</p>
+<h2 id="klíčové-funkce">Klíčové funkce</h2>
+<ul>
+<li>Zobrazení informace o insolvenčním řízení na kartě zákazníka, dodavatele, kontaktu a Informacích o společnosti</li>
+<li>Varování uživatele při práci s prodejním či servisním dokladem</li>
+<li>Nastavení zamezení účtování dokladů</li>
+<li>Možnost vypnout test na insolvenci pro konkrétního partnera (zákazníka, dodavatele)</li>
+<li>Umožnit účtování při insolvenci pro konkrétní doklad</li>
+<li>Kompletní informace o probíhajících i ukončených insolvenčních řízeních partnerů přímo v Business Central</li>
+</ul>
+<h3 id="cloud-verze-a-serverová-architektura">Cloud verze a serverová architektura</h3>
+<p>Pro cloudové verze Business Central je využívána <strong>serverová část aplikace</strong>, která zajišťuje:</p>
+<ul>
+<li>Centralizované načítání všech záznamů z ISIR (Insolvenční rejstřík)</li>
+<li>Poskytování API pro dotazy z klientské části IR</li>
+<li>Automatickou synchronizaci dat mezi serverem a klientskými aplikacemi</li>
+</ul>
+<p>Serverová architektura eliminuje nutnost každé Business Central instance stahovat kompletní data z ISIR, což výrazně zvyšuje výkonnost a spolehlivost služby.</p>
+<p>V případě <strong>On-Premises varianty</strong> Business Central je možné zvolit mezi dvěma způsoby implementace:</p>
+<ul>
+<li><strong>Serverová varianta</strong> - využívá centralizovaný server pro stahování dat z ISIR, stejně jako cloudová verze. Tato varianta snižuje velikost databáze, neboť jsou stahována pouze data subjektů, kteří jsou v dané instanci Business Central evidováni jako zákazníci, dodavatelé či kontakty.</li>
+<li><strong>Přímé stahování</strong> - z ISIR se stahují kompletní data přímo do databáze konkrétní instance Business Central bez využití centrálního serveru. Tento přístup je vhodný pro organizace, které preferují plnou kontrolu nad svými daty a nevyužívají cloudové služby.</li>
+</ul>
+<h2 id="použití">Použití</h2>
+<h3 id="zobrazení-informací-o-insolvenci-partnera">Zobrazení informací o insolvenci partnera</h3>
+<ul>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Zákazníci</strong> a poté vyberte související odkaz.</li>
+<li>Přejděte na záznam se zákazníkem se záznamem v insolvenčním rejstříku.</li>
+<li>Zvolte <strong>Související &gt; Zákazník &gt; Insolvenční rejstřík</strong>. Alternativně lze využít Informační panel Insolvenční rejstřík, kde je zobrazen počet otevřených záznamů Insolvenčního rejstříku.</li>
+<li>Na stránce Seznam věcí insolvenčního rejstříku vidíte seznam otevřených i uzavřených insolvencí zákazníka.</li>
+</ul>
+<p><img src="media/ir-customer-card2.png" alt="ir-customer-card2.png"></p>
+<p><img src="media/ir-customer-ir-events.png" alt="ir-customer-ir-events.png"></p>
+<p>Stejné informace jsou k dispozici i na <strong>kartě Dodavatele</strong> a <strong>Kontaktu</strong>. Informace o insolvencích vůči vlastní organizaci je k dispozici na stránce <strong>Informace o společnosti</strong>.</p>
+<h4 id="karta-věci-insolvenčního-rejstříku">Karta věci insolvenčního rejstříku</h4>
+<p><strong>Karta věci insolvenčního rejstříku</strong> poskytuje detailní pohled na konkrétní insolvenční řízení a slouží k:</p>
+<ul>
+<li><strong>Zobrazení úplných informací</strong> o insolvenčním řízení včetně spisové značky, data zahájení, stavu řízení a typu řízení</li>
+<li><strong>Sledování průběhu</strong> insolvenčního řízení s chronologickým přehledem všech významných událostí</li>
+<li><strong>Identifikaci subjektu</strong> - zobrazuje kompletní informace o dlužníkovi (název, IČO, sídlo, právní forma)</li>
+<li><strong>Přehledu dokumentů</strong> připojených k insolvenčnímu řízení</li>
+<li><strong>Monitoringu změn</strong> stavu řízení v čase</li>
+<li><strong>Přístupu k detailním údajům</strong> o insolvenčním správci a věřitelích</li>
+</ul>
+<p>Karta je automaticky aktualizována při stahování nových dat z ISIR a poskytuje uživatelům aktuální informace o vývoji insolvenčního řízení jejich obchodních partnerů.</p>
+<p><img src="media/ir-event-card.png" alt="Karta insolvenčního rejstříku"></p>
+<p>Z Karty věci insolvenčního rejstříku je možné zobrazit i detailní informace o <strong>subjektu</strong> insolvenčního řízení kliknutím na volbu <strong>Osoby</strong>. K subjektu je dále možné zobrazit i adresní údaje kliknutím na volbu <strong>Adresy</strong>.</p>
+<p><img src="media/ir-event-card-person.png" alt="Subjekt insolvenčního rejstříku"></p>
+<h3 id="upozornění-na-prodejních-dokladech">Upozornění na prodejních dokladech</h3>
+<p>Je-li zapnuto <strong>Kontrola insolvence při prodeji</strong> v <strong>Nastavení insolvenčního rejstříku</strong>, pak při vložení zákazníka na prodejní doklad (nabídka, objednávka, faktura) bude v případě, že má zákazník libovolný záznam v insolvenčním rejstříku, zobrazena <strong>notifikace</strong>. Přímo z ní má uživatel možnost otevřít <strong>Seznam věcí insolvenčního rejstříku</strong>.</p>
+<h3 id="kontrola-při-účtování-prodejního-dokladu">Kontrola při účtování prodejního dokladu</h3>
+<p>Při spuštění akce Účtovat na prodejní objednávce či faktuře probíhá, dle nastavení kontroly insolvence při prodeji, kontrola na <strong>otevřené případy v insolvenčním rejstříku</strong>. Pokud je takový záznam nalezen, není uživateli dovoleno účtování provést. V Nastavení insolvenčního rejstříku lze specifikovat variantu <strong>Blokování účtování prodeje při insolvenci</strong> a to <strong>Dodání, Faktura, Vše a prázdné (neblokuje účtování)</strong>.</p>
+<h3 id="vypnutí-kontroly-insolvence-zákazníka">Vypnutí kontroly insolvence zákazníka</h3>
+<p>Uživatel se speciálním oprávněním může na kartě zákazníka vypnout jeho testování vůči insolvenčnímu rejstříku. Vedlejším efektem je, že pro tohoto zákazníka nejsou zobrazovány záznamy o insolvenci (např. akce Insolvenční rejstřík na kartě zákazníka).</p>
+<ul>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Zákazníci</strong> a poté vyberte související odkaz.</li>
+<li>Přejděte na zákazníka se záznamem v insolvenčním rejstříku.</li>
+<li>Na <strong>záložce Fakturace</strong> zapněte <strong>Vypnout test na insolvenci</strong>.</li>
+<li>Ověřte, že akce Insolvenční rejstřík zobrazí prázdný seznam. Pro okamžitý efekt je potřeba aktualizovat stránku např. klávesou F5.</li>
+</ul>
+<p><img src="media/ir-customer-card1.png" alt="ir-customer-card1.png"></p>
+<p>Stejné nastavení je i na kartě dodavatele (záložka Fakturace) i Kontaktu (záložka Zahraniční obchod). V těchto případech dochází k nezobrazování záznamů o těchto firmách v přehledech a na sestavách pro kontrolu insolvenčního rejstříku.</p>
+<h2 id="jednorázové-vypnutí-kontroly-účtování-na-prodejních-a-servisních-dokladech">Jednorázové vypnutí kontroly účtování na prodejních a servisních dokladech</h2>
+<p>Uživatel se speciálním oprávněním může na kartě prodejního dokladu (popř. na dokladu servisu) vypnout omezení účtování na základě existence otevřeného insolvenčního řízení. Pak je možné doklad zaúčtovat.</p>
+<ul>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Prodejní objednávky</strong> a poté vyberte související odkaz.</li>
+<li>Přejděte na záznam objednávky pro zákazníka s otevřenou insolvencí a spusťte akci Úpravy.</li>
+<li>Na záložce <em>Dodávka a fakturace</em> zapněte <strong>Umožn<strong><strong>it</strong></strong> účtování při insolvenci</strong>.</li>
+<li>Spusťte akci Účtovat.</li>
+<li>Zavřete stránku.</li>
+</ul>
+<p><img src="media/ir-sales-order-allow-posting.png" alt="ir-sales-order-allow-posting.png"></p>
+<h3 id="sestava-kontrola-insolvenčního-rejstříku">Sestava Kontrola insolvenčního rejstříku</h3>
+<p>Report automaticky upozorňuje na vstup obchodního partnera (kontaktu/zákazníka/dodavatele) do insolvenčního řízení nebo na podání návrhu na insolvenční řízení vůči vlastní společnosti.</p>
+<ul>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Kontrola insolvenčního rejstříku</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Kontrola insolvenční rejstříku definujte v možnostech parametry spuštění:
+<ul>
+<li>V poli <strong>Zpětně o</strong> zadejte například „5D&quot;, aby systém hledal záznamy za posledních 5 dnů</li>
+<li>Dalšími příznaky definujte, zda-li se mají či nemají tisknout informace o vlastní společnosti, kontaktech, zákaznících či dodavatelích.</li>
+<li>Spusťte sestavu tlačítkem <strong>Náhled</strong>.</li>
+</ul>
+</li>
+</ul>
+<p><img src="media/ir-check-report-setup.png" alt="ir-check-report-setup.png"></p>
+<p><img src="media/ir-check-report.png" alt="ir-check-report.png"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Lze nastavit, aby byl uživatel pravidelně upozorňován, že má sestavu spustit a případně vyřešit. To lze nastavit prostřednictvím <strong><a href="https://learn.microsoft.com/cs-cz/dynamics365/business-central/across-user-tasks">Úloh uživatele</a></strong> . Další možností je nastavit <strong>Plán spouštění sestavy do schránky uživatele</strong>.</p>
+</div>
+<h2 id="sestava-přehled-prodejních-dokladů-v-insolvenci">Sestava Přehled prodejních dokladů v insolvenci</h2>
+<p>Report automaticky upozorňuje na existenci dokladů v systému, u kterých má zákazník záznam v insolvenčním
+rejstříku. Jedná se o tyto doklady a položky:</p>
+<ul>
+<li>Prodejní objednávky, faktury, nabídky</li>
+<li>Upomínky, Penále</li>
+<li>Otevřené položky zákazníka všech typů (faktura, platba, dobropis, upomínka, penále)</li>
+</ul>
+<p>Spuštění sestavy Přehled prodejních dokladů v insolvenci:</p>
+<ul>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přehled prodej. dokladů v insolvenci</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Přehled prodej. dokladů v insolvenci definujte v možnostech, má-li sestava zahrnout i uzavřená insolvenční řízení.</li>
+<li>Spusťte sestavu tlačítkem <strong>Náhled</strong>.</li>
+</ul>
+<p><img src="media/ir-sales-doc-report-setup.png" alt="ir-sales-doc-report-setup.png"></p>
+<p><img src="media/ir-sales-doc-report.png" alt="ir-sales-doc-report.png"></p>
+<h2 id="související-informace">Související informace</h2>
 <p><a href="insolvence-register-setup.html">Nastavení - Insolvenční rejstřík</a><br>
-<a href="finance-pack.html">Financial Pack</a></p>
+<a href="solutions.html">ARICOMA řešení</a></p>
 </article>
           </div>
           
@@ -83,7 +203,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/2025_NewStructure/business-central/Solutions/insolvence-register.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/InsolvencyRegister/business-central/Solutions/insolvence-register.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
                   </li>
                 </ul>
               </div>
