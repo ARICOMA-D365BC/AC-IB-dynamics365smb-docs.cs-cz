@@ -15,7 +15,7 @@ Nejprve je potřeba modul Insolvenčního rejstříku správně nakonfigurovat a
 
 ## Nastavení serverové komunikace (moderní)
 
-Nový způsob komunikace je možný jak pro **Online**, tak i **On-premises** verzi Business Central. Pro zprovoznění je třeba kontaktovat **ARICOMA** **(bc_sales@aricoma.com)** pro získání přístupového klíče.
+Nový způsob komunikace je možný jak pro **Online**, tak i **On-premises** verzi Business Central. Pro zprovoznění je třeba kontaktovat **ARICOMA (<bc_sales@aricoma.com>)** pro získání přístupového klíče.
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení insolvenčního rejstříku** a poté vyberte související odkaz.
 2. Ověřte, že na záložce **Zdroj dat** je zapnuto pole **Používat data ze vzdáleného serveru**.

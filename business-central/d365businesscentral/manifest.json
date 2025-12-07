@@ -6393,7 +6393,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/insolvence-register-setup.html",
-          "hash": "XkhYiQk2cw3MuO5iEuhxzDO2uY94KH8Rt2uwNMEJ5rA="
+          "hash": "fc45EgRYRvgiubOkChJ3sjRWM7p7Q+IGcNU/57KU2TY="
         }
       },
       "is_incremental": false,
@@ -6405,7 +6405,7 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/insolvence-register.html",
-          "hash": "5LrCBIkmhdXgLgxhSdoHmoV9s3Viu/1dojibkd7iAfU="
+          "hash": "Vl0CQAoKNidywOKSpxC63IrI1/CydgqvpiRQDoHs3zQ="
         }
       },
       "is_incremental": false,
@@ -15378,6 +15378,160 @@
       "output": {
         "resource": {
           "relative_path": "d365businesscentral/Solutions/media/incoming_mail.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/ir-check-report-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/ir-check-report-setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/ir-check-report.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/ir-check-report.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/ir-communication.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/ir-communication.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/ir-contact-card1.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/ir-contact-card1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/ir-customer-card1.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/ir-customer-card1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/ir-customer-card2.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/ir-customer-card2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/ir-customer-ir-events.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/ir-customer-ir-events.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/ir-event-card-person.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/ir-event-card-person.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/ir-event-card.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/ir-event-card.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/ir-job-queue.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/ir-job-queue.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/ir-sales-doc-report-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/ir-sales-doc-report-setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/ir-sales-doc-report.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/ir-sales-doc-report.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/ir-sales-order-allow-posting.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/ir-sales-order-allow-posting.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "d365businesscentral/Solutions/media/ir-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "d365businesscentral/Solutions/media/ir-setup.png"
         }
       },
       "is_incremental": false,
