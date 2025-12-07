@@ -9,6 +9,8 @@ ms.search.keywords: Aricoma, Finance, Insolvency register
 ---
 # Insolvenční rejstřík
 
+> Aktualizace: 30.11.2025
+
 **Insolvenční rejstřík** je rozšíření pro Microsoft Dynamics 365 Business Central, které umožňuje automatické ověřování platební schopnosti zákazníků a dodavatelů na základě dat stahovaných z oficiálního Insolvenčního rejstříku České republiky https://isir.justice.cz. **Insolvenční rejstřík (ISIR)** je veřejně dostupná online databáze spravovaná **Ministerstvem spravedlnosti ČR**, která eviduje informace o insolvenčních řízeních fyzických i právnických osob.
 
 Databáze obsahuje:
