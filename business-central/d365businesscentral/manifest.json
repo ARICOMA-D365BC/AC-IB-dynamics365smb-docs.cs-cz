@@ -5838,7 +5838,7 @@
           "hash": "YyGv87f56P/4qLUG82lVEm8WvGl3gmm9soh58zLX9tg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -5877,7 +5877,7 @@
           "hash": "j/N7IkkedrauGJS1PQYfNkFGawz0D+0bVIuifMhtXVs="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -5913,7 +5913,7 @@
           "hash": "vaMCknAxg3/x11ir17gaLbxfwbk3KUfGDg5jkrL+tPE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -5928,7 +5928,7 @@
           "hash": "YRWfBZDXa+MtSFp2vhPRuZKzzmoBLHNWETWf/4hXjCc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6204,7 +6204,7 @@
           "hash": "wgdIIS5fy6eADMeVptHuv+pUjNQcSWHG8aYAiRrEMjo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6216,7 +6216,7 @@
           "hash": "Hxzo8k7l5T90c9Rrk0fbE1sCdq3b9W6EVl+7GN6MD5g="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6264,7 +6264,7 @@
           "hash": "1Nlt/rlcV+5ouFCvi3jtK+K0YFBT5bl6UVf3TbvdBZw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6276,7 +6276,7 @@
           "hash": "Cy6aglGryPHINK8P32DU4EbBZVKkIvL3UiVq7s2wSHE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6393,10 +6393,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/insolvence-register-setup.html",
-          "hash": "PJcMVtYyaOzMQI98Kt3b2EP9Vzh+W6OWriq66oMT9+w="
+          "hash": "XkhYiQk2cw3MuO5iEuhxzDO2uY94KH8Rt2uwNMEJ5rA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6405,10 +6405,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/insolvence-register.html",
-          "hash": "AnX2uIwR/bN0n6iGxSiM4ceBP4khjbZF/NtR51yMu1Q="
+          "hash": "5LrCBIkmhdXgLgxhSdoHmoV9s3Viu/1dojibkd7iAfU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -8109,6 +8109,160 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "Solutions/media/ir-check-report-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/ir-check-report-setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/ir-check-report.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/ir-check-report.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/ir-communication.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/ir-communication.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/ir-contact-card1.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/ir-contact-card1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/ir-customer-card1.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/ir-customer-card1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/ir-customer-card2.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/ir-customer-card2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/ir-customer-ir-events.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/ir-customer-ir-events.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/ir-event-card-person.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/ir-event-card-person.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/ir-event-card.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/ir-event-card.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/ir-job-queue.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/ir-job-queue.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/ir-sales-doc-report-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/ir-sales-doc-report-setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/ir-sales-doc-report.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/ir-sales-doc-report.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/ir-sales-order-allow-posting.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/ir-sales-order-allow-posting.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/ir-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/ir-setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "Solutions/media/job_queue.png",
       "output": {
         "resource": {
@@ -9450,7 +9604,7 @@
           "hash": "cu62xn0r3pE80uL5LB+OucA5ZeBJ7fJESJaXIjypglU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9462,7 +9616,7 @@
           "hash": "UAeHnfZAsWpy/OgPnJ6WeKcVU1hX44HFrRCJlVmMf1U="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9573,7 +9727,7 @@
           "hash": "iLy8Zhls2TtUOrEIJeh4bIyQBF5CtGLi1Dul9CLFOvA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9612,7 +9766,7 @@
           "hash": "bdtRFFxcvONEQR8YuqKi4Us/EEAEbw70T/ub6lSTGQk="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9624,7 +9778,7 @@
           "hash": "sBDVkOTmRYY1XrC+rvcnN2VcwsilTNescnFaG0eJnPA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9636,7 +9790,7 @@
           "hash": "9kFrksVIjLRA+De8SQRIFdVriUdssGj26G5AzZjgVe8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9648,7 +9802,7 @@
           "hash": "rKKYg34EYNdP8QBfBYUo+5c5kp6d0V9xckNVLW1zOnQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9660,7 +9814,7 @@
           "hash": "iAixWzgQ1CY23lC3iSu474m+8RsHnqYU2wm6s5LzQR0="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9672,7 +9826,7 @@
           "hash": "H0+JaWV4tfBt9ePt9rZ1aGouN/84g0sGqulODXmglNE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9684,7 +9838,7 @@
           "hash": "Yn9QF775YHN5c2ah5nbns6yWyscMQl6dcyjd3hbEkTs="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9696,7 +9850,7 @@
           "hash": "loHjiEKb5xOKk86Cso/rJERLq/zcinFi5BwKNZWFzck="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9708,7 +9862,7 @@
           "hash": "lNEKMRtW9MWaeak07Xky+KzsFwV25r5w8vLKFxvDEyk="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9768,7 +9922,7 @@
           "hash": "xAzTM576QvLpC6wuLGar+N/8BROLtft0/tcMJs4o48o="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9840,7 +9994,7 @@
           "hash": "d+1Aj5/I4+B+a7f88EAJgjLUw2ZoPJ30G5Zc8ZurZ3s="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9855,7 +10009,7 @@
           "hash": "Eg9PIauaezwR1DiXc5o7glRQ9PfCJLtbuQ9/EQx6fC4="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9999,7 +10153,7 @@
           "hash": "uqoopP+GeSoDo82tPrKZgf0+sCfi2FfvjtP3N4BwgFM="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -10011,7 +10165,7 @@
           "hash": "2tUVujp6wzLTYszU2vFwKq+T9vAhFxCvx4EAa+a0dk0="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -10023,7 +10177,7 @@
           "hash": "rrSv9OE1zX3Yc8hdVWyE/opUgUojio/9hoQvUmAPKNQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -17008,7 +17162,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 412,
-          "skipped_file_count": 411
+          "skipped_file_count": 410
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
