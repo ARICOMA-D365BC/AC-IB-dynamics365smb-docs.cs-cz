@@ -71,7 +71,7 @@ V případě **On-Premises varianty** Business Central je možné zvolit mezi dv
 
 Stejné informace jsou k dispozici i na **kartě Dodavatele** a **Kontaktu**. Informace o insolvencích vůči vlastní organizaci je k dispozici na stránce **Informace o společnosti**.
 
-#### Karta věci insolvenčního rejstříku
+### Karta věci insolvenčního rejstříku
 
 **Karta věci insolvenčního rejstříku** poskytuje detailní pohled na konkrétní insolvenční řízení a slouží k:
 
@@ -111,7 +111,7 @@ Uživatel se speciálním oprávněním může na kartě zákazníka vypnout jeh
 
 Stejné nastavení je i na kartě dodavatele (záložka Fakturace) i Kontaktu (záložka Zahraniční obchod). V těchto případech dochází k nezobrazování záznamů o těchto firmách v přehledech a na sestavách pro kontrolu insolvenčního rejstříku.
 
-## Jednorázové vypnutí kontroly účtování na prodejních a servisních dokladech
+### Jednorázové vypnutí kontroly účtování na prodejních a servisních dokladech
 
 Uživatel se speciálním oprávněním může na kartě prodejního dokladu (popř. na dokladu servisu) vypnout omezení účtování na základě existence otevřeného insolvenčního řízení. Pak je možné doklad zaúčtovat.
 
@@ -140,7 +140,7 @@ Report automaticky upozorňuje na vstup obchodního partnera (kontaktu/zákazní
 > [!NOTE]
 > Lze nastavit, aby byl uživatel pravidelně upozorňován, že má sestavu spustit a případně vyřešit. To lze nastavit prostřednictvím **[Úloh uživatele](https://learn.microsoft.com/cs-cz/dynamics365/business-central/across-user-tasks)** . Další možností je nastavit **Plán spouštění sestavy do schránky uživatele**.
 
-## Sestava Přehled prodejních dokladů v insolvenci
+### Sestava Přehled prodejních dokladů v insolvenci
 
 Report automaticky upozorňuje na existenci dokladů v systému, u kterých má zákazník záznam v insolvenčním
 rejstříku. Jedná se o tyto doklady a položky:
