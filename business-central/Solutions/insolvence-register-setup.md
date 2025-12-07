@@ -9,6 +9,8 @@ ms.search.keywords: Aricoma, Finance, Insolvency register
 ---
 # Nastavení Insolvenčního rejstříku
 
+> Aktualizace: 30.11.2025
+
 Nejprve je potřeba modul Insolvenčního rejstříku správně nakonfigurovat a nastavit způsob, jakým se data z Insolvenčního rejstříku stahují do vaší databáze Business Central.
 
 ## Nastavení serverové komunikace (moderní)
@@ -28,13 +30,13 @@ Nový způsob komunikace je možný jak pro **Online**, tak i **On-premises** ve
 
 ![Nastavení Insolvenčního rejstříku](media/ir-setup.png)
 
-**Schéma komunikace se serverem IR**
+**Schéma komunikace se serverem IR**  
+
 ![Komunikace se serverem IR](media/ir-communication.png)
 
 Každá z periodických úloh vytváří záznam v **Položkách fronty úloh**, kde můžete sledovat jejich stav.
 
 ![Položky fronty úloh](media/ir-job-queue.png)
-
 
 ## Nastavení komunikace (klasické)
 
