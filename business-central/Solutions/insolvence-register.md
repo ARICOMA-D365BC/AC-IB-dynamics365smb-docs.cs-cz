@@ -54,9 +54,6 @@ V případě **On-Premises varianty** Business Central je možné zvolit mezi dv
 - **Serverová varianta** - využívá centralizovaný server pro stahování dat z ISIR, stejně jako cloudová verze. Tato varianta snižuje velikost databáze, neboť jsou stahována pouze data subjektů, kteří jsou v dané instanci Business Central evidováni jako zákazníci, dodavatelé či kontakty.
 - **Přímé stahování** - z ISIR se stahují kompletní data přímo do databáze konkrétní instance Business Central bez využití centrálního serveru. Tento přístup je vhodný pro organizace, které preferují plnou kontrolu nad svými daty a nevyužívají cloudové služby.
 
-
-
-
 ## Použití
 
 ### Zobrazení informací o insolvenci partnera
