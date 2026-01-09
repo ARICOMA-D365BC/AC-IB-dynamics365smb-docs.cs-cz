@@ -1,5 +1,5 @@
 ---
-title: ARICOMA SOLUTIONS - SK Legistaltive Pack | Microsoft Docs
+title: ARICOMA SOLUTIONS - SK Legislative Pack | Microsoft Docs
 description: This section describes ARICOMA Solutions - Slovak legislation - 
 author: kunes
 ms.service: dynamics365-business-central
