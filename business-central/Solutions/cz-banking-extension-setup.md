@@ -10,7 +10,7 @@ ms.search.keywords: banking, finance, czech, API
 
 # Nastavení rozšířeného CZ bankovnictví
 
-> Update 19.08.2025
+> Update 10.01.2026
 
 Modul Rozšíření CZ bankovnictví je potřeba zapnout, v produkčním prostředí bude uživatel požádán o aktivaci předplatného (viz  [dokumentace k monetizaci](https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/ProductivityPack/monetization.html)).
 
@@ -22,10 +22,12 @@ Modul Rozšíření CZ bankovnictví je potřeba zapnout, v produkčním prostř
 
 ## Formáty bankovních výpisů a platebních příkazů
 
-Modul Rozšíření CZ bankovnictví je určen primárně pro optimalizaci práce s výpisy a příkazy, nicméně obsahuje i univerzální import bankovních výpisů v ABO formátu (\*.gpc), který v základní podobě podporuje většina bank v České republice. Rovněž umožňuje export platebních příkazů v ABO formátu (\*.kpc).
+Modul Rozšíření CZ bankovnictví je určen primárně pro optimalizaci práce s výpisy a příkazy, nicméně obsahuje i univerzální import bankovních výpisů v ABO formátu (\*.gpc), který v základní podobě podporuje většina bank v České republice. Rovněž umožňuje export platebních příkazů v ABO formátu (\*.kpc). Nově modul podporuje i SEPA formát (\*.xml).
 
 > [!TIP]
 > Využijte některý z doplňků k tomuto addonu pro API komunikaci právě s vaší bankou.
+> [!TIP]
+> Pro slovenské zákazníky může být užitečné používat formát SEPA s kumulací plateb na platebních příkazech.
 
 ### Nastavení pro manuální dávkový import výpisů
 
@@ -180,6 +182,30 @@ Při „Vydání“ bankovního výpisu funkce kontroluje, zda obrat výpisu sou
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Bankovní účty** a poté vyberte související odkaz.
 2. Aktivujte pole **Kontrolovat obraty bankovního výpisu**
+
+## Nastavení kumulace plateb
+
+### Nastavení dodavatele pro kumulaci plateb
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Dodavatelé** a poté vyberte související odkaz.
+2. Otevřete kartu dodavatele, pro kterého chcete povolit kumulaci plateb.
+3. Na stránce karty dodavatele na kartě Platby nastavte **Kumulovat platby**.
+
+> [!NOTE]
+> Stejné nastavení můžete provést na stránce karty zákazníka.
+
+### Nastavení parametrů kumulace na bankovním účtu
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte  **Banky** a poté vyberte související odkaz.
+2. Otevřete kartu bankovního účtu, pro který chcete nastavit kumulaci plateb.
+3. Na stránce Karta bankovního účtu na kartě Rozšíření CZ Banking nastavte kumulaci plateb podle potřeby:
+
+    - Pole **Kumulovat řádky platebního příkazu** – povoluje/zakazuje kumulaci
+    - Pole **Čísla variabilních symbolů kumulativních plateb** – pokud se nekumuluje podle VS, KS nebo SS, přidá se k poli VS číslo podle zde nastavené číselné řady (SS a KS se berou z první sloučené řádky příkazu)
+    - Pole **Popis kumulovaného řádku** – popis pro vytvořenou kumulativní řádku
+    - Pole **Sloučit podle variabilního symbolu** – kumulace podle VS
+    - Pole **Sloučit podle specifického symbolu** – kumulace podle SS
+    - Pole **Sloučit podle konstantního symbolu** – kumulace podle KS
 
 ## Úpravy na míru
 
