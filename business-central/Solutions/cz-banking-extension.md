@@ -10,7 +10,7 @@ ms.search.keywords: banking, finance, czech, API
 
 # Rozšířené CZ bankovnictví
 
-> Update 19.08.2025
+> Update 10.01.2026
 
 Modul Rozšíření CZ bankovnictví rozšiřuje funkčnost „Bankovní doklady pro Česko (rozšíření)“, která je součástí českých lokálních funkčností Dynamics 365 Business Central (dále jen BC).
 
@@ -48,7 +48,9 @@ Pokročilá varianta přináší možnost automatizace všech kroků:
 
 ### Platební příkazy
 
-V rámci rozvoje budeme modulu bude v průběhu roku 2026 dopracována podpora automatizace odesílání Vydaných platebních příkazů napříč společnostmi a bankovními účty.
+Funkcionalita umožňuje sloučení řádků platebního příkazu, což je vhodné, pokud je potřeba uhradit více nákupních dokladů jednou částkou. Kumuluje se podle Čísla účtu, SWIFT, IBAN, Měny a volitelně dle VS, KS a SS. Systém obsahuje i sestavu pro avízo dodavateli včetně možnosti automatizace odeslání (typicky e-mailem).
+
+V rámci rozvoje modulu plánujeme v průběhu roku 2026 dopracovat i podporu **automatizace** odesílání Vydaných platebních příkazů najednou napříč společnostmi a bankovními účty.
 
 ## Příklady použití
 
@@ -166,7 +168,7 @@ Prostřednictvím stránky Centrální zásobník bankovních výpisů má uživ
 
 > [!NOTE]
 > Ověřte nastavení pro automatizaci viz [Podpůrná nastavení pro automatické zpracování výpisů](cz-banking-extension-setup/#podpůrná-nastavení-pro-automatické-zpracování-výpisů).
-> [!IMPORTANT]
+> [!CAUTION]
 > Pro práci s Centrálním zásobníkem bankovních výpisů musí uživatel disponovat standardní sadou oprávnění pro založení a zpracovávání bankovních výpisů ve společnostech, ve kterých mají být výpisy tímto nástrojem obsluhovány.
 
 ### Pokročilá – okamžité automatizované účtování jednotlivých plateb
@@ -174,9 +176,26 @@ Prostřednictvím stránky Centrální zásobník bankovních výpisů má uživ
 Kombinací importu jednotlivých transakcí v průběhu dne s nastavením automatického importu a účtování výpisů lze docílit takřka online aktualizaci saldokonta. Tím lze např. výrazně urychlit dodávky zákazníkům po zaplacení zálohy.
 Podmínkou je použití API konektoru banky, která tuto možnost podporuje.
 
-### Pokročilá – automatizovaný export platebních příkazů
+### Pokročilá – export platebních příkazů s kumulací plateb
 
-Funkcionalita bude doplněna v průběhu roku 2026.
+Tato funkcionalita slučuje řádky plateb pro dodavatele či zákazníky, kteří mají povoleno kumulovat platby, dle pravidel nastavených na bankovním účtu. Další informace naleznete v Nastavení kumulování plateb.
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Platební příkazy** a poté vyberte související odkaz.
+2. Vyberte číslo banky s nastavenou kumulací plateb, pro který chcete vytvořit platební příkaz a potvrďte tlačítkem **OK**.
+3. Spusťte akci *Navrhni platby…* (alternativou je ruční zadání řádků příkazu, popř. funkce Import…)
+4. Doplňte **Poslední datum splatnosti** a **Částku k dispozici**, popř. upravte další parametry.
+5. Tlačítkem **OK** spusťe generování návrhu plateb.
+6. Vytvořený platební příkaz můžete ještě ručně upravit (pro ověření funkcionality kumulace plateb zkontrolujte, že máte v řádcích více plateb na stejný účet dodavatele se zapnutou kumulací plateb).
+7. Na platebním příkazu spusťte funkci *Vydání*.
+8. Tlačítkem **OK** potvrďte volbu Vydat.
+9. Volbou  **Ano** potvrďte otevření karty Vydaného platebního příkazu.
+10. Volbou *Kumulované řádky* otevřete seznam kumulovaných řádků a ověřte, jestli výsledek odpovídá očekávanému způsobu kumulace. Pokud chcete změnit výsledek, změňte nastavení a spusťte akci *Kumulovat platby*.
+11. Pro export příkazu spusťte akci *Export platebního příkazu…*.
+
+> [!NOTE]
+> Pokud se nekumuluje dle symbolů, tak se sloučené řádky založí s variabilním symbolem z číselné řady a SS a KS se převezmou z prvního slučovaného řádku příkazu. Pro datum splatnosti se použije ten nejnižší ze slučovaných řádků.
+> [!IMPORTANT]
+> Funkce Vydání na Bankovním výpisu kontroluje každý řádek, nebyl-li vytvořen kumulací. Pokud ano, vynuluje na něm částku a doplní k němu původní řádky z příkazu.
 
 **See also**  
 

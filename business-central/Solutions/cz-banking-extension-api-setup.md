@@ -9,7 +9,7 @@ ms.search.keywords: banking, finance, czech, API
 ---
 # Nastavení API konektorů
 
-> Update 19.08.2025
+> Update 10.01.2026
 
 ## ČSOB API konektor
 
@@ -54,7 +54,7 @@ V portálu je nutné povolit požadované operace, které bude klient pomocí Č
 
 Pro nastavení Business Central je třeba stáhnout komunikační certifikát ve formátu pfx:
 
-1. vStiskněte klávesy Windows + R a do otevřeného okénka napište certmgr.msc a stiskněte OK.
+1. Stiskněte klávesy Windows + R a do otevřeného okénka napište certmgr.msc a stiskněte OK.
 2. V nástroji certmgr rozbalte po levé straně Osobní a v seznamu nalezněte řádek certifikátu. Bude mít vydavatele CEB Business Connector CA a jméno subjektu, které jste zvolili.
 3. Stiskněte na certifikátu pravé tlačítko myši a v kontextovém menu vyberte Všechny úkoly a Exportovat…
 4. V průvodci exportem certifikátu vyberte Ano, exportovat privátní klíč a následně proveďte export do souboru PKCS #12 s koncovkou .pfx. Zadané heslo budete potřebovat v dalším kroku.
@@ -62,16 +62,18 @@ Pro nastavení Business Central je třeba stáhnout komunikační certifikát ve
 Dalším krokem je nastavení přístupu v Business Central:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Klienti ČSOB CEB** a poté vyberte související odkaz.
-2. Zadejte ČSOB v poli Kód na novém řádku
+2. Zadejte "ČSOB" v poli **Kód** na novém řádku.
 3. Do pole **Popis** zadejte např. „ČSOB API“
-4. V poli **API** ponechte hodnotu „Produkční prostředí“.
-5. V poli *Dostupný pro* ponechte hodnotu „Společnost“ pro nastavení společného přístupu pro všechny oprávněné uživatele modulu.
-6. V poli **Číslo smlouvy** zadejte hodnotu ze smlouvy o přístupu k API, kterou jste s bankou podepsali.
-7. Spusťte akci*Nahrát certifikát* a vyberte soubor s certifikátem ve formátu pfx.
-8. Zadejte heslo k certifikátu v poli **Heslo k certifikátu**.
+4. V poli **API prostředí** ponechte hodnotu „Produkční“.
+5. V poli **Číslo smlouvy** zadejte hodnotu ze smlouvy o přístupu k API, kterou jste s bankou podepsali.
+6. V poli **Dostupný pro** ponechte hodnotu „Společnost“ pro nastavení společného přístupu pro všechny oprávněné uživatele modulu.
+7. Spusťte akci *Nahrát certifikát*, vyberte soubor s certifikátem ve formátu pfx.
+8. Zadejte heslo k certifikátu.
 
 > [!TIP]
 > Chcete-li přístup určovat podle přihlášení uživatele, musí si každý uživatel sám provést výše uvedené nastavení Klienta ČSOB CEB. V poli **Dostupný pro** vybere hodnotu „Uživatel“.
+> [!WARNING]
+> Volbu **Povolit protokol aktivity** použijte pouze v odůvodněných případech po omezenou dobu, neboť v protokolu jsou obsažena citlivá data a mohou se k nim dostat i uživatelé, kteří by je vidět neměli.
 
 **Specifické parametry pro ČSOB API konektor**
 Následující parametry je třeba doplnit do Rozšířeného nastavení v případě, že chcete používat ČSOB API konektor pro import bankovních výpisů:
@@ -121,7 +123,10 @@ Dalším krokem je nastavení přístupu v Business Central:
 3. Do pole **Popis** zadejte např. „KB API“.
 4. V poli **API** ponechte hodnotu „Produkční prostředí“.
 5. V poli **Autorizační klíč** zadejte hodnotu, kterou jste obdrželi od Aricoma (viz předchozí odstavec).
-6. V poli **Počet dnů transakční historie** zadejte 10
+6. Spusťe akci *Autorizovat klienta*, úspěch se projeví změnou přepnutím příznaku **Klient je autorizovaný**.
+
+> [!WARNING]
+> Volbu **Povolit protokol aktivity** použijte pouze v odůvodněných případech po omezenou dobu, neboť v protokolu jsou obsažena citlivá data a mohou se k nim dostat i uživatelé, kteří by je vidět neměli.
 
 **Udělení souhlasu**  
 
@@ -186,6 +191,77 @@ Dalším krokem je nastavení přístupu v Business Central:
 8. V poli **Tajný klíč klienta** zadejte hodnotu získanou z portálu (viz předchozí odstavec).
 9. V poli **Platnost autorizace** můžete změnit platnost autorizace na dobu kratší než je maximální povolená doba, a to 180 dní.
 10. Spusťe akci *Autorizovat klienta*, úspěch se projeví změnou přepnutím příznaku **Klient je autorizovaný**.
+
+> [!WARNING]
+> Volbu **Povolit protokol aktivity** použijte pouze v odůvodněných případech po omezenou dobu, neboť v protokolu jsou obsažena citlivá data a mohou se k nim dostat i uživatelé, kteří by je vidět neměli.
+
+## Raiffeisen API konektor
+
+### Zprovoznění služby RB Premium API
+
+Pro zprovoznění API rozhraní je třeba
+
+- vytvořit klientský certifikát a
+- nastavit modul v Business Central.
+
+**Vytvoření klientského certifikátu**  
+
+V aplikaci bankovnictví v části Nastavení (ikonka ozubeného kola) provedete vytvoření certifikátu takto:
+
+1. V levém menu poté vyberte Správa certifikátů > Nový certifikát
+2. Na formuláři *Vygenerování certifikátu* zadejte:
+    - Název certifikátu - informační pro vás (např. "Business Central API")
+    - Heslo k certifikátu - zadejte silné heslo a poznamenejte si ho (budete potřeba pro další nastavení v Business Central)
+    - Heslo znovu - opakujte zadání hesla
+    - Výběr účtů - vyberte účty, které chcete s Business Cental propojit pomocí API; u každého vyberte, zda chcete umožnit pouze stahovat *Transakční historii* nebo i odesílat *Hromadné platby*.
+    - potvrďte souhlas s podmínkami užívání certifikátu a zvolte akci *Pokračovat*
+3. Na formuláři *Vygenerování certifikátu* kliknutím na tlačítko *Podepsat* spusťte proces schvalování přes mobilní aplikaci.
+4. Po schválení na stránce *Certifikát byl vygenerován* spusťte akci *Stáhnout certifikát*.
+
+**Nastavení klientské aplikace v Business Central**  
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Klienti Raiffeisen API** a poté vyberte související odkaz.
+2. Na stránce Klienti Raiffeisen API zadejte „RB“ v poli **Kód** na novém řádku.
+3. Do pole **Popis** zadejte např. „Raiffeisen API“.
+4. V poli **API prostředí** ponechte hodnotu „Produkční“.
+5. V poli **Dostupný pro** ponechte hodnotu „Společnost“, aby byl nastaven společný přístup pro všechny oprávněné uživatele modulu.
+6. Spusťte akci *Nahrát certifikát*, vyberte soubor s certifikátem ve formátu pfx.
+7. Zadejte heslo k certifikátu.
+
+> [!TIP]
+> Chcete-li přístup určovat podle přihlášení uživatele, musí si každý uživatel sám provést výše uvedené nastavení Klienta Raiffeisen. V poli **Dostupný pro** vybere hodnotu „Uživatel“.
+> [!WARNING]
+> Volbu **Povolit protokol aktivity** použijte pouze v odůvodněných případech po omezenou dobu, neboť v protokolu jsou obsažena citlivá data a mohou se k nim dostat i uživatelé, kteří by je vidět neměli.
+
+**Specifické parametry pro Raiffeisen API konektor**
+Následující parametry je třeba doplnit do Rozšířeného nastavení v případě, že chcete používat Raiffeisen API konektor pro import bankovních výpisů:
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení exportu/importu banky** a poté vyberte související odkaz.
+2. Přejděte na vybraný řádek typu Import.
+3. Spusťte akci *Rozšířené nastavení*.
+4. V poli **Poskytovatel bankovních výpisů** vyberte hodnotu „Raiffeisen Bank API“.
+5. V poli **Kód klienta Raiffeisen API** vyberte kód klienta definovaný v předchozím kapitole.
+6. V poli **Formát výpisů Raiffeisen** vyberte volbu GPC reprezentující formát ABO.
+7. V poli **ID procedury zpracování** zkontrolujte, že se doplnila hodnota 52057627 (RB Bank Stmt.Imp.-MT940 Acb).
+
+Následující parametry je třeba doplnit do Rozšířeného nastavení v případě, že chcete používat ČSOB API konektor pro export platebních příkazů:
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení exportu/importu banky** a poté vyberte související odkaz.
+2. Přejděte na vybraný řádek typu Export.
+3. Spusťte akci *Rozšířené nastavení*.
+4. V poli **Poskytovatel bankovních výpisů** vyberte hodnotu „Raiffeisen Bank API“.
+5. V poli **Kód klienta Raiffeisen API** vyberte kód klienta definovaný v předchozím kapitole.
+6. V poli **Formát plateb Raiffeisen** vyberte volbu ABO-KPC reprezentující formát ABO.
+7. V poli **ID procedury zpracování** zkontrolujte, že se doplnila hodnota 52057625 (RB Paym.Order Export-ABO Acb).
+
+## Import jednotlivých transakcí
+
+Pokud bankovní API podporuje možnost stahování jednotlivých platbách, je na kartě *Rozšířeného nastavení importu výpisů* v poli definující formát výpisů volba "Jednotlivé transakce". Pokud ji zvolíte, nastaví se správná procedura zpracování obdobně jako při výběru formátu pro denní výpisy.
+
+Používáte-li automatizaci tvorby výpisů pomocí [importu z Centrálního zásobníku](cz-banking-extension-setup#nastavení-importu-z-centrálního-zásobníku), je třeba navíc nastavit příznak **Importovat jednotlivé transakce** na kartách všech požadovaných bankovních účtů. Tím lze např. docílit situace, že pro korunový účet jsou importovány jednotlivé transakce a pro ostatní měny téhož účtu jsou importovány bankovní výpisy.
+
+> [!NOTE]
+> Pole Počet dní transakční historie na kartě klienta API je vztaženo k transakci, kterou může být jena platba ale i třeba měsíční výpis. Pokud kombinujete výrazně odlišné přístupy pro stahování výpisů v rámci jednoho API (např. některé účty 1 týdně a jiné po jednotlivých transakcích), doporučujeme vytvořit samostatné API klienty s tím, že u stahování jednotlivých plateb ponecháte Počet dní transakční historie na hodnotě 5, ale pro týdenní periodu zpracování výpisů nastavíte hodnotu např. 10.
 
 **See also**  
 
