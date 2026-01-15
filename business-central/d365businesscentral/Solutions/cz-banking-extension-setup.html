@@ -70,7 +70,7 @@
 <h1 id="nastavení-rozšířeného-cz-bankovnictví">Nastavení rozšířeného CZ bankovnictví</h1>
 
 <blockquote>
-<p>Update 19.08.2025</p>
+<p>Update 10.01.2026</p>
 </blockquote>
 <p>Modul Rozšíření CZ bankovnictví je potřeba zapnout, v produkčním prostředí bude uživatel požádán o aktivaci předplatného (viz  <a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/ProductivityPack/monetization.html">dokumentace k monetizaci</a>).</p>
 <ol>
@@ -82,10 +82,14 @@
 <p>Před nastavením spusťte Asistované nastavení pro tento modul, který najdete v Asistovaná nastavení -&gt; Nastavení rozšíření ARICOMA. Ten vám umožní nahrát konfigurační balíček a jeho prostřednictvím doplnit vzorová nastavení, na která se mimo jiné odkazují scénáře v dalších kapitolách.</p>
 </div>
 <h2 id="formáty-bankovních-výpisů-a-platebních-příkazů">Formáty bankovních výpisů a platebních příkazů</h2>
-<p>Modul Rozšíření CZ bankovnictví je určen primárně pro optimalizaci práce s výpisy a příkazy, nicméně obsahuje i univerzální import bankovních výpisů v ABO formátu (*.gpc), který v základní podobě podporuje většina bank v České republice. Rovněž umožňuje export platebních příkazů v ABO formátu (*.kpc).</p>
+<p>Modul Rozšíření CZ bankovnictví je určen primárně pro optimalizaci práce s výpisy a příkazy, nicméně obsahuje i univerzální import bankovních výpisů v ABO formátu (*.gpc), který v základní podobě podporuje většina bank v České republice. Rovněž umožňuje export platebních příkazů v ABO formátu (*.kpc). Nově modul podporuje i SEPA formát (*.xml).</p>
 <div class="TIP">
 <h5>Tip</h5>
 <p>Využijte některý z doplňků k tomuto addonu pro API komunikaci právě s vaší bankou.</p>
+</div>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Pro slovenské zákazníky může být užitečné používat formát SEPA s kumulací plateb na platebních příkazech.</p>
 </div>
 <h3 id="nastavení-pro-manuální-dávkový-import-výpisů">Nastavení pro manuální dávkový import výpisů</h3>
 <p>Pokud vaše banka podporuje elektronické výpisy, které obsahují více transakce pro více účtů, je možné toho využít pro vytvoření více výpisů najednou (v rámci jedné společnosti).</p>
@@ -235,6 +239,34 @@ Tato číselná řada musí mít aktivované Ruční číslování a vyplněnou 
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Bankovní účty</strong> a poté vyberte související odkaz.</li>
 <li>Aktivujte pole <strong>Kontrolovat obraty bankovního výpisu</strong></li>
+</ol>
+<h2 id="nastavení-kumulace-plateb">Nastavení kumulace plateb</h2>
+<h3 id="nastavení-dodavatele-pro-kumulaci-plateb">Nastavení dodavatele pro kumulaci plateb</h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Dodavatelé</strong> a poté vyberte související odkaz.</li>
+<li>Otevřete kartu dodavatele, pro kterého chcete povolit kumulaci plateb.</li>
+<li>Na stránce karty dodavatele na kartě Platby nastavte <strong>Kumulovat platby</strong>.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Stejné nastavení můžete provést na stránce karty zákazníka.</p>
+</div>
+<h3 id="nastavení-parametrů-kumulace-na-bankovním-účtu">Nastavení parametrů kumulace na bankovním účtu</h3>
+<ol>
+<li><p>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte  <strong>Banky</strong> a poté vyberte související odkaz.</p>
+</li>
+<li><p>Otevřete kartu bankovního účtu, pro který chcete nastavit kumulaci plateb.</p>
+</li>
+<li><p>Na stránce Karta bankovního účtu na kartě Rozšíření CZ Banking nastavte kumulaci plateb podle potřeby:</p>
+<ul>
+<li>Pole <strong>Kumulovat řádky platebního příkazu</strong> – povoluje/zakazuje kumulaci</li>
+<li>Pole <strong>Čísla variabilních symbolů kumulativních plateb</strong> – pokud se nekumuluje podle VS, KS nebo SS, přidá se k poli VS číslo podle zde nastavené číselné řady (SS a KS se berou z první sloučené řádky příkazu)</li>
+<li>Pole <strong>Popis kumulovaného řádku</strong> – popis pro vytvořenou kumulativní řádku</li>
+<li>Pole <strong>Sloučit podle variabilního symbolu</strong> – kumulace podle VS</li>
+<li>Pole <strong>Sloučit podle specifického symbolu</strong> – kumulace podle SS</li>
+<li>Pole <strong>Sloučit podle konstantního symbolu</strong> – kumulace podle KS</li>
+</ul>
+</li>
 </ol>
 <h2 id="úpravy-na-míru">Úpravy na míru</h2>
 <h3 id="vlastní-funkce-pro-stahování-výpisů-do-centrálního-zásobníku">Vlastní funkce pro stahování výpisů do centrálního zásobníku</h3>
