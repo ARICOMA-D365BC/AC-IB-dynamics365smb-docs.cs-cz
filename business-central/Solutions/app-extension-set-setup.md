@@ -8,12 +8,12 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.search.keywords: DPH, finance, pohledávky, zaokrouhlení, číselné řady, český
-ms.date: 09/21/2025
-ms.author: Robert Jelen
+ms.date: 01/26/2026
+ms.author: Jitka Urxová
 ---
 # Sada rozšíření pro Finance - Nastavení
 
-> Aktualizace: 21.09.2025
+> Aktualizace: 23.01.2026
 
 ## Nastavení rozšíření DPH
 
@@ -105,7 +105,6 @@ Popsaná automatizace při účtování finální faktury se zapíná v Nastav
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení účtování DPH** a poté vyberte související odkaz.
 2. Na stránce Nastavení účtování DPH vyhledejte záznam pro který chcete zapnout a zvolte funkci Úpravy.
 3. Na stránce Karta nastavení účto DPH nastavte příznak Určeno pro vrácení zálohy.
-
 
 ## Nastavení kontroly CREDITCHECK
 
@@ -283,6 +282,26 @@ Nastavení zaokrouhlení se provádí různě v závislosti na měně, jako je
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Způsoby plateb** a poté vyberte související odkaz.
 2. Vyberte akci Nastavení zaokrouhlení faktur.
 3. Na stránce Nastavení zaokrouhlení faktur definujte nastavení zaokrouhlení pro cizí měny v kombinaci s vybraným způsobem platby, u kterých má být jiné nastavení než to výchozí z Karty měny.
+
+## Nastavení univerzálních oprávnění
+
+Funkcionalita umožňuje nastavit oprávnění pro úpravu stránek a jejich jednotlivých polí. Pro konkrétní uživatele se tak nastavují podmínky, co mohou nebo nemohou na nastavených stránkách a polích měnit.
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení univerzálních oprávnění** a poté vyberte související odkaz.
+2. Na stránce **Nastavení univerzálních oprávnění** vyplňte jednotlivé řádky.
+![Nastavení univerzálních oprávnění](media/up-universal-permission-setup.png)
+3. Na řádku v poli **Číslo tabulky** vyberte tabulku, ve které chcete univerzální oprávnění nastavit. Tabulku lze vybrat z číselníku všech tabulek.
+4. Pole **Popisek tabulky** se automaticky vyplní po vybrání Čísla tabulky.
+5. Do pole **Popis** napište libovolný text, např. koho a čeho se nastavované oprávnění týká.
+6. Kliknutím na řádku do pole **Filtr tabulky** zadáváte filtr, podle kterého určujete, u jakých záznamů či hodnot tabulky je žádoucí nastavit dané oprávnění. Otevře se nové okno, ve kterém vyplňte **Číslo pole**. Automaticky se doplní **Titulek pole**. Zadejte požadovaný filtr do pole **Filtr pole**.
+![Fitr tabulky](media/up-table-filter.png)
+7. Vraťte se zpátky na stránku **Nastavení univerzálních oprávnění**. Pokud chcete, aby se oprávnění týkalo všech polí tabulky, zvolte na řádku v poli **Pole** „Všechna pole“.  Pokud se má oprávnění vztahovat pouze na některá pole, zvolte „Některá pole“. Dále označte daný řádek, se kterým pracujete a v panelu akcí klikněte na ikonu **Pole**. Zobrazí se nové okno, ve kterém nastavte jednotlivá pole tabulky, kterých se má oprávnění týkat. V řádku vyplňte **ID Pole**. ID pole Lze vybrat z číselníku všech polí.
+![Pole](media/up-fields.png)
+8. Vraťte se zpátky na stránku **Nastavení univerzálních oprávnění**. Označte daný řádek, se kterým pracujete a v panelu akcí klikněte na ikonu **Uživatelé**. Zobrazí se nové okno, ve kterém vyplňte pole **ID Uživatele**. Tím nastavíte jednotlivé uživatele, pro které má oprávnění platit.
+9. Vraťte se zpátky na stránku **Nastavení univerzálních oprávnění**. Na daném řádku rozhodněte, co všechno chcete kontrolovat. Podle potřeby zaškrtněte pole Kontrolovat změnu, Kontrolovat vložení, Kontrolovat mazání nebo Kontrolovat přejmenování.
+10. Dále na řádku v poli **Oprávnění** zvolte variantu *Povolit* nebo *Zakázat* podle toho, jestli to, co se na řádku nastavilo je uživateli/uživatelům zakázáno nebo povoleno. Když je zvoleno *Povolit*, tak se povoluje daným uživatelům vše, co je na řádku specifikováno a zakazuje se vše ostatní a naopak.
+11. V posledním poli **Aktivní** se zaškrtává, jestli je daný řádek aktivní (pole je zaškrtnuté) nebo ne (pole není zaškrtnuté). Tedy jestli se podle něho má systém řídit nebo ne.
+![Nastavení univerzálních oprávnění](media/up-universal-permission-setup-permission.png)
 
 ## Viz také
 
