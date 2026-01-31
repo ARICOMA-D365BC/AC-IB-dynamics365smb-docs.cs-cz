@@ -289,9 +289,8 @@ Nejprve je potřeba funkcionalitu Univerzální oprávnění zapnout:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení financí** a poté vyberte související odkaz.
 2. Na stránce **Nastavení financí** záložce Sada rozšíření aplikace od Aricoma zaškrtněte pole **Univerzální oprávnění povoleno**.
-![Nastavení financí](media/up-general-ledger-setup.png)
 
-Následujícím postupem nastavíte uživateli vybraným uživatelům zvláštní přístup k tabulce:
+Následujícím postupem nastavíte vybraným uživatelům zvláštní přístup k tabulce:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení univerzálních oprávnění** a poté vyberte související odkaz.
 2. Na stránce **Nastavení univerzálních oprávnění** vložte nový řádek a v poli **Číslo tabulky** vyberte hodnotu odpovídající entitě, pro kterou chcete oprávnění nastavit.
