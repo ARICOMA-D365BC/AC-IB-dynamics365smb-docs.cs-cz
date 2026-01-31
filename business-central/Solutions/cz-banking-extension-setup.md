@@ -10,7 +10,7 @@ ms.search.keywords: banking, finance, czech, API
 
 # Nastavení rozšířeného CZ bankovnictví
 
-> Update 10.01.2026
+> Aktualizace: 31.01.2026
 
 Modul Rozšíření CZ bankovnictví je potřeba zapnout, v produkčním prostředí bude uživatel požádán o aktivaci předplatného (viz  [dokumentace k monetizaci](https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/ProductivityPack/monetization.html)).
 
@@ -94,7 +94,7 @@ Zapnout automatické stahování výpisů do Centrálního zásobníku je nutné
 Následující postup prochází klíčové nastavení, které je součástí vzorových dat.
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení exportu/importu banky** a poté vyberte související odkaz.
-2. Přejděte na řádek s kódem „CZBE_ABO-IMP-CENTRAL“.
+2. Přejděte na řádek s kódem „CZBE_IMP-CENTRAL“.
 3. Zkontrolujte, že v poli **ID procedury zpracování** je hodnota 52057427.
 4. Spusťte akci *Rozšířené nastavení*.
 5. V poli **Poskytovatel bankovních výpisů** vyberte hodnotu „Centrální zásobník“.
@@ -138,7 +138,11 @@ Doporučujeme průběžně mazat již zpracované záznamy v tabulce Centrální
 
 ### Automatické formátování čísla účtu (volitelné)
 
-Zapnutí této funkce zajistí automatické formátování čísel bankovních účtů v BC, čím dojde k eliminaci problémů s importem bankovních výpisů
+Zapnutí této funkce zajistí automatické formátování čísel bankovních účtů v BC, čím dojde k eliminaci problémů s importem bankovních výpisů. Formátování probíhá na:
+
+- Bankovní účet
+- Bankovní účet zákazníka
+- Bankovní účet dodavatele
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Informace o společnosti** a poté vyberte související odkaz.
 2. Aktivujte pole **Formátovat číslo účtu**
