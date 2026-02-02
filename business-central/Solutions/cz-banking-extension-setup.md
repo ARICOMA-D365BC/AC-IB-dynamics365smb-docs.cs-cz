@@ -43,9 +43,32 @@ Pokud vaše banka podporuje elektronické výpisy, které obsahují více transa
 > [!TIP]
 > Aktivujte pole Podpora souborů ZIP pro povolení importu více souborů výpisů najednou v rámci jednoho zip souboru.
 
+Nastavený způsob importu je nutné zadat na kartě Bankovního účtu:
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Bankovní účty** a poté vyberte související odkaz.
+2. Vyberte příslušný účet a spusťte akci Upravit.
+3. Na záložce Transfer vyberte v poli **Formát importu výpisu** způsob exportu (např. „CZBE_ABO-IMP-LOCAL“).
+
+> [!NOTE]
+> Funkce Import na kartě Bankovního výpisu bude fungovat, ale logicky bez doplňkových funkcí pro zpracování více souborů.
+
 #### Nastavení kódování pro import
 
 V případě nesprávných znaků v naimportovaném výpisu je třeba upravit použité kódování. Nastavte správné kódování v poli **Kódování obsahu**. Pro ověření funkčnosti nastaveného kódování doporučujeme použít akci *Test kódování obsahu* na stránce Rozšířené nastavení importu výpisů.
+
+### Nastavení pro manuální export platebních příkazů
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení exportu/importu banky** a poté vyberte související odkaz.
+2. Přejděte na vybraný řádek (např. s kódem „CZBE_ABO-EXP-LOCAL“)
+3. Zkontrolujte, že v poli **ID procedury zpracování** je hodnota 52057437 umožňující export výpisů prostřednictvím akce *Export* na kartě Vydaného platebního příkazu.
+4. Spusťte akci *Rozšířené nastavení*
+5. Na stránce Rozšířené nastavení exportu plateb ověřte, že v poli **ID procedury zpracování** je hodnota 52057438 určená pro vytvoření souboru ve formátu ABO.
+
+Nastavený způsob exportu je nutné zadat na kartě Bankovního účtu:
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Bankovní účty** a poté vyberte související odkaz.
+2. Vyberte příslušný účet a spusťte akci *Úpravy*.
+3. Na záložce Transfer vyberte v poli **Formát exportu příkazu** způsob exportu (např. „CZBE_ABO-EXP-LOCAL“ nebo „CZBE_SEPA-EXP-LOCAL“).
 
 ### Nastavení pro manuální import bankovních výpisů prostřednictvím API
 
