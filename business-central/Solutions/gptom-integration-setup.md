@@ -7,37 +7,46 @@ ms.service: dynamics-365-business-central
 ms.search.keywords: GP Tom Integration, Streamline Tools, Global Payments, settings
 ---
 # Nastavení integrace s GP tom
-> Aktualizace: 14.10.2024
+
+> Aktualizace: 03.02.2026
 
 ## Nastavení
 
 ### Aktivace modulu
+
 Prvním krokem (v produkční databázi) je kontrola, zda-li má společnost aktivováno předplatné modulu (viz [nápověda k Aricoma monetizaci](https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/ProductivityPack/monetization.html)).
 V dalších krocích je uživatel proveden registrací prvního platebního terminálu.
+
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení platebních terminálů** a poté vyberte související odkaz.
-2.	Na stránce **Nastavení platebních terminálů** spusťte akci Nastavit API.
-3.	Zadejte API klíč získaný aktivací v terminálu.
+2. Na stránce **Nastavení platebních terminálů** spusťte akci Nastavit API.
+3. Zadejte API klíč získaný aktivací v terminálu.
 
 ### Nastavení terminálů
+
 Každé fyzické zařízení musí být zaevidováno v tabulce Platební terminály. Popis nastavení dále odpovídá nejběžnější konfiguraci, kterou je evidence plateb kartou.
 
 > [!NOTE]
->Aplikace GP Tom umožňuje evidenci i hotovostních nebo kryptoměnových plateb, Tyto možnosti jsou podporovány, nicméně nejsou popisována žádná další nastavení v BC, při kterých registrace takových operací dávaly smysl.
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Platební terminály** a poté vyberte související odkaz.
-2.	Na stránce **Platební terminály** klikněte na funkci *Nový* a vytvořte novou platební terminál.
-3.	Zadejte *Kód* a *Popis terminálu*.
-4.	V poli *ID terminálu* zadejte číslo přiřazené terminálu.
-5.	V poli *Uživatelské jméno obchodníka GP tom* zadejte jméno (e-mail) uživatele terminálu.
-6.	V poli *Heslo obchodníka GP tom* zadejte heslo uživatele terminálu.
-7.	V poli *Časový limit transakcí GP tom (s)* ponechte výchozí hodnotu, pokud nemáte specifický požadavek na zkrácení či prodloužení času, kdy Business Central neukončí čekání na odezvu z terminálu.
-8.	V poli *Preferovaný typ platby* zvolte Karta. 
-9.	V poli *Preferovaný typ účtenky* zvolte, má-li být stvrzenka z terminálu vytisknuta nebo zaslána e-mailem či na mobilní telefon.
-10.	V poli *Čísla dokladů plateb* vyberte číselnou řadu pro označení záznamů o platbách v BC.
-11.	Spusťte akci *Získat přístupový token* pro ověření, že jsou zadané přihlašovací údaje správné.
+> Aplikace GP Tom umožňuje evidenci i hotovostních nebo kryptoměnových plateb, Tyto možnosti jsou podporovány, nicméně nejsou popisována žádná další nastavení v BC, při kterých registrace takových operací dávaly smysl.
 
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Platební terminály** a poté vyberte související odkaz.
+2. Na stránce **Platební terminály** klikněte na funkci *Nový* a vytvořte novou platební terminál.
+3. Zadejte *Kód* a *Popis terminálu*.
+4. V poli *ID terminálu* zadejte číslo přiřazené terminálu.
+5. V poli *Uživatelské jméno obchodníka GP tom* zadejte jméno (e-mail) uživatele terminálu.
+6. V poli *Heslo obchodníka GP tom* zadejte heslo uživatele terminálu.
+7. V poli *Časový limit transakcí GP tom (s)* ponechte výchozí hodnotu, pokud nemáte specifický požadavek na zkrácení či prodloužení času, kdy Business Central neukončí čekání na odezvu z terminálu.
+8. V poli *Preferovaný typ platby* zvolte Karta.
+9. V poli *Preferovaný typ účtenky* zvolte, má-li být stvrzenka z terminálu vytisknuta nebo zaslána e-mailem či na mobilní telefon.
+10. V poli *Čísla dokladů plateb* vyberte číselnou řadu pro označení záznamů o platbách v BC.
+11. Spusťte akci *Získat přístupový token* pro ověření, že jsou zadané přihlašovací údaje správné.
+
+> [!TIP]
+> Pokud vyberete v bodě 5 jako typ platby "QR kód", v procesu úhrady pak objeví vygenerovaný kód namísto značky pro přiložení karty.
 
 ### Volání registrace platby odjinud
+
 Propojení lze provést obecně 2 způsoby:
+
 - Spouštěním page „PT Register Payment_acc“ pomocí funkcí RegisterPaymentDialog v CU "PaymentTerminalsInterface_acc" (viz dále).
 - Vlastním rozhraním, popř. zcela bez uživatelského rozhraní pomocí funkce RegisterPayment v CU "PaymentTerminalsInterface_acc".
 
@@ -45,7 +54,7 @@ Následující popis CU PaymentTerminalsInterface_acc zobrazuje všechny dostupn
 
 codeunit 72056620 "PaymentTerminalsInterface_acc"
 
-```al 
+```al
 /// <summary>
 /// Function for running the batch closing on the payment terminal with GUI (Confirmation dialog).
 /// </summary>
@@ -100,6 +109,7 @@ procedure CancelTransaction(var PaymentTerminalTransaction: Record PaymentTermin
 ```
 
 ## Viz také
+
 [Integrace s GP tom](gptom-integration.md)  
 [Streamline Tools](streamlinetools.md)  
 [ARICOMA řešení](solutions.md)
