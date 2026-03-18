@@ -9,12 +9,15 @@ ms.search.keywords: GP Tom Integration, Streamline Tools, Global Payments
 ---
 # Integrace s GP tom
 
-> Update 07.07.2025
+> Aktualizace: 03.02.2026
 
 Addon **Integrace s GP tom** je určen především pro bezešvou integraci Business Central s platebními terminály, aby se staly nativní součástí obchodních procesů. Navíc umožnuje provádět i související obslužné operace přímo z prostředí BC.
 
 Modul propojuje Microsoft Dynamics 365 Business Central s platebními terminály, resp. s řešením [**tom**](https://www.gptom.com/) na terminálech provozovaném.
 Díky tomuto řešení umožníte zákazníkům platby nejen kartami Visa a Mastercard, ale tak pomocí Apple Pay, Google Pay, Edenred… Více [zde](https://www.gptom.com/docs/manual/zaciname/podporovana-karetni-schemata/).
+
+> [!TIP]
+> Nově je možné jako způsob platby zvolit **QR kód** a vyhnout se tak poplatkům karetním společnostem.
 
 ## Použití
 
@@ -30,11 +33,17 @@ V tomto případě se jedná o standardní funkcionalitu BC, kde uživatel pro z
 4. Na stránce **Registrovat platbu** zadejte v poli Částka hodnotu pro úhradu terminálem.
 5. Spusťte akci *Zaplatit*.
 6. Na terminálu se objeví dialog „Přiložte kartu“.
+
     <img src="media/gptom_topay.png" alt="Attach Card" width="50%" height="50%">
+
 7. Po úspěšné úhradě se objeví dialog, kde obsluha provede odeslání dokladu o platbě (popř. může rovnou Dokončit proces)
+
     <img src="media/gptom_succpayment.png" alt="Successful payment" width="50%" height="50%">
+
 8. V dialogu pro odeslání účtenky je předvyplněn způsob odeslání nastavený pro příslušný terminál
+
     <img src="media/gptom_printreceipt.png" alt="Sending receipt" width="50%" height="50%">
+
 9. Po ukončení procesu platby na terminálu se na stránce Registrovat platbu objeví oznámení s výsledkem operace, vč. volby Otevřít položku pro zobrazení položky s detaily o proběhlé komunikaci s terminálem.
 
 > [!TIP]

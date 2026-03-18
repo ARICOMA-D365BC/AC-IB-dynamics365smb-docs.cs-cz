@@ -10,7 +10,7 @@ ms.search.keywords: banking, finance, czech, API
 
 # Rozšířené CZ bankovnictví
 
-> Update 10.01.2026
+> Aktualizace: 31.01.2026
 
 Modul Rozšíření CZ bankovnictví rozšiřuje funkčnost „Bankovní doklady pro Česko (rozšíření)“, která je součástí českých lokálních funkčností Dynamics 365 Business Central (dále jen BC).
 

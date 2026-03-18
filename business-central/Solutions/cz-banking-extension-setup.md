@@ -10,7 +10,7 @@ ms.search.keywords: banking, finance, czech, API
 
 # Nastavení rozšířeného CZ bankovnictví
 
-> Update 10.01.2026
+> Aktualizace: 31.01.2026
 
 Modul Rozšíření CZ bankovnictví je potřeba zapnout, v produkčním prostředí bude uživatel požádán o aktivaci předplatného (viz  [dokumentace k monetizaci](https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/ProductivityPack/monetization.html)).
 
@@ -43,9 +43,32 @@ Pokud vaše banka podporuje elektronické výpisy, které obsahují více transa
 > [!TIP]
 > Aktivujte pole Podpora souborů ZIP pro povolení importu více souborů výpisů najednou v rámci jednoho zip souboru.
 
+Nastavený způsob importu je nutné zadat na kartě Bankovního účtu:
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Bankovní účty** a poté vyberte související odkaz.
+2. Vyberte příslušný účet a spusťte akci Upravit.
+3. Na záložce Transfer vyberte v poli **Formát importu výpisu** způsob exportu (např. „CZBE_ABO-IMP-LOCAL“).
+
+> [!NOTE]
+> Funkce Import na kartě Bankovního výpisu bude fungovat, ale logicky bez doplňkových funkcí pro zpracování více souborů.
+
 #### Nastavení kódování pro import
 
 V případě nesprávných znaků v naimportovaném výpisu je třeba upravit použité kódování. Nastavte správné kódování v poli **Kódování obsahu**. Pro ověření funkčnosti nastaveného kódování doporučujeme použít akci *Test kódování obsahu* na stránce Rozšířené nastavení importu výpisů.
+
+### Nastavení pro manuální export platebních příkazů
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení exportu/importu banky** a poté vyberte související odkaz.
+2. Přejděte na vybraný řádek (např. s kódem „CZBE_ABO-EXP-LOCAL“)
+3. Zkontrolujte, že v poli **ID procedury zpracování** je hodnota 52057437 umožňující export výpisů prostřednictvím akce *Export* na kartě Vydaného platebního příkazu.
+4. Spusťte akci *Rozšířené nastavení*
+5. Na stránce Rozšířené nastavení exportu plateb ověřte, že v poli **ID procedury zpracování** je hodnota 52057438 určená pro vytvoření souboru ve formátu ABO.
+
+Nastavený způsob exportu je nutné zadat na kartě Bankovního účtu:
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Bankovní účty** a poté vyberte související odkaz.
+2. Vyberte příslušný účet a spusťte akci *Úpravy*.
+3. Na záložce Transfer vyberte v poli **Formát exportu příkazu** způsob exportu (např. „CZBE_ABO-EXP-LOCAL“ nebo „CZBE_SEPA-EXP-LOCAL“).
 
 ### Nastavení pro manuální import bankovních výpisů prostřednictvím API
 
@@ -94,7 +117,7 @@ Zapnout automatické stahování výpisů do Centrálního zásobníku je nutné
 Následující postup prochází klíčové nastavení, které je součástí vzorových dat.
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení exportu/importu banky** a poté vyberte související odkaz.
-2. Přejděte na řádek s kódem „CZBE_ABO-IMP-CENTRAL“.
+2. Přejděte na řádek s kódem „CZBE_IMP-CENTRAL“.
 3. Zkontrolujte, že v poli **ID procedury zpracování** je hodnota 52057427.
 4. Spusťte akci *Rozšířené nastavení*.
 5. V poli **Poskytovatel bankovních výpisů** vyberte hodnotu „Centrální zásobník“.
@@ -138,7 +161,11 @@ Doporučujeme průběžně mazat již zpracované záznamy v tabulce Centrální
 
 ### Automatické formátování čísla účtu (volitelné)
 
-Zapnutí této funkce zajistí automatické formátování čísel bankovních účtů v BC, čím dojde k eliminaci problémů s importem bankovních výpisů
+Zapnutí této funkce zajistí automatické formátování čísel bankovních účtů v BC, čím dojde k eliminaci problémů s importem bankovních výpisů. Formátování probíhá na:
+
+- Bankovní účet
+- Bankovní účet zákazníka
+- Bankovní účet dodavatele
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Informace o společnosti** a poté vyberte související odkaz.
 2. Aktivujte pole **Formátovat číslo účtu**
