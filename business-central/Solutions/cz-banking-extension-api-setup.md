@@ -156,13 +156,13 @@ Při registraci doplníte požadované informace o vaší firmě, viz [Postup re
 
 V organizaci je třeba vytvořit novou "aplikaci" a propojit ji s bankou, viz [postup](https://developers.erstegroup.com/docs/guides/general-user-manual-application/#p-ipojen-k-bance). Doplňte následující parametry:
 
-| Vlastnost        | Hodnota         |
-| ---------------  | --------------- |
+| Vlastnost        | Hodnota                     |
+| ---------------  | ---------------             |
 | Název aplikace   | Aricoma Erste API Connector |
-| Typ              | Web             |
-| Platforma        | Server          |
-| Jazyk            | Jiný            |
-| Použití aplikace | Final API Consumer |
+| Typ              | Web                         |
+| Platforma        | Server                      |
+| Jazyk            | Jiný                        |
+| Použití aplikace | Final API Consumer          |
 
 Banky:
 
@@ -172,6 +172,16 @@ Připojení k API:
 
 - vyberte *Premium - Accounts API* a *Premium - Payments API*
 - povolte OAuth2
+
+| Vlastnost                        | Hodnota                                                 |
+| ---------------                  | ---------------                                         |
+| Redirect URIs - Sandbox          | `https://businesscentral.dynamics.com/OAuthLanding.htm` |
+| Redirect URIs - Production       | `https://businesscentral.dynamics.com/OAuthLanding.htm` |
+| Doba platnosti pro refresh token | 3600 sekund                                             |
+| Typ Grantu                       | Code                                                    |
+
+> [!IMPORTANT]
+> Pro Business Central on-premises je adresa Redirect URI ve formátu `https://<MyServer>/<MyInstance>/OAuthLanding.htm`.
 
 **Žádost o přístup do produkčního prostředí**  
 
@@ -195,7 +205,7 @@ Dalším krokem je nastavení přístupu v Business Central:
 > [!WARNING]
 > Volbu **Povolit protokol aktivity** použijte pouze v odůvodněných případech po omezenou dobu, neboť v protokolu jsou obsažena citlivá data a mohou se k nim dostat i uživatelé, kteří by je vidět neměli.
 
-## Raiffeisen API konektor
+## RB API konektor
 
 ### Zprovoznění služby RB Premium API
 
@@ -244,7 +254,7 @@ Následující parametry je třeba doplnit do Rozšířeného nastavení v pří
 6. V poli **Formát výpisů Raiffeisen** vyberte volbu GPC reprezentující formát ABO.
 7. V poli **ID procedury zpracování** zkontrolujte, že se doplnila hodnota 52057627 (RB Bank Stmt.Imp.-MT940 Acb).
 
-Následující parametry je třeba doplnit do Rozšířeného nastavení v případě, že chcete používat ČSOB API konektor pro export platebních příkazů:
+Následující parametry je třeba doplnit do Rozšířeného nastavení v případě, že chcete používat RB API konektor pro export platebních příkazů:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení exportu/importu banky** a poté vyberte související odkaz.
 2. Přejděte na vybraný řádek typu Export.
