@@ -10,7 +10,7 @@ ms.search.keywords: Czech, Slovak, SK Fiscal Printers Integration, Streamline To
 
 # Integrace s SK fiskálními tiskárnami pro Dynamics 365 Business Central
 
-> Aktualizace 31.07.2025
+> Aktualizace 23.03.2026
 
 **Integrace s SK fiskálními tiskárnami** je rozšířením pro informační systém Microsoft Dynamics 365 Business Central, které poskytuje přímé propojení s fiskálními tiskárnami od firmy VAROS řady [eKASA FT5000](http://www.varos.sk/vyrobky-FT5000). Toto řešení je navrženo tak, aby plně splňovalo slovenské legislativní požadavky dle zákona 289/2008 Z.z., který upravuje evidenci tržeb z prodeje zboží a služeb v hotovosti či jinými způsoby (např. platební kartou, stravenkami nebo šeky).
 
@@ -39,8 +39,8 @@ V následujícím textu je popsány scénáře podporované modulem Integrace s 
 2. Na stránce **Prodejní faktury** klikněte na funkci *Nový* a vytvořte novou prodejní fakturu.
 3. Doplňte řádky dokladu dle potřeby.
 
-> [!IMPORTANT]
-> Na prodejním dokladu musí být nastaveno **Ceny vč. DPH** na Ano. Systém na to uživatele upozorní při zadání Kódu způsobu platby s nastaveným příznakem **Fiskální daňový doklad**.
+    > [!IMPORTANT]
+    > Na prodejním dokladu musí být nastaveno **Ceny vč. DPH** na Ano. Systém na to uživatele upozorní při zadání Kódu způsobu platby s nastaveným příznakem **Fiskální daňový doklad**.
 
 4. V poli **Kód způsobu platby** vyberte způsob platby propojený s fiskální tiskárnou (viz [Nastavení způsobů plateb](SK-FiscalPrinters-Integration-setup.md#nastavení-způsobů-plateb) se zapnutým příznakem **Fiskální daňový doklad**).
 5. Zaúčtujte doklad.
@@ -127,16 +127,29 @@ Ostatní funkce eKASA a Přehledy prodejů (Denní uzávěrka, Měsíční…) j
 Všechny výše uvedené hotovostní operace (Daňový doklad, Vklad, Výběr, Úhrada faktury, Storno faktury, Mincovka) je možné provádět ručně v SW „Tlačový manažér“.
 Dodatečně je možné provést příslušné úkony v Business Central s tím, že fiskální tiskárna bude vypnuta a vytvořené fiskální položky se dodatečně ručně označí jako „Registrované“ (viz dále).
 
+### Ruční paragon
+
+Pokud se při účtování dokladu objeví chyba spojení s tiskárnou, doklad se zaúčtuje a vznikne i Fiskální položka. Tu je třeba po zprovoznění fiskální tiskárny zaevidovat.
+Vytvoří-li uživatel ruční paragon, je třeba jej zaevidovat pod číslem ručního dokladu a s datem a časem jeho vystavení. K tomu slouží funkce *Registrovat položku* (viz dále [Registrace položky](#registrace-položky)].
+
 ### Další operace s fiskálními položkami
 
 #### Registrace položky
 
 Pokud se fiskální doklad nevytiskne, může být (kromě problému se samotnou tiskárnou) problém v tom, že se nepovedlo z nějakého důvodu správně tzv. „registrovat“ položku. Informaci o registraci si nese Fiskální položka – viz sloupce **Registrováno** a **Datum a čas registrace**.
 
-Pokud dává smysl znovu položku registrovat (byla vypnutá tiskárna apod.), může uživatel položku dodatečně registrovat:
+V případech, kdy uživatel vystavil ruční doklad (paragon), uživatel položku dodatečně zaregistruje:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Fiskální položky** a poté vyberte související odkaz.
 2. Na stránce **Fiskální položky** najděte příslušný záznam a spusťte akci *Registrovat položku*.
+3. V poli **Receipt No.** zadejte číslo paragonu.
+4. V poli **Issued date and time** zadejte, kdy byl doklad vystaven a potvrďte tlačítkem OK.
+
+V případech, kdy uživatel je schopen problém vyřešit (např. byla vypnutá tiskárna), uživatel položku dodatečně zaregistruje:
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Fiskální položky** a poté vyberte související odkaz.
+2. Na stránce **Fiskální položky** najděte příslušný záznam a spusťte akci *Registrovat položku*.
+3. Všechna pole nechte prázdná a potvrďte tlačítkem OK.
 
 > [!NOTE]
 > V praxi je často vhodnějším způsobem pro nalezení správné Fiskální položky využití akce *Najít položky* na zaúčtovaném prodejním dokladu.
