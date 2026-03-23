@@ -142,8 +142,8 @@ V případech, kdy uživatel vystavil ruční doklad (paragon), uživatel polož
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Fiskální položky** a poté vyberte související odkaz.
 2. Na stránce **Fiskální položky** najděte příslušný záznam a spusťte akci *Registrovat položku*.
-3. V poli **Receipt No.** zadejte číslo paragonu.
-4. V poli **Issued date and time** zadejte, kdy byl doklad vystaven a potvrďte tlačítkem OK.
+3. V poli **Číslo paragonu** zadejte číslo paragonu.
+4. V poli **Datum a čas vystavení** zadejte, kdy byl doklad vystaven a potvrďte tlačítkem OK.
 
 V případech, kdy uživatel je schopen problém vyřešit (např. byla vypnutá tiskárna), uživatel položku dodatečně zaregistruje:
 
