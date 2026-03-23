@@ -9,7 +9,7 @@ ms.search.keywords: banking, finance, czech, API
 ---
 # Nastavení API konektorů
 
-> Aktualizace: 31.01.2026
+> Aktualizace: 18.03.2026
 
 ## ČSOB API konektor
 

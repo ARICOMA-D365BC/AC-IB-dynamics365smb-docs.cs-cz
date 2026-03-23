@@ -10,7 +10,7 @@ ms.search.keywords: banking, finance, czech, API
 
 # Nastavení rozšířeného CZ bankovnictví
 
-> Aktualizace: 31.01.2026
+> Aktualizace: 18.03.2026
 
 Modul Rozšíření CZ bankovnictví je potřeba zapnout, v produkčním prostředí bude uživatel požádán o aktivaci předplatného (viz  [dokumentace k monetizaci](https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/ProductivityPack/monetization.html)).
 
@@ -233,6 +233,32 @@ Při „Vydání“ bankovního výpisu funkce kontroluje, zda obrat výpisu sou
     - Pole **Sloučit podle variabilního symbolu** – kumulace podle VS
     - Pole **Sloučit podle specifického symbolu** – kumulace podle SS
     - Pole **Sloučit podle konstantního symbolu** – kumulace podle KS
+
+### Nastavení rozvržení dokladu pro odeslání Avíza platby e-mailem
+
+Nejprve ověřte, že je sestava definována v Výběrech sestav pro nákup (resp. pro prodej):
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Výběry sestav - nákup** a poté vyberte související odkaz.
+2. Na stránce Výběr sestav - nákup vyberte v poli **Použití** hodnotu "Platební avízo".
+3. Ověřte, že existuje (případně doplňte) alespoň jeden řádek s **ID sestavy** rovno XXX 
+4. Ověřte, že v poli **Použít pro text emailu** i v poli **Použít pro přílohu emailu** je hodnota "Ano".
+5. Ověřte, že v poli **Rozvržení textu emailu** je hodnota "Platební avízo email (Word)".
+6. Ověřte, že v poli **Rozvržení příloh emailu** je hodnota "Platební avízo (Word)".
+7. Výše uvedený postup opakujte i na stránce **Výběry sestav - prodej**.
+
+> [!NOTE]
+> Více o definici vlastních rozvržení najdete na [stránkách Microsoft](https://learn.microsoft.com/cs-cz/dynamics365/business-central/ui-how-add-fields-word-report-layout).
+
+Následně je třeba doplnit specifické údaje pro konkrétního dodavatele (typicky e-mail):
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Dodavatelé** a poté vyberte související odkaz.
+2. Otevřete kartu dodavatele, pro kterého chcete nastavit odesílání sestavy.
+3. Na stránce karty dodavatele spusťe akci *Rozvržení dokladu*.
+4. Na stránce Rozvržení dokladu spusťte akci *Kopírovat z výběru sestavy*, která doplní případné chybějící řádky.
+5. Přejděte na řádek s hodnotou Platební avízo v poli **Použití** a v poli **Odeslat do e-mailu** zadejte požadovanou adresu e-mail, kam má být avízo zasíláno.
+
+> [!NOTE]
+> Stejné nastavení můžete provést na stránce karty zákazníka. Informace o definování rozvržení dokumentů pro zákazníky a dodavatele najdete na [stránkách Microsoft](https://learn.microsoft.com/cs-cz/dynamics365/business-central/ui-define-customer-vendor-document-layouts).
 
 ## Úpravy na míru
 
