@@ -9,16 +9,19 @@ ms.search.keywords: Czech, Slovak, SK Fiscal Printers Integration, Streamline To
 ---
 # Nastavení integrace s SK fiskálními tiskárnami pro Dynamics 365 Business Central
 
-> Aktualizace 31.07.2025
+> Aktualizace 30.04.2026
 
 Integrace s fiskálními tiskárnami VAROS je postavena na funkčnosti programu Tlačový manažér od firmy VAROS. Tento je třeba nainstalovat v prostředí firmy (viz [Manuály](http://www.varos.sk/manualy.php)) přímo na počítači, ke kterému je tiskárna připojena (typicky pomocí USB). Každá fiskální tiskárna musí být rovněž připojena k internetu pomocí LAN (popř. přes Wifi).
 
 ## Nastavení oprávnění uživatelů
 
-Sady oprávnění:
+Aby se uživatelé nedostali do problémů s používáním Business Central, jakmile aktivujete funkcionalitu modulu, nejprve nastavte oprávnění k funkcionalitě.
+S instalací modulu máte k dispozici následující Sady oprávnění:
 
-- FP_BASIC_ACC: Fiskální tiskárny - Základ
-- FP_SETUP_ACC: Fiskální tiskárny - Nastavení
+|Název sady    |Popis                                 |
+|-             |-                                     |
+| FP_BASIC_ACC | Pro běžné používání                  |
+| FP_SETUP_ACC | Pro možnost nastavení chování modulu |
 
 ## Nastavení fiskálních tiskáren
 

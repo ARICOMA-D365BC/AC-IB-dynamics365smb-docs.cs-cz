@@ -9,7 +9,7 @@ ms.search.keywords: banking, finance, czech, API
 ---
 # Nastavení API konektorů
 
-> Aktualizace: 18.03.2026
+> Aktualizace: 30.04.2026
 
 ## ČSOB API konektor
 
@@ -41,7 +41,7 @@ Certifikát lze získat také přímo od banky, což lze provést v zásadě 2 z
   - získání komunikačního certifikátu (kapitola 3).
 
 > [!TIP]
-> Aplikace ČSOB Business Connector nebude pro běžnou práci využívána. Doporučujeme v ní ale nastavit upozornění na vypršení certifikátu (viz příručka v kapitole Obnova komunikačního certifikátu).
+> 15 dní před vypršením platnosti certifikátu začnou být uživatelé na tuto skutečnost upozorňováni (např. v Centrálním zásobníku či při ručním spuštění importu výpisu), dokud znovu neprovedou jeho obnovu.
 
 **Registrace certifikátu**  
 
@@ -110,7 +110,7 @@ Základní kroky pro zprovoznění API rozhraní jsou:
 - Firma nastaví modul v Business Central.
 - Firma udělí souhlas Business Central aplikaci ke se stahováním dat z KB a vybere bankovní účty, ke kterým bude mít Business Central přístup.
 
-**Získání Autorizačního klíče**  
+**Získání Autorizačního klíče** (platné do verze BC26)
 
 Kontaktujte nás e-mailem na adrese <bc_sales@aricoma.com>. Stačí nám pouze jméno vaší firmy, v odpovědi vám zašleme Autorizační klíč. Tento je určen pouze pro potřeby vaší firmy a nesmí být používán nikým jiným.
 
@@ -127,6 +127,8 @@ Dalším krokem je nastavení přístupu v Business Central:
 
 > [!WARNING]
 > Volbu **Povolit protokol aktivity** použijte pouze v odůvodněných případech po omezenou dobu, neboť v protokolu jsou obsažena citlivá data a mohou se k nim dostat i uživatelé, kteří by je vidět neměli.
+> [!TIP]
+> 15 dní před vypršením autorizace začnou být uživatelé na tuto skutečnost upozorňováni (např. v Centrálním zásobníku či při ručním spuštění importu výpisu), dokud znovu neprovedou autorizaci.
 
 **Udělení souhlasu**  
 
@@ -204,6 +206,8 @@ Dalším krokem je nastavení přístupu v Business Central:
 
 > [!WARNING]
 > Volbu **Povolit protokol aktivity** použijte pouze v odůvodněných případech po omezenou dobu, neboť v protokolu jsou obsažena citlivá data a mohou se k nim dostat i uživatelé, kteří by je vidět neměli.
+> [!TIP]
+> 15 dní před vypršením autorizace začnou být uživatelé na tuto skutečnost upozorňováni (např. v Centrálním zásobníku či při ručním spuštění importu výpisu), dokud znovu neprovedou autorizaci.
 
 ## RB API konektor
 
@@ -227,6 +231,9 @@ V aplikaci bankovnictví v části Nastavení (ikonka ozubeného kola) provedete
     - potvrďte souhlas s podmínkami užívání certifikátu a zvolte akci *Pokračovat*
 3. Na formuláři *Vygenerování certifikátu* kliknutím na tlačítko *Podepsat* spusťte proces schvalování přes mobilní aplikaci.
 4. Po schválení na stránce *Certifikát byl vygenerován* spusťte akci *Stáhnout certifikát*.
+
+> [!TIP]
+> 15 dní před vypršením platnosti certifikátu začnou být uživatelé na tuto skutečnost upozorňováni (např. v Centrálním zásobníku či při ručním spuštění importu výpisu), dokud znovu neprovedou jeho obnovu.
 
 **Nastavení klientské aplikace v Business Central**  
 

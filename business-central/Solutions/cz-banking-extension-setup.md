@@ -10,7 +10,7 @@ ms.search.keywords: banking, finance, czech, API
 
 # Nastavení rozšířeného CZ bankovnictví
 
-> Aktualizace: 18.03.2026
+> Aktualizace 22.04.2026
 
 Modul Rozšíření CZ bankovnictví je potřeba zapnout, v produkčním prostředí bude uživatel požádán o aktivaci předplatného (viz  [dokumentace k monetizaci](https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/ProductivityPack/monetization.html)).
 
@@ -19,6 +19,14 @@ Modul Rozšíření CZ bankovnictví je potřeba zapnout, v produkčním prostř
 
 > [!TIP]
 > Před nastavením spusťte Asistované nastavení pro tento modul, který najdete v Asistovaná nastavení -> Nastavení rozšíření ARICOMA. Ten vám umožní nahrát konfigurační balíček a jeho prostřednictvím doplnit vzorová nastavení, na která se mimo jiné odkazují scénáře v dalších kapitolách.
+
+## Oprávnění
+Aby se uživatelé nedostali do problémů s používáním Business Central, jakmile aktivujete funkcionalitu modulu, nejprve nastavte oprávnění k funkcionalitě.
+S instalací modulu máte k dispozici následující Sady oprávnění: 
+|Název sady|Popis|
+|-|-|
+| CZBANKEXTREAD_ACB | Pro běžné používání|
+| CZBANKEXTEDIT_ACB | Pro možnost nastavení chování modulu |
 
 ## Formáty bankovních výpisů a platebních příkazů
 

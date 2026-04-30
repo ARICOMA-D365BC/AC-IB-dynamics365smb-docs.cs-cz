@@ -11,18 +11,27 @@ ms.search.keywords: Czech, document links, additional functions
 ms.author: v-makune
 ---
 # Připojené dokumenty - nastavení
-> Aktualizace 16.06.2023
+> Aktualizace 22.04.2026
 
-Následující řádky popisují nastavení od těch nezbytných pro samotné zprovoznění (Registrace aplikace v AAD, nastavení Aplikace SharePoint Azure AD) až po nastavení pokrývající speciální požadavky zákazníků (např. při ukládání souborů nebo evidenci doplňujících atributů).
+Následující řádky popisují nastavení od těch nezbytných pro samotné zprovoznění (Registrace aplikace v Entra, nastavení Aplikace SharePoint Entra) až po nastavení pokrývající speciální požadavky zákazníků (např. při ukládání souborů nebo evidenci doplňujících atributů).
 
-## Registrace aplikace v Azure Active Directory
+## Oprávnění
+Aby se uživatelé nedostali do problémů s používáním Business Central, jakmile aktivujete funkcionalitu modulu, nejprve nastavte oprávnění k funkcionalitě.
+S instalací modulu máte k dispozici následující Sady oprávnění:
+
+|Název sady      |Popis                                 |
+|-               |-                                     |
+| DOCLINKS_USAGE | Pro běžné používání                  |
+| DOCLINKS_SETUP | Pro možnost nastavení chování modulu |
+
+## Registrace aplikace v Entra
+
 Prvním úkolem je pomocí portálu Azure zaregistrovat aplikaci pro službu Business Central ve vašem nájemci služby Azure AD. Součástí registrace je také přidělení přístupu k aplikaci příslušným službám. Účelem registrace je zajistit, aby Business Central a služby navzájem znaly údaje o Azure Active Directory (Azure AD).
 
 1.	Přihlaste se na portál Azure a zaregistrujte aplikaci pro Business Central v Azure Active Directory tenant.
     - Postupujte podle obecných pokynů na stránce Registrace aplikaci v tenantu služby Azure Active Directory.
     Při přidávání aplikace do nájemce Azure AD musíte zadat následující informace:
 
-    
     |Nastavení|Popis|
     |-|-|
     |Název|Zadejte název řešení Business Central, například Business Central - Sharepoint.|
@@ -30,7 +39,6 @@ Prvním úkolem je pomocí portálu Azure zaregistrovat aplikaci pro službu Bus
     |Přesměrování URL|Chcete-li zadat webovou aplikaci, nastavte první pole na hodnotu Web. Zadejte adresu URL klienta prohlížeče Business Central a poté OAuthLanding.htm, například: https://businesscentral.dynamics.com/OAuthLanding.htm nebo https://MyServer/BC200/OAuthLanding.htm|
 
     - Po dokončení se na portálu zobrazí Přehled nové aplikace.
-    
     - Zkopírujte **ID aplikace (klienta)**, které bylo přiřazeno aplikaci, **Koncový bod autorizace **OAuth 2.0** (v2)** a také **Adresu URL přesměrování**, kterou jste zadali. Tyto informace použijete později.
 
 2.	Vytvořte tajný klíč klienta pro registrovanou aplikaci
@@ -57,10 +65,11 @@ Pro případ ukládání pod účtem aplikace je třeba přidat následující:
 
 ## Aplikace Sharepoint Azure AD
 
-> [!WARNING] 
+> [!WARNING]
 > Prvotní nastavení proveďte pomocí asistovaného nastavení, které vás provede nastavením Aplikace SharePoint Azure AD a navíc doplní i další užitečná nastavení (např. pravidla transformace, viz dále).
 
 Pro každý Sharepoint site, který budete propojovat s Business Central, je třeba definovat propojení:
+
 1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Aplikace Sharepoint Azure AD** a poté vyberte související odkaz.
 2.	Na stránce Aplikace Sharepoint Azure AD zadejte **Kód** a **Popis** nového záznamu.
 3.	V poli **ID aplikace/klienta** zadejte ID aplikace z předchozí kapitoly.
@@ -73,7 +82,9 @@ Pro každý Sharepoint site, který budete propojovat s Business Central, je tř
 10.	Zavřete stránku.
 
 ## Nastavení připojení dokumentů
+
 Funkcionalitu modulu je třeba globálně zapnout:
+
 1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení připojení dokumentů** a poté vyberte související odkaz.
 2.	Aktivujte příznak **Povoleno**.
 3.  **BC online**: Pokud systém nenajde aktivní (či již ukončené) předplatné pro tento modul, vyzve uživatele k vytvoření zkušebního předplatné (viz dokumentace k AC Monetizace).
@@ -81,13 +92,14 @@ Funkcionalitu modulu je třeba globálně zapnout:
 4.	Zavřete stránku.
 
 ## Knihovny dokumentů
+
 1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Knihovny dokumentů** a poté vyberte související odkaz.
-6.	Na stránce Knihovny dokumentů spusťte akci Nový.
-7.	Na stránce Knihovna dokumentů zadejte **Kód** a **Název** nové knihovny. 
-8.	V poli **Typ knihovny** zvolte hodnotu Sharepoint.
-9.	V poli **Aplikace SharePoint Azure AD** vyberte z definovaných aplikací.
-10.	Spusťte akci Nastavit knihovnu SharePoint. Na stránce Výběr knihoven SharePoint vyberte požadovanou knihovnu.
-11.	Zavřete stránku.
+2.	Na stránce Knihovny dokumentů spusťte akci Nový.
+3.	Na stránce Knihovna dokumentů zadejte **Kód** a **Název** nové knihovny. 
+4.	V poli **Typ knihovny** zvolte hodnotu Sharepoint.
+5.	V poli **Aplikace SharePoint Azure AD** vyberte z definovaných aplikací.
+6.	Spusťte akci Nastavit knihovnu SharePoint. Na stránce Výběr knihoven SharePoint vyberte požadovanou knihovnu.
+7.	Zavřete stránku.
 
 > [!NOTE]
 > Když zapnuté na webu „Chcete vyžadovat rezervaci dokumentů před úpravami“, pak je třeba mít na knihovně zapnuté **Vyžaduje rezervaci dokumentů**.
@@ -96,6 +108,7 @@ Funkcionalitu modulu je třeba globálně zapnout:
 > V případě potřeby využití informací o datu a času z metadat souborů je třeba nastavit pole Časové pásmo SharePoint. Tím se zajistí soulad mezi těmito informacemi z SharePoint a z BC.
 
 ## Přidání Připojených dokumentů k vybrané funkcionalitě BC
+
 ### Krok 1 – Přidání na stránku jako Pageextension
 
 Na všechny stránky, kde má být funkcionalita dostupná, musí být doplněno okno s fakty „DocumentLinksFactBox_ach“. Pokud si nejste jistí, jak vytvořit rozšíření stránky (viz následující kód), požádejte svého Business Central partnera.
@@ -124,9 +137,10 @@ Na všechny stránky, kde má být funkcionalita dostupná, musí být doplněno
         end;
     }
 
-
 ### Krok 2 – Základní nastavení šablony připojení dokumentů
+
 Následující nastavení je pro entitu Zákazník, u které jsou v základu doplněny stránky Zákazníci a Karta zákazníka o potřebné okno s fakty.
+
 1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Šablony připojení dokumentů** a poté vyberte související odkaz.
 2.	Na stránce Šablony připojení dokumentů spusťte akci Nový.
 3.	Na stránce Šablona připojení dokumentů zadejte **Kód** a **Popis** nové šablony.
@@ -142,6 +156,7 @@ Následující nastavení je pro entitu Zákazník, u které jsou v základu dop
 13.	Zastavte režim Přizpůsobení stiskem červeného tlačítka Hotovo.
 
 ## Různé šablony pro filtrované záznamy
+
 Potřebujete-li mít šablonu definovánu pouze pro určité záznamy, popř. různé šablony pro jinak filtrované záznamy, můžete na šabloně nastavit filtr tabulky.
 Příklad – šablona pro tuzemské zákazníky:
 
@@ -154,11 +169,12 @@ Příklad – šablona pro tuzemské zákazníky:
 > [!NOTE]
 > Vytváření nových šablon je možné si usnadnit pomocí akce Zkopírovat šablonu dostupnou na kartě šablony.
 
-
 ## Rozšířené možnosti umístění souborů
+
 Na šabloně je možné flexibilně nastavit pravidla pro ukládání souborů při připojení k entitám.
 
 ### **Příklad – smlouvy se zákazníky ukládáme do určené podsložky:**
+
 1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Šablony připojení dokumentů** a poté vyberte související odkaz
 2.	Vytvořte novou šablonu připojení dokumentů pro smlouvy se zákazníky dle postupu pro základní nastavení.
 3.	Dále na stránce Šablona připojení dokumentů rozklikněte AssistEdit u pole **Výchozí složka**.
@@ -167,6 +183,7 @@ Na šabloně je možné flexibilně nastavit pravidla pro ukládání souborů p
 6.	Zavřete stránku.
 
 ### **Příklad – každý zákazník má automaticky vlastní složku a v ní podsložku pro smlouvy:**
+
 1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Šablony připojení dokumentů** a poté vyberte související odkaz.
 2.	Vytvořte novou šablonu připojení dokumentů pro smlouvy se zákazníky dle postupu pro základní nastavení.
 3.	Spusťte akci Parametry šablony. 
@@ -182,6 +199,7 @@ Na šabloně je možné flexibilně nastavit pravidla pro ukládání souborů p
 > Kromě předdefinovaných zdrojů dat pro parametry šablony je možné nechat si připravit na míru vlastní funkci, která vytvoří požadovaný řetězec. Jedná se o zdroj dat Vlastní funkce, pro který pak v poli **ID vlastní funkce** přiřadíte číslo připravené codeunity.
 
 ### **Příklad – soubory jsou ukládány s generovaným názvem souboru:**
+
 1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Šablony připojení dokumentů** a poté vyberte související odkaz.
 2.	Vytvořte novou šablonu připojení dokumentů pro smlouvy se zákazníky dle postupu pro základní nastavení.
 3.	Spusťte akci Parametry šablony. 
@@ -193,13 +211,16 @@ Na šabloně je možné flexibilně nastavit pravidla pro ukládání souborů p
 9.	Zavřete stránku.
 
 ## Rozšířené možnosti nastavení oprávnění
+
 V některých případech je třeba omezit přístup uživatelů k šablonám. Existuje možnost definovat jmenovitě uživatele, kteří mají mít přístup:
+
 1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Šablony připojení dokumentů** a poté vyberte související odkaz.
 2.	Vyberte šablonu a spusťte akci Oprávnění uživatelů.
 3.	Na stránce Uživatelé šablony připojení dokumentů vyberte uživatele s přístupem.
 4.	Zavřete stránku.
 
 ## Nastavení atributů knihovny dokumentů
+
 Nejčastěji je funkcionalita atributů v Business Central využita k tomu, aby se automatizovaně či ručně doplnila metadata (sloupce) k souboru ukládanému v knihovně Sharepoint (viz Vytvoření sloupce v seznamu nebo knihovně - Podpora Microsoftu).
 
 1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Knihovny dokumentů** a poté vyberte související odkaz.
@@ -213,6 +234,7 @@ Nejčastěji je funkcionalita atributů v Business Central využita k tomu, aby 
 > Pokud se v průběhu času upraví definice hodnot sloupců SharePoint (primárně se jedná o typ Volba), je třeba tyto změny promítnout do Business Central ručně. 
 
 Je-li požadován atribut pro využití pouze na úrovni BC, je možné jej definovat. Následující příklad popisuje jeden povinný atribut pro evidenci jména prodejce
+
 1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Knihovny dokumentů** a poté vyberte související odkaz.
 2.	Na stránce Knihovny dokumentů vyberte knihovnu a spusťte akci Atributy dokumentů.
 3.	Na stránce Atributy knihovny dokumentů vytvořte nový řádek pro atribut evidující hodnocení zákazníka (Název = Prodejce; Datový typ = Text; Povinný = Ano).
@@ -225,6 +247,7 @@ Je-li požadován atribut pro využití pouze na úrovni BC, je možné jej defi
 > Hodnota v sloupci **Atribut SharePoint** indikuje, o který typ atributu se jedná.
 
 ## Nastavení automatického doplňování atributů knihovny dokumentů
+
 Následující scénář navazuje na předchozí kapitolu, tedy že jeden z definovaných atributů knihovny dokumentů budeme automaticky plnit při nahrávání souboru.
 
 1.	Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Šablony připojení dokumentů** a poté vyberte související odkaz.
@@ -258,7 +281,6 @@ Zde je uveden návod k vytvoření vlastní funkce pro definici atributů popsan
             Rec."Value" := 'Result value';
         end;
     }
-
 
 ## Viz také
 

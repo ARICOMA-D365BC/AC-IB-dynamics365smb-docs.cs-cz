@@ -13,12 +13,13 @@ ms.author: v-makune
 ---
 
 # Nastavení - Parcels - Integrace Balíkobot
-> Aktualizace: 08.03.2022
 
+> Aktualizace: 22.04.2026
 
 Pro správné fungování addonu Zásilek je zapotřebí nastavit několik oblastí. Addon se prvotně nastavuje pomocí průvodce a poté je možné nastavení měnit ručně.
 
-## Oblasti nastavení addonu:
+## Oblasti nastavení addonu
+
 - Číselná řada
 - Expediční místa
 - Nastavení Zásilek
@@ -30,8 +31,19 @@ Pro správné fungování addonu Zásilek je zapotřebí nastavit několik oblas
 - Automatické aktualizace
 - Nastavení v Sandboxovém prostředí
 
-
 Ostatní číselníky (Služby přepravce, Manipulační jednotky a Pobočky přepravce) si addon stahuje z API Balíkobotu.
+
+> [!IMPORTANT]
+> Aby se uživatelé nedostali do problémů s používáním Business Central, jakmile aktivujete funkcionalitu modulu, nejprve nastavte oprávnění k funkcionalitě.
+> S instalací modulu máte k dispozici následující Sady oprávnění:
+>
+>     |Název sady         |Popis                                    |
+>     |-                  |-                                        |
+>     | PARCELS_READ_ACC  | Pouze čtení                             |
+>     | PARCELS_EDIT_ACC  | Pro běžné používání                     |
+>     | PARCELS_SETUP_ACC | Pro možnost nastavení chování modulu    |
+>     | PARCELS_ADMIN_ACC | Pro běžné používání a zároveň nastavení |
+
 ## Nastavení Parcels pomocí průvodce
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Asistovaná nastavení** a poté vyberte související odkaz.
@@ -62,6 +74,7 @@ Ostatní číselníky (Služby přepravce, Manipulační jednotky a Pobočky př
 12. Jakmile vše vyplníte a kliknete na **Dokončit**, asistovaný průvodce se zavře a začnou se synchronizovat master data.
 
 ## Ruční úprava nastavení
+
 ### Expediční místa
 
 Expediční místo je místo Vašeho skladu, odkud jsou expedovány zásilky. Uživatel může mít několik expedičních míst. Pro každé expediční místo je nutné jiné API, dále je expediční místo spojeno s jednou lokací Vaší společnosti. 
@@ -89,21 +102,23 @@ Základní nastavení Balíkobotu je nutné provést na stránce **Nastavení Z�
 ![Nastavení Parcels](media/BB_setup.png)
 
 Okno nastavení Zásilek obsahuje:
- - **Čísla zásilek** - Číselná řada pro zásilky.
- - **Kód výchozího expedičního místa** - Výchozí expediční místo, odkud budou odváženy zásilky (viz další kapitola)
- - **Tisk předávacích protokolů svozu** – Automatický tisk předávacích protokolů po objednání svozu
- - **Výchozí název tiskárny** – Určuje tiskárnu štítků
- - **Mezní doba odezvy** – Určuje dobu timeoutu komunikace v jednotlivé zprávě
- - **Povolen protokol aktivity** - Spuštění sledování logu aktivity
- - **Režim ladění** – Umožňuje odchytávání zpráv v komunikaci s danou službou
- - **Automatická synchronizace master dat** - Spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje všechna data ze strany Balíkobotu.
- - **Automatická aktualizace stavu přepravy** - Spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje stav přepravy zásilek za poslední měsíc.
 
+- **Čísla zásilek**- Číselná řada pro zásilky.
+- **Kód výchozího expedičního místa** - Výchozí expediční místo, odkud budou odváženy zásilky (viz další kapitola)
+- **Tisk předávacích protokolů svozu** – Automatický tisk předávacích protokolů po objednání svozu
+- **Výchozí název tiskárny** – Určuje tiskárnu štítků
+- **Mezní doba odezvy** – Určuje dobu timeoutu komunikace v jednotlivé zprávě
+- **Povolen protokol aktivity** - Spuštění sledování logu aktivity
+- **Režim ladění** – Umožňuje odchytávání zpráv v komunikaci s danou službou
+- **Automatická synchronizace master dat** - Spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje všechna data ze strany Balíkobotu.
+- **Automatická aktualizace stavu přepravy** - Spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje stav přepravy zásilek za poslední měsíc.
 
 Základní nastavení se provede pomocí průvodce nastavení aplikace.
 Ostatní tabulky se stahují a plní po zapnutí synchronizace master dat.
 Aktualizace těchto dat probíhá ručně pomocí funkce „Resynchronizace master dat“.
+
 #### Základní nastavení Parcels - Integrace Balíkobot
+
 Pro spuštění funkcí Balíkobotu je potřeba provést nastavení:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení Zásilek** a poté vyberte související odkaz.
@@ -113,33 +128,40 @@ Pro spuštění funkcí Balíkobotu je potřeba provést nastavení:
 5. Povolte nebo zakažte Protokol aktivity
 
 ### Nastavení přepravců
+
 Základní číselník se nahrává pomocí RapidStart balíčku pro Business Central. Tento balíček obsahuje data, která se nestahují z API Balíkobotu:
+
 #### Tabulka přepravců
 
 Ostatní tabulky se stahují a plní po synchronizaci master dat a v tabulce přepravců.
 Aktualizace těchto dat probíhá ručně pomocí funkce „Resynchronizace master dat“.
 ![Nastavení Balíkobotu](media/BB_shipping-agents.png)
- 
+
 Přehled obsahuje i dopravce, které nemáte u Balíkobotu nakonfigurované. Pro takové se neprovádí import dalších dat (viz dále).
+
 ### Na přehledu přepravců je několik polí k nastavení:
- - **Integrační služba** – Určuje, přes jakou integrační službu se přepravce používá (v tomto případě Balikobot.cz)
- - **Povolení synchronizace master dat** – Po zapnutí se mohou stáhnout master data
- - **Poslední synchronizace master dat** – Datum poslední synchronizace master dat
- - **Povoleno pro Balíkobot** - Přepravce je povolen a je možné ho používat
- - **Povolit více balíků** - Při vytváření zásilky umožní funkce vytvořit více balíků v rámci jedné zásilky
- - **Paletová přeprava**
- - **Počet manipulačních jednotek** - U paletové přepravy je možnost nastavit více manipulačních jednotek
- - **Pouze pobočky** – Určuje, že přepravce slouží pouze jako výdejní místo
- - **Maximální délka adresy** – Nastavuje délku adresy u vybraného přepravce
- ### Funkce nad přepravci
- - **Test spojení** – Test komunikace mezi integrační službou a Business Central
- - **Synchronizace master dat** – Spustí synchronizaci master dat
- - **Služby přepravců** - Tabulka služeb jednotlivých přepravců
- - **Pobočky přepravců** - Tabulka lokalit, kde si mohou zákazníci zboží od přepravce převzít 
- - **Manipulační jednotky** - Tabulka manipulačních jednotek paletové přepravy
- - **ADR jednotky přepravce** – Tabulka ADR jednotek přepravce
+
+- **Integrační služba** – Určuje, přes jakou integrační službu se přepravce používá (v tomto případě Balikobot.cz)
+- **Povolení synchronizace master dat** – Po zapnutí se mohou stáhnout master data
+- **Poslední synchronizace master dat** – Datum poslední synchronizace master dat
+- **Povoleno pro Balíkobot** - Přepravce je povolen a je možné ho používat
+- **Povolit více balíků** - Při vytváření zásilky umožní funkce vytvořit více balíků v rámci jedné zásilky
+- **Paletová přeprava**
+- **Počet manipulačních jednotek** - U paletové přepravy je možnost nastavit více manipulačních jednotek
+- **Pouze pobočky** – Určuje, že přepravce slouží pouze jako výdejní místo
+- **Maximální délka adresy** – Nastavuje délku adresy u vybraného přepravce
+
+### Funkce nad přepravci
+
+- **Test spojení** – Test komunikace mezi integrační službou a Business Central
+- **Synchronizace master dat** – Spustí synchronizaci master dat
+- **Služby přepravců** - Tabulka služeb jednotlivých přepravců
+- **Pobočky přepravců** - Tabulka lokalit, kde si mohou zákazníci zboží od přepravce převzít 
+- **Manipulační jednotky** - Tabulka manipulačních jednotek paletové přepravy
+- **ADR jednotky přepravce** – Tabulka ADR jednotek přepravce
 
 Pokud přidáte přepravce až poté, co byla provedeno prvotní nastavení pomocí asistovaného nastavení, je nutné správně vyplnit pole:
+
 - Kód
 - Adresa URL sledování balíku
 - Integrační služba
@@ -148,7 +170,8 @@ Pokud přidáte přepravce až poté, co byla provedeno prvotní nastavení pomo
 Poté je nutné použít funkci **Synchronizace master dat**!
 ### Nastavení služeb přepravců
 
-Služby přepravců se stahují automaticky pomocí API Balíkobotu. Je možné vynutit určité nastavení pro jednotlivé služby přepravce. Postup pro nastavení :
+Služby přepravců se stahují automaticky pomocí API Balíkobotu. Je možné vynutit určité nastavení pro jednotlivé služby přepravce. Postup pro nastavení:
+
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Přepravci** a poté vyberte související odkaz.
 2. V seznamu vyberte požadovaného přepravce a zvolte funkci **Služby přepravce**
 3. Na následující stránce vyplňte pole dle potřeby:
@@ -162,14 +185,11 @@ Služby přepravců se stahují automaticky pomocí API Balíkobotu. Je možné 
     - **Služby ČP** – Pouze pro Českou poštu - dlouhý textový řetězec služeb pošty nad danou zásilkou
 o	https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf
 
-
 ### Nastavení API Balíkobotu
 
 Tato systémová tabulka umožňuje nastavit rožšířené nastavení přepravců. Jde o nastavení pro API komunikaci, kde je možno u vybraných přepravců vybírat verze komunikací a další.
 
 Z administrátorského hlediska, je zde možnost nastavit kód přepravce pro komunikaci v případně změn od Balíkobotu (pole API kód přepravce), kdy je název API přepravce delší než 10 znaků. (například DHL Freight EuroConnect, který měl název API "dhlfreight" a nyná využívá "dhlfreightec")
-
-
 
 ## Parametry zásilek
 
@@ -179,19 +199,26 @@ Parametry pro jednotlivé přepravce jsou stahovány z API balíkobotu.
 
 Pro nastavení a používání funkce zásilka na dobírku je zapotřebí nastavit na způsobu platby boolean **Dobírka**.
 
-1.  Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Způsob platby** a poté vyberte související odkaz.  
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Způsob platby** a poté vyberte související odkaz.  
 2. V přehledu zaškrtněte možnost **Dobírka**.
 3. Zavřete přehled způsobu platby.
- ## Nastavení tisku
+
+## Nastavení tisku
+
 ### PDF reader
+
 Pro tisk štítků je zapotřebí mít nainstalovaný PDF reader. Pro práci se štítky doporučujeme Foxit pdf a také ho mít nastavený jako výchozí program pro PDF soubory.
+
 ### Výběr formátu tisku – klientská zóna
+
 Základním krokem nastavení tisku štítků je definice, jakým způsobem se budou generovat PDF se štítky ze strany Balíkobotu. V klientské zóně (https://client.balikobot.cz/) uživatel musí nastavit, zda se bude tisknout ve formátu na celou stránku nebo dle pozic na papíru velikosti A4. Vše záleží na tom, na jaké tiskárně se bude tisknout. Pro tisk na tiskárně pro štítky se nemusí vybírat pozice tisku štítku.
 
 ### Výběr tiskárny
- Pro nastavení tisku štítku je potřeba nastavit ID sestavy a přidělit uživateli tiskárnu. Funkce tisk štítků je nastavená, aby tiskla na definované tiskárně.
+
+Pro nastavení tisku štítku je potřeba nastavit ID sestavy a přidělit uživateli tiskárnu. Funkce tisk štítků je nastavená, aby tiskla na definované tiskárně.
 
 Nutné pro definice tiskárny:
+
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Výběry tiskáren** a poté vyberte související odkaz. 
 2. Zvolit **Nový**.
 3. Vyberte ID uživatele, ID sestavy 52068430 a Název tiskárny
@@ -201,31 +228,37 @@ Tisk předávacího protokolu se tiskne automaticky po objednání svozu. Pokud 
 ## Automatické aktualizace
 
 ### Automatická aktualizace master dat
+
 Automatická aktualizace master dat spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje všechna data ze strany Balíkobotu (Ve výchozím stavu v neděli ve 14:00).
 
 Pro zapnutí této funkce postupujte následujícím způsobem:
+
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení Zásilek** a poté vyberte související odkaz.
 2. V Nastavení zásilek zapněte "Automatická aktualizace master dat".
 3. Uživatel bude vyzván k založení a otevření nové položky fronty úloh, která bude ve stavu "Vyčkávat".
 4. Poté je možné nastavení zavřít.
 
 ### Automatická aktualizace stavu přepravy
+
 Automatická aktualizace stavu přepravy spustí na frontě úloh proceduru, která v určité časové periodě aktualizuje stav přepravy zásilek za poslední měsíc.
 
 Pro zapnutí této funkce postupujte následujícím způsobem:
+
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení Zásilek** a poté vyberte související odkaz.
 2. V Nastavení zásilek zapněte "Automatická aktualizace stavu přepravy".
 3. Uživatel bude vyzván k založení a otevření nové položky fronty úloh, která bude ve stavu "Vyčkávat".
 4. Poté je možné nastavení zavřít.
 
 ## Nastavení v Sandboxovém prostředí
+
 ### Zablokování modulem runtime
 
-Při asistovaném nastavení add-onu se může zobrazit hláška "*Požadavek byl zablokován modulem runtime*". 
+Při asistovaném nastavení add-onu se může zobrazit hláška "*Požadavek byl zablokován modulem runtime*".
 
 Pro vyřešení tohoto problému postupujte následujícím způsobem:
+
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Správa rozšíření** a poté vyberte související odkaz.
-2. Otevře se stránka **Nainstalovaná rozšíření**. 
+2. Otevře se stránka **Nainstalovaná rozšíření**.
 3. Zvolte řádek rozšíření **Parcels** a poté použijte akci **Konfigurace**.
 4. Na stránce **Konfigurace rozšíření** aktivujte přepínač **Povolit požadavky HttpClient**.
 5. Poté stránku můžete zavřít a spustit znovu Asistovaného průvodce.
@@ -245,7 +278,7 @@ Pro správné nastavení postupujte tímto způsobem:
 
 ### Automatické připojení faktury k zásilce
 
-Pro správné fungování Paperless Trade musíte k zásilce připojit PDF soubor faktury (pro-forma faktury). 
+Pro správné fungování Paperless Trade musíte k zásilce připojit PDF soubor faktury (pro-forma faktury).
 
 V případě vytváření zásilky z účtované prodejní faktury je možné vygenerovat doklad a připojit ho automaticky při vytváření zásilky. Pro správné nastavení pokračujte tímto způsobem:
 
@@ -254,9 +287,8 @@ V případě vytváření zásilky z účtované prodejní faktury je možné vy
 3. Automatické vytváření PLT dokladů zapnete vybráním pole **Vytvořit PLT dokument**.
 4. Po nastavení můžete přehled zavřít.
 
-
-
 ## Viz také
+
 [Zásilky](parcels.md)  
 [Productivity Pack](productivity-pack.md)  
 [ARICOMA řešení](solutions.md)

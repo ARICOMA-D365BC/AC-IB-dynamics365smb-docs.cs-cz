@@ -10,7 +10,7 @@ ms.search.keywords: Analytics Suite, Power BI, data, business intelligence
 
 # Analytics Suite – Nastavení
 
-> Aktualizace: 01.06.2025
+> Aktualizace: 30.04.2026
 
 Modul **Analytics Suite** rozšiřuje možnosti analýzy dat a vizualizace klíčových ukazatelů v prostředí Dynamics 365 Business Central. Pro správné fungování je nutné provést následující nastavení:
 
@@ -22,28 +22,27 @@ Modul **Analytics Suite** rozšiřuje možnosti analýzy dat a vizualizace klí�
 
 1. Přihlaste se do prostředí Business Central.
 2. Otevřete **AppSource** a vyhledejte **Analytics Suite**.
-
 ![Hledání rozšíření v Appsource](media/analytics-suite-app-source.png)
-
 3. Vyberte rozšíření **Analytics Suite for Business Central** a klikněte na **Nainstalovat aplikaci**.
-
 ![Instalace rozšíření](media/analytics-suite-app-install.png)
-
 4. Dokončete instalaci dle průvodce.
-
 ![Instalace rozšíření - průvodce](media/analytics-suite-app-install2.png)
 
 ## Nastavení Analytics Suite v Business Central
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení Analytics Suite** a poté vyberte související odkaz.
 2. Na stránce **Nastavení Analytics Suite** aktivujte modul zaškrtnutím políčka **Povoleno**.
-
 ![Nastavení Analytics Suite](media/analytics-suite-setup-bc.png)
-
 3. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Informace o společnosti** a poté vyberte související odkaz.
 4. Na stránce **Informace o společnosti** a u dalších společností, které chcete analyzovat v Analytics Suite, aktivujte možnost **Zahrnout do Analytics Suite**.
-
 ![Povolení Analytics Suite](media/analytics-suite-company-information.png)
+
+> [!IMPORTANT]
+> S instalací modulu máte k dispozici následující Sady oprávnění:
+>
+>     |Název sady           |Popis                                    |
+>     |-                    |-                                        |
+>     | ANALYTICSSUITE_ACC  | Přístup k funkcionalitám modulu, nikoliv k datům |
 
 ## Připojení Power BI aplikace k datům
 
@@ -52,25 +51,15 @@ Pro správné zobrazení reportů a dashboardů je nutné propojit Power BI apli
 1. Přejděte na [powerbi.com](https://powerbi.com) a přihlaste se.
 2. V levém panelu zvolte **Aplikace**.
 3. Klikněte na **Získat aplikace**.
-
 ![Získat aplikace](media/analytics-suite-get-apps.png)
-
 4. Do vyhledávacího pole zadejte **Analytics Suite** a vyberte aplikaci od společnosti **Aricoma**.
-
 ![Aplikace Power BI](media/analytics-suite-application.png)
-
 5. Klikněte na **Získat hned** a nainstalujte aplikaci.
-
 ![Získat hned](media/analytics-suite-get-it-now.png)
-
 6. Otevřete aplikaci **Analytics Suite** v příslušném workspace.
-
 ![Aplikace](media/analytics-suite-app-list.png)
-
 7. Klikněte na **Připojit data**.
-
 ![Připojit data](media/analytics-suite-connect-data.png)
-
 8. Do pole **EnvironmentName** zadejte název prostředí vaší instance Business Central.
 
 ## Viz také
