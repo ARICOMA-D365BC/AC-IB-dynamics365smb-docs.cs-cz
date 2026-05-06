@@ -105,7 +105,6 @@ Pro využití služby [API Business suite](https://www.kb.cz/cs/kbapi/sluzby-kb-
 
 Základní kroky pro zprovoznění API rozhraní jsou:
 
-- Firma si aktivuje v KB službu API Business Suite.
 - Firma zažádá u firmy Aricoma o Autorizační klíč, který bude vygenerován speciálně pro ni a díky němuž Aricoma zaregistruje KB API konektor v KB.
 - Firma nastaví modul v Business Central.
 - Firma udělí souhlas Business Central aplikaci ke se stahováním dat z KB a vybere bankovní účty, ke kterým bude mít Business Central přístup.
