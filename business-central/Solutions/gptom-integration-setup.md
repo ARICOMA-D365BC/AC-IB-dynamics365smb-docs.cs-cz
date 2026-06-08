@@ -8,7 +8,7 @@ ms.search.keywords: GP Tom Integration, Streamline Tools, Global Payments, setti
 ---
 # Nastavení integrace s GP tom
 
-> Aktualizace: 03.02.2026
+> Aktualizace: 22.04.2026
 
 ## Nastavení
 
@@ -20,6 +20,16 @@ V dalších krocích je uživatel proveden registrací prvního platebního term
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení platebních terminálů** a poté vyberte související odkaz.
 2. Na stránce **Nastavení platebních terminálů** spusťte akci Nastavit API.
 3. Zadejte API klíč získaný aktivací v terminálu.
+
+> [!IMPORTANT]
+> Aby se uživatelé nedostali do problémů s používáním Business Central, jakmile aktivujete funkcionalitu modulu, nejprve nastavte oprávnění k funkcionalitě.
+> S instalací modulu máte k dispozici následující Sady oprávnění:
+>
+> |Název sady      |Popis                                 |
+> |-               |-                                     |
+> | GPTOM_READ_ACC | Pouze čtení                          |
+> | GPTOM_EDIT_ACC | Pro běžné používání                  |
+> | GPTOM_SETUP_ACC| Pro možnost nastavení chování modulu |
 
 ### Nastavení terminálů
 

@@ -10,6 +10,8 @@ ms.search.keywords: Aricoma, Finance, Fixed Assets, Inventory, Physical Inventor
 
 # Inventura majetku - Nastavení
 
+> Aktualizace: 22.04.2026
+
 Aplikaci **Inventura majetku** je potřeba nastavit dle následujícího popisu.
 
 ## Nastavení inventury DM
@@ -22,6 +24,15 @@ Aplikaci **Inventura majetku** je potřeba nastavit dle následujícího popisu.
   - Nastavit automatické uložení GPS polohy při skenování-sekce **Ostatní**.
 
 ![Nastavení inventury DM](media/fa-inventory-setup.png)  
+
+> [!IMPORTANT]
+> Aby se uživatelé nedostali do problémů s používáním Business Central, jakmile aktivujete funkcionalitu modulu, nejprve nastavte oprávnění k funkcionalitě.
+> S instalací modulu máte k dispozici následující Sady oprávnění:
+>
+>     |Název sady            |Popis                                    |
+>     |-                     |-                                        |
+>     | FAINVENTORYUSAGE_ACB | Pro běžné používání                     |
+>     | FAINVENTORYSETUP_ACB | Pro možnost nastavení chování modulu    |
 
 ## Nastavení Šablon deníku inventury DM
 

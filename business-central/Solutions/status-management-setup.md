@@ -12,6 +12,7 @@ ms.author: v-pejano
 ms.date: 07/18/2023
 ---
 # Řízení stavů - Nastavení
+> Aktualizace: 30.04.2026
 
 ## Nastavení šablony řízení stavů
 
@@ -19,10 +20,17 @@ ms.date: 07/18/2023
 2. Na stránce **Šablony řízení stavů** zvolte akci **Nový**.
 3. Vyplňte pole **Kód**, **Popis** a **Číslo tabulky** (pro kterou bude šablona nastavena).
 4. Pokud chcete, aby se automaticky logovaly změny, zaškrtněte políčko **Logovat změny**.
-
     ![Nastavení Řízení stavů - šablony Řízení stavů](media/WF_Templates.png)
-
 5. Pokud chcete zadat jednotlivé stavy nově vytvořeného řízení stavů, klikněte na **Stavy**.
+
+> [!IMPORTANT]
+> Aby se uživatelé nedostali do problémů s používáním Business Central, jakmile aktivujete funkcionalitu modulu, nejprve nastavte oprávnění k funkcionalitě.
+> S instalací modulu máte k dispozici následující Sady oprávnění:
+>
+>     |Název sady            |Popis                       |
+>     |-                     |-                           |
+>     | ARSTATUSMGTUSAGE_ACH | Pro běžné používání        |
+>     | ARSTATUSMGTSETUP_ACH | Pouze pro nastavení modulu |
 
 Pro každý stav Řízení stavů je třeba nadefinovat **Kód**, **Popis** a **Filtr dalšího stavu**, který určuje, do jakých dalších stavů je možné z daného stavu přejít. Právě jeden ze stavů musí být označen jako **Výchozí stav** (zaškrtnutím tlačítka Výchozí stav). Tento stav se pak automaticky vyplní při založení nového řádku tabulky, s kterou řízení stavů pracuje (dokument, požadavek, atd.).
 
