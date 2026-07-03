@@ -8,13 +8,13 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.search.keywords: DPH, finance, pohledávky, zaokrouhlení, číselné řady, český
-ms.date: 01/26/2026
+ms.date: 07/03/2026
 ms.author: Jitka Urxova
 ---
 
 # Sada rozšíření pro Finance
 
-> Aktualizace: 21.09.2025
+> Aktualizace: 03.07.2026
 
 Add-on modul **Sada rozšíření pro Finance** obsahuje společné funkce pro podporu fungování ostatních add-on modulů balíčku rozšíření financí. Seznam funkcí naleznete na pravé části stránky.
 
@@ -148,6 +148,8 @@ Kvartálně je třeba připravit podklady a zaplatit DPH finančnímu úřadu. P
 Systém obsahuje funkci Vypočítat a účtovat vyrovnání DPH OSS, která uzavře položky DPH spadající do filtru. Oproti standardní funkci ale položky v režimu OSS přeúčtuje na zadaný Účet vyrovnání OSS. To je důležité pro následné zaúčtování platby vůči specializovanému finančnímu úřadu, který má tuto agendu na starosti.  
 Oba režimy se tak zpracovávají současně v rámci aktivit spojených s tvorbou výkazu DPH.
 
+## Účtování přeplatků záloh
+
 ### Účtování přeplatků nákupních záloh
 
 V souvislosti se zavedením Kontrolního hlášení od 1.1.2016 vznikla potřeba řešit čerpání přeplatku nákupní zálohy pod jedním číslem dokladu, stejným datem a i stejným kurzem.  
@@ -171,6 +173,14 @@ Zaúčtováním faktury pak pro každý takový řádek s přeplatkem vznikne 
 
 >[!NOTE]
 >Při použití funkce Odúčtovat přiřazenou zálohu (z karty Zálohového daňového dokladu) dojde analogicky k odúčtování těchto zúčtování přeplatků.
+
+### Účtování přeplatků prodejních záloh
+
+Obdobně jako u nákupu lze realizovat účtování přeplatků i na straně prodeje.
+
+Po vytvoření finální prodejní faktury je možné vložit další řádek s částkou přeplatku a příznakem Určeno pro vrácení zálohy (příznak je následně i na řádku zaúčtované faktury). Tento řádek na faktuře musí být účtován v režimu bez DPH. K faktuře musí být přiřazeny zálohy v částkách obsahující účtovaný přeplatek.
+
+Zaúčtováním takovéto faktury dojde také k přeúčtování částky přeplatku ze zálohové na nezálohovou položku zákazníka připravenou k vrácení peněz.
 
 ## Credit Check
 
