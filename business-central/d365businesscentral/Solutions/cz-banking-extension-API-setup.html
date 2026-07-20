@@ -70,7 +70,7 @@
 <h1 id="nastavení-api-konektorů">Nastavení API konektorů</h1>
 
 <blockquote>
-<p>Update 10.01.2026</p>
+<p>Aktualizace: 30.04.2026</p>
 </blockquote>
 <h2 id="čsob-api-konektor">ČSOB API konektor</h2>
 <h3 id="zprovoznění-služby-čsob-business-connector">Zprovoznění služby ČSOB Business Connector</h3>
@@ -104,7 +104,7 @@ Zakázání, resp. povolení, služby ČSOB Business Connector je možné prové
 </ul>
 <div class="TIP">
 <h5>Tip</h5>
-<p>Aplikace ČSOB Business Connector nebude pro běžnou práci využívána. Doporučujeme v ní ale nastavit upozornění na vypršení certifikátu (viz příručka v kapitole Obnova komunikačního certifikátu).</p>
+<p>15 dní před vypršením platnosti certifikátu začnou být uživatelé na tuto skutečnost upozorňováni (např. v Centrálním zásobníku či při ručním spuštění importu výpisu), dokud znovu neprovedou jeho obnovu.</p>
 </div>
 <p><strong>Registrace certifikátu</strong></p>
 <p>V případě certifikátu od banky (viz výše) je automaticky registrován.</p>
@@ -164,12 +164,11 @@ Následující parametry je třeba doplnit do Rozšířeného nastavení v pří
 <p>Pro využití služby <a href="https://www.kb.cz/cs/kbapi/sluzby-kb-api/api-business-suite">API Business suite</a> od Komerční banky musíte mít aktivovánu vybranou aplikaci internetového bankovnictví (<em>Moje Banka Business</em>, or <em>Profibanka</em>, or <em>Mobilní banka Business</em>).</p>
 <p>Základní kroky pro zprovoznění API rozhraní jsou:</p>
 <ul>
-<li>Firma si aktivuje v KB službu API Business Suite.</li>
 <li>Firma zažádá u firmy Aricoma o Autorizační klíč, který bude vygenerován speciálně pro ni a díky němuž Aricoma zaregistruje KB API konektor v KB.</li>
 <li>Firma nastaví modul v Business Central.</li>
 <li>Firma udělí souhlas Business Central aplikaci ke se stahováním dat z KB a vybere bankovní účty, ke kterým bude mít Business Central přístup.</li>
 </ul>
-<p><strong>Získání Autorizačního klíče</strong></p>
+<p><strong>Získání Autorizačního klíče</strong> (platné do verze BC26)</p>
 <p>Kontaktujte nás e-mailem na adrese <a href="mailto:bc_sales@aricoma.com">bc_sales@aricoma.com</a>. Stačí nám pouze jméno vaší firmy, v odpovědi vám zašleme Autorizační klíč. Tento je určen pouze pro potřeby vaší firmy a nesmí být používán nikým jiným.</p>
 <p><strong>Nastavení modulu v BC</strong></p>
 <p>Dalším krokem je nastavení přístupu v Business Central:</p>
@@ -184,6 +183,10 @@ Následující parametry je třeba doplnit do Rozšířeného nastavení v pří
 <div class="WARNING">
 <h5>Warning</h5>
 <p>Volbu <strong>Povolit protokol aktivity</strong> použijte pouze v odůvodněných případech po omezenou dobu, neboť v protokolu jsou obsažena citlivá data a mohou se k nim dostat i uživatelé, kteří by je vidět neměli.</p>
+</div>
+<div class="TIP">
+<h5>Tip</h5>
+<p>15 dní před vypršením autorizace začnou být uživatelé na tuto skutečnost upozorňováni (např. v Centrálním zásobníku či při ručním spuštění importu výpisu), dokud znovu neprovedou autorizaci.</p>
 </div>
 <p><strong>Udělení souhlasu</strong></p>
 <ol>
@@ -245,6 +248,36 @@ Následující parametry je třeba doplnit do Rozšířeného nastavení v pří
 <li>vyberte <em>Premium - Accounts API</em> a <em>Premium - Payments API</em></li>
 <li>povolte OAuth2</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th>Vlastnost</th>
+<th>Hodnota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Redirect URIs - Sandbox</td>
+<td><code>https://businesscentral.dynamics.com/OAuthLanding.htm</code></td>
+</tr>
+<tr>
+<td>Redirect URIs - Production</td>
+<td><code>https://businesscentral.dynamics.com/OAuthLanding.htm</code></td>
+</tr>
+<tr>
+<td>Doba platnosti pro refresh token</td>
+<td>3600 sekund</td>
+</tr>
+<tr>
+<td>Typ Grantu</td>
+<td>Code</td>
+</tr>
+</tbody>
+</table>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Pro Business Central on-premises je adresa Redirect URI ve formátu <code>https://&lt;MyServer&gt;/&lt;MyInstance&gt;/OAuthLanding.htm</code>.</p>
+</div>
 <p><strong>Žádost o přístup do produkčního prostředí</strong></p>
 <p>Je-li vše správně nastaveno (a potvrzeno bankou), na záložce Produkce lze vygenerovat přístupové údaje.</p>
 <p><strong>Nastavení modulu v BC</strong></p>
@@ -265,7 +298,11 @@ Následující parametry je třeba doplnit do Rozšířeného nastavení v pří
 <h5>Warning</h5>
 <p>Volbu <strong>Povolit protokol aktivity</strong> použijte pouze v odůvodněných případech po omezenou dobu, neboť v protokolu jsou obsažena citlivá data a mohou se k nim dostat i uživatelé, kteří by je vidět neměli.</p>
 </div>
-<h2 id="raiffeisen-api-konektor">Raiffeisen API konektor</h2>
+<div class="TIP">
+<h5>Tip</h5>
+<p>15 dní před vypršením autorizace začnou být uživatelé na tuto skutečnost upozorňováni (např. v Centrálním zásobníku či při ručním spuštění importu výpisu), dokud znovu neprovedou autorizaci.</p>
+</div>
+<h2 id="rb-api-konektor">RB API konektor</h2>
 <h3 id="zprovoznění-služby-rb-premium-api">Zprovoznění služby RB Premium API</h3>
 <p>Pro zprovoznění API rozhraní je třeba</p>
 <ul>
@@ -288,6 +325,10 @@ Následující parametry je třeba doplnit do Rozšířeného nastavení v pří
 <li>Na formuláři <em>Vygenerování certifikátu</em> kliknutím na tlačítko <em>Podepsat</em> spusťte proces schvalování přes mobilní aplikaci.</li>
 <li>Po schválení na stránce <em>Certifikát byl vygenerován</em> spusťte akci <em>Stáhnout certifikát</em>.</li>
 </ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>15 dní před vypršením platnosti certifikátu začnou být uživatelé na tuto skutečnost upozorňováni (např. v Centrálním zásobníku či při ručním spuštění importu výpisu), dokud znovu neprovedou jeho obnovu.</p>
+</div>
 <p><strong>Nastavení klientské aplikace v Business Central</strong></p>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Klienti Raiffeisen API</strong> a poté vyberte související odkaz.</li>
@@ -317,7 +358,7 @@ Následující parametry je třeba doplnit do Rozšířeného nastavení v pří
 <li>V poli <strong>Formát výpisů Raiffeisen</strong> vyberte volbu GPC reprezentující formát ABO.</li>
 <li>V poli <strong>ID procedury zpracování</strong> zkontrolujte, že se doplnila hodnota 52057627 (RB Bank Stmt.Imp.-MT940 Acb).</li>
 </ol>
-<p>Následující parametry je třeba doplnit do Rozšířeného nastavení v případě, že chcete používat ČSOB API konektor pro export platebních příkazů:</p>
+<p>Následující parametry je třeba doplnit do Rozšířeného nastavení v případě, že chcete používat RB API konektor pro export platebních příkazů:</p>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení exportu/importu banky</strong> a poté vyberte související odkaz.</li>
 <li>Přejděte na vybraný řádek typu Export.</li>

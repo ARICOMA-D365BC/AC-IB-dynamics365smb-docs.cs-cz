@@ -70,7 +70,7 @@
 <h1 id="nastavení-integrace-s-gp-tom">Nastavení integrace s GP tom</h1>
 
 <blockquote>
-<p>Update 14.10.2024</p>
+<p>Aktualizace: 22.04.2026</p>
 </blockquote>
 <h2 id="nastavení">Nastavení</h2>
 <h3 id="aktivace-modulu">Aktivace modulu</h3>
@@ -81,6 +81,33 @@ V dalších krocích je uživatel proveden registrací prvního platebního term
 <li>Na stránce <strong>Nastavení platebních terminálů</strong> spusťte akci Nastavit API.</li>
 <li>Zadejte API klíč získaný aktivací v terminálu.</li>
 </ol>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Aby se uživatelé nedostali do problémů s používáním Business Central, jakmile aktivujete funkcionalitu modulu, nejprve nastavte oprávnění k funkcionalitě.
+S instalací modulu máte k dispozici následující Sady oprávnění:</p>
+<table>
+<thead>
+<tr>
+<th>Název sady</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPTOM_READ_ACC</td>
+<td>Pouze čtení</td>
+</tr>
+<tr>
+<td>GPTOM_EDIT_ACC</td>
+<td>Pro běžné používání</td>
+</tr>
+<tr>
+<td>GPTOM_SETUP_ACC</td>
+<td>Pro možnost nastavení chování modulu</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h3 id="nastavení-terminálů">Nastavení terminálů</h3>
 <p>Každé fyzické zařízení musí být zaevidováno v tabulce Platební terminály. Popis nastavení dále odpovídá nejběžnější konfiguraci, kterou je evidence plateb kartou.</p>
 <div class="NOTE">
@@ -100,6 +127,10 @@ V dalších krocích je uživatel proveden registrací prvního platebního term
 <li>V poli <em>Čísla dokladů plateb</em> vyberte číselnou řadu pro označení záznamů o platbách v BC.</li>
 <li>Spusťte akci <em>Získat přístupový token</em> pro ověření, že jsou zadané přihlašovací údaje správné.</li>
 </ol>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Pokud vyberete v bodě 5 jako typ platby &quot;QR kód&quot;, v procesu úhrady pak objeví vygenerovaný kód namísto značky pro přiložení karty.</p>
+</div>
 <h3 id="volání-registrace-platby-odjinud">Volání registrace platby odjinud</h3>
 <p>Propojení lze provést obecně 2 způsoby:</p>
 <ul>

@@ -70,7 +70,7 @@
 <h1 id="nastavení-rozšířeného-cz-bankovnictví">Nastavení rozšířeného CZ bankovnictví</h1>
 
 <blockquote>
-<p>Update 10.01.2026</p>
+<p>Aktualizace 22.04.2026</p>
 </blockquote>
 <p>Modul Rozšíření CZ bankovnictví je potřeba zapnout, v produkčním prostředí bude uživatel požádán o aktivaci předplatného (viz  <a href="https://www.aricoma.com/docs/cs-cz/dynamics365/business-central/ProductivityPack/monetization.html">dokumentace k monetizaci</a>).</p>
 <ol>
@@ -81,6 +81,13 @@
 <h5>Tip</h5>
 <p>Před nastavením spusťte Asistované nastavení pro tento modul, který najdete v Asistovaná nastavení -&gt; Nastavení rozšíření ARICOMA. Ten vám umožní nahrát konfigurační balíček a jeho prostřednictvím doplnit vzorová nastavení, na která se mimo jiné odkazují scénáře v dalších kapitolách.</p>
 </div>
+<h2 id="oprávnění">Oprávnění</h2>
+<p>Aby se uživatelé nedostali do problémů s používáním Business Central, jakmile aktivujete funkcionalitu modulu, nejprve nastavte oprávnění k funkcionalitě.
+S instalací modulu máte k dispozici následující Sady oprávnění:
+|Název sady|Popis|
+|-|-|
+| CZBANKEXTREAD_ACB | Pro běžné používání|
+| CZBANKEXTEDIT_ACB | Pro možnost nastavení chování modulu |</p>
 <h2 id="formáty-bankovních-výpisů-a-platebních-příkazů">Formáty bankovních výpisů a platebních příkazů</h2>
 <p>Modul Rozšíření CZ bankovnictví je určen primárně pro optimalizaci práce s výpisy a příkazy, nicméně obsahuje i univerzální import bankovních výpisů v ABO formátu (*.gpc), který v základní podobě podporuje většina bank v České republice. Rovněž umožňuje export platebních příkazů v ABO formátu (*.kpc). Nově modul podporuje i SEPA formát (*.xml).</p>
 <div class="TIP">
@@ -105,8 +112,32 @@
 <h5>Tip</h5>
 <p>Aktivujte pole Podpora souborů ZIP pro povolení importu více souborů výpisů najednou v rámci jednoho zip souboru.</p>
 </div>
+<p>Nastavený způsob importu je nutné zadat na kartě Bankovního účtu:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Bankovní účty</strong> a poté vyberte související odkaz.</li>
+<li>Vyberte příslušný účet a spusťte akci Upravit.</li>
+<li>Na záložce Transfer vyberte v poli <strong>Formát importu výpisu</strong> způsob exportu (např. „CZBE_ABO-IMP-LOCAL“).</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Funkce Import na kartě Bankovního výpisu bude fungovat, ale logicky bez doplňkových funkcí pro zpracování více souborů.</p>
+</div>
 <h4 id="nastavení-kódování-pro-import">Nastavení kódování pro import</h4>
 <p>V případě nesprávných znaků v naimportovaném výpisu je třeba upravit použité kódování. Nastavte správné kódování v poli <strong>Kódování obsahu</strong>. Pro ověření funkčnosti nastaveného kódování doporučujeme použít akci <em>Test kódování obsahu</em> na stránce Rozšířené nastavení importu výpisů.</p>
+<h3 id="nastavení-pro-manuální-export-platebních-příkazů">Nastavení pro manuální export platebních příkazů</h3>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení exportu/importu banky</strong> a poté vyberte související odkaz.</li>
+<li>Přejděte na vybraný řádek (např. s kódem „CZBE_ABO-EXP-LOCAL“)</li>
+<li>Zkontrolujte, že v poli <strong>ID procedury zpracování</strong> je hodnota 52057437 umožňující export výpisů prostřednictvím akce <em>Export</em> na kartě Vydaného platebního příkazu.</li>
+<li>Spusťte akci <em>Rozšířené nastavení</em></li>
+<li>Na stránce Rozšířené nastavení exportu plateb ověřte, že v poli <strong>ID procedury zpracování</strong> je hodnota 52057438 určená pro vytvoření souboru ve formátu ABO.</li>
+</ol>
+<p>Nastavený způsob exportu je nutné zadat na kartě Bankovního účtu:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Bankovní účty</strong> a poté vyberte související odkaz.</li>
+<li>Vyberte příslušný účet a spusťte akci <em>Úpravy</em>.</li>
+<li>Na záložce Transfer vyberte v poli <strong>Formát exportu příkazu</strong> způsob exportu (např. „CZBE_ABO-EXP-LOCAL“ nebo „CZBE_SEPA-EXP-LOCAL“).</li>
+</ol>
 <h3 id="nastavení-pro-manuální-import-bankovních-výpisů-prostřednictvím-api">Nastavení pro manuální import bankovních výpisů prostřednictvím API</h3>
 <p>Pokud máte od Aricoma zakoupen doplněk pro API komunikaci s vaší bankou a nechcete využívat podpory automatizace zpracování, pak je třeba upravit nastavení. Detailní popis všech kroků je v dokumentaci ke každému doplňku, nicméně samotný import se v případě formátu ABO nastaví takto:</p>
 <ol>
@@ -152,7 +183,7 @@
 <p>Následující postup prochází klíčové nastavení, které je součástí vzorových dat.</p>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení exportu/importu banky</strong> a poté vyberte související odkaz.</li>
-<li>Přejděte na řádek s kódem „CZBE_ABO-IMP-CENTRAL“.</li>
+<li>Přejděte na řádek s kódem „CZBE_IMP-CENTRAL“.</li>
 <li>Zkontrolujte, že v poli <strong>ID procedury zpracování</strong> je hodnota 52057427.</li>
 <li>Spusťte akci <em>Rozšířené nastavení</em>.</li>
 <li>V poli <strong>Poskytovatel bankovních výpisů</strong> vyberte hodnotu „Centrální zásobník“.</li>
@@ -196,7 +227,12 @@
 </div>
 <h2 id="podpůrná-nastavení-pro-import-výpisů">Podpůrná nastavení pro import výpisů</h2>
 <h3 id="automatické-formátování-čísla-účtu-volitelné">Automatické formátování čísla účtu (volitelné)</h3>
-<p>Zapnutí této funkce zajistí automatické formátování čísel bankovních účtů v BC, čím dojde k eliminaci problémů s importem bankovních výpisů</p>
+<p>Zapnutí této funkce zajistí automatické formátování čísel bankovních účtů v BC, čím dojde k eliminaci problémů s importem bankovních výpisů. Formátování probíhá na:</p>
+<ul>
+<li>Bankovní účet</li>
+<li>Bankovní účet zákazníka</li>
+<li>Bankovní účet dodavatele</li>
+</ul>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Informace o společnosti</strong> a poté vyberte související odkaz.</li>
 <li>Aktivujte pole <strong>Formátovat číslo účtu</strong></li>
@@ -268,6 +304,33 @@ Tato číselná řada musí mít aktivované Ruční číslování a vyplněnou 
 </ul>
 </li>
 </ol>
+<h3 id="nastavení-rozvržení-dokladu-pro-odeslání-avíza-platby-e-mailem">Nastavení rozvržení dokladu pro odeslání Avíza platby e-mailem</h3>
+<p>Nejprve ověřte, že je sestava definována v Výběrech sestav pro nákup (resp. pro prodej):</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Výběry sestav - nákup</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce Výběr sestav - nákup vyberte v poli <strong>Použití</strong> hodnotu &quot;Platební avízo&quot;.</li>
+<li>Ověřte, že existuje (případně doplňte) alespoň jeden řádek s <strong>ID sestavy</strong> rovno XXX</li>
+<li>Ověřte, že v poli <strong>Použít pro text emailu</strong> i v poli <strong>Použít pro přílohu emailu</strong> je hodnota &quot;Ano&quot;.</li>
+<li>Ověřte, že v poli <strong>Rozvržení textu emailu</strong> je hodnota &quot;Platební avízo email (Word)&quot;.</li>
+<li>Ověřte, že v poli <strong>Rozvržení příloh emailu</strong> je hodnota &quot;Platební avízo (Word)&quot;.</li>
+<li>Výše uvedený postup opakujte i na stránce <strong>Výběry sestav - prodej</strong>.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Více o definici vlastních rozvržení najdete na <a href="https://learn.microsoft.com/cs-cz/dynamics365/business-central/ui-how-add-fields-word-report-layout">stránkách Microsoft</a>.</p>
+</div>
+<p>Následně je třeba doplnit specifické údaje pro konkrétního dodavatele (typicky e-mail):</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Dodavatelé</strong> a poté vyberte související odkaz.</li>
+<li>Otevřete kartu dodavatele, pro kterého chcete nastavit odesílání sestavy.</li>
+<li>Na stránce karty dodavatele spusťe akci <em>Rozvržení dokladu</em>.</li>
+<li>Na stránce Rozvržení dokladu spusťte akci <em>Kopírovat z výběru sestavy</em>, která doplní případné chybějící řádky.</li>
+<li>Přejděte na řádek s hodnotou Platební avízo v poli <strong>Použití</strong> a v poli <strong>Odeslat do e-mailu</strong> zadejte požadovanou adresu e-mail, kam má být avízo zasíláno.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Stejné nastavení můžete provést na stránce karty zákazníka. Informace o definování rozvržení dokumentů pro zákazníky a dodavatele najdete na <a href="https://learn.microsoft.com/cs-cz/dynamics365/business-central/ui-define-customer-vendor-document-layouts">stránkách Microsoft</a>.</p>
+</div>
 <h2 id="úpravy-na-míru">Úpravy na míru</h2>
 <h3 id="vlastní-funkce-pro-stahování-výpisů-do-centrálního-zásobníku">Vlastní funkce pro stahování výpisů do centrálního zásobníku</h3>
 <p>V případě, že stahujete výpisy v jiném formátu nebo pokud potřebujete specificky upravený import, musí váš partner vytvořit vlastní procesní codeunitu řešící import bankovních výpisů do zásobníku bankovních výpisů.

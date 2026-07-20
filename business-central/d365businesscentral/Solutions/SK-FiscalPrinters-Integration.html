@@ -70,7 +70,7 @@
 <h1 id="integrace-s-sk-fiskálními-tiskárnami-pro-dynamics-365-business-central">Integrace s SK fiskálními tiskárnami pro Dynamics 365 Business Central</h1>
 
 <blockquote>
-<p>Aktualizace 31.07.2025</p>
+<p>Aktualizace 23.03.2026</p>
 </blockquote>
 <p><strong>Integrace s SK fiskálními tiskárnami</strong> je rozšířením pro informační systém Microsoft Dynamics 365 Business Central, které poskytuje přímé propojení s fiskálními tiskárnami od firmy VAROS řady <a href="http://www.varos.sk/vyrobky-FT5000">eKASA FT5000</a>. Toto řešení je navrženo tak, aby plně splňovalo slovenské legislativní požadavky dle zákona 289/2008 Z.z., který upravuje evidenci tržeb z prodeje zboží a služeb v hotovosti či jinými způsoby (např. platební kartou, stravenkami nebo šeky).</p>
 <h2 id="hlavní-přínosy-modulu">Hlavní přínosy modulu</h2>
@@ -93,17 +93,20 @@
 </div>
 <h3 id="vytvoření-daňového-dokladu-na-fiskální-tiskárně">Vytvoření daňového dokladu na fiskální tiskárně</h3>
 <ol>
-<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Prodejní faktury</strong> a poté vyberte související odkaz.</li>
-<li>Na stránce <strong>Prodejní faktury</strong> klikněte na funkci <em>Nový</em> a vytvořte novou prodejní fakturu.</li>
-<li>Doplňte řádky dokladu dle potřeby.</li>
-</ol>
+<li><p>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Prodejní faktury</strong> a poté vyberte související odkaz.</p>
+</li>
+<li><p>Na stránce <strong>Prodejní faktury</strong> klikněte na funkci <em>Nový</em> a vytvořte novou prodejní fakturu.</p>
+</li>
+<li><p>Doplňte řádky dokladu dle potřeby.</p>
 <div class="IMPORTANT">
 <h5>Important</h5>
 <p>Na prodejním dokladu musí být nastaveno <strong>Ceny vč. DPH</strong> na Ano. Systém na to uživatele upozorní při zadání Kódu způsobu platby s nastaveným příznakem <strong>Fiskální daňový doklad</strong>.</p>
 </div>
-<ol start="4">
-<li>V poli <strong>Kód způsobu platby</strong> vyberte způsob platby propojený s fiskální tiskárnou (viz <a href="sk-fiscalprinters-integration-setup.html#nastaven%C3%AD-zp%C5%AFsob%C5%AF-plateb">Nastavení způsobů plateb</a> se zapnutým příznakem <strong>Fiskální daňový doklad</strong>).</li>
-<li>Zaúčtujte doklad.</li>
+</li>
+<li><p>V poli <strong>Kód způsobu platby</strong> vyberte způsob platby propojený s fiskální tiskárnou (viz <a href="sk-fiscalprinters-integration-setup.html#nastaven%C3%AD-zp%C5%AFsob%C5%AF-plateb">Nastavení způsobů plateb</a> se zapnutým příznakem <strong>Fiskální daňový doklad</strong>).</p>
+</li>
+<li><p>Zaúčtujte doklad.</p>
+</li>
 </ol>
 <p>Pokud je vše správně nastaveno, spolu s jinými vznikla Fiskální položka (viz akce <em>Najít položky</em>) a na fiskální tiskárně je vytištěn daňový doklad obsahující jednotlivé řádky zaúčtované prodejní faktury.</p>
 <div class="NOTE">
@@ -171,13 +174,24 @@
 <h3 id="hotovostní-operace-bez-business-central">Hotovostní operace bez Business Central</h3>
 <p>Všechny výše uvedené hotovostní operace (Daňový doklad, Vklad, Výběr, Úhrada faktury, Storno faktury, Mincovka) je možné provádět ručně v SW „Tlačový manažér“.
 Dodatečně je možné provést příslušné úkony v Business Central s tím, že fiskální tiskárna bude vypnuta a vytvořené fiskální položky se dodatečně ručně označí jako „Registrované“ (viz dále).</p>
+<h3 id="ruční-paragon">Ruční paragon</h3>
+<p>Pokud se při účtování dokladu objeví chyba spojení s tiskárnou, doklad se zaúčtuje a vznikne i Fiskální položka. Tu je třeba po zprovoznění fiskální tiskárny zaevidovat.
+Vytvoří-li uživatel ruční paragon, je třeba jej zaevidovat pod číslem ručního dokladu a s datem a časem jeho vystavení. K tomu slouží funkce <em>Registrovat položku</em> (viz dále <a href="#registrace-polo%C5%BEky">Registrace položky</a>].</p>
 <h3 id="další-operace-s-fiskálními-položkami">Další operace s fiskálními položkami</h3>
 <h4 id="registrace-položky">Registrace položky</h4>
 <p>Pokud se fiskální doklad nevytiskne, může být (kromě problému se samotnou tiskárnou) problém v tom, že se nepovedlo z nějakého důvodu správně tzv. „registrovat“ položku. Informaci o registraci si nese Fiskální položka – viz sloupce <strong>Registrováno</strong> a <strong>Datum a čas registrace</strong>.</p>
-<p>Pokud dává smysl znovu položku registrovat (byla vypnutá tiskárna apod.), může uživatel položku dodatečně registrovat:</p>
+<p>V případech, kdy uživatel vystavil ruční doklad (paragon), uživatel položku dodatečně zaregistruje:</p>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Fiskální položky</strong> a poté vyberte související odkaz.</li>
 <li>Na stránce <strong>Fiskální položky</strong> najděte příslušný záznam a spusťte akci <em>Registrovat položku</em>.</li>
+<li>V poli <strong>Číslo paragonu</strong> zadejte číslo paragonu.</li>
+<li>V poli <strong>Datum a čas vystavení</strong> zadejte, kdy byl doklad vystaven a potvrďte tlačítkem OK.</li>
+</ol>
+<p>V případech, kdy uživatel je schopen problém vyřešit (např. byla vypnutá tiskárna), uživatel položku dodatečně zaregistruje:</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Fiskální položky</strong> a poté vyberte související odkaz.</li>
+<li>Na stránce <strong>Fiskální položky</strong> najděte příslušný záznam a spusťte akci <em>Registrovat položku</em>.</li>
+<li>Všechna pole nechte prázdná a potvrďte tlačítkem OK.</li>
 </ol>
 <div class="NOTE">
 <h5>Note</h5>

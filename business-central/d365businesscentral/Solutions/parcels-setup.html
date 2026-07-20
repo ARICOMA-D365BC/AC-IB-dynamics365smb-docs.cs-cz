@@ -70,10 +70,10 @@
 <h1 id="nastavení---parcels---integrace-balíkobot">Nastavení - Parcels - Integrace Balíkobot</h1>
 
 <blockquote>
-<p>Aktualizace: 08.03.2022</p>
+<p>Aktualizace: 22.04.2026</p>
 </blockquote>
 <p>Pro správné fungování addonu Zásilek je zapotřebí nastavit několik oblastí. Addon se prvotně nastavuje pomocí průvodce a poté je možné nastavení měnit ručně.</p>
-<h2 id="oblasti-nastavení-addonu">Oblasti nastavení addonu:</h2>
+<h2 id="oblasti-nastavení-addonu">Oblasti nastavení addonu</h2>
 <ul>
 <li>Číselná řada</li>
 <li>Expediční místa</li>
@@ -87,6 +87,18 @@
 <li>Nastavení v Sandboxovém prostředí</li>
 </ul>
 <p>Ostatní číselníky (Služby přepravce, Manipulační jednotky a Pobočky přepravce) si addon stahuje z API Balíkobotu.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Aby se uživatelé nedostali do problémů s používáním Business Central, jakmile aktivujete funkcionalitu modulu, nejprve nastavte oprávnění k funkcionalitě.
+S instalací modulu máte k dispozici následující Sady oprávnění:</p>
+<pre><code>|Název sady         |Popis                                    |
+|-                  |-                                        |
+| PARCELS_READ_ACC  | Pouze čtení                             |
+| PARCELS_EDIT_ACC  | Pro běžné používání                     |
+| PARCELS_SETUP_ACC | Pro možnost nastavení chování modulu    |
+| PARCELS_ADMIN_ACC | Pro běžné používání a zároveň nastavení |
+</code></pre>
+</div>
 <h2 id="nastavení-parcels-pomocí-průvodce">Nastavení Parcels pomocí průvodce</h2>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Asistovaná nastavení</strong> a poté vyberte související odkaz.</li>
@@ -134,7 +146,7 @@
 <li>Zadejte <strong>Kód</strong> pro expediční místo, popis, adresu a <strong>Název uživatele a heslo</strong> k Vašemu API</li>
 <li>Zavřete přehled expedičních míst pomocí OK</li>
 </ol>
-<p><img src="media/BB_exp_pl.png" alt="Nastavení Parcels"></p>
+<p><img src="media/bb_exp_pl.png" alt="Nastavení Parcels"></p>
 <h3 id="nastavení-lokací">Nastavení lokací</h3>
 <p>Na kartě dané lokace je potřeba vybrat expediční místo, které je spjaté s daným API. Pokud bude více lokací, je nutné na každé nastavit příslušné expediční místo. Toto slouží k omezení chybovosti uživatelů, aby nemohli spojit do zásilky doklady s různými expedičními místy.</p>
 <p>Pro přiřazení expedičního místa lokaci je zapotřebí nastavit <strong>Kód Expedičního místa</strong>.</p>
@@ -143,13 +155,13 @@
 <li>Otevřete kartu požadované lokace</li>
 <li>Vyplňte pole <strong>Kód expedičního místa</strong> v záložce Obecné</li>
 </ol>
-<p><img src="media/BB_lokace.png" alt="Nastavení Parcels"></p>
+<p><img src="media/bb_lokace.png" alt="Nastavení Parcels"></p>
 <h3 id="nastavení-zásilek">Nastavení Zásilek</h3>
 <p>Základní nastavení Balíkobotu je nutné provést na stránce <strong>Nastavení Zásilek</strong>.
-<img src="media/BB_setup.png" alt="Nastavení Parcels"></p>
+<img src="media/bb_setup.png" alt="Nastavení Parcels"></p>
 <p>Okno nastavení Zásilek obsahuje:</p>
 <ul>
-<li><strong>Čísla zásilek</strong> - Číselná řada pro zásilky.</li>
+<li><strong>Čísla zásilek</strong>- Číselná řada pro zásilky.</li>
 <li><strong>Kód výchozího expedičního místa</strong> - Výchozí expediční místo, odkud budou odváženy zásilky (viz další kapitola)</li>
 <li><strong>Tisk předávacích protokolů svozu</strong> – Automatický tisk předávacích protokolů po objednání svozu</li>
 <li><strong>Výchozí název tiskárny</strong> – Určuje tiskárnu štítků</li>
@@ -176,7 +188,7 @@ Aktualizace těchto dat probíhá ručně pomocí funkce „Resynchronizace mast
 <h4 id="tabulka-přepravců">Tabulka přepravců</h4>
 <p>Ostatní tabulky se stahují a plní po synchronizaci master dat a v tabulce přepravců.
 Aktualizace těchto dat probíhá ručně pomocí funkce „Resynchronizace master dat“.
-<img src="media/BB_shipping-agents.png" alt="Nastavení Balíkobotu"></p>
+<img src="media/bb_shipping-agents.png" alt="Nastavení Balíkobotu"></p>
 <p>Přehled obsahuje i dopravce, které nemáte u Balíkobotu nakonfigurované. Pro takové se neprovádí import dalších dat (viz dále).</p>
 <h3 id="na-přehledu-přepravců-je-několik-polí-k-nastavení">Na přehledu přepravců je několik polí k nastavení:</h3>
 <ul>
@@ -208,7 +220,7 @@ Aktualizace těchto dat probíhá ručně pomocí funkce „Resynchronizace mast
 </ul>
 <p>Poté je nutné použít funkci <strong>Synchronizace master dat</strong>!</p>
 <h3 id="nastavení-služeb-přepravců">Nastavení služeb přepravců</h3>
-<p>Služby přepravců se stahují automaticky pomocí API Balíkobotu. Je možné vynutit určité nastavení pro jednotlivé služby přepravce. Postup pro nastavení :</p>
+<p>Služby přepravců se stahují automaticky pomocí API Balíkobotu. Je možné vynutit určité nastavení pro jednotlivé služby přepravce. Postup pro nastavení:</p>
 <ol>
 <li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Přepravci</strong> a poté vyberte související odkaz.</li>
 <li>V seznamu vyberte požadovaného přepravce a zvolte funkci <strong>Služby přepravce</strong></li>
@@ -313,7 +325,7 @@ o	<a href="https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf">https://
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/2025_NewStructure/business-central/Solutions/parcels-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/Solutions/parcels-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
                   </li>
                 </ul>
               </div>

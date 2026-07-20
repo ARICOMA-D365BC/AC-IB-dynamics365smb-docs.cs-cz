@@ -70,15 +70,30 @@
 <h1 id="nastavení-integrace-s-sk-fiskálními-tiskárnami-pro-dynamics-365-business-central">Nastavení integrace s SK fiskálními tiskárnami pro Dynamics 365 Business Central</h1>
 
 <blockquote>
-<p>Aktualizace 31.07.2025</p>
+<p>Aktualizace 30.04.2026</p>
 </blockquote>
 <p>Integrace s fiskálními tiskárnami VAROS je postavena na funkčnosti programu Tlačový manažér od firmy VAROS. Tento je třeba nainstalovat v prostředí firmy (viz <a href="http://www.varos.sk/manualy.php">Manuály</a>) přímo na počítači, ke kterému je tiskárna připojena (typicky pomocí USB). Každá fiskální tiskárna musí být rovněž připojena k internetu pomocí LAN (popř. přes Wifi).</p>
 <h2 id="nastavení-oprávnění-uživatelů">Nastavení oprávnění uživatelů</h2>
-<p>Sady oprávnění:</p>
-<ul>
-<li>FP_BASIC_ACC: Fiskální tiskárny - Základ</li>
-<li>FP_SETUP_ACC: Fiskální tiskárny - Nastavení</li>
-</ul>
+<p>Aby se uživatelé nedostali do problémů s používáním Business Central, jakmile aktivujete funkcionalitu modulu, nejprve nastavte oprávnění k funkcionalitě.
+S instalací modulu máte k dispozici následující Sady oprávnění:</p>
+<table>
+<thead>
+<tr>
+<th>Název sady</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FP_BASIC_ACC</td>
+<td>Pro běžné používání</td>
+</tr>
+<tr>
+<td>FP_SETUP_ACC</td>
+<td>Pro možnost nastavení chování modulu</td>
+</tr>
+</tbody>
+</table>
 <h2 id="nastavení-fiskálních-tiskáren">Nastavení fiskálních tiskáren</h2>
 <p>Každé fyzické zařízení musí být zaevidováno v číselníku Fiskální tiskárny. Popis nastavení dále odpovídá nejběžnější konfiguraci, kdy program <em>Tlačový manažér</em> je instalovaný na každém počítači, ke kterému je připojena fiskální tiskárna pomocí USB portu.</p>
 <div class="IMPORTANT">

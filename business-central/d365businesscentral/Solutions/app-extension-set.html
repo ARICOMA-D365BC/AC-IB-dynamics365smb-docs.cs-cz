@@ -70,7 +70,7 @@
 <h1 id="sada-rozšíření-pro-finance">Sada rozšíření pro Finance</h1>
 
 <blockquote>
-<p>Aktualizace: 21.09.2025</p>
+<p>Aktualizace: 03.07.2026</p>
 </blockquote>
 <p>Add-on modul <strong>Sada rozšíření pro Finance</strong> obsahuje společné funkce pro podporu fungování ostatních add-on modulů balíčku rozšíření financí. Seznam funkcí naleznete na pravé části stránky.</p>
 <p>Modul Sada rozšíření pro Finance je nutný pro ostatní add-on moduly Financial Packu.</p>
@@ -184,6 +184,7 @@
 <p><strong>Uzavírání položek DPH</strong></p>
 <p>Systém obsahuje funkci Vypočítat a účtovat vyrovnání DPH OSS, která uzavře položky DPH spadající do filtru. Oproti standardní funkci ale položky v režimu OSS přeúčtuje na zadaný Účet vyrovnání OSS. To je důležité pro následné zaúčtování platby vůči specializovanému finančnímu úřadu, který má tuto agendu na starosti.<br>
 Oba režimy se tak zpracovávají současně v rámci aktivit spojených s tvorbou výkazu DPH.</p>
+<h2 id="účtování-přeplatků-záloh">Účtování přeplatků záloh</h2>
 <h3 id="účtování-přeplatků-nákupních-záloh">Účtování přeplatků nákupních záloh</h3>
 <p>V souvislosti se zavedením Kontrolního hlášení od 1.1.2016 vznikla potřeba řešit čerpání přeplatku nákupní zálohy pod jedním číslem dokladu, stejným datem a i stejným kurzem.</p>
 <p>Celý postup lze realizovat ručně. Ovšem vzhledem k jeho komplikovanosti byla do systému doplněna funkcionalita, kdy v rámci konečné vyúčtovací faktury se přeúčtuje čerpání přeplatku z jedné či více záloh.</p>
@@ -201,6 +202,10 @@ Oba režimy se tak zpracovávají současně v rámci aktivit spojených s tvorb
 <h5>Note</h5>
 <p>Při použití funkce Odúčtovat přiřazenou zálohu (z karty Zálohového daňového dokladu) dojde analogicky k odúčtování těchto zúčtování přeplatků.</p>
 </div>
+<h3 id="účtování-přeplatků-prodejních-záloh">Účtování přeplatků prodejních záloh</h3>
+<p>Obdobně jako u nákupu lze realizovat účtování přeplatků i na straně prodeje.</p>
+<p>Po vytvoření finální prodejní faktury je možné vložit další řádek s částkou přeplatku a příznakem Určeno pro vrácení zálohy (příznak je následně i na řádku zaúčtované faktury). Tento řádek na faktuře musí být účtován v režimu bez DPH. K faktuře musí být přiřazeny zálohy v částkách obsahující účtovaný přeplatek.</p>
+<p>Zaúčtováním takovéto faktury dojde také k přeúčtování částky přeplatku ze zálohové na nezálohovou položku zákazníka připravenou k vrácení peněz.</p>
 <h2 id="credit-check">Credit Check</h2>
 <p>Jedná se o integraci Business Central na komerční službu CreditCheck, která slouží pro kontrolu bonity partnerů.</p>
 <p>Proto, aby v systému bylo co nejvíce informací o vybraném partnerovi, jsou informace importovány přes webovou službu Creditcheck ERP viz. <a href="http://www.creditcheck.cz/ProductDetail.aspx?id=02">http://www.creditcheck.cz/ProductDetail.aspx?id=02</a>.</p>
@@ -366,14 +371,8 @@ Pole Stav pohledávky, umístěné na stránce Informace o pohledávce, slouží
 <p>V praxi se často vyskytuje potřeba řešit zaokrouhlování faktur různě podle kontextu způsobu úhrady, např. jinak pro hotovostní operace, jinak pro úhrady z účtu či jinak pro doklady s úhradou pomocí zálohové faktury. Takovou možnost dnes firma má pro zaokrouhlení pomocí rozšířeného nastavení na bázi Kódu způsobu platby.</p>
 <p>Pro více informací navštivte <a href="app-extension-set-setup#nastaven%C3%AD-zaokrouhlen%C3%AD-dle-zp%C5%AFsobu-%C3%BAhrady">Nastavení</a>.</p>
 <h2 id="univerzální-oprávnění">Univerzální oprávnění</h2>
-<p>Funkcionalita Univerzální oprávnění umožňuje maximální kontrolu nad úpravou dat. Hlavním přínosem je zabránění nechtěných změn u důležitých údajů na dokladech při spolupráci více uživatelů. Výhodou je přesné nastavení oprávnění úprav na úrovni jednotlivých polí. S univerzálním oprávněním máte jistotu, že nedojde k přepsání klíčových informací a data zůstanou chráněna.</p>
-<p>Pro zapnutí funkčnosti Univerzální oprávnění následujte tento postup:</p>
-<ol>
-<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení financí</strong> a poté vyberte související odkaz.</li>
-<li>Na stránce <strong>Nastavení financí</strong> záložce Sada rozšíření aplikace od Aricoma zaškrtněte pole <strong>Univerzální oprávnění povoleno</strong>, které slouží pro zapnutí funkcionality Univerzální oprávnění.</li>
-</ol>
-<p><img src="media/up-general-ledger-setup.png" alt="Nastavení financí"></p>
-<p>Pro více informací navštivte <a href="app-extension-set-setup#nastaven%C3%AD-univerz%C3%A1ln%C3%ADch-opr%C3%A1vn%C4%9Bn%C3%AD">Nastavení</a>.</p>
+<p>Funkcionalita Univerzální oprávnění umožňuje definovat jednotlivým uživatelům oprávnění na úrovní polí v tabulkách. Jsou totiž situace, kdy uživatel má mít např. možnost upravovat jen vybraná pole. Nastavit lze ale všechny typy operací (RIMD).</p>
+<p>Pro více informací navštivte <a href="app-extension-set-setup#nastaven%C3%AD-univerz%C3%A1ln%C3%ADch-opr%C3%A1vn%C4%9Bn%C3%AD">Nastavení univerzálních oprávnění</a>.</p>
 <h2 id="ostatní-funkcionality">Ostatní funkcionality</h2>
 <p>V této kapitole jsou popsány další menší úpravy či vylepšení rozdělené dle oblastí.</p>
 <h3 id="obecné">Obecné</h3>

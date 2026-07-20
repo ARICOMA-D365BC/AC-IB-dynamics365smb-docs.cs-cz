@@ -70,9 +70,19 @@
 <h1 id="nastavení-modulu-správa-upozornění">Nastavení modulu Správa upozornění</h1>
 
 <blockquote>
-<p>Update: 12.12.2024</p>
+<p>Aktualizace: 30.04.2026</p>
 </blockquote>
 <p>Modul <strong>Správa upozornění</strong> umožňuje <strong>systémové upozorňování</strong> na stavy dat a procesů evidovaných v systému Microsoft Dynamics 365 Business Central. Upozorňování pracuje jak interně v prostředí systému, tak i externě formou e-mailu. Modul dokáže pracovat off-line, jelikož nereaguje na okamžitou změnu v datech, ale <strong>zasílá informace v naplánovaných intervalech</strong>. Kromě sledování aktuální události lze sledovat i vývoj události v čase.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Aby se uživatelé nedostali do problémů s používáním Business Central, jakmile aktivujete funkcionalitu modulu, nejprve nastavte oprávnění k funkcionalitě.
+S instalací modulu máte k dispozici následující Sady oprávnění:</p>
+<pre><code>|Název sady      |Popis                       |
+|-               |-                           |
+| EVNT_USAGE_ACH | Pro běžné používání        |
+| EVNT_ADMIN_ACH | Pouze pro nastavení modulu |
+</code></pre>
+</div>
 <h2 id="vytvoření-a-upravení-karty-šablony-události">Vytvoření a upravení karty šablony události</h2>
 <p>Pro vytvoření nové sledované události, je potřeba ji založit a definovat na stránce <strong>Přehled šablon událostí</strong>.</p>
 <ol>
@@ -91,10 +101,10 @@
 <h5>Note</h5>
 <p>Funkcionalita <strong>ID pole</strong> pracuje i s kalkulovanými poli a jedná se o nepovinné pole.</p>
 </div>
-<p><img src="media/Notifications-event_template_card.png" alt="Šablona událostí"></p>
+<p><img src="media/notifications-event_template_card.png" alt="Šablona událostí"></p>
 <h2 id="nastavení-filtrů-dat">Nastavení filtrů dat</h2>
 <p>Kromě nastavení filtrů na stránce Šablony události v polích <strong>Výstupní a Vstupní filtr polí</strong>, můžeme nastavit také filtry polí pomocí volby <strong>Filtry data</strong>. Ten nastavíme následujícím způsobem.</p>
-<p><img src="media/Notifications-date_filters.png" alt="Nastavení filtrů dat"></p>
+<p><img src="media/notifications-date_filters.png" alt="Nastavení filtrů dat"></p>
 <ol>
 <li>Na stránce Šablona událostí vyberte akci <strong>Filtry data</strong></li>
 <li>Nastavte <strong>Číslo datumového pole</strong>, na které se bude filtr vztahovat.</li>
@@ -113,10 +123,10 @@ Ten nabývá hodnot <strong>Položka</strong>, <strong>Datový interval</strong>
 <h5>Note</h5>
 <p>Při výběru typu kontroly <strong>Položka</strong> se bere do úvahy pole <strong>Trvání</strong>. Určuje, jak dlouho bude fáze trvat od doby vzniku položky upozornění. Při výběru <strong>Datový interval</strong> se pracuje s poli <strong>Začátek fáze</strong> a <strong>Konec fáze</strong>. Zadává se tedy vzorec data vztažený k systémovému datu (TODAY). Hodnota Číselný interval zase pracuje s poli <strong>Počáteční číslo</strong> a <strong>Koncové číslo</strong>.</p>
 </div>
-<p><img src="media/Notifications-phases.png" alt="Nastavení fází událostí"></p>
+<p><img src="media/notifications-phases.png" alt="Nastavení fází událostí"></p>
 <h2 id="zadání-adresáta-e-mailů">Zadání adresáta E-mailů</h2>
 <p>Ke každé fázi událostí lze také přiřadit e-mailovou adresu určující, komu se daná událost odešle. Existují tři různé způsoby, jak zadat adresáta e-mailu, které jdou mezi sebou kombinovat. Email tak může odejít na všechny tři definice pro jednu položku.</p>
-<p><img src="media/Notifications-email.png" alt="Nastavení emailu"></p>
+<p><img src="media/notifications-email.png" alt="Nastavení emailu"></p>
 <table>
 <thead>
 <tr>
@@ -192,7 +202,7 @@ Ten nabývá hodnot <strong>Položka</strong>, <strong>Datový interval</strong>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/2025_NewStructure/business-central/Solutions/notifications-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
+                    <a href="https://github.com/ARICOMA-D365BC/AC-IB-dynamics365smb-docs.cs-cz/blob/master/business-central/Solutions/notifications-setup.md/#L1" class="contribution-link">Vylep&#353;it dokument</a>
                   </li>
                 </ul>
               </div>

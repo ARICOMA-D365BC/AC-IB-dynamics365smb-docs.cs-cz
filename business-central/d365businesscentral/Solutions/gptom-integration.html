@@ -70,28 +70,41 @@
 <h1 id="integrace-s-gp-tom">Integrace s GP tom</h1>
 
 <blockquote>
-<p>Update 07.07.2025</p>
+<p>Aktualizace: 03.02.2026</p>
 </blockquote>
 <p>Addon <strong>Integrace s GP tom</strong> je určen především pro bezešvou integraci Business Central s platebními terminály, aby se staly nativní součástí obchodních procesů. Navíc umožnuje provádět i související obslužné operace přímo z prostředí BC.</p>
 <p>Modul propojuje Microsoft Dynamics 365 Business Central s platebními terminály, resp. s řešením <a href="https://www.gptom.com/"><strong>tom</strong></a> na terminálech provozovaném.
 Díky tomuto řešení umožníte zákazníkům platby nejen kartami Visa a Mastercard, ale tak pomocí Apple Pay, Google Pay, Edenred… Více <a href="https://www.gptom.com/docs/manual/zaciname/podporovana-karetni-schemata/">zde</a>.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Nově je možné jako způsob platby zvolit <strong>QR kód</strong> a vyhnout se tak poplatkům karetním společnostem.</p>
+</div>
 <h2 id="použití">Použití</h2>
 <p>V následujícím textu je popsáno využití terminálu pro nejběžnější případ, tedy úhradu platební kartou.</p>
 <h3 id="registrace-platby-na-terminálu-dle-výchozího-nastavení">Registrace platby na terminálu dle výchozího nastavení</h3>
 <p>V tomto případě se jedná o standardní funkcionalitu BC, kde uživatel pro zaúčtování používá funkci Zaúčtovat a odeslat. Každý zákazník má na své kartě nastavený profil zaúčtování dokumentů, nebo se používá profil označený jako výchozí.</p>
 <ol>
-<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Platební terminály</strong> a poté vyberte související odkaz.</li>
-<li>Na stránce <strong>Platební terminály</strong> vyberte terminál, na kterém chcete provést platbu.</li>
-<li>Spusťte akci <em>Registrace plateb</em>.</li>
-<li>Na stránce <strong>Registrovat platbu</strong> zadejte v poli Částka hodnotu pro úhradu terminálem.</li>
-<li>Spusťte akci <em>Zaplatit</em>.</li>
-<li>Na terminálu se objeví dialog „Přiložte kartu“.
-<img src="media/gptom_topay.png" alt="Attach Card" width="50%" height="50%"></li>
-<li>Po úspěšné úhradě se objeví dialog, kde obsluha provede odeslání dokladu o platbě (popř. může rovnou Dokončit proces)
-<img src="media/gptom_succpayment.png" alt="Successful payment" width="50%" height="50%"></li>
-<li>V dialogu pro odeslání účtenky je předvyplněn způsob odeslání nastavený pro příslušný terminál
-<img src="media/gptom_printreceipt.png" alt="Sending receipt" width="50%" height="50%"></li>
-<li>Po ukončení procesu platby na terminálu se na stránce Registrovat platbu objeví oznámení s výsledkem operace, vč. volby Otevřít položku pro zobrazení položky s detaily o proběhlé komunikaci s terminálem.</li>
+<li><p>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Platební terminály</strong> a poté vyberte související odkaz.</p>
+</li>
+<li><p>Na stránce <strong>Platební terminály</strong> vyberte terminál, na kterém chcete provést platbu.</p>
+</li>
+<li><p>Spusťte akci <em>Registrace plateb</em>.</p>
+</li>
+<li><p>Na stránce <strong>Registrovat platbu</strong> zadejte v poli Částka hodnotu pro úhradu terminálem.</p>
+</li>
+<li><p>Spusťte akci <em>Zaplatit</em>.</p>
+</li>
+<li><p>Na terminálu se objeví dialog „Přiložte kartu“.</p>
+ <img src="media/gptom_topay.png" alt="Attach Card" width="50%" height="50%">
+</li>
+<li><p>Po úspěšné úhradě se objeví dialog, kde obsluha provede odeslání dokladu o platbě (popř. může rovnou Dokončit proces)</p>
+ <img src="media/gptom_succpayment.png" alt="Successful payment" width="50%" height="50%">
+</li>
+<li><p>V dialogu pro odeslání účtenky je předvyplněn způsob odeslání nastavený pro příslušný terminál</p>
+ <img src="media/gptom_printreceipt.png" alt="Sending receipt" width="50%" height="50%">
+</li>
+<li><p>Po ukončení procesu platby na terminálu se na stránce Registrovat platbu objeví oznámení s výsledkem operace, vč. volby Otevřít položku pro zobrazení položky s detaily o proběhlé komunikaci s terminálem.</p>
+</li>
 </ol>
 <div class="TIP">
 <h5>Tip</h5>

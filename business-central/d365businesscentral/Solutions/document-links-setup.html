@@ -70,10 +70,31 @@
 <h1 id="připojené-dokumenty---nastavení">Připojené dokumenty - nastavení</h1>
 
 <blockquote>
-<p>Aktualizace 16.06.2023</p>
+<p>Aktualizace 22.04.2026</p>
 </blockquote>
-<p>Následující řádky popisují nastavení od těch nezbytných pro samotné zprovoznění (Registrace aplikace v AAD, nastavení Aplikace SharePoint Azure AD) až po nastavení pokrývající speciální požadavky zákazníků (např. při ukládání souborů nebo evidenci doplňujících atributů).</p>
-<h2 id="registrace-aplikace-v-azure-active-directory">Registrace aplikace v Azure Active Directory</h2>
+<p>Následující řádky popisují nastavení od těch nezbytných pro samotné zprovoznění (Registrace aplikace v Entra, nastavení Aplikace SharePoint Entra) až po nastavení pokrývající speciální požadavky zákazníků (např. při ukládání souborů nebo evidenci doplňujících atributů).</p>
+<h2 id="oprávnění">Oprávnění</h2>
+<p>Aby se uživatelé nedostali do problémů s používáním Business Central, jakmile aktivujete funkcionalitu modulu, nejprve nastavte oprávnění k funkcionalitě.
+S instalací modulu máte k dispozici následující Sady oprávnění:</p>
+<table>
+<thead>
+<tr>
+<th>Název sady</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DOCLINKS_USAGE</td>
+<td>Pro běžné používání</td>
+</tr>
+<tr>
+<td>DOCLINKS_SETUP</td>
+<td>Pro možnost nastavení chování modulu</td>
+</tr>
+</tbody>
+</table>
+<h2 id="registrace-aplikace-v-entra">Registrace aplikace v Entra</h2>
 <p>Prvním úkolem je pomocí portálu Azure zaregistrovat aplikaci pro službu Business Central ve vašem nájemci služby Azure AD. Součástí registrace je také přidělení přístupu k aplikaci příslušným službám. Účelem registrace je zajistit, aby Business Central a služby navzájem znaly údaje o Azure Active Directory (Azure AD).</p>
 <ol>
 <li><p>Přihlaste se na portál Azure a zaregistrujte aplikaci pro Business Central v Azure Active Directory tenant.</p>
@@ -104,10 +125,8 @@ Při přidávání aplikace do nájemce Azure AD musíte zadat následující in
 </tbody>
 </table>
 <ul>
-<li><p>Po dokončení se na portálu zobrazí Přehled nové aplikace.</p>
-</li>
-<li><p>Zkopírujte <strong>ID aplikace (klienta)</strong>, které bylo přiřazeno aplikaci, <strong>Koncový bod autorizace <strong>OAuth 2.0</strong> (v2)</strong> a také <strong>Adresu URL přesměrování</strong>, kterou jste zadali. Tyto informace použijete později.</p>
-</li>
+<li>Po dokončení se na portálu zobrazí Přehled nové aplikace.</li>
+<li>Zkopírujte <strong>ID aplikace (klienta)</strong>, které bylo přiřazeno aplikaci, <strong>Koncový bod autorizace <strong>OAuth 2.0</strong> (v2)</strong> a také <strong>Adresu URL přesměrování</strong>, kterou jste zadali. Tyto informace použijete později.</li>
 </ul>
 </li>
 <li><p>Vytvořte tajný klíč klienta pro registrovanou aplikaci</p>

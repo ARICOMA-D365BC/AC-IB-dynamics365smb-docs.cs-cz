@@ -70,7 +70,7 @@
 <h1 id="rozšířené-cz-bankovnictví">Rozšířené CZ bankovnictví</h1>
 
 <blockquote>
-<p>Update 10.01.2026</p>
+<p>Aktualizace: 18.03.2026</p>
 </blockquote>
 <p>Modul Rozšíření CZ bankovnictví rozšiřuje funkčnost „Bankovní doklady pro Česko (rozšíření)“, která je součástí českých lokálních funkčností Dynamics 365 Business Central (dále jen BC).</p>
 <p>Hlavním přínosem modulu je zjednodušení importu a následného zpracování bankovních výpisů a tím snížení rutinních činností uživatelů.</p>
@@ -211,18 +211,25 @@ Podmínkou je použití API konektoru banky, která tuto možnost podporuje.</p>
 <h3 id="pokročilá--export-platebních-příkazů-s-kumulací-plateb">Pokročilá – export platebních příkazů s kumulací plateb</h3>
 <p>Tato funkcionalita slučuje řádky plateb pro dodavatele či zákazníky, kteří mají povoleno kumulovat platby, dle pravidel nastavených na bankovním účtu. Další informace naleznete v Nastavení kumulování plateb.</p>
 <ol>
-<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Platební příkazy</strong> a poté vyberte související odkaz.</li>
-<li>Vyberte číslo banky s nastavenou kumulací plateb, pro který chcete vytvořit platební příkaz a potvrďte tlačítkem <strong>OK</strong>.</li>
-<li>Spusťte akci <em>Navrhni platby…</em> (alternativou je ruční zadání řádků příkazu, popř. funkce Import…)</li>
-<li>Doplňte <strong>Poslední datum splatnosti</strong> a <strong>Částku k dispozici</strong>, popř. upravte další parametry.</li>
-<li>Tlačítkem <strong>OK</strong> spusťe generování návrhu plateb.</li>
-<li>Vytvořený platební příkaz můžete ještě ručně upravit (pro ověření funkcionality kumulace plateb zkontrolujte, že máte v řádcích více plateb na stejný účet dodavatele se zapnutou kumulací plateb).</li>
-<li>Na platebním příkazu spusťte funkci <em>Vydání</em>.</li>
-<li>Tlačítkem <strong>OK</strong> potvrďte volbu Vydat.</li>
-<li>Volbou  <strong>Ano</strong> potvrďte otevření karty Vydaného platebního příkazu.</li>
-<li>Volbou <em>Kumulované řádky</em> otevřete seznam kumulovaných řádků a ověřte, jestli výsledek odpovídá očekávanému způsobu kumulace. Pokud chcete změnit výsledek, změňte nastavení a spusťte akci <em>Kumulovat platby</em>.</li>
-<li>Pro export příkazu spusťte akci <em>Export platebního příkazu…</em>.</li>
-</ol>
+<li><p>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Platební příkazy</strong> a poté vyberte související odkaz.</p>
+</li>
+<li><p>Vyberte číslo banky s nastavenou kumulací plateb, pro který chcete vytvořit platební příkaz a potvrďte tlačítkem <strong>OK</strong>.</p>
+</li>
+<li><p>Spusťte akci <em>Navrhni platby…</em> (alternativou je ruční zadání řádků příkazu, popř. funkce Import…)</p>
+</li>
+<li><p>Doplňte <strong>Poslední datum splatnosti</strong> a <strong>Částku k dispozici</strong>, popř. upravte další parametry.</p>
+</li>
+<li><p>Tlačítkem <strong>OK</strong> spusťe generování návrhu plateb.</p>
+</li>
+<li><p>Vytvořený platební příkaz můžete ještě ručně upravit (pro ověření funkcionality kumulace plateb zkontrolujte, že máte v řádcích více plateb na stejný účet dodavatele se zapnutou kumulací plateb).</p>
+</li>
+<li><p>Na platebním příkazu spusťte funkci <em>Vydání</em>.</p>
+</li>
+<li><p>Tlačítkem <strong>OK</strong> potvrďte volbu Vydat.</p>
+</li>
+<li><p>Volbou  <strong>Ano</strong> potvrďte otevření karty Vydaného platebního příkazu.</p>
+</li>
+<li><p>Volbou <em>Kumulované řádky</em> otevřete seznam kumulovaných řádků a ověřte, jestli výsledek odpovídá očekávanému způsobu kumulace. Pokud chcete změnit výsledek, změňte nastavení a spusťte akci <em>Kumulovat platby</em>.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Pokud se nekumuluje dle symbolů, tak se sloučené řádky založí s variabilním symbolem z číselné řady a SS a KS se převezmou z prvního slučovaného řádku příkazu. Pro datum splatnosti se použije ten nejnižší ze slučovaných řádků.</p>
@@ -231,6 +238,16 @@ Podmínkou je použití API konektoru banky, která tuto možnost podporuje.</p>
 <h5>Important</h5>
 <p>Funkce Vydání na Bankovním výpisu kontroluje každý řádek, nebyl-li vytvořen kumulací. Pokud ano, vynuluje na něm částku a doplní k němu původní řádky z příkazu.</p>
 </div>
+</li>
+<li><p>Pro export příkazu spusťte akci <em>Export platebního příkazu…</em>.</p>
+</li>
+<li><p>Pro odeslání avíza všem dotčeným firmám najednou spusťte akci <em>Tisk platebního avíza</em> .</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>U sestavy Platební avízo se očekává odeslání e-mailem a pro tento způsob je i popsáno potřebné <a href="cz-banking-extension-setup#nastaven%C3%AD-rozvr%C5%BEen%C3%AD-dokladu-pro-odesl%C3%A1n%C3%AD-av%C3%ADza-platby-e-mailem">nastavení</a>. Je ale možné zvolit výstup do PDF souboru (výsledkem je zip souborem s příslušným počtem PDF souborů uvnitř), které lze odeslat ručně či vytisknout apod.</p>
+</div>
+</li>
+</ol>
 <p><strong>See also</strong></p>
 <p><a href="cz-banking-extension-setup.html">Nastavení rozšířeného CZ bankovnictví</a><br>
 <a href="cz-banking-extension-api-setup.html">Nastavení API konektorů</a><br>
