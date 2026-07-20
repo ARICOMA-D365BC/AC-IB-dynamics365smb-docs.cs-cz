@@ -10,7 +10,7 @@ ms.search.keywords: Slovak, localization, SK Fiscal Printers Integration
 
 # Slovenská lokalizace
 
-> Aktualizace 31.07.2025
+> Aktualizace 22.04.2026
 
  Slovenská lokalizace doplňuje systém Dynamics 365 Business Central CZ o funkcionality pro podporu slovenské legislativy. Česká funkcionalita z větší části pokrývá i slovenské legislativní požadavky. Tento modul pak doplňuje pouze rozdílové funkcionality, pro pokrytí specifických požadavků slovenské legislativy.
 
@@ -32,6 +32,14 @@ ms.search.keywords: Slovak, localization, SK Fiscal Printers Integration
 |Odsouhlasení salda zákazníka a dodavatele.|[Odsouhlasení salda](sk-balance-reconciliation.md)|
 |Uplatnění daňových odpisů dle počtu kalendárných měsíců dle Zákona o dani z příjmů.|[Daňové odpisy](sk-tax-depreciation.md)|
 |Integrace s SK fiskálními tiskárnami poskytuje přímé propojení s fiskálními tiskárnami od firmy VAROS.|[Integrace s SK fiskálními tiskárnami](SK-FiscalPrinters-Integration.md)|
+
+> [!IMPORTANT] 
+> Aby se uživatelé nedostali do problémů s používáním Business Central, jakmile aktivujete funkcionalitu modulu, nejprve nastavte oprávnění k funkcionalitě.
+>S instalací modulu máte k dispozici následující Sady oprávnění: 
+    |Název sady|Popis|
+    |-|-|
+    | SK LOC. - READ_ACQ | Pouze čtení; doplněna i do "D365 READ"|
+    | SK LOC. - EDIT_ACQ | Pro používání a možnost nastavení; doplněno do "D365 ACCOUNTANTS" |
 
 ## Viz také
 

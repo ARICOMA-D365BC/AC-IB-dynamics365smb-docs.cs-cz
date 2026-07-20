@@ -10,7 +10,7 @@ ms.search.keywords: banking, finance, czech, API
 
 # Rozšířené CZ bankovnictví
 
-> Update 10.01.2026
+> Aktualizace: 18.03.2026
 
 Modul Rozšíření CZ bankovnictví rozšiřuje funkčnost „Bankovní doklady pro Česko (rozšíření)“, která je součástí českých lokálních funkčností Dynamics 365 Business Central (dále jen BC).
 
@@ -190,12 +190,17 @@ Tato funkcionalita slučuje řádky plateb pro dodavatele či zákazníky, kteř
 8. Tlačítkem **OK** potvrďte volbu Vydat.
 9. Volbou  **Ano** potvrďte otevření karty Vydaného platebního příkazu.
 10. Volbou *Kumulované řádky* otevřete seznam kumulovaných řádků a ověřte, jestli výsledek odpovídá očekávanému způsobu kumulace. Pokud chcete změnit výsledek, změňte nastavení a spusťte akci *Kumulovat platby*.
-11. Pro export příkazu spusťte akci *Export platebního příkazu…*.
 
-> [!NOTE]
-> Pokud se nekumuluje dle symbolů, tak se sloučené řádky založí s variabilním symbolem z číselné řady a SS a KS se převezmou z prvního slučovaného řádku příkazu. Pro datum splatnosti se použije ten nejnižší ze slučovaných řádků.
-> [!IMPORTANT]
-> Funkce Vydání na Bankovním výpisu kontroluje každý řádek, nebyl-li vytvořen kumulací. Pokud ano, vynuluje na něm částku a doplní k němu původní řádky z příkazu.
+    > [!NOTE]
+    > Pokud se nekumuluje dle symbolů, tak se sloučené řádky založí s variabilním symbolem z číselné řady a SS a KS se převezmou z prvního slučovaného řádku příkazu. Pro datum splatnosti se použije ten nejnižší ze slučovaných řádků.
+    > [!IMPORTANT]
+    > Funkce Vydání na Bankovním výpisu kontroluje každý řádek, nebyl-li vytvořen kumulací. Pokud ano, vynuluje na něm částku a doplní k němu původní řádky z příkazu.
+
+11. Pro export příkazu spusťte akci *Export platebního příkazu…*.
+12. Pro odeslání avíza všem dotčeným firmám najednou spusťte akci *Tisk platebního avíza* .
+
+    > [!NOTE]
+    > U sestavy Platební avízo se očekává odeslání e-mailem a pro tento způsob je i popsáno potřebné [nastavení](cz-banking-extension-setup#nastavení-rozvržení-dokladu-pro-odeslání-avíza-platby-e-mailem). Je ale možné zvolit výstup do PDF souboru (výsledkem je zip souborem s příslušným počtem PDF souborů uvnitř), které lze odeslat ručně či vytisknout apod.
 
 **See also**  
 

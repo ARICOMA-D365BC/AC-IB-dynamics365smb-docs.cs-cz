@@ -7,7 +7,7 @@ ms.service: dynamics-365-business-central
 ms.search.keywords: GP Tom Integration, Streamline Tools, Global Payments, settings
 ---
 # Nastavení integrace s GP tom
-> Update 14.10.2024
+> Aktualizace: 14.10.2024
 
 ## Nastavení
 

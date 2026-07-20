@@ -385,16 +385,9 @@ Pro více informací navštivte [Nastavení](app-extension-set-setup#nastavení-
 
 ## Univerzální oprávnění
 
-Funkcionalita Univerzální oprávnění umožňuje maximální kontrolu nad úpravou dat. Hlavním přínosem je zabránění nechtěných změn u důležitých údajů na dokladech při spolupráci více uživatelů. Výhodou je přesné nastavení oprávnění úprav na úrovni jednotlivých polí. S univerzálním oprávněním máte jistotu, že nedojde k přepsání klíčových informací a data zůstanou chráněna.
+Funkcionalita Univerzální oprávnění umožňuje definovat jednotlivým uživatelům oprávnění na úrovní polí v tabulkách. Jsou totiž situace, kdy uživatel má mít např. možnost upravovat jen vybraná pole. Nastavit lze ale všechny typy operací (RIMD).
 
-Pro zapnutí funkčnosti Univerzální oprávnění následujte tento postup:
-
-1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení financí** a poté vyberte související odkaz.
-2. Na stránce **Nastavení financí** záložce Sada rozšíření aplikace od Aricoma zaškrtněte pole **Univerzální oprávnění povoleno**, které slouží pro zapnutí funkcionality Univerzální oprávnění.
-
-![Nastavení financí](media/up-general-ledger-setup.png)
-
-Pro více informací navštivte [Nastavení](app-extension-set-setup#nastavení-univerzálních-oprávnění).
+Pro více informací navštivte [Nastavení univerzálních oprávnění](app-extension-set-setup#nastavení-univerzálních-oprávnění).
 
 ## Ostatní funkcionality
 

@@ -45,7 +45,7 @@
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "titleSuffix": "Business Central",
       "breadcrumb_path": "/dynamics365/business-central/breadcrumb/toc.json",
-      "ms.service": "dynamics365-business-central",
+      "ms.service": "dynamics-365-business-central",
       "__global.improveThisDoc": "Vylepšit dokument",
       "__global.inThisArticle": "V této sekci",
       "extendBreadcrumb": true

@@ -295,22 +295,26 @@ Nastavení zaokrouhlení se provádí různě v závislosti na měně, jako je
 
 ## Nastavení univerzálních oprávnění
 
-Funkcionalita umožňuje nastavit oprávnění pro úpravu stránek a jejich jednotlivých polí. Pro konkrétní uživatele se tak nastavují podmínky, co mohou nebo nemohou na nastavených stránkách a polích měnit.
+Nejprve je potřeba funkcionalitu Univerzální oprávnění zapnout:
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení financí** a poté vyberte související odkaz.
+2. Na stránce **Nastavení financí** záložce Sada rozšíření aplikace od Aricoma zaškrtněte pole **Univerzální oprávnění povoleno**.
+
+Následujícím postupem nastavíte vybraným uživatelům zvláštní přístup k tabulce:
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení univerzálních oprávnění** a poté vyberte související odkaz.
-2. Na stránce **Nastavení univerzálních oprávnění** vyplňte jednotlivé řádky.
+2. Na stránce **Nastavení univerzálních oprávnění** vložte nový řádek a v poli **Číslo tabulky** vyberte hodnotu odpovídající entitě, pro kterou chcete oprávnění nastavit.
 ![Nastavení univerzálních oprávnění](media/up-universal-permission-setup.png)
-3. Na řádku v poli **Číslo tabulky** vyberte tabulku, ve které chcete univerzální oprávnění nastavit. Tabulku lze vybrat z číselníku všech tabulek.
-4. Pole **Popisek tabulky** se automaticky vyplní po vybrání Čísla tabulky.
-5. Do pole **Popis** napište libovolný text, např. koho a čeho se nastavované oprávnění týká.
-6. Kliknutím na řádku do pole **Filtr tabulky** zadáváte filtr, podle kterého určujete, u jakých záznamů či hodnot tabulky je žádoucí nastavit dané oprávnění. Otevře se nové okno, ve kterém vyplňte **Číslo pole**. Automaticky se doplní **Titulek pole**. Zadejte požadovaný filtr do pole **Filtr pole**.
+3. Do pole **Popis** napište libovolný text, např. koho a čeho se nastavované oprávnění týká.
+4. Kliknutím na řádku do pole **Filtr tabulky** zadáváte filtr, podle kterého určujete, u jakých záznamů či hodnot tabulky je žádoucí nastavit dané oprávnění. Otevře se nové okno, ve kterém vyplňte **Číslo pole**. Zadejte požadovaný filtr do pole **Filtr pole**.
 ![Fitr tabulky](media/up-table-filter.png)
-7. Vraťte se zpátky na stránku **Nastavení univerzálních oprávnění**. Pokud chcete, aby se oprávnění týkalo všech polí tabulky, zvolte na řádku v poli **Pole** „Všechna pole“.  Pokud se má oprávnění vztahovat pouze na některá pole, zvolte „Některá pole“. Dále označte daný řádek, se kterým pracujete a v panelu akcí klikněte na ikonu **Pole**. Zobrazí se nové okno, ve kterém nastavte jednotlivá pole tabulky, kterých se má oprávnění týkat. V řádku vyplňte **ID Pole**. ID pole Lze vybrat z číselníku všech polí.
+5. Vraťte se zpátky na stránku **Nastavení univerzálních oprávnění**. Pokud chcete, aby se oprávnění týkalo všech polí tabulky, zvolte na řádku v poli **Pole** hodnotu „Všechna pole“.
+Pokud se má oprávnění vztahovat pouze na některá pole, zvolte „Některá pole“, spusťte akci *Pole* a v otevřené stránce vyberte požadovaná pole, která mají být kontrolována.
 ![Pole](media/up-fields.png)
-8. Vraťte se zpátky na stránku **Nastavení univerzálních oprávnění**. Označte daný řádek, se kterým pracujete a v panelu akcí klikněte na ikonu **Uživatelé**. Zobrazí se nové okno, ve kterém vyplňte pole **ID Uživatele**. Tím nastavíte jednotlivé uživatele, pro které má oprávnění platit.
-9. Vraťte se zpátky na stránku **Nastavení univerzálních oprávnění**. Na daném řádku rozhodněte, co všechno chcete kontrolovat. Podle potřeby zaškrtněte pole Kontrolovat změnu, Kontrolovat vložení, Kontrolovat mazání nebo Kontrolovat přejmenování.
-10. Dále na řádku v poli **Oprávnění** zvolte variantu *Povolit* nebo *Zakázat* podle toho, jestli to, co se na řádku nastavilo je uživateli/uživatelům zakázáno nebo povoleno. Když je zvoleno *Povolit*, tak se povoluje daným uživatelům vše, co je na řádku specifikováno a zakazuje se vše ostatní a naopak.
-11. V posledním poli **Aktivní** se zaškrtává, jestli je daný řádek aktivní (pole je zaškrtnuté) nebo ne (pole není zaškrtnuté). Tedy jestli se podle něho má systém řídit nebo ne.
+6. Vraťte se zpátky na stránku **Nastavení univerzálních oprávnění** a nastavte rozsah oprávnění. Podle potřeby zaškrtněte pole **Kontrolovat změnu**, **Kontrolovat vložení**, **Kontrolovat mazání** nebo **Kontrolovat přejmenování**.
+7. Spuštěním akce *Uživatelé* nastavíte jednotlivé uživatele, pro které má oprávnění platit.
+8. V poli **Oprávnění** zvolte hodnotu "Povolit", pokud má být vybraným uživatelům dovoleno provádět zadané operace se zadanými poli výše. Volbou "Zakázat" naopak vybraným uživatelům zakážete vybrané operace na vybraných polích.
+9. V posledním poli **Aktivní** lze nastavení v řádku aktivovat či deaktivovat.
 ![Nastavení univerzálních oprávnění](media/up-universal-permission-setup-permission.png)
 
 ## Viz také

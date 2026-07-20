@@ -5850,7 +5850,7 @@
           "hash": "ZEYfgJNgOmm4+4PYACJb6rb6adGC8XNT6qMUR65o99g="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -5910,10 +5910,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/app-extension-set-setup.html",
-          "hash": "vaMCknAxg3/x11ir17gaLbxfwbk3KUfGDg5jkrL+tPE="
+          "hash": "3x1hhXpW43Eh1maXDtVcqx/5Dt3Li0NfH1FsyTP+g/M="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -5925,10 +5925,10 @@
       "output": {
         ".html": {
           "relative_path": "Solutions/app-extension-set.html",
-          "hash": "YRWfBZDXa+MtSFp2vhPRuZKzzmoBLHNWETWf/4hXjCc="
+          "hash": "tirTg0gsv3pAFCd1gVQaVBHefCV1pyHLtOZ/aM6D1tA="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6042,7 +6042,7 @@
           "hash": "e2Nm2QD3nkFb5Lg9KEURugNXizj+Clx37jMTyy/icfE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6057,7 +6057,7 @@
           "hash": "gQaRRo7P01qO7q3MUHjISKhbRyMiVvheEPJv22A6CqU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -6072,7 +6072,7 @@
           "hash": "1OvP3kFuC4lhs5i+C60Xi/ENsqudVJ69MtXpk3OUB0o="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9352,6 +9352,61 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "Solutions/media/up-fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/up-fields.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/up-general-ledger-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/up-general-ledger-setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/up-table-filter.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/up-table-filter.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/up-universal-permission-setup-permission.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/up-universal-permission-setup-permission.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Solutions/media/up-universal-permission-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "Solutions/media/up-universal-permission-setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "Solutions/media/vat_check_report.png",
       "output": {
         "resource": {
@@ -9874,7 +9929,7 @@
           "hash": "E667uy8CuR5Jm1EQsPnQiIP2cBkMJQ56vEvQ+h/zLhc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9886,7 +9941,7 @@
           "hash": "iaAwvJIiu96i1XiNAQsDuCT2wCz7N7/Z89YZvGF8UFQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9898,7 +9953,7 @@
           "hash": "+XflGCICpVy02qOfW+/ZExxQyoGXxIc9X169r+9XP6k="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9910,7 +9965,7 @@
           "hash": "smsXLpk3VOUGwYpG1zxyQkixV2gKgongiTFK4JApTIE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9922,7 +9977,7 @@
           "hash": "xzDACynyfugizw1uL9MrGucg1LHqOW8P/Aem/f9KZes="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9958,7 +10013,7 @@
           "hash": "PjXcRbZ9XVxL7Pwq1SBZuqL7GRTo8qbIBIV/VRm+j44="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -9982,7 +10037,7 @@
           "hash": "+ZL1JK8MkLCElpYy9udMq/oCUSz6vhJQifmfTJtiVmI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -10021,7 +10076,7 @@
           "hash": "g8PI+6VrdPeYq9yUHJwxIVwI1MgeY88ML+89zR72R4A="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -10033,7 +10088,7 @@
           "hash": "+4OwLOzJzGqk5rUinLBY1gsNcmmuRkLYXTHD9RIReUU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -10045,7 +10100,7 @@
           "hash": "f2CSw+vtjxLthELKciKlWeTO1WqRV6FELykFYuC8pwA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -10081,7 +10136,7 @@
           "hash": "Nq1xhVs9iz+jj2qoGsYVlBVH3VObgBMtx//N56c0nag="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -10093,7 +10148,7 @@
           "hash": "lSHjbNOu72DxZJDx3Qx1V9NRJwhOGnNuotpgDUtFi7Q="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -10105,7 +10160,7 @@
           "hash": "4aLYT3KqYsfBqQB7tDRku0RIkyoWDkwb8sYVPEJgKKE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -17316,7 +17371,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 412,
-          "skipped_file_count": 397
+          "skipped_file_count": 410
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

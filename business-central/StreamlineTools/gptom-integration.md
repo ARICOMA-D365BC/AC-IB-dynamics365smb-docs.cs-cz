@@ -7,7 +7,7 @@ ms.service: dynamics-365-business-central
 ms.search.keywords: GP Tom Integration, Streamline Tools, Global Payments
 ---
 # Integrace s GP tom
-> Update 14.10.2024
+> Aktualizace: 14.10.2024
 
 Addon **Integrace s GP tom** je určen především pro bezešvou integraci Business Central s platebními terminály, aby se staly nativní součástí obchodních procesů. Navíc umožnuje provádět i související obslužné operace přímo z prostředí BC.
 
