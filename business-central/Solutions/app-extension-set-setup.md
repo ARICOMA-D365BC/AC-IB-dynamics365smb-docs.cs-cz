@@ -8,12 +8,12 @@ ms.topic: article
 ms.devlang: na
 ms.tgt_pltfrm: na
 ms.search.keywords: DPH, finance, pohledávky, zaokrouhlení, číselné řady, český
-ms.date: 01/26/2026
+ms.date: 07/03/2026
 ms.author: Jitka Urxová
 ---
 # Sada rozšíření pro Finance - Nastavení
 
-> Aktualizace: 31.01.2026
+> Aktualizace: 03.07.2026
 
 ## Nastavení rozšíření DPH
 
@@ -98,12 +98,22 @@ V případě používání jiné měny než lokální v zemi registrace, je 
 >[!NOTE]
 >Kombinace s příznakem OSS = Ne je nutné definovat pro případy, kdy se v praxi objeví potřeba vypnout na prodejním dokladu režim OSS.
 
+## Nastavení účtování přeplatků záloh
+
 ### Nastavení účtování přeplatků nákupních záloh
 
-Popsaná automatizace při účtování finální faktury se zapíná v Nastavení účtování DPH pro vybrané kombinace účtoskupin. Pokud je toto chování vhodné pouze pro některé případy, je třeba pro ně míst vydefinované zvláštní DPH účtoskupiny (zboží).
+Popsaná automatizace při účtování finální faktury se zapíná v Nastavení účtování DPH pro vybrané kombinace účtoskupin. Pokud je toto chování vhodné pouze pro některé případy, je třeba pro ně mít vydefinované zvláštní DPH účtoskupiny (zboží).
 
 1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení účtování DPH** a poté vyberte související odkaz.
-2. Na stránce Nastavení účtování DPH vyhledejte záznam pro který chcete zapnout a zvolte funkci Úpravy.
+2. Na stránce Nastavení účtování DPH vyhledejte záznam, pro který chcete funkcionalitu zapnout a zvolte funkci Úpravy.
+3. Na stránce Karta nastavení účto DPH nastavte příznak Určeno pro vrácení zálohy.
+
+### Nastavení účtování přeplatků prodejních záloh
+
+Popsaná automatizace při účtování finální faktury se zapíná v Nastavení účtování DPH pro vybrané kombinace účtoskupin. Pokud je toto chování vhodné pouze pro některé případy, je třeba pro ně mít vydefinované zvláštní DPH účtoskupiny (zboží).
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Nastavení účtování DPH** a poté vyberte související odkaz.
+2. Na stránce Nastavení účtování DPH vyhledejte záznam, pro který chcete funkcionalitu zapnout a zvolte funkci Úpravy.
 3. Na stránce Karta nastavení účto DPH nastavte příznak Určeno pro vrácení zálohy.
 
 ## Nastavení kontroly CREDITCHECK
