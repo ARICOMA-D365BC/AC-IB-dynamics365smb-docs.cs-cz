@@ -10,6 +10,7 @@
 ### [Nastavení - Doprava - základ](transport-basic-setup.md)
 ## [Doprava - plánování](transport-planning.md)
 ### [Nastavení - Doprava - plánování](transport-planning-setup.md)
+## [e-Connect360](e-connect360.md)
 ## [EDI konektor základ](edi-connector-basic.md)
 ### [Nastavení - EDI konektor základ](edi-connector-basic-setup.md)
 ## [Evidence nářadí a pomůcek](production-tools.md)
