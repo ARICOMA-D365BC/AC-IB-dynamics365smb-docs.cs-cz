@@ -105,13 +105,8 @@ Pro využití služby [API Business suite](https://www.kb.cz/cs/kbapi/sluzby-kb-
 
 Základní kroky pro zprovoznění API rozhraní jsou:
 
-- Firma zažádá u firmy Aricoma o Autorizační klíč, který bude vygenerován speciálně pro ni a díky němuž Aricoma zaregistruje KB API konektor v KB.
 - Firma nastaví modul v Business Central.
 - Firma udělí souhlas Business Central aplikaci ke se stahováním dat z KB a vybere bankovní účty, ke kterým bude mít Business Central přístup.
-
-**Získání Autorizačního klíče** (platné do verze BC26)
-
-Kontaktujte nás e-mailem na adrese <bc_sales@aricoma.com>. Stačí nám pouze jméno vaší firmy, v odpovědi vám zašleme Autorizační klíč. Tento je určen pouze pro potřeby vaší firmy a nesmí být používán nikým jiným.
 
 **Nastavení modulu v BC**  
 
@@ -121,9 +116,10 @@ Dalším krokem je nastavení přístupu v Business Central:
 2. Na stránce Klienti KB API zadejte „KB“ v poli **Kód** na novém řádku.
 3. Do pole **Popis** zadejte např. „KB API“.
 4. V poli **API** ponechte hodnotu „Produkční prostředí“.
-5. V poli **Autorizační klíč** zadejte hodnotu, kterou jste obdrželi od Aricoma (viz předchozí odstavec).
-6. Spusťe akci *Autorizovat klienta*, úspěch se projeví změnou přepnutím příznaku **Klient je autorizovaný**.
+5. Spusťe akci *Autorizovat klienta*, úspěch se projeví změnou přepnutím příznaku **Klient je autorizovaný**.
 
+> [!IMPORTANT]
+> Pokud vidíte pole **Autorizační klíč** a máte jej prázdné, kontaktujte nás e-mailem na adrese <bc_sales@aricoma.com>. Stačí nám pouze jméno vaší firmy, v odpovědi vám zašleme Autorizační klíč. Toto je relevantní pro verze nižší než 28 CU5.
 > [!WARNING]
 > Volbu **Povolit protokol aktivity** použijte pouze v odůvodněných případech po omezenou dobu, neboť v protokolu jsou obsažena citlivá data a mohou se k nim dostat i uživatelé, kteří by je vidět neměli.
 > [!TIP]
