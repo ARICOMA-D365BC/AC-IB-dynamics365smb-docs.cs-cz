@@ -115,7 +115,7 @@ Pro založení šabloby workflow je nutný **addon Řízení stavů**, který mu
 
 Pro více informací o založení a nastavení Řízení stavů navštivte [Nastavení Řízení stavů](workflow-status-management-setup.md).
 
-## Nastavení Řízení stavú pro HelpDesk
+## Nastavení Řízení stavů pro HelpDesk
 
 Po založení šablony je nutné nastavit tuto šablonu na stránce **Nastavení Řízení stavů**.
 
