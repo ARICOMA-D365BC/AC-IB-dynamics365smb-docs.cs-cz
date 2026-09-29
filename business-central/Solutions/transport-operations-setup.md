@@ -85,4 +85,4 @@ V případě, že budou využívány deníky čerpání PHM, tak je nutné nas
 
 **Viz také**
 
-[Doprava](transport-operation.md)  
+[Doprava](transport-operations.md)  

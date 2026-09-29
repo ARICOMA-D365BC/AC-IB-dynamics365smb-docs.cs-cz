@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>EDI Connector | Microsoft Docs </title>
+    <title>EDI Connector </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="EDI Connector | Microsoft Docs ">
+    <meta name="title" content="EDI Connector ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -69,7 +69,166 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="edi-konektor-základ">EDI konektor základ</h1>
 
-<p><strong>Viz také</strong></p>
+<p>Add-on modul <strong>EDI konektor základ</strong> přidává do systému Microsoft Dynamics 365 Business Central rámec pro elektronickou výměnu dokladů (EDI) s obchodními partnery – zákazníky, dodavateli a přepravci. Modul sám o sobě neobsahuje konkrétní formát zprávy; je to obecný rámec, který pro každou kombinaci <em>partner – doklad – směr komunikace</em> spustí přiřazený objekt (report, codeunit nebo XMLport), který vytvoří nebo načte datovou zprávu v podobě požadované daným EDI providerem.</p>
+<p>Modul zajišťuje zejména:</p>
+<ul>
+<li>evidenci EDI partnerů a jejich EAN (GLN) identifikátorů,</li>
+<li>nastavení karet EDI komunikace, které říká, co, komu, jakým objektem a kam se posílá,</li>
+<li>sledování stavu zpracování dokladu prostřednictvím <strong>Položek EDI</strong> a <strong>Detailních položek EDI</strong>, včetně archivace vlastní zprávy,</li>
+<li>napojení na modul <strong>Spooler</strong>, který obstarává vlastní přenos zpráv k providerovi (HTTP, webová služba, API, e-mail).</li>
+</ul>
+<p>EDI konektor základ je především o správném nastavení. Bez vyplněné karty <strong>Nastavení EDI</strong> se zaškrtnutým polem <strong>Povoleno</strong> funkce modulu nelze spustit – systém ohlásí, že funkčnost EDI konektoru není povolena.</p>
+<h2 id="jaké-doklady-edi-podporuje">Jaké doklady EDI podporuje</h2>
+<p>Modul pracuje s těmito zdrojovými doklady (pole <strong>Typ zdroje dokladu</strong> na kartě EDI komunikace):</p>
+<table>
+<thead>
+<tr>
+<th>Tabulka</th>
+<th>Doklad</th>
+<th>Typ zdroje</th>
+<th>Obvyklý směr</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>36</td>
+<td>Prodejní hlavička (nabídka, objednávka, faktura, dobropis, hromadná objednávka, objednávka vratky)</td>
+<td>Zákazník</td>
+<td>Import</td>
+</tr>
+<tr>
+<td>38</td>
+<td>Nákupní hlavička (nabídka, objednávka, faktura, dobropis, hromadná objednávka, objednávka vratky)</td>
+<td>Dodavatel</td>
+<td>Export</td>
+</tr>
+<tr>
+<td>110</td>
+<td>Prodejní dodávka (účtovaná)</td>
+<td>Zákazník</td>
+<td>Export</td>
+</tr>
+<tr>
+<td>112</td>
+<td>Prodejní faktura (účtovaná)</td>
+<td>Zákazník</td>
+<td>Export</td>
+</tr>
+<tr>
+<td>114</td>
+<td>Prodejní dobropis (účtovaný)</td>
+<td>Zákazník</td>
+<td>Export</td>
+</tr>
+<tr>
+<td>5740</td>
+<td>Hlavička transferu</td>
+<td>Přepravce</td>
+<td>Export</td>
+</tr>
+</tbody>
+</table>
+<p>Směr komunikace se při volbě typu zdroje dokladu předvyplní automaticky: prodejní hlavička (36) se nastaví jako <strong>Import</strong>, ostatní doklady jako <strong>Export</strong>. Hodnotu lze následně změnit na <strong>Export</strong>, <strong>Potvrzený export</strong> nebo <strong>Import</strong>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Volba <strong>Potvrzený export</strong> znamená, že se do exportu zahrnou pouze doklady, u nichž je zaškrtnuto pole <strong>Potvrzeno pro EDI export</strong>. Při volbě <strong>Export</strong> se filtr na toto pole nepoužije.</p>
+</div>
+<h2 id="jaké-vznikají-zprávy-týkající-se-komunikace">Jaké vznikají zprávy týkající se komunikace</h2>
+<p>Stav zpracování dokladu v EDI je veden v poli <strong>Stav</strong> na položkách EDI a odpovídá typu zprávy, která byla vyměněna:</p>
+<table>
+<thead>
+<tr>
+<th>Stav</th>
+<th>Význam</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORDERS</td>
+<td>Objednávka (přijatá od zákazníka nebo odeslaná dodavateli)</td>
+</tr>
+<tr>
+<td>DESADV</td>
+<td>Avízo o odeslání (dodací list)</td>
+</tr>
+<tr>
+<td>Dodáno/Přijato</td>
+<td>Doklad byl expedován, resp. přijat</td>
+</tr>
+<tr>
+<td>RECADV</td>
+<td>Avízo o příjmu od partnera</td>
+</tr>
+<tr>
+<td>DESADV stornováno</td>
+<td>Storno avíza o odeslání (vzniká při odúčtování prodejní dodávky)</td>
+</tr>
+<tr>
+<td>INVOIC</td>
+<td>Faktura</td>
+</tr>
+<tr>
+<td>COMDIS3</td>
+<td>Obchodní spor – podmínečně přijato</td>
+</tr>
+<tr>
+<td>COMDIS1</td>
+<td>Obchodní spor – v pořádku</td>
+</tr>
+<tr>
+<td>COMDIS8</td>
+<td>Obchodní spor – odmítnuto</td>
+</tr>
+<tr>
+<td>INVOIC stornováno</td>
+<td>Storno faktury</td>
+</tr>
+</tbody>
+</table>
+<p>Kromě stavu se u položek sleduje pole <strong>Potvrzen příjem</strong> s hodnotami <em>EDI prostředník</em> a <em>Obchod</em>, které rozlišuje, na jaké úrovni byla zpráva protistranou převzata.</p>
+<p>Vlastní text vyměněné zprávy je uložen jako příloha podrobné položky EDI a lze jej kdykoli stáhnout akcí <strong>Export dokument</strong> na stránce <strong>Detailní položky EDI</strong>.</p>
+<p>Chyby vzniklé při komunikaci se podle zvoleného způsobu přenosu zapisují:</p>
+<ul>
+<li>do <strong>Protokolu EDI fakturace</strong> – u fakturačních zpráv jsou zde texty chyb celé zprávy, číslo chybného řádku, kód a popis akce, číslo COMDIS zprávy a stav zprávy,</li>
+<li>do <strong>Položek protokolu Spooleru</strong> – u zpráv přenášených Spoolerem (chyby spojení, autentizace, odpovědi providera).</li>
+</ul>
+<h2 id="položky-edi-a-detailní-položky-edi">Položky EDI a Detailní položky EDI</h2>
+<p><strong>Položka EDI</strong> existuje právě jedna pro každou kombinaci zdrojové tabulky, podtypu a čísla dokladu a nese vždy aktuální (poslední) stav. <strong>Detailní položka EDI</strong> vzniká pro každou jednotlivou komunikaci a tvoří tak historii dokladu. Detailní položka navíc obsahuje číslo verze, počet výskytů čísla dokladu, číslo účtování, externí číslo dokladu, příznak stornování, směr, číslo záznamu v bufferu, jméno souboru a přílohu se zprávou.</p>
+<p>Položky jsou provázané polem <strong>Č. hlavní položky EDI</strong>, takže lze zobrazit jak historii jednoho dokladu, tak historii celého řetězce navázaných dokladů (objednávka → dodávka → faktura).</p>
+<h2 id="použití-edi-v-prodeji">Použití EDI v prodeji</h2>
+<p>Prodejní strana je typicky obousměrná a probíhá v tomto sledu:</p>
+<ol>
+<li><strong>Příjem objednávky (ORDERS).</strong> Report <strong>Importovat EDI doklady</strong> projde aktivní karty EDI komunikace se směrem <em>Import</em> a pro každou z nich spustí přiřazený objekt, který vytvoří prodejní objednávku. Zboží se dohledává podle EAN z přijaté zprávy, EAN se zapíše do pole <strong>EDI EAN</strong> na prodejním řádku. Vznikne položka EDI se stavem <em>ORDERS</em>.</li>
+<li><strong>Kontrola a zpracování objednávky.</strong> Přehled všech EDI objednávek nabízí stránka <strong>Přehled EDI - prodej</strong>, kde jsou vedle standardních polí vidět i pole <strong>Stav EDI</strong>, <strong>Potvrzen příjem EDI</strong>, <strong>Námitka s chybou</strong>, <strong>Potvrzeno k exportu EDI</strong>, <strong>Číslo faktury</strong>, <strong>Číslo dodávky EDI</strong> a <strong>Datum dodávky EDI</strong>.</li>
+<li><strong>Expedice a avízo o odeslání (DESADV).</strong> Zaúčtováním dodávky se doklad automaticky označí jako potvrzený pro EDI export a vznikne položka EDI pro prodejní dodávku. Vlastní zprávu vytvoří report <strong>Exportovat EDI doklady - dodávky</strong>. Odúčtováním řádku prodejní dodávky se dodávka označí příznakem <strong>EDI stornováno</strong> a vznikne položka se stavem <em>DESADV stornováno</em>; pokud se odúčtovává jen část dodávky, systém na to upozorní dotazem.</li>
+<li><strong>Fakturace (INVOIC).</strong> Zaúčtováním faktury (resp. dobropisu) vznikne položka EDI pro účtovanou fakturu a zprávu vytvoří report <strong>Exportovat EDI doklady faktury</strong> (resp. <strong>Exportovat EDI doklady dobropisy</strong>).</li>
+<li><strong>Storno faktury.</strong> Funkce <strong>Stornovat EDI fakturu</strong> označí dosavadní detailní položky se stavem <em>INVOIC</em> jako stornované, založí položku se stavem <em>INVOIC stornováno</em>, zruší příznaky <strong>Potvrzeno pro EDI export</strong> a <strong>Avízo s chybou</strong> a uvolní případný zámek dokladu.</li>
+</ol>
+<p>Před potvrzením dokladu pro EDI export systém kontroluje, že jsou vyplněna pole <strong>Č. dodávky EDI</strong> a <strong>Datum dodávky EDI</strong> a že všechny řádky typu <em>Zboží</em> mají expedované množství shodné s množstvím objednaným. Kontrolu stavu EDI a přijetí dat lze dále zpřísnit kontrolními řádky na kartě EDI komunikace.</p>
+<p>Funkci potvrzení lze spustit i hromadně z <strong>Přehled EDI - prodej</strong> akcí <strong>Potvrdit export faktury</strong>, která doklad nejprve vydá a poté zaškrtne <strong>Potvrzeno k exportu EDI</strong>.</p>
+<h2 id="použití-edi-v-nákupu">Použití EDI v nákupu</h2>
+<p>Nákupní strana je typicky jednosměrná – odesílá se objednávka dodavateli:</p>
+<ol>
+<li>Nákupní objednávku je nutné nejprve <strong>vydat</strong>.</li>
+<li>Na kartě nákupní objednávky se spustí akce <strong>EDI doklad</strong>. Funkce ověří, že dodavatel má vyplněné <strong>GLN</strong> nebo <strong>EAN pro EDI</strong>, dohledá odpovídající kartu EDI komunikace (podle dodavatele a kódu adresy objednávky) a založí položku EDI se stavem <em>ORDERS</em>.</li>
+<li>Vlastní zprávu vytvoří report <strong>Exportovat EDI nákupní doklady</strong>, který zpracuje pouze vydané objednávky, jejichž položka EDI je ve stavu prázdném nebo <em>ORDERS</em>.</li>
+<li>Na kartě nákupní objednávky je stav komunikace vidět v poli <strong>Stav EDI</strong>.</li>
+</ol>
+<p>Na nákupních řádcích je k dispozici pole <strong>EDI EAN</strong> a na hlavičce pole <strong>Sloučit řádky podle EDI EAN</strong>, které umožní shrnout více řádků se stejným EAN do jedné položky odesílané zprávy.</p>
+<h2 id="objednávky-transferu">Objednávky transferu</h2>
+<p>Pro přepravce (typ původu <em>Přepravce</em>) je určena Objednávka transferu (tabulka 5740) s polem <strong>Potvrzeno pro EDI export</strong> a report <strong>Exportovat EDI doklady transferů</strong>.</p>
+<h2 id="protokol-edi-fakturace">Protokol EDI fakturace</h2>
+<p>Stránka <strong>Protokol EDI fakturace</strong> slouží jako kniha historie fakturačních zpráv. U každého záznamu je vidět číslo objednávky, číslo zákazníka, číslo plátce, číslo faktury - EDI, datum a čas, stav faktury, ID uživatele a příznak, zda šlo o ruční změnu stavu. Záznamy protokolu nelze na stránce upravovat.</p>
+<h2 id="položky-zámku-tabulky-edi">Položky zámku tabulky EDI</h2>
+<p>Aby uživatel nemohl měnit doklad, který právě prochází EDI zpracováním, modul si vede vlastní <strong>Položky zámku tabulky EDI</strong>. Pokus o změnu uzamčeného záznamu skončí hláškou, že záznam nelze změnit, protože je uzamčen jiným uživatelem. Kontrola se uplatňuje i na řádky navázaných dokladů (prodejní a nákupní řádky, řádky servisu, převodu, skladových příjemek a dodávek, deníky).</p>
+<h2 id="komunikace-s-providerem-edi">Komunikace s providerem EDI</h2>
+<p>Vlastní přenos zpráv k providerovi nezajišťuje EDI konektor sám, ale modul <strong>Spooler</strong>, který je součástí stejné aplikace (IB-EConnect360). Na kartě EDI komunikace se komunikace přes Spooler zapne polem <strong>Komunikovat pomocí Spooleru</strong> a naváže se na <strong>ID úlohy Spooleru</strong> a <strong>ID cílového systému</strong>. Příchozí zprávy se ukládají do <strong>IN bufferu</strong>, odchozí do <strong>OUT bufferu</strong>.</p>
+<p>Spooler podporuje tyto způsoby interakce: <strong>HTTP</strong>, <strong>E‑Mail</strong> (včetně Exchange schránky), <strong>webová služba</strong>, <strong>Spooler API</strong>, <strong>Spooler SOAP WS</strong> a <strong>Spooler OData WS</strong>, s autentizací přes OAuth 2.0.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Modul EDI konektor základ sám o sobě neobsahuje žádný objekt vázaný na konkrétního providera. Provider se do řešení doplňuje vždy samostatnou aplikací nebo sadou konverzních objektů, které se v nastavení propojí polem <strong>ID objektu</strong>.</p>
+</div>
+<h2 id="viz-také">Viz také</h2>
 <p><a href="edi-connector-basic-setup.html">EDI konektor základ - nastavení</a><br>
 <a href="productivity-pack.html">Productivity Pack</a></p>
 </article>

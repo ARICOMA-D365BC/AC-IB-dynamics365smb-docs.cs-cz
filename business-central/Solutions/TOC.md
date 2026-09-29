@@ -6,7 +6,7 @@
 ### [Nastavení - Centrální číselníky](centraldatabase-setup.md)
 ## [Datové schránky](data-boxes.md)
 ### [Nastavení - Datové schránky](data-boxes-setup.md)
-## [Doprava](transport-operation.md)
+## [Doprava](transport-operations.md)
 ### [Nastavení - Doprava](transport-operations-setup.md)
 ## [e-Connect360](e-connect360.md)
 ## [EDI konektor základ](edi-connector-basic.md)

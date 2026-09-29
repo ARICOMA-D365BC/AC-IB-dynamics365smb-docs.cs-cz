@@ -70,7 +70,7 @@
 <h1 id="nastavení---parcels---integrace-balíkobot">Nastavení - Parcels - Integrace Balíkobot</h1>
 
 <blockquote>
-<p>Aktualizace: 22.04.2026</p>
+<p>Aktualizace: 23.09.2026</p>
 </blockquote>
 <p>Pro správné fungování addonu Zásilek je zapotřebí nastavit několik oblastí. Addon se prvotně nastavuje pomocí průvodce a poté je možné nastavení měnit ručně.</p>
 <h2 id="oblasti-nastavení-addonu">Oblasti nastavení addonu</h2>
@@ -159,7 +159,7 @@ S instalací modulu máte k dispozici následující Sady oprávnění:</p>
 <h3 id="nastavení-zásilek">Nastavení Zásilek</h3>
 <p>Základní nastavení Balíkobotu je nutné provést na stránce <strong>Nastavení Zásilek</strong>.
 <img src="media/bb_setup.png" alt="Nastavení Parcels"></p>
-<p>Okno nastavení Zásilek obsahuje:</p>
+<p>Okno Nastavení Zásilek obsahuje:</p>
 <ul>
 <li><strong>Čísla zásilek</strong>- Číselná řada pro zásilky.</li>
 <li><strong>Kód výchozího expedičního místa</strong> - Výchozí expediční místo, odkud budou odváženy zásilky (viz další kapitola)</li>
@@ -190,7 +190,7 @@ Aktualizace těchto dat probíhá ručně pomocí funkce „Resynchronizace mast
 Aktualizace těchto dat probíhá ručně pomocí funkce „Resynchronizace master dat“.
 <img src="media/bb_shipping-agents.png" alt="Nastavení Balíkobotu"></p>
 <p>Přehled obsahuje i dopravce, které nemáte u Balíkobotu nakonfigurované. Pro takové se neprovádí import dalších dat (viz dále).</p>
-<h3 id="na-přehledu-přepravců-je-několik-polí-k-nastavení">Na přehledu přepravců je několik polí k nastavení:</h3>
+<h3 id="na-přehledu-přepravců-je-několik-polí-k-nastavení">Na přehledu přepravců je několik polí k nastavení</h3>
 <ul>
 <li><strong>Integrační služba</strong> – Určuje, přes jakou integrační službu se přepravce používá (v tomto případě Balikobot.cz)</li>
 <li><strong>Povolení synchronizace master dat</strong> – Po zapnutí se mohou stáhnout master data</li>
@@ -233,8 +233,7 @@ Aktualizace těchto dat probíhá ručně pomocí funkce „Resynchronizace mast
 <li><strong>Vynutit dobírku zásilky</strong></li>
 <li><strong>Vynutit variabilní symbol zásilky</strong></li>
 <li><strong>Hmotnost na řádku</strong> - Hmotnost musí být vyplněna v řádku zásilky</li>
-<li><strong>Služby ČP</strong> – Pouze pro Českou poštu - dlouhý textový řetězec služeb pošty nad danou zásilkou
-o	<a href="https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf">https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf</a></li>
+<li><strong>Služby ČP</strong> – <a href="https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf">Pouze pro Českou poštu</a> - dlouhý textový řetězec služeb pošty nad danou zásilkou</li>
 </ul>
 </li>
 </ol>
@@ -254,7 +253,7 @@ o	<a href="https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf">https://
 <h3 id="pdf-reader">PDF reader</h3>
 <p>Pro tisk štítků je zapotřebí mít nainstalovaný PDF reader. Pro práci se štítky doporučujeme Foxit pdf a také ho mít nastavený jako výchozí program pro PDF soubory.</p>
 <h3 id="výběr-formátu-tisku--klientská-zóna">Výběr formátu tisku – klientská zóna</h3>
-<p>Základním krokem nastavení tisku štítků je definice, jakým způsobem se budou generovat PDF se štítky ze strany Balíkobotu. V klientské zóně (<a href="https://client.balikobot.cz/">https://client.balikobot.cz/</a>) uživatel musí nastavit, zda se bude tisknout ve formátu na celou stránku nebo dle pozic na papíru velikosti A4. Vše záleží na tom, na jaké tiskárně se bude tisknout. Pro tisk na tiskárně pro štítky se nemusí vybírat pozice tisku štítku.</p>
+<p>Základním krokem nastavení tisku štítků je definice, jakým způsobem se budou generovat PDF se štítky ze strany Balíkobotu. V klientské zóně (<code>https://client.balikobot.cz/</code>) uživatel musí nastavit, zda se bude tisknout ve formátu na celou stránku nebo dle pozic na papíru velikosti A4. Vše záleží na tom, na jaké tiskárně se bude tisknout. Pro tisk na tiskárně pro štítky se nemusí vybírat pozice tisku štítku.</p>
 <h3 id="výběr-tiskárny">Výběr tiskárny</h3>
 <p>Pro nastavení tisku štítku je potřeba nastavit ID sestavy a přidělit uživateli tiskárnu. Funkce tisk štítků je nastavená, aby tiskla na definované tiskárně.</p>
 <p>Nutné pro definice tiskárny:</p>
@@ -313,6 +312,506 @@ o	<a href="https://www.balikobot.cz/dokumentace/cp_ciselnik_sluzeb.pdf">https://
 <li>Automatické vytváření PLT dokladů zapnete vybráním pole <strong>Vytvořit PLT dokument</strong>.</li>
 <li>Po nastavení můžete přehled zavřít.</li>
 </ol>
+<h2 id="integrační-události-balikobot">Integrační události Balikobot</h2>
+<p>Codeunit <code>BalikobotAPIv2Events_aci</code> publikuje integrační eventy (<code>IntegrationEvent</code>), které umožňují upravit request/response data při volání Balikobot API v2 a doplnit vlastní logiku.</p>
+<h3 id="eventy-requestresponse-pro-api-metody">Eventy Request/Response pro API metody</h3>
+<p>Pro každou operaci existuje dvojice eventů:</p>
+<ul>
+<li><strong>OnRequest</strong> – volá se před odesláním requestu a umožňuje upravit JSON objekt v <code>RequestJsonData</code></li>
+<li><strong>OnResponse</strong> – volá se po přijetí odpovědi a umožňuje číst JSON objekt <code>ResponseJsonData</code>
+| Event | Parametry | Kdy se volá |
+|---|---|---|
+| <code>OnCheckRequest</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>var RequestJsonData: JsonToken</code> | Před odesláním requestu metody <strong>CHECK</strong> – umožňuje upravit/doplnit odesílaná data. |
+| <code>OnCheckResponse</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>ResponseJsonData: JsonToken</code> | Po přijetí odpovědi metody <strong>CHECK</strong>. |
+| <code>OnAddRequest</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>var RequestJsonData: JsonToken</code> | Před odesláním requestu metody <strong>ADD</strong> – umožňuje upravit/doplnit odesílaná data (např. přidat carrier-specific atributy). |
+| <code>OnAddResponse</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>ResponseJsonData: JsonToken</code> | Po přijetí odpovědi metody <strong>ADD</strong> (zásilka vytvořena). |
+| <code>OnDropRequest</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>var RequestJsonData: JsonToken</code> | Před odesláním requestu metody <strong>DROP</strong> (storno zásilky). |
+| <code>OnDropResponse</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>ResponseJsonData: JsonToken</code> | Po přijetí odpovědi metody <strong>DROP</strong>. |
+| <code>OnOrderRequest</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>var RequestJsonData: JsonToken</code> | Před odesláním requestu metody <strong>ORDER</strong> (objednání svozu). |
+| <code>OnOrderResponse</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>ResponseJsonData: JsonToken</code> | Po přijetí odpovědi metody <strong>ORDER</strong>. |
+| <code>OnLabelsRequest</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>var RequestJsonData: JsonToken</code> | Před odesláním requestu metody <strong>LABELS</strong> (hromadné PDF se štítky). |
+| <code>OnLabelsResponse</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>ResponseJsonData: JsonToken</code> | Po přijetí odpovědi metody <strong>LABELS</strong>. |
+| <code>OnB2ARequest</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>var RequestJsonData: JsonToken</code> | Před odesláním requestu metody <strong>B2A</strong> (vratná/svozová zásilka). |
+| <code>OnB2AResponse</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>ResponseJsonData: JsonToken</code> | Po přijetí odpovědi metody <strong>B2A</strong>. |
+| <code>OnTrackV2Request</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>var RequestJsonData: JsonToken</code> | Před odesláním requestu metody <strong>TRACK v2</strong>. |
+| <code>OnTrackV2Response</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>ResponseJsonData: JsonToken</code><br><code>var StatusMessage: Record &quot;Activity Log&quot; temporary</code> | Po přijetí odpovědi metody <strong>TRACK v2</strong> – navíc obsahuje dočasnou tabulku se zapsanými stavy trackingu (<code>StatusMessage</code>). |
+| <code>OnTrackStatusRequest</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>var RequestJsonData: JsonToken</code> | Před odesláním requestu metody <strong>TRACKSTATUS</strong>. |
+| <code>OnTrackStatusResponse</code> | <code>var PackageData: Record BalikobotPackageData_aci</code><br><code>ResponseJsonData: JsonToken</code> | Po přijetí odpovědi metody <strong>TRACKSTATUS</strong>. |</li>
+</ul>
+<h3 id="eventy-pro-aktualizaci-zásilky">Eventy pro aktualizaci zásilky</h3>
+<p>Volají se po zápisu výsledku API volání zpět do <code>ParcelHeader_aci</code>/<code>ParcelLine_aci</code> – vhodné pro navazující business logiku zpracování odpovědí z API Balikobot.</p>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Parametry</th>
+<th>Kdy se volá</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>OnAfterUpdateParcelAfterAdd</code></td>
+<td><code>var ParcelHeader: Record ParcelHeader_aci</code><br><code>var ParcelLine: Record ParcelLine_aci</code><br><code>var PackageData: Record BalikobotPackageData_aci</code></td>
+<td>Po aktualizaci <code>ParcelHeader</code>/<code>ParcelLine</code> daty z odpovědi metody <strong>ADD</strong>.</td>
+</tr>
+<tr>
+<td><code>OnAfterUpdateParcelAfterDrop</code></td>
+<td><code>var ParcelHeader: Record ParcelHeader_aci</code><br><code>var ParcelLine: Record ParcelLine_aci</code><br><code>var PackageData: Record BalikobotPackageData_aci</code></td>
+<td>Po aktualizaci <code>ParcelHeader</code>/<code>ParcelLine</code> daty z odpovědi metody <strong>DROP</strong>.</td>
+</tr>
+<tr>
+<td><code>OnAfterUpdateParcelAfterOrder</code></td>
+<td><code>var ParcelHeader: Record ParcelHeader_aci</code><br><code>var ParcelLine: Record ParcelLine_aci</code><br><code>var PackageData: Record BalikobotPackageData_aci</code></td>
+<td>Po aktualizaci <code>ParcelHeader</code>/<code>ParcelLine</code> daty z odpovědi metody <strong>ORDER</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="poznámky-k-použití">Poznámky k použití</h3>
+<ul>
+<li><code>RequestJsonData</code> je předáván jako <code>var JsonToken</code> – subscriber jej může nahradit/upravit před odesláním HTTP requestu (typicky obsahuje <code>JsonObject</code>/<code>JsonArray</code> s klíčem <code>&quot;packages&quot;</code>).</li>
+<li><code>ResponseJsonData</code> je jen pro čtení – slouží k reakci na výsledek volání, ne k jeho úpravě.</li>
+<li><code>PackageData</code> je vždy k dispozici jako <code>var Record BalikobotPackageData_aci</code> – obsahuje aktuální zpracovávaná data zásilky/zásilek.</li>
+</ul>
+<h2 id="seznam-atributů-balikobot-nepodporovaných-v-aplikaci-parcels">Seznam atributů Balikobot nepodporovaných v aplikaci Parcels</h2>
+<p><em>(stav k 1.9.2026)</em></p>
+<table>
+<thead>
+<tr>
+<th>Atribut</th>
+<th>Datový typ</th>
+<th>Popis</th>
+<th>Dopravci</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>account_number_duties</code></td>
+<td>string</td>
+<td>FedEx účet plátce cla a daně. Povinné pro případy cla třetí strany CPT/FCA.</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>account_number_shipping_charges</code></td>
+<td>string</td>
+<td>FedEx účet plátce přepravy. Povinné pro případy přepravy třetí strany FCA/EXW.</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>adr_content.adr_accessibility</code></td>
+<td>string</td>
+<td>Zda je nebezpečné zboží přístupné během přepravy (ACCESSIBLE/INACCESSIBLE). Povinné pro DOT, IATA, ORMD.</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>adr_content.adr_battery</code></td>
+<td>bool</td>
+<td>Označení přepravy baterií.</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>adr_content.adr_cargo_aircraft</code></td>
+<td>bool</td>
+<td>Pouze nákladní letadlo (CAO).</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>adr_content.adr_hazardous</code></td>
+<td>string/bool</td>
+<td>Nebezpečné materiály.</td>
+<td>fedex; tnt</td>
+</tr>
+<tr>
+<td><code>adr_content.adr_name_en</code></td>
+<td>string</td>
+<td>Anglický název nebezpečné látky (doplněk k <code>adr_name</code>).</td>
+<td>dachser</td>
+</tr>
+<tr>
+<td><code>adr_content.adr_other</code></td>
+<td>bool</td>
+<td>Ostatní regulované materiály.</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>adr_content.adr_package_type</code></td>
+<td>string</td>
+<td>Typ balení nebezpečného nákladu (ADR) – bez podrobného popisu ve specifikaci.</td>
+<td>dbschenker</td>
+</tr>
+<tr>
+<td><code>adr_content.adr_regulation</code></td>
+<td>string</td>
+<td>Typ regulace nebezpečného zboží: ADR (silniční přeprava EU), DOT (US Dept. of Transportation), IATA (letecká přeprava), ORMD (Other Regulated Materials–Domestic).</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>adr_content.adr_reportable_quantities</code></td>
+<td>bool</td>
+<td>Nahlašovaná množství.</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>adr_content.adr_small_quantity</code></td>
+<td>bool</td>
+<td>Výjimka pro malé množství. Platí pouze pro zásilky s jedním kusem (<code>order_number = 1</code>).</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>battery_data</code> (objekt)</td>
+<td>array</td>
+<td>Povinné při zasílání baterií – obsahuje <code>battery_packing_type</code>, <code>battery_regulatory_type</code>, <code>battery_material_type</code>.</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>battery_data.battery_material_type</code></td>
+<td>string</td>
+<td>Materiál baterie (např. LITHIUM_METAL).</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>battery_data.battery_packing_type</code></td>
+<td>string</td>
+<td>Typ balení baterie (příklad hodnoty: LOOSE).</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>battery_data.battery_regulatory_type</code></td>
+<td>string</td>
+<td>Regulační typ baterie (např. IATA_SECTION_II).</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>branch_type</code></td>
+<td>string</td>
+<td>Povinný atribut při vyplnění <code>branch_id</code>. Typ výdejního místa — povolené hodnoty: <code>packstation</code>, <code>filialedirekt</code> (i <code>filialedirect</code>). Jen pro zásilky v Německu.</td>
+<td>dhlde</td>
+</tr>
+<tr>
+<td><code>consign_password</code></td>
+<td>bool</td>
+<td>Odesláním <code>true</code>/<code>&quot;1&quot;</code> API vrátí v ADD odpovědi heslo pro vložení zásilky do boxu. Lze nastavit jako výchozí pro všechny zásilky v client zone.</td>
+<td>zasilkovna</td>
+</tr>
+<tr>
+<td><code>content_data.content_eori</code></td>
+<td>string</td>
+<td>EORI číslo vztahující se k dané položce obsahu zásilky (celní údaj).</td>
+<td>zasilkovna</td>
+</tr>
+<tr>
+<td><code>content_data.content_food_or_book</code></td>
+<td>bool</td>
+<td>Indikace, zda je obsah potravina nebo kniha (odlišné celní/daňové zacházení).</td>
+<td>zasilkovna</td>
+</tr>
+<tr>
+<td><code>content_data.content_price_eur</code></td>
+<td>float</td>
+<td>Cena položky obsahu v EUR – použito jako součet pro <code>price</code> u zásilek na Ukrajinu.</td>
+<td>zasilkovna</td>
+</tr>
+<tr>
+<td><code>content_data.content_quantity</code></td>
+<td>int</td>
+<td>Počet kusů dané položky obsahu.</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>content_data.content_quantity_unit</code></td>
+<td>string</td>
+<td>Měrná jednotka k <code>content_quantity</code>.</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>content_data.content_volatile</code></td>
+<td>bool</td>
+<td>Indikace těkavé/hořlavé látky v obsahu zásilky.</td>
+<td>zasilkovna</td>
+</tr>
+<tr>
+<td><code>content_produce_code</code></td>
+<td>string</td>
+<td>Povinný parametr pro mezinárodní zásilky, např. <code>&quot;999&quot;</code>.</td>
+<td>magyarposta</td>
+</tr>
+<tr>
+<td><code>country_reference</code></td>
+<td>string</td>
+<td>Referenční číslo země příjemce. U Dachser/DB Schenker pro PL, RO, BH, HU; u Raben jen pro RO. Max 35 (Dachser) / 99 znaků (Raben).</td>
+<td>dachser; dbschenker; raben</td>
+</tr>
+<tr>
+<td><code>country_reference_type</code></td>
+<td>string</td>
+<td>Typ referenčního čísla (u Raben pevná hodnota <code>&quot;UIT&quot;</code> pro RO).</td>
+<td>dachser; dbschenker; raben</td>
+</tr>
+<tr>
+<td><code>customs_indicator</code></td>
+<td>bool</td>
+<td>Indikátor cla – zda je zásilka v celním režimu (pro EU výchozí <code>false</code>, mimo EU výchozí <code>true</code>).</td>
+<td>dachser</td>
+</tr>
+<tr>
+<td><code>date_delivery</code></td>
+<td>string</td>
+<td>Datum plánovaného doručení zásilky (formát YYYY-MM-DD). Povinné pro doplňkovou službu &quot;in time service!&quot;.</td>
+<td>gw; gwcz</td>
+</tr>
+<tr>
+<td><code>dcl_pdf</code></td>
+<td>string</td>
+<td>Celní deklarace – povinné při odesílání mimo EU, pokud zboží není celně odbaveno dopravcem. Base64 kódované PDF.</td>
+<td>dhlde</td>
+</tr>
+<tr>
+<td><code>del_exworks_account_number</code></td>
+<td>string</td>
+<td>Účet plátce cla/přepravy pro EXWORKS zásilky (u DHL Express: Billing Account Number; UPS: UPS Account ID; TNT: účet pro platbu přepravy; FedEx: účet plátce cla/daní/přepravy).</td>
+<td>dhl; fedex; tnt; ups</td>
+</tr>
+<tr>
+<td><code>eori</code></td>
+<td>string</td>
+<td>Číslo EORI.</td>
+<td>spring</td>
+</tr>
+<tr>
+<td><code>eu_eori</code></td>
+<td>string</td>
+<td>EU EORI číslo.</td>
+<td>spring</td>
+</tr>
+<tr>
+<td><code>export_customs_declarant</code> (objekt)</td>
+<td>array</td>
+<td>Údaje o vývozním celním deklarantovi – kdo řeší vývozní celní odbavení na straně odesílatele. Povinné, pokud zásilka vyžaduje celní odbavení.</td>
+<td>dbschenker</td>
+</tr>
+<tr>
+<td><code>export_customs_declarant.ecd_info</code> (objekt)</td>
+<td>array</td>
+<td>Vnořený objekt s plnými kontaktními údaji deklaranta – povinný, pokud <code>ecd_type = other</code>.</td>
+<td>dbschenker</td>
+</tr>
+<tr>
+<td><code>export_customs_declarant.ecd_type</code></td>
+<td>string</td>
+<td>Hodnoty: <code>notrequired</code>, <code>dbschenker</code>, <code>other</code>.</td>
+<td>dbschenker</td>
+</tr>
+<tr>
+<td><code>gb_eori</code></td>
+<td>string</td>
+<td>UK (britské) EORI číslo.</td>
+<td>spring</td>
+</tr>
+<tr>
+<td><code>generate_invoice</code></td>
+<td>bool</td>
+<td>Pro vygenerování faktury u dopravce (z odeslaných dat) odešlete <code>&quot;1&quot;</code> nebo <code>TRUE</code>. U FedEx neplatí pro tuzemské služby a je neslučitelné s <code>invoice_pdf</code>.</td>
+<td>dhl; fedex</td>
+</tr>
+<tr>
+<td><code>import_customs_declarant</code> (objekt)</td>
+<td>array</td>
+<td>Určuje, kdo řeší dovozní celní odbavení na straně příjemce. Povinné, pokud zásilka vyžaduje celní odbavení.</td>
+<td>dbschenker</td>
+</tr>
+<tr>
+<td><code>import_customs_declarant.icd_info</code> (objekt)</td>
+<td>array</td>
+<td>Vnořený objekt s plnými kontaktními údaji deklaranta – povinný, pokud <code>icd_type = other</code>.</td>
+<td>dbschenker</td>
+</tr>
+<tr>
+<td><code>import_customs_declarant.icd_type</code></td>
+<td>string</td>
+<td>Hodnoty: <code>notrequired</code>, <code>dbschenker</code>, <code>other</code>.</td>
+<td>dbschenker</td>
+</tr>
+<tr>
+<td><code>invoice_type</code></td>
+<td>string</td>
+<td>Typ faktury při zaslání vlastní PDF faktury (<code>PRO_FORMA_INVOICE</code> nebo <code>COMMERCIAL_INVOICE</code>). Pokud neodesláno, použije se výchozí hodnota z client zone.</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>is_dutiable</code></td>
+<td>bool</td>
+<td>Indikace, zda zásilka podléhá clu (bez podrobného popisu ve specifikaci).</td>
+<td>dhl</td>
+</tr>
+<tr>
+<td><code>is_lockers</code></td>
+<td>bool</td>
+<td>Indikace doručení do balíkového boxu/schránky (bez podrobného popisu ve specifikaci).</td>
+<td>airway; liftago</td>
+</tr>
+<tr>
+<td><code>loading_length_pallets</code></td>
+<td>float</td>
+<td>Nakládková délka v počtu kusů palet. Pokud neuvedeno, doplní se výchozí hodnota z konfigurace dopravce v client zone.</td>
+<td>raben</td>
+</tr>
+<tr>
+<td><code>mu_sub_count</code></td>
+<td>int</td>
+<td>Počet kusů daného <code>mu_sub_type</code>. Povinné pouze pokud <code>mu_sub_type = YA</code>.</td>
+<td>geis</td>
+</tr>
+<tr>
+<td><code>mu_sub_type</code></td>
+<td>string</td>
+<td>Podtyp manipulační jednotky – používá se při stohování jednotek na sebe (palety na paletách). Hodnoty: <code>SE</code>, <code>SF</code>, <code>DF</code>, <code>KH</code>, <code>PEP</code>, <code>FP</code>, <code>PFP</code>, <code>PC</code>, <code>YA</code>.</td>
+<td>geis</td>
+</tr>
+<tr>
+<td><code>p_o_number</code></td>
+<td>string</td>
+<td>P_O_NUMBER reference (max 30 znaků).</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>payer</code></td>
+<td>string</td>
+<td>Plátce zásilky. Hodnoty: <code>1</code> – zákazník, <code>2</code> – odesílatel, <code>3</code> – příjemce.</td>
+<td>fofr</td>
+</tr>
+<tr>
+<td><code>rec_block</code></td>
+<td>string</td>
+<td>Identifikátor bloku (jen pro BG Speedy).</td>
+<td>pbh</td>
+</tr>
+<tr>
+<td><code>rec_branch_id</code></td>
+<td>string</td>
+<td>ID pobočky/výdejního místa příjemce (bez podrobného popisu ve specifikaci).</td>
+<td>dhlparcel</td>
+</tr>
+<tr>
+<td><code>rec_contact</code></td>
+<td>string</td>
+<td>Kontaktní údaj příjemce (doplňkové kontaktní pole, bez podrobného popisu ve specifikaci).</td>
+<td>balikovna; ceskaposta; cp; dhl; geis; sp; toptrans; zasilkovna</td>
+</tr>
+<tr>
+<td><code>rec_entrance</code></td>
+<td>string</td>
+<td>Číslo vchodu (jen pro BG Speedy).</td>
+<td>pbh</td>
+</tr>
+<tr>
+<td><code>rec_flat_number</code></td>
+<td>string</td>
+<td>Číslo bytu (jen pro BG Speedy).</td>
+<td>pbh</td>
+</tr>
+<tr>
+<td><code>rec_floor</code></td>
+<td>string</td>
+<td>Číslo patra (jen pro BG Speedy).</td>
+<td>gwcz; pbh</td>
+</tr>
+<tr>
+<td><code>rec_house_number</code></td>
+<td>string</td>
+<td>Popisné + orientační číslo. Pokud neodesláno, extrahuje se z <code>rec_street</code>.</td>
+<td>gls; pbh; sds; zasilkovna</td>
+</tr>
+<tr>
+<td><code>rec_id</code></td>
+<td>string</td>
+<td>Pro odeslání do německých výdejních boxů (Packstation/Postfiliale) se musí příjemce zaregistrovat na webu DHL a získat unikátní &quot;Post Number&quot;.</td>
+<td>dhlde; pbh; ppl</td>
+</tr>
+<tr>
+<td><code>rec_tin</code> (objekt)</td>
+<td>object</td>
+<td>Údaje příjemce pro účely celního odbavení – obsahuje <code>tin_number</code> a <code>tin_type</code>.</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>rec_tin.tin_number</code></td>
+<td>string</td>
+<td>Daňové identifikační číslo.</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>rec_tin.tin_type</code></td>
+<td>string</td>
+<td>Typ daňového ID (např. BUSINESS_UNION).</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>return_barcode</code></td>
+<td>bool</td>
+<td>Pokud se použije, vrací informace o čárovém kódu dopravce v ADD odpovědi.</td>
+<td>dpd; gls; ppl</td>
+</tr>
+<tr>
+<td><code>return_final_carrier_id</code></td>
+<td>bool</td>
+<td>Pro vrácení ID zásilky v rámci cílového dopravce (<code>carrier_id_final</code>, u Zásilkovny i <code>track_url_final</code>) v odpovědi ADD odešlete <code>TRUE</code>/<code>&quot;1&quot;</code>.</td>
+<td>ppl; spring; zasilkovna</td>
+</tr>
+<tr>
+<td><code>rma_association</code></td>
+<td>string</td>
+<td>Hodnota RMA_ASSOCIATION bude vytištěna na štítku jako čárový kód pro vratnou zásilku (max 20 znaků).</td>
+<td>fedex</td>
+</tr>
+<tr>
+<td><code>service_type_number</code></td>
+<td>string</td>
+<td>Číselný podtyp/varianta typu služby (bez podrobného popisu ve specifikaci).</td>
+<td>geis; ppl</td>
+</tr>
+<tr>
+<td><code>shipper_vat</code></td>
+<td>string</td>
+<td>Identifikační číslo plátce (DIČ).</td>
+<td>spring</td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td>string</td>
+<td>Povinný parametr pro doručení do balíkového terminálu/schránky.</td>
+<td>magyarposta; messenger</td>
+</tr>
+<tr>
+<td><code>sm1_service</code></td>
+<td>bool</td>
+<td>SMS služba (SM1) – notifikace s možností odeslat vlastní text (<code>sm1_text</code>).</td>
+<td>gls</td>
+</tr>
+<tr>
+<td><code>sm1_text</code></td>
+<td>string</td>
+<td>SMS text pro upozornění přes <code>sm1_service</code> (max 160 znaků, lze použít proměnnou <code>#ParcelNr#</code>). Pokud neodesláno, použije se text z client zone.</td>
+<td>gls</td>
+</tr>
+<tr>
+<td><code>sm2_service</code></td>
+<td>bool</td>
+<td>PreAdvice Service (SM2) – SMS notifikace před doručením zásilky.</td>
+<td>gls</td>
+</tr>
+<tr>
+<td><code>tax_country</code></td>
+<td>string</td>
+<td>Země původu zboží; pro rumunskou logistickou daň povinné, pokud <code>tax_subject = true</code>.</td>
+<td>zasilkovna</td>
+</tr>
+<tr>
+<td><code>tax_subject</code></td>
+<td>bool</td>
+<td>Udává, zda přepravované zboží podléhá logistické dani (rumunský zákon platný od 1. 1. 2026).</td>
+<td>zasilkovna</td>
+</tr>
+</tbody>
+</table>
 <h2 id="viz-také">Viz také</h2>
 <p><a href="parcels.html">Zásilky</a><br>
 <a href="productivity-pack.html">Productivity Pack</a><br>

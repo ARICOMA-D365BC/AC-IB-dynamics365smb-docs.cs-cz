@@ -100,4 +100,4 @@ V rámci plánování se řeší stavy požadavku:
 
 **Viz také**
 
-[Doprava - nastavení](transport-operation-setup.md)  
+[Doprava - nastavení](transport-operations-setup.md)  

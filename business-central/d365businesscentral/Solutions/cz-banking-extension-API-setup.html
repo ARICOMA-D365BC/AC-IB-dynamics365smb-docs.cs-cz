@@ -164,12 +164,9 @@ Následující parametry je třeba doplnit do Rozšířeného nastavení v pří
 <p>Pro využití služby <a href="https://www.kb.cz/cs/kbapi/sluzby-kb-api/api-business-suite">API Business suite</a> od Komerční banky musíte mít aktivovánu vybranou aplikaci internetového bankovnictví (<em>Moje Banka Business</em>, or <em>Profibanka</em>, or <em>Mobilní banka Business</em>).</p>
 <p>Základní kroky pro zprovoznění API rozhraní jsou:</p>
 <ul>
-<li>Firma zažádá u firmy Aricoma o Autorizační klíč, který bude vygenerován speciálně pro ni a díky němuž Aricoma zaregistruje KB API konektor v KB.</li>
 <li>Firma nastaví modul v Business Central.</li>
 <li>Firma udělí souhlas Business Central aplikaci ke se stahováním dat z KB a vybere bankovní účty, ke kterým bude mít Business Central přístup.</li>
 </ul>
-<p><strong>Získání Autorizačního klíče</strong> (platné do verze BC26)</p>
-<p>Kontaktujte nás e-mailem na adrese <a href="mailto:bc_sales@aricoma.com">bc_sales@aricoma.com</a>. Stačí nám pouze jméno vaší firmy, v odpovědi vám zašleme Autorizační klíč. Tento je určen pouze pro potřeby vaší firmy a nesmí být používán nikým jiným.</p>
 <p><strong>Nastavení modulu v BC</strong></p>
 <p>Dalším krokem je nastavení přístupu v Business Central:</p>
 <ol>
@@ -177,9 +174,12 @@ Následující parametry je třeba doplnit do Rozšířeného nastavení v pří
 <li>Na stránce Klienti KB API zadejte „KB“ v poli <strong>Kód</strong> na novém řádku.</li>
 <li>Do pole <strong>Popis</strong> zadejte např. „KB API“.</li>
 <li>V poli <strong>API</strong> ponechte hodnotu „Produkční prostředí“.</li>
-<li>V poli <strong>Autorizační klíč</strong> zadejte hodnotu, kterou jste obdrželi od Aricoma (viz předchozí odstavec).</li>
 <li>Spusťe akci <em>Autorizovat klienta</em>, úspěch se projeví změnou přepnutím příznaku <strong>Klient je autorizovaný</strong>.</li>
 </ol>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Pokud vidíte pole <strong>Autorizační klíč</strong> a máte jej prázdné, kontaktujte nás e-mailem na adrese <a href="mailto:bc_sales@aricoma.com">bc_sales@aricoma.com</a>. Stačí nám pouze jméno vaší firmy, v odpovědi vám zašleme Autorizační klíč. Toto je relevantní pro verze nižší než 28 CU5.</p>
+</div>
 <div class="WARNING">
 <h5>Warning</h5>
 <p>Volbu <strong>Povolit protokol aktivity</strong> použijte pouze v odůvodněných případech po omezenou dobu, neboť v protokolu jsou obsažena citlivá data a mohou se k nim dostat i uživatelé, kteří by je vidět neměli.</p>

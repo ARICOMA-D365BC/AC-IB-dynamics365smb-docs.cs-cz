@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>EDI Connector Setup | Microsoft Docs </title>
+    <title>EDI Connector Setup </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="EDI Connector Setup | Microsoft Docs ">
+    <meta name="title" content="EDI Connector Setup ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -69,7 +69,330 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="edi-konektor-základ---nastavení">EDI konektor základ - nastavení</h1>
 
-<p><strong>Viz také</strong></p>
+<p>Nastavení EDI konektoru se skládá z obecné karty <strong>Nastavení EDI</strong>, číselníku <strong>Partneři EDI</strong>, jednotlivých <strong>karet EDI komunikace</strong> a z doplňujících polí na kartách zákazníků, dodavatelů, adres příjemce a adres objednávek. Doporučené pořadí kroků je stejné jako pořadí kapitol níže.</p>
+<h2 id="nastavení-edi">Nastavení EDI</h2>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Nastavení EDI</strong> a poté vyberte související odkaz.</li>
+<li>Zaškrtněte pole <strong>Povoleno</strong>. Bez zaškrtnutí tohoto pole nelze žádnou funkci EDI spustit – systém ohlásí, že funkčnost EDI konektoru není povolena.</li>
+<li>Do pole <strong>EAN</strong> zadejte EAN (GLN) vlastní společnosti, kterým se firma identifikuje v EDI komunikaci.</li>
+<li>Podle potřeby vyplňte ostatní pole:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Pole</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Archivovat nákupní doklady</strong></td>
+<td>Určuje, zda se mají nákupní doklady při EDI zpracování archivovat.</td>
+</tr>
+<tr>
+<td><strong>Archivovat prodejní doklady</strong></td>
+<td>Určuje, zda se mají prodejní doklady při EDI zpracování archivovat.</td>
+</tr>
+<tr>
+<td><strong>Mez DPH</strong></td>
+<td>Hodnota, podle které se při zpracování přijaté zprávy rozlišuje základní a snížená sazba DPH.</td>
+</tr>
+<tr>
+<td><strong>Výchozí sazba DPH %</strong></td>
+<td>Výchozí základní sazba DPH použitá při zpracování zprávy.</td>
+</tr>
+<tr>
+<td><strong>Výchozí snížená sazba DPH %</strong></td>
+<td>Výchozí snížená sazba DPH použitá při zpracování zprávy.</td>
+</tr>
+<tr>
+<td><strong>Povolit stejné nastavení EDI pro více zákazníků</strong></td>
+<td>Umožní na kartě EDI komunikace ponechat prázdné <strong>Číslo původu</strong>. Takové nastavení se pak použije pro všechny zákazníky daného EDI partnera, kteří nemají vlastní specifické nastavení.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="partneři-edi">Partneři EDI</h2>
+<p>Partner EDI je zastřešující označení protistrany, pod kterou se sdružují jednotlivé karty EDI komunikace.</p>
+<ol>
+<li>Vyberte ikonu <img src="media/ui-search/search_small.png" alt="Žárovky, která otevře funkci Řekněte mi" title="Řekněte mi, co chcete dělat">, zadejte <strong>Partneři EDI</strong> a poté vyberte související odkaz.</li>
+<li>Zvolte akci <strong>Nový</strong> a vyplňte pole <strong>Kód</strong> a <strong>Popis</strong>.</li>
+</ol>
+<h2 id="nastavení-karet-edi-komunikace">Nastavení karet EDI komunikace</h2>
+<p>Karta EDI komunikace je jádrem celého nastavení. Určuje, který doklad se pro kterého partnera, kterým objektem a jakým směrem zpracovává. Otevřete ji ze stránky <strong>Přehled nastavení EDI komunikací</strong> (akce <strong>Nový</strong> nebo otevření existujícího řádku).</p>
+<p>Klíč záznamu tvoří kombinace polí <strong>Kód partnera EDI</strong>, <strong>Typ původu</strong>, <strong>Číslo původu</strong>, <strong>Kód příjemce / adresy objednávky</strong>, <strong>Typ původu dokladu</strong>, <strong>Podtyp původu dokladu</strong>, <strong>Směr</strong> a <strong>Typ dokumentu</strong>. Pro jednoho partnera se tedy zakládá samostatná karta pro každý typ zprávy.</p>
+<h3 id="identifikace-partnera-a-dokladu">Identifikace partnera a dokladu</h3>
+<table>
+<thead>
+<tr>
+<th>Pole</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Kód partnera EDI</strong></td>
+<td>Určuje kód partnera. Povinné pole, odkaz do číselníku Partneři EDI.</td>
+</tr>
+<tr>
+<td><strong>Typ původu</strong></td>
+<td><em>Zákazník</em>, <em>Dodavatel</em> nebo <em>Přepravce</em>. Změna hodnoty vymaže číslo původu a předvyplní odpovídající typ původu dokladu.</td>
+</tr>
+<tr>
+<td><strong>Číslo původu</strong></td>
+<td>Konkrétní zákazník, dodavatel nebo přepravce. Pole lze nechat prázdné pouze u typu původu <em>Zákazník</em> a jen tehdy, je-li v Nastavení EDI zaškrtnuto <strong>Povolit stejné nastavení EDI pro více zákazníků</strong>.</td>
+</tr>
+<tr>
+<td><strong>Kód příjemce / adresy objednávky</strong></td>
+<td>Umožňuje rozlišit nastavení pro jednotlivé adresy příjemce (u zákazníka) nebo adresy objednávky (u dodavatele). Prázdná hodnota platí pro všechny adresy, které nemají vlastní kartu.</td>
+</tr>
+<tr>
+<td><strong>Popis</strong></td>
+<td>Volný popis nastavení.</td>
+</tr>
+<tr>
+<td><strong>EAN</strong></td>
+<td>EAN (GLN) příjemce nebo odesílatele dané komunikace. Používá se mimo jiné při párování příchozí zprávy ze Spooleru.</td>
+</tr>
+<tr>
+<td><strong>Typ původu dokladu</strong></td>
+<td>Zdrojová tabulka: 36 Prodejní hlavička, 38 Nákupní hlavička, 110 Hlavička prodejní dodávky, 112 Hlavička prodejní faktury, 114 Hlavička prodejního dobropisu, 5740 Hlavička transferu.</td>
+</tr>
+<tr>
+<td><strong>Podtyp původního dokladu</strong></td>
+<td>Typ dokladu v rámci zdrojové tabulky (nabídka, objednávka, faktura, dobropis, hromadná objednávka, objednávka vratky).</td>
+</tr>
+<tr>
+<td><strong>Směr</strong></td>
+<td><em>Export</em>, <em>Potvrzený export</em> nebo <em>Import</em>. Při volbě typu zdroje dokladu 36 se nastaví <em>Import</em>, u ostatních <em>Export</em>.</td>
+</tr>
+<tr>
+<td><strong>Typ dokumentu</strong></td>
+<td>Volitelné rozlišení typu zprávy, pokud se pro stejný doklad používá více formátů.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Volbou <strong>Potvrzený export</strong> se do exportu zahrnou pouze doklady se zaškrtnutým polem <strong>Potvrzeno pro EDI export</strong>.</p>
+</div>
+<h3 id="zpracovávající-objekt-a-výstupní-soubor">Zpracovávající objekt a výstupní soubor</h3>
+<table>
+<thead>
+<tr>
+<th>Pole</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Typ objektu</strong></td>
+<td><em>Sestava</em>, <em>Procedura</em> nebo <em>XMLport</em>. Výchozí hodnota je Sestava.</td>
+</tr>
+<tr>
+<td><strong>ID objektu</strong></td>
+<td>Objekt, který vytvoří nebo načte vlastní zprávu. Zde se zadávají objekty dle konkrétního providera.</td>
+</tr>
+<tr>
+<td><strong>Název objektu</strong></td>
+<td>Pole s názvem objektu.</td>
+</tr>
+<tr>
+<td><strong>Cesta a název souboru</strong></td>
+<td>Cesta a maska jména souboru. V masce lze použít zástupné znaky: '%1' – číslo z číselné řady, '%2' – dnešní datum ve tvaru RRRR-MM-DD, '%3' – aktuální datum a čas.</td>
+</tr>
+<tr>
+<td><strong>Číselná řada pro název souboru</strong></td>
+<td>Povinná, pokud je v masce použit zástupný znak '%1'.</td>
+</tr>
+<tr>
+<td><strong>Pouze číslice v čísle dokladu</strong></td>
+<td>Z čísla dokladu se do zprávy přenesou pouze číslice.</td>
+</tr>
+<tr>
+<td><strong>Přidat k číslu dokladu</strong></td>
+<td>Řetězec doplněný k číslu dokladu ve zprávě.</td>
+</tr>
+<tr>
+<td><strong>Pouze číslice v čísle dodávky</strong></td>
+<td>Z čísla dodávky se do zprávy přenesou pouze číslice.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="účtování-a-aktivace">Účtování a aktivace</h3>
+<table>
+<thead>
+<tr>
+<th>Pole</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Číselná řada</strong></td>
+<td>Číselná řada pro doklady vzniklé EDI zpracováním.</td>
+</tr>
+<tr>
+<td><strong>Vytvořit nové číslo účtování</strong></td>
+<td>Při exportu prodejního (36) nebo nákupního (38) dokladu se dokladu přidělí nové účtovací číslo z uvedené číselné řady; není-li vyplněna, použije se číselná řada z dokladu.</td>
+</tr>
+<tr>
+<td><strong>Automaticky účtovat</strong></td>
+<td>Zpracování se ukončí automatickým zaúčtováním dokladu.</td>
+</tr>
+<tr>
+<td><strong>Nečekat na potvrzení</strong></td>
+<td>Nečeká se na potvrzovací zprávu protistrany.</td>
+</tr>
+<tr>
+<td><strong>Aktivní</strong></td>
+<td>Neaktivní karty se při importu i exportu přeskočí. Výchozí hodnota je zaškrtnuto.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="komunikace-přes-spooler">Komunikace přes Spooler</h3>
+<table>
+<thead>
+<tr>
+<th>Pole</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Komunikovat pomocí Spooleru</strong></td>
+<td>Zpráva se nepředává souborem, ale přes IN/OUT buffer Spooleru.</td>
+</tr>
+<tr>
+<td><strong>ID úlohy Spooleru</strong></td>
+<td>Úloha Spooleru, která zprávu přenáší.</td>
+</tr>
+<tr>
+<td><strong>ID cílového systému</strong></td>
+<td>Cílový systém Spooleru (provider).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="řádky-kontroly">Řádky kontroly</h3>
+<p>Ve spodní části karty je záložka <strong>Řádky kontroly</strong>, která umožňuje podmínit export dokladu jeho stavem v EDI. Pro každý řádek se vyplní:</p>
+<ul>
+<li><strong>Typ kontroly</strong> – <em>Export faktury</em>, <em>Účtování faktury</em> nebo <em>Účtování faktury dle data</em>,</li>
+<li><strong>Filtr stavu</strong> – filtr na pole Stav položky EDI (například, aby fakturu bylo možné exportovat pouze tehdy, je-li doklad ve stavu DESADV),</li>
+<li><strong>Filtr - Potvzen příjem</strong> – filtr na pole Přijetí dat položky EDI (<em>EDI Prostředník</em>, <em>Obchod</em>).</li>
+</ul>
+<p>Řádky kontroly se použijí při validaci pole <strong>Potvrzeno pro EDI export</strong> na prodejním dokladu. Smazáním karty EDI komunikace se smažou i její kontrolní řádky.</p>
+<p>Na kartě je dále pole <strong>Filtr předchozího stavu</strong>, které slouží ke stejnému účelu na úrovni celé karty.</p>
+<h3 id="šablona-xsl">Šablona XSL</h3>
+<p>V navigaci karty je skupina <strong>Nastavení → Šablona XSL</strong> s akcemi <strong>Importovat</strong>, <strong>Exportovat</strong>, <strong>Ukázat</strong> a <strong>Odstranit</strong>. Šablona se ke kartě ukládá jako příloha a využívají ji objekty, které z dat dokladu generují zprávu transformací.</p>
+<h2 id="nastavení-zákazníků-pro-edi">Nastavení zákazníků pro EDI</h2>
+<p>Na kartě zákazníka (a v seznamu zákazníků) se nastavují tato pole:</p>
+<table>
+<thead>
+<tr>
+<th>Pole</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>EAN pro EDI</strong></td>
+<td>EAN (GLN) zákazníka pro EDI komunikaci.</td>
+</tr>
+<tr>
+<td><strong>EAN místa fakturace</strong></td>
+<td>EAN zákazníka, kterému se posílá EDI faktura.</td>
+</tr>
+<tr>
+<td><strong>Společný EAN se zákazníkem</strong></td>
+<td>Odkaz na zákazníka, se kterým je EAN sdílen.</td>
+</tr>
+<tr>
+<td><strong>Kód EDI Partnera</strong></td>
+<td>Přiřazení zákazníka k EDI partnerovi. Pole je umístěno za polem GLN.</td>
+</tr>
+</tbody>
+</table>
+<p>Pole <strong>Kód EDI partnera</strong> je klíčové – při účtování prodejní dodávky, faktury i dobropisu systém zakládá položky EDI pouze pro zákazníky, kteří mají toto pole vyplněné, a dohledává podle něj odpovídající kartu EDI komunikace.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Pokud má zákazník vyplněné standardní pole <strong>GLN</strong>, použije se přednostně; teprve není-li vyplněno, sáhne systém do pole <strong>EAN pro EDI</strong>.</p>
+</div>
+<h2 id="adresy-příjemce-pro-edi">Adresy příjemce pro EDI</h2>
+<p>Na kartě <strong>Adresa příjemce</strong> je ve skupině <strong>Elektronické doklady</strong> pole <strong>EAN pro EDI</strong>, do kterého se zadá EAN (GLN) konkrétního odběrného místa.</p>
+<p>Kód adresy příjemce se zadává na kartě EDI komunikace do pole <strong>Kód příjemce / adresy objednávky</strong>. Při vyhledávání nastavení systém nejprve hledá kartu pro konkrétní adresu příjemce dokladu a teprve pokud neexistuje (nebo není aktivní), použije kartu s prázdným kódem adresy.</p>
+<h2 id="nastavení-zboží-pro-edi">Nastavení Zboží pro EDI</h2>
+<p>Modul EDI konektor základ nepřidává na kartu zboží žádné vlastní pole. Identifikace zboží v EDI zprávě se řeší standardními nástroji Business Central a poli na řádcích dokladů:</p>
+<p><strong>Odkazy na zboží</strong> – pro každý EAN, pod kterým partner zboží objednává, se na kartě zboží (Souvisící → Zboží → Odkazy na zboží) založí záznam s <strong>Typem odkazu</strong> <em>Čárový kód</em>. Konverzní objekty podle tohoto záznamu při importu zprávy dohledávají číslo zboží.</p>
+<h2 id="nastavení-dodavatelů-pro-edi">Nastavení dodavatelů pro EDI</h2>
+<p>Na kartě dodavatele je záložka <strong>EDI Framework</strong> s poli:</p>
+<table>
+<thead>
+<tr>
+<th>Pole</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>EAN pro EDI</strong></td>
+<td>EAN (GLN) dodavatele pro EDI komunikaci.</td>
+</tr>
+<tr>
+<td><strong>EAN místa fakturace</strong></td>
+<td>EAN dodavatele, od kterého se přijímá EDI faktura.</td>
+</tr>
+</tbody>
+</table>
+<p>Při spuštění akce <strong>EDI doklad</strong> na nákupní objednávce systém kontroluje, zda má dodavatel vyplněné standardní pole <strong>GLN</strong>; pokud ne, použije <strong>EAN pro EDI</strong>. Není-li vyplněno ani jedno, skončí funkce chybou na poli <strong>EAN pro EDI</strong>.</p>
+<h2 id="nastavení-adres-objednávek-pro-edi">Nastavení adres objednávek pro EDI</h2>
+<p>Adresy objednávek dodavatele se v EDI nastavení používají stejným způsobem jako adresy příjemce u zákazníků – zadávají se na kartě EDI komunikace do pole <strong>Kód příjemce / adresy objednávky</strong> při typu původu <em>Dodavatel</em>.</p>
+<p>Report <strong>Exportovat EDI nákupní doklady</strong> i funkce <strong>EDI doklad</strong> na nákupní objednávce vyhledávají kartu EDI komunikace podle adresy objednávky na nákupní hlavičce; nenajdou-li kartu pro konkrétní adresu, použijí kartu s prázdným kódem adresy.</p>
+<h2 id="reporty-pro-import-a-export">Reporty pro import a export</h2>
+<p>Vlastní komunikaci spouštějí tyto reporty (dostupné také z Role centra ve skupině <strong>EDI Framework → Reporty</strong>):</p>
+<table>
+<thead>
+<tr>
+<th>Report</th>
+<th>Popis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Importovat EDI doklady</strong></td>
+<td>Zpracuje všechny aktivní karty se směrem <em>Import</em>, které nekomunikují přes Spooler.</td>
+</tr>
+<tr>
+<td><strong>Exportovat EDI doklady - faktury</strong></td>
+<td>Export účtovaných prodejních faktur (typ zdroje dokladu 112).</td>
+</tr>
+<tr>
+<td><strong>Exportovat EDI doklady dobropisy</strong></td>
+<td>Export účtovaných prodejních dobropisů (114).</td>
+</tr>
+<tr>
+<td><strong>Exportovat EDI doklady dodávky</strong></td>
+<td>Export účtovaných prodejních dodávek (110).</td>
+</tr>
+<tr>
+<td><strong>Exportovat EDI nákupní doklady</strong></td>
+<td>Export vydaných nákupních objednávek (38).</td>
+</tr>
+<tr>
+<td><strong>Exportovat EDI doklady transferů</strong></td>
+<td>Export hlaviček transferů (5740).</td>
+</tr>
+</tbody>
+</table>
+<p>Všechny reporty mají na žádance pole <strong>Ošetření chyb</strong> s volbami <em>Ignorovat</em> a <em>Zastavit na první</em>. Volba <em>Ignorovat</em> umožní zpracovat zbývající doklady i tehdy, když jeden z nich skončí chybou.</p>
+<p>Reporty lze naplánovat ve frontě úloh; u komunikace přes Spooler se import zpráv z IN bufferu spouští agentem Spooleru.</p>
+<h2 id="nastavení-komunikace-s-providerem-edi">Nastavení komunikace s providerem EDI</h2>
+<p>Je-li přenos řešen přes Spooler, je nutné navíc nastavit:</p>
+<ol>
+<li><strong>Úlohu Spooleru</strong> (typ <em>In</em> nebo <em>Out</em>) s vyplněným druhem komunikace – <em>HTTP</em>, <em>e‑mail</em>, <em>Webová služba</em>, <em>API Spooler</em>, <em>Webová služba SOAP Spooleru</em> nebo <em>Webová služba OData Spooleru</em> – a zpracovávající codeunit.</li>
+<li><strong>Výchozí cílový systém</strong>, na který úloha odesílá.</li>
+<li><strong>ID agenta Spooleru</strong>, který úlohu v pravidelném intervalu spouští.</li>
+<li>Na kartě EDI komunikace zaškrtnout <strong>Komunikace přes Spooler</strong> a vyplnit <strong>ID úlohy spooleru</strong> a <strong>ID cílového systému</strong>.</li>
+</ol>
+<h2 id="viz-také">Viz také</h2>
 <p><a href="edi-connector-basic.html">EDI konektor základ</a><br>
 <a href="productivity-pack.html">Productivity Pack</a></p>
 </article>
