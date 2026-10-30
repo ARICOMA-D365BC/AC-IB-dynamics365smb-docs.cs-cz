@@ -2,15 +2,15 @@
 title: ARICOMA SOLUTIONS - Odesílání elektronických dokladů  
 description: Odesílání elektronických dokladů
 author: kunes
-date: 06/30/2025
-reviewer: janousek
+date: 10/27/2026
+reviewer: urxova
 ms.service: dynamics-365-business-central
 ms.search.keywords: Czech, Electronic documents, additional functions
 ---
 
 # Odesílání elektronických dokladů
 
-> Aktualizace 30.06.2025
+> Aktualizace 27.10.2026
 
 Modul **Odesílání elektronických dokladů** slouží k automatizaci moderní bezpapírové výměny (nejen) daňových dokladů se zákazníkem či dodavatelem. Funkcionalita výrazně rozšiřuje možnosti, které Business Central poskytuje, hned v několika oblastech.
 
@@ -97,6 +97,18 @@ Součástí obchodních procesů bývá odesílání nákupních poptávek či n
 2. Vytvořte novou nákupní objednávku na dodavatele a ověřte, že je na záložce Elektronické doklady vyplněno pole *Profil odesílání dokladů*.
 3. Na stránce Nákupní objednávka spusťte akci *Odeslat*.
 4. Ověřte, že se na navýší hodnota pole *Kolikrát odeslán el.doklad*.
+
+### Odeslání dokladu ve formátu Word
+
+Doklad, jehož sestava má nastavený layout typu Word, se standardně odešle jako PDF. Pokud partner potřebuje doklad v editovatelné podobě (DOCX), lze to zapnout pro konkrétní profil odesílání dokladů.
+
+1. Ověřte, že má zákazník (příp. dodavatel) na své kartě nastaven Profil odesílání dokladů, který má zapnuté pole **Exportovat sestavy Word** (viz [Export sestav ve formátu Word](electronic-documents-setup.md#export-sestav-ve-formátu-word)).
+2. Ověřte, že sestava pro dané použití ve Výběru sestav používá layout typu Word.
+3. Odešlete doklad některým z postupů popsaných výše.
+4. Ověřte, že partnerovi přišel doklad ve formátu DOCX.
+
+> [!NOTE]
+> Sestavy s layoutem Excel se odesílají jako soubor XLSX a ostatní sestavy jako PDF, bez ohledu na toto nastavení.
 
 ### Změna přednastaveného odesílání v návazných prodejních dokladech
 

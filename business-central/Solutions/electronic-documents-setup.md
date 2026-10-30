@@ -2,14 +2,14 @@
 title: ARICOMA SOLUTIONS - Odesílání elektronických dokladů - Nastavení 
 description: Nastavení Odesílání elektronických dokladů
 author: kunes
-date: 06/30/2025
-reviewer: janousek
+date: 10/27/2026
+reviewer: urxova
 ms.service: dynamics-365-business-central
 ms.search.keywords: Czech, Electronic documents, additional functions
 ---
 # Odesílání elektronických dokladů - Nastavení
 
-> Aktualizace 20.06.2023
+> Aktualizace 27.10.2026
 
 Než budete moci využívat rozšířených možností odesílání elektronických dokladů, musíte nakonfigurovat pravidla a hodnoty, které definují požadavky společnosti v této oblasti.
 
@@ -25,6 +25,25 @@ Pro více informací navštivte [Nastavení profilů odesílání dokladů](http
 > Musí být vytvořeno tolik profilů odesílání, kolik různých kombinací odesílání bude firma používat (např. tedy pokud odesílání faktur e-mailem formou elektronické dokladu formátu XML nebo PEPPOL, je třeba mít 2 profily odesílání).
 > [!WARNING]
 > Tento modul není uzpůsoben pro použití hodnoty „Elektronický doklad“ v poli E-mail příloha. Namísto toho je třeba použít hodnotu „Prostřednictvím služby výměny dokumentů“ v poli Elektronický doklad (viz také Nastavení formátu ISDOC a XML).
+
+### Export sestav ve formátu Word
+
+Na kartě Profil odesílání dokladů je v sekci Možnosti odesílání k dispozici pole **Exportovat sestavy Word**. Pole určuje, v jakém formátu se vytvoří soubor ze sestavy, která má nastavený layout typu Word. Týká se to exportu dokladů pomocí formátu elektronického dokladu, který používá codeunit 52067927 *ExportElDocReports_ach*.
+
+- **Pole je zapnuté:** sestava s layoutem Word se uloží jako dokument Word (DOCX).
+- **Pole je vypnuté (výchozí stav):** sestava s layoutem Word se uloží jako PDF.
+
+Sestavy s layoutem Excel se ukládají jako soubor Excel (XLSX) bez ohledu na toto pole. Ostatní sestavy se ukládají jako PDF.
+
+1. Vyberte ikonu ![Žárovky, která otevře funkci Řekněte mi](media/ui-search/search_small.png "Řekněte mi, co chcete dělat"), zadejte **Profily odesílání dokladů** a poté vyberte související odkaz.
+2. Otevřete požadovaný profil odesílání dokladů.
+3. V sekci Možnosti odesílání zapněte pole **Exportovat sestavy Word**.
+4. Zavřete stránku.
+
+> [!NOTE]
+> Rozhoduje profil odesílání dokladů nastavený na kartě zákazníka (u nákupních dokladů na kartě dodavatele). Pokud je ve Výběru sestav pro dané použití označeno více sestav jako příloha e-mailu, všechny vytvořené soubory se zabalí do jednoho souboru ZIP.
+>
+> Pokud je ve Výběru sestav zadán vlastní layout sestavy typu Word, vytvoří se dokument Word vždy, bez ohledu na pole **Exportovat sestavy Word**.
 
 ## Profily odesílání dokladů dle typů dokladů
 
